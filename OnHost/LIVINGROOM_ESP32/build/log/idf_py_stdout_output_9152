@@ -1,0 +1,6493 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 29 2025 14:42:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2afc8h (176072) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=0003aff0 vaddr=3ffb0000 size=037a0h ( 14240) load[0m
+[0;32mI (174) esp_image: segment 2: paddr=0003e798 vaddr=40080000 size=01880h (  6272) load[0m
+[0;32mI (177) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=aaa14h (698900) map[0m
+[0;32mI (434) esp_image: segment 4: paddr=000eaa3c vaddr=40081880 size=14dd0h ( 85456) load[0m
+[0;32mI (481) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (481) boot: Disabling RNG early entropy source...[0m
+[0;32mI (493) cpu_start: Multicore app[0m
+[0;32mI (493) cpu_start: Pro cpu up.[0m
+[0;32mI (493) cpu_start: Starting app cpu, entry point is 0x40081470[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (511) cpu_start: Pro cpu start user code[0m
+[0;32mI (511) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (511) cpu_start: Application information:[0m
+[0;32mI (516) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (521) cpu_start: App version:      1[0m
+[0;32mI (526) cpu_start: Compile time:     Nov 29 2025 14:40:03[0m
+[0;32mI (532) cpu_start: ELF file SHA256:  620cf2e6c3bc2434...[0m
+[0;32mI (538) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (543) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (547) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (552) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (557) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (564) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (570) heap_init: At 3FFB8370 len 00027C90 (159 KiB): DRAM[0m
+[0;32mI (576) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (583) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (589) heap_init: At 40096650 len 000099B0 (38 KiB): IRAM[0m
+[0;32mI (597) spi_flash: detected chip: generic[0m
+[0;32mI (600) spi_flash: flash io: dio[0m
+[0;33mW (604) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (618) app_start: Starting scheduler on CPU0[0m
+[0;32mI (622) app_start: Starting scheduler on CPU1[0m
+[0;32mI (622) main_task: Started on CPU0[0m
+[0;32mI (632) main_task: Calling app_main()[0m
+[0;32mI (632) APP_MAIN: [APP] Startup..[0m
+[0;32mI (632) APP_MAIN: [APP] Free memory: 277984 bytes[0m
+[0;32mI (642) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (702) wifi:wifi driver task: 3ffc0798, prio:23, stack:6656, core=0[0m
+[0;32mI (722) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (722) wifi:wifi certification version: v7.0[0m
+[0;32mI (722) wifi:config NVS flash: enabled[0m
+[0;32mI (722) wifi:config nano formating: disabled[0m
+[0;32mI (732) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (732) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (742) wifi:Init management short buffer num: 32[0m
+[0;32mI (742) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (742) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (752) wifi:Init static rx buffer num: 10[0m
+[0;32mI (752) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (762) wifi_init: rx ba win: 6[0m
+[0;32mI (762) wifi_init: tcpip mbox: 32[0m
+[0;32mI (762) wifi_init: udp mbox: 6[0m
+[0;32mI (772) wifi_init: tcp mbox: 6[0m
+[0;32mI (772) wifi_init: tcp tx win: 5744[0m
+[0;32mI (782) wifi_init: tcp rx win: 5744[0m
+[0;32mI (782) wifi_init: tcp mss: 1440[0m
+[0;32mI (782) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (792) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (792) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (802) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (802) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (812) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (922) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (922) wifi:enable tsf[0m
+[0;32mI (992) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (992) wifi:state: init -> auth (b0)[0m
+[0;32mI (1002) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1022) wifi:state: assoc -> run (10)[0m
+[0;32mI (1042) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1042) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (1052) wifi:pm start, type: 1[0m
+
+[0;32mI (1062) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:0, winSize:64[0m
+[0;32mI (1082) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3552) CONFIG_WIFI: got ip:192.168.54.187[0m
+[0;32mI (3552) esp_netif_handlers: sta ip: 192.168.54.187, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (3552) CONFIG_WIFI: wifi connected[0m
+[0;32mI (3562) MQTT: Free mamory: 229328 bytes[0m
+[0;32mI (3562) MQTT: Other event id:7[0m
+[0;32mI (3572) wifi:<ba-add>idx:1 (ifx:0, d4:e8:53:c5:c9:e1), tid:3, ssn:2, winSize:64[0m
+[0;32mI (4002) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4012) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=37873[0m
+[0;32mI (4032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5296[0m
+[0;32mI (4072) uart: queue free spaces: 20[0m
+[0;32mI (4072) APP_UART: UART config sucessfuly![0m
+[0;32mI (4072) main_task: Returned from app_main()[0m
+Done
+Done
+[0;32mI (4112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38076[0m
+Done
+Done
+[0;32mI (4332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32868[0m
+Done
+Done
+[0;32mI (4542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38494[0m
+Done
+Done
+[0;32mI (4712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53839[0m
+Done
+Done
+[0;32mI (4962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62566[0m
+Done
+Done
+[0;32mI (5162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59774[0m
+Done
+Done
+[0;32mI (5332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47747[0m
+Done
+Done
+[0;32mI (5512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59790[0m
+Done
+Done
+[0;32mI (5772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13539[0m
+Done
+Done
+[0;32mI (5932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39430[0m
+Done
+Done
+[0;32mI (6132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35434[0m
+Done
+Done
+[0;32mI (6522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10097[0m
+Done
+Done
+[0;32mI (6822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25985[0m
+Done
+Done
+[0;32mI (6962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24485[0m
+Done
+Done
+[0;32mI (7112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55305[0m
+Done
+Done
+[0;32mI (7372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65489[0m
+Done
+Done
+[0;32mI (7522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=580[0m
+Done
+Done
+[0;32mI (7762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15933[0m
+Done
+Done
+[0;32mI (7922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52097[0m
+Done
+Done
+[0;32mI (8122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48799[0m
+Done
+Done
+[0;32mI (8322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1999[0m
+Done
+Done
+[0;32mI (8522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22138[0m
+Done
+Done
+[0;32mI (8792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53129[0m
+Done
+Done
+[0;32mI (8982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53889[0m
+Done
+Done
+[0;32mI (9112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22108[0m
+Done
+Done
+[0;32mI (9382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2007[0m
+Done
+Done
+[0;32mI (9552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53276[0m
+Done
+Done
+[0;32mI (9742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36329[0m
+Done
+Done
+[0;32mI (10012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65082[0m
+Done
+Done
+[0;32mI (10122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23130[0m
+Done
+Done
+[0;32mI (10412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56406[0m
+Done
+Done
+[0;32mI (10522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23797[0m
+Done
+Done
+[0;32mI (10802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17990[0m
+Done
+Done
+[0;32mI (10932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49347[0m
+Done
+Done
+[0;32mI (11232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14828[0m
+Done
+Done
+[0;32mI (11312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30974[0m
+Done
+Done
+[0;32mI (11562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41327[0m
+Done
+Done
+[0;32mI (11822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63332[0m
+Done
+Done
+[0;32mI (11912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28564[0m
+Done
+Done
+[0;32mI (12162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27430[0m
+Done
+Done
+[0;32mI (12342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40416[0m
+Done
+Done
+[0;32mI (12592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=980[0m
+Done
+Done
+[0;32mI (12742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=708[0m
+Done
+Done
+[0;32mI (12942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10243[0m
+Done
+Done
+[0;32mI (13162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65031[0m
+Done
+Done
+[0;32mI (13312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18723[0m
+Done
+Done
+[0;32mI (13512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31368[0m
+Done
+Done
+[0;32mI (13762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33153[0m
+Done
+Done
+[0;32mI (14012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5042[0m
+Done
+Done
+[0;32mI (14132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10990[0m
+Done
+Done
+[0;32mI (14322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39028[0m
+Done
+Done
+[0;32mI (14522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46241[0m
+Done
+Done
+[0;32mI (14722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1140[0m
+Done
+Done
+[0;32mI (14922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58638[0m
+Done
+Done
+[0;32mI (15132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26469[0m
+Done
+Done
+[0;32mI (15372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23224[0m
+Done
+Done
+[0;32mI (15512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6882[0m
+Done
+Done
+[0;32mI (15742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25121[0m
+Done
+Done
+[0;32mI (16222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60043[0m
+Done
+Done
+[0;32mI (16342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34316[0m
+Done
+Done
+[0;32mI (16572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23881[0m
+Done
+Done
+[0;32mI (16722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31624[0m
+Done
+Done
+[0;32mI (16942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37978[0m
+Done
+Done
+[0;32mI (17142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9144[0m
+Done
+Done
+[0;32mI (17322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7322[0m
+Done
+Done
+[0;32mI (17532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54295[0m
+Done
+Done
+[0;32mI (17712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48371[0m
+Done
+Done
+[0;32mI (17942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14360[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (18602) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24438[0m
+[0;32mI (18622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1764[0m
+[0;32mI (18622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53758[0m
+Done
+Done
+[0;32mI (18732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27258[0m
+Done
+Done
+[0;32mI (18942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51713[0m
+Done
+Done
+[0;32mI (19142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40479[0m
+Done
+Done
+[0;32mI (19342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=238[0m
+Done
+Done
+[0;32mI (19512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21271[0m
+Done
+Done
+[0;32mI (19732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26230[0m
+Done
+Done
+[0;32mI (19942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10306[0m
+Done
+Done
+[0;32mI (20112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61302[0m
+Done
+Done
+[0;32mI (20382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1535[0m
+Done
+Done
+[0;32mI (20532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55279[0m
+Done
+Done
+[0;32mI (20752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28295[0m
+Done
+Done
+[0;32mI (20912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38531[0m
+Done
+Done
+[0;32mI (21112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3176[0m
+Done
+Done
+[0;32mI (21352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11488[0m
+Done
+Done
+[0;32mI (21552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21446[0m
+Done
+Done
+[0;32mI (21712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29194[0m
+Done
+Done
+[0;32mI (21912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64953[0m
+Done
+Done
+[0;32mI (22112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21505[0m
+Done
+Done
+[0;32mI (22312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12956[0m
+Done
+Done
+[0;32mI (22592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20240[0m
+Done
+Done
+[0;32mI (22832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64340[0m
+Done
+Done
+[0;32mI (22992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32390[0m
+Done
+Done
+[0;32mI (23122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53991[0m
+Done
+Done
+[0;32mI (23322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30232[0m
+Done
+Done
+[0;32mI (23572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9562[0m
+Done
+Done
+[0;32mI (23742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29664[0m
+Done
+Done
+[0;32mI (23922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53994[0m
+Done
+Done
+[0;32mI (24112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47697[0m
+Done
+Done
+Done
+Done
+[0;32mI (24542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45598[0m
+[0;32mI (24552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1987[0m
+Done
+Done
+[0;32mI (24852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40319[0m
+Done
+Done
+[0;32mI (24932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57861[0m
+Done
+Done
+[0;32mI (25162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36740[0m
+Done
+Done
+[0;32mI (25322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11370[0m
+Done
+Done
+[0;32mI (25532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54103[0m
+Done
+Done
+[0;32mI (25752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45145[0m
+Done
+Done
+[0;32mI (25952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25792[0m
+Done
+Done
+[0;32mI (26132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8831[0m
+Done
+Done
+[0;32mI (26312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46984[0m
+Done
+Done
+[0;32mI (26532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10608[0m
+Done
+Done
+[0;32mI (26722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13846[0m
+Done
+Done
+[0;32mI (27152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59469[0m
+Done
+Done
+[0;32mI (27332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14462[0m
+Done
+Done
+[0;32mI (27522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8636[0m
+Done
+Done
+[0;32mI (27722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60797[0m
+Done
+Done
+[0;32mI (27962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62647[0m
+Done
+Done
+[0;32mI (28112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51296[0m
+Done
+Done
+[0;32mI (28352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60471[0m
+Done
+Done
+[0;32mI (28512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50239[0m
+Done
+Done
+[0;32mI (28722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35402[0m
+Done
+Done
+[0;32mI (28922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25052[0m
+Done
+Done
+[0;32mI (29162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16753[0m
+Done
+Done
+[0;32mI (29312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20449[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (30002) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37620[0m
+[0;32mI (30012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32653[0m
+[0;32mI (30012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18149[0m
+Done
+Done
+[0;32mI (30112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31841[0m
+Done
+Done
+[0;32mI (30322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30631[0m
+Done
+Done
+[0;32mI (30522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31327[0m
+Done
+Done
+[0;32mI (30712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17137[0m
+Done
+Done
+[0;32mI (30972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16692[0m
+Done
+Done
+[0;32mI (31122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10316[0m
+Done
+Done
+[0;32mI (31402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64425[0m
+Done
+Done
+[0;32mI (31522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48569[0m
+Done
+Done
+[0;32mI (31772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31231[0m
+Done
+Done
+[0;32mI (31922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61611[0m
+Done
+Done
+[0;32mI (32172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39419[0m
+Done
+Done
+[0;32mI (32342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20241[0m
+Done
+Done
+[0;32mI (32542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49247[0m
+Done
+Done
+[0;32mI (32752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6846[0m
+Done
+Done
+[0;32mI (32942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16541[0m
+Done
+Done
+[0;32mI (33132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21870[0m
+Done
+Done
+[0;32mI (33332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52524[0m
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (35832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63896[0m
+[0;32mI (35832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50840[0m
+[0;32mI (35882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6934[0m
+[0;32mI (35882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14850[0m
+[0;32mI (35882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21926[0m
+[0;32mI (35892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60796[0m
+[0;32mI (35892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1699[0m
+Done
+Done
+[0;32mI (35902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43727[0m
+[0;32mI (35912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38763[0m
+[0;32mI (35912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6038[0m
+[0;32mI (35922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13697[0m
+[0;32mI (35922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61745[0m
+[0;32mI (35932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50602[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (36522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38743[0m
+[0;32mI (36542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21779[0m
+[0;32mI (36542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65224[0m
+Done
+Done
+[0;32mI (36752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44637[0m
+Done
+Done
+[0;32mI (36952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53323[0m
+Done
+Done
+[0;32mI (37152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53504[0m
+Done
+Done
+[0;32mI (37362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19125[0m
+Done
+Done
+[0;32mI (37562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13106[0m
+Done
+Done
+[0;32mI (37912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11754[0m
+Done
+Done
+[0;32mI (38132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3391[0m
+Done
+Done
+[0;32mI (38312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29258[0m
+Done
+Done
+[0;32mI (38582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50666[0m
+Done
+Done
+[0;32mI (38712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29311[0m
+Done
+Done
+[0;32mI (38942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6610[0m
+Done
+Done
+[0;32mI (39112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10149[0m
+Done
+Done
+[0;32mI (39362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27302[0m
+Done
+Done
+[0;32mI (39512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15014[0m
+Done
+Done
+[0;32mI (39882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27955[0m
+Done
+Done
+[0;32mI (39912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15169[0m
+Done
+Done
+[0;32mI (40152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4015[0m
+Done
+Done
+[0;32mI (40322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15417[0m
+Done
+Done
+[0;32mI (40622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41043[0m
+Done
+Done
+[0;32mI (40732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54592[0m
+Done
+Done
+[0;32mI (40952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63049[0m
+Done
+Done
+[0;32mI (41112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37020[0m
+Done
+Done
+[0;32mI (41412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32213[0m
+Done
+Done
+[0;32mI (41562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49978[0m
+Done
+Done
+[0;32mI (41732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29525[0m
+Done
+Done
+[0;32mI (41972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9261[0m
+Done
+Done
+[0;32mI (42132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9800[0m
+Done
+Done
+[0;32mI (42322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=842[0m
+Done
+Done
+[0;32mI (42522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10512[0m
+Done
+Done
+[0;32mI (42712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64370[0m
+Done
+Done
+[0;32mI (42942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4109[0m
+Done
+Done
+[0;32mI (43132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52717[0m
+Done
+Done
+[0;32mI (43332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41191[0m
+Done
+Done
+[0;32mI (43532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31297[0m
+Done
+Done
+[0;32mI (43712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16482[0m
+Done
+Done
+[0;32mI (44012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51479[0m
+Done
+Done
+[0;32mI (44122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1063[0m
+Done
+Done
+[0;32mI (44322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45652[0m
+Done
+Done
+[0;32mI (44532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1143[0m
+Done
+Done
+[0;32mI (44722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53933[0m
+Done
+Done
+[0;32mI (44932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31952[0m
+Done
+Done
+[0;32mI (45192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1057[0m
+Done
+Done
+[0;32mI (45332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8653[0m
+Done
+Done
+[0;32mI (45522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30293[0m
+Done
+Done
+[0;32mI (45762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42907[0m
+Done
+Done
+[0;32mI (46032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57649[0m
+Done
+Done
+[0;32mI (46122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26799[0m
+Done
+Done
+[0;32mI (46342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49269[0m
+Done
+Done
+[0;32mI (46522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51300[0m
+Done
+Done
+[0;32mI (46722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51480[0m
+Done
+Done
+[0;32mI (46972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28506[0m
+Done
+Done
+[0;32mI (47132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55641[0m
+Done
+Done
+[0;32mI (47322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45137[0m
+Done
+Done
+[0;32mI (47562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41039[0m
+Done
+Done
+[0;32mI (47752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64632[0m
+Done
+Done
+[0;32mI (47942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45406[0m
+Done
+Done
+[0;32mI (48112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32150[0m
+Done
+Done
+[0;32mI (48312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6778[0m
+Done
+Done
+[0;32mI (48512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1341[0m
+Done
+Done
+[0;32mI (48762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44287[0m
+Done
+Done
+[0;32mI (48922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20697[0m
+Done
+Done
+[0;32mI (49122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52709[0m
+Done
+Done
+[0;32mI (49332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36539[0m
+Done
+Done
+[0;32mI (49512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40800[0m
+Done
+Done
+[0;32mI (49762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24684[0m
+Done
+Done
+[0;32mI (49922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36501[0m
+Done
+Done
+[0;32mI (50192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25857[0m
+Done
+Done
+[0;32mI (50392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60305[0m
+Done
+Done
+[0;32mI (50512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26581[0m
+Done
+Done
+[0;32mI (50722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17271[0m
+Done
+Done
+[0;32mI (50942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63579[0m
+Done
+Done
+Done
+Done
+[0;32mI (51342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58770[0m
+[0;32mI (51402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41029[0m
+Done
+Done
+[0;32mI (51512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53510[0m
+Done
+Done
+[0;32mI (51732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37438[0m
+Done
+Done
+[0;32mI (51982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52044[0m
+Done
+Done
+[0;32mI (52142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33353[0m
+Done
+Done
+[0;32mI (52362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6728[0m
+Done
+Done
+[0;32mI (52532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37997[0m
+Done
+Done
+[0;32mI (52722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31022[0m
+Done
+Done
+[0;32mI (52912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8376[0m
+Done
+Done
+[0;32mI (53132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47612[0m
+Done
+Done
+[0;32mI (53322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62354[0m
+Done
+Done
+[0;32mI (53522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63828[0m
+Done
+Done
+[0;32mI (53742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46295[0m
+Done
+Done
+[0;32mI (53932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47606[0m
+Done
+Done
+[0;32mI (54312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60815[0m
+Done
+Done
+[0;32mI (54562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33970[0m
+Done
+Done
+[0;32mI (54772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7327[0m
+Done
+Done
+[0;32mI (54952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24203[0m
+Done
+Done
+[0;32mI (55112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48140[0m
+Done
+Done
+[0;32mI (55332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44950[0m
+Done
+Done
+[0;32mI (55532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8864[0m
+Done
+Done
+[0;32mI (55722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34456[0m
+Done
+Done
+[0;32mI (55922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61643[0m
+Done
+Done
+[0;32mI (56112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59235[0m
+Done
+Done
+[0;32mI (56312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36252[0m
+Done
+Done
+[0;32mI (56612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28609[0m
+Done
+Done
+[0;32mI (56712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14524[0m
+Done
+Done
+[0;32mI (56952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10474[0m
+Done
+Done
+[0;32mI (57172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42861[0m
+Done
+Done
+[0;32mI (57312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54586[0m
+Done
+Done
+[0;32mI (57572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16862[0m
+Done
+Done
+[0;32mI (57772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28037[0m
+Done
+Done
+[0;32mI (57932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62340[0m
+Done
+Done
+[0;32mI (58222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9231[0m
+Done
+Done
+[0;32mI (58312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24971[0m
+Done
+Done
+[0;32mI (58642) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52545[0m
+Done
+Done
+[0;32mI (58732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42691[0m
+Done
+Done
+[0;32mI (59052) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11550[0m
+Done
+Done
+[0;32mI (59132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25910[0m
+Done
+Done
+[0;32mI (59352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43653[0m
+Done
+Done
+[0;32mI (59742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11964[0m
+Done
+Done
+[0;32mI (59992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16223[0m
+Done
+Done
+[0;32mI (60362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9464[0m
+Done
+Done
+[0;32mI (60522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3205[0m
+Done
+Done
+[0;32mI (60732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39165[0m
+Done
+Done
+[0;32mI (60932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28010[0m
+Done
+Done
+[0;32mI (61162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8057[0m
+Done
+Done
+[0;32mI (61332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33114[0m
+Done
+Done
+[0;32mI (61532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12669[0m
+Done
+Done
+[0;32mI (61722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13564[0m
+Done
+Done
+[0;32mI (61952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25071[0m
+Done
+Done
+[0;32mI (62122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5022[0m
+Done
+Done
+[0;32mI (62352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53424[0m
+Done
+Done
+[0;32mI (62652) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2728[0m
+Done
+Done
+[0;32mI (62712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11225[0m
+Done
+Done
+[0;32mI (62932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7738[0m
+Done
+Done
+[0;32mI (63152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21496[0m
+Done
+Done
+[0;32mI (63382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31271[0m
+Done
+Done
+[0;32mI (63572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23799[0m
+Done
+Done
+[0;32mI (63732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63181[0m
+Done
+Done
+[0;32mI (63912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46887[0m
+Done
+Done
+[0;32mI (64132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19746[0m
+Done
+Done
+[0;32mI (64322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4700[0m
+Done
+Done
+[0;32mI (64542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52149[0m
+Done
+Done
+[0;32mI (64762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32316[0m
+Done
+Done
+[0;32mI (64962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47536[0m
+Done
+Done
+[0;32mI (65122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19848[0m
+Done
+Done
+[0;32mI (65312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18728[0m
+Done
+Done
+[0;32mI (65612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34477[0m
+Done
+Done
+[0;32mI (65772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2133[0m
+Done
+Done
+[0;32mI (65952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39536[0m
+Done
+Done
+[0;32mI (66152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16637[0m
+Done
+Done
+[0;32mI (66442) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10483[0m
+Done
+Done
+[0;32mI (66582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46080[0m
+Done
+Done
+[0;32mI (66742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20019[0m
+Done
+Done
+[0;32mI (66972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10615[0m
+Done
+Done
+[0;32mI (67212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54000[0m
+Done
+Done
+[0;32mI (67322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21718[0m
+Done
+Done
+[0;32mI (67562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21751[0m
+Done
+Done
+[0;32mI (67782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3855[0m
+Done
+Done
+[0;32mI (67962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21512[0m
+Done
+Done
+[0;32mI (68142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38961[0m
+Done
+Done
+[0;32mI (68322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35609[0m
+Done
+Done
+[0;32mI (68522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32550[0m
+Done
+Done
+[0;32mI (68712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41668[0m
+Done
+Done
+[0;32mI (68922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40161[0m
+Done
+Done
+[0;32mI (69112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62761[0m
+Done
+Done
+[0;32mI (69312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20934[0m
+Done
+Done
+[0;32mI (69512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31936[0m
+Done
+Done
+[0;32mI (69772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30468[0m
+Done
+Done
+[0;32mI (70182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40885[0m
+Done
+Done
+[0;32mI (70362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42102[0m
+Done
+Done
+Done
+Done
+[0;32mI (70732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20669[0m
+[0;32mI (70752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44379[0m
+Done
+Done
+[0;32mI (70922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55073[0m
+Done
+Done
+[0;32mI (71112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10738[0m
+Done
+Done
+Done
+Done
+[0;32mI (71502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41889[0m
+[0;32mI (71512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34227[0m
+Done
+Done
+[0;32mI (71762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35034[0m
+Done
+Done
+[0;32mI (71942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13883[0m
+Done
+Done
+[0;32mI (72112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56790[0m
+Done
+Done
+[0;32mI (72552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59141[0m
+Done
+Done
+[0;32mI (72752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64018[0m
+Done
+Done
+[0;32mI (72922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43209[0m
+Done
+Done
+[0;32mI (73142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46426[0m
+Done
+Done
+[0;32mI (73352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8729[0m
+Done
+Done
+[0;32mI (73522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16858[0m
+Done
+Done
+[0;32mI (73712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15261[0m
+Done
+Done
+[0;32mI (73942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16759[0m
+Done
+Done
+[0;32mI (74112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28283[0m
+Done
+Done
+[0;32mI (74312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57844[0m
+Done
+Done
+[0;32mI (74522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63055[0m
+Done
+Done
+[0;32mI (74762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4205[0m
+Done
+Done
+[0;32mI (74952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56116[0m
+Done
+Done
+[0;32mI (75162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64196[0m
+Done
+Done
+[0;32mI (75352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2433[0m
+Done
+Done
+[0;32mI (75512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13101[0m
+Done
+Done
+[0;32mI (75722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46088[0m
+Done
+Done
+[0;32mI (75912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15730[0m
+Done
+Done
+[0;32mI (76172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48582[0m
+Done
+Done
+[0;32mI (76312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1417[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (76972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19670[0m
+[0;32mI (76992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65125[0m
+[0;32mI (76992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34394[0m
+Done
+Done
+[0;32mI (77132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37986[0m
+Done
+Done
+[0;32mI (77382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29910[0m
+Done
+Done
+[0;32mI (77522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37069[0m
+Done
+Done
+[0;32mI (77712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21563[0m
+Done
+Done
+[0;32mI (77942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13548[0m
+Done
+Done
+[0;32mI (78162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12466[0m
+Done
+Done
+[0;32mI (78402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3444[0m
+Done
+Done
+[0;32mI (78532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56814[0m
+Done
+Done
+[0;32mI (78712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45900[0m
+Done
+Done
+[0;32mI (78932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5593[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (79692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4064[0m
+Done
+Done
+[0;32mI (79722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39754[0m
+[0;32mI (79722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64678[0m
+[0;32mI (79722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=794[0m
+Done
+Done
+[0;32mI (79962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41330[0m
+Done
+Done
+[0;32mI (80122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38464[0m
+Done
+Done
+[0;32mI (80332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26910[0m
+Done
+Done
+[0;32mI (80512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34270[0m
+Done
+Done
+[0;32mI (80722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4728[0m
+Done
+Done
+[0;32mI (80922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22120[0m
+Done
+Done
+[0;32mI (81122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45782[0m
+Done
+Done
+[0;32mI (81372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13733[0m
+Done
+Done
+[0;32mI (81522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61436[0m
+Done
+Done
+[0;32mI (81772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10758[0m
+Done
+Done
+[0;32mI (81922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43840[0m
+Done
+Done
+[0;32mI (82122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22478[0m
+Done
+Done
+[0;32mI (82372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14829[0m
+Done
+Done
+[0;32mI (82522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48587[0m
+Done
+Done
+[0;32mI (82732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19954[0m
+Done
+Done
+[0;32mI (82922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57252[0m
+Done
+Done
+[0;32mI (83222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57304[0m
+Done
+Done
+[0;32mI (83412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11516[0m
+Done
+Done
+[0;32mI (83522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13899[0m
+Done
+Done
+[0;32mI (83772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16805[0m
+Done
+Done
+[0;32mI (83952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2823[0m
+Done
+Done
+[0;32mI (84172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56070[0m
+Done
+Done
+[0;32mI (84352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43741[0m
+Done
+Done
+[0;32mI (84522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27627[0m
+Done
+Done
+[0;32mI (84732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53969[0m
+Done
+Done
+[0;32mI (85042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56659[0m
+Done
+Done
+[0;32mI (85112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58428[0m
+Done
+Done
+[0;32mI (85322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4633[0m
+Done
+Done
+[0;32mI (85522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15889[0m
+Done
+Done
+[0;32mI (85802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21167[0m
+Done
+Done
+[0;32mI (86032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32841[0m
+Done
+Done
+[0;32mI (86152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53105[0m
+Done
+Done
+[0;32mI (86322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38783[0m
+Done
+Done
+[0;32mI (86722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9979[0m
+Done
+Done
+[0;32mI (86942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1166[0m
+Done
+Done
+[0;32mI (87122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13590[0m
+Done
+Done
+[0;32mI (87322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35340[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (88032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38690[0m
+[0;32mI (88042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26733[0m
+[0;32mI (88042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19511[0m
+Done
+Done
+[0;32mI (88152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24612[0m
+Done
+Done
+[0;32mI (88342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41527[0m
+Done
+Done
+[0;32mI (88542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63723[0m
+Done
+Done
+[0;32mI (88762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26576[0m
+Done
+Done
+[0;32mI (88932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29479[0m
+Done
+Done
+[0;32mI (89172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8207[0m
+Done
+Done
+[0;32mI (89322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51916[0m
+Done
+Done
+[0;32mI (89602) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1243[0m
+Done
+Done
+[0;32mI (89732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8504[0m
+Done
+Done
+[0;32mI (89942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1091[0m
+Done
+Done
+[0;32mI (90112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34736[0m
+Done
+Done
+[0;32mI (90312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37216[0m
+Done
+Done
+[0;32mI (90552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40741[0m
+Done
+Done
+[0;32mI (90942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37518[0m
+Done
+Done
+[0;32mI (91132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7632[0m
+Done
+Done
+[0;32mI (91332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13338[0m
+Done
+Done
+[0;32mI (91562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17957[0m
+Done
+Done
+[0;32mI (91732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54365[0m
+Done
+Done
+[0;32mI (91932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29181[0m
+Done
+Done
+[0;32mI (92132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61629[0m
+Done
+Done
+[0;32mI (92332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23549[0m
+Done
+Done
+[0;32mI (92532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30536[0m
+Done
+Done
+[0;32mI (92772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6413[0m
+Done
+Done
+[0;32mI (92942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55863[0m
+Done
+Done
+[0;32mI (93142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10116[0m
+Done
+Done
+[0;32mI (93332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=913[0m
+Done
+Done
+[0;32mI (93522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25669[0m
+Done
+Done
+[0;32mI (93732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13177[0m
+Done
+Done
+[0;32mI (93942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38079[0m
+Done
+Done
+[0;32mI (94142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31316[0m
+Done
+Done
+[0;32mI (94312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18866[0m
+Done
+Done
+[0;32mI (94602) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56798[0m
+Done
+Done
+[0;32mI (94752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52801[0m
+Done
+Done
+[0;32mI (94972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23072[0m
+Done
+Done
+[0;32mI (95132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63208[0m
+Done
+Done
+[0;32mI (95352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61382[0m
+Done
+Done
+[0;32mI (95532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3006[0m
+Done
+Done
+[0;32mI (95722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54726[0m
+Done
+Done
+[0;32mI (95982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=615[0m
+Done
+Done
+[0;32mI (96132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56692[0m
+Done
+Done
+[0;32mI (96342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27420[0m
+Done
+Done
+[0;32mI (96532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49083[0m
+Done
+Done
+[0;32mI (96722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56310[0m
+Done
+Done
+[0;32mI (96922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47312[0m
+Done
+Done
+[0;32mI (97162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14655[0m
+Done
+Done
+[0;32mI (97362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4198[0m
+Done
+Done
+[0;32mI (97552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28233[0m
+Done
+Done
+[0;32mI (97742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26571[0m
+Done
+Done
+[0;32mI (97942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18663[0m
+Done
+Done
+[0;32mI (98132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8622[0m
+Done
+Done
+[0;32mI (98322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60030[0m
+Done
+Done
+[0;32mI (98512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26656[0m
+Done
+Done
+[0;32mI (98742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47591[0m
+Done
+Done
+[0;32mI (98942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48843[0m
+Done
+Done
+[0;32mI (99142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50839[0m
+Done
+Done
+[0;32mI (99312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56052[0m
+Done
+Done
+[0;32mI (99542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46515[0m
+Done
+Done
+[0;32mI (99762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7879[0m
+Done
+Done
+[0;32mI (99992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7448[0m
+Done
+Done
+[0;32mI (100122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9137[0m
+Done
+Done
+[0;32mI (100322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64784[0m
+Done
+Done
+[0;32mI (100542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54182[0m
+Done
+Done
+Done
+Done
+[0;32mI (101142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11618[0m
+[0;32mI (101152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5339[0m
+Done
+Done
+[0;32mI (101322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46640[0m
+Done
+Done
+[0;32mI (101522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9067[0m
+Done
+Done
+[0;32mI (101772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17133[0m
+Done
+Done
+[0;32mI (101962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13922[0m
+Done
+Done
+[0;32mI (102152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31549[0m
+Done
+Done
+[0;32mI (102342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46281[0m
+Done
+Done
+[0;32mI (102522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37500[0m
+Done
+Done
+Done
+Done
+[0;32mI (102922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31570[0m
+[0;32mI (102922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30321[0m
+Done
+Done
+[0;32mI (103162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57573[0m
+Done
+Done
+[0;32mI (103392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54268[0m
+Done
+Done
+[0;32mI (103512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36188[0m
+Done
+Done
+[0;32mI (103712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58894[0m
+Done
+Done
+[0;32mI (103922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42127[0m
+Done
+Done
+[0;32mI (104222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31770[0m
+Done
+Done
+[0;32mI (104322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22137[0m
+Done
+Done
+[0;32mI (104542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6948[0m
+Done
+Done
+[0;32mI (104782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33636[0m
+Done
+Done
+[0;32mI (104922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59696[0m
+Done
+Done
+[0;32mI (105182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45940[0m
+Done
+Done
+[0;32mI (105342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15242[0m
+Done
+Done
+[0;32mI (105552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33271[0m
+Done
+Done
+[0;32mI (105722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51038[0m
+Done
+Done
+[0;32mI (105922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18545[0m
+Done
+Done
+[0;32mI (106132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7230[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (106882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21780[0m
+Done
+Done
+[0;32mI (106912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61011[0m
+[0;32mI (106912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10130[0m
+[0;32mI (106922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29228[0m
+Done
+Done
+[0;32mI (107202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34955[0m
+Done
+Done
+[0;32mI (107402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43871[0m
+Done
+Done
+[0;32mI (107512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59916[0m
+Done
+Done
+[0;32mI (107802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36836[0m
+Done
+Done
+[0;32mI (107952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20079[0m
+Done
+Done
+[0;32mI (108152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39016[0m
+Done
+Done
+[0;32mI (108342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60813[0m
+Done
+Done
+[0;32mI (108512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63574[0m
+Done
+Done
+[0;32mI (108792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48984[0m
+Done
+Done
+[0;32mI (108932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47035[0m
+Done
+Done
+[0;32mI (109152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19419[0m
+Done
+Done
+[0;32mI (109362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1483[0m
+Done
+Done
+[0;32mI (109522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20401[0m
+Done
+Done
+[0;32mI (109722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13449[0m
+Done
+Done
+[0;32mI (109922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52673[0m
+Done
+Done
+[0;32mI (110262) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31117[0m
+Done
+Done
+[0;32mI (110312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24747[0m
+Done
+Done
+[0;32mI (110532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33974[0m
+Done
+Done
+[0;32mI (110762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3128[0m
+Done
+Done
+[0;32mI (110922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11669[0m
+Done
+Done
+[0;32mI (111102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5925[0m
+Done
+Done
+[0;32mI (111442) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19606[0m
+Done
+Done
+[0;32mI (111542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17914[0m
+Done
+Done
+[0;32mI (111732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12257[0m
+Done
+Done
+[0;32mI (111912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46686[0m
+Done
+Done
+[0;32mI (112202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8286[0m
+Done
+Done
+[0;32mI (112322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41887[0m
+Done
+Done
+[0;32mI (112612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38948[0m
+Done
+Done
+[0;32mI (112792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40892[0m
+Done
+Done
+[0;32mI (112922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62522[0m
+Done
+Done
+[0;32mI (113122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61135[0m
+Done
+Done
+[0;32mI (113342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30948[0m
+Done
+Done
+[0;32mI (113532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6759[0m
+Done
+Done
+[0;32mI (113742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51670[0m
+Done
+Done
+[0;32mI (113902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23900[0m
+Done
+Done
+[0;32mI (114152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53849[0m
+Done
+Done
+[0;32mI (114372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30517[0m
+Done
+Done
+[0;32mI (114572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2285[0m
+Done
+Done
+[0;32mI (114742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7216[0m
+Done
+Done
+[0;32mI (114942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42584[0m
+Done
+Done
+[0;32mI (115142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21121[0m
+Done
+Done
+[0;32mI (115312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45933[0m
+Done
+Done
+[0;32mI (115512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64324[0m
+Done
+Done
+[0;32mI (115902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34646[0m
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (116702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41110[0m
+[0;32mI (116722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26849[0m
+[0;32mI (116722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56094[0m
+[0;32mI (116722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58519[0m
+Done
+Done
+[0;32mI (116912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2724[0m
+Done
+Done
+[0;32mI (117152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64247[0m
+Done
+Done
+[0;32mI (117322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=245[0m
+Done
+Done
+[0;32mI (117512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53152[0m
+Done
+Done
+[0;32mI (117702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28937[0m
+Done
+Done
+[0;32mI (117912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3542[0m
+Done
+Done
+[0;32mI (118102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10779[0m
+Done
+Done
+[0;32mI (118342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1929[0m
+Done
+Done
+[0;32mI (118512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19741[0m
+Done
+Done
+[0;32mI (118762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57862[0m
+Done
+Done
+[0;32mI (118912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41648[0m
+Done
+Done
+[0;32mI (119142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59334[0m
+Done
+Done
+[0;32mI (119312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7509[0m
+Done
+Done
+[0;32mI (119552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32381[0m
+Done
+Done
+[0;32mI (119762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44250[0m
+Done
+Done
+[0;32mI (119962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9674[0m
+Done
+Done
+[0;32mI (120252) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15710[0m
+Done
+Done
+[0;32mI (120492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41213[0m
+Done
+Done
+[0;32mI (120612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17246[0m
+Done
+Done
+[0;32mI (120772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23017[0m
+Done
+Done
+[0;32mI (120912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29606[0m
+Done
+Done
+[0;32mI (121122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6292[0m
+Done
+Done
+[0;32mI (121352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57761[0m
+Done
+Done
+[0;32mI (121522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37127[0m
+Done
+Done
+[0;32mI (121732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36328[0m
+Done
+Done
+[0;32mI (121902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47916[0m
+Done
+Done
+[0;32mI (122112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34272[0m
+Done
+Done
+[0;32mI (122352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29512[0m
+Done
+Done
+[0;32mI (122512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61163[0m
+Done
+Done
+[0;32mI (122812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17913[0m
+Done
+Done
+[0;32mI (122962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43836[0m
+Done
+Done
+[0;32mI (123192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26373[0m
+Done
+Done
+[0;32mI (123312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35982[0m
+Done
+Done
+[0;32mI (123562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25904[0m
+Done
+Done
+[0;32mI (123742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12516[0m
+Done
+Done
+[0;32mI (123932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12039[0m
+Done
+Done
+[0;32mI (124142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62018[0m
+Done
+Done
+[0;32mI (124302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12201[0m
+Done
+Done
+[0;32mI (124542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=610[0m
+Done
+Done
+[0;32mI (124712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9684[0m
+Done
+Done
+[0;32mI (124932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27667[0m
+Done
+Done
+[0;32mI (125122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28541[0m
+Done
+Done
+[0;32mI (125312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1070[0m
+Done
+Done
+[0;32mI (125512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48731[0m
+Done
+Done
+[0;32mI (125772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54329[0m
+Done
+Done
+[0;32mI (125912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3673[0m
+Done
+Done
+[0;32mI (126142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26517[0m
+Done
+Done
+[0;32mI (126352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46611[0m
+Done
+Done
+[0;32mI (126522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36259[0m
+Done
+Done
+[0;32mI (126712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54274[0m
+Done
+Done
+[0;32mI (126912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47526[0m
+Done
+Done
+[0;32mI (127122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43783[0m
+Done
+Done
+[0;32mI (127332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60247[0m
+Done
+Done
+[0;32mI (127662) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24440[0m
+Done
+Done
+[0;32mI (127722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34655[0m
+Done
+Done
+[0;32mI (127902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16687[0m
+Done
+Done
+[0;32mI (128122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58121[0m
+Done
+Done
+[0;32mI (128322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29025[0m
+Done
+Done
+[0;32mI (128552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19552[0m
+Done
+Done
+[0;32mI (128702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64413[0m
+Done
+Done
+[0;32mI (129002) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50882[0m
+Done
+Done
+[0;32mI (129112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42494[0m
+Done
+Done
+[0;32mI (129312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9205[0m
+Done
+Done
+[0;32mI (129512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26286[0m
+Done
+Done
+[0;32mI (129712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26573[0m
+Done
+Done
+[0;32mI (129992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56343[0m
+Done
+Done
+[0;32mI (130382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31785[0m
+Done
+Done
+[0;32mI (130542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31717[0m
+Done
+Done
+[0;32mI (130742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63314[0m
+Done
+Done
+[0;32mI (130932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50911[0m
+Done
+Done
+[0;32mI (131132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6409[0m
+Done
+Done
+[0;32mI (131322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50303[0m
+Done
+Done
+[0;32mI (131512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55245[0m
+Done
+Done
+[0;32mI (131742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60711[0m
+Done
+Done
+[0;32mI (131902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21967[0m
+Done
+Done
+[0;32mI (132102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47575[0m
+Done
+Done
+[0;32mI (132412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11449[0m
+Done
+Done
+[0;32mI (132532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61356[0m
+Done
+Done
+[0;32mI (132752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58375[0m
+Done
+Done
+[0;32mI (132952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40761[0m
+Done
+Done
+[0;32mI (133122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37057[0m
+Done
+Done
+[0;32mI (133312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40426[0m
+Done
+Done
+[0;32mI (133512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12985[0m
+Done
+Done
+[0;32mI (133722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32182[0m
+Done
+Done
+[0;32mI (133922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22152[0m
+Done
+Done
+[0;32mI (134132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36479[0m
+Done
+Done
+[0;32mI (134332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53297[0m
+Done
+Done
+[0;32mI (134582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24029[0m
+Done
+Done
+[0;32mI (134772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35510[0m
+Done
+Done
+[0;32mI (135032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45405[0m
+Done
+Done
+[0;32mI (135112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10736[0m
+Done
+Done
+[0;32mI (135332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16950[0m
+Done
+Done
+[0;32mI (135532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21229[0m
+Done
+Done
+[0;32mI (135752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29320[0m
+Done
+Done
+[0;32mI (135962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=160[0m
+Done
+Done
+[0;32mI (136162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17126[0m
+Done
+Done
+[0;32mI (136302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43325[0m
+Done
+Done
+[0;32mI (136522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33951[0m
+Done
+Done
+[0;32mI (136722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40464[0m
+Done
+Done
+[0;32mI (136902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41034[0m
+Done
+Done
+[0;32mI (137182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47112[0m
+Done
+Done
+[0;32mI (137302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61155[0m
+Done
+Done
+[0;32mI (137552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48931[0m
+Done
+Done
+[0;32mI (137712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7901[0m
+Done
+Done
+[0;32mI (137912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49542[0m
+Done
+Done
+[0;32mI (138112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2957[0m
+Done
+Done
+[0;32mI (138312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33495[0m
+Done
+Done
+[0;32mI (138682) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12063[0m
+Done
+Done
+[0;32mI (138742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10328[0m
+Done
+Done
+[0;32mI (138932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43409[0m
+Done
+Done
+[0;32mI (139102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17081[0m
+Done
+Done
+[0;32mI (139392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63770[0m
+Done
+Done
+[0;32mI (139502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13913[0m
+Done
+Done
+[0;32mI (139752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45538[0m
+Done
+Done
+[0;32mI (140152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52995[0m
+Done
+Done
+[0;32mI (140362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63386[0m
+Done
+Done
+[0;32mI (140522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22710[0m
+Done
+Done
+[0;32mI (140742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17489[0m
+Done
+Done
+[0;32mI (140922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33452[0m
+Done
+Done
+[0;32mI (141202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48722[0m
+Done
+Done
+[0;32mI (141322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4068[0m
+Done
+Done
+[0;32mI (141622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57756[0m
+Done
+Done
+[0;32mI (141762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41059[0m
+Done
+Done
+[0;32mI (141942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58730[0m
+Done
+Done
+[0;32mI (142122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64715[0m
+Done
+Done
+[0;32mI (142312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45047[0m
+Done
+Done
+[0;32mI (142532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48408[0m
+Done
+Done
+[0;32mI (142722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48948[0m
+Done
+Done
+[0;32mI (142932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57305[0m
+Done
+Done
+[0;32mI (143222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52133[0m
+Done
+Done
+Done
+Done
+[0;32mI (143582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38341[0m
+[0;32mI (143632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51798[0m
+Done
+Done
+[0;32mI (143742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2319[0m
+Done
+Done
+[0;32mI (143902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37132[0m
+Done
+Done
+[0;32mI (144132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6242[0m
+Done
+Done
+[0;32mI (144312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7128[0m
+Done
+Done
+[0;32mI (144602) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26273[0m
+Done
+Done
+[0;32mI (144702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43867[0m
+Done
+Done
+[0;32mI (144922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51855[0m
+Done
+Done
+[0;32mI (145112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12560[0m
+Done
+Done
+[0;32mI (145312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25954[0m
+Done
+Done
+[0;32mI (145502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27025[0m
+Done
+Done
+[0;32mI (145762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63447[0m
+Done
+Done
+[0;32mI (145982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49240[0m
+Done
+Done
+[0;32mI (146132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55138[0m
+Done
+Done
+[0;32mI (146352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63726[0m
+Done
+Done
+[0;32mI (146502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22740[0m
+Done
+Done
+[0;32mI (146722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55268[0m
+Done
+Done
+[0;32mI (146942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45042[0m
+Done
+Done
+[0;32mI (147102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7008[0m
+Done
+Done
+[0;32mI (147302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8271[0m
+Done
+Done
+[0;32mI (147502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25294[0m
+Done
+Done
+[0;32mI (147712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43588[0m
+Done
+Done
+[0;32mI (147932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51378[0m
+Done
+Done
+[0;32mI (148182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17682[0m
+Done
+Done
+[0;32mI (148352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61424[0m
+Done
+Done
+[0;32mI (148552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49818[0m
+Done
+Done
+[0;32mI (148962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57271[0m
+Done
+Done
+[0;32mI (149122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4377[0m
+Done
+Done
+[0;32mI (149362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36294[0m
+Done
+Done
+[0;32mI (149572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61214[0m
+Done
+Done
+[0;32mI (149752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30316[0m
+Done
+Done
+[0;32mI (149902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58317[0m
+Done
+Done
+[0;32mI (150132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39607[0m
+Done
+Done
+[0;32mI (150382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5273[0m
+Done
+Done
+[0;32mI (150562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17018[0m
+Done
+Done
+[0;32mI (150762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27908[0m
+Done
+Done
+[0;32mI (150952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33523[0m
+Done
+Done
+[0;32mI (151192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12723[0m
+Done
+Done
+[0;32mI (151322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64644[0m
+Done
+Done
+[0;32mI (151522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43703[0m
+Done
+Done
+[0;32mI (151732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3596[0m
+Done
+Done
+[0;32mI (151902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27474[0m
+Done
+Done
+[0;32mI (152102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9718[0m
+Done
+Done
+[0;32mI (152312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56033[0m
+Done
+Done
+[0;32mI (152512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10271[0m
+Done
+Done
+[0;32mI (152702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11005[0m
+Done
+Done
+[0;32mI (152952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45763[0m
+Done
+Done
+[0;32mI (153102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31753[0m
+Done
+Done
+[0;32mI (153332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22593[0m
+Done
+Done
+[0;32mI (153612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62363[0m
+Done
+Done
+[0;32mI (153702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35696[0m
+Done
+Done
+[0;32mI (153932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15306[0m
+Done
+Done
+[0;32mI (154112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54498[0m
+Done
+Done
+[0;32mI (154352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53362[0m
+Done
+Done
+[0;32mI (154512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63623[0m
+Done
+Done
+[0;32mI (154722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18326[0m
+Done
+Done
+[0;32mI (154922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13908[0m
+Done
+Done
+[0;32mI (155232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=527[0m
+Done
+Done
+[0;32mI (155322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50575[0m
+Done
+Done
+[0;32mI (155532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25815[0m
+Done
+Done
+[0;32mI (155712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30821[0m
+Done
+Done
+[0;32mI (155912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54510[0m
+Done
+Done
+[0;32mI (156102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59176[0m
+Done
+Done
+[0;32mI (156342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11455[0m
+Done
+Done
+[0;32mI (156542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26423[0m
+Done
+Done
+[0;32mI (156752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55363[0m
+Done
+Done
+[0;32mI (156902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29319[0m
+Done
+Done
+[0;32mI (157122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38883[0m
+Done
+Done
+[0;32mI (157472) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19527[0m
+Done
+Done
+[0;32mI (157512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20748[0m
+Done
+Done
+[0;32mI (157762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39976[0m
+Done
+Done
+[0;32mI (157922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13470[0m
+Done
+Done
+[0;32mI (158132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27446[0m
+Done
+Done
+[0;32mI (158332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45115[0m
+Done
+Done
+[0;32mI (158502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48511[0m
+Done
+Done
+[0;32mI (158912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46531[0m
+Done
+Done
+[0;32mI (159122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59762[0m
+Done
+Done
+[0;32mI (159332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34417[0m
+Done
+Done
+[0;32mI (159552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1272[0m
+Done
+Done
+[0;32mI (159742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39571[0m
+Done
+Done
+[0;32mI (160032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35632[0m
+Done
+Done
+[0;32mI (160102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40435[0m
+Done
+Done
+[0;32mI (160312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21533[0m
+Done
+Done
+[0;32mI (160532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17693[0m
+Done
+Done
+[0;32mI (160812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2023[0m
+Done
+Done
+[0;32mI (160902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46518[0m
+Done
+Done
+[0;32mI (161162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29977[0m
+Done
+Done
+[0;32mI (161422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63732[0m
+Done
+Done
+[0;32mI (161512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17792[0m
+Done
+Done
+[0;32mI (161712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16911[0m
+Done
+Done
+[0;32mI (161942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2027[0m
+Done
+Done
+[0;32mI (162112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23227[0m
+Done
+Done
+[0;32mI (162302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60189[0m
+Done
+Done
+[0;32mI (162552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29488[0m
+Done
+Done
+[0;32mI (162702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6986[0m
+Done
+Done
+[0;32mI (162902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25150[0m
+Done
+Done
+Done
+Done
+[0;32mI (163302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64696[0m
+[0;32mI (163312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14864[0m
+Done
+Done
+[0;32mI (163512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6050[0m
+Done
+Done
+[0;32mI (163732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54780[0m
+Done
+Done
+[0;32mI (164012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23036[0m
+Done
+Done
+[0;32mI (164122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45488[0m
+Done
+Done
+[0;32mI (164312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33836[0m
+Done
+Done
+[0;32mI (164562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21096[0m
+Done
+Done
+[0;32mI (164762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4352[0m
+Done
+Done
+[0;32mI (164952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13395[0m
+Done
+Done
+[0;32mI (165152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17441[0m
+Done
+Done
+[0;32mI (165392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32740[0m
+Done
+Done
+[0;32mI (165582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5961[0m
+Done
+Done
+[0;32mI (165732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29491[0m
+Done
+Done
+[0;32mI (165932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63554[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (166582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6370[0m
+[0;32mI (166612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41735[0m
+[0;32mI (166612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17443[0m
+Done
+Done
+[0;32mI (166702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12440[0m
+Done
+Done
+[0;32mI (166912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6026[0m
+Done
+Done
+[0;32mI (167112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23754[0m
+Done
+Done
+[0;32mI (167302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18311[0m
+Done
+Done
+[0;32mI (167502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55301[0m
+Done
+Done
+[0;32mI (167752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16212[0m
+Done
+Done
+[0;32mI (167952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53140[0m
+Done
+Done
+[0;32mI (168152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9919[0m
+Done
+Done
+[0;32mI (168402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2763[0m
+Done
+Done
+[0;32mI (168532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32427[0m
+Done
+Done
+[0;32mI (168852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37180[0m
+Done
+Done
+[0;32mI (169002) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37541[0m
+Done
+Done
+[0;32mI (169132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58307[0m
+Done
+Done
+[0;32mI (169312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32984[0m
+Done
+Done
+[0;32mI (169502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47513[0m
+Done
+Done
+[0;32mI (169702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31109[0m
+Done
+Done
+[0;32mI (169922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7338[0m
+Done
+Done
+[0;32mI (170122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33892[0m
+Done
+Done
+[0;32mI (170322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16884[0m
+Done
+Done
+[0;32mI (170512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27212[0m
+Done
+Done
+[0;32mI (170752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52309[0m
+Done
+Done
+[0;32mI (171052) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46072[0m
+Done
+Done
+[0;32mI (171102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7933[0m
+Done
+Done
+[0;32mI (171342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30142[0m
+Done
+Done
+[0;32mI (171512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9261[0m
+Done
+Done
+[0;32mI (171752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5512[0m
+Done
+Done
+[0;32mI (171912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54933[0m
+Done
+Done
+[0;32mI (172312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26687[0m
+Done
+Done
+[0;32mI (172572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8126[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (173232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33067[0m
+[0;32mI (173262) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13747[0m
+[0;32mI (173272) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28991[0m
+Done
+Done
+[0;32mI (173332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59612[0m
+Done
+Done
+[0;32mI (173542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21201[0m
+Done
+Done
+[0;32mI (173722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64477[0m
+Done
+Done
+[0;32mI (173912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14701[0m
+Done
+Done
+[0;32mI (174112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32396[0m
+Done
+Done
+[0;32mI (174332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55109[0m
+Done
+Done
+[0;32mI (174502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52105[0m
+Done
+Done
+[0;32mI (174742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15923[0m
+Done
+Done
+[0;32mI (174942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22523[0m
+Done
+Done
+[0;32mI (175142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48175[0m
+Done
+Done
+[0;32mI (175382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55149[0m
+Done
+Done
+[0;32mI (175502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46460[0m
+Done
+Done
+[0;32mI (175752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16863[0m
+Done
+Done
+[0;32mI (175952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35868[0m
+Done
+Done
+[0;32mI (176312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21460[0m
+Done
+Done
+[0;32mI (176512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45177[0m
+Done
+Done
+[0;32mI (176732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41989[0m
+Done
+Done
+[0;32mI (176932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36682[0m
+Done
+Done
+[0;32mI (177142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13130[0m
+Done
+Done
+[0;32mI (177312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24808[0m
+Done
+Done
+[0;32mI (177582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10364[0m
+Done
+Done
+[0;32mI (177732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6968[0m
+Done
+Done
+[0;32mI (177902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36183[0m
+Done
+Done
+[0;32mI (178212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33329[0m
+Done
+Done
+[0;32mI (178302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1384[0m
+Done
+Done
+[0;32mI (178512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3278[0m
+Done
+Done
+[0;32mI (178722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24905[0m
+Done
+Done
+[0;32mI (178902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20981[0m
+Done
+Done
+[0;32mI (179122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18241[0m
+Done
+Done
+[0;32mI (179432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51829[0m
+Done
+Done
+[0;32mI (179502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12523[0m
+Done
+Done
+Done
+Done
+[0;32mI (179942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35415[0m
+[0;32mI (179952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58792[0m
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (180702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7366[0m
+[0;32mI (180802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7986[0m
+[0;32mI (180812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15029[0m
+[0;32mI (180812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26859[0m
+Done
+Done
+[0;32mI (180912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18751[0m
+Done
+Done
+[0;32mI (181132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56938[0m
+Done
+Done
+[0;32mI (181332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39484[0m
+Done
+Done
+[0;32mI (181522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43418[0m
+Done
+Done
+[0;32mI (181712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56890[0m
+Done
+Done
+[0;32mI (181992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21062[0m
+Done
+Done
+[0;32mI (182112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56704[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (182852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49324[0m
+[0;32mI (182882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62891[0m
+[0;32mI (182892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57955[0m
+Done
+Done
+[0;32mI (183032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45640[0m
+Done
+Done
+[0;32mI (183142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27855[0m
+Done
+Done
+[0;32mI (183312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37438[0m
+Done
+Done
+[0;32mI (183522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3039[0m
+Done
+Done
+[0;32mI (183722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47443[0m
+Done
+Done
+[0;32mI (183932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56918[0m
+Done
+Done
+[0;32mI (184112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62882[0m
+Done
+Done
+[0;32mI (184312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29115[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (185002) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37435[0m
+Done
+Done
+[0;32mI (185172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13679[0m
+[0;32mI (185172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42390[0m
+[0;32mI (185222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14006[0m
+Done
+Done
+[0;32mI (185372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37030[0m
+Done
+Done
+[0;32mI (185532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62872[0m
+Done
+Done
+[0;32mI (185772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59791[0m
+Done
+Done
+[0;32mI (185932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41844[0m
+Done
+Done
+[0;32mI (186132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46527[0m
+Done
+Done
+[0;32mI (186312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=499[0m
+Done
+Done
+[0;32mI (186512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14682[0m
+Done
+Done
+[0;32mI (186702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2819[0m
+Done
+Done
+[0;32mI (186902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58894[0m
+Done
+Done
+[0;32mI (187132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28522[0m
+Done
+Done
+[0;32mI (187322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30452[0m
+Done
+Done
+[0;32mI (187522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10027[0m
+Done
+Done
+[0;32mI (187722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64214[0m
+Done
+Done
+[0;32mI (187942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9624[0m
+Done
+Done
+[0;32mI (188142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30470[0m
+Done
+Done
+[0;32mI (188322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38845[0m
+Done
+Done
+[0;32mI (188502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59914[0m
+Done
+Done
+[0;32mI (188712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22380[0m
+Done
+Done
+[0;32mI (188982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54646[0m
+Done
+Done
+[0;32mI (189112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45290[0m
+Done
+Done
+[0;32mI (189352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20013[0m
+Done
+Done
+[0;32mI (189572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44032[0m
+Done
+Done
+[0;32mI (189782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25741[0m
+Done
+Done
+[0;32mI (189942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56938[0m
+Done
+Done
+[0;32mI (190142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22366[0m
+Done
+Done
+Done
+Done
+[0;32mI (190492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58071[0m
+[0;32mI (190512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59585[0m
+Done
+Done
+[0;32mI (190722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52427[0m
+Done
+Done
+[0;32mI (190912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25535[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (191662) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63670[0m
+Done
+Done
+[0;32mI (191722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35666[0m
+[0;32mI (191722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4310[0m
+[0;32mI (191722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44877[0m
+Done
+Done
+[0;32mI (191932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8844[0m
+Done
+Done
+[0;32mI (192142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44505[0m
+Done
+Done
+[0;32mI (192332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45695[0m
+Done
+Done
+[0;32mI (192522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36376[0m
+Done
+Done
+[0;32mI (192722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57924[0m
+Done
+Done
+[0;32mI (192912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1214[0m
+Done
+Done
+[0;32mI (193102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12322[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (193722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40544[0m
+[0;32mI (193752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12165[0m
+[0;32mI (193762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53[0m
+Done
+Done
+[0;32mI (193912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4687[0m
+Done
+Done
+[0;32mI (194122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32260[0m
+Done
+Done
+[0;32mI (194512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42363[0m
+Done
+Done
+[0;32mI (194702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42278[0m
+Done
+Done
+[0;32mI (194902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12499[0m
+Done
+Done
+[0;32mI (195112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36505[0m
+Done
+Done
+[0;32mI (195322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44626[0m
+Done
+Done
+[0;32mI (195552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42762[0m
+Done
+Done
+[0;32mI (195702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58357[0m
+Done
+Done
+[0;32mI (195982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17277[0m
+Done
+Done
+[0;32mI (196122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45761[0m
+Done
+Done
+[0;32mI (196342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62433[0m
+Done
+Done
+[0;32mI (196502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51330[0m
+Done
+Done
+[0;32mI (196712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47856[0m
+Done
+Done
+[0;32mI (196902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5830[0m
+Done
+Done
+[0;32mI (197152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54509[0m
+Done
+Done
+[0;32mI (197322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65164[0m
+Done
+Done
+[0;32mI (197512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34775[0m
+Done
+Done
+[0;32mI (197802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33160[0m
+Done
+Done
+[0;32mI (197922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52020[0m
+Done
+Done
+[0;32mI (198182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21047[0m
+Done
+Done
+[0;32mI (198322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26858[0m
+Done
+Done
+[0;32mI (198542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52495[0m
+Done
+Done
+[0;32mI (198732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38014[0m
+Done
+Done
+[0;32mI (198952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24221[0m
+Done
+Done
+[0;32mI (199132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14575[0m
+Done
+Done
+[0;32mI (199302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9020[0m
+Done
+Done
+[0;32mI (199502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35685[0m
+Done
+Done
+[0;32mI (199732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22330[0m
+Done
+Done
+[0;32mI (200012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20698[0m
+Done
+Done
+[0;32mI (200102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52514[0m
+Done
+Done
+[0;32mI (200462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13842[0m
+Done
+Done
+[0;32mI (200502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24137[0m
+Done
+Done
+[0;32mI (200702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24126[0m
+Done
+Done
+[0;32mI (200902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52049[0m
+Done
+Done
+[0;32mI (201202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18398[0m
+Done
+Done
+[0;32mI (201302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2994[0m
+Done
+Done
+[0;32mI (201522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3820[0m
+Done
+Done
+[0;32mI (201802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46377[0m
+Done
+Done
+[0;32mI (201912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60056[0m
+Done
+Done
+[0;32mI (202232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19854[0m
+Done
+Done
+[0;32mI (202332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51957[0m
+Done
+Done
+[0;32mI (202582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61722[0m
+Done
+Done
+[0;32mI (202732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41835[0m
+Done
+Done
+[0;32mI (202962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46040[0m
+Done
+Done
+[0;32mI (203112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34670[0m
+Done
+Done
+[0;32mI (203302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10740[0m
+Done
+Done
+[0;32mI (203512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37448[0m
+Done
+Done
+[0;32mI (203702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19442[0m
+Done
+Done
+[0;32mI (203912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40664[0m
+Done
+Done
+[0;32mI (204112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6292[0m
+Done
+Done
+[0;32mI (204312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12401[0m
+Done
+Done
+[0;32mI (204512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38927[0m
+Done
+Done
+[0;32mI (204712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33005[0m
+Done
+Done
+[0;32mI (204942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34190[0m
+Done
+Done
+[0;32mI (205152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25086[0m
+Done
+Done
+[0;32mI (205352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47211[0m
+Done
+Done
+[0;32mI (205522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49574[0m
+Done
+Done
+[0;32mI (205722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19889[0m
+Done
+Done
+[0;32mI (205912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53259[0m
+Done
+Done
+[0;32mI (206272) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42341[0m
+Done
+Done
+[0;32mI (206302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28852[0m
+Done
+Done
+[0;32mI (206512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6811[0m
+Done
+Done
+[0;32mI (206752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56729[0m
+Done
+Done
+[0;32mI (207022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41113[0m
+Done
+Done
+[0;32mI (207162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13197[0m
+Done
+Done
+[0;32mI (207352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46610[0m
+Done
+Done
+[0;32mI (207702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62420[0m
+Done
+Done
+[0;32mI (207912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12835[0m
+Done
+Done
+[0;32mI (208202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48744[0m
+Done
+Done
+[0;32mI (208362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39452[0m
+Done
+Done
+[0;32mI (208532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19779[0m
+Done
+Done
+[0;32mI (208702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48645[0m
+Done
+Done
+[0;32mI (208922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45234[0m
+Done
+Done
+[0;32mI (209182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1171[0m
+Done
+Done
+[0;32mI (209402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34863[0m
+Done
+Done
+[0;32mI (209502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29921[0m
+Done
+Done
+[0;32mI (209782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42030[0m
+Done
+Done
+[0;32mI (209902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20163[0m
+Done
+Done
+[0;32mI (210122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43041[0m
+Done
+Done
+[0;32mI (210382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6287[0m
+Done
+Done
+[0;32mI (210502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1174[0m
+Done
+Done
+[0;32mI (210712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44527[0m
+Done
+Done
+[0;32mI (210912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43200[0m
+Done
+Done
+[0;32mI (211122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63298[0m
+Done
+Done
+[0;32mI (211342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18128[0m
+Done
+Done
+[0;32mI (211532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12857[0m
+Done
+Done
+[0;32mI (211772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30926[0m
+Done
+Done
+[0;32mI (211912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27498[0m
+Done
+Done
+[0;32mI (212102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30204[0m
+Done
+Done
+[0;32mI (212352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10388[0m
+Done
+Done
+[0;32mI (212512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42806[0m
+Done
+Done
+[0;32mI (212762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48488[0m
+Done
+Done
+[0;32mI (212902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53822[0m
+Done
+Done
+[0;32mI (213112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61730[0m
+Done
+Done
+[0;32mI (213332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51151[0m
+Done
+Done
+[0;32mI (213592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59398[0m
+Done
+Done
+[0;32mI (213702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22989[0m
+Done
+Done
+[0;32mI (213972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15729[0m
+Done
+Done
+[0;32mI (214102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27280[0m
+Done
+Done
+[0;32mI (214342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59281[0m
+Done
+Done
+[0;32mI (214532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35489[0m
+Done
+Done
+[0;32mI (214712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4589[0m
+Done
+Done
+[0;32mI (214972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35698[0m
+Done
+Done
+[0;32mI (215122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32530[0m
+Done
+Done
+[0;32mI (215362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37068[0m
+Done
+Done
+[0;32mI (215532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43338[0m
+Done
+Done
+[0;32mI (215802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9698[0m
+Done
+Done
+[0;32mI (215982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46179[0m
+Done
+Done
+[0;32mI (216102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63385[0m
+Done
+Done
+[0;32mI (216322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25242[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (217082) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24058[0m
+Done
+Done
+[0;32mI (217102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48842[0m
+[0;32mI (217102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45651[0m
+[0;32mI (217162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62515[0m
+Done
+Done
+[0;32mI (217312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20812[0m
+Done
+Done
+[0;32mI (217522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45092[0m
+Done
+Done
+[0;32mI (217722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14919[0m
+Done
+Done
+[0;32mI (217922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41446[0m
+Done
+Done
+[0;32mI (218122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25464[0m
+Done
+Done
+[0;32mI (218392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1798[0m
+Done
+Done
+[0;32mI (218502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2089[0m
+Done
+Done
+[0;32mI (218802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38983[0m
+Done
+Done
+[0;32mI (218972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59420[0m
+Done
+Done
+[0;32mI (219112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28305[0m
+Done
+Done
+[0;32mI (219312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1082[0m
+Done
+Done
+[0;32mI (219522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12638[0m
+Done
+Done
+[0;32mI (219722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17834[0m
+Done
+Done
+[0;32mI (219952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54859[0m
+Done
+Done
+[0;32mI (220112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1323[0m
+Done
+Done
+[0;32mI (220302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8752[0m
+Done
+Done
+[0;32mI (220512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2718[0m
+Done
+Done
+[0;32mI (220752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13317[0m
+Done
+Done
+[0;32mI (221122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28113[0m
+Done
+Done
+[0;32mI (221352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50298[0m
+Done
+Done
+[0;32mI (221512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15640[0m
+Done
+Done
+[0;32mI (221722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49487[0m
+Done
+Done
+[0;32mI (221932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12760[0m
+Done
+Done
+[0;32mI (222202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21836[0m
+Done
+Done
+[0;32mI (222302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36875[0m
+Done
+Done
+[0;32mI (222512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13408[0m
+Done
+Done
+[0;32mI (222702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55977[0m
+Done
+Done
+[0;32mI (222912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42802[0m
+Done
+Done
+[0;32mI (223152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42662[0m
+Done
+Done
+[0;32mI (223392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46693[0m
+Done
+Done
+[0;32mI (223512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49022[0m
+Done
+Done
+[0;32mI (223712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50963[0m
+Done
+Done
+[0;32mI (223932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20392[0m
+Done
+Done
+[0;32mI (224112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4377[0m
+Done
+Done
+[0;32mI (224392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16529[0m
+Done
+Done
+[0;32mI (224512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65265[0m
+Done
+Done
+[0;32mI (224712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23357[0m
+Done
+Done
+[0;32mI (224912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35272[0m
+Done
+Done
+[0;32mI (225102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26347[0m
+Done
+Done
+[0;32mI (225452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17890[0m
+Done
+Done
+[0;32mI (225502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57170[0m
+Done
+Done
+[0;32mI (225722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3495[0m
+Done
+Done
+[0;32mI (225942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49772[0m
+Done
+Done
+[0;32mI (226172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60033[0m
+Done
+Done
+[0;32mI (226352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29812[0m
+Done
+Done
+[0;32mI (226502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37318[0m
+Done
+Done
+[0;32mI (226742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41024[0m
+Done
+Done
+[0;32mI (226902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7771[0m
+Done
+Done
+Done
+Done
+[0;32mI (227322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12887[0m
+[0;32mI (227372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11789[0m
+Done
+Done
+[0;32mI (227562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54590[0m
+Done
+Done
+[0;32mI (227712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35540[0m
+Done
+Done
+[0;32mI (227952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17385[0m
+Done
+Done
+[0;32mI (228112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32589[0m
+Done
+Done
+[0;32mI (228352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57806[0m
+Done
+Done
+[0;32mI (228522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32899[0m
+Done
+Done
+[0;32mI (228722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53361[0m
+Done
+Done
+[0;32mI (228912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9618[0m
+Done
+Done
+[0;32mI (229142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1741[0m
+Done
+Done
+[0;32mI (229322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26644[0m
+Done
+Done
+[0;32mI (229572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19329[0m
+Done
+Done
+Done
+Done
+[0;32mI (229892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44745[0m
+[0;32mI (229902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7301[0m
+Done
+Done
+[0;32mI (230262) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44492[0m
+Done
+Done
+[0;32mI (230332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10803[0m
+Done
+Done
+[0;32mI (230512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21334[0m
+Done
+Done
+[0;32mI (230752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16077[0m
+Done
+Done
+[0;32mI (230902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27449[0m
+Done
+Done
+[0;32mI (231122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60711[0m
+Done
+Done
+[0;32mI (231402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42366[0m
+Done
+Done
+[0;32mI (231512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35829[0m
+Done
+Done
+[0;32mI (231762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35186[0m
+Done
+Done
+[0;32mI (232002) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59386[0m
+Done
+Done
+[0;32mI (232212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33319[0m
+Done
+Done
+[0;32mI (232372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57683[0m
+Done
+Done
+[0;32mI (232542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38396[0m
+Done
+Done
+[0;32mI (232732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31937[0m
+Done
+Done
+[0;32mI (232932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22422[0m
+Done
+Done
+[0;32mI (233102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3634[0m
+Done
+Done
+[0;32mI (233442) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17125[0m
+Done
+Done
+[0;32mI (233512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41572[0m
+Done
+Done
+[0;32mI (233722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9908[0m
+Done
+Done
+[0;32mI (233912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4484[0m
+Done
+Done
+[0;32mI (234102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13554[0m
+Done
+Done
+[0;32mI (234342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31090[0m
+Done
+Done
+[0;32mI (234572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14176[0m
+Done
+Done
+[0;32mI (234702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63874[0m
+Done
+Done
+[0;32mI (234932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40183[0m
+Done
+Done
+[0;32mI (235102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28853[0m
+Done
+Done
+[0;32mI (235342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14724[0m
+Done
+Done
+[0;32mI (235512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41178[0m
+Done
+Done
+[0;32mI (235772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41471[0m
+Done
+Done
+[0;32mI (236012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2872[0m
+Done
+Done
+[0;32mI (236102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45593[0m
+Done
+Done
+[0;32mI (236312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9869[0m
+Done
+Done
+[0;32mI (236512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36227[0m
+Done
+Done
+[0;32mI (236762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4398[0m
+Done
+Done
+[0;32mI (236912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55080[0m
+Done
+Done
+[0;32mI (237132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46153[0m
+Done
+Done
+[0;32mI (237312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64479[0m
+Done
+Done
+[0;32mI (237522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53206[0m
+Done
+Done
+[0;32mI (237732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35482[0m
+Done
+Done
+[0;32mI (237942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32179[0m
+Done
+Done
+[0;32mI (238122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29234[0m
+Done
+Done
+[0;32mI (238332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25995[0m
+Done
+Done
+[0;32mI (238502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1887[0m
+Done
+Done
+[0;32mI (238712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42516[0m
+Done
+Done
+[0;32mI (238982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10212[0m
+Done
+Done
+[0;32mI (239192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43949[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (239782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24735[0m
+[0;32mI (239802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60092[0m
+[0;32mI (239802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63837[0m
+Done
+Done
+[0;32mI (239982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16454[0m
+Done
+Done
+[0;32mI (240102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25873[0m
+Done
+Done
+[0;32mI (240312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38475[0m
+Done
+Done
+[0;32mI (240512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1506[0m
+Done
+Done
+[0;32mI (240852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9893[0m
+Done
+Done
+[0;32mI (240932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64184[0m
+Done
+Done
+[0;32mI (241162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43078[0m
+Done
+Done
+[0;32mI (241312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30569[0m
+Done
+Done
+[0;32mI (241532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29363[0m
+Done
+Done
+[0;32mI (241722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6987[0m
+Done
+Done
+[0;32mI (241952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22352[0m
+Done
+Done
+[0;32mI (242142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5105[0m
+Done
+Done
+[0;32mI (242372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45484[0m
+Done
+Done
+[0;32mI (242562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18382[0m
+Done
+Done
+[0;32mI (242712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12324[0m
+Done
+Done
+[0;32mI (242912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30622[0m
+Done
+Done
+[0;32mI (243112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6636[0m
+Done
+Done
+[0;32mI (243482) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53799[0m
+Done
+Done
+[0;32mI (243502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44720[0m
+Done
+Done
+[0;32mI (243742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35277[0m
+Done
+Done
+[0;32mI (243942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48829[0m
+Done
+Done
+[0;32mI (244212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15692[0m
+Done
+Done
+[0;32mI (244332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26049[0m
+Done
+Done
+[0;32mI (244512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12000[0m
+Done
+Done
+[0;32mI (244702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39196[0m
+Done
+Done
+[0;32mI (244912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39680[0m
+Done
+Done
+[0;32mI (245122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58843[0m
+Done
+Done
+[0;32mI (245372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35814[0m
+Done
+Done
+[0;32mI (245582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44007[0m
+Done
+Done
+[0;32mI (245782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59496[0m
+Done
+Done
+[0;32mI (245942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28900[0m
+Done
+Done
+[0;32mI (246112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10462[0m
+Done
+Done
+[0;32mI (246342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44155[0m
+Done
+Done
+[0;32mI (246542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10435[0m
+Done
+Done
+[0;32mI (246732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55284[0m
+Done
+Done
+[0;32mI (246952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17168[0m
+Done
+Done
+[0;32mI (247322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6279[0m
+Done
+Done
+[0;32mI (247542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1578[0m
+Done
+Done
+[0;32mI (247772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23268[0m
+Done
+Done
+[0;32mI (247922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5390[0m
+Done
+Done
+[0;32mI (248152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9007[0m
+Done
+Done
+[0;32mI (248312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23679[0m
+Done
+Done
+[0;32mI (248532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36526[0m
+Done
+Done
+[0;32mI (248702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64756[0m
+Done
+Done
+[0;32mI (248962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4700[0m
+Done
+Done
+[0;32mI (249102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55244[0m
+Done
+Done
+[0;32mI (249322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21060[0m
+Done
+Done
+[0;32mI (249492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64168[0m
+Done
+Done
+[0;32mI (249772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64745[0m
+Done
+Done
+[0;32mI (249982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41081[0m
+Done
+Done
+[0;32mI (250142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39642[0m
+Done
+Done
+[0;32mI (250342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27642[0m
+Done
+Done
+[0;32mI (250492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64471[0m
+Done
+Done
+[0;32mI (250792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40840[0m
+Done
+Done
+[0;32mI (250892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28683[0m
+Done
+Done
+[0;32mI (251102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32111[0m
+Done
+Done
+[0;32mI (251322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1461[0m
+Done
+Done
+[0;32mI (251492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27194[0m
+Done
+Done
+[0;32mI (251692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51297[0m
+Done
+Done
+[0;32mI (251892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62078[0m
+Done
+Done
+[0;32mI (252102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17944[0m
+Done
+Done
+[0;32mI (252392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48976[0m
+Done
+Done
+[0;32mI (252622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37341[0m
+Done
+Done
+[0;32mI (252752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56143[0m
+Done
+Done
+[0;32mI (252922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57580[0m
+Done
+Done
+[0;32mI (253162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5142[0m
+Done
+Done
+[0;32mI (253312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30040[0m
+Done
+Done
+[0;32mI (253552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44605[0m
+Done
+Done
+[0;32mI (253692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47676[0m
+Done
+Done
+[0;32mI (253912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42040[0m
+Done
+Done
+[0;32mI (254172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15205[0m
+Done
+Done
+[0;32mI (254322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45996[0m
+Done
+Done
+[0;32mI (254642) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12604[0m
+Done
+Done
+[0;32mI (254842) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23063[0m
+Done
+Done
+[0;32mI (254892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35561[0m
+Done
+Done
+[0;32mI (255092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31908[0m
+Done
+Done
+[0;32mI (255332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44135[0m
+Done
+Done
+[0;32mI (255502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27433[0m
+Done
+Done
+[0;32mI (255712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65253[0m
+Done
+Done
+[0;32mI (255892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60972[0m
+Done
+Done
+[0;32mI (256132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57196[0m
+Done
+Done
+[0;32mI (256332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30903[0m
+Done
+Done
+[0;32mI (256512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6223[0m
+Done
+Done
+[0;32mI (256702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32933[0m
+Done
+Done
+[0;32mI (256992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26761[0m
+Done
+Done
+[0;32mI (257102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50177[0m
+Done
+Done
+[0;32mI (257302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40371[0m
+Done
+Done
+[0;32mI (257512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60334[0m
+Done
+Done
+[0;32mI (257732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48210[0m
+Done
+Done
+[0;32mI (257902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20580[0m
+Done
+Done
+[0;32mI (258132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8943[0m
+Done
+Done
+[0;32mI (258322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9888[0m
+Done
+Done
+[0;32mI (258502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20582[0m
+Done
+Done
+[0;32mI (258692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57324[0m
+Done
+Done
+[0;32mI (258942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4179[0m
+Done
+Done
+[0;32mI (259102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33807[0m
+Done
+Done
+[0;32mI (259332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60624[0m
+Done
+Done
+[0;32mI (259492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57484[0m
+Done
+Done
+[0;32mI (259792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53935[0m
+Done
+Done
+[0;32mI (259892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3400[0m
+Done
+Done
+[0;32mI (260172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52990[0m
+Done
+Done
+[0;32mI (260302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58045[0m
+Done
+Done
+[0;32mI (260522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25229[0m
+Done
+Done
+[0;32mI (260702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24258[0m
+Done
+Done
+[0;32mI (260902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43334[0m
+Done
+Done
+[0;32mI (261102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4729[0m
+Done
+Done
+[0;32mI (261312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50992[0m
+Done
+Done
+[0;32mI (261512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45001[0m
+Done
+Done
+[0;32mI (261742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30037[0m
+Done
+Done
+[0;32mI (261932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23802[0m
+Done
+Done
+[0;32mI (262112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24409[0m
+Done
+Done
+[0;32mI (262292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49625[0m
+Done
+Done
+[0;32mI (262532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41807[0m
+Done
+Done
+[0;32mI (262712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21564[0m
+Done
+Done
+[0;32mI (262912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61036[0m
+Done
+Done
+[0;32mI (263122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18462[0m
+Done
+Done
+[0;32mI (263292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22903[0m
+Done
+Done
+[0;32mI (263582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43784[0m
+Done
+Done
+[0;32mI (263692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45489[0m
+Done
+Done
+[0;32mI (263932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33239[0m
+Done
+Done
+[0;32mI (264092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7776[0m
+Done
+Done
+[0;32mI (264312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3924[0m
+Done
+Done
+[0;32mI (264522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63264[0m
+Done
+Done
+[0;32mI (264742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40549[0m
+Done
+Done
+[0;32mI (264892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41538[0m
+Done
+Done
+[0;32mI (265122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10487[0m
+Done
+Done
+[0;32mI (265342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56161[0m
+Done
+Done
+[0;32mI (265492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5309[0m
+Done
+Done
+[0;32mI (265742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46129[0m
+Done
+Done
+[0;32mI (265902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=351[0m
+Done
+Done
+[0;32mI (266202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=350[0m
+Done
+Done
+[0;32mI (266302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32758[0m
+Done
+Done
+[0;32mI (266532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38261[0m
+Done
+Done
+[0;32mI (266702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56790[0m
+Done
+Done
+[0;32mI (266892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39316[0m
+Done
+Done
+[0;32mI (267162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31957[0m
+Done
+Done
+[0;32mI (267292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30973[0m
+Done
+Done
+[0;32mI (267542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11186[0m
+Done
+Done
+[0;32mI (267702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34452[0m
+Done
+Done
+[0;32mI (267902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61115[0m
+Done
+Done
+[0;32mI (268182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41404[0m
+Done
+Done
+[0;32mI (268302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38388[0m
+Done
+Done
+[0;32mI (268502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8626[0m
+Done
+Done
+[0;32mI (268692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47748[0m
+Done
+Done
+[0;32mI (268922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24754[0m
+Done
+Done
+[0;32mI (269132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55700[0m
+Done
+Done
+[0;32mI (269292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59665[0m
+Done
+Done
+[0;32mI (269492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65023[0m
+Done
+Done
+[0;32mI (269702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57948[0m
+Done
+Done
+[0;32mI (269912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17193[0m
+Done
+Done
+[0;32mI (270212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19556[0m
+Done
+Done
+[0;32mI (270292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3434[0m
+Done
+Done
+Done
+Done
+[0;32mI (270712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31257[0m
+[0;32mI (270722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49337[0m
+Done
+Done
+[0;32mI (270922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2503[0m
+Done
+Done
+[0;32mI (271102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41543[0m
+Done
+Done
+[0;32mI (271292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5260[0m
+Done
+Done
+[0;32mI (271492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40220[0m
+Done
+Done
+[0;32mI (271692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59092[0m
+Done
+Done
+[0;32mI (271892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10214[0m
+Done
+Done
+[0;32mI (272102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14320[0m
+Done
+Done
+[0;32mI (272412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40995[0m
+Done
+Done
+[0;32mI (272512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23505[0m
+Done
+Done
+[0;32mI (272872) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47090[0m
+Done
+Done
+[0;32mI (272892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35877[0m
+Done
+Done
+[0;32mI (273142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38668[0m
+Done
+Done
+[0;32mI (273342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38461[0m
+Done
+Done
+[0;32mI (273502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42709[0m
+Done
+Done
+[0;32mI (273762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19388[0m
+Done
+Done
+[0;32mI (273892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40576[0m
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (274712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27502[0m
+[0;32mI (274722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38633[0m
+[0;32mI (274722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36115[0m
+[0;32mI (274732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64884[0m
+Done
+Done
+[0;32mI (275012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32836[0m
+Done
+Done
+[0;32mI (275112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54532[0m
+Done
+Done
+[0;32mI (275332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37989[0m
+Done
+Done
+[0;32mI (275502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29556[0m
+Done
+Done
+[0;32mI (275762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7900[0m
+Done
+Done
+[0;32mI (275892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=258[0m
+Done
+Done
+[0;32mI (276102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11513[0m
+Done
+Done
+[0;32mI (276312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27520[0m
+Done
+Done
+[0;32mI (276522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3287[0m
+Done
+Done
+[0;32mI (276702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9464[0m
+Done
+Done
+[0;32mI (276912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13798[0m
+Done
+Done
+[0;32mI (277102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24876[0m
+Done
+Done
+[0;32mI (277292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8071[0m
+Done
+Done
+[0;32mI (277582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5463[0m
+Done
+Done
+[0;32mI (277712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8131[0m
+Done
+Done
+[0;32mI (277922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63293[0m
+Done
+Done
+[0;32mI (278112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27613[0m
+Done
+Done
+[0;32mI (278302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13580[0m
+Done
+Done
+[0;32mI (278502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64108[0m
+Done
+Done
+[0;32mI (278702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45514[0m
+Done
+Done
+[0;32mI (278902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50732[0m
+Done
+Done
+[0;32mI (279102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26997[0m
+Done
+Done
+[0;32mI (279382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22445[0m
+Done
+Done
+[0;32mI (279572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65086[0m
+Done
+Done
+[0;32mI (279752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47119[0m
+Done
+Done
+[0;32mI (279932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51952[0m
+Done
+Done
+[0;32mI (280102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11419[0m
+Done
+Done
+[0;32mI (280312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50632[0m
+Done
+Done
+[0;32mI (280502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64159[0m
+Done
+Done
+[0;32mI (280702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53982[0m
+Done
+Done
+[0;32mI (280902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2335[0m
+Done
+Done
+[0;32mI (281102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52079[0m
+Done
+Done
+[0;32mI (281292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34733[0m
+Done
+Done
+[0;32mI (281512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19054[0m
+Done
+Done
+[0;32mI (281692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2066[0m
+Done
+Done
+[0;32mI (281972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13352[0m
+Done
+Done
+[0;32mI (282112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60505[0m
+Done
+Done
+[0;32mI (282332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63921[0m
+Done
+Done
+[0;32mI (282562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44143[0m
+Done
+Done
+[0;32mI (282722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55794[0m
+Done
+Done
+[0;32mI (282912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60955[0m
+Done
+Done
+[0;32mI (283112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50447[0m
+Done
+Done
+[0;32mI (283302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21279[0m
+Done
+Done
+[0;32mI (283492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19315[0m
+Done
+Done
+[0;32mI (283812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64509[0m
+Done
+Done
+[0;32mI (283902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24078[0m
+Done
+Done
+[0;32mI (284322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44650[0m
+Done
+Done
+[0;32mI (284502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37222[0m
+Done
+Done
+[0;32mI (284722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32725[0m
+Done
+Done
+[0;32mI (284912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62641[0m
+Done
+Done
+[0;32mI (285102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12610[0m
+Done
+Done
+[0;32mI (285352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60768[0m
+Done
+Done
+[0;32mI (285492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22108[0m
+Done
+Done
+[0;32mI (285762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42311[0m
+Done
+Done
+[0;32mI (285912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15991[0m
+Done
+Done
+[0;32mI (286092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60031[0m
+Done
+Done
+[0;32mI (286292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32010[0m
+Done
+Done
+[0;32mI (286512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51949[0m
+Done
+Done
+[0;32mI (286732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12999[0m
+Done
+Done
+[0;32mI (286922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48743[0m
+Done
+Done
+[0;32mI (287102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5525[0m
+Done
+Done
+[0;32mI (287322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55449[0m
+Done
+Done
+[0;32mI (287492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53547[0m
+Done
+Done
+[0;32mI (287702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32617[0m
+Done
+Done
+[0;32mI (287902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47109[0m
+Done
+Done
+[0;32mI (288112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23214[0m
+Done
+Done
+[0;32mI (288302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53650[0m
+Done
+Done
+[0;32mI (288572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33101[0m
+Done
+Done
+[0;32mI (288742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44455[0m
+Done
+Done
+[0;32mI (288992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32564[0m
+Done
+Done
+[0;32mI (289122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13344[0m
+Done
+Done
+[0;32mI (289392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46687[0m
+Done
+Done
+[0;32mI (289532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11900[0m
+Done
+Done
+[0;32mI (289712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14286[0m
+Done
+Done
+[0;32mI (289912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28234[0m
+Done
+Done
+[0;32mI (290092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49228[0m
+Done
+Done
+[0;32mI (290312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50134[0m
+Done
+Done
+[0;32mI (290492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16569[0m
+Done
+Done
+[0;32mI (290702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24539[0m
+Done
+Done
+[0;32mI (290972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43046[0m
+Done
+Done
+[0;32mI (291102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33610[0m
+Done
+Done
+[0;32mI (291302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55521[0m
+Done
+Done
+[0;32mI (291552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15184[0m
+Done
+Done
+[0;32mI (291712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12032[0m
+Done
+Done
+[0;32mI (291912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2793[0m
+Done
+Done
+[0;32mI (292122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13458[0m
+Done
+Done
+[0;32mI (292292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19549[0m
+Done
+Done
+[0;32mI (292512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51341[0m
+Done
+Done
+[0;32mI (292692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9183[0m
+Done
+Done
+[0;32mI (292902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47679[0m
+Done
+Done
+[0;32mI (293102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29817[0m
+Done
+Done
+[0;32mI (293342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57815[0m
+Done
+Done
+[0;32mI (293502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46526[0m
+Done
+Done
+[0;32mI (293712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63227[0m
+Done
+Done
+[0;32mI (293902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43611[0m
+Done
+Done
+[0;32mI (294092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38573[0m
+Done
+Done
+[0;32mI (294312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22903[0m
+Done
+Done
+[0;32mI (294492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18042[0m
+Done
+Done
+[0;32mI (294692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35275[0m
+Done
+Done
+[0;32mI (294892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24743[0m
+Done
+Done
+[0;32mI (295092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38825[0m
+Done
+Done
+[0;32mI (295312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63665[0m
+Done
+Done
+[0;32mI (295542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28597[0m
+Done
+Done
+[0;32mI (295702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9850[0m
+Done
+Done
+[0;32mI (295902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9683[0m
+Done
+Done
+[0;32mI (296092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30105[0m
+Done
+Done
+[0;32mI (296292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54389[0m
+Done
+Done
+[0;32mI (296492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60773[0m
+Done
+Done
+[0;32mI (296712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49904[0m
+Done
+Done
+[0;32mI (296912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=547[0m
+Done
+Done
+[0;32mI (297172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48081[0m
+Done
+Done
+[0;32mI (297452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15061[0m
+Done
+Done
+[0;32mI (297512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11024[0m
+Done
+Done
+[0;32mI (297852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36857[0m
+Done
+Done
+[0;32mI (297902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22662[0m
+Done
+Done
+[0;32mI (298252) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51393[0m
+Done
+Done
+[0;32mI (298322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64257[0m
+Done
+Done
+[0;32mI (298522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13067[0m
+Done
+Done
+[0;32mI (298692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30493[0m
+Done
+Done
+[0;32mI (298952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59170[0m
+Done
+Done
+Done
+Done
+[0;32mI (299282) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16682[0m
+[0;32mI (299312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25921[0m
+Done
+Done
+[0;32mI (299512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45537[0m
+Done
+Done
+[0;32mI (299772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17554[0m
+Done
+Done
+[0;32mI (299942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29382[0m
+Done
+Done
+[0;32mI (300132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17621[0m
+Done
+Done
+[0;32mI (300332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9392[0m
+Done
+Done
+[0;32mI (300532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40210[0m
+Done
+Done
+[0;32mI (300732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16296[0m
+Done
+Done
+[0;32mI (300932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17748[0m
+Done
+Done
+[0;32mI (301142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48724[0m
+Done
+Done
+[0;32mI (301352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20971[0m
+Done
+Done
+[0;32mI (301552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36797[0m
+Done
+Done
+[0;32mI (301732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49424[0m
+Done
+Done
+[0;32mI (301972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49481[0m
+Done
+Done
+[0;32mI (302212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23800[0m
+Done
+Done
+[0;32mI (302332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22494[0m
+Done
+Done
+[0;32mI (302532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30024[0m
+Done
+Done
+[0;32mI (302712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52871[0m
+Done
+Done
+[0;32mI (303122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5490[0m
+Done
+Done
+[0;32mI (303322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55284[0m
+Done
+Done
+[0;32mI (303562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8544[0m
+Done
+Done
+[0;32mI (303722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38005[0m
+Done
+Done
+[0;32mI (303902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56759[0m
+Done
+Done
+[0;32mI (304152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63320[0m
+Done
+Done
+Done
+Done
+[0;32mI (304502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38866[0m
+Done
+Done
+Done
+Done
+[0;32mI (304882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51462[0m
+[0;32mI (304892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53623[0m
+[0;32mI (304912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28872[0m
+Done
+Done
+[0;32mI (305232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56574[0m
+Done
+Done
+[0;32mI (305302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42722[0m
+Done
+Done
+[0;32mI (305502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63334[0m
+Done
+Done
+[0;32mI (305732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15767[0m
+Done
+Done
+[0;32mI (305912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25491[0m
+Done
+Done
+[0;32mI (306182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50302[0m
+Done
+Done
+[0;32mI (306382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15178[0m
+Done
+Done
+[0;32mI (306492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58064[0m
+Done
+Done
+[0;32mI (306712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33338[0m
+Done
+Done
+[0;32mI (306932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56234[0m
+Done
+Done
+[0;32mI (307202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56538[0m
+Done
+Done
+[0;32mI (307332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44440[0m
+Done
+Done
+[0;32mI (307582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34676[0m
+Done
+Done
+[0;32mI (307702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49611[0m
+Done
+Done
+[0;32mI (307902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=894[0m
+Done
+Done
+[0;32mI (308102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53581[0m
+Done
+Done
+[0;32mI (308312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49048[0m
+Done
+Done
+[0;32mI (308712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31873[0m
+Done
+Done
+[0;32mI (308902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41459[0m
+Done
+Done
+[0;32mI (309152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=662[0m
+Done
+Done
+[0;32mI (309302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29045[0m
+Done
+Done
+[0;32mI (309502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7803[0m
+Done
+Done
+[0;32mI (309712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26116[0m
+Done
+Done
+[0;32mI (309892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42306[0m
+Done
+Done
+[0;32mI (310102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13807[0m
+Done
+Done
+[0;32mI (310312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24635[0m
+Done
+Done
+[0;32mI (310542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36319[0m
+Done
+Done
+[0;32mI (310702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58519[0m
+Done
+Done
+[0;32mI (310972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32018[0m
+Done
+Done
+[0;32mI (311092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7403[0m
+Done
+Done
+[0;32mI (311332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36964[0m
+Done
+Done
+[0;32mI (311492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5461[0m
+Done
+Done
+[0;32mI (311702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45519[0m
+Done
+Done
+[0;32mI (311962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11676[0m
+Done
+Done
+[0;32mI (312092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53369[0m
+Done
+Done
+[0;32mI (312302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61490[0m
+Done
+Done
+[0;32mI (312552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62073[0m
+Done
+Done
+[0;32mI (312722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63716[0m
+Done
+Done
+[0;32mI (312912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15606[0m
+Done
+Done
+[0;32mI (313112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55780[0m
+Done
+Done
+[0;32mI (313352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22650[0m
+Done
+Done
+[0;32mI (313572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1081[0m
+Done
+Done
+[0;32mI (313722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51462[0m
+Done
+Done
+[0;32mI (313952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17028[0m
+Done
+Done
+[0;32mI (314092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13117[0m
+Done
+Done
+[0;32mI (314312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11634[0m
+Done
+Done
+[0;32mI (314512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61375[0m
+Done
+Done
+[0;32mI (314702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50965[0m
+Done
+Done
+[0;32mI (314892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37577[0m
+Done
+Done
+[0;32mI (315182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40836[0m
+Done
+Done
+[0;32mI (315402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17430[0m
+Done
+Done
+[0;32mI (315512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38785[0m
+Done
+Done
+[0;32mI (315692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64332[0m
+Done
+Done
+[0;32mI (315922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16406[0m
+Done
+Done
+[0;32mI (316132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24406[0m
+Done
+Done
+[0;32mI (316312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16879[0m
+Done
+Done
+[0;32mI (316502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35643[0m
+Done
+Done
+[0;32mI (316702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32818[0m
+Done
+Done
+[0;32mI (316902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45347[0m
+Done
+Done
+[0;32mI (317162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7016[0m
+Done
+Done
+[0;32mI (317312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55571[0m
+Done
+Done
+[0;32mI (317522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60341[0m
+Done
+Done
+[0;32mI (317692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26743[0m
+Done
+Done
+[0;32mI (318012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17219[0m
+Done
+Done
+[0;32mI (318092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20665[0m
+Done
+Done
+[0;32mI (318342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21738[0m
+Done
+Done
+[0;32mI (318492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39364[0m
+Done
+Done
+[0;32mI (318712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36232[0m
+Done
+Done
+[0;32mI (318902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39770[0m
+Done
+Done
+[0;32mI (319112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5530[0m
+Done
+Done
+[0;32mI (319292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65257[0m
+Done
+Done
+[0;32mI (319512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31798[0m
+Done
+Done
+[0;32mI (319712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25829[0m
+Done
+Done
+[0;32mI (319962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24814[0m
+Done
+Done
+[0;32mI (320172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50550[0m
+Done
+Done
+[0;32mI (320292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6015[0m
+Done
+Done
+[0;32mI (320552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61206[0m
+Done
+Done
+[0;32mI (320782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32067[0m
+Done
+Done
+[0;32mI (320952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47587[0m
+Done
+Done
+[0;32mI (321122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36012[0m
+Done
+Done
+[0;32mI (321302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46877[0m
+Done
+Done
+[0;32mI (321542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16147[0m
+Done
+Done
+[0;32mI (321732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40918[0m
+Done
+Done
+[0;32mI (321892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=910[0m
+Done
+Done
+[0;32mI (322092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27376[0m
+Done
+Done
+[0;32mI (322402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8803[0m
+Done
+Done
+[0;32mI (322502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52388[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (323142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42447[0m
+[0;32mI (323172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3305[0m
+[0;32mI (323172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18694[0m
+Done
+Done
+[0;32mI (323352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55443[0m
+Done
+Done
+[0;32mI (323532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64339[0m
+Done
+Done
+[0;32mI (323722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36617[0m
+Done
+Done
+[0;32mI (323922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12620[0m
+Done
+Done
+[0;32mI (324112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40327[0m
+Done
+Done
+[0;32mI (324302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36694[0m
+Done
+Done
+[0;32mI (324492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45668[0m
+Done
+Done
+[0;32mI (324892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14183[0m
+Done
+Done
+[0;32mI (325102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40988[0m
+Done
+Done
+[0;32mI (325322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1093[0m
+Done
+Done
+[0;32mI (325542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27064[0m
+Done
+Done
+[0;32mI (325782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27376[0m
+Done
+Done
+[0;32mI (325922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15232[0m
+Done
+Done
+[0;32mI (326132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63365[0m
+Done
+Done
+[0;32mI (326332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62455[0m
+Done
+Done
+[0;32mI (326542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1670[0m
+Done
+Done
+[0;32mI (326792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2437[0m
+Done
+Done
+[0;32mI (326942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17488[0m
+Done
+Done
+[0;32mI (327162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4891[0m
+Done
+Done
+[0;32mI (327312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20117[0m
+Done
+Done
+[0;32mI (327522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4361[0m
+Done
+Done
+[0;32mI (327722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29506[0m
+Done
+Done
+[0;32mI (327962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55449[0m
+Done
+Done
+[0;32mI (328102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34174[0m
+Done
+Done
+[0;32mI (328422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19435[0m
+Done
+Done
+[0;32mI (328532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43994[0m
+Done
+Done
+Done
+Done
+[0;32mI (328902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23259[0m
+[0;32mI (328922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35948[0m
+Done
+Done
+[0;32mI (329132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2421[0m
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (333332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10598[0m
+[0;32mI (333352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60213[0m
+[0;32mI (333352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64606[0m
+[0;32mI (333362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58949[0m
+[0;32mI (333362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56698[0m
+[0;32mI (333362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24678[0m
+[0;32mI (333372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17140[0m
+[0;32mI (333372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53062[0m
+[0;32mI (333382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16334[0m
+[0;32mI (333392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42018[0m
+[0;32mI (333392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39039[0m
+[0;32mI (333402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52977[0m
+[0;32mI (333402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17294[0m
+[0;32mI (333412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6446[0m
+[0;32mI (333422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60181[0m
+[0;32mI (333422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23719[0m
+[0;32mI (333422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13443[0m
+[0;32mI (333432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2265[0m
+[0;32mI (333432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18960[0m
+[0;32mI (333442) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60881[0m
+Done
+Done
+[0;32mI (333502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43081[0m
+Done
+Done
+[0;32mI (333792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37625[0m
+Done
+Done
+[0;32mI (333922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39883[0m
+Done
+Done
+[0;32mI (334162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31321[0m
+Done
+Done
+[0;32mI (334362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12309[0m
+Done
+Done
+[0;32mI (334562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43673[0m
+Done
+Done
+[0;32mI (334762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8220[0m
+Done
+Done
+[0;32mI (334922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13899[0m
+Done
+Done
+[0;32mI (335152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7286[0m
+Done
+Done
+[0;32mI (335292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4188[0m
+Done
+Done
+[0;32mI (335492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30364[0m
+Done
+Done
+[0;32mI (335742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4949[0m
+Done
+Done
+[0;32mI (335972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6793[0m
+Done
+Done
+[0;32mI (336102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9327[0m
+Done
+Done
+[0;32mI (336342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9238[0m
+Done
+Done
+[0;32mI (336522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52075[0m
+Done
+Done
+[0;32mI (336872) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26134[0m
+Done
+Done
+[0;32mI (336912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53606[0m
+Done
+Done
+[0;32mI (337102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56647[0m
+Done
+Done
+[0;32mI (337302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4863[0m
+Done
+Done
+[0;32mI (337512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36130[0m
+Done
+Done
+[0;32mI (337712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57660[0m
+Done
+Done
+[0;32mI (337892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63287[0m
+Done
+Done
+[0;32mI (338172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34835[0m
+Done
+Done
+[0;32mI (338312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59034[0m
+Done
+Done
+[0;32mI (338552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27975[0m
+Done
+Done
+[0;32mI (338712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14604[0m
+Done
+Done
+[0;32mI (338932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9675[0m
+Done
+Done
+[0;32mI (339142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28910[0m
+Done
+Done
+[0;32mI (339462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63415[0m
+Done
+Done
+[0;32mI (339492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18962[0m
+Done
+Done
+[0;32mI (339752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51508[0m
+Done
+Done
+[0;32mI (339902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50807[0m
+Done
+Done
+[0;32mI (340382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31551[0m
+Done
+Done
+[0;32mI (340512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15718[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (341162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22245[0m
+[0;32mI (341192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55713[0m
+[0;32mI (341192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53438[0m
+Done
+Done
+[0;32mI (341292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7150[0m
+Done
+Done
+[0;32mI (341492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64860[0m
+Done
+Done
+[0;32mI (341732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5710[0m
+Done
+Done
+[0;32mI (341922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48484[0m
+Done
+Done
+[0;32mI (342112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14987[0m
+Done
+Done
+[0;32mI (342322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43134[0m
+Done
+Done
+[0;32mI (342512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55901[0m
+Done
+Done
+[0;32mI (342712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59834[0m
+Done
+Done
+[0;32mI (342972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27450[0m
+Done
+Done
+[0;32mI (343142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43163[0m
+Done
+Done
+[0;32mI (343332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34107[0m
+Done
+Done
+[0;32mI (343542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17057[0m
+Done
+Done
+[0;32mI (343702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=960[0m
+Done
+Done
+[0;32mI (343902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34329[0m
+Done
+Done
+[0;32mI (344122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39309[0m
+Done
+Done
+[0;32mI (344322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55301[0m
+Done
+Done
+[0;32mI (344512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23585[0m
+Done
+Done
+[0;32mI (344702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58107[0m
+Done
+Done
+[0;32mI (344902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19609[0m
+Done
+Done
+[0;32mI (345262) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32339[0m
+Done
+Done
+[0;32mI (345292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39002[0m
+Done
+Done
+[0;32mI (345532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63994[0m
+Done
+Done
+[0;32mI (345732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14658[0m
+Done
+Done
+[0;32mI (346012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1045[0m
+Done
+Done
+Done
+Done
+[0;32mI (346392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11054[0m
+[0;32mI (346412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54717[0m
+Done
+Done
+[0;32mI (346522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60690[0m
+Done
+Done
+[0;32mI (346712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42134[0m
+Done
+Done
+[0;32mI (347022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29644[0m
+Done
+Done
+[0;32mI (347182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30078[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (347752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35233[0m
+[0;32mI (347772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65520[0m
+[0;32mI (347772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52016[0m
+Done
+Done
+[0;32mI (347912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49005[0m
+Done
+Done
+[0;32mI (348132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20088[0m
+Done
+Done
+[0;32mI (348382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34566[0m
+Done
+Done
+[0;32mI (348512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30908[0m
+Done
+Done
+[0;32mI (348692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24248[0m
+Done
+Done
+[0;32mI (348902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41786[0m
+Done
+Done
+[0;32mI (349102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46340[0m
+Done
+Done
+[0;32mI (349302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60556[0m
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (349972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64494[0m
+[0;32mI (349982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41518[0m
+[0;32mI (349982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52028[0m
+Done
+Done
+[0;32mI (350122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40727[0m
+Done
+Done
+[0;32mI (350402) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28648[0m
+Done
+Done
+[0;32mI (350552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10749[0m
+Done
+Done
+[0;32mI (350702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11628[0m
+Done
+Done
+[0;32mI (350902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29830[0m
+Done
+Done
+[0;32mI (351122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56244[0m
+Done
+Done
+[0;32mI (351322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55486[0m
+Done
+Done
+[0;32mI (351512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34384[0m
+Done
+Done
+[0;32mI (351702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31929[0m
+Done
+Done
+[0;32mI (351932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9730[0m
+Done
+Done
+[0;32mI (352182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28374[0m
+Done
+Done
+[0;32mI (352422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11804[0m
+Done
+Done
+[0;32mI (352622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2702[0m
+Done
+Done
+[0;32mI (352722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2356[0m
+Done
+Done
+[0;32mI (352922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48238[0m
+Done
+Done
+[0;32mI (353142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32972[0m
+Done
+Done
+[0;32mI (353342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1249[0m
+Done
+Done
+[0;32mI (353632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4462[0m
+Done
+Done
+[0;32mI (353822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35381[0m
+Done
+Done
+[0;32mI (353902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20404[0m
+Done
+Done
+[0;32mI (354092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64622[0m
+Done
+Done
+[0;32mI (354492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=562[0m
+Done
+Done
+[0;32mI (354742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60127[0m
+Done
+Done
+[0;32mI (354902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47729[0m
+Done
+Done
+[0;32mI (355152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56848[0m
+Done
+Done
+[0;32mI (355342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26196[0m
+Done
+Done
+[0;32mI (355552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5055[0m
+Done
+Done
+[0;32mI (355692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12774[0m
+Done
+Done
+[0;32mI (355912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20585[0m
+Done
+Done
+[0;32mI (356192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57884[0m
+Done
+Done
+[0;32mI (356412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49076[0m
+Done
+Done
+[0;32mI (356552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40394[0m
+Done
+Done
+[0;32mI (356762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6121[0m
+Done
+Done
+[0;32mI (356942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23251[0m
+Done
+Done
+[0;32mI (357162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56947[0m
+Done
+Done
+[0;32mI (357362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32317[0m
+Done
+Done
+[0;32mI (357492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61744[0m
+Done
+Done
+[0;32mI (357742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47887[0m
+Done
+Done
+[0;32mI (357942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48583[0m
+Done
+Done
+[0;32mI (358132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60876[0m
+Done
+Done
+[0;32mI (358332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37239[0m
+Done
+Done
+[0;32mI (358522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32421[0m
+Done
+Done
+[0;32mI (358782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51385[0m
+Done
+Done
+[0;32mI (358992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61796[0m
+Done
+Done
+[0;32mI (359192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14846[0m
+Done
+Done
+[0;32mI (359312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54303[0m
+Done
+Done
+[0;32mI (359652) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26933[0m
+Done
+Done
+[0;32mI (359762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29705[0m
+Done
+Done
+[0;32mI (359922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22467[0m
+Done
+Done
+[0;32mI (360152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23343[0m
+Done
+Done
+[0;32mI (360372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48513[0m
+Done
+Done
+[0;32mI (360632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50036[0m
+Done
+Done
+[0;32mI (360702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33540[0m
+Done
+Done
+[0;32mI (360892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33524[0m
+Done
+Done
+[0;32mI (361112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30589[0m
+Done
+Done
+Done
+Done
+[0;32mI (361552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20194[0m
+[0;32mI (361562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28801[0m
+Done
+Done
+[0;32mI (361772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35154[0m
+Done
+Done
+[0;32mI (361912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23978[0m
+Done
+Done
+[0;32mI (362212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50315[0m
+Done
+Done
+[0;32mI (362322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63773[0m
+Done
+Done
+[0;32mI (362502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13220[0m
+Done
+Done
+Done
+Done
+[0;32mI (362892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16889[0m
+[0;32mI (362902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62882[0m
+Done
+Done
+[0;32mI (363092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42856[0m
+Done
+Done
+[0;32mI (363332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21263[0m
+Done
+Done
+[0;32mI (363542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32059[0m
+Done
+Done
+[0;32mI (363742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47156[0m
+Done
+Done
+[0;32mI (363952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7258[0m
+Done
+Done
+[0;32mI (364142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60740[0m
+Done
+Done
+[0;32mI (364372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59714[0m
+Done
+Done
+[0;32mI (364512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17709[0m
+Done
+Done
+[0;32mI (364722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53451[0m
+Done
+Done
+[0;32mI (364922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62667[0m
+Done
+Done
+[0;32mI (365152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62337[0m
+Done
+Done
+[0;32mI (365362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62742[0m
+Done
+Done
+[0;32mI (365502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45192[0m
+Done
+Done
+[0;32mI (365852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52227[0m
+Done
+Done
+[0;32mI (365992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23881[0m
+Done
+Done
+[0;32mI (366092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53080[0m
+Done
+Done
+[0;32mI (366352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23922[0m
+Done
+Done
+[0;32mI (366562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31348[0m
+Done
+Done
+[0;32mI (366772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17602[0m
+Done
+Done
+[0;32mI (366892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61310[0m
+Done
+Done
+[0;32mI (367142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1869[0m
+Done
+Done
+[0;32mI (367352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35393[0m
+Done
+Done
+[0;32mI (367592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6919[0m
+Done
+Done
+[0;32mI (367702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32590[0m
+Done
+Done
+[0;32mI (368192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64466[0m
+Done
+Done
+[0;32mI (368332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41171[0m
+Done
+Done
+[0;32mI (368552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39920[0m
+Done
+Done
+[0;32mI (368712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28101[0m
+Done
+Done
+[0;32mI (368912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35168[0m
+Done
+Done
+[0;32mI (369122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56969[0m
+Done
+Done
+[0;32mI (369342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39608[0m
+Done
+Done
+[0;32mI (369492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17595[0m
+Done
+Done
+[0;32mI (369692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19422[0m
+Done
+Done
+[0;32mI (369902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55217[0m
+Done
+Done
+[0;32mI (370202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55703[0m
+Done
+Done
+[0;32mI (370362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28622[0m
+Done
+Done
+[0;32mI (370582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15932[0m
+Done
+Done
+[0;32mI (370732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59272[0m
+Done
+Done
+[0;32mI (370932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55607[0m
+Done
+Done
+[0;32mI (371132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48749[0m
+Done
+Done
+[0;32mI (371322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62845[0m
+Done
+Done
+[0;32mI (371622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43363[0m
+Done
+Done
+[0;32mI (371702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10094[0m
+Done
+Done
+[0;32mI (371892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46244[0m
+Done
+Done
+[0;32mI (372162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48756[0m
+Done
+Done
+[0;32mI (372352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52514[0m
+Done
+Done
+[0;32mI (372512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38493[0m
+Done
+Done
+[0;32mI (372732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45369[0m
+Done
+Done
+[0;32mI (372962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34891[0m
+Done
+Done
+[0;32mI (373102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=975[0m
+Done
+Done
+[0;32mI (373292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1652[0m
+Done
+Done
+[0;32mI (373532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58403[0m
+Done
+Done
+[0;32mI (373732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20183[0m
+Done
+Done
+[0;32mI (373962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56724[0m
+Done
+Done
+[0;32mI (374112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41263[0m
+Done
+Done
+[0;32mI (374392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49207[0m
+Done
+Done
+[0;32mI (374662) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32625[0m
+Done
+Done
+[0;32mI (374702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19380[0m
+Done
+Done
+[0;32mI (374932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28747[0m
+Done
+Done
+[0;32mI (375112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33678[0m
+Done
+Done
+[0;32mI (375452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39655[0m
+Done
+Done
+[0;32mI (375502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46785[0m
+Done
+Done
+[0;32mI (375702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48545[0m
+Done
+Done
+[0;32mI (375892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27794[0m
+Done
+Done
+[0;32mI (376122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58519[0m
+Done
+Done
+[0;32mI (376312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36428[0m
+Done
+Done
+[0;32mI (376502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48644[0m
+Done
+Done
+[0;32mI (376902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25528[0m
+Done
+Done
+[0;32mI (377162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41120[0m
+Done
+Done
+[0;32mI (377322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9468[0m
+Done
+Done
+[0;32mI (377592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20427[0m
+Done
+Done
+[0;32mI (377762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42037[0m
+Done
+Done
+[0;32mI (377902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51347[0m
+Done
+Done
+[0;32mI (378102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58143[0m
+Done
+Done
+[0;32mI (378332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49202[0m
+Done
+Done
+[0;32mI (378502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54657[0m
+Done
+Done
+[0;32mI (378712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45173[0m
+Done
+Done
+[0;32mI (378982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51039[0m
+Done
+Done
+[0;32mI (379112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51482[0m
+Done
+Done
+[0;32mI (379342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4925[0m
+Done
+Done
+[0;32mI (379502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58118[0m
+Done
+Done
+[0;32mI (379722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33230[0m
+Done
+Done
+[0;32mI (379922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45505[0m
+Done
+Done
+[0;32mI (380152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29869[0m
+Done
+Done
+[0;32mI (380322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45760[0m
+Done
+Done
+[0;32mI (380492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28153[0m
+Done
+Done
+[0;32mI (380702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53129[0m
+Done
+Done
+[0;32mI (380922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3658[0m
+Done
+Done
+[0;32mI (381232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40090[0m
+Done
+Done
+[0;32mI (381362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39378[0m
+Done
+Done
+[0;32mI (381562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59484[0m
+Done
+Done
+[0;32mI (381702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65473[0m
+Done
+Done
+[0;32mI (381982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30855[0m
+Done
+Done
+[0;32mI (382132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=575[0m
+Done
+Done
+[0;32mI (382332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43761[0m
+Done
+Done
+[0;32mI (382542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41570[0m
+Done
+Done
+[0;32mI (382722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5940[0m
+Done
+Done
+[0;32mI (382942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45197[0m
+Done
+Done
+[0;32mI (383102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22046[0m
+Done
+Done
+[0;32mI (383302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53219[0m
+Done
+Done
+[0;32mI (383502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40968[0m
+Done
+Done
+[0;32mI (383762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65316[0m
+Done
+Done
+[0;32mI (383932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14146[0m
+Done
+Done
+[0;32mI (384172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1683[0m
+Done
+Done
+[0;32mI (384312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37865[0m
+Done
+Done
+[0;32mI (384542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51000[0m
+Done
+Done
+[0;32mI (384712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64570[0m
+Done
+Done
+[0;32mI (384912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10898[0m
+Done
+Done
+[0;32mI (385252) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54549[0m
+Done
+Done
+[0;32mI (385312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26329[0m
+Done
+Done
+[0;32mI (385512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27334[0m
+Done
+Done
+[0;32mI (385742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1493[0m
+Done
+Done
+[0;32mI (385892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56057[0m
+Done
+Done
+[0;32mI (386142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40013[0m
+Done
+Done
+[0;32mI (386282) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23187[0m
+Done
+Done
+[0;32mI (386552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30267[0m
+Done
+Done
+[0;32mI (386752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39259[0m
+Done
+Done
+[0;32mI (386922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=747[0m
+Done
+Done
+[0;32mI (387122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10758[0m
+Done
+Done
+[0;32mI (387302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41445[0m
+Done
+Done
+[0;32mI (387552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=415[0m
+Done
+Done
+[0;32mI (387702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11807[0m
+Done
+Done
+[0;32mI (387902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56758[0m
+Done
+Done
+[0;32mI (388212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49818[0m
+Done
+Done
+[0;32mI (388322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62854[0m
+Done
+Done
+[0;32mI (388542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14884[0m
+Done
+Done
+[0;32mI (388932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26427[0m
+Done
+Done
+[0;32mI (389142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1269[0m
+Done
+Done
+[0;32mI (389362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60017[0m
+Done
+Done
+[0;32mI (389522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15964[0m
+Done
+Done
+[0;32mI (389692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54967[0m
+Done
+Done
+[0;32mI (390032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6976[0m
+Done
+Done
+[0;32mI (390192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38823[0m
+Done
+Done
+[0;32mI (390382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1228[0m
+Done
+Done
+[0;32mI (390552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33667[0m
+Done
+Done
+[0;32mI (390782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45232[0m
+Done
+Done
+[0;32mI (390952) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44829[0m
+Done
+Done
+[0;32mI (391182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47681[0m
+Done
+Done
+[0;32mI (391352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52814[0m
+Done
+Done
+[0;32mI (391502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22149[0m
+Done
+Done
+[0;32mI (391742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57486[0m
+Done
+Done
+[0;32mI (391922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51348[0m
+Done
+Done
+[0;32mI (392172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14439[0m
+Done
+Done
+[0;32mI (392292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48492[0m
+Done
+Done
+[0;32mI (392582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24142[0m
+Done
+Done
+[0;32mI (392802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21623[0m
+Done
+Done
+[0;32mI (392942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60432[0m
+Done
+Done
+[0;32mI (393122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5294[0m
+Done
+Done
+[0;32mI (393372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21879[0m
+Done
+Done
+[0;32mI (393512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62052[0m
+Done
+Done
+[0;32mI (393702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5219[0m
+Done
+Done
+[0;32mI (393902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51131[0m
+Done
+Done
+[0;32mI (394142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62305[0m
+Done
+Done
+[0;32mI (394292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53873[0m
+Done
+Done
+Done
+Done
+[0;32mI (394812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55708[0m
+[0;32mI (394822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15932[0m
+Done
+Done
+[0;32mI (394882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46654[0m
+Done
+Done
+[0;32mI (395142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31355[0m
+Done
+Done
+[0;32mI (395352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63197[0m
+Done
+Done
+[0;32mI (395562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14425[0m
+Done
+Done
+Done
+Done
+[0;32mI (395962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56220[0m
+[0;32mI (395972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35420[0m
+Done
+Done
+Done
+Done
+[0;32mI (396372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61534[0m
+[0;32mI (396462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48689[0m
+Done
+Done
+[0;32mI (396532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36051[0m
+Done
+Done
+[0;32mI (396732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12024[0m
+Done
+Done
+Done
+Done
+[0;32mI (397132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8619[0m
+[0;32mI (397182) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38519[0m
+Done
+Done
+[0;32mI (397392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7329[0m
+Done
+Done
+[0;32mI (397592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27089[0m
+Done
+Done
+[0;32mI (397842) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64648[0m
+Done
+Done
+[0;32mI (398012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33964[0m
+Done
+Done
+[0;32mI (398222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32563[0m
+Done
+Done
+[0;32mI (398322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52051[0m
+Done
+Done
+[0;32mI (398502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6771[0m
+Done
+Done
+[0;32mI (398712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49826[0m
+Done
+Done
+[0;32mI (398912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59256[0m
+Done
+Done
+[0;32mI (399192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7758[0m
+Done
+Done
+[0;32mI (399392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52370[0m
+Done
+Done
+[0;32mI (399572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56677[0m
+Done
+Done
+[0;32mI (399812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43833[0m
+Done
+Done
+Done
+Done
+[0;32mI (400122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14560[0m
+[0;32mI (400212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45019[0m
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+Done
+[0;32mI (401372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45135[0m
+[0;32mI (401392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11379[0m
+[0;32mI (401442) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52534[0m
+[0;32mI (401452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41405[0m
+[0;32mI (401452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48590[0m
+[0;32mI (401452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18788[0m
+Done
+Done
+[0;32mI (401612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15293[0m
+Done
+Done
+[0;32mI (401762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58928[0m
+Done
+Done
+[0;32mI (401912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17017[0m
+Done
+Done
+[0;32mI (402142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49608[0m
+Done
+Done
+[0;32mI (402322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62813[0m
+Done
+Done
+[0;32mI (402502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33479[0m
+Done
+Done
+[0;32mI (402732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63852[0m
+Done
+Done
+[0;32mI (402932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43729[0m
+Done
+Done
+[0;32mI (403132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26445[0m
+Done
+Done
+[0;32mI (403422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39617[0m
+Done
+Done
+[0;32mI (403532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60246[0m
+Done
+Done
+[0;32mI (403702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=715[0m
+Done
+Done
+[0;32mI (403892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65522[0m
+Done
+Done
+[0;32mI (404342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39341[0m
+Done
+Done
+[0;32mI (404522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15573[0m
+Done
+Done
+[0;32mI (404702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4114[0m
+Done
+Done
+[0;32mI (404902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50979[0m
+Done
+Done
+[0;32mI (405102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56657[0m
+Done
+Done
+[0;32mI (405302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16166[0m
+Done
+Done
+[0;32mI (405502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13734[0m
+Done
+Done
+[0;32mI (405802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43454[0m
+Done
+Done
+[0;32mI (405902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11219[0m
+Done
+Done
+[0;32mI (406102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10838[0m
+Done
+Done
+[0;32mI (406302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12480[0m
+Done
+Done
+[0;32mI (406542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11633[0m
+Done
+Done
+[0;32mI (406812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37537[0m
+Done
+Done
+[0;32mI (407022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60888[0m
+Done
+Done
+[0;32mI (407132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54423[0m
+Done
+Done
+[0;32mI (407392) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29629[0m
+Done
+Done
+[0;32mI (407642) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49110[0m
+Done
+Done
+[0;32mI (407712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38624[0m
+Done
+Done
+[0;32mI (408032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18113[0m
+Done
+Done
+[0;32mI (408192) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9327[0m
+Done
+Done
+Done
+Done
+[0;32mI (408482) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22851[0m
+[0;32mI (408512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22090[0m
+Done
+Done
+[0;32mI (408752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1173[0m
+Done
+Done
+[0;32mI (408902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55750[0m
+Done
+Done
+Done
+Done
+[0;32mI (409322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44426[0m
+[0;32mI (409322) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19622[0m
+Done
+Done
+[0;32mI (409492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30955[0m
+Done
+Done
+[0;32mI (409692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42242[0m
+Done
+Done
+[0;32mI (409982) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27374[0m
+Done
+Done
+[0;32mI (410212) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9568[0m
+Done
+Done
+[0;32mI (410362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33044[0m
+Done
+Done
+[0;32mI (410642) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2892[0m
+Done
+Done
+[0;32mI (410712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45278[0m
+Done
+Done
+Done
+Done
+[0;32mI (411132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38338[0m
+[0;32mI (411152) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40217[0m
+Done
+Done
+[0;32mI (411342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27771[0m
+Done
+Done
+[0;32mI (411562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57771[0m
+Done
+Done
+[0;32mI (411762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43840[0m
+Done
+Done
+Done
+Done
+[0;32mI (412232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30609[0m
+Done
+Done
+[0;32mI (412282) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28778[0m
+[0;32mI (412452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25599[0m
+Done
+Done
+[0;32mI (412492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30560[0m
+Done
+Done
+[0;32mI (412832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18331[0m
+Done
+Done
+[0;32mI (413002) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39775[0m
+Done
+Done
+[0;32mI (413172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59928[0m
+Done
+Done
+[0;32mI (413372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50636[0m
+Done
+Done
+[0;32mI (413682) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45942[0m
+Done
+Done
+[0;32mI (413892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19379[0m
+Done
+Done
+[0;32mI (414142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1182[0m
+Done
+Done
+[0;32mI (414302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36736[0m
+Done
+Done
+[0;32mI (414502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55783[0m
+Done
+Done
+[0;32mI (414852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26281[0m
+Done
+Done
+[0;32mI (414922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44234[0m
+Done
+Done
+[0;32mI (415082) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34993[0m
+Done
+Done
+[0;32mI (415372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21780[0m
+Done
+Done
+[0;32mI (415492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57250[0m
+Done
+Done
+[0;32mI (415722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9787[0m
+Done
+Done
+[0;32mI (415922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52150[0m
+Done
+Done
+[0;32mI (416122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27107[0m
+Done
+Done
+[0;32mI (416382) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11874[0m
+Done
+Done
+[0;32mI (416482) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36609[0m
+Done
+Done
+[0;32mI (416692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54401[0m
+Done
+Done
+[0;32mI (416932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9625[0m
+Done
+Done
+[0;32mI (417202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35545[0m
+Done
+Done
+[0;32mI (417302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37328[0m
+Done
+Done
+[0;32mI (417652) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12474[0m
+Done
+Done
+[0;32mI (417782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14082[0m
+Done
+Done
+[0;32mI (417972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33749[0m
+Done
+Done
+[0;32mI (418092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31564[0m
+Done
+Done
+[0;32mI (418292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46236[0m
+Done
+Done
+[0;32mI (418492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39612[0m
+Done
+Done
+[0;32mI (418692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56103[0m
+Done
+Done
+[0;32mI (418892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6475[0m
+Done
+Done
+[0;32mI (419132) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58756[0m
+Done
+Done
+[0;32mI (419312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47784[0m
+Done
+Done
+[0;32mI (419512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39449[0m
+Done
+Done
+[0;32mI (419802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30062[0m
+Done
+Done
+[0;32mI (419882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63399[0m
+Done
+Done
+[0;32mI (420122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28087[0m
+Done
+Done
+[0;32mI (420512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23003[0m
+Done
+Done
+[0;32mI (420702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5939[0m
+Done
+Done
+[0;32mI (420912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20700[0m
+Done
+Done
+[0;32mI (421092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6766[0m
+Done
+Done
+[0;32mI (421282) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59572[0m
+Done
+Done
+[0;32mI (421482) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37175[0m
+Done
+Done
+[0;32mI (421682) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51971[0m
+Done
+Done
+[0;32mI (421902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2133[0m
+Done
+Done
+[0;32mI (422082) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60053[0m
+Done
+Done
+[0;32mI (422352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29805[0m
+Done
+Done
+[0;32mI (422492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18356[0m
+Done
+Done
+[0;32mI (422692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50304[0m
+Done
+Done
+[0;32mI (422892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40515[0m
+Done
+Done
+[0;32mI (423112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62979[0m
+Done
+Done
+[0;32mI (423302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25489[0m
+Done
+Done
+[0;32mI (423512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15664[0m
+Done
+Done
+[0;32mI (423712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63029[0m
+Done
+Done
+[0;32mI (423902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39194[0m
+Done
+Done
+[0;32mI (424092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59502[0m
+Done
+Done
+[0;32mI (424312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30437[0m
+Done
+Done
+[0;32mI (424542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58513[0m
+Done
+Done
+[0;32mI (424702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1209[0m
+Done
+Done
+[0;32mI (424942) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14061[0m
+Done
+Done
+[0;32mI (425092) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53380[0m
+Done
+Done
+[0;32mI (425352) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47332[0m
+Done
+Done
+[0;32mI (425552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32510[0m
+Done
+Done
+[0;32mI (425702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1891[0m
+Done
+Done
+[0;32mI (426042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52541[0m
+Done
+Done
+[0;32mI (426242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45559[0m
+Done
+Done
+[0;32mI (426462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8195[0m
+Done
+Done
+[0;32mI (426512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42838[0m
+Done
+Done
+[0;32mI (426792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28843[0m
+Done
+Done
+[0;32mI (427022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10907[0m
+Done
+Done
+[0;32mI (427122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42724[0m
+Done
+Done
+[0;32mI (427332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42618[0m
+Done
+Done
+[0;32mI (427502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45995[0m
+Done
+Done
+[0;32mI (427712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56743[0m
+Done
+Done
+[0;32mI (427922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36572[0m
+Done
+Done
+[0;32mI (428222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14272[0m
+Done
+Done
+Done
+Done
+[0;32mI (428512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34007[0m
+[0;32mI (428582) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17861[0m
+Done
+Done
+[0;32mI (428702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56328[0m
+Done
+Done
+[0;32mI (428972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12768[0m
+Done
+Done
+[0;32mI (429142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27971[0m
+Done
+Done
+[0;32mI (429342) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7126[0m
+Done
+Done
+[0;32mI (429512) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59136[0m
+Done
+Done
+[0;32mI (429722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43124[0m
+Done
+Done
+[0;32mI (429902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63561[0m
+Done
+Done
+[0;32mI (430102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10298[0m
+Done
+Done
+[0;32mI (430332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35343[0m
+Done
+Done
+[0;32mI (430592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62776[0m
+Done
+Done
+[0;32mI (430862) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9589[0m
+Done
+Done
+[0;32mI (430932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16387[0m
+Done
+Done
+[0;32mI (431162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54866[0m
+Done
+Done
+[0;32mI (431292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17730[0m
+Done
+Done
+[0;32mI (431522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21357[0m
+Done
+Done
+[0;32mI (431712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29405[0m
+Done
+Done
+[0;32mI (431912) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38536[0m
+Done
+Done
+[0;32mI (432112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24494[0m
+Done
+Done
+[0;32mI (432302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41950[0m
+Done
+Done
+[0;32mI (432632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65445[0m
+Done
+Done
+[0;32mI (432812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12027[0m
+Done
+Done
+[0;32mI (432992) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16909[0m
+Done
+Done
+[0;32mI (433112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14996[0m
+Done
+Done
+[0;32mI (433462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6229[0m
+Done
+Done
+[0;32mI (433542) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12277[0m
+Done
+Done
+[0;32mI (433722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44287[0m
+Done
+Done
+[0;32mI (433902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20168[0m
+Done
+Done
+[0;32mI (434142) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36605[0m
+Done
+Done
+[0;32mI (434292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51552[0m
+Done
+Done
+[0;32mI (434652) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2846[0m
+Done
+Done
+Done
+Done
+[0;32mI (434962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54881[0m
+[0;32mI (435062) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17577[0m
+Done
+Done
+[0;32mI (435122) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49492[0m
+Done
+Done
+[0;32mI (435312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15836[0m
+Done
+Done
+[0;32mI (435502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45662[0m
+Done
+Done
+Done
+Done
+[0;32mI (435882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47522[0m
+Done
+Done
+[0;32mI (436082) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4371[0m
+[0;32mI (436102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42825[0m
+Done
+Done
+[0;32mI (436332) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58187[0m
+Done
+Done

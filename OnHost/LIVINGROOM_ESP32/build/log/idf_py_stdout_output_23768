@@ -1,0 +1,2112 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 29 2025 14:42:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26020h (155680) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00036048 vaddr=3ffb0000 size=03740h ( 14144) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=00039790 vaddr=40080000 size=06888h ( 26760) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=95bach (613292) map[0m
+[0;32mI (399) esp_image: segment 4: paddr=000d5bd4 vaddr=40086888 size=0fdc8h ( 64968) load[0m
+[0;32mI (438) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (438) boot: Disabling RNG early entropy source...[0m
+[0;32mI (449) cpu_start: Multicore app[0m
+[0;32mI (450) cpu_start: Pro cpu up.[0m
+[0;32mI (450) cpu_start: Starting app cpu, entry point is 0x40081470[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (468) cpu_start: Application information:[0m
+[0;32mI (472) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (478) cpu_start: App version:      1[0m
+[0;32mI (482) cpu_start: Compile time:     Nov 29 2025 14:40:03[0m
+[0;32mI (488) cpu_start: ELF file SHA256:  6bfd75a8a62bf9d4...[0m
+[0;32mI (494) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (499) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (504) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (509) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (514) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (521) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB7C78 len 00028388 (160 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (539) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (546) heap_init: At 40096650 len 000099B0 (38 KiB): IRAM[0m
+[0;32mI (553) spi_flash: detected chip: generic[0m
+[0;32mI (557) spi_flash: flash io: dio[0m
+[0;33mW (560) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (574) app_start: Starting scheduler on CPU0[0m
+[0;32mI (579) app_start: Starting scheduler on CPU1[0m
+[0;32mI (579) main_task: Started on CPU0[0m
+[0;32mI (589) main_task: Calling app_main()[0m
+[0;32mI (589) APP_MAIN: [APP] Startup..[0m
+[0;32mI (589) APP_MAIN: [APP] Free memory: 279768 bytes[0m
+[0;32mI (599) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (649) uart: queue free spaces: 20[0m
+[0;32mI (649) APP_UART: UART config sucessfuly![0m
+[0;32mI (659) wifi:wifi driver task: 3ffc34a4, prio:23, stack:6656, core=0[0m
+[0;32mI (679) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (679) wifi:wifi certification version: v7.0[0m
+[0;32mI (679) wifi:config NVS flash: enabled[0m
+[0;32mI (679) wifi:config nano formating: disabled[0m
+[0;32mI (689) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (689) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (699) wifi:Init management short buffer num: 32[0m
+[0;32mI (699) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (699) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (709) wifi:Init static rx buffer num: 10[0m
+[0;32mI (709) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (719) wifi_init: rx ba win: 6[0m
+[0;32mI (719) wifi_init: tcpip mbox: 32[0m
+[0;32mI (719) wifi_init: udp mbox: 6[0m
+[0;32mI (729) wifi_init: tcp mbox: 6[0m
+[0;32mI (729) wifi_init: tcp tx win: 5744[0m
+[0;32mI (739) wifi_init: tcp rx win: 5744[0m
+[0;32mI (739) wifi_init: tcp mss: 1440[0m
+[0;32mI (739) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (749) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (749) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (759) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (759) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (769) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (829) APP_UART: ldr: 973.87[0m
+[0;32mI (879) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (879) wifi:enable tsf[0m
+[0;32mI (899) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (899) wifi:state: init -> auth (b0)[0m
+[0;32mI (919) wifi:state: auth -> assoc (0)[0m
+[0;32mI (939) wifi:state: assoc -> run (10)[0m
+[0;32mI (949) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (959) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (959) wifi:pm start, type: 1[0m
+
+[0;32mI (969) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:0, winSize:64[0m
+[0;32mI (1009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (1019) APP_UART: ldr: 970.45[0m
+[0;32mI (1039) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (1219) APP_UART: ldr: 969.96[0m
+[0;32mI (1409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (1419) APP_UART: ldr: 968.01[0m
+[0;32mI (1609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (1619) APP_UART: ldr: 969.96[0m
+[0;32mI (1809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (1819) APP_UART: ldr: 966.06[0m
+[0;32mI (2009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (2019) APP_UART: ldr: 966.54[0m
+[0;32mI (2209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (2219) APP_UART: ldr: 967.52[0m
+[0;32mI (2409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (2419) APP_UART: ldr: 967.03[0m
+[0;32mI (2609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (2669) APP_UART: ldr: 966.06[0m
+[0;32mI (2779) wifi:<ba-add>idx:1 (ifx:0, d4:e8:53:c5:c9:e1), tid:3, ssn:2, winSize:64[0m
+[0;32mI (2809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (2819) APP_UART: ldr: 968.01[0m
+[0;32mI (3009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (3019) APP_UART: ldr: 968.99[0m
+[0;32mI (3209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (3219) APP_UART: ldr: 974.36[0m
+[0;32mI (3409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (3419) APP_UART: ldr: 980.22[0m
+[0;32mI (3609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (3619) APP_UART: ldr: 927.96[0m
+[0;32mI (3809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (3819) APP_UART: ldr: 973.87[0m
+[0;32mI (3959) CONFIG_WIFI: got ip:192.168.54.187[0m
+[0;32mI (3959) esp_netif_handlers: sta ip: 192.168.54.187, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (3959) CONFIG_WIFI: wifi connected[0m
+[0;32mI (4009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (4019) APP_UART: ldr: 994.87[0m
+[0;32mI (4209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (4219) APP_UART: ldr: 933.33[0m
+[0;32mI (4409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (4419) APP_UART: ldr: 988.03[0m
+[0;32mI (4469) main_task: Returned from app_main()[0m
+[0;32mI (4609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (4619) APP_UART: ldr: 939.68[0m
+[0;32mI (4809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (4819) APP_UART: ldr: 983.64[0m
+[0;32mI (5009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (5019) APP_UART: ldr: 953.36[0m
+[0;32mI (5209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (5219) APP_UART: ldr: 990.96[0m
+[0;32mI (5409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (5419) APP_UART: ldr: 960.20[0m
+[0;32mI (5609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (5619) APP_UART: ldr: 994.38[0m
+[0;32mI (5809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (5819) APP_UART: ldr: 957.26[0m
+[0;32mI (6009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (6019) APP_UART: ldr: 989.50[0m
+[0;32mI (6209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (6219) APP_UART: ldr: 953.36[0m
+[0;32mI (6409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (6419) APP_UART: ldr: 991.45[0m
+[0;32mI (6609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (6619) APP_UART: ldr: 949.45[0m
+[0;32mI (6809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (6819) APP_UART: ldr: 990.48[0m
+[0;32mI (7009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (7019) APP_UART: ldr: 953.36[0m
+[0;32mI (7209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (7219) APP_UART: ldr: 987.55[0m
+[0;32mI (7409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (7419) APP_UART: ldr: 952.38[0m
+[0;32mI (7609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (7619) APP_UART: ldr: 987.06[0m
+[0;32mI (7809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (7819) APP_UART: ldr: 947.01[0m
+[0;32mI (8009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (8019) APP_UART: ldr: 983.64[0m
+[0;32mI (8209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (8219) APP_UART: ldr: 994.87[0m
+[0;32mI (8409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (8419) APP_UART: ldr: 946.52[0m
+[0;32mI (8609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (8619) APP_UART: ldr: 981.68[0m
+[0;32mI (8809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (8819) APP_UART: ldr: 986.57[0m
+[0;32mI (9009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (9019) APP_UART: ldr: 978.75[0m
+[0;32mI (9209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (9219) APP_UART: ldr: 970.45[0m
+[0;32mI (9409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (9419) APP_UART: ldr: 963.13[0m
+[0;32mI (9609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (9619) APP_UART: ldr: 962.15[0m
+[0;32mI (10009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (10019) APP_UART: mq2: 1008.55[0m
+[0;32mI (10409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (10419) APP_UART: mq2: 1054.46[0m
+[0;32mI (10609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (10619) APP_UART: mq2: 1025.15[0m
+[0;32mI (10809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (10819) APP_UART: ldr: 968.01[0m
+[0;32mI (11009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (11019) APP_UART: ldr: 978.27[0m
+[0;32mI (11209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (11219) APP_UART: ldr: 971.92[0m
+[0;32mI (11409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (11419) APP_UART: ldr: 1001.71[0m
+[0;32mI (11609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (11619) APP_UART: ldr: 959.71[0m
+[0;32mI (11809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (11819) APP_UART: ldr: 975.82[0m
+[0;32mI (12009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (12019) APP_UART: ldr: 993.41[0m
+[0;32mI (12209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (12219) APP_UART: ldr: 958.73[0m
+[0;32mI (12409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (12419) APP_UART: ldr: 1004.15[0m
+[0;32mI (12609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (12619) APP_UART: ldr: 966.06[0m
+[0;32mI (12809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (12819) APP_UART: ldr: 993.41[0m
+[0;32mI (13009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (13019) APP_UART: ldr: 953.36[0m
+[0;32mI (13209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (13219) APP_UART: ldr: 991.45[0m
+[0;32mI (13409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (13419) APP_UART: ldr: 954.33[0m
+[0;32mI (13609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (13619) APP_UART: ldr: 988.03[0m
+[0;32mI (13809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (13819) APP_UART: ldr: 953.85[0m
+[0;32mI (14009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (14019) APP_UART: ldr: 989.50[0m
+[0;32mI (14209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (14219) APP_UART: ldr: 949.45[0m
+[0;32mI (14409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (14419) APP_UART: ldr: 987.55[0m
+[0;32mI (14609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (14619) APP_UART: ldr: 994.87[0m
+[0;32mI (14809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (14819) APP_UART: ldr: 944.57[0m
+[0;32mI (15009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (15019) APP_UART: ldr: 980.22[0m
+[0;32mI (15209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (15219) APP_UART: ldr: 989.50[0m
+[0;32mI (15409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (15419) APP_UART: ldr: 978.75[0m
+[0;32mI (15609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (15619) APP_UART: ldr: 967.03[0m
+[0;32mI (15809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (15819) APP_UART: ldr: 962.15[0m
+[0;32mI (16009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (16019) APP_UART: ldr: 963.13[0m
+[0;32mI (16209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (16219) APP_UART: ldr: 961.66[0m
+[0;32mI (16409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (16419) APP_UART: ldr: 963.13[0m
+[0;32mI (16609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (16619) APP_UART: ldr: 964.59[0m
+[0;32mI (16809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (16819) APP_UART: ldr: 965.08[0m
+[0;32mI (17009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (17019) APP_UART: ldr: 966.54[0m
+[0;32mI (17209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (17219) APP_UART: ldr: 971.92[0m
+[0;32mI (17409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (17419) APP_UART: ldr: 984.62[0m
+[0;32mI (17609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (17619) APP_UART: ldr: 930.40[0m
+[0;32mI (17809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (17819) APP_UART: ldr: 991.45[0m
+[0;32mI (18009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (18019) APP_UART: ldr: 930.89[0m
+[0;32mI (18209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (18219) APP_UART: ldr: 982.66[0m
+[0;32mI (18409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (18419) APP_UART: ldr: 957.26[0m
+[0;32mI (18609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (18619) APP_UART: ldr: 990.48[0m
+[0;32mI (18809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (18819) APP_UART: ldr: 964.10[0m
+[0;32mI (19009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (19019) APP_UART: ldr: 995.85[0m
+[0;32mI (19209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (19219) APP_UART: ldr: 956.29[0m
+[0;32mI (19409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (19419) APP_UART: ldr: 992.43[0m
+[0;32mI (19609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (19619) APP_UART: ldr: 951.89[0m
+[0;32mI (19809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (19819) APP_UART: ldr: 989.01[0m
+[0;32mI (20009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (20019) APP_UART: ldr: 953.36[0m
+[0;32mI (20209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (20219) APP_UART: ldr: 989.50[0m
+[0;32mI (20409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (20419) APP_UART: ldr: 950.43[0m
+[0;32mI (20609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (20619) APP_UART: ldr: 989.50[0m
+[0;32mI (20809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (20819) APP_UART: ldr: 948.96[0m
+[0;32mI (21009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (21019) APP_UART: ldr: 982.66[0m
+[0;32mI (21209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (21219) APP_UART: ldr: 995.85[0m
+[0;32mI (21409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (21419) APP_UART: ldr: 945.54[0m
+[0;32mI (21609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (21619) APP_UART: ldr: 978.27[0m
+[0;32mI (21809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (21819) APP_UART: ldr: 976.80[0m
+[0;32mI (22209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (22219) APP_UART: ldr: 969.96[0m
+[0;32mI (22409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (22419) APP_UART: mq2: 1057.88[0m
+[0;32mI (22609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (22619) APP_UART: mq2: 1023.20[0m
+[0;32mI (22809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (22819) APP_UART: mq2: 1010.99[0m
+[0;32mI (23009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (23019) APP_UART: mq2: 1059.83[0m
+[0;32mI (23209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (23219) APP_UART: mq2: 1021.25[0m
+[0;32mI (23409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (23419) APP_UART: mq2: 1010.01[0m
+[0;32mI (23609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (23619) APP_UART: mq2: 1052.01[0m
+[0;32mI (23809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (23819) APP_UART: mq2: 1005.13[0m
+[0;32mI (24009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (24019) APP_UART: mq2: 1045.67[0m
+[0;32mI (24209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (24219) APP_UART: mq2: 987.55[0m
+[0;32mI (24409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (24419) APP_UART: mq2: 1012.94[0m
+[0;32mI (24609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (24619) APP_UART: mq2: 1034.43[0m
+[0;32mI (24809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (24819) APP_UART: mq2: 989.99[0m
+[0;32mI (25009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (25019) APP_UART: mq2: 1007.57[0m
+[0;32mI (25209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (25219) APP_UART: mq2: 1020.76[0m
+[0;32mI (25409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (25419) APP_UART: mq2: 1022.71[0m
+[0;32mI (25609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (25619) APP_UART: mq2: 1028.08[0m
+[0;32mI (25809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (25819) APP_UART: mq2: 975.82[0m
+[0;32mI (26009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (26019) APP_UART: mq2: 1001.71[0m
+[0;32mI (26209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (26269) APP_UART: mq2: 1024.66[0m
+[0;32mI (26409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (26419) APP_UART: mq2: 976.31[0m
+[0;32mI (26609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (26619) APP_UART: mq2: 1004.15[0m
+[0;32mI (26809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (26819) APP_UART: mq2: 1024.66[0m
+[0;32mI (27009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (27019) APP_UART: mq2: 977.78[0m
+[0;32mI (27209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (27219) APP_UART: mq2: 1005.13[0m
+[0;32mI (27409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (27419) APP_UART: mq2: 1026.13[0m
+[0;32mI (27609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (27619) APP_UART: mq2: 978.75[0m
+[0;32mI (27809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (27819) APP_UART: mq2: 1009.04[0m
+[0;32mI (28009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (28019) APP_UART: mq2: 1030.53[0m
+[0;32mI (28209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (28219) APP_UART: mq2: 985.59[0m
+[0;32mI (28409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (28419) APP_UART: mq2: 1013.43[0m
+[0;32mI (28609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (28619) APP_UART: mq2: 1034.43[0m
+[0;32mI (28809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (28819) APP_UART: mq2: 989.50[0m
+[0;32mI (29009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (29019) APP_UART: mq2: 1022.71[0m
+[0;32mI (29209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (29219) APP_UART: mq2: 1000.24[0m
+[0;32mI (29409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (29419) APP_UART: mq2: 1048.60[0m
+[0;32mI (29609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (29619) APP_UART: mq2: 1013.92[0m
+[0;32mI (29809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (29819) APP_UART: mq2: 1004.15[0m
+[0;32mI (30009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (30019) APP_UART: mq2: 1051.04[0m
+[0;32mI (30209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (30219) APP_UART: mq2: 1015.38[0m
+[0;32mI (30409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (30419) APP_UART: mq2: 1006.59[0m
+[0;32mI (30609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (30619) APP_UART: mq2: 1056.90[0m
+[0;32mI (30809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (30819) APP_UART: mq2: 1018.32[0m
+[0;32mI (31009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (31019) APP_UART: mq2: 1007.57[0m
+[0;32mI (31209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (31219) APP_UART: ldr: 967.03[0m
+[0;32mI (31409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (31419) APP_UART: ldr: 968.99[0m
+[0;32mI (31609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (31619) APP_UART: ldr: 968.01[0m
+[0;32mI (31809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (31819) APP_UART: ldr: 966.54[0m
+[0;32mI (32009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (32019) APP_UART: ldr: 970.45[0m
+[0;32mI (32209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (32219) APP_UART: ldr: 971.92[0m
+[0;32mI (32409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (32419) APP_UART: ldr: 979.73[0m
+[0;32mI (32609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (32619) APP_UART: ldr: 929.91[0m
+[0;32mI (32809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (32819) APP_UART: ldr: 969.96[0m
+[0;32mI (33009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (33019) APP_UART: ldr: 981.68[0m
+[0;32mI (33209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (33219) APP_UART: ldr: 943.10[0m
+[0;32mI (33409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (33419) APP_UART: ldr: 991.45[0m
+[0;32mI (33609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (33619) APP_UART: ldr: 939.68[0m
+[0;32mI (33809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (33819) APP_UART: ldr: 984.62[0m
+[0;32mI (34009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (34019) APP_UART: ldr: 953.36[0m
+[0;32mI (34209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (34219) APP_UART: ldr: 997.31[0m
+[0;32mI (34409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (34419) APP_UART: ldr: 958.24[0m
+[0;32mI (34609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (34619) APP_UART: ldr: 992.43[0m
+[0;32mI (34809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (34819) APP_UART: ldr: 953.36[0m
+[0;32mI (35009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (35019) APP_UART: ldr: 988.52[0m
+[0;32mI (35209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (35219) APP_UART: ldr: 951.89[0m
+[0;32mI (35409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (35419) APP_UART: ldr: 990.48[0m
+[0;32mI (35609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (35619) APP_UART: ldr: 949.94[0m
+[0;32mI (35809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (35819) APP_UART: ldr: 991.45[0m
+[0;32mI (36009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (36019) APP_UART: ldr: 952.38[0m
+[0;32mI (36209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (36219) APP_UART: ldr: 988.52[0m
+[0;32mI (36409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (36419) APP_UART: ldr: 950.92[0m
+[0;32mI (36609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (36619) APP_UART: ldr: 988.52[0m
+[0;32mI (36809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (36819) APP_UART: ldr: 947.50[0m
+[0;32mI (37009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (37019) APP_UART: ldr: 984.13[0m
+[0;32mI (37209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (37219) APP_UART: ldr: 995.85[0m
+[0;32mI (37409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (37419) APP_UART: ldr: 948.47[0m
+[0;32mI (37609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (37619) APP_UART: ldr: 982.66[0m
+[0;32mI (37809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (37819) APP_UART: ldr: 991.94[0m
+[0;32mI (38009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (38019) APP_UART: ldr: 984.62[0m
+[0;32mI (38209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (38219) APP_UART: ldr: 974.85[0m
+[0;32mI (38409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (38419) APP_UART: ldr: 968.99[0m
+[0;32mI (38609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (38619) APP_UART: ldr: 964.10[0m
+[0;32mI (38809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (38819) APP_UART: ldr: 965.57[0m
+[0;32mI (39009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (39019) APP_UART: ldr: 966.54[0m
+[0;32mI (39209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (39219) APP_UART: ldr: 964.59[0m
+[0;32mI (39409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (39419) APP_UART: ldr: 966.06[0m
+[0;32mI (39609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (39619) APP_UART: ldr: 966.54[0m
+[0;32mI (39809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (39819) APP_UART: ldr: 964.59[0m
+[0;32mI (40009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (40019) APP_UART: ldr: 967.03[0m
+[0;32mI (40209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (40219) APP_UART: ldr: 971.43[0m
+[0;32mI (40409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (40419) APP_UART: ldr: 982.17[0m
+[0;32mI (40609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (40619) APP_UART: ldr: 927.47[0m
+[0;32mI (40809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (40819) APP_UART: ldr: 985.59[0m
+[0;32mI (41009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (41019) APP_UART: ldr: 941.64[0m
+[0;32mI (41209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (41219) APP_UART: ldr: 971.92[0m
+[0;32mI (41409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (41419) APP_UART: ldr: 1003.17[0m
+[0;32mI (41609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (41619) APP_UART: ldr: 970.94[0m
+[0;32mI (41809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (41819) APP_UART: ldr: 989.01[0m
+[0;32mI (42009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (42019) APP_UART: ldr: 956.78[0m
+[0;32mI (42209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (42219) APP_UART: ldr: 992.92[0m
+[0;32mI (42409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (42419) APP_UART: ldr: 955.31[0m
+[0;32mI (42609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (42619) APP_UART: ldr: 990.48[0m
+[0;32mI (42809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (42819) APP_UART: ldr: 950.43[0m
+[0;32mI (43009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (43019) APP_UART: ldr: 993.41[0m
+[0;32mI (43209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (43219) APP_UART: ldr: 952.87[0m
+[0;32mI (43409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (43419) APP_UART: ldr: 988.52[0m
+[0;32mI (43609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (43619) APP_UART: ldr: 952.38[0m
+[0;32mI (43809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (43819) APP_UART: ldr: 988.52[0m
+[0;32mI (44009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (44019) APP_UART: ldr: 947.99[0m
+[0;32mI (44209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (44219) APP_UART: ldr: 984.13[0m
+[0;32mI (44409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (44419) APP_UART: ldr: 995.36[0m
+[0;32mI (44609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (44619) APP_UART: ldr: 947.01[0m
+[0;32mI (44809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (44819) APP_UART: ldr: 980.71[0m
+[0;32mI (45009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (45019) APP_UART: ldr: 980.22[0m
+[0;32mI (45209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (45219) APP_UART: ldr: 972.89[0m
+[0;32mI (45409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (45419) APP_UART: ldr: 965.08[0m
+[0;32mI (45609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (45619) APP_UART: ldr: 960.68[0m
+[0;32mI (45809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (45819) APP_UART: ldr: 962.64[0m
+[0;32mI (46209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (46219) APP_UART: mq2: 1047.13[0m
+[0;32mI (46409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (46419) APP_UART: mq2: 1026.62[0m
+[0;32mI (46609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (46619) APP_UART: mq2: 1015.38[0m
+[0;32mI (46809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (46819) APP_UART: mq2: 1053.97[0m
+[0;32mI (47009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (47019) APP_UART: ldr: 974.85[0m
+[0;32mI (47209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (47219) APP_UART: ldr: 980.22[0m
+[0;32mI (47409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (47419) APP_UART: ldr: 995.36[0m
+[0;32mI (47609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (47619) APP_UART: ldr: 945.54[0m
+[0;32mI (47809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (47819) APP_UART: ldr: 986.57[0m
+[0;32mI (48009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (48019) APP_UART: ldr: 942.61[0m
+[0;32mI (48209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (48219) APP_UART: ldr: 985.59[0m
+[0;32mI (48409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (48419) APP_UART: ldr: 968.01[0m
+[0;32mI (48609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (48619) APP_UART: ldr: 1001.22[0m
+[0;32mI (48809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (48819) APP_UART: ldr: 961.66[0m
+[0;32mI (49009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (49019) APP_UART: ldr: 993.90[0m
+[0;32mI (49209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (49219) APP_UART: ldr: 956.29[0m
+[0;32mI (49409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (49469) APP_UART: ldr: 989.50[0m
+[0;32mI (49609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (49619) APP_UART: ldr: 953.36[0m
+[0;32mI (49809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (49819) APP_UART: ldr: 989.50[0m
+[0;32mI (50009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (50019) APP_UART: ldr: 950.43[0m
+[0;32mI (50209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (50219) APP_UART: ldr: 990.48[0m
+[0;32mI (50409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (50419) APP_UART: ldr: 950.43[0m
+[0;32mI (50609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (50619) APP_UART: ldr: 984.62[0m
+[0;32mI (50809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (50819) APP_UART: ldr: 995.36[0m
+[0;32mI (51009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (51019) APP_UART: ldr: 947.50[0m
+[0;32mI (51209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (51219) APP_UART: ldr: 980.22[0m
+[0;32mI (51409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (51419) APP_UART: ldr: 978.75[0m
+[0;32mI (51609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (51619) APP_UART: ldr: 971.92[0m
+[0;32mI (51809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (51819) APP_UART: ldr: 963.13[0m
+[0;32mI (52009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (52019) APP_UART: ldr: 960.20[0m
+[0;32mI (52209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (52219) APP_UART: ldr: 962.64[0m
+[0;32mI (52409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (52419) APP_UART: ldr: 962.15[0m
+[0;32mI (52809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (52819) APP_UART: mq2: 1013.92[0m
+[0;32mI (53009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (53019) APP_UART: mq2: 1014.90[0m
+[0;32mI (53209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (53219) APP_UART: mq2: 1050.55[0m
+[0;32mI (53409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (53419) APP_UART: mq2: 1009.52[0m
+[0;32mI (53609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (53619) APP_UART: mq2: 1031.50[0m
+[0;32mI (53809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (53819) APP_UART: mq2: 995.36[0m
+[0;32mI (54009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (54019) APP_UART: mq2: 1023.20[0m
+[0;32mI (54209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (54219) APP_UART: mq2: 1032.97[0m
+[0;32mI (54409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (54419) APP_UART: mq2: 976.31[0m
+[0;32mI (54609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (54619) APP_UART: mq2: 993.90[0m
+[0;32mI (54809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (54819) APP_UART: mq2: 1010.99[0m
+[0;32mI (55009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (55019) APP_UART: mq2: 1029.55[0m
+[0;32mI (55209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (55219) APP_UART: mq2: 977.29[0m
+[0;32mI (55409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (55419) APP_UART: mq2: 1006.10[0m
+[0;32mI (55609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (55619) APP_UART: mq2: 1024.66[0m
+[0;32mI (55809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (55819) APP_UART: mq2: 979.73[0m
+[0;32mI (56009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (56019) APP_UART: mq2: 1005.13[0m
+[0;32mI (56209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (56219) APP_UART: mq2: 1025.15[0m
+[0;32mI (56409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (56419) APP_UART: mq2: 979.24[0m
+[0;32mI (56609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (56619) APP_UART: mq2: 1007.57[0m
+[0;32mI (56809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (56819) APP_UART: mq2: 1030.53[0m
+[0;32mI (57009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (57019) APP_UART: mq2: 984.62[0m
+[0;32mI (57209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (57219) APP_UART: mq2: 1015.38[0m
+[0;32mI (57409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (57419) APP_UART: mq2: 1036.39[0m
+[0;32mI (57609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (57619) APP_UART: mq2: 990.48[0m
+[0;32mI (57809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (57819) APP_UART: mq2: 1030.53[0m
+[0;32mI (58009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (58019) APP_UART: mq2: 1010.50[0m
+[0;32mI (58209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (58219) APP_UART: mq2: 1006.59[0m
+[0;32mI (58409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (58419) APP_UART: mq2: 1059.83[0m
+[0;32mI (58609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (58619) APP_UART: mq2: 1021.25[0m
+[0;32mI (58809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (58819) APP_UART: mq2: 1010.01[0m
+[0;32mI (59009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (59019) APP_UART: mq2: 1060.81[0m
+[0;32mI (59209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (59219) APP_UART: mq2: 1021.25[0m
+[0;32mI (59409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (59419) APP_UART: ldr: 966.54[0m
+[0;32mI (59609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (59619) APP_UART: ldr: 965.08[0m
+[0;32mI (59809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (59819) APP_UART: ldr: 968.01[0m
+[0;32mI (60009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (60019) APP_UART: ldr: 968.99[0m
+[0;32mI (60209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (60219) APP_UART: ldr: 971.92[0m
+[0;32mI (60409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (60419) APP_UART: ldr: 989.50[0m
+[0;32mI (60609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (60619) APP_UART: ldr: 940.66[0m
+[0;32mI (60809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (60819) APP_UART: ldr: 968.01[0m
+[0;32mI (61009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (61019) APP_UART: ldr: 993.90[0m
+[0;32mI (61209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (61219) APP_UART: ldr: 946.52[0m
+[0;32mI (61409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (61419) APP_UART: ldr: 998.29[0m
+[0;32mI (61609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (61619) APP_UART: ldr: 952.38[0m
+[0;32mI (61809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (61819) APP_UART: ldr: 1005.13[0m
+[0;32mI (62009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (62019) APP_UART: ldr: 963.61[0m
+[0;32mI (62209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (62219) APP_UART: ldr: 993.41[0m
+[0;32mI (62409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (62419) APP_UART: ldr: 956.78[0m
+[0;32mI (62609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (62619) APP_UART: ldr: 989.50[0m
+[0;32mI (62809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (62819) APP_UART: ldr: 953.36[0m
+[0;32mI (63009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (63019) APP_UART: ldr: 989.99[0m
+[0;32mI (63209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (63219) APP_UART: ldr: 950.43[0m
+[0;32mI (63409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (63419) APP_UART: ldr: 993.41[0m
+[0;32mI (63609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (63619) APP_UART: ldr: 952.87[0m
+[0;32mI (63809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (63819) APP_UART: ldr: 988.03[0m
+[0;32mI (64009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (64019) APP_UART: ldr: 949.45[0m
+[0;32mI (64209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (64219) APP_UART: ldr: 989.01[0m
+[0;32mI (64409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (64419) APP_UART: ldr: 946.52[0m
+[0;32mI (64609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (64619) APP_UART: ldr: 983.64[0m
+[0;32mI (64809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (64819) APP_UART: ldr: 994.38[0m
+[0;32mI (65009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (65019) APP_UART: ldr: 946.52[0m
+[0;32mI (65209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (65219) APP_UART: ldr: 977.78[0m
+[0;32mI (65409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (65419) APP_UART: ldr: 978.75[0m
+[0;32mI (65609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (65619) APP_UART: ldr: 974.85[0m
+[0;32mI (65809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (65819) APP_UART: ldr: 968.99[0m
+[0;32mI (66009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (66019) APP_UART: ldr: 968.01[0m
+[0;32mI (66209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (66219) APP_UART: ldr: 968.99[0m
+[0;32mI (66409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (66419) APP_UART: ldr: 964.10[0m
+[0;32mI (66809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (66819) APP_UART: mq2: 1000.24[0m
+[0;32mI (67009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (67019) APP_UART: mq2: 1057.39[0m
+[0;32mI (67209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (67219) APP_UART: ldr: 968.01[0m
+[0;32mI (67409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (67419) APP_UART: ldr: 967.03[0m
+[0;32mI (67609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (67619) APP_UART: ldr: 969.96[0m
+[0;32mI (67809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (67819) APP_UART: ldr: 974.36[0m
+[0;32mI (68009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (68019) APP_UART: ldr: 984.62[0m
+[0;32mI (68209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (68219) APP_UART: ldr: 930.89[0m
+[0;32mI (68409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (68419) APP_UART: ldr: 986.57[0m
+[0;32mI (68609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (68619) APP_UART: ldr: 939.68[0m
+[0;32mI (68809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (68819) APP_UART: ldr: 976.31[0m
+[0;32mI (69009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (69019) APP_UART: ldr: 996.34[0m
+[0;32mI (69209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (69219) APP_UART: ldr: 952.38[0m
+[0;32mI (69409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (69419) APP_UART: ldr: 1008.06[0m
+[0;32mI (69609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (69619) APP_UART: ldr: 964.10[0m
+[0;32mI (69809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (69819) APP_UART: ldr: 990.48[0m
+[0;32mI (70009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (70019) APP_UART: ldr: 950.43[0m
+[0;32mI (70209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (70219) APP_UART: ldr: 992.43[0m
+[0;32mI (70409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (70419) APP_UART: ldr: 952.38[0m
+[0;32mI (70609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (70619) APP_UART: ldr: 987.55[0m
+[0;32mI (70809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (70819) APP_UART: ldr: 951.40[0m
+[0;32mI (71009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (71019) APP_UART: ldr: 988.03[0m
+[0;32mI (71209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (71219) APP_UART: ldr: 949.45[0m
+[0;32mI (71409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (71419) APP_UART: ldr: 989.99[0m
+[0;32mI (71609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (71619) APP_UART: ldr: 951.40[0m
+[0;32mI (71809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (71819) APP_UART: ldr: 989.50[0m
+[0;32mI (72009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (72019) APP_UART: ldr: 951.40[0m
+[0;32mI (72209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (72219) APP_UART: ldr: 986.08[0m
+[0;32mI (72409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (72419) APP_UART: ldr: 997.80[0m
+[0;32mI (72609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (72619) APP_UART: ldr: 950.43[0m
+[0;32mI (72809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (72869) APP_UART: ldr: 985.59[0m
+[0;32mI (73009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (73019) APP_UART: ldr: 995.36[0m
+[0;32mI (73209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (73219) APP_UART: ldr: 946.52[0m
+[0;32mI (73409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (73419) APP_UART: ldr: 980.22[0m
+[0;32mI (73609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (73619) APP_UART: ldr: 981.20[0m
+[0;32mI (73809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (73819) APP_UART: ldr: 977.29[0m
+[0;32mI (74009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (74019) APP_UART: ldr: 971.92[0m
+[0;32mI (74209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (74219) APP_UART: ldr: 968.01[0m
+[0;32mI (74409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (74419) APP_UART: ldr: 967.03[0m
+[0;32mI (74609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (74619) APP_UART: ldr: 968.50[0m
+[0;32mI (74809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (74819) APP_UART: ldr: 968.99[0m
+[0;32mI (75009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (75019) APP_UART: ldr: 964.59[0m
+[0;32mI (75209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (75219) APP_UART: ldr: 966.54[0m
+[0;32mI (75409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (75419) APP_UART: ldr: 968.99[0m
+[0;32mI (75609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (75619) APP_UART: ldr: 964.59[0m
+[0;32mI (75809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (75819) APP_UART: ldr: 966.06[0m
+[0;32mI (76009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (76019) APP_UART: ldr: 970.94[0m
+[0;32mI (76209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (76219) APP_UART: ldr: 973.87[0m
+[0;32mI (76409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (76419) APP_UART: ldr: 988.52[0m
+[0;32mI (76609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (76619) APP_UART: ldr: 929.91[0m
+[0;32mI (76809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (76819) APP_UART: ldr: 969.96[0m
+[0;32mI (77009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (77019) APP_UART: ldr: 980.71[0m
+[0;32mI (77209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (77219) APP_UART: ldr: 947.50[0m
+[0;32mI (77409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (77419) APP_UART: ldr: 992.43[0m
+[0;32mI (77609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (77619) APP_UART: ldr: 945.54[0m
+[0;32mI (77809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (77819) APP_UART: ldr: 993.41[0m
+[0;32mI (78009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (78019) APP_UART: ldr: 963.13[0m
+[0;32mI (78209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (78219) APP_UART: ldr: 994.87[0m
+[0;32mI (78409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (78419) APP_UART: ldr: 957.75[0m
+[0;32mI (78609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (78619) APP_UART: ldr: 991.45[0m
+[0;32mI (78809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (78819) APP_UART: ldr: 950.92[0m
+[0;32mI (79009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (79019) APP_UART: ldr: 992.43[0m
+[0;32mI (79209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (79219) APP_UART: ldr: 951.89[0m
+[0;32mI (79409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (79419) APP_UART: ldr: 989.50[0m
+[0;32mI (79609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (79619) APP_UART: ldr: 951.40[0m
+[0;32mI (79809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (79819) APP_UART: ldr: 989.50[0m
+[0;32mI (80009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (80019) APP_UART: ldr: 950.43[0m
+[0;32mI (80209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (80219) APP_UART: ldr: 989.99[0m
+[0;32mI (80409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (80419) APP_UART: ldr: 951.40[0m
+[0;32mI (80609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (80619) APP_UART: ldr: 984.62[0m
+[0;32mI (80809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (80819) APP_UART: ldr: 997.31[0m
+[0;32mI (81009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (81019) APP_UART: ldr: 950.43[0m
+[0;32mI (81209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (81219) APP_UART: ldr: 979.73[0m
+[0;32mI (81409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (81419) APP_UART: ldr: 993.41[0m
+[0;32mI (81609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (81619) APP_UART: ldr: 941.15[0m
+[0;32mI (81809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (81819) APP_UART: ldr: 967.03[0m
+[0;32mI (82009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (82019) APP_UART: ldr: 967.52[0m
+[0;32mI (82209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (82219) APP_UART: ldr: 965.57[0m
+[0;32mI (82409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (82419) APP_UART: ldr: 964.59[0m
+[0;32mI (82809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (82819) APP_UART: mq2: 995.85[0m
+[0;32mI (83009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (83019) APP_UART: mq2: 1050.55[0m
+[0;32mI (83209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (83219) APP_UART: mq2: 1019.29[0m
+[0;32mI (83409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (83419) APP_UART: mq2: 1010.99[0m
+[0;32mI (83809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (83819) APP_UART: mq2: 1016.36[0m
+[0;32mI (84009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (84019) APP_UART: mq2: 993.41[0m
+[0;32mI (84209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (84219) APP_UART: mq2: 1027.11[0m
+[0;32mI (84409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (84419) APP_UART: mq2: 997.31[0m
+[0;32mI (84609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (84619) APP_UART: mq2: 1010.50[0m
+[0;32mI (84809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (84819) APP_UART: mq2: 1042.25[0m
+[0;32mI (85009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (85019) APP_UART: mq2: 988.52[0m
+[0;32mI (85209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (85219) APP_UART: mq2: 1007.57[0m
+[0;32mI (85409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (85419) APP_UART: mq2: 1015.87[0m
+[0;32mI (85609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (85619) APP_UART: mq2: 1025.64[0m
+[0;32mI (85809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (85819) APP_UART: mq2: 976.31[0m
+[0;32mI (86009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (86019) APP_UART: mq2: 1005.13[0m
+[0;32mI (86209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (86219) APP_UART: mq2: 1023.20[0m
+[0;32mI (86409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (86419) APP_UART: mq2: 975.82[0m
+[0;32mI (86609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (86619) APP_UART: mq2: 1005.62[0m
+[0;32mI (86809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (86819) APP_UART: mq2: 1023.20[0m
+[0;32mI (87009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (87019) APP_UART: mq2: 979.73[0m
+[0;32mI (87209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (87219) APP_UART: mq2: 1006.10[0m
+[0;32mI (87409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (87419) APP_UART: mq2: 1026.62[0m
+[0;32mI (87609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (87619) APP_UART: mq2: 979.73[0m
+[0;32mI (87809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (87819) APP_UART: mq2: 1010.50[0m
+[0;32mI (88009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (88019) APP_UART: mq2: 1031.50[0m
+[0;32mI (88209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (88219) APP_UART: mq2: 982.17[0m
+[0;32mI (88409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (88419) APP_UART: mq2: 1013.92[0m
+[0;32mI (88609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (88619) APP_UART: mq2: 1036.87[0m
+[0;32mI (88809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (88819) APP_UART: mq2: 999.27[0m
+[0;32mI (89009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (89019) APP_UART: mq2: 1041.76[0m
+[0;32mI (89209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (89219) APP_UART: mq2: 1016.85[0m
+[0;32mI (89409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (89419) APP_UART: mq2: 1010.01[0m
+[0;32mI (89609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (89619) APP_UART: mq2: 1007.57[0m
+[0;32mI (89809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (89819) APP_UART: mq2: 1058.36[0m
+[0;32mI (89999) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (90019) APP_UART: mq2: 1024.18[0m
+[0;32mI (90209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (90219) APP_UART: ldr: 958.73[0m
+[0;32mI (90409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (90419) APP_UART: ldr: 963.13[0m
+[0;32mI (90609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (90619) APP_UART: ldr: 964.59[0m
+[0;32mI (90809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (90819) APP_UART: ldr: 965.08[0m
+[0;32mI (91009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (91019) APP_UART: ldr: 965.57[0m
+[0;32mI (91209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (91219) APP_UART: ldr: 970.94[0m
+[0;32mI (91409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (91419) APP_UART: ldr: 981.68[0m
+[0;32mI (91609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (91619) APP_UART: ldr: 936.75[0m
+[0;32mI (91809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (91819) APP_UART: ldr: 972.89[0m
+[0;32mI (92009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (92019) APP_UART: ldr: 991.45[0m
+[0;32mI (92209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (92219) APP_UART: ldr: 944.57[0m
+[0;32mI (92409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (92419) APP_UART: ldr: 990.48[0m
+[0;32mI (92609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (92619) APP_UART: ldr: 947.99[0m
+[0;32mI (92809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (92819) APP_UART: ldr: 995.36[0m
+[0;32mI (93009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (93019) APP_UART: ldr: 954.33[0m
+[0;32mI (93209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (93219) APP_UART: ldr: 995.36[0m
+[0;32mI (93409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (93419) APP_UART: ldr: 956.29[0m
+[0;32mI (93609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (93619) APP_UART: ldr: 989.50[0m
+[0;32mI (93809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (93819) APP_UART: ldr: 952.38[0m
+[0;32mI (94009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (94019) APP_UART: ldr: 991.45[0m
+[0;32mI (94209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (94219) APP_UART: ldr: 949.45[0m
+[0;32mI (94409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (94419) APP_UART: ldr: 990.48[0m
+[0;32mI (94609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (94619) APP_UART: ldr: 951.40[0m
+[0;32mI (94809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (94819) APP_UART: ldr: 988.03[0m
+[0;32mI (95009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (95019) APP_UART: ldr: 951.40[0m
+[0;32mI (95209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (95219) APP_UART: ldr: 987.55[0m
+[0;32mI (95409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (95419) APP_UART: ldr: 947.01[0m
+[0;32mI (95609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (95619) APP_UART: ldr: 984.62[0m
+[0;32mI (95809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (95819) APP_UART: ldr: 994.38[0m
+[0;32mI (96009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (96019) APP_UART: ldr: 945.54[0m
+[0;32mI (96209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (96269) APP_UART: ldr: 980.22[0m
+[0;32mI (96409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (96419) APP_UART: ldr: 981.68[0m
+[0;32mI (96609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (96619) APP_UART: ldr: 975.34[0m
+[0;32mI (96809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (96819) APP_UART: ldr: 969.47[0m
+[0;32mI (97009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (97019) APP_UART: ldr: 966.06[0m
+[0;32mI (97209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (97219) APP_UART: ldr: 964.59[0m
+[0;32mI (97409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (97419) APP_UART: ldr: 965.57[0m
+[0;32mI (97799) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (97819) APP_UART: mq2: 1048.60[0m
+[0;32mI (98009) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (98019) APP_UART: mq2: 1024.66[0m
+[0;32mI (98209) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (98219) APP_UART: mq2: 1012.94[0m
+[0;32mI (98409) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (98419) APP_UART: mq2: 1056.90[0m
+[0;32mI (98609) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (98619) APP_UART: mq2: 1007.57[0m
+[0;32mI (98809) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (98819) APP_UART: mq2: 1043.71[0m
+[0;32mI (98999) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (99019) APP_UART: mq2: 1006.10[0m
+[0;32mI (99199) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (99219) APP_UART: mq2: 1038.83[0m
+[0;32mI (99399) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (99419) APP_UART: mq2: 996.34[0m
+[0;32mI (99599) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (99619) APP_UART: mq2: 1003.66[0m
+[0;32mI (99799) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (99819) APP_UART: mq2: 1039.80[0m
+[0;32mI (99999) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (100019) APP_UART: mq2: 985.59[0m
+[0;32mI (100199) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (100219) APP_UART: mq2: 1005.13[0m
+[0;32mI (100399) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (100419) APP_UART: mq2: 1017.34[0m
+[0;32mI (100599) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (100619) APP_UART: mq2: 1028.57[0m
+[0;32mI (100799) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (100819) APP_UART: mq2: 977.29[0m
+[0;32mI (100999) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (101019) APP_UART: mq2: 1004.15[0m
+[0;32mI (101199) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (101219) APP_UART: mq2: 1026.62[0m
+[0;32mI (101399) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (101419) APP_UART: mq2: 977.78[0m
+[0;32mI (101599) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (101619) APP_UART: mq2: 1008.06[0m
+[0;32mI (101799) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (101819) APP_UART: mq2: 1024.66[0m
+[0;32mI (101999) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (102019) APP_UART: mq2: 981.68[0m
+[0;32mI (102199) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (102219) APP_UART: mq2: 1005.62[0m
+[0;32mI (102399) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (102419) APP_UART: mq2: 1026.62[0m
+[0;32mI (102599) APP_UART: NOTIFY[0m
+Done
+Done
+[0;32mI (102619) APP_UART: mq2: 978.27[0m

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Config</title>
+  <style>
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 320px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 14px 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 14px;
+      background-color: #2563eb; /* Tailwind blue-600 */
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #1e40af; /* Tailwind blue-800 */
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <input type="text" placeholder="Tên wifi" id="ssid">
+  <input type="password" placeholder="Mật khẩu" id="pass">
+  <button onclick="myFunction()">Connect</button>
+</div>
+
+<script>
+function myFunction() {
+  var ssid = document.getElementById("ssid").value;
+  var pass = document.getElementById("pass").value;
+  var data = ssid + "/" + pass;
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "/post", true);
+  xhttp.send(data);
+}
+</script>
+
+</body>
+</html>

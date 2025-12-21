@@ -1,0 +1,225 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec  7 2025 14:35:47[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30880h (198784) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=000408a8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=000408b4 vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=000441ac vaddr=40080000 size=0be6ch ( 48748) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b431ch (738076) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=00104344 vaddr=4008be6c size=0c444h ( 50244) load[0m
+[0;32mI (510) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (522) cpu_start: Pro cpu up.[0m
+[0;32mI (522) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (540) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (540) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      1[0m
+[0;32mI (555) cpu_start: Compile time:     Dec  7 2025 14:35:23[0m
+[0;32mI (561) cpu_start: ELF file SHA256:  2c7025dcafc793d1...[0m
+[0;32mI (567) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (572) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (577) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (581) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (586) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (594) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (606) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (612) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (618) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (626) spi_flash: detected chip: generic[0m
+[0;32mI (629) spi_flash: flash io: dio[0m
+[0;33mW (633) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (647) app_start: Starting scheduler on CPU0[0m
+[0;32mI (651) app_start: Starting scheduler on CPU1[0m
+[0;32mI (651) main_task: Started on CPU0[0m
+[0;32mI (661) main_task: Calling app_main()[0m
+[0;32mI (661) APP_MAIN: [APP] Startup..[0m
+[0;32mI (661) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (671) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (721) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (721) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (731) RFID: Initializing RC522...[0m
+[0;32mI (731) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (761) rc522: rc522_pcd_rw_test(292): FIFO length missmatch after write[0m
+[0;31mE (761) rc522: rc522_start(86): rw test failed[0m
+[0;32mI (761) RFID: RC522 READY.[0m
+[0;32mI (771) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (781) wifi:wifi driver task: 3ffc60fc, prio:23, stack:6656, core=0[0m
+[0;32mI (791) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (801) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (801) wifi:wifi certification version: v7.0[0m
+[0;32mI (801) wifi:config NVS flash: enabled[0m
+[0;32mI (811) wifi:config nano formating: disabled[0m
+[0;32mI (811) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (811) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (821) wifi:Init management short buffer num: 32[0m
+[0;32mI (821) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (831) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (831) wifi:Init static rx buffer num: 10[0m
+[0;32mI (841) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (841) wifi_init: rx ba win: 6[0m
+[0;32mI (841) wifi_init: tcpip mbox: 32[0m
+[0;32mI (851) wifi_init: udp mbox: 6[0m
+[0;32mI (851) wifi_init: tcp mbox: 6[0m
+[0;32mI (851) wifi_init: tcp tx win: 5744[0m
+[0;32mI (861) wifi_init: tcp rx win: 5744[0m
+[0;32mI (861) wifi_init: tcp mss: 1440[0m
+[0;32mI (871) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (871) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (881) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (881) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (881) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (891) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1011) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1011) wifi:enable tsf[0m
+[0;32mI (1031) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1031) wifi:state: init -> auth (b0)[0m
+[0;32mI (1041) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1061) wifi:state: assoc -> run (10)[0m
+[0;32mI (1081) wifi:connected with P 504, aid = 3, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1081) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (1081) wifi:pm start, type: 1[0m
+
+[0;32mI (1091) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1101) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:0, winSize:64[0m
+[0;32mI (1801) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2841) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2861) mqtt_client: Client was not initialized[0m
+[0;31mE (2871) mqtt_client: Client was not initialized[0m
+[0;32mI (3871) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3891) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (3901) mqtt_client: Client was not initialized[0m
+[0;31mE (3901) mqtt_client: Client was not initialized[0m
+[0;32mI (4061) wifi:<ba-add>idx:1 (ifx:0, d4:e8:53:c5:c9:e1), tid:3, ssn:2, winSize:64[0m
+[0;32mI (4091) CONFIG_WIFI: got ip:192.168.54.187[0m
+[0;32mI (4091) esp_netif_handlers: sta ip: 192.168.54.187, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (4091) CONFIG_WIFI: wifi connected[0m
+[0;32mI (4101) MQTT: Free mamory: 200532 bytes[0m
+[0;32mI (4101) MQTT: Other event id:7[0m
+[0;32mI (4351) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4381) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=53445[0m
+[0;32mI (4401) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=64642[0m
+[0;32mI (4421) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=26535[0m
+[0;32mI (4421) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=55908[0m
+[0;32mI (4431) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=34090[0m
+[0;32mI (4431) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=14112[0m
+[0;32mI (4431) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=33752[0m
+[0;32mI (4441) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=27343[0m
+[0;32mI (4451) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=12138[0m
+[0;32mI (4451) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=39610[0m
+[0;32mI (4461) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=54449[0m
+[0;32mI (4461) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=21844[0m
+[0;32mI (4471) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=17684[0m
+[0;32mI (4471) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=43915[0m
+[0;32mI (4481) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=35695[0m
+[0;32mI (4481) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=31505[0m
+[0;32mI (4491) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=54902[0m
+[0;32mI (4491) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=65376[0m
+[0;32mI (4501) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=48116[0m
+[0;32mI (4501) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=16249[0m
+[0;32mI (4511) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=39968[0m
+[0;32mI (4511) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=5049[0m
+[0;32mI (4521) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=22201[0m
+[0;32mI (4531) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=48986[0m
+[0;32mI (4531) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17541[0m
+[0;32mI (4531) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12351[0m
+[0;32mI (4541) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26722[0m
+[0;32mI (4551) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47522[0m
+[0;32mI (4551) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53463[0m
+[0;32mI (4561) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8280[0m
+[0;32mI (4561) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6714[0m
+[0;32mI (4611) uart: queue free spaces: 20[0m
+[0;32mI (4611) APP_UART: UART config sucessfuly![0m
+[0;32mI (4611) main_task: Returned from app_main()[0m
+[0;32mI (4621) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49584[0m
+[0;32mI (4631) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13701[0m
+[0;32mI (4631) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43276[0m
+[0;32mI (4641) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52197[0m
+[0;32mI (4641) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9199[0m
+[0;32mI (4651) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1802[0m
+[0;32mI (4651) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28629[0m
+[0;32mI (4661) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63422[0m
+[0;32mI (4661) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51495[0m
+[0;32mI (4891) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64726[0m
+[0;32mI (4891) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9471[0m
+[0;32mI (4891) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25397[0m
+[0;32mI (4901) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31147[0m
+[0;32mI (4901) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63224[0m
+[0;32mI (4911) MQTT: MQTT_EVENT_PUBLISHED, msg_id=345[0m
+[0;32mI (4911) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4911) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11762[0m
+[0;32mI (4931) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53989[0m
+[0;32mI (4941) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5011) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22626[0m
+[0;32mI (5971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5991) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7001) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7061) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9192[0m
+[0;32mI (7081) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2377[0m
+[0;32mI (8041) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8061) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8101) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25846[0m
+[0;32mI (8111) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44207[0m
+[0;32mI (9091) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9111) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (10121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (10141) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (10171) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16447[0m
+[0;32mI (11161) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11181) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11231) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3785[0m
+[0;32mI (12201) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (12221) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (12271) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7893[0m
+[0;32mI (13251) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (13271) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (14281) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (14301) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (14331) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2018[0m
+[0;32mI (15321) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15341) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15391) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12529[0m
+[0;32mI (16361) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (16381) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (16421) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44638[0m
+[0;32mI (17411) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (17431) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (18441) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (18461) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (18491) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45439[0m
+[0;32mI (19481) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (19501) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (19531) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22986[0m
+[0;32mI (20521) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (20541) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (20591) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6740[0m

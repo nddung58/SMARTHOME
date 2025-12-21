@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "ESP32",
+			"path": "ESP32"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"convert_tool.h": "c",
+			"fsm_message.h": "c",
+			"optional": "c",
+			"ratio": "c",
+			"system_error": "c",
+			"array": "c",
+			"functional": "c",
+			"tuple": "c",
+			"type_traits": "c",
+			"utility": "c",
+			"istream": "c",
+			"ostream": "c",
+			"stm32_tim.h": "c",
+			"string": "cpp",
+			"string_view": "cpp",
+			"stm32f1xx.h": "c",
+			"cds.h": "c",
+			"stm32f1xx_hal_def.h": "c",
+			"cstdint": "c",
+			"message.h": "c",
+			"span": "cpp",
+			"deque": "cpp",
+			"vector": "cpp",
+			"string.h": "c",
+			"convert.h": "c",
+			"uart.h": "c"
+		}
+	}
+}

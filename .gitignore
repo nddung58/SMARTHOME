@@ -1,0 +1,12 @@
+# Loại bỏ thư mục thư viện
+node_modules/
+nodered_data/node_modules/
+
+# Loại bỏ các file log (nhật ký lỗi)
+*.log
+nodered_data/.npm/_logs/
+
+# Loại bỏ các file cấu hình chứa mật khẩu (quan trọng!)
+nodered_data/flows_cred.json
+nodered_data/.config.runtime.json
+nodered_data/.config.users.json

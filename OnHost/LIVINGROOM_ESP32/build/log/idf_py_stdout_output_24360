@@ -1,0 +1,924 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec  7 2025 14:35:47[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=304f0h (197872) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=00040518 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00040524 vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (187) esp_image: segment 3: paddr=00043e1c vaddr=40080000 size=0c1fch ( 49660) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b4348h (738120) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=00104370 vaddr=4008c1fc size=0c0b4h ( 49332) load[0m
+[0;32mI (510) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (510) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (522) cpu_start: Pro cpu up.[0m
+[0;32mI (522) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (540) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (540) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (550) cpu_start: App version:      1[0m
+[0;32mI (555) cpu_start: Compile time:     Dec  7 2025 14:35:23[0m
+[0;32mI (561) cpu_start: ELF file SHA256:  bae6677539a748a8...[0m
+[0;32mI (567) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (572) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (576) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (581) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (586) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (593) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFB8FB8 len 00027048 (156 KiB): DRAM[0m
+[0;32mI (605) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (612) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (618) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (626) spi_flash: detected chip: generic[0m
+[0;32mI (629) spi_flash: flash io: dio[0m
+[0;33mW (633) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (647) app_start: Starting scheduler on CPU0[0m
+[0;32mI (651) app_start: Starting scheduler on CPU1[0m
+[0;32mI (651) main_task: Started on CPU0[0m
+[0;32mI (661) main_task: Calling app_main()[0m
+[0;32mI (661) APP_MAIN: [APP] Startup..[0m
+[0;32mI (661) APP_MAIN: [APP] Free memory: 274840 bytes[0m
+[0;32mI (671) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (721) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (721) LDR_APP: Calibration: Line Fitting[0m
+[0;32mI (731) LDR_APP: LDR Initialized![0m
+[0;31mE (731) adc_oneshot: adc_oneshot_new_unit(94): adc1 is already in use[0m
+[0;31mE (741) adc_oneshot: adc_oneshot_config_channel(145): invalid argument: null pointer[0m
+[0;32mI (751) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (751) RFID: Initializing RC522...[0m
+[0;32mI (761) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (791) rc522: rc522_pcd_rw_test(292): FIFO length missmatch after write[0m
+[0;31mE (791) rc522: rc522_start(86): rw test failed[0m
+[0;32mI (791) RFID: RC522 READY.[0m
+[0;32mI (801) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (811) wifi:wifi driver task: 3ffc6104, prio:23, stack:6656, core=0[0m
+[0;32mI (821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (831) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (831) wifi:wifi certification version: v7.0[0m
+[0;32mI (831) wifi:config NVS flash: enabled[0m
+[0;32mI (831) wifi:config nano formating: disabled[0m
+[0;32mI (841) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;31mE (841) mqtt_client: Client was not initialized[0m
+[0;32mI (841) wifi:[0;31mE (851) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m[0m
+Init management frame dynamic rx buffer num: 32
+[0;32mI (861) wifi:Init management short buffer num: 32[0m
+[0;32mI (871) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (871) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (871) wifi:Init static rx buffer num: 10[0m
+[0;32mI (881) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (881) wifi_init: rx ba win: 6[0m
+[0;32mI (881) wifi_init: tcpip mbox: 32[0m
+[0;32mI (891) wifi_init: udp mbox: 6[0m
+[0;32mI (891) wifi_init: tcp mbox: 6[0m
+[0;32mI (901) wifi_init: tcp tx win: 5744[0m
+[0;32mI (901) wifi_init: tcp rx win: 5744[0m
+[0;32mI (901) wifi_init: tcp mss: 1440[0m
+[0;32mI (911) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (911) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (921) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (921) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (931) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (931) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1051) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1051) wifi:enable tsf[0m
+[0;32mI (1071) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1071) wifi:state: init -> auth (b0)[0m
+[0;32mI (1091) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1111) wifi:state: assoc -> run (10)[0m
+[0;32mI (1121) wifi:connected with P 504, aid = 3, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1121) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (1131) wifi:pm start, type: 1[0m
+
+[0;32mI (1141) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:0, winSize:64[0m
+[0;32mI (1151) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1861) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1881) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1901) mqtt_client: Client was not initialized[0m
+[0;31mE (1901) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (2911) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2931) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2931) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (3131) CONFIG_WIFI: got ip:192.168.54.187[0m
+[0;32mI (3131) esp_netif_handlers: sta ip: 192.168.54.187, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (3131) CONFIG_WIFI: wifi connected[0m
+[0;32mI (3141) MQTT: Free mamory: 205364 bytes[0m
+[0;32mI (3141) MQTT: Other event id:7[0m
+[0;32mI (3181) wifi:<ba-add>idx:1 (ifx:0, d4:e8:53:c5:c9:e1), tid:3, ssn:2, winSize:64[0m
+[0;32mI (3621) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3651) uart: queue free spaces: 20[0m
+[0;32mI (3661) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=17734[0m
+[0;32mI (3661) APP_UART: UART config sucessfuly![0m
+[0;32mI (3661) main_task: Returned from app_main()[0m
+[0;32mI (3671) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=31334[0m
+[0;32mI (3691) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=64700[0m
+[0;32mI (3691) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=50142[0m
+[0;32mI (3701) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=921[0m
+[0;32mI (3711) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=43475[0m
+[0;32mI (3711) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=38978[0m
+[0;32mI (3721) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=59218[0m
+[0;32mI (3731) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=36717[0m
+[0;32mI (3731) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=33789[0m
+[0;32mI (3741) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=34232[0m
+[0;32mI (3751) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=44086[0m
+[0;32mI (3761) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=32362[0m
+[0;32mI (3761) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=21520[0m
+[0;32mI (3771) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=46267[0m
+[0;32mI (3771) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=63674[0m
+[0;32mI (3781) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=5754[0m
+[0;32mI (3791) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=50410[0m
+[0;32mI (3791) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=30113[0m
+[0;32mI (3801) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=46909[0m
+[0;32mI (3811) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=55641[0m
+[0;32mI (3811) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=5643[0m
+[0;32mI (3821) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=41062[0m
+[0;32mI (3831) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=14974[0m
+[0;32mI (3831) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28747[0m
+[0;32mI (3841) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21076[0m
+[0;32mI (3841) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17943[0m
+[0;32mI (3841) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1191[0m
+[0;32mI (3851) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60087[0m
+[0;32mI (3851) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35363[0m
+[0;32mI (3861) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15733[0m
+[0;32mI (3871) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37719[0m
+[0;32mI (3871) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38593[0m
+[0;32mI (3871) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33357[0m
+[0;32mI (3881) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12824[0m
+[0;32mI (3891) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13054[0m
+[0;32mI (3891) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46454[0m
+[0;32mI (3901) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24098[0m
+[0;32mI (3911) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19457[0m
+[0;32mI (3911) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65167[0m
+[0;32mI (3921) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28477[0m
+[0;32mI (3921) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15643[0m
+[0;32mI (3921) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39999[0m
+[0;32mI (3931) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6616[0m
+[0;32mI (3931) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42132[0m
+[0;32mI (3941) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31047[0m
+[0;32mI (3941) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3951) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43853[0m
+[0;32mI (3961) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21870[0m
+[0;32mI (3971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (3981) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (4981) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5001) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (5001) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (6001) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6021) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (7031) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7051) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7051) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (8051) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8071) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (8071) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (9081) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9101) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (9101) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (10101) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (10121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (10121) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (11131) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11151) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (11151) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (12151) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (12171) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (12171) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (13181) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (13201) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (13201) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (14201) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (14221) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (14221) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (15231) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15251) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (15251) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (16251) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (16271) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (16271) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (17281) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (17301) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (17301) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (18301) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (18321) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (18321) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (19331) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (19351) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (19351) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (20351) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (20371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (20371) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (21381) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (21401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (21401) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (22401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (22421) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (22421) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (23431) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (23451) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (23451) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (24451) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (24471) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (24481) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (24571) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6577[0m
+[0;32mI (25491) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (25511) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (25531) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (25801) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2367[0m
+[0;32mI (26541) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (26561) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (26561) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (27571) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (27591) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (27591) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (28601) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (28621) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (28621) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (29631) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (29651) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (29651) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (30651) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (30671) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (30671) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (31681) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (31701) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (31701) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (32701) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (32721) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (32721) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (33731) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (33751) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (33751) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (34751) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (34771) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (34771) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (35781) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (35801) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (35801) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (36801) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (36821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (36821) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (37831) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (37851) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (37851) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (38851) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (38871) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (38871) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (39881) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (39901) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (39901) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (40901) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (40921) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (40921) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (41931) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (41951) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (41951) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (42951) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (42971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (42971) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (43981) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (44001) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (44001) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (45001) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (45021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (45021) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (46031) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (46051) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (46051) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (47051) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (47071) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (47071) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (48081) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (48101) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (48101) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (49101) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (49121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (49121) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (50131) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (50151) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (50151) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (51151) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (51171) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (51171) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (52181) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (52201) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (52201) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (53201) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (53221) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (53221) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (54231) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (54251) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (54251) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (55251) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (55271) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (55271) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (56281) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (56301) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (56311) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (56321) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12942[0m
+[0;32mI (57321) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (57341) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (57371) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (57401) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34201[0m
+[0;32mI (58371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (58391) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (58391) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (59401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (59421) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (59431) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (59571) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62826[0m
+[0;32mI (60441) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (60461) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (60471) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (60491) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29581[0m
+[0;32mI (61481) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (61501) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (61531) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (61551) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40253[0m
+[0;32mI (62531) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (62551) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (62551) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (63561) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (63581) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (63581) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (64591) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (64611) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (64611) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (65621) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (65641) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (65641) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (66651) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (66671) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (66671) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (67671) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (67691) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (67691) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (68701) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (68721) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (68721) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (69721) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (69741) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (69741) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (70751) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (70771) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (70771) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (71771) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (71791) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (71791) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (72801) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (72821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (72821) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (73821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (73841) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (73841) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (74851) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (74871) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (74871) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (75871) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (75891) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (75891) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (76901) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (76921) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (76921) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (77921) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (77941) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (77941) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (78951) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (78971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (78971) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (79971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (79991) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (79991) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (81001) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (81021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (81021) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (82021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (82041) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (82041) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (83051) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (83071) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (83071) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (84071) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (84091) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (84091) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (85101) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (85121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (85121) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (86121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (86141) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (86141) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (87151) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (87171) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (87171) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (88171) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (88191) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (88191) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (89201) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (89221) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (89221) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (90221) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (90241) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (90241) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (91251) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (91271) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (91271) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (92271) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (92291) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (92291) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (93301) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (93321) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (93321) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (94321) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (94341) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (94341) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (95351) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (95371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (95371) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (96371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (96391) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (96391) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (97401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (97421) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (97421) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (98421) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (98441) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (98441) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (99451) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (99471) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (99471) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (100471) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (100491) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (100491) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (101501) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (101521) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (101521) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (102521) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (102541) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (102541) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (103551) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (103571) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (103571) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (104571) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (104591) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (104591) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (105601) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (105621) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (105621) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (106621) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (106641) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (106641) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (107651) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (107671) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (107671) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (108671) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (108691) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (108691) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (109701) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (109721) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (109721) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (110721) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (110741) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (110741) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (111751) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (111771) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (111771) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (112771) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (112791) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (112791) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (113801) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (113821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (113821) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (114821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (114841) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (114841) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (115851) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (115871) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (115871) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (116871) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (116891) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (116891) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (117901) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (117921) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (117921) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (118921) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (118941) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (118941) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (119951) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (119971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (119971) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (120971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (120991) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (120991) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (122001) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (122021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (122021) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (123021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (123041) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (123041) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (124051) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (124071) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (124071) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (125071) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (125091) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (125091) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (126101) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (126121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (126121) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (127121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (127141) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (127141) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (128151) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (128171) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (128181) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (128201) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30962[0m
+[0;32mI (129191) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (129211) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (129241) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (129261) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49310[0m
+[0;32mI (130241) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (130261) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (130261) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (131271) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (131291) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (131301) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (131321) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43457[0m
+[0;32mI (132311) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (132331) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (132341) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (132361) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48483[0m
+[0;32mI (133351) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (133371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (133371) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (134381) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (134401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (134401) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (135401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (135421) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (135421) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (136431) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (136451) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (136451) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (137461) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (137481) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (137481) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (138481) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (138501) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (138501) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (139511) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (139531) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (139531) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (140531) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (140551) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (140551) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (141561) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (141581) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (141581) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (142581) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (142601) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (142601) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (143601) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (143621) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (143621) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (144631) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (144651) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (144651) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (145661) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (145681) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (145681) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (146681) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (146701) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (146701) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (147711) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (147731) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (147731) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (148731) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (148751) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (148751) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (149761) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (149781) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (149781) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (150781) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (150801) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (150801) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (151801) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (151821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (151821) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (152831) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (152851) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (152851) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (153861) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (153881) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (153881) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (154881) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (154901) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (154901) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (155911) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (155931) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (155941) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (155961) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32261[0m
+[0;32mI (156951) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (156971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (157001) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (157011) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16075[0m
+[0;32mI (158001) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (158021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (158021) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (159031) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (159051) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (159051) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (160061) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (160081) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (160081) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (161091) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (161111) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (161111) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (162121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (162141) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (162141) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (163141) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (163161) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (163161) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (164171) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (164191) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (164191) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (165191) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (165211) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (165211) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (166221) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (166241) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (166241) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (167241) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (167261) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (167261) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (168271) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (168291) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (168291) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (169291) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (169311) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (169321) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (169351) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6998[0m
+[0;32mI (170331) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (170351) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (170371) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (170441) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59765[0m
+[0;32mI (171381) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (171401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (171411) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (171521) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52857[0m
+[0;32mI (172421) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (172441) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (172451) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (172481) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8804[0m
+[0;32mI (173461) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (173481) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (173481) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (174491) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (174511) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (174511) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (175521) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (175541) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (175541) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (176541) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (176561) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (176561) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (177571) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (177591) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (177591) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (178591) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (178611) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (178611) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (179621) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (179641) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (179641) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (180641) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (180661) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (180661) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (181671) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (181691) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (181691) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (182691) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (182711) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (182711) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (183721) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (183741) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (183741) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (184741) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (184761) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (184761) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (185771) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (185791) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (185791) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (186791) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (186811) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (186821) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (186841) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39014[0m
+[0;32mI (187831) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (187851) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (187871) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (187891) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61673[0m
+[0;32mI (188881) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (188901) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (188901) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (189911) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (189931) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (189931) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (190941) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (190961) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (190961) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (191971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (191991) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (191991) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (192991) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (193011) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (193011) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (194021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (194041) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (194041) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (195041) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (195061) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (195061) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (196071) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (196091) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (196091) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (197091) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (197111) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (197111) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (198121) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (198141) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (198141) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (199141) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (199161) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (199171) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (199201) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13487[0m
+[0;32mI (200181) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (200201) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (200221) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (200241) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27889[0m
+[0;32mI (201221) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (201241) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (201241) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (202241) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (202261) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (202261) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (203271) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (203291) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (203291) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (204291) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (204311) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (204321) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (204341) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4065[0m
+[0;32mI (205331) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (205351) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (205371) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (205391) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3647[0m
+[0;32mI (206381) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (206401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (206411) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (206431) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13808[0m
+[0;32mI (207421) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (207441) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (207451) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (207491) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44235[0m
+[0;32mI (208461) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (208481) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (208481) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (209491) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (209511) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (209511) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (210521) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (210541) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (210541) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (211541) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (211561) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (211561) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (212571) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (212591) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (212591) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (213591) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (213611) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (213621) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (213671) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5808[0m
+[0;32mI (214631) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (214651) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (214671) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (214781) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47196[0m
+[0;32mI (215681) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (215701) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (215701) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (216711) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (216731) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (216731) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (217741) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (217761) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (217761) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (218771) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (218791) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (218791) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (219791) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (219811) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (219811) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (220821) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (220841) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (220841) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (221841) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (221861) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (221861) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (222871) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (222891) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (222891) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (223891) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (223911) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (223911) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (224921) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (224941) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (224941) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (225941) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (225961) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (225961) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (226971) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (226991) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (226991) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (227991) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (228011) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (228011) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (229021) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (229041) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (229041) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (230041) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (230061) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (230061) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (231071) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (231091) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (231101) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (231121) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32399[0m
+[0;32mI (232111) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (232131) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (232161) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (232171) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22592[0m
+[0;32mI (233161) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (233181) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (233181) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (234191) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (234211) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (234211) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (235221) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (235241) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (235261) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (235281) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53275[0m
+[0;32mI (236261) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (236281) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (236311) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (236321) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26073[0m
+[0;32mI (237311) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (237331) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (237331) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (238341) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (238361) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (238361) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (239371) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (239391) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (239391) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (240401) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (240421) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (240421) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (241431) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (241451) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (241451) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (242451) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (242471) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (242471) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (243481) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (243501) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (243501) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (244501) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (244521) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (244521) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (245531) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (245551) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (245551) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m
+[0;32mI (246551) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (246571) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (246571) adc_oneshot: adc_oneshot_read(169): invalid argument: null pointer[0m

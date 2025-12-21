@@ -1,0 +1,3242 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 29 2025 14:42:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0e7e8h ( 59368) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=0001e810 vaddr=3ffb0000 size=01808h (  6152) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=2a5ech (173548) map[0m
+[0;32mI (194) esp_image: segment 3: paddr=0004a614 vaddr=3ffb1808 size=009a8h (  2472) load[0m
+[0;32mI (195) esp_image: segment 4: paddr=0004afc4 vaddr=40080000 size=0d184h ( 53636) load[0m
+[0;32mI (229) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (229) boot: Disabling RNG early entropy source...[0m
+[0;32mI (240) cpu_start: Multicore app[0m
+[0;32mI (241) cpu_start: Pro cpu up.[0m
+[0;32mI (241) cpu_start: Starting app cpu, entry point is 0x400812e8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (259) cpu_start: Pro cpu start user code[0m
+[0;32mI (259) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (263) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (269) cpu_start: App version:      1[0m
+[0;32mI (273) cpu_start: Compile time:     Nov 29 2025 14:40:03[0m
+[0;32mI (279) cpu_start: ELF file SHA256:  686967c660cfad37...[0m
+[0;32mI (285) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (295) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (300) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (305) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (312) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (318) heap_init: At 3FFB3488 len 0002CB78 (178 KiB): DRAM[0m
+[0;32mI (324) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (330) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (337) heap_init: At 4008D184 len 00012E7C (75 KiB): IRAM[0m
+[0;32mI (344) spi_flash: detected chip: generic[0m
+[0;32mI (348) spi_flash: flash io: dio[0m
+[0;33mW (352) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (365) app_start: Starting scheduler on CPU0[0m
+[0;32mI (370) app_start: Starting scheduler on CPU1[0m
+[0;32mI (370) main_task: Started on CPU0[0m
+[0;32mI (380) main_task: Calling app_main()[0m
+[0;32mI (380) APP_MAIN: [APP] Startup..[0m
+[0;32mI (380) APP_MAIN: [APP] Free memory: 298268 bytes[0m
+[0;32mI (390) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (440) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (440) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (440) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (450) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (450) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (460) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (460) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (470) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (470) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (480) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (480) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (480) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (490) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (490) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (500) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (500) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (510) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (510) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (520) main_task: Returned from app_main()[0m
+[0;32mI (1520) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (1520) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (1520) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (1520) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (1520) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (1530) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (1530) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (1540) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (1540) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (1550) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (1550) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (1560) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (1560) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (1570) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (1570) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (1580) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (1580) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (1580) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (1590) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (1590) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (1600) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (1600) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (1610) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (1610) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (1620) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (1620) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (1630) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (1630) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (1640) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (1640) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (1650) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (1650) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (1660) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (1660) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (1660) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (1670) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (2680) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (2680) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (2690) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (2690) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (2700) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (2700) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (2710) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (2710) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (2720) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (2720) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (2720) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (2730) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (2730) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (2740) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (2740) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (2750) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (2750) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (2760) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (2760) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (2770) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (2770) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (2780) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (2780) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (2790) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (2790) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (2800) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (2800) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (2810) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (2810) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (2810) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (2820) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (3830) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (3830) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (3840) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (3840) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (3850) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (3850) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (3860) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (3860) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (3870) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (3870) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (3870) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (3880) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (3880) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (3890) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (3890) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (3900) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (3900) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (3910) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (3910) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (3920) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (3920) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (3930) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (3930) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (3940) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (3940) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (3950) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (3950) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (3960) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (3960) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (3960) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (3970) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (4980) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (4980) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (4990) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (4990) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (5000) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (5000) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (5010) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (5010) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (5020) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (5020) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (5020) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (5030) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (5030) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (5040) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (5040) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (5050) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (5050) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (5060) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (5060) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (5070) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (5070) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (5080) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (5080) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (5090) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (5090) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (5100) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (5100) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (5110) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (5110) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (5110) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (5120) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (6130) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (6130) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (6140) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (6140) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (6150) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (6150) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (6160) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (6160) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (6170) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (6170) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (6180) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (6180) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (6180) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (6190) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (6190) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (6200) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (6200) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (6210) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (6210) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (6220) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (6220) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (6230) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (6230) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (6240) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (6240) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (6250) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (6250) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (6260) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (6260) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (6260) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (6270) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (7280) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (7280) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (7290) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (7290) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (7300) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (7300) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (7310) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (7310) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (7320) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (7320) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (7320) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (7330) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (7330) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (7340) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (7340) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (7350) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (7350) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (7360) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (7360) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (7370) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (7370) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (7380) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (7380) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (7390) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (7390) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (7400) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (7400) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (7410) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (7410) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (7410) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (7420) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (8430) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (8430) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (8440) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (8440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (8450) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (8450) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (8460) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (8460) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (8470) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (8470) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (8470) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (8480) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (8480) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (8490) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (8490) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (8500) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (8500) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (8510) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (8510) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (8520) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (8520) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (8530) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (8530) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (8540) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (8540) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (8550) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (8550) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (8560) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (8560) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (8560) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (8570) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (9580) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (9580) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (9590) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (9590) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (9600) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (9600) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (9610) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (9610) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (9620) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (9620) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (9630) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (9630) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (9630) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (9640) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (9640) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (9650) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (9650) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (9660) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (9660) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (9670) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (9670) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (9680) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (9680) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (9690) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (9690) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (9700) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (9700) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (9710) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (9710) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (9710) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (9720) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (10730) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (10730) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (10740) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (10740) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (10750) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (10750) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (10760) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (10760) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (10770) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (10770) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (10780) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (10780) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (10790) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (10790) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (10800) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (10800) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (10800) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (10810) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (10810) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (10820) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (10820) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (10830) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (10830) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (10840) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (10840) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (10850) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (10850) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (10860) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (10860) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (10870) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (10870) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (11890) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (11890) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (11900) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (11900) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (11910) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (11910) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (11920) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (11920) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (11930) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (11930) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (11940) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (11940) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (11950) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (11950) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (11960) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (11960) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (11960) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (11970) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (11970) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (11980) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (11980) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (11990) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (11990) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (12000) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (12000) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (12010) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (12010) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (12020) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (12020) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (12030) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (12030) APP_MAIN: Moving to 180 degrees
+[0m
+
+assert failed: xQueueGenericSendFromISR queue.c:1122 (pxQueue)
+
+
+Backtrace: 0x4008194e:0x3ffb0b50 0x400863c5:0x3ffb0b70 0x4008be09:0x3ffb0b90 0x400869ce:0x3ffb0cb0 0x400d66d5:0x3ffb0cd0 0x400833da:0x3ffb0d00 0x400834ba:0x3ffb0d20 0x4008354a:0x3ffb0d50 0x40082bcd:0x3ffb0d80 0x40085227:0x3ffb5d50 0x400d2ed3:0x3ffb5d70 0x40087555:0x3ffb5d90 0x40088c35:0x3ffb5db0
+
+
+
+
+ELF file SHA256: 686967c660cfad37
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 29 2025 14:42:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0e7e8h ( 59368) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=0001e810 vaddr=3ffb0000 size=01808h (  6152) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=2a5ech (173548) map[0m
+[0;32mI (194) esp_image: segment 3: paddr=0004a614 vaddr=3ffb1808 size=009a8h (  2472) load[0m
+[0;32mI (195) esp_image: segment 4: paddr=0004afc4 vaddr=40080000 size=0d184h ( 53636) load[0m
+[0;32mI (229) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (229) boot: Disabling RNG early entropy source...[0m
+[0;32mI (240) cpu_start: Multicore app[0m
+[0;32mI (241) cpu_start: Pro cpu up.[0m
+[0;32mI (241) cpu_start: Starting app cpu, entry point is 0x400812e8[0m
+[0;32mI (228) cpu_start: App cpu up.[0m
+[0;32mI (259) cpu_start: Pro cpu start user code[0m
+[0;32mI (259) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (264) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (269) cpu_start: App version:      1[0m
+[0;32mI (273) cpu_start: Compile time:     Nov 29 2025 14:40:03[0m
+[0;32mI (280) cpu_start: ELF file SHA256:  686967c660cfad37...[0m
+[0;32mI (285) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (295) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (300) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (305) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (312) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (318) heap_init: At 3FFB3488 len 0002CB78 (178 KiB): DRAM[0m
+[0;32mI (324) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (330) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (337) heap_init: At 4008D184 len 00012E7C (75 KiB): IRAM[0m
+[0;32mI (345) spi_flash: detected chip: generic[0m
+[0;32mI (348) spi_flash: flash io: dio[0m
+[0;33mW (352) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (366) app_start: Starting scheduler on CPU0[0m
+[0;32mI (370) app_start: Starting scheduler on CPU1[0m
+[0;32mI (370) main_task: Started on CPU0[0m
+[0;32mI (380) main_task: Calling app_main()[0m
+[0;32mI (380) APP_MAIN: [APP] Startup..[0m
+[0;32mI (380) APP_MAIN: [APP] Free memory: 298268 bytes[0m
+[0;32mI (390) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (440) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (440) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (440) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (450) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (450) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (460) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (460) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (470) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (470) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (480) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (480) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (480) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (490) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (490) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (500) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (500) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (510) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (510) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (520) main_task: Returned from app_main()[0m
+[0;32mI (1520) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (1520) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (1520) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (1520) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (1520) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (1530) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (1530) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (1540) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (1540) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (1550) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (1550) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (1560) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (1560) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (1570) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (1570) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (1580) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (1580) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (1580) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (1590) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (1590) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (1600) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (1600) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (1610) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (1610) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (1620) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (1620) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (1630) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (1630) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (1640) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (1640) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (1650) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (1650) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (1660) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (1660) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (1660) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (1670) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (2670) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (2680) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (2680) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (2690) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (2690) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (2700) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (2700) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (2710) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (2710) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (2720) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (2720) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (2720) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (2730) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (2730) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (2740) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (2740) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (2750) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (2750) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (2760) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (2760) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (2770) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (2770) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (2780) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (2780) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (2790) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (2790) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (2800) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (2800) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (2810) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (2810) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (2810) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (2820) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (3820) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (3830) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (3830) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (3840) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (3840) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (3850) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (3850) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (3860) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (3860) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (3870) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (3870) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (3870) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (3880) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (3880) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (3890) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (3890) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (3900) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (3900) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (3910) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (3910) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (3920) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (3920) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (3930) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (3930) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (3940) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (3940) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (3950) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (3950) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (3960) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (3960) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (3960) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (3970) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (4970) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (4980) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (4980) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (4990) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (4990) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (5000) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (5000) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (5010) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (5010) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (5020) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (5020) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (5020) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (5030) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (5030) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (5040) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (5040) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (5050) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (5050) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (5060) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (5060) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (5070) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (5070) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (5080) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (5080) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (5090) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (5090) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (5100) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (5100) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (5110) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (5110) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (5110) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (5120) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (6120) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (6130) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (6130) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (6140) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (6140) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (6150) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (6150) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (6160) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (6160) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (6170) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (6170) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (6180) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (6180) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (6180) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (6190) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (6190) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (6200) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (6200) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (6210) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (6210) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (6220) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (6220) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (6230) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (6230) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (6240) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (6240) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (6250) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (6250) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (6260) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (6260) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (6260) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (6270) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (7270) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (7280) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (7280) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (7290) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (7290) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (7300) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (7300) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (7310) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (7310) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (7320) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (7320) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (7320) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (7330) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (7330) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (7340) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (7340) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (7350) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (7350) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (7360) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (7360) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (7370) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (7370) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (7380) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (7380) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (7390) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (7390) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (7400) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (7400) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (7410) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (7410) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (7410) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (7420) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (8420) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (8430) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (8430) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (8440) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (8440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (8450) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (8450) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (8460) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (8460) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (8470) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (8470) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (8470) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (8480) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (8480) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (8490) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (8490) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (8500) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (8500) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (8510) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (8510) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (8520) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (8520) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (8530) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (8530) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (8540) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (8540) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (8550) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (8550) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (8560) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (8560) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (8560) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (8570) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (9570) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (9580) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (9580) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (9590) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (9590) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (9600) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (9600) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (9610) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (9610) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (9620) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (9620) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (9630) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (9630) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (9630) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (9640) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (9640) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (9650) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (9650) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (9660) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (9660) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (9670) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (9670) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (9680) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (9680) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (9690) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (9690) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (9700) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (9700) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (9710) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (9710) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (9710) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (9720) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (10720) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (10730) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (10730) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (10740) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (10740) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (10750) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (10750) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (10760) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (10760) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (10770) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (10770) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (10780) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (10780) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (10790) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (10790) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (10800) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (10800) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (10800) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (10810) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (10810) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (10820) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (10820) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (10830) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (10830) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (10840) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (10840) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (10850) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (10850) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (10860) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (10860) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (10870) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (10870) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (11880) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (11890) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (11890) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (11900) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (11900) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (11910) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (11910) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (11920) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (11920) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (11930) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (11930) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (11940) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (11940) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (11950) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (11950) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (11960) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (11960) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (11960) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (11970) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (11970) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (11980) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (11980) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (11990) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (11990) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (12000) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (12000) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (12010) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (12010) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (12020) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (12020) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (12030) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (12030) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (13040) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (13040) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (13040) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (13040) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (13040) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (13050) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (13050) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (13060) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (13060) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (13070) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (13070) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (13080) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (13080) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (13090) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (13090) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (13100) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (13100) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (13110) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (13110) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (13120) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (13120) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (13120) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (13130) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (13130) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (13140) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (13140) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (13150) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (13150) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (13160) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (13160) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (13170) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (13170) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (13180) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (13180) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (13190) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (13190) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (14200) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (14200) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (14200) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (14200) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (14200) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (14210) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (14210) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (14220) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (14220) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (14230) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (14230) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (14240) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (14240) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (14250) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (14250) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (14260) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (14260) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (14270) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (14270) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (14280) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (14280) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (14280) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (14290) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (14290) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (14300) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (14300) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (14310) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (14310) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (14320) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (14320) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (14330) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (14330) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (14340) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (14340) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (14350) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (14350) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (15360) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (15360) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (15360) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (15360) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (15360) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (15370) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (15370) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (15380) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (15380) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (15390) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (15390) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (15400) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (15400) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (15410) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (15410) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (15420) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (15420) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (15430) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (15430) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (15440) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (15440) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (15440) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (15450) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (15450) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (15460) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (15460) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (15470) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (15470) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (15480) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (15480) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (15490) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (15490) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (15500) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (15500) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (15510) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (15510) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (16520) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (16520) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (16520) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (16520) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (16520) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (16530) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (16530) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (16540) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (16540) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (16550) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (16550) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (16560) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (16560) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (16570) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (16570) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (16580) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (16580) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (16590) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (16590) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (16600) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (16600) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (16600) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (16610) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (16610) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (16620) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (16620) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (16630) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (16630) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (16640) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (16640) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (16650) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (16650) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (16660) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (16660) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (16670) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (16670) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (17680) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (17680) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (17680) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (17680) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (17680) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (17690) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (17690) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (17700) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (17700) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (17710) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (17710) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (17720) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (17720) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (17730) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (17730) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (17740) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (17740) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (17750) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (17750) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (17760) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (17760) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (17760) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (17770) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (17770) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (17780) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (17780) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (17790) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (17790) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (17800) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (17800) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (17810) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (17810) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (17820) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (17820) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (17830) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (17830) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (18840) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (18840) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (18840) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (18840) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (18840) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (18850) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (18850) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (18860) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (18860) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (18870) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (18870) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (18880) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (18880) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (18890) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (18890) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (18900) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (18900) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (18910) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (18910) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (18920) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (18920) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (18920) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (18930) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (18930) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (18940) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (18940) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (18950) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (18950) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (18960) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (18960) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (18970) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (18970) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (18980) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (18980) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (18990) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (18990) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (20000) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (20000) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (20000) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (20000) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (20000) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (20010) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (20010) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (20020) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (20020) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (20030) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (20030) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (20040) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (20040) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (20050) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (20050) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (20060) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (20060) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (20070) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (20070) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (20080) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (20080) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (20080) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (20090) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (20090) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (20100) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (20100) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (20110) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (20110) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (20120) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (20120) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (20130) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (20130) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (20140) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (20140) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (20150) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (20150) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (21160) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (21160) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (21160) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (21160) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (21160) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (21170) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (21170) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (21180) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (21180) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (21190) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (21190) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (21200) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (21200) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (21210) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (21210) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (21220) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (21220) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (21230) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (21230) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (21240) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (21240) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (21240) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (21250) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (21250) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (21260) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (21260) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (21270) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (21270) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (21280) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (21280) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (21290) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (21290) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (21300) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (21300) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (21310) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (21310) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (22320) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (22320) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (22320) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (22320) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (22320) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (22330) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (22330) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (22340) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (22340) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (22350) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (22350) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (22360) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (22360) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (22370) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (22370) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (22380) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (22380) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (22390) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (22390) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (22400) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (22400) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (22400) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (22410) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (22410) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (22420) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (22420) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (22430) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (22430) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (22440) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (22440) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (22450) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (22450) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (22460) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (22460) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (22470) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (22470) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (23480) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (23480) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (23480) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (23480) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (23480) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (23490) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (23490) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (23500) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (23500) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (23510) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (23510) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (23520) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (23520) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (23530) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (23530) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (23540) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (23540) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (23550) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (23550) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (23560) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (23560) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (23560) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (23570) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (23570) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (23580) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (23580) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (23590) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (23590) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (23600) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (23600) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (23610) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (23610) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (23620) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (23620) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (23630) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (23630) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (24640) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (24640) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (24640) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (24640) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (24640) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (24650) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (24650) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (24660) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (24660) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (24670) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (24670) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (24680) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (24680) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (24690) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (24690) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (24700) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (24700) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (24710) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (24710) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (24720) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (24720) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (24720) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (24730) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (24730) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (24740) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (24740) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (24750) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (24750) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (24760) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (24760) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (24770) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (24770) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (24780) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (24780) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (24790) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (24790) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (25800) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (25800) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (25800) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (25800) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (25800) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (25810) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (25810) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (25820) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (25820) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (25830) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (25830) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (25840) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (25840) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (25850) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (25850) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (25860) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (25860) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (25870) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (25870) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (25880) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (25880) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (25880) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (25890) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (25890) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (25900) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (25900) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (25910) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (25910) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (25920) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (25920) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (25930) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (25930) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (25940) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (25940) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (25950) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (25950) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (26960) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (26960) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (26960) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (26960) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (26960) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (26970) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (26970) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (26980) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (26980) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (26990) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (26990) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (27000) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (27000) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (27010) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (27010) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (27020) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (27020) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (27030) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (27030) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (27040) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (27040) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (27040) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (27050) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (27050) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (27060) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (27060) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (27070) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (27070) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (27080) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (27080) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (27090) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (27090) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (27100) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (27100) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (27110) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (27110) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (28120) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (28120) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (28120) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (28120) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (28120) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (28130) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (28130) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (28140) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (28140) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (28150) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (28150) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (28160) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (28160) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (28170) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (28170) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (28180) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (28180) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (28190) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (28190) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (28200) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (28200) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (28200) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (28210) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (28210) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (28220) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (28220) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (28230) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (28230) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (28240) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (28240) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (28250) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (28250) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (28260) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (28260) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (28270) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (28270) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (29280) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (29280) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (29280) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (29280) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (29280) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (29290) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (29290) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (29300) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (29300) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (29310) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (29310) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (29320) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (29320) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (29330) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (29330) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (29340) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (29340) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (29350) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (29350) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (29360) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (29360) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (29360) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (29370) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (29370) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (29380) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (29380) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (29390) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (29390) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (29400) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (29400) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (29410) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (29410) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (29420) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (29420) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (29430) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (29430) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (30440) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (30440) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (30440) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (30440) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (30440) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (30450) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (30450) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (30460) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (30460) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (30470) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (30470) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (30480) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (30480) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (30490) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (30490) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (30500) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (30500) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (30510) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (30510) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (30520) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (30520) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (30520) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (30530) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (30530) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (30540) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (30540) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (30550) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (30550) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (30560) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (30560) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (30570) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (30570) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (30580) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (30580) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (30590) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (30590) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (31600) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (31600) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (31600) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (31600) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (31600) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (31610) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (31610) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (31620) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (31620) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (31630) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (31630) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (31640) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (31640) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (31650) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (31650) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (31660) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (31660) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (31670) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (31670) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (31680) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (31680) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (31680) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (31690) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (31690) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (31700) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (31700) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (31710) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (31710) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (31720) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (31720) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (31730) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (31730) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (31740) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (31740) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (31750) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (31750) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (32760) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (32760) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (32760) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (32760) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (32760) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (32770) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (32770) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (32780) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (32780) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (32790) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (32790) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (32800) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (32800) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (32810) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (32810) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (32820) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (32820) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (32830) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (32830) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (32840) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (32840) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (32840) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (32850) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (32850) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (32860) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (32860) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (32870) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (32870) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (32880) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (32880) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (32890) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (32890) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (32900) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (32900) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (32910) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (32910) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (33920) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (33920) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (33920) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (33920) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (33920) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (33930) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (33930) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (33940) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (33940) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (33950) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (33950) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (33960) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (33960) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (33970) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (33970) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (33980) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (33980) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (33990) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (33990) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (34000) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (34000) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (34000) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (34010) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (34010) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (34020) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (34020) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (34030) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (34030) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (34040) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (34040) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (34050) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (34050) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (34060) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (34060) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (34070) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (34070) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (35080) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (35080) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (35080) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (35080) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (35080) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (35090) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (35090) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (35100) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (35100) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (35110) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (35110) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (35120) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (35120) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (35130) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (35130) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (35140) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (35140) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (35150) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (35150) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (35160) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (35160) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (35160) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (35170) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (35170) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (35180) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (35180) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (35190) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (35190) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (35200) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (35200) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (35210) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (35210) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (35220) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (35220) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (35230) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (35230) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (36240) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (36240) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (36240) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (36240) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (36240) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (36250) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (36250) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (36260) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (36260) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (36270) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (36270) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (36280) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (36280) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (36290) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (36290) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (36300) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (36300) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (36310) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (36310) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (36320) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (36320) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (36320) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (36330) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (36330) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (36340) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (36340) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (36350) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (36350) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (36360) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (36360) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (36370) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (36370) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (36380) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (36380) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (36390) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (36390) APP_MAIN: Moving to 180 degrees
+[0m
+[0;32mI (37400) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (37400) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (37400) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (37400) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (37400) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (37410) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (37410) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (37420) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (37420) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (37430) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (37430) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (37440) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (37440) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (37450) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (37450) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (37460) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (37460) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (37470) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (37470) APP_MAIN: Moving to 10 degrees
+[0m
+[0;32mI (37480) APP_MAIN: Moving to 20 degrees
+[0m
+[0;32mI (37480) APP_MAIN: Moving to 30 degrees
+[0m
+[0;32mI (37480) APP_MAIN: Moving to 40 degrees
+[0m
+[0;32mI (37490) APP_MAIN: Moving to 50 degrees
+[0m
+[0;32mI (37490) APP_MAIN: Moving to 60 degrees
+[0m
+[0;32mI (37500) APP_MAIN: Moving to 70 degrees
+[0m
+[0;32mI (37500) APP_MAIN: Moving to 80 degrees
+[0m
+[0;32mI (37510) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (37510) APP_MAIN: Moving to 100 degrees
+[0m
+[0;32mI (37520) APP_MAIN: Moving to 110 degrees
+[0m
+[0;32mI (37520) APP_MAIN: Moving to 120 degrees
+[0m
+[0;32mI (37530) APP_MAIN: Moving to 130 degrees
+[0m
+[0;32mI (37530) APP_MAIN: Moving to 140 degrees
+[0m
+[0;32mI (37540) APP_MAIN: Moving to 150 degrees
+[0m
+[0;32mI (37540) APP_MAIN: Moving to 160 degrees
+[0m
+[0;32mI (37550) APP_MAIN: Moving to 170 degrees
+[0m
+[0;32mI (37550) APP_MAIN: Moving to 180 degrees
+[0m

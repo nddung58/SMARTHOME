@@ -1,0 +1,22 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM8 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM8 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4008156c: [0;33mcall_start_cpu1[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m154[0m
+[0m--- 0x400014fd: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400014fd: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x4000150d: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400014fa: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400eb6a5: [0;33mnvs::Page::writeItem(unsigned char, nvs::ItemType, char const*, void const*, unsigned int, unsigned char)[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/nvs_flash/src/nvs_page.cpp[0m[0m:[1;31m169[0m
+[0m--- 0x400ea915: [0;33mnvs::Storage::writeItem(unsigned char, nvs::ItemType, char const*, void const*, unsigned int)[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/nvs_flash/src/nvs_storage.cpp[0m[0m:[1;31m367[0m
+[0m--- 0x400eab0a: [0;33mnvs::NVSHandleSimple::set_typed_item(nvs::ItemType, char const*, void const*, unsigned int)[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/nvs_flash/src/nvs_handle_simple.cpp[0m[0m:[1;31m29[0m
+[0m--- 0x4017c7b7: [0;33mint nvs::NVSHandle::set_item<unsigned long>(char const*, unsigned long)[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/nvs_flash/include/nvs_handle.hpp[0m[0m:[1;31m270[0m
+[0m--- 0x400e9b8f: [0;33mint nvs_set<unsigned long>(unsigned long, char const*, unsigned long)[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/nvs_flash/src/nvs_api.cpp[0m[0m:[1;31m350[0m
+[0m--- 0x400e9ba5: [0;33mnvs_set_u32[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/nvs_flash/src/nvs_api.cpp[0m[0m:[1;31m380[0m
+[0m--- 0x400da25d: [0;33mstorage_nvs_set_float[0m[0m at [0;32mC:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/common/flash/storage_nvs.c[0m[0m:[1;31m47[0m
+[0m--- 0x400d9592: [0;33mliving_sensor_update_task[0m[0m at [0;32mC:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/main/living_handle.c[0m[0m:[1;31m150[0m
+[0m--- 0x4008d591: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m162[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4008156c: [0;33mcall_start_cpu1[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m154[0m
+[0m

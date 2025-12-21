@@ -1,0 +1,2017 @@
+[
+    {
+        "id": "8523e90b9c09ce7f",
+        "type": "tab",
+        "label": "LivingRoom",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dd1c4b5dcfd56120",
+        "type": "tab",
+        "label": "BedRoom",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3d83b55bfbd04ced",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a1ad8c316d8adb98",
+        "type": "ui_tab",
+        "name": "LivingRoom",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "47eb4d299e0b7820",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1007e1939a3de470",
+        "type": "ui_tab",
+        "name": "BedRoom",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "17b6486bf5dd7490",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "387b9bf704075d97",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6f8ed183db663508",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0ac23d4292ddc187",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4451d311ea6f078f",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "879f809579e5c0e8",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b534a04a7fcaefdf",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "a1ad8c316d8adb98",
+        "order": 1,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "043857fc0ab8cb47",
+        "type": "firebase config",
+        "firebaseurl": "smarthome-eb123-default-rtdb",
+        "loginType": "none"
+    },
+    {
+        "id": "9e344301213c8af9",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "1007e1939a3de470",
+        "order": 1,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ea92f4dfec6ee378",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "b534a04a7fcaefdf",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d672bc8ed7dd430d",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "b534a04a7fcaefdf",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "26c06b02dfe4f43e",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "9e344301213c8af9",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "93413d9b1b02f870",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "9e344301213c8af9",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ec8677c639c6e58c",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "9e344301213c8af9",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "db7a75c943594c1d",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "9e344301213c8af9",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "960b7a4d8380cdc2",
+        "type": "ui_spacer",
+        "z": "8523e90b9c09ce7f",
+        "name": "spacer",
+        "group": "9e344301213c8af9",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f0fac85810fe1c6b",
+        "type": "ui_tab",
+        "name": "Chart",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "33b74455ec561fe8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "f0fac85810fe1c6b",
+        "order": 1,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f2ca6a2bb8acc8fc",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.54.195",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "723ee6e9140701cf",
+        "type": "mqtt in",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "living_fan",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "05d8ad81f5c3d532"
+            ]
+        ]
+    },
+    {
+        "id": "05d8ad81f5c3d532",
+        "type": "ui_slider",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "label": "FAN",
+        "tooltip": "",
+        "group": "b534a04a7fcaefdf",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "3",
+        "step": 1,
+        "className": "",
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "18ac7aa41bc7f2e2",
+                "1fde7adc793bf40b"
+            ]
+        ]
+    },
+    {
+        "id": "18ac7aa41bc7f2e2",
+        "type": "mqtt out",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "liv/fan",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 730,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "1fde7adc793bf40b",
+        "type": "firebase modify",
+        "z": "8523e90b9c09ce7f",
+        "name": "fan",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "livfan",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66a62fdd73a57b8a",
+        "type": "mqtt in",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "living_temp",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "f56d21765cd4b9d5",
+                "a62e3350119e69fc"
+            ]
+        ]
+    },
+    {
+        "id": "a62e3350119e69fc",
+        "type": "firebase modify",
+        "z": "8523e90b9c09ce7f",
+        "name": "temp",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "livtemp",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f56d21765cd4b9d5",
+        "type": "ui_gauge",
+        "z": "8523e90b9c09ce7f",
+        "name": "liv/temp",
+        "group": "b534a04a7fcaefdf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "70",
+        "colors": [
+            "#07b0e9",
+            "#00e61b",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "35",
+        "diff": false,
+        "className": "",
+        "x": 740,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c05b9d5d8e47d711",
+        "type": "mqtt in",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "living_humi",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 380,
+        "wires": [
+            [
+                "6732d135103ece84",
+                "a75fd4f9cfbdda98"
+            ]
+        ]
+    },
+    {
+        "id": "6732d135103ece84",
+        "type": "firebase modify",
+        "z": "8523e90b9c09ce7f",
+        "name": "humi",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "livhumi",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a75fd4f9cfbdda98",
+        "type": "ui_gauge",
+        "z": "8523e90b9c09ce7f",
+        "name": "liv/humi",
+        "group": "b534a04a7fcaefdf",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "diff": false,
+        "className": "",
+        "x": 740,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ba4e9e6c3f1fb108",
+        "type": "mqtt in",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "living_rfid",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 520,
+        "wires": [
+            [
+                "8ac4ee841f470d75",
+                "968395aa5d26e8a8"
+            ]
+        ]
+    },
+    {
+        "id": "8ac4ee841f470d75",
+        "type": "firebase modify",
+        "z": "8523e90b9c09ce7f",
+        "name": "RFID",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "rfid",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09081505d679d0ac",
+        "type": "mqtt in",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "living_mq2",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 680,
+        "wires": [
+            [
+                "68b97f2ca3243b7c",
+                "e9e0edc502bf7b0d"
+            ]
+        ]
+    },
+    {
+        "id": "68b97f2ca3243b7c",
+        "type": "firebase modify",
+        "z": "8523e90b9c09ce7f",
+        "name": "GAS",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "livgas",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9e0edc502bf7b0d",
+        "type": "ui_text",
+        "z": "8523e90b9c09ce7f",
+        "group": "b534a04a7fcaefdf",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "GAS",
+        "format": "{{msg.payload}} PPM",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 730,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e11a82ec7ccb945c",
+        "type": "mqtt in",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "living_buzzer",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 840,
+        "wires": [
+            [
+                "c5339939d693123a"
+            ]
+        ]
+    },
+    {
+        "id": "c5339939d693123a",
+        "type": "ui_switch",
+        "z": "8523e90b9c09ce7f",
+        "name": "switch",
+        "label": "BUZ",
+        "tooltip": "",
+        "group": "b534a04a7fcaefdf",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 450,
+        "y": 840,
+        "wires": [
+            [
+                "84aed3c097c3bfdc",
+                "75f28dd302b3957a"
+            ]
+        ]
+    },
+    {
+        "id": "84aed3c097c3bfdc",
+        "type": "ui_text",
+        "z": "8523e90b9c09ce7f",
+        "group": "b534a04a7fcaefdf",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "BUZZER",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 740,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "75f28dd302b3957a",
+        "type": "firebase modify",
+        "z": "8523e90b9c09ce7f",
+        "name": "BUZZER",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "livbuzzer",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 740,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "892f2118bf73c490",
+        "type": "mqtt in",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "living_led",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 1020,
+        "wires": [
+            [
+                "654471851ff478fd"
+            ]
+        ]
+    },
+    {
+        "id": "654471851ff478fd",
+        "type": "ui_switch",
+        "z": "8523e90b9c09ce7f",
+        "name": "switch",
+        "label": "LED",
+        "tooltip": "",
+        "group": "b534a04a7fcaefdf",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 450,
+        "y": 1020,
+        "wires": [
+            [
+                "4549968cc28de07d",
+                "0d10dc122cbd2e54"
+            ]
+        ]
+    },
+    {
+        "id": "4549968cc28de07d",
+        "type": "ui_text",
+        "z": "8523e90b9c09ce7f",
+        "group": "b534a04a7fcaefdf",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "LED",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 730,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "0d10dc122cbd2e54",
+        "type": "firebase modify",
+        "z": "8523e90b9c09ce7f",
+        "name": "LED",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "livled",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64d95b9b189baa36",
+        "type": "mqtt in",
+        "z": "8523e90b9c09ce7f",
+        "name": "",
+        "topic": "living_ldr",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 1180,
+        "wires": [
+            [
+                "7765fc2083be9bab",
+                "db907768e0704fb6"
+            ]
+        ]
+    },
+    {
+        "id": "7765fc2083be9bab",
+        "type": "ui_text",
+        "z": "8523e90b9c09ce7f",
+        "group": "b534a04a7fcaefdf",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Brightness",
+        "format": "{{msg.payload}} lux",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "db907768e0704fb6",
+        "type": "firebase modify",
+        "z": "8523e90b9c09ce7f",
+        "name": "brightness",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "livbrightness",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 750,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "968395aa5d26e8a8",
+        "type": "ui_template",
+        "z": "8523e90b9c09ce7f",
+        "group": "b534a04a7fcaefdf",
+        "name": "",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .rfid-box {\n        font-size: 16px;\n        line-height: 1.4;\n        padding: 5px 0;\n        margin-bottom: 0 !important;\n    }\n    .rfid-row {\n        display: flex;\n        justify-content: space-between;\n        width: 300px;  /* chỉnh độ rộng tại đây */\n    }\n    .rfid-label {\n        margin-left: 6px;\n    }\n</style>\n\n<div class=\"rfid-box\">\n    <div class=\"rfid-row\">\n        <span class=\"rfid-label\">RFID</span>\n        <span>{{msg.payload.ID}}</span>\n    </div>\n\n    <div class=\"rfid-row\">\n        <span></span>\n        <span>{{msg.payload.Time}}</span>\n    </div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a45862f18e7047d",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_fan",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "0c323ad127272600"
+            ]
+        ]
+    },
+    {
+        "id": "0c323ad127272600",
+        "type": "ui_slider",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "label": "FAN",
+        "tooltip": "",
+        "group": "9e344301213c8af9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "3",
+        "step": 1,
+        "className": "",
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "7c1334d5ea9f1c5f",
+                "209243311d1e0189"
+            ]
+        ]
+    },
+    {
+        "id": "7c1334d5ea9f1c5f",
+        "type": "mqtt out",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed/fan",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 740,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "209243311d1e0189",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "fan",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "bedfan",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e41ebc71326a88f",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_temp",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "701aad231e7f3e01",
+                "48ddb42ec9a29133"
+            ]
+        ]
+    },
+    {
+        "id": "48ddb42ec9a29133",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "temp",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "bedtemp",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "701aad231e7f3e01",
+        "type": "ui_gauge",
+        "z": "dd1c4b5dcfd56120",
+        "name": "bed/temp",
+        "group": "9e344301213c8af9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "70",
+        "colors": [
+            "#07b0e9",
+            "#00e61b",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "35",
+        "diff": false,
+        "className": "",
+        "x": 740,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "975a41bef6c110fc",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_humi",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 360,
+        "wires": [
+            [
+                "3f8d7f5e370b4abe",
+                "369d5de0fe2c78d5"
+            ]
+        ]
+    },
+    {
+        "id": "3f8d7f5e370b4abe",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "humi",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "bedhumi",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "369d5de0fe2c78d5",
+        "type": "ui_gauge",
+        "z": "dd1c4b5dcfd56120",
+        "name": "bed/humi",
+        "group": "9e344301213c8af9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "diff": false,
+        "className": "",
+        "x": 740,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f75c5b8c142d4676",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_mq2",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 500,
+        "wires": [
+            [
+                "9f57dd1deef3f3c3",
+                "d11d80d11f8271a7"
+            ]
+        ]
+    },
+    {
+        "id": "9f57dd1deef3f3c3",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "GAS",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "bedgas",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d11d80d11f8271a7",
+        "type": "ui_text",
+        "z": "dd1c4b5dcfd56120",
+        "group": "9e344301213c8af9",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "GAS",
+        "format": "{{msg.payload}} PPM",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 730,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "84aa1ec4352ab1b5",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_buzzer",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 660,
+        "wires": [
+            [
+                "f9d2f63c04658191"
+            ]
+        ]
+    },
+    {
+        "id": "f9d2f63c04658191",
+        "type": "ui_switch",
+        "z": "dd1c4b5dcfd56120",
+        "name": "switch",
+        "label": "BUZ",
+        "tooltip": "",
+        "group": "9e344301213c8af9",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 450,
+        "y": 660,
+        "wires": [
+            [
+                "d7f7bcc903fb5fc1",
+                "5687361c1640b871"
+            ]
+        ]
+    },
+    {
+        "id": "d7f7bcc903fb5fc1",
+        "type": "ui_text",
+        "z": "dd1c4b5dcfd56120",
+        "group": "9e344301213c8af9",
+        "order": 14,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "BUZZER",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 740,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "5687361c1640b871",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "BUZZER",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "bedbuzzer",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 740,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6edc934121e321dd",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_led",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 840,
+        "wires": [
+            [
+                "45bcd04989845bc1"
+            ]
+        ]
+    },
+    {
+        "id": "45bcd04989845bc1",
+        "type": "ui_switch",
+        "z": "dd1c4b5dcfd56120",
+        "name": "switch",
+        "label": "LED",
+        "tooltip": "",
+        "group": "9e344301213c8af9",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 450,
+        "y": 840,
+        "wires": [
+            [
+                "95d5c84285207008",
+                "8643abf11a7ae226"
+            ]
+        ]
+    },
+    {
+        "id": "95d5c84285207008",
+        "type": "ui_text",
+        "z": "dd1c4b5dcfd56120",
+        "group": "9e344301213c8af9",
+        "order": 17,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "LED",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 730,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "8643abf11a7ae226",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "LED",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "bedled",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a441ba0747ead5b",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_ldr",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 1000,
+        "wires": [
+            [
+                "08a191ff4e873309",
+                "ac7a9d793227cfdd"
+            ]
+        ]
+    },
+    {
+        "id": "08a191ff4e873309",
+        "type": "ui_text",
+        "z": "dd1c4b5dcfd56120",
+        "group": "9e344301213c8af9",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Brightness",
+        "format": "{{msg.payload}} lux",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "ac7a9d793227cfdd",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "brightness",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "bedbrightness",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 750,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7abd2a5d15e66459",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_rain",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 1160,
+        "wires": [
+            [
+                "09a1746cda808ebe",
+                "e9d16b8c07d52897"
+            ]
+        ]
+    },
+    {
+        "id": "09a1746cda808ebe",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "rain",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "rain",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 730,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9d16b8c07d52897",
+        "type": "ui_text",
+        "z": "dd1c4b5dcfd56120",
+        "group": "9e344301213c8af9",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "RAIN",
+        "format": "{{msg.payload}} %",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 730,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "29f5ced374caf33e",
+        "type": "mqtt in",
+        "z": "dd1c4b5dcfd56120",
+        "name": "",
+        "topic": "bed_awnings",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "f2ca6a2bb8acc8fc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 1300,
+        "wires": [
+            [
+                "1a99f95f00a08dc6"
+            ]
+        ]
+    },
+    {
+        "id": "5398dd504e5067f3",
+        "type": "ui_text",
+        "z": "dd1c4b5dcfd56120",
+        "group": "9e344301213c8af9",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "AWNINGS",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "a93fcc24f2c06c41",
+        "type": "firebase modify",
+        "z": "dd1c4b5dcfd56120",
+        "name": "awnings",
+        "firebaseconfig": "043857fc0ab8cb47",
+        "childpath": "awnings",
+        "method": "push",
+        "value": "msg.payload",
+        "priority": "msg.priority",
+        "x": 740,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a99f95f00a08dc6",
+        "type": "ui_switch",
+        "z": "dd1c4b5dcfd56120",
+        "name": "switch",
+        "label": "AWN",
+        "tooltip": "",
+        "group": "9e344301213c8af9",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "OPEN",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "CLOSE",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 450,
+        "y": 1300,
+        "wires": [
+            [
+                "5398dd504e5067f3",
+                "a93fcc24f2c06c41"
+            ]
+        ]
+    },
+    {
+        "id": "1a1b1416ef188059",
+        "type": "mqtt in",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "topic": "bed_temp",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "2e9b73c1869c0776"
+            ]
+        ]
+    },
+    {
+        "id": "f6a93c32d92ded3d",
+        "type": "mqtt in",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "topic": "living_temp",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "202f5fc8dd0e5e6b"
+            ]
+        ]
+    },
+    {
+        "id": "202f5fc8dd0e5e6b",
+        "type": "change",
+        "z": "3d83b55bfbd04ced",
+        "name": "change liv/temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "liv/temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "718a4b8c6e67b9da"
+            ]
+        ]
+    },
+    {
+        "id": "2e9b73c1869c0776",
+        "type": "change",
+        "z": "3d83b55bfbd04ced",
+        "name": "change bed/temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "bed/temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "718a4b8c6e67b9da"
+            ]
+        ]
+    },
+    {
+        "id": "718a4b8c6e67b9da",
+        "type": "ui_chart",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "group": "33b74455ec561fe8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temp Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#fbff00",
+            "#fb0404",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b883d1fd7e15edd7",
+        "type": "mqtt in",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "topic": "bed_humi",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 340,
+        "wires": [
+            [
+                "519974e0a7599840"
+            ]
+        ]
+    },
+    {
+        "id": "719e4bfe6c7f790f",
+        "type": "mqtt in",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "topic": "living_humi",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 460,
+        "wires": [
+            [
+                "1c9297cc8ff08fda"
+            ]
+        ]
+    },
+    {
+        "id": "1c9297cc8ff08fda",
+        "type": "change",
+        "z": "3d83b55bfbd04ced",
+        "name": "change liv/humi",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "liv/humi",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 460,
+        "wires": [
+            [
+                "f87ec892a409688c"
+            ]
+        ]
+    },
+    {
+        "id": "519974e0a7599840",
+        "type": "change",
+        "z": "3d83b55bfbd04ced",
+        "name": "change bed/humi",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "bed/humi",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "f87ec892a409688c"
+            ]
+        ]
+    },
+    {
+        "id": "f87ec892a409688c",
+        "type": "ui_chart",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "group": "33b74455ec561fe8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Humi Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#fbff00",
+            "#fb0404",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc48078a6a43ba08",
+        "type": "mqtt in",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "topic": "bed_gas",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 580,
+        "wires": [
+            [
+                "12432031da7eb898"
+            ]
+        ]
+    },
+    {
+        "id": "a983a1fa72d9e0d6",
+        "type": "mqtt in",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "topic": "living_gas",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 700,
+        "wires": [
+            [
+                "1b422497f1f905f3"
+            ]
+        ]
+    },
+    {
+        "id": "1b422497f1f905f3",
+        "type": "change",
+        "z": "3d83b55bfbd04ced",
+        "name": "change liv/gas",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "liv/gas",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 700,
+        "wires": [
+            [
+                "c5e7fcde2e41a5cc"
+            ]
+        ]
+    },
+    {
+        "id": "12432031da7eb898",
+        "type": "change",
+        "z": "3d83b55bfbd04ced",
+        "name": "change bed/gas",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "bed/gas",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 580,
+        "wires": [
+            [
+                "c5e7fcde2e41a5cc"
+            ]
+        ]
+    },
+    {
+        "id": "c5e7fcde2e41a5cc",
+        "type": "ui_chart",
+        "z": "3d83b55bfbd04ced",
+        "name": "",
+        "group": "33b74455ec561fe8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Gas Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#fbff00",
+            "#fb0404",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    }
+]

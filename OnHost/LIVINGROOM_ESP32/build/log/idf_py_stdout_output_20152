@@ -1,0 +1,3275 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 29 2025 14:42:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0e7e8h ( 59368) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=0001e810 vaddr=3ffb0000 size=01808h (  6152) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=2a5cch (173516) map[0m
+[0;32mI (194) esp_image: segment 3: paddr=0004a5f4 vaddr=3ffb1808 size=009a8h (  2472) load[0m
+[0;32mI (195) esp_image: segment 4: paddr=0004afa4 vaddr=40080000 size=0d184h ( 53636) load[0m
+[0;32mI (229) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (229) boot: Disabling RNG early entropy source...[0m
+[0;32mI (240) cpu_start: Multicore app[0m
+[0;32mI (241) cpu_start: Pro cpu up.[0m
+[0;32mI (241) cpu_start: Starting app cpu, entry point is 0x400812e8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (259) cpu_start: Pro cpu start user code[0m
+[0;32mI (259) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (263) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (269) cpu_start: App version:      1[0m
+[0;32mI (273) cpu_start: Compile time:     Nov 29 2025 14:40:03[0m
+[0;32mI (279) cpu_start: ELF file SHA256:  d5eaa767917f2dac...[0m
+[0;32mI (285) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (295) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (300) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (305) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (312) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (318) heap_init: At 3FFB3488 len 0002CB78 (178 KiB): DRAM[0m
+[0;32mI (324) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (330) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (337) heap_init: At 4008D184 len 00012E7C (75 KiB): IRAM[0m
+[0;32mI (344) spi_flash: detected chip: generic[0m
+[0;32mI (348) spi_flash: flash io: dio[0m
+[0;33mW (352) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (365) app_start: Starting scheduler on CPU0[0m
+[0;32mI (370) app_start: Starting scheduler on CPU1[0m
+[0;32mI (370) main_task: Started on CPU0[0m
+[0;32mI (380) main_task: Calling app_main()[0m
+[0;32mI (380) APP_MAIN: [APP] Startup..[0m
+[0;32mI (380) APP_MAIN: [APP] Free memory: 298268 bytes[0m
+[0;32mI (390) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (440) main_task: Returned from app_main()[0m
+[0;32mI (1440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (1440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (2440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (2440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (3440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (3440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (4440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (4440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (5440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (5440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (6440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (6440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (7440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (7440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (8440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (8440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (9440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (9440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (10440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (10440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (11440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (11440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (12440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (12440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (13440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (13440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (14440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (14440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (15440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (15440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (16440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (16440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (17440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (17440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (18440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (18440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (19440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (19440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (20440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (20440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (21440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (21440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (22440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (22440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (23440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (23440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (24440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (24440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (25440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (25440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (26440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (26440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (27440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (27440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (28440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (28440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (29440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (29440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (30440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (30440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (31440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (31440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (32440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (32440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (33440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (33440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (34440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (34440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (35440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (35440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (36440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (36440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (37440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (37440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (38440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (38440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (39440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (39440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (40440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (40440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (41440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (41440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (42440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (42440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (43440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (43440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (44440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (44440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (45440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (45440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (46440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (46440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (47440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (47440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (48440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (48440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (49440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (49440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (50440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (50440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (51440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (51440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (52440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (52440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (53440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (53440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (54440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (54440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (55440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (55440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (56440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (56440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (57440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (57440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (58440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (58440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (59440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (59440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (60440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (60440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (61440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (61440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (62440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (62440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (63440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (63440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (64440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (64440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (65440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (65440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (66440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (66440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (67440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (67440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (68440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (68440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (69440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (69440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (70440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (70440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (71440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (71440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (72440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (72440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (73440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (73440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (74440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (74440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (75440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (75440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (76440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (76440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (77440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (77440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (78440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (78440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (79440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (79440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (80440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (80440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (81440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (81440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (82440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (82440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (83440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (83440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (84440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (84440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (85440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (85440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (86440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (86440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (87440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (87440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (88440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (88440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (89440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (89440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (90440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (90440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (91440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (91440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (92440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (92440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (93440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (93440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (94440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (94440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (95440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (95440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (96440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (96440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (97440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (97440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (98440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (98440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (99440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (99440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (100440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (100440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (101440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (101440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (102440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (102440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (103440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (103440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (104440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (104440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (105440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (105440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (106440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (106440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (107440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (107440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (108440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (108440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (109440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (109440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (110440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (110440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (111440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (111440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (112440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (112440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (113440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (113440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (114440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (114440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (115440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (115440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (116440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (116440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (117440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (117440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (118440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (118440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (119440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (119440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (120440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (120440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (121440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (121440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (122440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (122440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (123440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (123440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (124440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (124440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (125440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (125440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (126440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (126440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (127440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (127440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (128440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (128440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (129440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (129440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (130440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (130440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (131440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (131440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (132440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (132440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (133440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (133440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (134440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (134440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (135440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (135440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (136440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (136440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (137440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (137440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (138440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (138440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (139440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (139440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (140440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (140440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (141440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (141440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (142440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (142440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (143440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (143440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (144440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (144440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (145440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (145440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (146440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (146440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (147440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (147440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (148440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (148440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (149440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (149440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (150440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (150440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (151440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (151440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (152440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (152440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (153440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (153440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (154440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (154440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (155440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (155440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (156440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (156440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (157440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (157440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (158440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (158440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (159440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (159440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (160440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (160440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (161440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (161440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (162440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (162440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (163440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (163440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (164440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (164440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (165440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (165440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (166440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (166440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (167440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (167440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (168440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (168440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (169440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (169440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (170440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (170440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (171440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (171440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (172440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (172440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (173440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (173440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (174440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (174440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (175440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (175440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (176440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (176440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (177440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (177440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (178440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (178440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (179440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (179440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (180440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (180440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (181440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (181440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (182440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (182440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (183440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (183440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (184440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (184440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (185440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (185440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (186440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (186440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (187440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (187440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (188440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (188440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (189440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (189440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (190440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (190440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (191440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (191440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (192440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (192440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (193440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (193440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (194440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (194440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (195440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (195440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (196440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (196440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (197440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (197440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (198440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (198440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (199440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (199440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (200440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (200440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (201440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (201440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (202440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (202440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (203440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (203440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (204440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (204440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (205440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (205440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (206440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (206440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (207440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (207440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (208440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (208440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (209440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (209440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (210440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (210440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (211440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (211440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (212440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (212440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (213440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (213440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (214440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (214440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (215440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (215440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (216440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (216440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (217440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (217440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (218440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (218440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (219440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (219440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (220440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (220440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (221440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (221440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (222440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (222440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (223440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (223440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (224440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (224440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (225440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (225440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (226440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (226440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (227440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (227440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (228440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (228440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (229440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (229440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (230440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (230440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (231440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (231440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (232440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (232440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (233440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (233440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (234440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (234440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (235440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (235440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (236440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (236440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (237440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (237440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (238440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (238440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (239440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (239440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (240440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (240440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (241440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (241440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (242440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (242440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (243440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (243440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (244440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (244440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (245440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (245440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (246440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (246440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (247440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (247440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (248440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (248440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (249440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (249440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (250440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (250440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (251440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (251440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (252440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (252440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (253440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (253440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (254440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (254440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (255440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (255440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (256440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (256440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (257440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (257440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (258440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (258440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (259440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (259440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (260440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (260440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (261440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (261440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (262440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (262440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (263440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (263440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (264440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (264440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (265440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (265440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (266440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (266440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (267440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (267440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (268440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (268440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (269440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (269440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (270440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (270440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (271440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (271440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (272440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (272440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (273440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (273440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (274440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (274440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (275440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (275440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (276440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (276440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (277440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (277440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (278440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (278440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (279440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (279440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (280440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (280440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (281440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (281440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (282440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (282440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (283440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (283440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (284440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (284440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (285440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (285440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (286440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (286440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (287440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (287440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (288440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (288440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (289440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (289440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (290440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (290440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (291440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (291440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (292440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (292440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (293440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (293440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (294440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (294440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (295440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (295440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (296440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (296440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (297440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (297440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (298440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (298440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (299440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (299440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (300440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (300440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (301440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (301440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (302440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (302440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (303440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (303440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (304440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (304440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (305440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (305440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (306440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (306440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (307440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (307440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (308440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (308440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (309440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (309440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (310440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (310440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (311440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (311440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (312440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (312440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (313440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (313440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (314440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (314440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (315440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (315440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (316440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (316440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (317440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (317440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (318440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (318440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (319440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (319440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (320440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (320440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (321440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (321440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (322440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (322440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (323440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (323440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (324440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (324440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (325440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (325440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (326440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (326440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (327440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (327440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (328440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (328440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (329440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (329440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (330440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (330440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (331440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (331440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (332440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (332440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (333440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (333440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (334440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (334440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (335440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (335440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (336440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (336440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (337440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (337440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (338440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (338440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (339440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (339440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (340440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (340440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (341440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (341440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (342440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (342440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (343440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (343440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (344440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (344440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (345440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (345440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (346440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (346440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (347440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (347440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (348440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (348440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (349440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (349440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (350440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (350440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (351440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (351440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (352440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (352440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (353440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (353440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (354440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (354440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (355440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (355440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (356440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (356440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (357440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (357440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (358440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (358440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (359440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (359440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (360440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (360440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (361440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (361440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (362440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (362440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (363440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (363440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (364440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (364440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (365440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (365440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (366440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (366440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (367440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (367440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (368440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (368440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (369440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (369440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (370440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (370440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (371440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (371440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (372440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (372440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (373440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (373440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (374440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (374440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (375440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (375440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (376440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (376440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (377440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (377440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (378440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (378440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (379440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (379440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (380440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (380440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (381440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (381440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (382440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (382440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (383440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (383440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (384440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (384440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (385440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (385440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (386440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (386440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (387440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (387440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (388440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (388440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (389440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (389440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (390440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (390440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (391440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (391440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (392440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (392440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (393440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (393440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (394440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (394440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (395440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (395440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (396440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (396440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (397440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (397440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (398440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (398440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (399440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (399440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (400440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (400440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (401440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (401440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (402440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (402440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (403440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (403440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (404440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (404440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (405440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (405440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (406440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (406440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (407440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (407440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (408440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (408440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (409440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (409440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (410440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (410440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (411440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (411440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (412440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (412440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (413440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (413440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (414440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (414440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (415440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (415440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (416440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (416440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (417440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (417440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (418440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (418440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (419440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (419440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (420440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (420440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (421440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (421440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (422440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (422440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (423440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (423440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (424440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (424440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (425440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (425440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (426440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (426440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (427440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (427440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (428440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (428440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (429440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (429440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (430440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (430440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (431440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (431440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (432440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (432440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (433440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (433440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (434440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (434440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (435440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (435440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (436440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (436440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (437440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (437440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (438440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (438440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (439440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (439440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (440440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (440440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (441440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (441440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (442440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (442440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (443440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (443440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (444440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (444440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (445440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (445440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (446440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (446440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (447440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (447440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (448440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (448440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (449440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (449440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (450440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (450440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (451440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (451440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (452440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (452440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (453440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (453440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (454440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (454440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (455440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (455440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (456440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (456440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (457440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (457440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (458440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (458440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (459440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (459440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (460440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (460440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (461440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (461440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (462440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (462440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (463440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (463440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (464440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (464440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (465440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (465440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (466440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (466440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (467440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (467440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (468440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (468440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (469440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (469440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (470440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (470440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (471440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (471440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (472440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (472440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (473440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (473440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (474440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (474440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (475440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (475440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (476440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (476440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (477440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (477440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (478440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (478440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (479440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (479440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (480440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (480440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (481440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (481440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (482440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (482440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (483440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (483440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (484440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (484440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (485440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (485440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (486440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (486440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (487440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (487440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (488440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (488440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (489440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (489440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (490440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (490440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (491440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (491440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (492440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (492440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (493440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (493440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (494440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (494440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (495440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (495440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (496440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (496440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (497440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (497440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (498440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (498440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (499440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (499440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (500440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (500440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (501440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (501440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (502440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (502440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (503440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (503440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (504440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (504440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (505440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (505440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (506440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (506440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (507440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (507440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (508440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (508440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (509440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (509440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (510440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (510440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (511440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (511440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (512440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (512440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (513440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (513440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (514440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (514440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (515440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (515440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (516440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (516440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (517440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (517440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (518440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (518440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (519440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (519440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (520440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (520440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (521440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (521440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (522440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (522440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (523440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (523440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (524440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (524440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (525440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (525440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (526440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (526440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (527440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (527440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (528440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (528440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (529440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (529440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (530440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (530440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (531440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (531440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (532440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (532440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (533440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (533440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (534440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (534440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (535440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (535440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (536440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (536440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (537440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (537440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (538440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (538440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (539440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (539440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (540440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (540440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (541440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (541440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (542440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (542440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (543440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (543440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (544440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (544440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (545440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (545440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (546440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (546440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (547440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (547440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (548440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (548440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (549440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (549440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (550440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (550440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (551440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (551440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (552440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (552440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (553440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (553440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (554440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (554440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (555440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (555440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (556440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (556440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (557440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (557440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (558440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (558440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (559440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (559440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (560440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (560440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (561440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (561440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (562440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (562440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (563440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (563440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (564440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (564440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (565440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (565440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (566440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (566440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (567440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (567440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (568440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (568440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (569440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (569440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (570440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (570440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (571440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (571440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (572440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (572440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (573440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (573440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (574440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (574440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (575440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (575440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (576440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (576440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (577440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (577440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (578440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (578440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (579440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (579440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (580440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (580440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (581440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (581440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (582440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (582440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (583440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (583440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (584440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (584440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (585440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (585440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (586440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (586440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (587440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (587440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (588440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (588440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (589440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (589440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (590440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (590440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (591440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (591440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (592440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (592440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (593440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (593440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (594440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (594440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (595440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (595440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (596440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (596440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (597440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (597440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (598440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (598440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (599440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (599440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (600440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (600440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (601440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (601440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (602440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (602440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (603440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (603440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (604440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (604440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (605440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (605440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (606440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (606440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (607440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (607440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (608440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (608440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (609440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (609440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (610440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (610440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (611440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (611440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (612440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (612440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (613440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (613440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (614440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (614440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (615440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (615440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (616440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (616440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (617440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (617440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (618440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (618440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (619440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (619440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (620440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (620440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (621440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (621440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (622440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (622440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (623440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (623440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (624440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (624440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (625440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (625440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (626440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (626440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (627440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (627440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (628440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (628440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (629440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (629440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (630440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (630440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (631440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (631440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (632440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (632440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (633440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (633440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (634440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (634440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (635440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (635440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (636440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (636440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (637440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (637440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (638440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (638440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (639440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (639440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (640440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (640440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (641440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (641440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (642440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (642440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (643440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (643440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (644440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (644440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (645440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (645440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (646440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (646440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (647440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (647440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (648440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (648440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (649440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (649440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (650440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (650440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (651440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (651440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (652440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (652440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (653440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (653440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (654440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (654440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (655440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (655440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (656440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (656440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (657440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (657440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (658440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (658440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (659440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (659440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (660440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (660440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (661440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (661440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (662440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (662440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (663440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (663440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (664440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (664440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (665440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (665440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (666440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (666440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (667440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (667440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (668440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (668440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (669440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (669440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (670440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (670440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (671440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (671440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (672440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (672440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (673440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (673440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (674440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (674440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (675440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (675440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (676440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (676440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (677440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (677440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (678440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (678440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (679440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (679440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (680440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (680440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (681440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (681440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (682440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (682440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (683440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (683440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (684440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (684440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (685440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (685440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (686440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (686440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (687440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (687440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (688440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (688440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (689440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (689440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (690440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (690440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (691440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (691440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (692440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (692440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (693440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (693440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (694440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (694440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (695440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (695440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (696440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (696440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (697440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (697440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (698440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (698440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (699440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (699440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (700440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (700440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (701440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (701440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (702440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (702440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (703440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (703440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (704440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (704440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (705440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (705440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (706440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (706440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (707440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (707440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (708440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (708440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (709440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (709440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (710440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (710440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (711440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (711440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (712440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (712440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (713440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (713440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (714440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (714440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (715440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (715440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (716440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (716440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (717440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (717440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (718440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (718440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (719440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (719440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (720440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (720440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (721440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (721440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (722440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (722440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (723440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (723440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (724440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (724440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (725440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (725440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (726440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (726440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (727440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (727440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (728440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (728440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (729440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (729440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (730440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (730440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (731440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (731440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (732440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (732440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (733440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (733440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (734440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (734440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (735440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (735440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (736440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (736440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (737440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (737440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (738440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (738440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (739440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (739440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (740440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (740440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (741440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (741440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (742440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (742440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (743440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (743440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (744440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (744440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (745440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (745440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (746440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (746440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (747440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (747440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (748440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (748440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (749440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (749440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (750440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (750440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (751440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (751440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (752440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (752440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (753440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (753440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (754440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (754440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (755440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (755440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (756440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (756440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (757440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (757440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (758440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (758440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (759440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (759440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (760440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (760440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (761440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (761440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (762440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (762440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (763440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (763440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (764440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (764440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (765440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (765440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (766440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (766440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (767440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (767440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (768440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (768440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (769440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (769440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (770440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (770440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (771440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (771440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (772440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (772440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (773440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (773440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (774440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (774440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (775440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (775440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (776440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (776440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (777440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (777440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (778440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (778440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (779440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (779440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (780440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (780440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (781440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (781440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (782440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (782440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (783440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (783440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (784440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (784440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (785440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (785440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (786440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (786440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (787440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (787440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (788440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (788440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (789440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (789440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (790440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (790440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (791440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (791440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (792440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (792440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (793440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (793440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (794440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (794440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (795440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (795440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (796440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (796440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (797440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (797440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (798440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (798440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (799440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (799440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (800440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (800440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (801440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (801440) APP_MAIN: Moving to 0 degrees
+[0m
+[0;32mI (802440) APP_MAIN: Moving to 90 degrees
+[0m
+[0;32mI (802440) APP_MAIN: Moving to 0 degrees
+[0m

@@ -1,0 +1,23 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM8 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM8 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400812e8: [0;33mcall_start_cpu1[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m154[0m
+[0m--- 0x4008194e: [0;33mpanic_abort[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m452[0m
+[0m--- 0x400863c5: [0;33mesp_system_abort[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m84[0m
+[0m--- 0x4008be09: [0;33m__assert_func[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/newlib/assert.c[0m[0m:[1;31m81[0m
+[0m--- 0x400869ce: [0;33mxQueueGenericSendFromISR[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1122[0m
+[0m--- 0x400d66d5: [0;33minput_button_callback[0m[0m at [0;32mC:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/main/app_main.c[0m[0m:[1;31m71[0m
+[0m--- 0x400833da: [0;33mgpio_input_handler[0m[0m at [0;32mC:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/common/input/input.c[0m[0m:[1;31m30[0m
+[0m--- 0x400834ba: [0;33mgpio_isr_loop[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/driver/gpio/gpio.c[0m[0m:[1;31m463[0m
+[0m--- 0x4008354a: [0;33mgpio_intr_service[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/driver/gpio/gpio.c[0m[0m:[1;31m485[0m
+[0m--- 0x40082bcd: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S[0m[0m:[1;31m1236[0m
+[0m--- 0x40085227: [0;33mxt_utils_wait_for_intr[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m81[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m111[0m
+[0m--- 0x400d2ed3: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m59[0m
+[0m--- 0x40087555: [0;33mprvIdleTask[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m4327[0m
+[0m--- 0x40088c35: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m162[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400812e8: [0;33mcall_start_cpu1[0m[0m at [0;32mC:/Users/nguye/esp-idf/components/esp_system/port/cpu_start.c[0m[0m:[1;31m154[0m
+[0m
