@@ -14,5 +14,6 @@ void uart_event_task(void *pvParameters);
 void COM_HandleNotifyMessage(void);
 
 void COM_HandleResponseMessage(FrameQueue *queue);
+uint8_t COM_Get_Bedroom_Mode(void);
 
 #endif // APP_COM_UART_H__

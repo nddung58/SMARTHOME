@@ -4,12 +4,13 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
-#define BUZZER_PIN 5
+#define BUZZER_PIN GPIO_NUM_5
 #define duration_time_beep_ms 1000
 
 void buzzer_init(void)
 {
     output_io_init(BUZZER_PIN);
+    buzzer_off();
 }
 
 void buzzer_on(void)

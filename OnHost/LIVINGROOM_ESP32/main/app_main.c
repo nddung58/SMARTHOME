@@ -24,6 +24,7 @@
 #include "app_com_uart.h"
 
 #include "living_handle.h"
+#include "buzzer.h"
 
 static const char *TAG = "APP_MAIN";
 
@@ -133,6 +134,7 @@ void cmd_handle_liv(id_end_device_t id, char *data)
     uint8_t mode_his;
     storage_nvs_get_uint8(get_key_topic(ON_HOST_LIVING_ROOM, MODE), &mode_his);
 
+    ESP_LOGI(TAG, "Mode: %d\n", mode_his);
     if ((mode_his != (uint8_t)MANUAL_MODE) && (id != MODE))
     {
         ESP_LOGI(TAG, "handle fail, auto mode!");
@@ -180,7 +182,7 @@ void cmd_handle_liv(id_end_device_t id, char *data)
         uint8_t door = (uint8_t)atoi(data);
         message_t msg_door;
         Create_Message(COMMAND, id, 1, &door, &msg_door);
-        if (push(&livQueue, &msg_fan) == false)
+        if (push(&livQueue, &msg_door) == false)
         {
             ESP_LOGI(TAG, "PUSH FAIL!");
         }
@@ -193,6 +195,7 @@ void cmd_handle_liv(id_end_device_t id, char *data)
         {
             ESP_LOGI(TAG, "PUSH FAIL!");
         }
+        ESP_LOGI(TAG, "Pushed MODE %d to livQueue", m);
     default:
 
         break;
@@ -206,8 +209,7 @@ void cmd_handle_bed(id_end_device_t id, char *data)
         return;
     }
 
-    uint8_t mode_his;
-    storage_nvs_get_uint8(get_key_topic(ON_BOARD_BED_ROOM, MODE), &mode_his);
+    uint8_t mode_his = COM_Get_Bedroom_Mode();
 
     if ((mode_his != (uint8_t)MANUAL_MODE) && (id != MODE))
     {

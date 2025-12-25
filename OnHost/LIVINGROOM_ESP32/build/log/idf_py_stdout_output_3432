@@ -1,80 +1,668 @@
-[1/5] cmd.exe /C "cd /D C:\Users\nguye\Projects\SMARTHOME\OnHost\LIVINGROOM_ESP32\build\esp-idf\esptool_py && C:\Users\nguye\.espressif\python_env\idf5.1_py3.12_env\Scripts\python.exe C:/Users/nguye/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/build/partition_table/partition-table.bin C:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/build/smarthome_iot.bin"
-smarthome_iot.bin binary size 0xf7020 bytes. Smallest app partition is 0x100000 bytes. 0x8fe0 bytes (4%) free.
-Warning: The smallest app partition is nearly full (4% free space left)!
-[2/5] Performing build step for 'bootloader'
-[1/1] cmd.exe /C "cd /D C:\Users\nguye\Projects\SMARTHOME\OnHost\LIVINGROOM_ESP32\build\bootloader\esp-idf\esptool_py && C:\Users\nguye\.espressif\python_env\idf5.1_py3.12_env\Scripts\python.exe C:/Users/nguye/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/build/bootloader/bootloader.bin"
-Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
-[2/3] cmd.exe /C "cd /D C:\Users\nguye\esp-idf\components\esptool_py && C:\Users\nguye\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/nguye/esp-idf -D SERIAL_TOOL=C:/Users/nguye/.espressif/python_env/idf5.1_py3.12_env/Scripts/python.exe;;C:/Users/nguye/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/build -P C:/Users/nguye/esp-idf/components/esptool_py/run_serial_tool.cmake"
-esptool.py --chip esp32 -p COM8 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 smarthome_iot.bin 0x8000 partition_table/partition-table.bin
-esptool.py v4.10.0
-Serial port COM8
-Connecting....
-Chip is ESP32-D0WD-V3 (revision v3.1)
-Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
-Crystal is 40MHz
-MAC: 14:33:5c:52:d6:7c
-Uploading stub...
-Running stub...
-Stub running...
-Changing baud rate to 460800
-Changed.
-Configuring flash size...
-Flash will be erased from 0x00001000 to 0x00007fff...
-Flash will be erased from 0x00010000 to 0x00107fff...
-Flash will be erased from 0x00008000 to 0x00008fff...
-SHA digest in image updated
-Compressed 26640 bytes to 16686...
-Writing at 0x00001000... (50 %)
-Writing at 0x0000768e... (100 %)
-Wrote 26640 bytes (16686 compressed) at 0x00001000 in 0.8 seconds (effective 280.1 kbit/s)...
-Hash of data verified.
-Compressed 1011744 bytes to 641701...
-Writing at 0x00010000... (2 %)
-Writing at 0x0001d2a0... (5 %)
-Writing at 0x00027eb3... (7 %)
-Writing at 0x0002d1ed... (10 %)
-Writing at 0x00036559... (12 %)
-Writing at 0x00041979... (15 %)
-Writing at 0x0004726e... (17 %)
-Writing at 0x0004cc9e... (20 %)
-Writing at 0x000529b0... (22 %)
-Writing at 0x000583d4... (25 %)
-Writing at 0x0005e470... (27 %)
-Writing at 0x0006424f... (30 %)
-Writing at 0x000699a3... (32 %)
-Writing at 0x0006f631... (35 %)
-Writing at 0x000754aa... (37 %)
-Writing at 0x0007b157... (40 %)
-Writing at 0x000809fd... (42 %)
-Writing at 0x00085c12... (45 %)
-Writing at 0x0008b187... (47 %)
-Writing at 0x000903c9... (50 %)
-Writing at 0x00095a82... (52 %)
-Writing at 0x0009afdf... (55 %)
-Writing at 0x000a072b... (57 %)
-Writing at 0x000a662a... (60 %)
-Writing at 0x000ac032... (62 %)
-Writing at 0x000b182d... (65 %)
-Writing at 0x000b6d80... (67 %)
-Writing at 0x000bc583... (70 %)
-Writing at 0x000c1f6a... (72 %)
-Writing at 0x000c75ca... (75 %)
-Writing at 0x000cd106... (77 %)
-Writing at 0x000d2b1e... (80 %)
-Writing at 0x000d82a1... (82 %)
-Writing at 0x000e0d3b... (85 %)
-Writing at 0x000e9404... (87 %)
-Writing at 0x000ef4df... (90 %)
-Writing at 0x000f54ac... (92 %)
-Writing at 0x000fae5f... (95 %)
-Writing at 0x00100b4f... (97 %)
-Writing at 0x00105ed4... (100 %)
-Wrote 1011744 bytes (641701 compressed) at 0x00010000 in 14.8 seconds (effective 548.1 kbit/s)...
-Hash of data verified.
-Compressed 3072 bytes to 103...
-Writing at 0x00008000... (100 %)
-Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 463.7 kbit/s)...
-Hash of data verified.
+ets Jul 29 2019 12:21:46
 
-Leaving...
-Hard resetting via RTS pin...
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30918h (198936) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=00040940 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0004094c vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00044244 vaddr=40080000 size=0bdd4h ( 48596) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b4358h (738136) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=00104380 vaddr=4008bdd4 size=0c4dch ( 50396) load[0m
+[0;32mI (510) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (522) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (540) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (540) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  de0da4f9b516d265...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (582) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (587) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (600) heap_init: At 3FFB8FA8 len 00027058 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (619) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (652) app_start: Starting scheduler on CPU1[0m
+[0;32mI (652) main_task: Started on CPU0[0m
+[0;32mI (662) main_task: Calling app_main()[0m
+[0;32mI (662) APP_MAIN: [APP] Startup..[0m
+[0;32mI (662) APP_MAIN: [APP] Free memory: 274856 bytes[0m
+[0;32mI (672) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (722) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (722) RFID: Initializing RC522...[0m
+[0;32mI (722) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (752) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (752) RFID: RC522 READY.[0m
+[0;31mE (932) mqtt_client: Client was not initialized[0m
+[0;32mI (942) wifi:wifi driver task: 3ffc60f8, prio:23, stack:6656, core=0[0m
+[0;32mI (962) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (962) wifi:wifi certification version: v7.0[0m
+[0;32mI (962) wifi:config NVS flash: enabled[0m
+[0;32mI (962) wifi:config nano formating: disabled[0m
+[0;32mI (972) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (972) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (982) wifi:Init management short buffer num: 32[0m
+[0;32mI (982) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (992) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (992) wifi:Init static rx buffer num: 10[0m
+[0;32mI (992) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1002) wifi_init: rx ba win: 6[0m
+[0;32mI (1002) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1012) wifi_init: udp mbox: 6[0m
+[0;32mI (1012) wifi_init: tcp mbox: 6[0m
+[0;32mI (1012) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1022) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1022) wifi_init: tcp mss: 1440[0m
+[0;32mI (1052) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1052) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1052) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (1052) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (1052) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (1062) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1182) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1182) wifi:enable tsf[0m
+[0;32mI (1202) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1202) wifi:state: init -> auth (b0)[0m
+[0;32mI (1212) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1242) wifi:state: assoc -> run (10)[0m
+[0;32mI (1252) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1252) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (1262) wifi:pm start, type: 1[0m
+
+[0;32mI (1262) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1282) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:2, winSize:64[0m
+[0;31mE (1962) mqtt_client: Client was not initialized[0m
+[0;32mI (4272) CONFIG_WIFI: got ip:192.168.54.200[0m
+[0;32mI (4272) esp_netif_handlers: sta ip: 192.168.54.200, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (4272) CONFIG_WIFI: wifi connected[0m
+[0;32mI (4282) MQTT: Free mamory: 206008 bytes[0m
+[0;32mI (4282) MQTT: Other event id:7[0m
+[0;32mI (4482) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4522) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=14963[0m
+[0;32mI (4532) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=10720[0m
+[0;32mI (4542) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=23738[0m
+[0;32mI (4542) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=14096[0m
+[0;32mI (4552) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=31226[0m
+[0;32mI (4562) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=59918[0m
+[0;32mI (4562) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=119[0m
+[0;32mI (4572) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=38358[0m
+[0;32mI (4582) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=38977[0m
+[0;32mI (4582) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=35685[0m
+[0;32mI (4592) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=30834[0m
+[0;32mI (4602) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=50885[0m
+[0;32mI (4602) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=61188[0m
+[0;32mI (4612) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=19490[0m
+[0;32mI (4622) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=12448[0m
+[0;32mI (4632) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=46263[0m
+[0;32mI (4642) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=8286[0m
+[0;32mI (4652) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=7507[0m
+[0;32mI (4662) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=43297[0m
+[0;32mI (4672) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=1726[0m
+[0;32mI (4672) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=44110[0m
+[0;32mI (4682) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=4204[0m
+[0;32mI (4682) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=17152[0m
+[0;32mI (4692) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=41947[0m
+[0;32mI (4692) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40385[0m
+[0;32mI (4702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50528[0m
+[0;32mI (4702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58748[0m
+[0;32mI (4712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51184[0m
+[0;32mI (4712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29154[0m
+[0;32mI (4722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6642[0m
+[0;32mI (4722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17015[0m
+[0;32mI (4732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19106[0m
+[0;32mI (4732) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33026[0m
+[0;32mI (4742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39642[0m
+[0;32mI (4742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57505[0m
+[0;32mI (4752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27379[0m
+[0;32mI (4752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62977[0m
+[0;32mI (4762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61702[0m
+[0;32mI (4762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43472[0m
+[0;32mI (4772) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25078[0m
+[0;32mI (4782) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6568[0m
+[0;32mI (4792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6714[0m
+[0;32mI (4792) uart: queue free spaces: 20[0m
+[0;32mI (4792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39433[0m
+[0;32mI (4802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59657[0m
+[0;32mI (4802) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30022[0m
+[0;32mI (4812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6079[0m
+[0;32mI (4812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39402[0m
+[0;32mI (4822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56662[0m
+[0;32mI (4822) APP_UART: UART config sucessfuly![0m
+[0;32mI (4832) main_task: Returned from app_main()[0m
+[0;32mI (5162) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33381[0m
+[0;32mI (5432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58917[0m
+[0;32mI (5632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44377[0m
+[0;32mI (6032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42702[0m
+[0;32mI (6232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8097[0m
+[0;32mI (6432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5751[0m
+[0;32mI (7202) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46083[0m
+[0;32mI (7242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55885[0m
+[0;32mI (7432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61102[0m
+[0;32mI (7842) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11140[0m
+[0;32mI (8032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14427[0m
+[0;32mI (8232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54788[0m
+[0;32mI (8632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11371[0m
+[0;32mI (9042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9601[0m
+[0;32mI (9432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5338[0m
+[0;32mI (9632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38736[0m
+[0;32mI (9832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=527[0m
+[0;32mI (10462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23567[0m
+[0;32mI (10832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1486[0m
+[0;32mI (11032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24240[0m
+[0;32mI (11632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13823[0m
+[0;32mI (12032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3450[0m
+[0;32mI (12232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21626[0m
+[0;32mI (12432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25772[0m
+[0;32mI (12932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=601[0m
+[0;32mI (13032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12966[0m
+[0;32mI (13242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17343[0m
+[0;32mI (13432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3659[0m
+[0;32mI (13832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57553[0m
+[0;32mI (14022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58231[0m
+[0;32mI (14232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65253[0m
+[0;32mI (14632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8736[0m
+[0;32mI (15272) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15857[0m
+[0;32mI (15392) MQTT: MQTT_EVENT_DATA[0m
+[0;32mI (15452) LIVING: Mode: 1
+[0m
+[0;32mI (15642) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2701[0m
+[0;32mI (16032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58281[0m
+[0;32mI (16232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41184[0m
+[0;32mI (16632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5301[0m
+[0;32mI (17032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24584[0m
+[0;32mI (17442) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30[0m
+[0;32mI (17632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43783[0m
+[0;32mI (18462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49364[0m
+[0;32mI (18472) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46220[0m
+[0;32mI (18632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31962[0m
+[0;32mI (18842) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19632[0m
+[0;32mI (19472) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8893[0m
+[0;32mI (19632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16738[0m
+[0;32mI (19832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4172[0m
+[0;32mI (20032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15463[0m
+[0;32mI (20432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23235[0m
+[0;32mI (20922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28474[0m
+[0;32mI (21032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33841[0m
+[0;32mI (21432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46855[0m
+[0;32mI (22362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45519[0m
+[0;32mI (22632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48230[0m
+[0;32mI (22832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=75[0m
+[0;32mI (23032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27177[0m
+[0;32mI (23472) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59178[0m
+[0;32mI (23632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28845[0m
+[0;32mI (24032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18015[0m
+[0;32mI (24432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22557[0m
+[0;32mI (24632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63665[0m
+[0;32mI (25032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48273[0m
+[0;32mI (25232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34242[0m
+[0;32mI (25632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30664[0m
+[0;32mI (25832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48607[0m
+[0;32mI (26032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25566[0m
+[0;32mI (26242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12442[0m
+[0;32mI (26442) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29619[0m
+[0;32mI (26832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4742[0m
+[0;32mI (27032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31134[0m
+[0;32mI (27232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5342[0m
+[0;32mI (27662) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38551[0m
+[0;32mI (27822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57320[0m
+[0;32mI (28022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40205[0m
+[0;32mI (28702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2530[0m
+[0;32mI (29022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59020[0m
+[0;32mI (29232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34963[0m
+[0;32mI (29632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53114[0m
+[0;32mI (30032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61331[0m
+[0;32mI (30552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65151[0m
+[0;32mI (30622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14151[0m
+[0;32mI (30832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41884[0m
+[0;32mI (31032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48416[0m
+[0;32mI (31882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18873[0m
+[0;32mI (31892) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26357[0m
+[0;32mI (32232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20061[0m
+[0;32mI (33112) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1163[0m
+[0;32mI (33432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61994[0m
+[0;32mI (33632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61913[0m
+[0;32mI (33832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6248[0m
+[0;32mI (34032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44876[0m
+[0;32mI (34232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48813[0m
+[0;32mI (34432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34337[0m
+[0;32mI (34632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8651[0m
+[0;32mI (34822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8894[0m
+[0;32mI (35222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28466[0m
+[0;32mI (35972) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52690[0m
+[0;32mI (36232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18767[0m
+[0;32mI (36672) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52351[0m
+[0;32mI (37032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13737[0m
+[0;32mI (37822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61489[0m
+[0;32mI (38232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43633[0m
+[0;32mI (38632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17060[0m
+[0;32mI (38832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40446[0m
+[0;32mI (39042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56372[0m
+[0;32mI (39632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24319[0m
+[0;32mI (39832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49910[0m
+[0;32mI (40032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51599[0m
+[0;32mI (40792) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13988[0m
+[0;32mI (41302) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52114[0m
+[0;32mI (41452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20057[0m
+[0;32mI (41822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41593[0m
+[0;32mI (42032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46637[0m
+[0;32mI (42232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8339[0m
+[0;32mI (42632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39115[0m
+[0;32mI (42832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22941[0m
+[0;32mI (43032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45008[0m
+[0;32mI (43552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28008[0m
+[0;32mI (43632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38313[0m
+[0;32mI (43822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22234[0m
+[0;32mI (44232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17457[0m
+[0;32mI (44432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14337[0m
+[0;32mI (44832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63426[0m
+[0;32mI (45232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38842[0m
+[0;32mI (45432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57014[0m
+[0;32mI (45632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33812[0m
+[0;32mI (45832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38239[0m
+[0;32mI (46522) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12126[0m
+[0;32mI (46652) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31907[0m
+[0;32mI (46832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63224[0m
+[0;32mI (47222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40807[0m
+[0;32mI (47422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52541[0m
+[0;32mI (47832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36778[0m
+[0;32mI (48022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44486[0m
+[0;32mI (48682) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24464[0m
+[0;32mI (48832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38699[0m
+[0;32mI (49232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64352[0m
+[0;32mI (49632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7065[0m
+[0;32mI (50042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10673[0m
+[0;32mI (50232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23919[0m
+[0;32mI (50632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9795[0m
+[0;32mI (51032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53296[0m
+[0;32mI (51232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21398[0m
+[0;32mI (52052) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62951[0m
+[0;32mI (52062) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15346[0m
+[0;32mI (52222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31439[0m
+[0;32mI (52432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53434[0m
+[0;32mI (52822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27252[0m
+[0;32mI (53032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16254[0m
+[0;32mI (53232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60393[0m
+[0;32mI (53672) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55804[0m
+[0;32mI (53832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19013[0m
+[0;32mI (54242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30337[0m
+[0;32mI (54622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41353[0m
+[0;32mI (54832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6933[0m
+[0;32mI (55032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1829[0m
+[0;32mI (55232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1295[0m
+[0;32mI (55432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1304[0m
+[0;32mI (55642) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41926[0m
+[0;32mI (55832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25308[0m
+[0;32mI (56042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42694[0m
+[0;32mI (56762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34397[0m
+[0;32mI (57052) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59886[0m
+[0;32mI (57232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5273[0m
+[0;32mI (57832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65143[0m
+[0;32mI (58032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13561[0m
+[0;32mI (58812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32307[0m
+[0;32mI (58852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33488[0m
+[0;32mI (59232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28820[0m
+[0;32mI (59642) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61050[0m
+[0;32mI (59832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3670[0m
+[0;32mI (60022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38201[0m
+[0;32mI (60232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29088[0m
+[0;32mI (60422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10722[0m
+[0;32mI (60832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16309[0m
+[0;32mI (61032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27183[0m
+[0;32mI (62032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26537[0m
+[0;32mI (62232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55614[0m
+[0;32mI (62632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11660[0m
+[0;32mI (63232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48983[0m
+[0;32mI (63432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61913[0m
+[0;32mI (63832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6[0m
+[0;32mI (64032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17454[0m
+[0;32mI (64852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43473[0m
+[0;32mI (64862) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21637[0m
+[0;32mI (65232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16357[0m
+[0;32mI (65432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54458[0m
+[0;32mI (65622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28273[0m
+[0;32mI (65822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54973[0m
+[0;32mI (66032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5497[0m
+[0;32mI (66592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18924[0m
+[0;32mI (66832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44861[0m
+[0;32mI (67032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10213[0m
+[0;32mI (67232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35282[0m
+[0;32mI (67422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45273[0m
+[0;32mI (67832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63418[0m
+[0;32mI (68222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24788[0m
+[0;32mI (68542) MQTT: MQTT_EVENT_DATA[0m
+[0;32mI (68542) APP_MAIN: handle fail, auto mode![0m
+[0;32mI (70492) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30641[0m
+[0;32mI (70502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39675[0m
+[0;32mI (70502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34543[0m
+[0;32mI (70502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21897[0m
+[0;32mI (70622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15390[0m
+[0;32mI (71102) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8241[0m
+[0;32mI (71222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53586[0m
+[0;32mI (71432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35264[0m
+[0;32mI (71832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54367[0m
+[0;32mI (72232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30962[0m
+[0;32mI (72432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39478[0m
+[0;32mI (72632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31648[0m
+[0;32mI (73042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3599[0m
+[0;32mI (73762) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52998[0m
+[0;32mI (74462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21097[0m
+[0;32mI (74832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16361[0m
+[0;32mI (75032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45238[0m
+[0;32mI (75432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41925[0m
+[0;32mI (75842) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12090[0m
+[0;32mI (76232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51465[0m
+[0;32mI (76932) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57219[0m
+[0;32mI (77022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64455[0m
+[0;32mI (77242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1586[0m
+[0;32mI (77962) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18892[0m
+[0;32mI (78232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26459[0m
+[0;32mI (78432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39464[0m
+[0;32mI (78822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56749[0m
+[0;32mI (79032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43385[0m
+[0;32mI (79232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30492[0m
+[0;32mI (79622) MQTT: MQTT_EVENT_DATA[0m
+[0;32mI (79622) APP_MAIN: handle fail, auto mode![0m
+[0;32mI (79632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57080[0m
+[0;32mI (80022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20194[0m
+[0;32mI (80232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48153[0m
+[0;32mI (80722) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34786[0m
+[0;32mI (80822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42146[0m
+[0;32mI (81022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5559[0m
+[0;32mI (82362) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52559[0m
+[0;32mI (82432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13197[0m
+[0;32mI (82632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26038[0m
+[0;32mI (83032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9290[0m
+[0;32mI (83222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3331[0m
+[0;32mI (83422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18507[0m
+[0;32mI (83622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=832[0m
+[0;32mI (84022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59189[0m
+[0;32mI (84222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41961[0m
+[0;32mI (84922) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5545[0m
+[0;32mI (85222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65470[0m
+[0;32mI (85422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45550[0m
+[0;32mI (85822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58325[0m
+[0;32mI (86032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37143[0m
+[0;32mI (86562) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14755[0m
+[0;32mI (86622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37864[0m
+[0;32mI (87032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59694[0m
+[0;32mI (87222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63449[0m
+[0;32mI (87672) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60106[0m
+[0;32mI (87822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41960[0m
+[0;32mI (88032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63067[0m
+[0;32mI (88242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53724[0m
+[0;32mI (88622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51449[0m
+[0;32mI (89432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45351[0m
+[0;32mI (89632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43364[0m
+[0;32mI (90022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23074[0m
+[0;32mI (90422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13405[0m
+[0;32mI (90622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22782[0m
+[0;32mI (91032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27560[0m
+[0;32mI (91432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24778[0m
+[0;32mI (91822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24853[0m
+[0;32mI (92502) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49454[0m
+[0;32mI (92822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57483[0m
+[0;32mI (93022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57949[0m
+[0;32mI (93232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=19279[0m
+[0;32mI (93632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63402[0m
+[0;32mI (94222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59848[0m
+[0;32mI (94422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9793[0m
+[0;32mI (94822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1263[0m
+[0;32mI (95842) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28713[0m
+[0;32mI (96032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56372[0m
+[0;32mI (96632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36534[0m
+[0;32mI (96822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17890[0m
+[0;32mI (97022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35292[0m
+[0;32mI (97432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15748[0m
+[0;32mI (97852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29097[0m
+[0;32mI (98022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55900[0m
+[0;32mI (98752) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4761[0m
+[0;32mI (98822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8325[0m
+[0;32mI (99022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10586[0m
+[0;32mI (99432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9252[0m
+[0;32mI (99632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=184[0m
+[0;32mI (100022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5220[0m
+[0;32mI (100472) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34802[0m
+[0;32mI (100822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10238[0m
+[0;32mI (101222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24629[0m
+[0;32mI (101642) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42532[0m
+[0;32mI (101832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48577[0m
+[0;32mI (102232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42635[0m
+[0;32mI (103022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59212[0m
+[0;32mI (103232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17473[0m
+[0;32mI (103622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52105[0m
+[0;32mI (104032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54983[0m
+[0;32mI (104232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14090[0m
+[0;32mI (104422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22567[0m
+[0;32mI (104822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5054[0m
+[0;32mI (105032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30412[0m
+[0;32mI (105232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25889[0m
+[0;32mI (106742) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57748[0m
+[0;32mI (106822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34043[0m
+[0;32mI (107022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10533[0m
+[0;32mI (107422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21014[0m
+[0;32mI (107622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50145[0m
+[0;32mI (108032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62882[0m
+[0;32mI (108452) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59587[0m
+[0;32mI (108822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64088[0m
+[0;32mI (109222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27506[0m
+[0;32mI (109432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25966[0m
+[0;32mI (109832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17725[0m
+[0;32mI (110222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17367[0m
+[0;32mI (110622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=278[0m
+[0;32mI (110832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49534[0m
+[0;32mI (111242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31179[0m
+[0;32mI (111422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49032[0m
+[0;32mI (111622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51314[0m
+[0;32mI (112032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15504[0m
+[0;32mI (112222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40647[0m
+[0;32mI (112622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52802[0m
+[0;32mI (112822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64153[0m
+[0;32mI (113602) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45979[0m
+[0;32mI (113622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22669[0m
+[0;32mI (114032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56129[0m
+[0;32mI (114222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49539[0m
+[0;32mI (114422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38934[0m
+[0;32mI (114832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33754[0m
+[0;32mI (115852) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53304[0m
+[0;32mI (115862) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40517[0m
+[0;32mI (116022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3899[0m
+[0;32mI (116572) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30422[0m
+[0;32mI (116632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48875[0m
+[0;32mI (116822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55697[0m
+[0;32mI (117222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22550[0m
+[0;32mI (117422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23498[0m
+[0;32mI (117902) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56423[0m
+[0;32mI (118232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54581[0m
+[0;32mI (118622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57783[0m
+[0;32mI (118822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34729[0m
+[0;32mI (119222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44216[0m
+[0;32mI (119632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41703[0m
+[0;32mI (120032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23567[0m
+[0;32mI (120422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64218[0m
+[0;32mI (121422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28917[0m
+[0;32mI (121822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12440[0m
+[0;32mI (122032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62231[0m
+[0;32mI (122482) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59897[0m
+[0;32mI (122622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36616[0m
+[0;32mI (122822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47370[0m
+[0;32mI (123532) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42899[0m
+[0;32mI (123632) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53706[0m
+[0;32mI (123822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49824[0m
+[0;32mI (124022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53780[0m
+[0;32mI (124552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20658[0m
+[0;32mI (124622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60369[0m
+[0;32mI (125372) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49608[0m
+[0;32mI (125422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46945[0m
+[0;32mI (125822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52321[0m
+[0;32mI (126022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49459[0m
+[0;32mI (126222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13431[0m
+[0;32mI (126702) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3273[0m
+[0;32mI (126812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51833[0m
+[0;32mI (127232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20427[0m
+[0;32mI (127432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55204[0m
+[0;32mI (127622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43486[0m
+[0;32mI (127822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12576[0m
+[0;32mI (128552) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30526[0m
+[0;32mI (128622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38863[0m
+[0;32mI (129022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9149[0m
+[0;32mI (129672) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34750[0m
+[0;32mI (129822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58404[0m
+[0;32mI (130222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50515[0m
+[0;32mI (130882) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52196[0m
+[0;32mI (131022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27435[0m
+[0;32mI (132032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61944[0m
+[0;32mI (132042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15655[0m
+[0;32mI (132422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43435[0m
+[0;32mI (132622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37421[0m
+[0;32mI (132822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46683[0m
+[0;32mI (133222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32154[0m
+[0;32mI (133422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59240[0m
+[0;32mI (134222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43187[0m
+[0;32mI (134592) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32308[0m
+[0;32mI (134622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22588[0m
+[0;32mI (134822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35389[0m
+[0;32mI (135032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48702[0m
+[0;32mI (135232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43662[0m
+[0;32mI (135422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43459[0m
+[0;32mI (135622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4662[0m
+[0;32mI (136022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26909[0m
+[0;32mI (136222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26671[0m
+[0;32mI (136432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63884[0m
+[0;32mI (136622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64173[0m
+[0;32mI (137022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33163[0m
+[0;32mI (137222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=6440[0m
+[0;32mI (137412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27828[0m
+[0;32mI (137422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17954[0m
+[0;32mI (137622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40293[0m
+[0;32mI (137822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23806[0m
+[0;32mI (138462) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51074[0m
+[0;32mI (138622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8868[0m
+[0;32mI (138622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9289[0m
+[0;32mI (138822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40295[0m
+[0;32mI (139232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21765[0m
+[0;32mI (139622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38300[0m
+[0;32mI (139822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47780[0m
+[0;32mI (140232) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35774[0m
+[0;32mI (140422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26294[0m
+[0;32mI (140822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35872[0m
+[0;32mI (141222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28822[0m
+[0;32mI (141612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41908[0m
+[0;32mI (141822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5500[0m
+[0;32mI (142252) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32313[0m
+[0;32mI (142422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25926[0m
+[0;32mI (142822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55639[0m
+[0;32mI (143022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61554[0m
+[0;32mI (143222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37010[0m
+[0;32mI (143422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5668[0m
+[0;32mI (143822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55461[0m
+[0;32mI (144022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2174[0m
+[0;32mI (144222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15555[0m
+[0;32mI (144622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21789[0m
+[0;32mI (144822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40220[0m
+[0;32mI (145022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28802[0m
+[0;32mI (145422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11014[0m
+[0;32mI (145622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48790[0m
+[0;32mI (145822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28019[0m
+[0;32mI (146022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7932[0m
+[0;32mI (146222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31332[0m
+[0;32mI (146422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61109[0m
+[0;32mI (147262) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28953[0m
+[0;32mI (148022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48729[0m
+[0;32mI (149022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42001[0m
+[0;32mI (149222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34307[0m
+[0;32mI (149622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15228[0m
+[0;32mI (149822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39664[0m
+[0;32mI (150022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10139[0m
+[0;32mI (150222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27263[0m
+[0;32mI (150622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1106[0m
+[0;32mI (151042) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62522[0m
+[0;32mI (151222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29214[0m
+[0;32mI (151622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49388[0m
+[0;32mI (151822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55868[0m
+[0;32mI (152022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32257[0m
+[0;32mI (152242) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56169[0m
+[0;32mI (152622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29070[0m
+[0;32mI (152832) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16729[0m
+[0;32mI (153032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13642[0m
+[0;32mI (153432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18999[0m
+[0;32mI (153822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54619[0m
+[0;32mI (154022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24288[0m
+[0;32mI (154222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22701[0m
+[0;32mI (154422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42592[0m
+[0;32mI (155172) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3360[0m
+[0;32mI (155222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39417[0m
+[0;32mI (155622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27113[0m
+[0;32mI (155812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26547[0m
+[0;32mI (156712) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5212[0m
+[0;32mI (156822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16032[0m
+[0;32mI (157022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43830[0m
+[0;32mI (157422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64275[0m
+[0;32mI (157622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38619[0m
+[0;32mI (158032) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41884[0m
+[0;32mI (158622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57332[0m
+[0;32mI (158812) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33943[0m
+[0;32mI (159022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47661[0m
+[0;32mI (159222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49364[0m
+[0;32mI (159432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32620[0m
+[0;32mI (159622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20827[0m
+[0;32mI (160292) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34604[0m
+[0;32mI (160612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12595[0m
+[0;32mI (161022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49471[0m
+[0;32mI (161422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58720[0m
+[0;32mI (161842) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5551[0m
+[0;32mI (162412) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48096[0m
+[0;32mI (162622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40609[0m
+[0;32mI (162822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17741[0m
+[0;32mI (163022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8601[0m
+[0;32mI (163222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64014[0m
+[0;32mI (163422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48849[0m
+[0;32mI (164012) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16372[0m
+[0;32mI (164222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15039[0m
+[0;32mI (164432) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45987[0m
+[0;32mI (164622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24054[0m
+[0;32mI (165312) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41180[0m
+[0;32mI (165422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3667[0m
+[0;32mI (166022) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58830[0m
+[0;32mI (166222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=9385[0m
+[0;32mI (166622) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54706[0m
+[0;32mI (166822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=51433[0m
+[0;32mI (167222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53158[0m
+[0;32mI (167422) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24143[0m
+[0;32mI (167822) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43036[0m
+[0;32mI (168222) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21382[0m
+[0;32mI (168612) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60155[0m

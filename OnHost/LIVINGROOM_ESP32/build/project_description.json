@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "smarthome_iot",
-    "project_version":    "1",
+    "project_version":    "981e2a1-dirty",
     "project_path":       "C:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32",
     "idf_path":           "C:/Users/nguye/esp-idf",
     "build_dir":          "C:/Users/nguye/Projects/SMARTHOME/OnHost/LIVINGROOM_ESP32/build",

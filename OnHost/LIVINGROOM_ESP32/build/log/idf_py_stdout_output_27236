@@ -1,0 +1,217 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=309f0h (199152) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=00040a18 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00040a24 vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=0004431c vaddr=40080000 size=0bcfch ( 48380) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b4420h (738336) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=00104448 vaddr=4008bcfc size=0c5b4h ( 50612) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  0678ef8555ceb780...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (723) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (723) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (733) RFID: Initializing RC522...[0m
+[0;32mI (743) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (773) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (773) RFID: RC522 READY.[0m
+[0;32mI (773) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (793) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (883) LIVING: DHT11 fail![0m
+[0;32mI (883) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (883) LIVING: Khi gas: 109.09 ppm[0m
+[0;32mI (883) wifi:wifi driver task: 3ffc60fc, prio:23, stack:6656, core=0[0m
+[0;32mI (943) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (943) wifi:wifi certification version: v7.0[0m
+[0;32mI (943) wifi:config NVS flash: enabled[0m
+[0;32mI (943) wifi:config nano formating: disabled[0m
+[0;32mI (943) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (953) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (953) wifi:Init management short buffer num: 32[0m
+[0;32mI (963) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (963) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (963) wifi:Init static rx buffer num: 10[0m
+[0;32mI (973) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (973) wifi_init: rx ba win: 6[0m
+[0;32mI (983) wifi_init: tcpip mbox: 32[0m
+[0;32mI (983) wifi_init: udp mbox: 6[0m
+[0;32mI (983) wifi_init: tcp mbox: 6[0m
+[0;32mI (993) wifi_init: tcp tx win: 5744[0m
+[0;32mI (993) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1003) wifi_init: tcp mss: 1440[0m
+[0;32mI (1003) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1003) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1013) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (1013) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (1023) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (1023) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1143) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1153) wifi:enable tsf[0m
+[0;32mI (1163) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1163) wifi:state: init -> auth (b0)[0m
+[0;32mI (1183) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1203) wifi:state: assoc -> run (10)[0m
+[0;32mI (1243) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1243) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (1243) wifi:pm start, type: 1[0m
+
+[0;32mI (1273) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:2, winSize:64[0m
+[0;32mI (1303) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1883) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1903) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (1953) LIVING: DHT11 fail![0m
+[0;32mI (1953) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (1953) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (2953) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2973) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (3013) LIVING: DHT11 fail![0m
+[0;32mI (3023) LIVING: Do sang: 4.39 lux[0m
+[0;32mI (3023) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (4023) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4043) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (4103) LIVING: DHT11 fail![0m
+[0;32mI (4103) LIVING: Do sang: 4.94 lux[0m
+[0;32mI (4103) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (4253) CONFIG_WIFI: got ip:192.168.54.187[0m
+[0;32mI (4253) esp_netif_handlers: sta ip: 192.168.54.187, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (4253) CONFIG_WIFI: wifi connected[0m
+[0;32mI (4263) MQTT: Free mamory: 205628 bytes[0m
+[0;32mI (4263) MQTT: Other event id:7[0m
+[0;32mI (4773) uart: queue free spaces: 20[0m
+[0;32mI (4773) APP_UART: UART config sucessfuly![0m
+[0;32mI (4773) main_task: Returned from app_main()[0m
+[0;32mI (5113) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5133) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (5193) LIVING: DHT11 fail![0m
+[0;32mI (5193) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (5203) LIVING: Khi gas: 109.70 ppm[0m
+[0;31mE (14283) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (14283) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (14283) mqtt_client: Error transport connect[0m
+[0;31mE (14283) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (14293) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (15293) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15313) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (15363) LIVING: DHT11 fail![0m
+[0;32mI (15363) LIVING: Do sang: 4.58 lux[0m
+[0;32mI (15363) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (16363) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (16383) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (16443) LIVING: DHT11 fail![0m
+[0;32mI (16443) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (16443) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (17443) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (17463) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (17513) LIVING: DHT11 fail![0m
+[0;32mI (17513) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (17513) LIVING: Khi gas: 109.70 ppm[0m
+[0;32mI (18513) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (18533) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (18593) LIVING: DHT11 fail![0m
+[0;32mI (18593) LIVING: Do sang: 4.39 lux[0m
+[0;32mI (18593) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (19593) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (19613) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (19663) LIVING: DHT11 fail![0m
+[0;32mI (19663) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (19663) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (20673) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (20693) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (20753) LIVING: DHT11 fail![0m
+[0;32mI (20753) LIVING: Do sang: 4.82 lux[0m
+[0;32mI (20753) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (21773) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (21793) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (21933) LIVING: DHT11 fail![0m
+[0;32mI (21933) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (21933) LIVING: Khi gas: 107.27 ppm[0m
+[0;32mI (22933) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (22953) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (22993) LIVING: DHT11 fail![0m
+[0;32mI (23003) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (23003) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (24003) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (24023) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (24073) LIVING: DHT11 fail![0m
+[0;32mI (24073) LIVING: Do sang: 4.64 lux[0m
+[0;32mI (24073) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (25073) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (25093) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (25153) LIVING: DHT11 fail![0m
+[0;32mI (25153) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (25153) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (26153) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (26173) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (26223) LIVING: DHT11 fail![0m
+[0;32mI (26223) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (26223) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (27233) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (27253) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (27283) LIVING: DHT11 fail![0m
+[0;32mI (27283) LIVING: Do sang: 4.39 lux[0m
+[0;32mI (27283) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (28293) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (28313) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (28363) LIVING: DHT11 fail![0m
+[0;32mI (28363) LIVING: Do sang: 4.36 lux[0m
+[0;32mI (28363) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (29293) MQTT: Other event id:7[0m
+[0;32mI (29363) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (29383) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (29473) LIVING: DHT11 fail![0m
+[0;32mI (29473) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (29483) LIVING: Khi gas: 104.85 ppm[0m

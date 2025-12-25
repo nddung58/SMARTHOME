@@ -16,6 +16,8 @@
 #include "ndd_std_types.h"
 #include "string.h"
 
+static uint8_t g_bedroom_mode = AUTO_MODE;
+
 static const char *TAG = "APP_UART";
 
 #define UART_NUM UART_NUM_1
@@ -54,6 +56,11 @@ void COM_UART_Init(uint32_t baud_rate)
     uart_set_pin(UART_NUM, UART_TX, UART_RX, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
 
     uart_driver_install(UART_NUM, BUF_SIZE * 2, 0, 20, &uart_queue, 0);
+
+    if (storage_nvs_get_uint8(get_key_topic(ON_BOARD_BED_ROOM, MODE), &g_bedroom_mode) != ESP_OK)
+    {
+        g_bedroom_mode = AUTO_MODE;
+    }
 
     xTaskCreate(uart_event_task, "uart_event_task", 4096, NULL, 12, NULL); // Priority 12 cho task xử lý sự kiện UART
 
@@ -209,6 +216,7 @@ void COM_HandleNotifyMessage(void)
         if (message.header[2] == 4)
         {
             float value = Convert_Bytes_To_Float(message.payload[0], message.payload[1], message.payload[2], message.payload[3]);
+            ESP_LOGI(TAG, "Dữ liệu nhiệt độ nhận được: %.2f", value);
             // storage_nvs_set_float(get_key_topic(ON_BOARD_BED_ROOM, TEMP), value);
 
             char buffer[32];
@@ -299,11 +307,12 @@ void COM_HandleNotifyMessage(void)
     }
     case MODE:
     {
-        uint8_t value = message.payload[0];
-        // storage_nvs_set_float(get_key_topic(ON_BOARD_BED_ROOM, MODE), value);
+        g_bedroom_mode = message.payload[0];
 
+        storage_nvs_set_uint8(get_key_topic(ON_BOARD_BED_ROOM, MODE), g_bedroom_mode);
+        ESP_LOGI(TAG, "Mode bed changed to: %s", g_bedroom_mode == AUTO_MODE ? "AUTO" : "MANUAL");
         char buffer[32];
-        snprintf(buffer, sizeof(buffer), "%d", value);
+        snprintf(buffer, sizeof(buffer), "%d", g_bedroom_mode);
         mqtt_pub(get_key_topic(ON_BOARD_BED_ROOM, MODE), buffer, strlen(buffer));
         break;
     }
@@ -323,4 +332,9 @@ void COM_HandleResponseMessage(FrameQueue *queue)
             tx_state = RESPONSE_NACKED;
         }
     }
+}
+
+uint8_t COM_Get_Bedroom_Mode(void)
+{
+    return g_bedroom_mode;
 }

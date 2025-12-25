@@ -1,0 +1,388 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=309b8h (199096) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=000409e0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=000409ec vaddr=3ffb0000 size=03900h ( 14592) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=000442f4 vaddr=40080000 size=0bd24h ( 48420) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b43e4h (738276) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=0010440c vaddr=4008bd24 size=0c58ch ( 50572) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (540) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  b4910b6422718b76...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FC0 len 00027040 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274832 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (723) gpio: GPIO[15]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (723) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (733) RFID: Initializing RC522...[0m
+[0;32mI (733) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (763) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (763) RFID: RC522 READY.[0m
+[0;32mI (773) wifi:wifi driver task: 3ffc610c, prio:23, stack:6656, core=0[0m
+[0;33mW (783) LIVING: DHT11 fail![0m
+[0;32mI (793) wifi:[0;32mI (793) LIVING: Do sang: 4.24 lux[0m[0m
+wifi firmware version: ce9244d
+[0;32mI (793) wifi:wifi certification version: v7.0[0m
+[0;32mI (803) wifi:[0;32mI (803) LIVING: Khi gas: 102.42 ppm[0m[0m
+config NVS flash: enabled
+[0;32mI (803) wifi:config nano formating: disabled[0m
+[0;32mI (813) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (813) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (823) wifi:Init management short buffer num: 32[0m
+[0;32mI (823) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (833) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (833) wifi:Init static rx buffer num: 10[0m
+[0;32mI (833) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (843) wifi_init: rx ba win: 6[0m
+[0;32mI (843) wifi_init: tcpip mbox: 32[0m
+[0;32mI (843) wifi_init: udp mbox: 6[0m
+[0;32mI (853) wifi_init: tcp mbox: 6[0m
+[0;32mI (853) wifi_init: tcp tx win: 5744[0m
+[0;32mI (863) wifi_init: tcp rx win: 5744[0m
+[0;32mI (863) wifi_init: tcp mss: 1440[0m
+[0;32mI (863) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (873) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (873) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (883) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (883) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (913) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1023) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1023) wifi:enable tsf[0m
+[0;32mI (1103) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1103) wifi:state: init -> auth (b0)[0m
+[0;32mI (1123) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1143) wifi:state: assoc -> run (10)[0m
+[0;33mW (1823) LIVING: DHT11 fail![0m
+[0;32mI (1823) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (1823) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (2183) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (2183) wifi:security: WPA2-PSK, phy: bgn, rssi: -61[0m
+[0;32mI (2193) wifi:pm start, type: 1[0m
+
+[0;32mI (2253) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:3, winSize:64[0m
+[0;32mI (2423) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;33mW (2843) LIVING: DHT11 fail![0m
+[0;32mI (2843) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (2843) LIVING: Khi gas: 103.64 ppm[0m
+[0;33mW (3863) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (3863) LIVING: DHT11 fail![0m
+[0;32mI (3863) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (3863) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (4893) LIVING: DHT11 fail![0m
+[0;32mI (4893) LIVING: Do sang: 4.85 lux[0m
+[0;32mI (4893) LIVING: Khi gas: 101.21 ppm[0m
+[0;31mE (4903) mqtt_client: Client was not initialized[0m
+[0;33mW (5923) LIVING: DHT11 fail![0m
+[0;32mI (5923) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (5923) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (6193) CONFIG_WIFI: got ip:192.168.54.187[0m
+[0;32mI (6193) esp_netif_handlers: sta ip: 192.168.54.187, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (6193) CONFIG_WIFI: wifi connected[0m
+[0;32mI (6203) MQTT: Free mamory: 205724 bytes[0m
+[0;32mI (6203) MQTT: Other event id:7[0m
+[0;32mI (6703) uart: queue free spaces: 20[0m
+[0;32mI (6703) APP_UART: UART config sucessfuly![0m
+[0;32mI (6703) main_task: Returned from app_main()[0m
+[0;33mW (6943) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (6943) LIVING: DHT11 fail![0m
+[0;32mI (6943) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (6943) LIVING: Khi gas: 100.61 ppm[0m
+[0;33mW (7973) LIVING: DHT11 fail![0m
+[0;32mI (7973) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (7973) LIVING: Khi gas: 103.03 ppm[0m
+[0;33mW (8993) LIVING: DHT11 fail![0m
+[0;32mI (8993) LIVING: Do sang: 4.61 lux[0m
+[0;32mI (8993) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (10013) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (10013) LIVING: DHT11 fail![0m
+[0;32mI (10013) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (10013) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (11043) LIVING: DHT11 fail![0m
+[0;32mI (11043) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (11043) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (12063) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (12063) LIVING: DHT11 fail![0m
+[0;32mI (12063) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (12063) LIVING: Khi gas: 105.45 ppm[0m
+[0;33mW (13093) LIVING: DHT11 fail![0m
+[0;32mI (13093) LIVING: Do sang: 4.45 lux[0m
+[0;32mI (13093) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (14113) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (14113) LIVING: DHT11 fail![0m
+[0;32mI (14113) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (14113) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (15143) LIVING: DHT11 fail![0m
+[0;32mI (15143) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (15143) LIVING: Khi gas: 100.61 ppm[0m
+[0;33mW (16163) LIVING: DHT11 fail![0m
+[0;32mI (16163) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (16163) LIVING: Khi gas: 102.42 ppm[0m
+[0;31mE (16223) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (16223) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (16223) mqtt_client: Error transport connect[0m
+[0;31mE (16223) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (16233) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (17183) LIVING: DHT11 fail![0m
+[0;32mI (17183) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (17183) LIVING: Khi gas: 105.45 ppm[0m
+[0;33mW (18203) LIVING: DHT11 fail![0m
+[0;32mI (18203) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (18203) LIVING: Khi gas: 103.03 ppm[0m
+[0;33mW (19223) LIVING: DHT11 fail![0m
+[0;32mI (19223) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (19223) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (20243) LIVING: DHT11 fail![0m
+[0;32mI (20243) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (20243) LIVING: Khi gas: 101.82 ppm[0m
+[0;33mW (21263) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (21263) LIVING: DHT11 fail![0m
+[0;32mI (21263) LIVING: Do sang: 4.39 lux[0m
+[0;32mI (21263) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (22293) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (22293) LIVING: DHT11 fail![0m
+[0;32mI (22303) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (22303) LIVING: Khi gas: 100.00 ppm[0m
+[0;33mW (23323) LIVING: DHT11 fail![0m
+[0;32mI (23323) LIVING: Do sang: 4.55 lux[0m
+[0;32mI (23323) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (24343) LIVING: DHT11 fail![0m
+[0;32mI (24343) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (24343) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (25363) LIVING: DHT11 fail![0m
+[0;32mI (25363) LIVING: Do sang: 4.58 lux[0m
+[0;32mI (25363) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (26383) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (26383) LIVING: DHT11 fail![0m
+[0;32mI (26393) LIVING: Do sang: 4.36 lux[0m
+[0;32mI (26393) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (27413) LIVING: DHT11 fail![0m
+[0;32mI (27413) LIVING: Do sang: 4.61 lux[0m
+[0;32mI (27413) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (28433) LIVING: DHT11 fail![0m
+[0;32mI (28433) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (28433) LIVING: Khi gas: 100.61 ppm[0m
+[0;33mW (29453) LIVING: DHT11 fail![0m
+[0;32mI (29453) LIVING: Do sang: 4.36 lux[0m
+[0;32mI (29453) LIVING: Khi gas: 95.15 ppm[0m
+[0;33mW (30483) LIVING: DHT11 fail![0m
+[0;32mI (30483) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (30483) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (31233) MQTT: Other event id:7[0m
+[0;33mW (31513) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (31513) LIVING: DHT11 fail![0m
+[0;32mI (31513) LIVING: Do sang: 4.55 lux[0m
+[0;32mI (31513) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (32543) LIVING: DHT11 fail![0m
+[0;32mI (32543) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (32543) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (33563) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (33563) LIVING: DHT11 fail![0m
+[0;32mI (33563) LIVING: Do sang: 4.33 lux[0m
+[0;32mI (33563) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (34593) LIVING: DHT11 fail![0m
+[0;32mI (34593) LIVING: Do sang: 4.45 lux[0m
+[0;32mI (34593) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (35613) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (35613) LIVING: DHT11 fail![0m
+[0;32mI (35613) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (35613) LIVING: Khi gas: 103.64 ppm[0m
+[0;33mW (36643) LIVING: DHT11 fail![0m
+[0;32mI (36643) LIVING: Do sang: 4.45 lux[0m
+[0;32mI (36643) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (37663) LIVING: DHT11 fail![0m
+[0;32mI (37663) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (37663) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (38683) LIVING: DHT11 fail![0m
+[0;32mI (38683) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (38683) LIVING: Khi gas: 103.03 ppm[0m
+[0;33mW (39703) LIVING: DHT11 fail![0m
+[0;32mI (39703) LIVING: Do sang: 4.55 lux[0m
+[0;32mI (39703) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (40723) LIVING: DHT11 fail![0m
+[0;32mI (40723) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (40723) LIVING: Khi gas: 104.24 ppm[0m
+[0;31mE (41243) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (41243) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (41243) mqtt_client: Error transport connect[0m
+[0;31mE (41243) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (41253) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (41743) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (41743) LIVING: DHT11 fail![0m
+[0;32mI (41753) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (41753) LIVING: Khi gas: 104.85 ppm[0m
+[0;33mW (42773) LIVING: DHT11 fail![0m
+[0;32mI (42773) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (42773) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (43793) LIVING: DHT11 fail![0m
+[0;32mI (43793) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (43793) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (44813) LIVING: DHT11 fail![0m
+[0;32mI (44813) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (44813) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (45833) LIVING: DHT11 fail![0m
+[0;32mI (45833) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (45833) LIVING: Khi gas: 103.03 ppm[0m
+[0;33mW (46853) LIVING: DHT11 fail![0m
+[0;32mI (46853) LIVING: Do sang: 4.33 lux[0m
+[0;32mI (46853) LIVING: Khi gas: 103.64 ppm[0m
+[0;33mW (47873) LIVING: DHT11 fail![0m
+[0;32mI (47873) LIVING: Do sang: 4.45 lux[0m
+[0;32mI (47873) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (48893) LIVING: DHT11 fail![0m
+[0;32mI (48893) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (48893) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (49913) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (49913) LIVING: DHT11 fail![0m
+[0;32mI (49913) LIVING: Do sang: 4.39 lux[0m
+[0;32mI (49913) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (50943) LIVING: DHT11 fail![0m
+[0;32mI (50943) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (50943) LIVING: Khi gas: 103.64 ppm[0m
+[0;33mW (51963) LIVING: DHT11 fail![0m
+[0;32mI (51963) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (51963) LIVING: Khi gas: 103.64 ppm[0m
+[0;33mW (52983) LIVING: DHT11 fail![0m
+[0;32mI (52983) LIVING: Do sang: 4.39 lux[0m
+[0;32mI (52983) LIVING: Khi gas: 103.03 ppm[0m
+[0;33mW (54003) LIVING: DHT11 fail![0m
+[0;32mI (54003) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (54003) LIVING: Khi gas: 99.39 ppm[0m
+[0;33mW (55023) LIVING: DHT11 fail![0m
+[0;32mI (55023) LIVING: Do sang: 4.45 lux[0m
+[0;32mI (55023) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (56043) LIVING: DHT11 fail![0m
+[0;32mI (56043) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (56043) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (56253) MQTT: Other event id:7[0m
+[0;33mW (57063) LIVING: DHT11 fail![0m
+[0;32mI (57063) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (57063) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (58083) LIVING: DHT11 fail![0m
+[0;32mI (58083) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (58083) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (59103) LIVING: DHT11 fail![0m
+[0;32mI (59103) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (59103) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (60123) LIVING: DHT11 fail![0m
+[0;32mI (60123) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (60123) LIVING: Khi gas: 105.45 ppm[0m
+[0;33mW (61143) LIVING: DHT11 fail![0m
+[0;32mI (61143) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (61143) LIVING: Khi gas: 99.39 ppm[0m
+[0;33mW (62163) LIVING: DHT11 fail![0m
+[0;32mI (62163) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (62163) LIVING: Khi gas: 100.61 ppm[0m
+[0;33mW (63183) LIVING: DHT11 fail![0m
+[0;32mI (63183) LIVING: Do sang: 4.39 lux[0m
+[0;32mI (63183) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (64203) LIVING: DHT11 fail![0m
+[0;32mI (64203) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (64203) LIVING: Khi gas: 103.64 ppm[0m
+[0;33mW (65223) LIVING: DHT11 fail![0m
+[0;32mI (65223) LIVING: Do sang: 4.36 lux[0m
+[0;32mI (65223) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (66243) LIVING: DHT11 fail![0m
+[0;32mI (66243) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (66243) LIVING: Khi gas: 102.42 ppm[0m
+[0;31mE (66263) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (66263) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (66263) mqtt_client: Error transport connect[0m
+[0;31mE (66263) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (66273) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (67263) DHT11: check fail: 9C 00 3A 04 -> DB[0m
+[0;33mW (67263) LIVING: DHT11 fail![0m
+[0;32mI (67263) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (67263) LIVING: Khi gas: 101.82 ppm[0m
+[0;33mW (68293) LIVING: DHT11 fail![0m
+[0;32mI (68293) LIVING: Do sang: 4.55 lux[0m
+[0;32mI (68293) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (69313) DHT11: check fail: 9C 00 3A 06 -> DD[0m
+[0;33mW (69313) LIVING: DHT11 fail![0m
+[0;32mI (69313) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (69313) LIVING: Khi gas: 101.21 ppm[0m
+[0;33mW (70343) LIVING: DHT11 fail![0m
+[0;32mI (70343) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (70343) LIVING: Khi gas: 103.64 ppm[0m
+[0;33mW (71363) DHT11: check fail: 9C 00 3A 06 -> DD[0m
+[0;33mW (71363) LIVING: DHT11 fail![0m
+[0;32mI (71363) LIVING: Do sang: 4.36 lux[0m
+[0;32mI (71363) LIVING: Khi gas: 100.61 ppm[0m
+[0;33mW (72393) LIVING: DHT11 fail![0m
+[0;32mI (72393) LIVING: Do sang: 4.33 lux[0m
+[0;32mI (72393) LIVING: Khi gas: 103.03 ppm[0m
+[0;33mW (73413) LIVING: DHT11 fail![0m
+[0;32mI (73413) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (73413) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (74433) LIVING: DHT11 fail![0m
+[0;32mI (74433) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (74433) LIVING: Khi gas: 99.39 ppm[0m
+[0;33mW (75453) LIVING: DHT11 fail![0m
+[0;32mI (75453) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (75453) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (76473) LIVING: DHT11 fail![0m
+[0;32mI (76473) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (76473) LIVING: Khi gas: 103.03 ppm[0m
+[0;33mW (77493) LIVING: DHT11 fail![0m
+[0;32mI (77493) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (77493) LIVING: Khi gas: 100.61 ppm[0m
+[0;33mW (78513) LIVING: DHT11 fail![0m
+[0;32mI (78513) LIVING: Do sang: 4.45 lux[0m
+[0;32mI (78513) LIVING: Khi gas: 102.42 ppm[0m
+[0;33mW (79533) LIVING: DHT11 fail![0m
+[0;32mI (79533) LIVING: Do sang: 4.39 lux[0m
+[0;32mI (79533) LIVING: Khi gas: 99.39 ppm[0m
+[0;33mW (80553) LIVING: DHT11 fail![0m
+[0;32mI (80553) LIVING: Do sang: 4.55 lux[0m
+[0;32mI (80553) LIVING: Khi gas: 98.79 ppm[0m
+[0;32mI (81273) MQTT: Other event id:7[0m

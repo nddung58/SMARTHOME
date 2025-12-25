@@ -1,0 +1,677 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30988h (199048) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=000409b0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=000409bc vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=000442b4 vaddr=40080000 size=0bd64h ( 48484) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b43a4h (738212) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=001043cc vaddr=4008bd64 size=0c54ch ( 50508) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (540) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  9feaf3d9dd462d63...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (713) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) RFID: Initializing RC522...[0m
+[0;32mI (713) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (743) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (743) RFID: RC522 READY.[0m
+[0;33mW (913) LIVING: DHT11 fail![0m
+[0;32mI (913) LIVING: Do sang: 6.91 lux[0m
+[0;32mI (923) LIVING: AUTO TASK[0m
+[0;31mE (923) mqtt_client: Client was not initialized[0m
+[0;32mI (923) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (923) mqtt_client: Client was not initialized[0m
+[0;32mI (933) wifi:wifi driver task: 3ffc607c, prio:23, stack:6656, core=0[0m
+[0;32mI (943) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (943) wifi:wifi certification version: v7.0[0m
+[0;32mI (943) wifi:config NVS flash: enabled[0m
+[0;32mI (943) wifi:config nano formating: disabled[0m
+[0;32mI (953) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (953) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (963) wifi:Init management short buffer num: 32[0m
+[0;32mI (963) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (973) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (973) wifi:Init static rx buffer num: 10[0m
+[0;32mI (973) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (983) wifi_init: rx ba win: 6[0m
+[0;32mI (983) wifi_init: tcpip mbox: 32[0m
+[0;32mI (993) wifi_init: udp mbox: 6[0m
+[0;32mI (993) wifi_init: tcp mbox: 6[0m
+[0;32mI (993) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1003) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1003) wifi_init: tcp mss: 1440[0m
+[0;32mI (1013) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1013) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1033) CONFIG_WIFI: Provisioned: false[0m
+[0;32mI (1053) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1123) LIVING: AUTO TASK[0m
+[0;32mI (1173) wifi:mode : softAP (14:33:5c:52:d6:7d)[0m
+[0;32mI (1173) wifi:Total power save buffer number: 16[0m
+[0;32mI (1173) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1173) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1183) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1323) LIVING: AUTO TASK[0m
+[0;32mI (1523) LIVING: AUTO TASK[0m
+[0;32mI (1723) LIVING: AUTO TASK[0m
+[0;32mI (1923) LIVING: AUTO TASK[0m
+[0;32mI (1983) LIVING: Do am: 79.00 percent[0m
+[0;32mI (1983) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (1983) LIVING: Do sang: 13.61 lux[0m
+[0;32mI (1983) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (1993) mqtt_client: Client was not initialized[0m
+[0;32mI (2123) LIVING: AUTO TASK[0m
+[0;32mI (2323) LIVING: AUTO TASK[0m
+[0;32mI (2523) LIVING: AUTO TASK[0m
+[0;33mW (2613) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (2723) LIVING: AUTO TASK[0m
+[0;32mI (2763) rc522: [0m
+[0;32mI (2763) rc522: ╔══════════════╗[0m
+[0;32mI (2763) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (2763) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (2773) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (2773) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (2783) rc522: ╚══════════════╝[0m
+[0;32mI (2793) rc522: [0m
+[0;32mI (2793) RFID: ACCESS GRANTED![0m
+[0;32mI (2793) DOOR: Door: OPEN[0m
+[0;31mE (2803) mqtt_client: Client was not initialized[0m
+[0;32mI (2923) LIVING: AUTO TASK[0m
+[0;32mI (3123) LIVING: AUTO TASK[0m
+[0;33mW (3183) LIVING: DHT11 fail![0m
+[0;32mI (3183) LIVING: Do sang: 15.39 lux[0m
+[0;32mI (3183) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (3323) LIVING: AUTO TASK[0m
+[0;32mI (3493) RFID: Card removed[0m
+[0;32mI (3493) DOOR: Door: CLOSE[0m
+[0;32mI (3523) LIVING: AUTO TASK[0m
+[0;32mI (3723) LIVING: AUTO TASK[0m
+[0;32mI (3923) LIVING: AUTO TASK[0m
+[0;32mI (4123) LIVING: AUTO TASK[0m
+[0;32mI (4323) LIVING: AUTO TASK[0m
+[0;33mW (4373) LIVING: DHT11 fail![0m
+[0;32mI (4373) LIVING: Do sang: 12.85 lux[0m
+[0;32mI (4373) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (4493) mqtt_client: Client was not initialized[0m
+[0;32mI (4523) LIVING: AUTO TASK[0m
+[0;32mI (4723) LIVING: AUTO TASK[0m
+[0;32mI (4923) LIVING: AUTO TASK[0m
+[0;32mI (5123) LIVING: AUTO TASK[0m
+[0;32mI (5323) LIVING: AUTO TASK[0m
+[0;32mI (5523) LIVING: AUTO TASK[0m
+[0;33mW (5563) LIVING: DHT11 fail![0m
+[0;32mI (5563) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (5563) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (5723) LIVING: AUTO TASK[0m
+[0;32mI (5923) LIVING: AUTO TASK[0m
+[0;32mI (6123) LIVING: AUTO TASK[0m
+[0;32mI (6323) LIVING: AUTO TASK[0m
+[0;32mI (6523) LIVING: AUTO TASK[0m
+[0;33mW (6693) LIVING: DHT11 fail![0m
+[0;32mI (6693) LIVING: Do sang: 11.85 lux[0m
+[0;32mI (6693) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (6723) LIVING: AUTO TASK[0m
+[0;32mI (6923) LIVING: AUTO TASK[0m
+[0;32mI (7123) LIVING: AUTO TASK[0m
+[0;32mI (7323) LIVING: AUTO TASK[0m
+[0;32mI (7523) LIVING: AUTO TASK[0m
+[0;32mI (7723) LIVING: AUTO TASK[0m
+[0;33mW (7893) LIVING: DHT11 fail![0m
+[0;32mI (7893) LIVING: Do sang: 14.12 lux[0m
+[0;32mI (7893) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (7923) LIVING: AUTO TASK[0m
+[0;32mI (8123) LIVING: AUTO TASK[0m
+[0;32mI (8323) LIVING: AUTO TASK[0m
+[0;32mI (8523) LIVING: AUTO TASK[0m
+[0;32mI (8723) LIVING: AUTO TASK[0m
+[0;32mI (8923) LIVING: AUTO TASK[0m
+[0;33mW (9083) LIVING: DHT11 fail![0m
+[0;32mI (9083) LIVING: Do sang: 14.42 lux[0m
+[0;32mI (9083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (9123) LIVING: AUTO TASK[0m
+[0;32mI (9323) LIVING: AUTO TASK[0m
+[0;32mI (9523) LIVING: AUTO TASK[0m
+[0;32mI (9723) LIVING: AUTO TASK[0m
+[0;32mI (9923) LIVING: AUTO TASK[0m
+[0;32mI (10123) LIVING: AUTO TASK[0m
+[0;32mI (10173) LIVING: Do am: 80.00 percent[0m
+[0;32mI (10183) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (10183) LIVING: Do sang: 18.03 lux[0m
+[0;31mE (10193) mqtt_client: Client was not initialized[0m
+[0;32mI (10193) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (10323) LIVING: AUTO TASK[0m
+[0;32mI (10523) LIVING: AUTO TASK[0m
+[0;32mI (10723) LIVING: AUTO TASK[0m
+[0;32mI (10923) LIVING: AUTO TASK[0m
+[0;32mI (11123) LIVING: AUTO TASK[0m
+[0;32mI (11323) LIVING: AUTO TASK[0m
+[0;33mW (11383) LIVING: DHT11 fail![0m
+[0;32mI (11383) LIVING: Do sang: 18.18 lux[0m
+[0;32mI (11383) LIVING: Khi gas: 256.36 ppm[0m
+[0;31mE (11393) mqtt_client: Client was not initialized[0m
+[0;32mI (11523) LIVING: AUTO TASK[0m
+[0;32mI (11723) LIVING: AUTO TASK[0m
+[0;32mI (11923) LIVING: AUTO TASK[0m
+[0;32mI (12123) LIVING: AUTO TASK[0m
+[0;32mI (12323) LIVING: AUTO TASK[0m
+[0;33mW (12453) LIVING: DHT11 fail![0m
+[0;32mI (12453) LIVING: Do sang: 19.48 lux[0m
+[0;32mI (12453) LIVING: Khi gas: 416.36 ppm[0m
+[0;31mE (12463) mqtt_client: Client was not initialized[0m
+[0;32mI (12523) LIVING: AUTO TASK[0m
+[0;32mI (12723) LIVING: AUTO TASK[0m
+[0;32mI (12923) LIVING: AUTO TASK[0m
+[0;32mI (13123) LIVING: AUTO TASK[0m
+[0;32mI (13323) LIVING: AUTO TASK[0m
+[0;32mI (13523) LIVING: AUTO TASK[0m
+[0;33mW (13653) LIVING: DHT11 fail![0m
+[0;32mI (13653) LIVING: Do sang: 18.61 lux[0m
+[0;32mI (13653) LIVING: Khi gas: 488.48 ppm[0m
+[0;31mE (13663) mqtt_client: Client was not initialized[0m
+[0;32mI (13723) LIVING: AUTO TASK[0m
+[0;32mI (13923) LIVING: AUTO TASK[0m
+[0;32mI (14123) LIVING: AUTO TASK[0m
+[0;32mI (14323) LIVING: AUTO TASK[0m
+[0;32mI (14523) LIVING: AUTO TASK[0m
+[0;32mI (14723) LIVING: AUTO TASK[0m
+[0;33mW (14723) LIVING: DHT11 fail![0m
+[0;32mI (14723) LIVING: Do sang: 18.18 lux[0m
+[0;32mI (14723) LIVING: Khi gas: 520.00 ppm[0m
+[0;31mE (14733) mqtt_client: Client was not initialized[0m
+[0;32mI (14923) LIVING: AUTO TASK[0m
+[0;31mE (14923) mqtt_client: Client was not initialized[0m
+[0;32mI (15123) LIVING: AUTO TASK[0m
+[0;31mE (15123) mqtt_client: Client was not initialized[0m
+[0;32mI (15323) LIVING: AUTO TASK[0m
+[0;31mE (15323) mqtt_client: Client was not initialized[0m
+[0;32mI (15523) LIVING: AUTO TASK[0m
+[0;31mE (15523) mqtt_client: Client was not initialized[0m
+[0;32mI (15723) LIVING: AUTO TASK[0m
+[0;31mE (15723) mqtt_client: Client was not initialized[0m
+[0;33mW (15923) LIVING: DHT11 fail![0m
+[0;32mI (15923) LIVING: AUTO TASK[0m
+[0;32mI (15923) LIVING: Do sang: 10.21 lux[0m
+[0;32mI (15923) LIVING: Khi gas: 472.73 ppm[0m
+[0;31mE (15923) mqtt_client: Client was not initialized[0m
+[0;31mE (15933) mqtt_client: Client was not initialized[0m
+[0;31mE (15933) mqtt_client: Client was not initialized[0m
+[0;32mI (16133) LIVING: AUTO TASK[0m
+[0;32mI (16333) LIVING: AUTO TASK[0m
+[0;32mI (16533) LIVING: AUTO TASK[0m
+[0;32mI (16733) LIVING: AUTO TASK[0m
+[0;32mI (16933) LIVING: AUTO TASK[0m
+[0;33mW (17133) LIVING: DHT11 fail![0m
+[0;32mI (17133) LIVING: Do sang: 11.70 lux[0m
+[0;32mI (17133) LIVING: AUTO TASK[0m
+[0;32mI (17133) LIVING: Khi gas: 239.39 ppm[0m
+[0;31mE (17143) mqtt_client: Client was not initialized[0m
+[0;31mE (17143) mqtt_client: Client was not initialized[0m
+[0;32mI (17333) LIVING: AUTO TASK[0m
+[0;32mI (17533) LIVING: AUTO TASK[0m
+[0;32mI (17733) LIVING: AUTO TASK[0m
+[0;32mI (17933) LIVING: AUTO TASK[0m
+[0;32mI (18133) LIVING: AUTO TASK[0m
+[0;32mI (18203) LIVING: Do am: 80.00 percent[0m
+[0;32mI (18203) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (18203) LIVING: Do sang: 15.45 lux[0m
+[0;32mI (18203) LIVING: Khi gas: 166.67 ppm[0m
+[0;31mE (18213) mqtt_client: Client was not initialized[0m
+[0;32mI (18333) LIVING: AUTO TASK[0m
+[0;32mI (18533) LIVING: AUTO TASK[0m
+[0;32mI (18733) LIVING: AUTO TASK[0m
+[0;32mI (18933) LIVING: AUTO TASK[0m
+[0;32mI (19133) LIVING: AUTO TASK[0m
+[0;32mI (19333) LIVING: AUTO TASK[0m
+[0;33mW (19403) LIVING: DHT11 fail![0m
+[0;32mI (19403) LIVING: Do sang: 12.61 lux[0m
+[0;32mI (19403) LIVING: Khi gas: 142.42 ppm[0m
+[0;31mE (19413) mqtt_client: Client was not initialized[0m
+[0;32mI (19533) LIVING: AUTO TASK[0m
+[0;32mI (19733) LIVING: AUTO TASK[0m
+[0;32mI (19933) LIVING: AUTO TASK[0m
+[0;32mI (20133) LIVING: AUTO TASK[0m
+[0;32mI (20333) LIVING: AUTO TASK[0m
+[0;32mI (20533) LIVING: AUTO TASK[0m
+[0;33mW (20603) LIVING: DHT11 fail![0m
+[0;32mI (20603) LIVING: Do sang: 12.85 lux[0m
+[0;32mI (20603) LIVING: Khi gas: 421.21 ppm[0m
+[0;31mE (20613) mqtt_client: Client was not initialized[0m
+[0;32mI (20733) LIVING: AUTO TASK[0m
+[0;32mI (20933) LIVING: AUTO TASK[0m
+[0;32mI (21133) LIVING: AUTO TASK[0m
+[0;32mI (21333) LIVING: AUTO TASK[0m
+[0;32mI (21533) LIVING: AUTO TASK[0m
+[0;32mI (21733) LIVING: AUTO TASK[0m
+[0;33mW (21803) LIVING: DHT11 fail![0m
+[0;32mI (21803) LIVING: Do sang: 14.12 lux[0m
+[0;32mI (21803) LIVING: Khi gas: 561.21 ppm[0m
+[0;31mE (21813) mqtt_client: Client was not initialized[0m
+[0;32mI (21933) LIVING: AUTO TASK[0m
+[0;31mE (21933) mqtt_client: Client was not initialized[0m
+[0;32mI (22133) LIVING: AUTO TASK[0m
+[0;31mE (22133) mqtt_client: Client was not initialized[0m
+[0;32mI (22333) LIVING: AUTO TASK[0m
+[0;31mE (22333) mqtt_client: Client was not initialized[0m
+[0;32mI (22533) LIVING: AUTO TASK[0m
+[0;31mE (22533) mqtt_client: Client was not initialized[0m
+[0;32mI (22733) LIVING: AUTO TASK[0m
+[0;31mE (22733) mqtt_client: Client was not initialized[0m
+[0;33mW (22903) LIVING: DHT11 fail![0m
+[0;32mI (22903) LIVING: Do sang: 7.97 lux[0m
+[0;31mE (22923) mqtt_client: Client was not initialized[0m
+[0;32mI (22923) LIVING: Khi gas: 550.91 ppm[0m
+[0;31mE (22923) mqtt_client: Client was not initialized[0m
+[0;31mE (22923) mqtt_client: Client was not initialized[0m
+[0;32mI (22933) LIVING: AUTO TASK[0m
+[0;31mE (22933) mqtt_client: Client was not initialized[0m
+[0;32mI (23143) LIVING: AUTO TASK[0m
+[0;31mE (23143) mqtt_client: Client was not initialized[0m
+[0;32mI (23343) LIVING: AUTO TASK[0m
+[0;31mE (23343) mqtt_client: Client was not initialized[0m
+[0;32mI (23543) LIVING: AUTO TASK[0m
+[0;31mE (23543) mqtt_client: Client was not initialized[0m
+[0;32mI (23743) LIVING: AUTO TASK[0m
+[0;31mE (23743) mqtt_client: Client was not initialized[0m
+[0;32mI (23943) LIVING: AUTO TASK[0m
+[0;31mE (23943) mqtt_client: Client was not initialized[0m
+[0;33mW (24103) LIVING: DHT11 fail![0m
+[0;32mI (24103) LIVING: Do sang: 10.12 lux[0m
+[0;32mI (24103) LIVING: Khi gas: 352.73 ppm[0m
+[0;31mE (24113) mqtt_client: Client was not initialized[0m
+[0;32mI (24143) LIVING: AUTO TASK[0m
+[0;32mI (24343) LIVING: AUTO TASK[0m
+[0;32mI (24543) LIVING: AUTO TASK[0m
+[0;32mI (24743) LIVING: AUTO TASK[0m
+[0;32mI (24943) LIVING: AUTO TASK[0m
+[0;32mI (25143) LIVING: AUTO TASK[0m
+[0;32mI (25173) LIVING: Do am: 80.00 percent[0m
+[0;32mI (25173) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (25173) LIVING: Do sang: 11.82 lux[0m
+[0;32mI (25173) LIVING: Khi gas: 208.48 ppm[0m
+[0;31mE (25183) mqtt_client: Client was not initialized[0m
+[0;31mE (25183) mqtt_client: Client was not initialized[0m
+[0;32mI (25343) LIVING: AUTO TASK[0m
+[0;32mI (25543) LIVING: AUTO TASK[0m
+[0;32mI (25743) LIVING: AUTO TASK[0m
+[0;32mI (25943) LIVING: AUTO TASK[0m
+[0;32mI (26143) LIVING: AUTO TASK[0m
+[0;32mI (26343) LIVING: AUTO TASK[0m
+[0;33mW (26373) LIVING: DHT11 fail![0m
+[0;32mI (26373) LIVING: Do sang: 13.94 lux[0m
+[0;32mI (26373) LIVING: Khi gas: 163.64 ppm[0m
+[0;31mE (26383) mqtt_client: Client was not initialized[0m
+[0;32mI (26543) LIVING: AUTO TASK[0m
+[0;32mI (26743) LIVING: AUTO TASK[0m
+[0;32mI (26863) rc522: [0m
+[0;32mI (26873) rc522: ╔══════════════╗[0m
+[0;32mI (26873) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (26873) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (26873) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (26883) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (26893) rc522: ╚══════════════╝[0m
+[0;32mI (26893) rc522: [0m
+[0;32mI (26903) RFID: ACCESS GRANTED![0m
+[0;32mI (26903) DOOR: Door: OPEN[0m
+[0;31mE (26903) mqtt_client: Client was not initialized[0m
+[0;32mI (26943) LIVING: AUTO TASK[0m
+[0;32mI (27143) LIVING: AUTO TASK[0m
+[0;32mI (27343) LIVING: AUTO TASK[0m
+[0;32mI (27543) LIVING: AUTO TASK[0m
+[0;33mW (27573) LIVING: DHT11 fail![0m
+[0;32mI (27573) LIVING: Do sang: 13.85 lux[0m
+[0;32mI (27573) LIVING: Khi gas: 144.24 ppm[0m
+[0;31mE (27583) mqtt_client: Client was not initialized[0m
+[0;32mI (27743) LIVING: AUTO TASK[0m
+[0;32mI (27943) LIVING: AUTO TASK[0m
+[0;32mI (28143) LIVING: AUTO TASK[0m
+[0;32mI (28343) LIVING: AUTO TASK[0m
+[0;32mI (28543) LIVING: AUTO TASK[0m
+[0;32mI (28743) LIVING: AUTO TASK[0m
+[0;33mW (28773) LIVING: DHT11 fail![0m
+[0;32mI (28773) LIVING: Do sang: 11.61 lux[0m
+[0;32mI (28773) LIVING: Khi gas: 137.58 ppm[0m
+[0;31mE (28783) mqtt_client: Client was not initialized[0m
+[0;32mI (28943) LIVING: AUTO TASK[0m
+[0;32mI (29003) RFID: Card removed[0m
+[0;32mI (29003) DOOR: Door: CLOSE[0m
+[0;32mI (29143) LIVING: AUTO TASK[0m
+[0;32mI (29343) LIVING: AUTO TASK[0m
+[0;32mI (29543) LIVING: AUTO TASK[0m
+[0;32mI (29743) LIVING: AUTO TASK[0m
+[0;32mI (29943) LIVING: AUTO TASK[0m
+[0;33mW (29973) LIVING: DHT11 fail![0m
+[0;32mI (29973) LIVING: Do sang: 15.36 lux[0m
+[0;32mI (29973) LIVING: Khi gas: 127.88 ppm[0m
+[0;31mE (29983) mqtt_client: Client was not initialized[0m
+[0;31mE (30003) mqtt_client: Client was not initialized[0m
+[0;32mI (30143) LIVING: AUTO TASK[0m
+[0;32mI (30343) LIVING: AUTO TASK[0m
+[0;32mI (30543) LIVING: AUTO TASK[0m
+[0;32mI (30743) LIVING: AUTO TASK[0m
+[0;32mI (30943) LIVING: AUTO TASK[0m
+[0;32mI (31143) LIVING: AUTO TASK[0m
+[0;33mW (31173) LIVING: DHT11 fail![0m
+[0;32mI (31173) LIVING: Do sang: 11.70 lux[0m
+[0;32mI (31173) LIVING: Khi gas: 123.64 ppm[0m
+[0;32mI (31343) LIVING: AUTO TASK[0m
+[0;32mI (31543) LIVING: AUTO TASK[0m
+[0;32mI (31743) LIVING: AUTO TASK[0m
+[0;32mI (31943) LIVING: AUTO TASK[0m
+[0;32mI (32143) LIVING: AUTO TASK[0m
+[0;32mI (32343) LIVING: AUTO TASK[0m
+[0;33mW (32363) LIVING: DHT11 fail![0m
+[0;32mI (32363) LIVING: Do sang: 15.12 lux[0m
+[0;32mI (32363) LIVING: Khi gas: 118.79 ppm[0m
+[0;31mE (32373) mqtt_client: Client was not initialized[0m
+[0;32mI (32543) LIVING: AUTO TASK[0m
+[0;32mI (32743) LIVING: AUTO TASK[0m
+[0;32mI (32943) LIVING: AUTO TASK[0m
+[0;32mI (33143) LIVING: AUTO TASK[0m
+[0;32mI (33343) LIVING: AUTO TASK[0m
+[0;32mI (33543) LIVING: AUTO TASK[0m
+[0;33mW (33563) LIVING: DHT11 fail![0m
+[0;32mI (33563) LIVING: Do sang: 13.09 lux[0m
+[0;32mI (33563) LIVING: Khi gas: 117.58 ppm[0m
+[0;32mI (33743) LIVING: AUTO TASK[0m
+[0;32mI (33943) LIVING: AUTO TASK[0m
+[0;32mI (34143) LIVING: AUTO TASK[0m
+[0;32mI (34343) LIVING: AUTO TASK[0m
+[0;32mI (34543) LIVING: AUTO TASK[0m
+[0;32mI (34583) LIVING: Do am: 79.00 percent[0m
+[0;32mI (34583) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (34583) LIVING: Do sang: 14.82 lux[0m
+[0;32mI (34583) LIVING: Khi gas: 113.94 ppm[0m
+[0;32mI (34743) LIVING: AUTO TASK[0m
+[0;32mI (34943) LIVING: AUTO TASK[0m
+[0;32mI (35143) LIVING: AUTO TASK[0m
+[0;32mI (35343) LIVING: AUTO TASK[0m
+[0;32mI (35543) LIVING: AUTO TASK[0m
+[0;32mI (35743) LIVING: AUTO TASK[0m
+[0;33mW (35783) LIVING: DHT11 fail![0m
+[0;32mI (35783) LIVING: Do sang: 14.79 lux[0m
+[0;32mI (35783) LIVING: Khi gas: 113.94 ppm[0m
+[0;32mI (35943) LIVING: AUTO TASK[0m
+[0;32mI (36143) LIVING: AUTO TASK[0m
+[0;32mI (36343) LIVING: AUTO TASK[0m
+[0;32mI (36543) LIVING: AUTO TASK[0m
+[0;32mI (36743) LIVING: AUTO TASK[0m
+[0;32mI (36943) LIVING: AUTO TASK[0m
+[0;33mW (36973) LIVING: DHT11 fail![0m
+[0;32mI (36973) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (36973) LIVING: Khi gas: 110.91 ppm[0m
+[0;31mE (36983) mqtt_client: Client was not initialized[0m
+[0;32mI (37143) LIVING: AUTO TASK[0m
+[0;32mI (37343) LIVING: AUTO TASK[0m
+[0;32mI (37543) LIVING: AUTO TASK[0m
+[0;32mI (37743) LIVING: AUTO TASK[0m
+[0;32mI (37943) LIVING: AUTO TASK[0m
+[0;32mI (38073) LIVING: Do am: 79.00 percent[0m
+[0;32mI (38083) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (38083) LIVING: Do sang: 12.91 lux[0m
+[0;32mI (38083) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (38143) LIVING: AUTO TASK[0m
+[0;32mI (38343) LIVING: AUTO TASK[0m
+[0;32mI (38543) LIVING: AUTO TASK[0m
+[0;32mI (38743) LIVING: AUTO TASK[0m
+[0;32mI (38943) LIVING: AUTO TASK[0m
+[0;32mI (39143) LIVING: Do am: 79.00 percent[0m
+[0;32mI (39143) LIVING: AUTO TASK[0m
+[0;32mI (39143) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (39143) LIVING: Do sang: 13.27 lux[0m
+[0;32mI (39143) LIVING: Khi gas: 109.70 ppm[0m
+[0;32mI (39343) LIVING: AUTO TASK[0m
+[0;32mI (39543) LIVING: AUTO TASK[0m
+[0;32mI (39743) LIVING: AUTO TASK[0m
+[0;32mI (39943) LIVING: AUTO TASK[0m
+[0;32mI (40143) LIVING: AUTO TASK[0m
+[0;32mI (40213) LIVING: Do am: 79.00 percent[0m
+[0;32mI (40213) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (40213) LIVING: Do sang: 13.70 lux[0m
+[0;32mI (40213) LIVING: Khi gas: 105.45 ppm[0m
+[0;31mE (40223) mqtt_client: Client was not initialized[0m
+[0;32mI (40343) LIVING: AUTO TASK[0m
+[0;32mI (40543) LIVING: AUTO TASK[0m
+[0;32mI (40743) LIVING: AUTO TASK[0m
+[0;32mI (40943) LIVING: AUTO TASK[0m
+[0;32mI (41143) LIVING: AUTO TASK[0m
+[0;32mI (41343) LIVING: AUTO TASK[0m
+[0;33mW (41413) LIVING: DHT11 fail![0m
+[0;32mI (41413) LIVING: Do sang: 14.88 lux[0m
+[0;32mI (41413) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (41543) LIVING: AUTO TASK[0m
+[0;32mI (41743) LIVING: AUTO TASK[0m
+[0;32mI (41943) LIVING: AUTO TASK[0m
+[0;32mI (42143) LIVING: AUTO TASK[0m
+[0;32mI (42343) LIVING: AUTO TASK[0m
+[0;32mI (42543) LIVING: AUTO TASK[0m
+[0;33mW (42603) LIVING: DHT11 fail![0m
+[0;32mI (42603) LIVING: Do sang: 16.06 lux[0m
+[0;32mI (42603) LIVING: Khi gas: 106.67 ppm[0m
+[0;32mI (42743) LIVING: AUTO TASK[0m
+[0;32mI (42943) LIVING: AUTO TASK[0m
+[0;32mI (43143) LIVING: AUTO TASK[0m
+[0;32mI (43343) LIVING: AUTO TASK[0m
+[0;32mI (43543) LIVING: AUTO TASK[0m
+[0;32mI (43743) LIVING: AUTO TASK[0m
+[0;33mW (43793) LIVING: DHT11 fail![0m
+[0;32mI (43793) LIVING: Do sang: 11.70 lux[0m
+[0;32mI (43793) LIVING: Khi gas: 103.64 ppm[0m
+[0;32mI (43943) LIVING: AUTO TASK[0m
+[0;32mI (44143) LIVING: AUTO TASK[0m
+[0;32mI (44343) LIVING: AUTO TASK[0m
+[0;32mI (44543) LIVING: AUTO TASK[0m
+[0;32mI (44743) LIVING: AUTO TASK[0m
+[0;33mW (44923) LIVING: DHT11 fail![0m
+[0;32mI (44923) LIVING: Do sang: 11.64 lux[0m
+[0;32mI (44923) LIVING: Khi gas: 103.64 ppm[0m
+[0;32mI (44943) LIVING: AUTO TASK[0m
+[0;32mI (45143) LIVING: AUTO TASK[0m
+[0;32mI (45343) LIVING: AUTO TASK[0m
+[0;32mI (45543) LIVING: AUTO TASK[0m
+[0;32mI (45743) LIVING: AUTO TASK[0m
+[0;32mI (45943) LIVING: AUTO TASK[0m
+[0;33mW (46123) LIVING: DHT11 fail![0m
+[0;32mI (46123) LIVING: Do sang: 11.70 lux[0m
+[0;32mI (46123) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (46143) LIVING: AUTO TASK[0m
+[0;32mI (46343) LIVING: AUTO TASK[0m
+[0;32mI (46543) LIVING: AUTO TASK[0m
+[0;32mI (46743) LIVING: AUTO TASK[0m
+[0;32mI (46943) LIVING: AUTO TASK[0m
+[0;32mI (47143) LIVING: AUTO TASK[0m
+[0;33mW (47313) LIVING: DHT11 fail![0m
+[0;32mI (47313) LIVING: Do sang: 14.48 lux[0m
+[0;32mI (47313) LIVING: Khi gas: 100.00 ppm[0m
+[0;31mE (47323) mqtt_client: Client was not initialized[0m
+[0;32mI (47343) LIVING: AUTO TASK[0m
+[0;32mI (47543) LIVING: AUTO TASK[0m
+[0;32mI (47743) LIVING: AUTO TASK[0m
+[0;32mI (47943) LIVING: AUTO TASK[0m
+[0;32mI (48143) LIVING: AUTO TASK[0m
+[0;32mI (48343) LIVING: AUTO TASK[0m
+[0;33mW (48513) LIVING: DHT11 fail![0m
+[0;32mI (48513) LIVING: Do sang: 12.82 lux[0m
+[0;32mI (48513) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (48543) LIVING: AUTO TASK[0m
+[0;32mI (48743) LIVING: AUTO TASK[0m
+[0;32mI (48943) LIVING: AUTO TASK[0m
+[0;32mI (49143) LIVING: AUTO TASK[0m
+[0;32mI (49343) LIVING: AUTO TASK[0m
+[0;32mI (49543) LIVING: AUTO TASK[0m
+[0;33mW (49703) LIVING: DHT11 fail![0m
+[0;32mI (49703) LIVING: Do sang: 14.12 lux[0m
+[0;32mI (49703) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (49743) LIVING: AUTO TASK[0m
+[0;32mI (49943) LIVING: AUTO TASK[0m
+[0;32mI (50143) LIVING: AUTO TASK[0m
+[0;32mI (50343) LIVING: AUTO TASK[0m
+[0;32mI (50543) LIVING: AUTO TASK[0m
+[0;32mI (50743) LIVING: AUTO TASK[0m
+[0;32mI (50833) LIVING: Do am: 79.00 percent[0m
+[0;32mI (50833) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (50843) LIVING: Do sang: 11.48 lux[0m
+[0;32mI (50843) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (50943) LIVING: AUTO TASK[0m
+[0;32mI (51143) LIVING: AUTO TASK[0m
+[0;32mI (51343) LIVING: AUTO TASK[0m
+[0;32mI (51543) LIVING: AUTO TASK[0m
+[0;32mI (51743) LIVING: AUTO TASK[0m
+[0;32mI (51903) LIVING: Do am: 79.00 percent[0m
+[0;32mI (51903) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (51903) LIVING: Do sang: 11.85 lux[0m
+[0;32mI (51903) LIVING: Khi gas: 98.79 ppm[0m
+[0;32mI (51943) LIVING: AUTO TASK[0m
+[0;32mI (52143) LIVING: AUTO TASK[0m
+[0;32mI (52343) LIVING: AUTO TASK[0m
+[0;32mI (52543) LIVING: AUTO TASK[0m
+[0;32mI (52743) LIVING: AUTO TASK[0m
+[0;32mI (52943) LIVING: AUTO TASK[0m
+[0;32mI (52963) LIVING: Do am: 80.00 percent[0m
+[0;32mI (52963) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (52963) LIVING: Do sang: 10.09 lux[0m
+[0;32mI (52963) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (53143) LIVING: AUTO TASK[0m
+[0;32mI (53343) LIVING: AUTO TASK[0m
+[0;32mI (53543) LIVING: AUTO TASK[0m
+[0;32mI (53743) LIVING: AUTO TASK[0m
+[0;32mI (53943) LIVING: AUTO TASK[0m
+[0;32mI (54143) LIVING: AUTO TASK[0m
+[0;33mW (54153) LIVING: DHT11 fail![0m
+[0;32mI (54153) LIVING: Do sang: 9.18 lux[0m
+[0;32mI (54153) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (54343) LIVING: AUTO TASK[0m
+[0;32mI (54543) LIVING: AUTO TASK[0m
+[0;32mI (54743) LIVING: AUTO TASK[0m
+[0;32mI (54943) LIVING: AUTO TASK[0m
+[0;32mI (55143) LIVING: AUTO TASK[0m
+[0;33mW (55243) LIVING: DHT11 fail![0m
+[0;32mI (55243) LIVING: Do sang: 8.42 lux[0m
+[0;32mI (55253) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (55343) LIVING: AUTO TASK[0m
+[0;32mI (55543) LIVING: AUTO TASK[0m
+[0;32mI (55743) LIVING: AUTO TASK[0m
+[0;32mI (55943) LIVING: AUTO TASK[0m
+[0;32mI (56143) LIVING: AUTO TASK[0m
+[0;32mI (56343) LIVING: AUTO TASK[0m
+[0;33mW (56443) LIVING: DHT11 fail![0m
+[0;32mI (56443) LIVING: Do sang: 9.61 lux[0m
+[0;32mI (56443) LIVING: Khi gas: 101.82 ppm[0m
+[0;32mI (56543) LIVING: AUTO TASK[0m
+[0;32mI (56743) LIVING: AUTO TASK[0m
+[0;32mI (56943) LIVING: AUTO TASK[0m
+[0;32mI (57143) LIVING: AUTO TASK[0m
+[0;32mI (57343) LIVING: AUTO TASK[0m
+[0;32mI (57543) LIVING: AUTO TASK[0m
+[0;33mW (57633) LIVING: DHT11 fail![0m
+[0;32mI (57633) LIVING: Do sang: 8.55 lux[0m
+[0;32mI (57633) LIVING: Khi gas: 103.64 ppm[0m
+[0;32mI (57743) LIVING: AUTO TASK[0m
+[0;32mI (57943) LIVING: AUTO TASK[0m
+[0;32mI (58143) LIVING: AUTO TASK[0m
+[0;32mI (58343) LIVING: AUTO TASK[0m
+[0;32mI (58543) LIVING: AUTO TASK[0m
+[0;32mI (58723) LIVING: Do am: 80.00 percent[0m
+[0;32mI (58733) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (58733) LIVING: Do sang: 7.88 lux[0m
+[0;32mI (58733) LIVING: Khi gas: 98.79 ppm[0m
+[0;32mI (58743) LIVING: AUTO TASK[0m
+[0;32mI (58943) LIVING: AUTO TASK[0m
+[0;32mI (59143) LIVING: AUTO TASK[0m
+[0;32mI (59343) LIVING: AUTO TASK[0m
+[0;32mI (59543) LIVING: AUTO TASK[0m
+[0;32mI (59743) LIVING: AUTO TASK[0m
+[0;33mW (59923) LIVING: DHT11 fail![0m
+[0;32mI (59923) LIVING: Do sang: 8.61 lux[0m
+[0;32mI (59923) LIVING: Khi gas: 103.03 ppm[0m
+[0;32mI (59943) LIVING: AUTO TASK[0m
+[0;32mI (60143) LIVING: AUTO TASK[0m
+[0;32mI (60343) LIVING: AUTO TASK[0m
+[0;32mI (60543) LIVING: AUTO TASK[0m
+[0;32mI (60743) LIVING: AUTO TASK[0m
+[0;32mI (60943) LIVING: AUTO TASK[0m
+[0;33mW (61113) LIVING: DHT11 fail![0m
+[0;32mI (61113) LIVING: Do sang: 8.52 lux[0m
+[0;32mI (61113) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (61143) LIVING: AUTO TASK[0m
+[0;32mI (61343) LIVING: AUTO TASK[0m
+[0;32mI (61543) LIVING: AUTO TASK[0m
+[0;32mI (61743) LIVING: AUTO TASK[0m
+[0;32mI (61943) LIVING: AUTO TASK[0m
+[0;32mI (62143) LIVING: AUTO TASK[0m
+[0;32mI (62203) LIVING: Do am: 80.00 percent[0m
+[0;32mI (62213) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (62213) LIVING: Do sang: 8.39 lux[0m
+[0;32mI (62213) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (62223) mqtt_client: Client was not initialized[0m
+[0;32mI (62343) LIVING: AUTO TASK[0m
+[0;32mI (62543) LIVING: AUTO TASK[0m
+[0;32mI (62743) LIVING: AUTO TASK[0m
+[0;32mI (62943) LIVING: AUTO TASK[0m
+[0;32mI (63143) LIVING: AUTO TASK[0m
+[0;32mI (63283) LIVING: Do am: 80.00 percent[0m
+[0;32mI (63283) LIVING: Nhiet do: 28.60 C[0m
+[0;32mI (63283) LIVING: Do sang: 8.52 lux[0m
+[0;32mI (63283) LIVING: Khi gas: 102.42 ppm[0m
+[0;31mE (63293) mqtt_client: Client was not initialized[0m
+[0;32mI (63343) LIVING: AUTO TASK[0m
+[0;32mI (63543) LIVING: AUTO TASK[0m
+[0;32mI (63743) LIVING: AUTO TASK[0m
+[0;32mI (63943) LIVING: AUTO TASK[0m
+[0;32mI (64143) LIVING: AUTO TASK[0m
+[0;32mI (64343) LIVING: AUTO TASK[0m
+[0;33mW (64483) LIVING: DHT11 fail![0m
+[0;32mI (64483) LIVING: Do sang: 8.45 lux[0m
+[0;32mI (64483) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (64543) LIVING: AUTO TASK[0m

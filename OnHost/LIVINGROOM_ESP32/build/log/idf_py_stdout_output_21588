@@ -1,0 +1,3606 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30a68h (199272) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=00040a90 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00040a9c vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00044394 vaddr=40080000 size=0bc84h ( 48260) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b4428h (738344) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=00104450 vaddr=4008bc84 size=0c62ch ( 50732) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (541) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  f7ae9bb2f78e9e8b...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (628) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;33mW (635) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (649) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (713) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) RFID: Initializing RC522...[0m
+[0;32mI (713) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (743) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (743) RFID: RC522 READY.[0m
+[0;31mE (763) DHT11:: Wrong checksum[0m
+[0;33mW (763) LIVING: DHT11 fail![0m
+[0;32mI (763) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (773) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (783) LIVING: Current Mode in NVS: 0[0m
+[0;31mE (783) mqtt_client: Client was not initialized[0m
+[0;32mI (783) LIVING: AUTO TASK[0m
+[0;32mI (793) wifi:wifi driver task: 3ffc604c, prio:23, stack:6656, core=0[0;31mE (793) mqtt_client: Client was not initialized[0m[0m
+
+[0;32mI (803) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (813) wifi:wifi certification version: v7.0[0m
+[0;32mI (813) wifi:config NVS flash: enabled[0m
+[0;32mI (813) wifi:config nano formating: disabled[0m
+[0;32mI (813) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (823) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (823) wifi:Init management short buffer num: 32[0m
+[0;32mI (833) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (833) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (833) wifi:Init static rx buffer num: 10[0m
+[0;32mI (843) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (843) wifi_init: rx ba win: 6[0m
+[0;32mI (853) wifi_init: tcpip mbox: 32[0m
+[0;32mI (853) wifi_init: udp mbox: 6[0m
+[0;32mI (853) wifi_init: tcp mbox: 6[0m
+[0;32mI (863) wifi_init: tcp tx win: 5744[0m
+[0;32mI (863) wifi_init: tcp rx win: 5744[0m
+[0;32mI (863) wifi_init: tcp mss: 1440[0m
+[0;32mI (893) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (893) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (903) CONFIG_WIFI: Provisioned: false[0m
+[0;32mI (913) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (993) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (993) LIVING: AUTO TASK[0m
+[0;31mE (993) mqtt_client: Client was not initialized[0m
+[0;32mI (1023) wifi:mode : softAP (14:33:5c:52:d6:7d)[0m
+[0;32mI (1033) wifi:Total power save buffer number: 16[0m
+[0;32mI (1033) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1033) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1033) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1193) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1193) LIVING: AUTO TASK[0m
+[0;31mE (1193) mqtt_client: Client was not initialized[0m
+[0;32mI (1393) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1393) LIVING: AUTO TASK[0m
+[0;31mE (1393) mqtt_client: Client was not initialized[0m
+[0;32mI (1593) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1593) LIVING: AUTO TASK[0m
+[0;31mE (1593) mqtt_client: Client was not initialized[0m
+[0;32mI (1793) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1793) LIVING: AUTO TASK[0m
+[0;31mE (1793) DHT11:: Failed at phase 2[0m
+[0;31mE (1793) mqtt_client: Client was not initialized[0m
+[0;31mE (1833) DHT11:: Failed at phase 2[0m
+[0;31mE (1873) DHT11:: Failed at phase 2[0m
+[0;31mE (1913) DHT11:: Failed at phase 2[0m
+[0;31mE (1953) DHT11:: Failed at phase 2[0m
+[0;33mW (1973) LIVING: DHT11 fail![0m
+[0;32mI (1973) LIVING: Do sang: 11.97 lux[0m
+[0;32mI (1973) LIVING: Khi gas: 94.55 ppm[0m
+[0;31mE (1983) mqtt_client: Client was not initialized[0m
+[0;31mE (1983) mqtt_client: Client was not initialized[0m
+[0;32mI (2003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2003) LIVING: AUTO TASK[0m
+[0;31mE (2003) mqtt_client: Client was not initialized[0m
+[0;32mI (2203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2203) LIVING: AUTO TASK[0m
+[0;31mE (2203) mqtt_client: Client was not initialized[0m
+[0;32mI (2403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2403) LIVING: AUTO TASK[0m
+[0;31mE (2403) mqtt_client: Client was not initialized[0m
+[0;32mI (2603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2603) LIVING: AUTO TASK[0m
+[0;31mE (2603) mqtt_client: Client was not initialized[0m
+[0;32mI (2803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2803) LIVING: AUTO TASK[0m
+[0;31mE (2803) mqtt_client: Client was not initialized[0m
+[0;31mE (2993) DHT11:: Failed at phase 2[0m
+[0;32mI (3003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3003) LIVING: AUTO TASK[0m
+[0;31mE (3003) mqtt_client: Client was not initialized[0m
+[0;31mE (3043) DHT11:: Wrong checksum[0m
+[0;33mW (3043) LIVING: DHT11 fail![0m
+[0;32mI (3043) LIVING: Do sang: 11.88 lux[0m
+[0;32mI (3043) LIVING: Khi gas: 93.94 ppm[0m
+[0;32mI (3203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3203) LIVING: AUTO TASK[0m
+[0;31mE (3203) mqtt_client: Client was not initialized[0m
+[0;32mI (3403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3403) LIVING: AUTO TASK[0m
+[0;31mE (3403) mqtt_client: Client was not initialized[0m
+[0;32mI (3603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3603) LIVING: AUTO TASK[0m
+[0;31mE (3603) mqtt_client: Client was not initialized[0m
+[0;32mI (3803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3803) LIVING: AUTO TASK[0m
+[0;31mE (3803) mqtt_client: Client was not initialized[0m
+[0;32mI (4003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4003) LIVING: AUTO TASK[0m
+[0;31mE (4003) mqtt_client: Client was not initialized[0m
+[0;31mE (4053) DHT11:: Failed at phase 2[0m
+[0;31mE (4093) DHT11:: Failed at phase 2[0m
+[0;31mE (4133) DHT11:: Failed at phase 2[0m
+[0;31mE (4173) DHT11:: Failed at phase 2[0m
+[0;32mI (4203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4203) LIVING: AUTO TASK[0m
+[0;31mE (4203) mqtt_client: Client was not initialized[0m
+[0;31mE (4213) DHT11:: Failed at phase 2[0m
+[0;33mW (4233) LIVING: DHT11 fail![0m
+[0;32mI (4233) LIVING: Do sang: 8.91 lux[0m
+[0;32mI (4233) LIVING: Khi gas: 95.76 ppm[0m
+[0;32mI (4403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4403) LIVING: AUTO TASK[0m
+[0;31mE (4403) mqtt_client: Client was not initialized[0m
+[0;32mI (4603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4603) LIVING: AUTO TASK[0m
+[0;31mE (4603) mqtt_client: Client was not initialized[0m
+[0;32mI (4803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4803) LIVING: AUTO TASK[0m
+[0;31mE (4803) mqtt_client: Client was not initialized[0m
+[0;32mI (5003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5003) LIVING: AUTO TASK[0m
+[0;31mE (5003) mqtt_client: Client was not initialized[0m
+[0;32mI (5203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5203) LIVING: AUTO TASK[0m
+[0;31mE (5203) mqtt_client: Client was not initialized[0m
+[0;31mE (5243) DHT11:: Failed at phase 2[0m
+[0;31mE (5283) DHT11:: Failed at phase 2[0m
+[0;31mE (5323) DHT11:: Failed at phase 2[0m
+[0;31mE (5363) DHT11:: Failed at phase 2[0m
+[0;31mE (5403) DHT11:: Failed at phase 2[0m
+[0;32mI (5403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5403) LIVING: AUTO TASK[0m
+[0;31mE (5403) mqtt_client: Client was not initialized[0m
+[0;33mW (5423) LIVING: DHT11 fail![0m
+[0;32mI (5423) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (5423) LIVING: Khi gas: 95.15 ppm[0m
+[0;32mI (5603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5603) LIVING: AUTO TASK[0m
+[0;31mE (5603) mqtt_client: Client was not initialized[0m
+[0;32mI (5803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5803) LIVING: AUTO TASK[0m
+[0;31mE (5803) mqtt_client: Client was not initialized[0m
+[0;32mI (6003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6003) LIVING: AUTO TASK[0m
+[0;31mE (6003) mqtt_client: Client was not initialized[0m
+[0;32mI (6203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6203) LIVING: AUTO TASK[0m
+[0;31mE (6203) mqtt_client: Client was not initialized[0m
+[0;32mI (6403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6403) LIVING: AUTO TASK[0m
+[0;31mE (6403) mqtt_client: Client was not initialized[0m
+[0;31mE (6433) DHT11:: Failed at phase 2[0m
+[0;31mE (6473) DHT11:: Failed at phase 2[0m
+[0;31mE (6513) DHT11:: Failed at phase 2[0m
+[0;31mE (6553) DHT11:: Failed at phase 2[0m
+[0;31mE (6593) DHT11:: Failed at phase 2[0m
+[0;32mI (6603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6603) LIVING: AUTO TASK[0m
+[0;31mE (6603) mqtt_client: Client was not initialized[0m
+[0;33mW (6613) LIVING: DHT11 fail![0m
+[0;32mI (6613) LIVING: Do sang: 13.91 lux[0m
+[0;32mI (6613) LIVING: Khi gas: 113.94 ppm[0m
+[0;31mE (6623) mqtt_client: Client was not initialized[0m
+[0;32mI (6803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6803) LIVING: AUTO TASK[0m
+[0;31mE (6803) mqtt_client: Client was not initialized[0m
+[0;32mI (7003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7003) LIVING: AUTO TASK[0m
+[0;31mE (7003) mqtt_client: Client was not initialized[0m
+[0;32mI (7203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7203) LIVING: AUTO TASK[0m
+[0;31mE (7203) mqtt_client: Client was not initialized[0m
+[0;32mI (7403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7403) LIVING: AUTO TASK[0m
+[0;31mE (7403) mqtt_client: Client was not initialized[0m
+[0;32mI (7603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7603) LIVING: AUTO TASK[0m
+[0;31mE (7603) mqtt_client: Client was not initialized[0m
+[0;31mE (7633) DHT11:: Failed at phase 2[0m
+[0;31mE (7673) DHT11:: Failed at phase 2[0m
+[0;31mE (7713) DHT11:: Failed at phase 2[0m
+[0;31mE (7753) DHT11:: Failed at phase 2[0m
+[0;31mE (7793) DHT11:: Failed at phase 2[0m
+[0;32mI (7803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7803) LIVING: AUTO TASK[0m
+[0;31mE (7803) mqtt_client: Client was not initialized[0m
+[0;33mW (7813) LIVING: DHT11 fail![0m
+[0;32mI (7813) LIVING: Do sang: 12.94 lux[0m
+[0;32mI (7813) LIVING: Khi gas: 361.21 ppm[0m
+[0;31mE (7833) mqtt_client: Client was not initialized[0m
+[0;32mI (8003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8003) LIVING: AUTO TASK[0m
+[0;31mE (8003) mqtt_client: Client was not initialized[0m
+[0;32mI (8203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8203) LIVING: AUTO TASK[0m
+[0;31mE (8203) mqtt_client: Client was not initialized[0m
+[0;32mI (8403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8403) LIVING: AUTO TASK[0m
+[0;31mE (8403) mqtt_client: Client was not initialized[0m
+[0;32mI (8603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8603) LIVING: AUTO TASK[0m
+[0;31mE (8603) mqtt_client: Client was not initialized[0m
+[0;32mI (8803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8803) LIVING: AUTO TASK[0m
+[0;31mE (8803) mqtt_client: Client was not initialized[0m
+[0;31mE (8843) DHT11:: Failed at phase 2[0m
+[0;31mE (8883) DHT11:: Failed at phase 2[0m
+[0;31mE (8923) DHT11:: Failed at phase 2[0m
+[0;31mE (8963) DHT11:: Failed at phase 2[0m
+[0;31mE (9003) DHT11:: Failed at phase 2[0m
+[0;32mI (9003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9003) LIVING: AUTO TASK[0m
+[0;31mE (9003) mqtt_client: Client was not initialized[0m
+[0;33mW (9023) LIVING: DHT11 fail![0m
+[0;32mI (9023) LIVING: Do sang: 13.85 lux[0m
+[0;32mI (9023) LIVING: Khi gas: 535.15 ppm[0m
+[0;31mE (9033) mqtt_client: Client was not initialized[0m
+[0;32mI (9203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9203) LIVING: AUTO TASK[0m
+[0;31mE (9203) mqtt_client: Client was not initialized[0m
+[0;32mI (9403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9403) LIVING: AUTO TASK[0m
+[0;31mE (9403) mqtt_client: Client was not initialized[0m
+[0;32mI (9603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9603) LIVING: AUTO TASK[0m
+[0;31mE (9603) mqtt_client: Client was not initialized[0m
+[0;32mI (9803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9803) LIVING: AUTO TASK[0m
+[0;31mE (9803) mqtt_client: Client was not initialized[0m
+[0;32mI (10003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10003) LIVING: AUTO TASK[0m
+[0;31mE (10003) mqtt_client: Client was not initialized[0m
+[0;31mE (10043) DHT11:: Failed at phase 2[0m
+[0;31mE (10083) DHT11:: Failed at phase 2[0m
+[0;31mE (10123) DHT11:: Failed at phase 2[0m
+[0;31mE (10163) DHT11:: Failed at phase 2[0m
+[0;31mE (10203) DHT11:: Failed at phase 2[0m
+[0;32mI (10203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10203) LIVING: AUTO TASK[0m
+[0;31mE (10203) mqtt_client: Client was not initialized[0m
+[0;33mW (10223) LIVING: DHT11 fail![0m
+[0;32mI (10223) LIVING: Do sang: 6.48 lux[0m
+[0;32mI (10223) LIVING: Khi gas: 556.36 ppm[0m
+[0;31mE (10233) mqtt_client: Client was not initialized[0m
+[0;31mE (10233) mqtt_client: Client was not initialized[0m
+[0;32mI (10403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10403) LIVING: AUTO TASK[0m
+[0;31mE (10403) mqtt_client: Client was not initialized[0m
+[0;32mI (10603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10603) LIVING: AUTO TASK[0m
+[0;31mE (10603) mqtt_client: Client was not initialized[0m
+[0;32mI (10803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10803) LIVING: AUTO TASK[0m
+[0;31mE (10803) mqtt_client: Client was not initialized[0m
+[0;32mI (11003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11003) LIVING: AUTO TASK[0m
+[0;31mE (11003) mqtt_client: Client was not initialized[0m
+[0;32mI (11203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11203) LIVING: AUTO TASK[0m
+[0;31mE (11203) mqtt_client: Client was not initialized[0m
+[0;31mE (11243) DHT11:: Failed at phase 2[0m
+[0;31mE (11283) DHT11:: Failed at phase 2[0m
+[0;31mE (11323) DHT11:: Failed at phase 2[0m
+[0;31mE (11363) DHT11:: Failed at phase 2[0m
+[0;31mE (11403) DHT11:: Failed at phase 2[0m
+[0;32mI (11403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11403) LIVING: AUTO TASK[0m
+[0;31mE (11403) mqtt_client: Client was not initialized[0m
+[0;33mW (11423) LIVING: DHT11 fail![0m
+[0;32mI (11423) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (11423) LIVING: Khi gas: 286.06 ppm[0m
+[0;31mE (11433) mqtt_client: Client was not initialized[0m
+[0;32mI (11603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11603) LIVING: AUTO TASK[0m
+[0;31mE (11603) mqtt_client: Client was not initialized[0m
+[0;32mI (11803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11803) LIVING: AUTO TASK[0m
+[0;31mE (11803) mqtt_client: Client was not initialized[0m
+[0;32mI (12003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12003) LIVING: AUTO TASK[0m
+[0;31mE (12003) mqtt_client: Client was not initialized[0m
+[0;32mI (12203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12203) LIVING: AUTO TASK[0m
+[0;31mE (12203) mqtt_client: Client was not initialized[0m
+[0;32mI (12403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12403) LIVING: AUTO TASK[0m
+[0;31mE (12403) mqtt_client: Client was not initialized[0m
+[0;31mE (12443) DHT11:: Failed at phase 2[0m
+[0;31mE (12483) DHT11:: Failed at phase 2[0m
+[0;31mE (12523) DHT11:: Failed at phase 2[0m
+[0;31mE (12563) DHT11:: Failed at phase 2[0m
+[0;32mI (12603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12603) LIVING: AUTO TASK[0m
+[0;31mE (12603) DHT11:: Failed at phase 2[0m
+[0;31mE (12603) mqtt_client: Client was not initialized[0m
+[0;33mW (12623) LIVING: DHT11 fail![0m
+[0;32mI (12623) LIVING: Do sang: 10.76 lux[0m
+[0;32mI (12623) LIVING: Khi gas: 177.58 ppm[0m
+[0;31mE (12633) mqtt_client: Client was not initialized[0m
+[0;31mE (12633) mqtt_client: Client was not initialized[0m
+[0;32mI (12803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12803) LIVING: AUTO TASK[0m
+[0;31mE (12803) mqtt_client: Client was not initialized[0m
+[0;32mI (13003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13003) LIVING: AUTO TASK[0m
+[0;31mE (13003) mqtt_client: Client was not initialized[0m
+[0;32mI (13203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13203) LIVING: AUTO TASK[0m
+[0;31mE (13203) mqtt_client: Client was not initialized[0m
+[0;32mI (13403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13403) LIVING: AUTO TASK[0m
+[0;31mE (13403) mqtt_client: Client was not initialized[0m
+[0;32mI (13603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13603) LIVING: AUTO TASK[0m
+[0;31mE (13603) mqtt_client: Client was not initialized[0m
+[0;31mE (13643) DHT11:: Failed at phase 2[0m
+[0;31mE (13683) DHT11:: Failed at phase 2[0m
+[0;31mE (13723) DHT11:: Failed at phase 2[0m
+[0;31mE (13763) DHT11:: Failed at phase 2[0m
+[0;32mI (13803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13803) LIVING: AUTO TASK[0m
+[0;31mE (13803) DHT11:: Failed at phase 2[0m
+[0;31mE (13803) mqtt_client: Client was not initialized[0m
+[0;33mW (13823) LIVING: DHT11 fail![0m
+[0;32mI (13823) LIVING: Do sang: 12.27 lux[0m
+[0;32mI (13823) LIVING: Khi gas: 153.94 ppm[0m
+[0;31mE (13833) mqtt_client: Client was not initialized[0m
+[0;32mI (14003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14003) LIVING: AUTO TASK[0m
+[0;31mE (14003) mqtt_client: Client was not initialized[0m
+[0;32mI (14203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14203) LIVING: AUTO TASK[0m
+[0;31mE (14203) mqtt_client: Client was not initialized[0m
+[0;32mI (14403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14403) LIVING: AUTO TASK[0m
+[0;31mE (14403) mqtt_client: Client was not initialized[0m
+[0;32mI (14603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14603) LIVING: AUTO TASK[0m
+[0;31mE (14603) mqtt_client: Client was not initialized[0m
+[0;32mI (14803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14803) LIVING: AUTO TASK[0m
+[0;31mE (14803) mqtt_client: Client was not initialized[0m
+[0;31mE (14843) DHT11:: Failed at phase 2[0m
+[0;31mE (14883) DHT11:: Failed at phase 2[0m
+[0;31mE (14923) DHT11:: Failed at phase 2[0m
+[0;31mE (14963) DHT11:: Failed at phase 2[0m
+[0;31mE (15003) DHT11:: Failed at phase 2[0m
+[0;32mI (15003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15003) LIVING: AUTO TASK[0m
+[0;31mE (15003) mqtt_client: Client was not initialized[0m
+[0;33mW (15023) LIVING: DHT11 fail![0m
+[0;32mI (15023) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (15023) LIVING: Khi gas: 140.00 ppm[0m
+[0;31mE (15033) mqtt_client: Client was not initialized[0m
+[0;32mI (15203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15203) LIVING: AUTO TASK[0m
+[0;31mE (15203) mqtt_client: Client was not initialized[0m
+[0;32mI (15403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15403) LIVING: AUTO TASK[0m
+[0;31mE (15403) mqtt_client: Client was not initialized[0m
+[0;32mI (15603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15603) LIVING: AUTO TASK[0m
+[0;31mE (15603) mqtt_client: Client was not initialized[0m
+[0;32mI (15803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15803) LIVING: AUTO TASK[0m
+[0;31mE (15803) mqtt_client: Client was not initialized[0m
+[0;32mI (16003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16003) LIVING: AUTO TASK[0m
+[0;31mE (16003) mqtt_client: Client was not initialized[0m
+[0;31mE (16043) DHT11:: Failed at phase 2[0m
+[0;31mE (16083) DHT11:: Failed at phase 2[0m
+[0;31mE (16123) DHT11:: Failed at phase 2[0m
+[0;31mE (16163) DHT11:: Failed at phase 2[0m
+[0;31mE (16203) DHT11:: Failed at phase 2[0m
+[0;32mI (16203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16203) LIVING: AUTO TASK[0m
+[0;31mE (16203) mqtt_client: Client was not initialized[0m
+[0;33mW (16223) LIVING: DHT11 fail![0m
+[0;32mI (16223) LIVING: Do sang: 10.39 lux[0m
+[0;32mI (16223) LIVING: Khi gas: 130.91 ppm[0m
+[0;31mE (16233) mqtt_client: Client was not initialized[0m
+[0;32mI (16403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16403) LIVING: AUTO TASK[0m
+[0;31mE (16403) mqtt_client: Client was not initialized[0m
+[0;32mI (16603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16603) LIVING: AUTO TASK[0m
+[0;31mE (16603) mqtt_client: Client was not initialized[0m
+[0;32mI (16803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16803) LIVING: AUTO TASK[0m
+[0;31mE (16803) mqtt_client: Client was not initialized[0m
+[0;32mI (17003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17003) LIVING: AUTO TASK[0m
+[0;31mE (17003) mqtt_client: Client was not initialized[0m
+[0;32mI (17203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17203) LIVING: AUTO TASK[0m
+[0;31mE (17203) mqtt_client: Client was not initialized[0m
+[0;31mE (17243) DHT11:: Failed at phase 2[0m
+[0;31mE (17283) DHT11:: Failed at phase 2[0m
+[0;31mE (17323) DHT11:: Failed at phase 2[0m
+[0;31mE (17363) DHT11:: Failed at phase 2[0m
+[0;31mE (17403) DHT11:: Failed at phase 2[0m
+[0;32mI (17403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17403) LIVING: AUTO TASK[0m
+[0;31mE (17403) mqtt_client: Client was not initialized[0m
+[0;33mW (17423) LIVING: DHT11 fail![0m
+[0;32mI (17423) LIVING: Do sang: 12.79 lux[0m
+[0;32mI (17423) LIVING: Khi gas: 125.45 ppm[0m
+[0;31mE (17433) mqtt_client: Client was not initialized[0m
+[0;32mI (17603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17603) LIVING: AUTO TASK[0m
+[0;31mE (17603) mqtt_client: Client was not initialized[0m
+[0;32mI (17803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17803) LIVING: AUTO TASK[0m
+[0;31mE (17803) mqtt_client: Client was not initialized[0m
+[0;32mI (18003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18003) LIVING: AUTO TASK[0m
+[0;31mE (18003) mqtt_client: Client was not initialized[0m
+[0;32mI (18203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18203) LIVING: AUTO TASK[0m
+[0;31mE (18203) mqtt_client: Client was not initialized[0m
+[0;32mI (18403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18403) LIVING: AUTO TASK[0m
+[0;31mE (18403) mqtt_client: Client was not initialized[0m
+[0;31mE (18443) DHT11:: Failed at phase 2[0m
+[0;31mE (18483) DHT11:: Failed at phase 2[0m
+[0;31mE (18523) DHT11:: Failed at phase 2[0m
+[0;31mE (18563) DHT11:: Failed at phase 2[0m
+[0;32mI (18603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18603) LIVING: AUTO TASK[0m
+[0;31mE (18603) DHT11:: Failed at phase 2[0m
+[0;31mE (18603) mqtt_client: Client was not initialized[0m
+[0;33mW (18623) LIVING: DHT11 fail![0m
+[0;32mI (18623) LIVING: Do sang: 8.85 lux[0m
+[0;32mI (18623) LIVING: Khi gas: 121.82 ppm[0m
+[0;32mI (18803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18803) LIVING: AUTO TASK[0m
+[0;31mE (18803) mqtt_client: Client was not initialized[0m
+[0;32mI (19003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19003) LIVING: AUTO TASK[0m
+[0;31mE (19003) mqtt_client: Client was not initialized[0m
+[0;32mI (19203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19203) LIVING: AUTO TASK[0m
+[0;31mE (19203) mqtt_client: Client was not initialized[0m
+[0;32mI (19403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19403) LIVING: AUTO TASK[0m
+[0;31mE (19403) mqtt_client: Client was not initialized[0m
+[0;32mI (19603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19603) LIVING: AUTO TASK[0m
+[0;31mE (19603) mqtt_client: Client was not initialized[0m
+[0;31mE (19633) DHT11:: Failed at phase 2[0m
+[0;31mE (19673) DHT11:: Failed at phase 2[0m
+[0;31mE (19713) DHT11:: Failed at phase 2[0m
+[0;31mE (19753) DHT11:: Failed at phase 2[0m
+[0;31mE (19793) DHT11:: Failed at phase 2[0m
+[0;32mI (19803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19803) LIVING: AUTO TASK[0m
+[0;31mE (19803) mqtt_client: Client was not initialized[0m
+[0;33mW (19813) LIVING: DHT11 fail![0m
+[0;32mI (19813) LIVING: Do sang: 11.21 lux[0m
+[0;32mI (19813) LIVING: Khi gas: 118.18 ppm[0m
+[0;31mE (19823) mqtt_client: Client was not initialized[0m
+[0;32mI (20003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20003) LIVING: AUTO TASK[0m
+[0;31mE (20003) mqtt_client: Client was not initialized[0m
+[0;32mI (20203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20203) LIVING: AUTO TASK[0m
+[0;31mE (20203) mqtt_client: Client was not initialized[0m
+[0;32mI (20403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20403) LIVING: AUTO TASK[0m
+[0;31mE (20403) mqtt_client: Client was not initialized[0m
+[0;32mI (20603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20603) LIVING: AUTO TASK[0m
+[0;31mE (20603) mqtt_client: Client was not initialized[0m
+[0;32mI (20803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20803) LIVING: AUTO TASK[0m
+[0;31mE (20803) mqtt_client: Client was not initialized[0m
+[0;31mE (20833) DHT11:: Failed at phase 2[0m
+[0;31mE (20873) DHT11:: Failed at phase 2[0m
+[0;31mE (20913) DHT11:: Failed at phase 2[0m
+[0;31mE (20953) DHT11:: Failed at phase 2[0m
+[0;31mE (20993) DHT11:: Failed at phase 2[0m
+[0;32mI (21003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21003) LIVING: AUTO TASK[0m
+[0;31mE (21003) mqtt_client: Client was not initialized[0m
+[0;33mW (21013) LIVING: DHT11 fail![0m
+[0;32mI (21013) LIVING: Do sang: 11.27 lux[0m
+[0;32mI (21013) LIVING: Khi gas: 117.58 ppm[0m
+[0;32mI (21203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21203) LIVING: AUTO TASK[0m
+[0;31mE (21203) mqtt_client: Client was not initialized[0m
+[0;32mI (21403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21403) LIVING: AUTO TASK[0m
+[0;31mE (21403) mqtt_client: Client was not initialized[0m
+[0;32mI (21603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21603) LIVING: AUTO TASK[0m
+[0;31mE (21603) mqtt_client: Client was not initialized[0m
+[0;32mI (21803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21803) LIVING: AUTO TASK[0m
+[0;31mE (21803) mqtt_client: Client was not initialized[0m
+[0;32mI (22003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22003) LIVING: AUTO TASK[0m
+[0;31mE (22003) mqtt_client: Client was not initialized[0m
+[0;31mE (22033) DHT11:: Failed at phase 2[0m
+[0;31mE (22073) DHT11:: Failed at phase 2[0m
+[0;31mE (22113) DHT11:: Failed at phase 2[0m
+[0;31mE (22153) DHT11:: Failed at phase 2[0m
+[0;31mE (22193) DHT11:: Failed at phase 2[0m
+[0;32mI (22203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22203) LIVING: AUTO TASK[0m
+[0;31mE (22203) mqtt_client: Client was not initialized[0m
+[0;33mW (22213) LIVING: DHT11 fail![0m
+[0;32mI (22213) LIVING: Do sang: 8.67 lux[0m
+[0;32mI (22213) LIVING: Khi gas: 114.55 ppm[0m
+[0;32mI (22403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22403) LIVING: AUTO TASK[0m
+[0;31mE (22403) mqtt_client: Client was not initialized[0m
+[0;32mI (22603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22603) LIVING: AUTO TASK[0m
+[0;31mE (22603) mqtt_client: Client was not initialized[0m
+[0;32mI (22803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22803) LIVING: AUTO TASK[0m
+[0;31mE (22803) mqtt_client: Client was not initialized[0m
+[0;32mI (23003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23003) LIVING: AUTO TASK[0m
+[0;31mE (23003) mqtt_client: Client was not initialized[0m
+[0;32mI (23203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23203) LIVING: AUTO TASK[0m
+[0;31mE (23203) mqtt_client: Client was not initialized[0m
+[0;31mE (23233) DHT11:: Failed at phase 2[0m
+[0;31mE (23273) DHT11:: Failed at phase 2[0m
+[0;31mE (23313) DHT11:: Failed at phase 2[0m
+[0;31mE (23353) DHT11:: Failed at phase 2[0m
+[0;31mE (23393) DHT11:: Failed at phase 2[0m
+[0;32mI (23403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23403) LIVING: AUTO TASK[0m
+[0;31mE (23403) mqtt_client: Client was not initialized[0m
+[0;33mW (23413) LIVING: DHT11 fail![0m
+[0;32mI (23413) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (23413) LIVING: Khi gas: 111.52 ppm[0m
+[0;31mE (23433) mqtt_client: Client was not initialized[0m
+[0;32mI (23603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23603) LIVING: AUTO TASK[0m
+[0;31mE (23603) mqtt_client: Client was not initialized[0m
+[0;32mI (23803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23803) LIVING: AUTO TASK[0m
+[0;31mE (23803) mqtt_client: Client was not initialized[0m
+[0;32mI (24003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24003) LIVING: AUTO TASK[0m
+[0;31mE (24003) mqtt_client: Client was not initialized[0m
+[0;32mI (24203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24203) LIVING: AUTO TASK[0m
+[0;31mE (24203) mqtt_client: Client was not initialized[0m
+[0;32mI (24403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24403) LIVING: AUTO TASK[0m
+[0;31mE (24403) mqtt_client: Client was not initialized[0m
+[0;31mE (24443) DHT11:: Failed at phase 2[0m
+[0;31mE (24483) DHT11:: Failed at phase 2[0m
+[0;31mE (24523) DHT11:: Failed at phase 2[0m
+[0;31mE (24563) DHT11:: Failed at phase 2[0m
+[0;31mE (24603) DHT11:: Failed at phase 2[0m
+[0;32mI (24603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24603) LIVING: AUTO TASK[0m
+[0;31mE (24603) mqtt_client: Client was not initialized[0m
+[0;33mW (24623) LIVING: DHT11 fail![0m
+[0;32mI (24623) LIVING: Do sang: 10.24 lux[0m
+[0;32mI (24623) LIVING: Khi gas: 111.52 ppm[0m
+[0;32mI (24803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24803) LIVING: AUTO TASK[0m
+[0;31mE (24803) mqtt_client: Client was not initialized[0m
+[0;32mI (25003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25003) LIVING: AUTO TASK[0m
+[0;31mE (25003) mqtt_client: Client was not initialized[0m
+[0;32mI (25203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25203) LIVING: AUTO TASK[0m
+[0;31mE (25203) mqtt_client: Client was not initialized[0m
+[0;32mI (25403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25403) LIVING: AUTO TASK[0m
+[0;31mE (25403) mqtt_client: Client was not initialized[0m
+[0;32mI (25603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25603) LIVING: AUTO TASK[0m
+[0;31mE (25603) mqtt_client: Client was not initialized[0m
+[0;31mE (25633) DHT11:: Failed at phase 2[0m
+[0;31mE (25673) DHT11:: Failed at phase 2[0m
+[0;31mE (25713) DHT11:: Failed at phase 2[0m
+[0;31mE (25753) DHT11:: Failed at phase 2[0m
+[0;31mE (25793) DHT11:: Failed at phase 2[0m
+[0;32mI (25803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25803) LIVING: AUTO TASK[0m
+[0;31mE (25803) mqtt_client: Client was not initialized[0m
+[0;33mW (25813) LIVING: DHT11 fail![0m
+[0;32mI (25813) LIVING: Do sang: 1790.91 lux[0m
+[0;31mE (25823) mqtt_client: Client was not initialized[0m
+[0;32mI (25823) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (26003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26003) LIVING: AUTO TASK[0m
+[0;31mE (26003) mqtt_client: Client was not initialized[0m
+[0;32mI (26203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26203) LIVING: AUTO TASK[0m
+[0;31mE (26203) mqtt_client: Client was not initialized[0m
+[0;32mI (26403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26403) LIVING: AUTO TASK[0m
+[0;31mE (26403) mqtt_client: Client was not initialized[0m
+[0;32mI (26603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26603) LIVING: AUTO TASK[0m
+[0;31mE (26603) mqtt_client: Client was not initialized[0m
+[0;32mI (26803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26803) LIVING: AUTO TASK[0m
+[0;31mE (26803) mqtt_client: Client was not initialized[0m
+[0;31mE (26833) DHT11:: Failed at phase 2[0m
+[0;31mE (26873) DHT11:: Failed at phase 2[0m
+[0;31mE (26913) DHT11:: Failed at phase 2[0m
+[0;31mE (26953) DHT11:: Failed at phase 2[0m
+[0;31mE (26993) DHT11:: Failed at phase 2[0m
+[0;32mI (27003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27003) LIVING: AUTO TASK[0m
+[0;31mE (27003) mqtt_client: Client was not initialized[0m
+[0;33mW (27013) LIVING: DHT11 fail![0m
+[0;32mI (27013) LIVING: Do sang: 379.27 lux[0m
+[0;31mE (27023) mqtt_client: Client was not initialized[0m
+[0;32mI (27023) LIVING: Khi gas: 113.33 ppm[0m
+[0;31mE (27023) mqtt_client: Client was not initialized[0m
+[0;32mI (27203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27203) LIVING: AUTO TASK[0m
+[0;31mE (27203) mqtt_client: Client was not initialized[0m
+[0;32mI (27403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27403) LIVING: AUTO TASK[0m
+[0;31mE (27403) mqtt_client: Client was not initialized[0m
+[0;32mI (27603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27603) LIVING: AUTO TASK[0m
+[0;31mE (27603) mqtt_client: Client was not initialized[0m
+[0;32mI (27803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27803) LIVING: AUTO TASK[0m
+[0;31mE (27803) mqtt_client: Client was not initialized[0m
+[0;32mI (28003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28003) LIVING: AUTO TASK[0m
+[0;31mE (28003) mqtt_client: Client was not initialized[0m
+[0;31mE (28043) DHT11:: Failed at phase 2[0m
+[0;31mE (28083) DHT11:: Failed at phase 2[0m
+[0;31mE (28123) DHT11:: Failed at phase 2[0m
+[0;31mE (28163) DHT11:: Failed at phase 2[0m
+[0;31mE (28203) DHT11:: Failed at phase 2[0m
+[0;32mI (28203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28203) LIVING: AUTO TASK[0m
+[0;31mE (28203) mqtt_client: Client was not initialized[0m
+[0;33mW (28223) LIVING: DHT11 fail![0m
+[0;32mI (28223) LIVING: Do sang: 5475.76 lux[0m
+[0;31mE (28233) mqtt_client: Client was not initialized[0m
+[0;32mI (28233) LIVING: Khi gas: 110.30 ppm[0m
+[0;31mE (28233) mqtt_client: Client was not initialized[0m
+[0;32mI (28403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28403) LIVING: AUTO TASK[0m
+[0;31mE (28403) mqtt_client: Client was not initialized[0m
+[0;32mI (28603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28603) LIVING: AUTO TASK[0m
+[0;31mE (28603) mqtt_client: Client was not initialized[0m
+[0;32mI (28803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28803) LIVING: AUTO TASK[0m
+[0;31mE (28803) mqtt_client: Client was not initialized[0m
+[0;32mI (29003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29003) LIVING: AUTO TASK[0m
+[0;31mE (29003) mqtt_client: Client was not initialized[0m
+[0;32mI (29203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29203) LIVING: AUTO TASK[0m
+[0;31mE (29203) mqtt_client: Client was not initialized[0m
+[0;31mE (29243) DHT11:: Failed at phase 2[0m
+[0;31mE (29283) DHT11:: Failed at phase 2[0m
+[0;31mE (29323) DHT11:: Failed at phase 2[0m
+[0;31mE (29363) DHT11:: Failed at phase 2[0m
+[0;31mE (29403) DHT11:: Failed at phase 2[0m
+[0;32mI (29403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29403) LIVING: AUTO TASK[0m
+[0;31mE (29403) mqtt_client: Client was not initialized[0m
+[0;33mW (29423) LIVING: DHT11 fail![0m
+[0;32mI (29423) LIVING: Do sang: 5451.52 lux[0m
+[0;31mE (29433) mqtt_client: Client was not initialized[0m
+[0;32mI (29433) LIVING: Khi gas: 111.52 ppm[0m
+[0;31mE (29433) mqtt_client: Client was not initialized[0m
+[0;32mI (29603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29603) LIVING: AUTO TASK[0m
+[0;31mE (29603) mqtt_client: Client was not initialized[0m
+[0;32mI (29803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29803) LIVING: AUTO TASK[0m
+[0;31mE (29803) mqtt_client: Client was not initialized[0m
+[0;32mI (30003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30003) LIVING: AUTO TASK[0m
+[0;31mE (30003) mqtt_client: Client was not initialized[0m
+[0;32mI (30203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30203) LIVING: AUTO TASK[0m
+[0;31mE (30203) mqtt_client: Client was not initialized[0m
+[0;32mI (30403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30403) LIVING: AUTO TASK[0m
+[0;31mE (30403) mqtt_client: Client was not initialized[0m
+[0;31mE (30443) DHT11:: Failed at phase 2[0m
+[0;31mE (30483) DHT11:: Failed at phase 2[0m
+[0;31mE (30523) DHT11:: Failed at phase 2[0m
+[0;31mE (30563) DHT11:: Failed at phase 2[0m
+[0;31mE (30603) DHT11:: Failed at phase 2[0m
+[0;32mI (30603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30603) LIVING: AUTO TASK[0m
+[0;31mE (30603) mqtt_client: Client was not initialized[0m
+[0;33mW (30623) LIVING: DHT11 fail![0m
+[0;32mI (30623) LIVING: Do sang: 4.24 lux[0m
+[0;31mE (30633) mqtt_client: Client was not initialized[0m
+[0;32mI (30633) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (30813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30813) LIVING: AUTO TASK[0m
+[0;31mE (30813) mqtt_client: Client was not initialized[0m
+[0;32mI (31013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31013) LIVING: AUTO TASK[0m
+[0;31mE (31013) mqtt_client: Client was not initialized[0m
+[0;32mI (31213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31213) LIVING: AUTO TASK[0m
+[0;31mE (31213) mqtt_client: Client was not initialized[0m
+[0;32mI (31413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31413) LIVING: AUTO TASK[0m
+[0;31mE (31413) mqtt_client: Client was not initialized[0m
+[0;32mI (31613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31613) LIVING: AUTO TASK[0m
+[0;31mE (31613) mqtt_client: Client was not initialized[0m
+[0;31mE (31643) DHT11:: Failed at phase 2[0m
+[0;31mE (31683) DHT11:: Failed at phase 2[0m
+[0;31mE (31723) DHT11:: Failed at phase 2[0m
+[0;31mE (31763) DHT11:: Failed at phase 2[0m
+[0;31mE (31803) DHT11:: Failed at phase 2[0m
+[0;32mI (31813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31813) LIVING: AUTO TASK[0m
+[0;31mE (31813) mqtt_client: Client was not initialized[0m
+[0;33mW (31823) LIVING: DHT11 fail![0m
+[0;32mI (31823) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (31823) LIVING: Khi gas: 107.88 ppm[0m
+[0;31mE (31843) mqtt_client: Client was not initialized[0m
+[0;32mI (32013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32013) LIVING: AUTO TASK[0m
+[0;31mE (32013) mqtt_client: Client was not initialized[0m
+[0;32mI (32213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32213) LIVING: AUTO TASK[0m
+[0;31mE (32213) mqtt_client: Client was not initialized[0m
+[0;32mI (32413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32413) LIVING: AUTO TASK[0m
+[0;31mE (32413) mqtt_client: Client was not initialized[0m
+[0;32mI (32613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32613) LIVING: AUTO TASK[0m
+[0;31mE (32613) mqtt_client: Client was not initialized[0m
+[0;32mI (32813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32813) LIVING: AUTO TASK[0m
+[0;31mE (32813) mqtt_client: Client was not initialized[0m
+[0;31mE (32853) DHT11:: Failed at phase 2[0m
+[0;31mE (32893) DHT11:: Failed at phase 2[0m
+[0;31mE (32933) DHT11:: Failed at phase 2[0m
+[0;31mE (32973) DHT11:: Failed at phase 2[0m
+[0;32mI (33013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33013) LIVING: AUTO TASK[0m
+[0;31mE (33013) DHT11:: Failed at phase 2[0m
+[0;31mE (33013) mqtt_client: Client was not initialized[0m
+[0;33mW (33033) LIVING: DHT11 fail![0m
+[0;32mI (33033) LIVING: Do sang: 11.94 lux[0m
+[0;32mI (33033) LIVING: Khi gas: 90.30 ppm[0m
+[0;31mE (33043) mqtt_client: Client was not initialized[0m
+[0;32mI (33213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33213) LIVING: AUTO TASK[0m
+[0;31mE (33213) mqtt_client: Client was not initialized[0m
+[0;32mI (33413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33413) LIVING: AUTO TASK[0m
+[0;31mE (33413) mqtt_client: Client was not initialized[0m
+[0;32mI (33613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33613) LIVING: AUTO TASK[0m
+[0;31mE (33613) mqtt_client: Client was not initialized[0m
+[0;32mI (33813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33813) LIVING: AUTO TASK[0m
+[0;31mE (33813) mqtt_client: Client was not initialized[0m
+[0;32mI (34013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34013) LIVING: AUTO TASK[0m
+[0;31mE (34013) mqtt_client: Client was not initialized[0m
+[0;31mE (34053) DHT11:: Failed at phase 2[0m
+[0;31mE (34093) DHT11:: Failed at phase 2[0m
+[0;31mE (34133) DHT11:: Failed at phase 2[0m
+[0;31mE (34173) DHT11:: Failed at phase 2[0m
+[0;32mI (34213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34213) LIVING: AUTO TASK[0m
+[0;31mE (34213) DHT11:: Failed at phase 2[0m
+[0;31mE (34213) mqtt_client: Client was not initialized[0m
+[0;33mW (34233) LIVING: DHT11 fail![0m
+[0;32mI (34233) LIVING: Do sang: 13.45 lux[0m
+[0;32mI (34233) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (34413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34413) LIVING: AUTO TASK[0m
+[0;31mE (34413) mqtt_client: Client was not initialized[0m
+[0;32mI (34613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34613) LIVING: AUTO TASK[0m
+[0;31mE (34613) mqtt_client: Client was not initialized[0m
+[0;32mI (34813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34813) LIVING: AUTO TASK[0m
+[0;31mE (34813) mqtt_client: Client was not initialized[0m
+[0;32mI (35013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35013) LIVING: AUTO TASK[0m
+[0;31mE (35013) mqtt_client: Client was not initialized[0m
+[0;32mI (35213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35213) LIVING: AUTO TASK[0m
+[0;31mE (35213) mqtt_client: Client was not initialized[0m
+[0;31mE (35243) DHT11:: Failed at phase 2[0m
+[0;31mE (35283) DHT11:: Failed at phase 2[0m
+[0;32mI (35323) LIVING: Do am: 77.00 percent[0m
+[0;32mI (35333) LIVING: Nhiet do: 29.70 C[0m
+[0;32mI (35333) LIVING: Do sang: 12.24 lux[0m
+[0;32mI (35333) LIVING: Khi gas: 102.42 ppm[0m
+[0;31mE (35343) mqtt_client: Client was not initialized[0m
+[0;32mI (35413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35413) LIVING: AUTO TASK[0m
+[0;31mE (35413) mqtt_client: Client was not initialized[0m
+[0;32mI (35613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35613) LIVING: AUTO TASK[0m
+[0;31mE (35613) mqtt_client: Client was not initialized[0m
+[0;32mI (35813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35813) LIVING: AUTO TASK[0m
+[0;31mE (35813) mqtt_client: Client was not initialized[0m
+[0;32mI (36013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36013) LIVING: AUTO TASK[0m
+[0;31mE (36013) mqtt_client: Client was not initialized[0m
+[0;32mI (36213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36213) LIVING: AUTO TASK[0m
+[0;31mE (36213) mqtt_client: Client was not initialized[0m
+[0;31mE (36353) DHT11:: Failed at phase 2[0m
+[0;32mI (36403) LIVING: Do am: 77.00 percent[0m
+[0;32mI (36403) LIVING: Nhiet do: 29.70 C[0m
+[0;32mI (36403) LIVING: Do sang: 9.48 lux[0m
+[0;32mI (36403) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (36413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36413) LIVING: AUTO TASK[0m
+[0;31mE (36413) mqtt_client: Client was not initialized[0m
+[0;32mI (36623) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36623) LIVING: AUTO TASK[0m
+[0;31mE (36623) mqtt_client: Client was not initialized[0m
+[0;32mI (36823) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36823) LIVING: AUTO TASK[0m
+[0;31mE (36823) mqtt_client: Client was not initialized[0m
+[0;32mI (37023) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37023) LIVING: AUTO TASK[0m
+[0;31mE (37023) mqtt_client: Client was not initialized[0m
+[0;32mI (37223) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37223) LIVING: AUTO TASK[0m
+[0;31mE (37223) mqtt_client: Client was not initialized[0m
+[0;31mE (37413) DHT11:: Failed at phase 2[0m
+[0;32mI (37423) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37423) LIVING: AUTO TASK[0m
+[0;31mE (37423) mqtt_client: Client was not initialized[0m
+[0;31mE (37453) DHT11:: Failed at phase 2[0m
+[0;31mE (37493) DHT11:: Failed at phase 2[0m
+[0;31mE (37533) DHT11:: Failed at phase 2[0m
+[0;31mE (37573) DHT11:: Failed at phase 2[0m
+[0;33mW (37593) LIVING: DHT11 fail![0m
+[0;32mI (37593) LIVING: Do sang: 11.36 lux[0m
+[0;32mI (37593) LIVING: Khi gas: 100.00 ppm[0m
+[0;32mI (37623) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37623) LIVING: AUTO TASK[0m
+[0;31mE (37623) mqtt_client: Client was not initialized[0m
+[0;32mI (37823) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37823) LIVING: AUTO TASK[0m
+[0;31mE (37823) mqtt_client: Client was not initialized[0m
+[0;32mI (38023) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38023) LIVING: AUTO TASK[0m
+[0;31mE (38023) mqtt_client: Client was not initialized[0m
+[0;32mI (38223) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38223) LIVING: AUTO TASK[0m
+[0;31mE (38223) mqtt_client: Client was not initialized[0m
+[0;32mI (38423) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38423) LIVING: AUTO TASK[0m
+[0;31mE (38423) mqtt_client: Client was not initialized[0m
+[0;31mE (38603) DHT11:: Failed at phase 2[0m
+[0;32mI (38623) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38623) LIVING: AUTO TASK[0m
+[0;31mE (38623) mqtt_client: Client was not initialized[0m
+[0;31mE (38643) DHT11:: Failed at phase 2[0m
+[0;31mE (38683) DHT11:: Failed at phase 2[0m
+[0;31mE (38723) DHT11:: Failed at phase 2[0m
+[0;31mE (38763) DHT11:: Failed at phase 2[0m
+[0;33mW (38783) LIVING: DHT11 fail![0m
+[0;32mI (38783) LIVING: Do sang: 8.64 lux[0m
+[0;32mI (38783) LIVING: Khi gas: 101.82 ppm[0m
+[0;32mI (38823) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38823) LIVING: AUTO TASK[0m
+[0;31mE (38823) mqtt_client: Client was not initialized[0m
+[0;32mI (39023) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39023) LIVING: AUTO TASK[0m
+[0;31mE (39023) mqtt_client: Client was not initialized[0m
+[0;32mI (39223) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39223) LIVING: AUTO TASK[0m
+[0;31mE (39223) mqtt_client: Client was not initialized[0m
+[0;32mI (39423) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39423) LIVING: AUTO TASK[0m
+[0;31mE (39423) mqtt_client: Client was not initialized[0m
+[0;32mI (39623) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39623) LIVING: AUTO TASK[0m
+[0;31mE (39623) mqtt_client: Client was not initialized[0m
+[0;31mE (39793) DHT11:: Failed at phase 2[0m
+[0;32mI (39823) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39823) LIVING: AUTO TASK[0m
+[0;31mE (39823) mqtt_client: Client was not initialized[0m
+[0;31mE (39833) DHT11:: Failed at phase 2[0m
+[0;31mE (39873) DHT11:: Failed at phase 2[0m
+[0;31mE (39913) DHT11:: Failed at phase 2[0m
+[0;31mE (39953) DHT11:: Failed at phase 2[0m
+[0;33mW (39973) LIVING: DHT11 fail![0m
+[0;32mI (39973) LIVING: Do sang: 12.42 lux[0m
+[0;32mI (39973) LIVING: Khi gas: 101.21 ppm[0m
+[0;32mI (40023) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40023) LIVING: AUTO TASK[0m
+[0;31mE (40023) mqtt_client: Client was not initialized[0m
+[0;32mI (40223) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40223) LIVING: AUTO TASK[0m
+[0;31mE (40223) mqtt_client: Client was not initialized[0m
+[0;32mI (40423) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40423) LIVING: AUTO TASK[0m
+[0;31mE (40423) mqtt_client: Client was not initialized[0m
+[0;32mI (40623) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40623) LIVING: AUTO TASK[0m
+[0;31mE (40623) mqtt_client: Client was not initialized[0m
+[0;33mW (40813) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (40823) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40823) LIVING: AUTO TASK[0m
+[0;31mE (40823) mqtt_client: Client was not initialized[0m
+[0;31mE (40983) DHT11:: Failed at phase 2[0m
+[0;31mE (41023) DHT11:: Failed at phase 2[0m
+[0;32mI (41033) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41033) LIVING: AUTO TASK[0m
+[0;31mE (41033) mqtt_client: Client was not initialized[0m
+[0;31mE (41063) DHT11:: Failed at phase 2[0m
+[0;31mE (41103) DHT11:: Failed at phase 2[0m
+[0;31mE (41143) DHT11:: Failed at phase 2[0m
+[0;33mW (41163) LIVING: DHT11 fail![0m
+[0;32mI (41163) LIVING: Do sang: 9.06 lux[0m
+[0;32mI (41163) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (41233) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41233) LIVING: AUTO TASK[0m
+[0;31mE (41233) mqtt_client: Client was not initialized[0m
+[0;32mI (41433) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41433) LIVING: AUTO TASK[0m
+[0;31mE (41433) mqtt_client: Client was not initialized[0m
+[0;32mI (41633) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41633) LIVING: AUTO TASK[0m
+[0;31mE (41633) mqtt_client: Client was not initialized[0m
+[0;32mI (41833) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41833) LIVING: AUTO TASK[0m
+[0;31mE (41833) mqtt_client: Client was not initialized[0m
+[0;32mI (42033) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42033) LIVING: AUTO TASK[0m
+[0;31mE (42033) mqtt_client: Client was not initialized[0m
+[0;31mE (42173) DHT11:: Failed at phase 2[0m
+[0;31mE (42213) DHT11:: Failed at phase 2[0m
+[0;32mI (42233) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42233) LIVING: AUTO TASK[0m
+[0;31mE (42233) mqtt_client: Client was not initialized[0m
+[0;31mE (42253) DHT11:: Failed at phase 2[0m
+[0;31mE (42293) DHT11:: Failed at phase 2[0m
+[0;31mE (42333) DHT11:: Failed at phase 2[0m
+[0;33mW (42353) LIVING: DHT11 fail![0m
+[0;32mI (42353) LIVING: Do sang: 12.42 lux[0m
+[0;32mI (42353) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (42433) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42433) LIVING: AUTO TASK[0m
+[0;31mE (42433) mqtt_client: Client was not initialized[0m
+[0;32mI (42633) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42633) LIVING: AUTO TASK[0m
+[0;31mE (42633) mqtt_client: Client was not initialized[0m
+[0;32mI (42833) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42833) LIVING: AUTO TASK[0m
+[0;31mE (42833) mqtt_client: Client was not initialized[0m
+[0;32mI (43033) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43033) LIVING: AUTO TASK[0m
+[0;31mE (43033) mqtt_client: Client was not initialized[0m
+[0;32mI (43073) rc522: [0m
+[0;32mI (43073) rc522: ╔══════════════╗[0m
+[0;32mI (43073) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (43073) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (43083) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (43093) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (43093) rc522: ╚══════════════╝[0m
+[0;32mI (43103) rc522: [0m
+[0;32mI (43103) RFID: ACCESS GRANTED![0m
+[0;32mI (43103) DOOR: Door: OPEN[0m
+[0;31mE (43113) mqtt_client: Client was not initialized[0m
+[0;32mI (43233) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43233) LIVING: AUTO TASK[0m
+[0;31mE (43233) mqtt_client: Client was not initialized[0m
+[0;31mE (43363) DHT11:: Failed at phase 2[0m
+[0;31mE (43403) DHT11:: Failed at phase 2[0m
+[0;32mI (43433) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43433) LIVING: AUTO TASK[0m
+[0;31mE (43433) mqtt_client: Client was not initialized[0m
+[0;31mE (43443) DHT11:: Failed at phase 2[0m
+[0;31mE (43483) DHT11:: Failed at phase 2[0m
+[0;31mE (43523) DHT11:: Failed at phase 2[0m
+[0;33mW (43543) LIVING: DHT11 fail![0m
+[0;32mI (43543) LIVING: Do sang: 8.97 lux[0m
+[0;32mI (43543) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (43553) mqtt_client: Client was not initialized[0m
+[0;32mI (43633) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43633) LIVING: AUTO TASK[0m
+[0;31mE (43633) mqtt_client: Client was not initialized[0m
+[0;32mI (43833) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43833) LIVING: AUTO TASK[0m
+[0;31mE (43833) mqtt_client: Client was not initialized[0m
+[0;32mI (43893) RFID: Card removed[0m
+[0;32mI (43893) DOOR: Door: CLOSE[0m
+[0;32mI (44033) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44033) LIVING: AUTO TASK[0m
+[0;31mE (44033) mqtt_client: Client was not initialized[0m
+[0;32mI (44233) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44233) LIVING: AUTO TASK[0m
+[0;31mE (44233) mqtt_client: Client was not initialized[0m
+[0;32mI (44433) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44433) LIVING: AUTO TASK[0m
+[0;31mE (44433) mqtt_client: Client was not initialized[0m
+[0;31mE (44563) DHT11:: Failed at phase 2[0m
+[0;31mE (44603) DHT11:: Failed at phase 2[0m
+[0;32mI (44633) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44633) LIVING: AUTO TASK[0m
+[0;31mE (44633) mqtt_client: Client was not initialized[0m
+[0;31mE (44643) DHT11:: Failed at phase 2[0m
+[0;31mE (44683) DHT11:: Failed at phase 2[0m
+[0;31mE (44723) DHT11:: Failed at phase 2[0m
+[0;33mW (44743) LIVING: DHT11 fail![0m
+[0;32mI (44743) LIVING: Do sang: 12.39 lux[0m
+[0;32mI (44743) LIVING: Khi gas: 97.58 ppm[0m
+[0;32mI (44833) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44833) LIVING: AUTO TASK[0m
+[0;31mE (44833) mqtt_client: Client was not initialized[0m
+[0;31mE (44893) mqtt_client: Client was not initialized[0m
+[0;32mI (45033) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45033) LIVING: AUTO TASK[0m
+[0;31mE (45033) mqtt_client: Client was not initialized[0m
+[0;32mI (45233) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45233) LIVING: AUTO TASK[0m
+[0;31mE (45233) mqtt_client: Client was not initialized[0m
+[0;32mI (45433) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45433) LIVING: AUTO TASK[0m
+[0;31mE (45433) mqtt_client: Client was not initialized[0m
+[0;32mI (45633) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45633) LIVING: AUTO TASK[0m
+[0;31mE (45633) mqtt_client: Client was not initialized[0m
+[0;31mE (45753) DHT11:: Failed at phase 2[0m
+[0;31mE (45793) DHT11:: Failed at phase 2[0m
+[0;32mI (45833) LIVING: Current Mode in NVS: 0[0m
+[0;31mE (45833) DHT11:: Failed at phase 2[0m
+[0;32mI (45833) LIVING: AUTO TASK[0m
+[0;31mE (45833) mqtt_client: Client was not initialized[0m
+[0;31mE (45873) DHT11:: Failed at phase 2[0m
+[0;31mE (45913) DHT11:: Failed at phase 2[0m
+[0;33mW (45933) LIVING: DHT11 fail![0m
+[0;32mI (45933) LIVING: Do sang: 8.82 lux[0m
+[0;32mI (45933) LIVING: Khi gas: 101.21 ppm[0m
+[0;31mE (45943) mqtt_client: Client was not initialized[0m
+[0;32mI (46043) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46043) LIVING: AUTO TASK[0m
+[0;31mE (46043) mqtt_client: Client was not initialized[0m
+[0;32mI (46243) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46243) LIVING: AUTO TASK[0m
+[0;31mE (46243) mqtt_client: Client was not initialized[0m
+[0;32mI (46443) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46443) LIVING: AUTO TASK[0m
+[0;31mE (46443) mqtt_client: Client was not initialized[0m
+[0;32mI (46643) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46643) LIVING: AUTO TASK[0m
+[0;31mE (46643) mqtt_client: Client was not initialized[0m
+[0;32mI (46843) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46843) LIVING: AUTO TASK[0m
+[0;31mE (46843) mqtt_client: Client was not initialized[0m
+[0;31mE (46953) DHT11:: Failed at phase 2[0m
+[0;31mE (46993) DHT11:: Failed at phase 2[0m
+[0;31mE (47033) DHT11:: Failed at phase 2[0m
+[0;32mI (47043) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47043) LIVING: AUTO TASK[0m
+[0;31mE (47043) mqtt_client: Client was not initialized[0m
+[0;31mE (47073) DHT11:: Failed at phase 2[0m
+[0;31mE (47113) DHT11:: Failed at phase 2[0m
+[0;33mW (47133) LIVING: DHT11 fail![0m
+[0;32mI (47133) LIVING: Do sang: 12.36 lux[0m
+[0;32mI (47133) LIVING: Khi gas: 98.79 ppm[0m
+[0;32mI (47243) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47243) LIVING: AUTO TASK[0m
+[0;31mE (47243) mqtt_client: Client was not initialized[0m
+[0;32mI (47443) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47443) LIVING: AUTO TASK[0m
+[0;31mE (47443) mqtt_client: Client was not initialized[0m
+[0;32mI (47643) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47643) LIVING: AUTO TASK[0m
+[0;31mE (47643) mqtt_client: Client was not initialized[0m
+[0;32mI (47803) rc522: [0m
+[0;32mI (47813) rc522: ╔══════════════╗[0m
+[0;32mI (47813) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (47813) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (47813) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (47823) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (47833) rc522: ╚══════════════╝[0m
+[0;32mI (47833) rc522: [0m
+[0;32mI (47843) RFID: ACCESS GRANTED![0m
+[0;32mI (47843) DOOR: Door: OPEN[0m
+[0;31mE (47843) mqtt_client: Client was not initialized[0m
+[0;32mI (47843) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47853) LIVING: AUTO TASK[0m
+[0;31mE (47863) mqtt_client: Client was not initialized[0m
+[0;32mI (48063) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48063) LIVING: AUTO TASK[0m
+[0;31mE (48063) mqtt_client: Client was not initialized[0m
+[0;31mE (48143) DHT11:: Failed at phase 2[0m
+[0;31mE (48183) DHT11:: Failed at phase 2[0m
+[0;31mE (48223) DHT11:: Failed at phase 2[0m
+[0;31mE (48263) DHT11:: Failed at phase 2[0m
+[0;32mI (48263) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48263) LIVING: AUTO TASK[0m
+[0;31mE (48263) mqtt_client: Client was not initialized[0m
+[0;31mE (48303) DHT11:: Failed at phase 2[0m
+[0;33mW (48323) LIVING: DHT11 fail![0m
+[0;32mI (48323) LIVING: Do sang: 8.61 lux[0m
+[0;32mI (48323) LIVING: Khi gas: 95.76 ppm[0m
+[0;31mE (48333) mqtt_client: Client was not initialized[0m
+[0;32mI (48473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48473) LIVING: AUTO TASK[0m
+[0;31mE (48473) mqtt_client: Client was not initialized[0m
+[0;32mI (48673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48673) LIVING: AUTO TASK[0m
+[0;31mE (48673) mqtt_client: Client was not initialized[0m
+[0;32mI (48873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48873) LIVING: AUTO TASK[0m
+[0;31mE (48873) mqtt_client: Client was not initialized[0m
+[0;32mI (48963) RFID: Card removed[0m
+[0;32mI (48963) DOOR: Door: CLOSE[0m
+[0;32mI (49073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49073) LIVING: AUTO TASK[0m
+[0;31mE (49073) mqtt_client: Client was not initialized[0m
+[0;32mI (49273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49273) LIVING: AUTO TASK[0m
+[0;31mE (49273) mqtt_client: Client was not initialized[0m
+[0;31mE (49343) DHT11:: Failed at phase 2[0m
+[0;31mE (49383) DHT11:: Failed at phase 2[0m
+[0;31mE (49423) DHT11:: Failed at phase 2[0m
+[0;31mE (49463) DHT11:: Failed at phase 2[0m
+[0;32mI (49473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49473) LIVING: AUTO TASK[0m
+[0;31mE (49473) mqtt_client: Client was not initialized[0m
+[0;31mE (49503) DHT11:: Failed at phase 2[0m
+[0;33mW (49523) LIVING: DHT11 fail![0m
+[0;32mI (49523) LIVING: Do sang: 12.24 lux[0m
+[0;32mI (49523) LIVING: Khi gas: 96.36 ppm[0m
+[0;32mI (49673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49673) LIVING: AUTO TASK[0m
+[0;31mE (49673) mqtt_client: Client was not initialized[0m
+[0;32mI (49873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49873) LIVING: AUTO TASK[0m
+[0;31mE (49873) mqtt_client: Client was not initialized[0m
+[0;31mE (49963) mqtt_client: Client was not initialized[0m
+[0;32mI (50073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50073) LIVING: AUTO TASK[0m
+[0;31mE (50073) mqtt_client: Client was not initialized[0m
+[0;32mI (50273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50273) LIVING: AUTO TASK[0m
+[0;31mE (50273) mqtt_client: Client was not initialized[0m
+[0;32mI (50473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50473) LIVING: AUTO TASK[0m
+[0;31mE (50473) mqtt_client: Client was not initialized[0m
+[0;31mE (50533) DHT11:: Failed at phase 2[0m
+[0;31mE (50573) DHT11:: Failed at phase 2[0m
+[0;31mE (50613) DHT11:: Failed at phase 2[0m
+[0;31mE (50653) DHT11:: Failed at phase 2[0m
+[0;32mI (50673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50673) LIVING: AUTO TASK[0m
+[0;31mE (50673) mqtt_client: Client was not initialized[0m
+[0;31mE (50693) DHT11:: Failed at phase 2[0m
+[0;33mW (50713) LIVING: DHT11 fail![0m
+[0;32mI (50713) LIVING: Do sang: 8.61 lux[0m
+[0;32mI (50713) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (50873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50873) LIVING: AUTO TASK[0m
+[0;31mE (50873) mqtt_client: Client was not initialized[0m
+[0;33mW (50963) rc522: rc522_task(282): select failed (err=F528)[0m
+[0;32mI (51073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51073) LIVING: AUTO TASK[0m
+[0;31mE (51073) mqtt_client: Client was not initialized[0m
+[0;32mI (51113) rc522: [0m
+[0;32mI (51113) rc522: ╔══════════════╗[0m
+[0;32mI (51113) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (51123) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (51123) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (51133) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (51133) rc522: ╚══════════════╝[0m
+[0;32mI (51143) rc522: [0m
+[0;32mI (51143) RFID: ACCESS GRANTED![0m
+[0;32mI (51153) DOOR: Door: OPEN[0m
+[0;31mE (51153) mqtt_client: Client was not initialized[0m
+[0;32mI (51273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51273) LIVING: AUTO TASK[0m
+[0;31mE (51273) mqtt_client: Client was not initialized[0m
+[0;32mI (51473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51473) LIVING: AUTO TASK[0m
+[0;31mE (51473) mqtt_client: Client was not initialized[0m
+[0;32mI (51673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51673) LIVING: AUTO TASK[0m
+[0;31mE (51673) mqtt_client: Client was not initialized[0m
+[0;31mE (51723) DHT11:: Failed at phase 2[0m
+[0;31mE (51763) DHT11:: Failed at phase 2[0m
+[0;31mE (51803) DHT11:: Failed at phase 2[0m
+[0;31mE (51843) DHT11:: Failed at phase 2[0m
+[0;32mI (51873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51873) LIVING: AUTO TASK[0m
+[0;31mE (51873) mqtt_client: Client was not initialized[0m
+[0;31mE (51883) DHT11:: Failed at phase 2[0m
+[0;33mW (51903) LIVING: DHT11 fail![0m
+[0;32mI (51903) LIVING: Do sang: 12.33 lux[0m
+[0;32mI (51903) LIVING: Khi gas: 94.55 ppm[0m
+[0;32mI (52073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52073) LIVING: AUTO TASK[0m
+[0;31mE (52073) mqtt_client: Client was not initialized[0m
+[0;32mI (52273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52273) LIVING: AUTO TASK[0m
+[0;31mE (52273) mqtt_client: Client was not initialized[0m
+[0;32mI (52473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52473) LIVING: AUTO TASK[0m
+[0;31mE (52473) mqtt_client: Client was not initialized[0m
+[0;32mI (52673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52673) LIVING: AUTO TASK[0m
+[0;31mE (52673) mqtt_client: Client was not initialized[0m
+[0;32mI (52873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52873) LIVING: AUTO TASK[0m
+[0;31mE (52873) mqtt_client: Client was not initialized[0m
+[0;31mE (52913) DHT11:: Failed at phase 2[0m
+[0;31mE (52953) DHT11:: Failed at phase 2[0m
+[0;31mE (52993) DHT11:: Failed at phase 2[0m
+[0;31mE (53033) DHT11:: Failed at phase 2[0m
+[0;32mI (53073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53073) LIVING: AUTO TASK[0m
+[0;31mE (53073) DHT11:: Failed at phase 2[0m
+[0;31mE (53073) mqtt_client: Client was not initialized[0m
+[0;33mW (53093) LIVING: DHT11 fail![0m
+[0;32mI (53093) LIVING: Do sang: 11.18 lux[0m
+[0;32mI (53093) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (53103) mqtt_client: Client was not initialized[0m
+[0;32mI (53253) RFID: Card removed[0m
+[0;32mI (53253) DOOR: Door: CLOSE[0m
+[0;32mI (53273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53273) LIVING: AUTO TASK[0m
+[0;31mE (53273) mqtt_client: Client was not initialized[0m
+[0;32mI (53473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53473) LIVING: AUTO TASK[0m
+[0;31mE (53473) mqtt_client: Client was not initialized[0m
+[0;32mI (53673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53673) LIVING: AUTO TASK[0m
+[0;31mE (53673) mqtt_client: Client was not initialized[0m
+[0;32mI (53873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53873) LIVING: AUTO TASK[0m
+[0;31mE (53873) mqtt_client: Client was not initialized[0m
+[0;32mI (54073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54073) LIVING: AUTO TASK[0m
+[0;31mE (54073) mqtt_client: Client was not initialized[0m
+[0;31mE (54113) DHT11:: Failed at phase 2[0m
+[0;31mE (54153) DHT11:: Failed at phase 2[0m
+[0;31mE (54193) DHT11:: Failed at phase 2[0m
+[0;31mE (54233) DHT11:: Failed at phase 2[0m
+[0;31mE (54253) mqtt_client: Client was not initialized[0m
+[0;31mE (54273) DHT11:: Failed at phase 2[0m
+[0;32mI (54273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54273) LIVING: AUTO TASK[0m
+[0;31mE (54273) mqtt_client: Client was not initialized[0m
+[0;33mW (54293) LIVING: DHT11 fail![0m
+[0;32mI (54293) LIVING: Do sang: 12.33 lux[0m
+[0;32mI (54293) LIVING: Khi gas: 96.36 ppm[0m
+[0;31mE (54303) mqtt_client: Client was not initialized[0m
+[0;32mI (54473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54473) LIVING: AUTO TASK[0m
+[0;31mE (54473) mqtt_client: Client was not initialized[0m
+[0;32mI (54673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54673) LIVING: AUTO TASK[0m
+[0;31mE (54673) mqtt_client: Client was not initialized[0m
+[0;32mI (54873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54873) LIVING: AUTO TASK[0m
+[0;31mE (54873) mqtt_client: Client was not initialized[0m
+[0;32mI (55073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55073) LIVING: AUTO TASK[0m
+[0;31mE (55073) mqtt_client: Client was not initialized[0m
+[0;32mI (55273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55273) LIVING: AUTO TASK[0m
+[0;31mE (55273) mqtt_client: Client was not initialized[0m
+[0;31mE (55313) DHT11:: Failed at phase 2[0m
+[0;31mE (55353) DHT11:: Failed at phase 2[0m
+[0;31mE (55393) DHT11:: Failed at phase 2[0m
+[0;31mE (55433) DHT11:: Failed at phase 2[0m
+[0;32mI (55473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55473) LIVING: AUTO TASK[0m
+[0;31mE (55473) DHT11:: Failed at phase 2[0m
+[0;31mE (55473) mqtt_client: Client was not initialized[0m
+[0;33mW (55493) LIVING: DHT11 fail![0m
+[0;32mI (55493) LIVING: Do sang: 10.64 lux[0m
+[0;32mI (55493) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (55503) mqtt_client: Client was not initialized[0m
+[0;32mI (55673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55673) LIVING: AUTO TASK[0m
+[0;31mE (55673) mqtt_client: Client was not initialized[0m
+[0;32mI (55873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55873) LIVING: AUTO TASK[0m
+[0;31mE (55873) mqtt_client: Client was not initialized[0m
+[0;32mI (56073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56073) LIVING: AUTO TASK[0m
+[0;31mE (56073) mqtt_client: Client was not initialized[0m
+[0;32mI (56273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56273) LIVING: AUTO TASK[0m
+[0;31mE (56273) mqtt_client: Client was not initialized[0m
+[0;32mI (56473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56473) LIVING: AUTO TASK[0m
+[0;31mE (56473) mqtt_client: Client was not initialized[0m
+[0;31mE (56513) DHT11:: Failed at phase 2[0m
+[0;31mE (56553) DHT11:: Failed at phase 2[0m
+[0;31mE (56593) DHT11:: Failed at phase 2[0m
+[0;31mE (56633) DHT11:: Failed at phase 2[0m
+[0;31mE (56673) DHT11:: Failed at phase 2[0m
+[0;32mI (56673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56673) LIVING: AUTO TASK[0m
+[0;31mE (56673) mqtt_client: Client was not initialized[0m
+[0;33mW (56693) LIVING: DHT11 fail![0m
+[0;32mI (56693) LIVING: Do sang: 12.03 lux[0m
+[0;32mI (56693) LIVING: Khi gas: 94.55 ppm[0m
+[0;31mE (56703) mqtt_client: Client was not initialized[0m
+[0;32mI (56873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56873) LIVING: AUTO TASK[0m
+[0;31mE (56873) mqtt_client: Client was not initialized[0m
+[0;32mI (57073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57073) LIVING: AUTO TASK[0m
+[0;31mE (57073) mqtt_client: Client was not initialized[0m
+[0;32mI (57273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57273) LIVING: AUTO TASK[0m
+[0;31mE (57273) mqtt_client: Client was not initialized[0m
+[0;32mI (57473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57473) LIVING: AUTO TASK[0m
+[0;31mE (57473) mqtt_client: Client was not initialized[0m
+[0;32mI (57673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57673) LIVING: AUTO TASK[0m
+[0;31mE (57673) mqtt_client: Client was not initialized[0m
+[0;31mE (57713) DHT11:: Failed at phase 2[0m
+[0;31mE (57753) DHT11:: Failed at phase 2[0m
+[0;31mE (57793) DHT11:: Failed at phase 2[0m
+[0;31mE (57833) DHT11:: Failed at phase 2[0m
+[0;31mE (57873) DHT11:: Failed at phase 2[0m
+[0;32mI (57873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57873) LIVING: AUTO TASK[0m
+[0;31mE (57873) mqtt_client: Client was not initialized[0m
+[0;33mW (57893) LIVING: DHT11 fail![0m
+[0;32mI (57893) LIVING: Do sang: 11.82 lux[0m
+[0;32mI (57893) LIVING: Khi gas: 93.94 ppm[0m
+[0;32mI (58073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58073) LIVING: AUTO TASK[0m
+[0;31mE (58073) mqtt_client: Client was not initialized[0m
+[0;32mI (58273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58273) LIVING: AUTO TASK[0m
+[0;31mE (58273) mqtt_client: Client was not initialized[0m
+[0;32mI (58473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58473) LIVING: AUTO TASK[0m
+[0;31mE (58473) mqtt_client: Client was not initialized[0m
+[0;32mI (58673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58673) LIVING: AUTO TASK[0m
+[0;31mE (58673) mqtt_client: Client was not initialized[0m
+[0;32mI (58873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58873) LIVING: AUTO TASK[0m
+[0;31mE (58873) mqtt_client: Client was not initialized[0m
+[0;31mE (58903) DHT11:: Failed at phase 2[0m
+[0;31mE (58943) DHT11:: Failed at phase 2[0m
+[0;31mE (58983) DHT11:: Failed at phase 2[0m
+[0;31mE (59023) DHT11:: Failed at phase 2[0m
+[0;31mE (59063) DHT11:: Failed at phase 2[0m
+[0;32mI (59073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59073) LIVING: AUTO TASK[0m
+[0;31mE (59073) mqtt_client: Client was not initialized[0m
+[0;33mW (59083) LIVING: DHT11 fail![0m
+[0;32mI (59083) LIVING: Do sang: 13.88 lux[0m
+[0;32mI (59083) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (59093) mqtt_client: Client was not initialized[0m
+[0;32mI (59273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59273) LIVING: AUTO TASK[0m
+[0;31mE (59273) mqtt_client: Client was not initialized[0m
+[0;32mI (59473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59473) LIVING: AUTO TASK[0m
+[0;31mE (59473) mqtt_client: Client was not initialized[0m
+[0;32mI (59673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59673) LIVING: AUTO TASK[0m
+[0;31mE (59673) mqtt_client: Client was not initialized[0m
+[0;32mI (59873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59873) LIVING: AUTO TASK[0m
+[0;31mE (59873) mqtt_client: Client was not initialized[0m
+[0;32mI (60073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60073) LIVING: AUTO TASK[0m
+[0;31mE (60073) mqtt_client: Client was not initialized[0m
+[0;31mE (60103) DHT11:: Failed at phase 2[0m
+[0;31mE (60143) DHT11:: Failed at phase 2[0m
+[0;31mE (60183) DHT11:: Failed at phase 2[0m
+[0;31mE (60223) DHT11:: Failed at phase 2[0m
+[0;31mE (60263) DHT11:: Failed at phase 2[0m
+[0;32mI (60273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60273) LIVING: AUTO TASK[0m
+[0;31mE (60273) mqtt_client: Client was not initialized[0m
+[0;33mW (60283) LIVING: DHT11 fail![0m
+[0;32mI (60283) LIVING: Do sang: 13.09 lux[0m
+[0;32mI (60283) LIVING: Khi gas: 94.55 ppm[0m
+[0;31mE (60303) mqtt_client: Client was not initialized[0m
+[0;32mI (60473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60473) LIVING: AUTO TASK[0m
+[0;31mE (60473) mqtt_client: Client was not initialized[0m
+[0;32mI (60673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60673) LIVING: AUTO TASK[0m
+[0;31mE (60673) mqtt_client: Client was not initialized[0m
+[0;32mI (60873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60873) LIVING: AUTO TASK[0m
+[0;31mE (60873) mqtt_client: Client was not initialized[0m
+[0;32mI (61073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61073) LIVING: AUTO TASK[0m
+[0;31mE (61073) mqtt_client: Client was not initialized[0m
+[0;32mI (61273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61273) LIVING: AUTO TASK[0m
+[0;31mE (61273) mqtt_client: Client was not initialized[0m
+[0;31mE (61313) DHT11:: Failed at phase 2[0m
+[0;31mE (61353) DHT11:: Failed at phase 2[0m
+[0;31mE (61393) DHT11:: Failed at phase 2[0m
+[0;31mE (61433) DHT11:: Failed at phase 2[0m
+[0;31mE (61473) DHT11:: Failed at phase 2[0m
+[0;32mI (61473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61473) LIVING: AUTO TASK[0m
+[0;31mE (61473) mqtt_client: Client was not initialized[0m
+[0;33mW (61493) LIVING: DHT11 fail![0m
+[0;32mI (61493) LIVING: Do sang: 10.00 lux[0m
+[0;32mI (61493) LIVING: Khi gas: 95.76 ppm[0m
+[0;32mI (61673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61673) LIVING: AUTO TASK[0m
+[0;31mE (61673) mqtt_client: Client was not initialized[0m
+[0;32mI (61873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61873) LIVING: AUTO TASK[0m
+[0;31mE (61873) mqtt_client: Client was not initialized[0m
+[0;32mI (62073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62073) LIVING: AUTO TASK[0m
+[0;31mE (62073) mqtt_client: Client was not initialized[0m
+[0;32mI (62273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62273) LIVING: AUTO TASK[0m
+[0;31mE (62273) mqtt_client: Client was not initialized[0m
+[0;32mI (62473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62473) LIVING: AUTO TASK[0m
+[0;31mE (62473) mqtt_client: Client was not initialized[0m
+[0;31mE (62503) DHT11:: Failed at phase 2[0m
+[0;31mE (62543) DHT11:: Failed at phase 2[0m
+[0;31mE (62583) DHT11:: Failed at phase 2[0m
+[0;31mE (62623) DHT11:: Failed at phase 2[0m
+[0;31mE (62663) DHT11:: Failed at phase 2[0m
+[0;32mI (62673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62673) LIVING: AUTO TASK[0m
+[0;31mE (62673) mqtt_client: Client was not initialized[0m
+[0;33mW (62683) LIVING: DHT11 fail![0m
+[0;32mI (62683) LIVING: Do sang: 15.12 lux[0m
+[0;31mE (62693) mqtt_client: Client was not initialized[0m
+[0;32mI (62693) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (62693) mqtt_client: Client was not initialized[0m
+[0;32mI (62873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62873) LIVING: AUTO TASK[0m
+[0;31mE (62873) mqtt_client: Client was not initialized[0m
+[0;32mI (63073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (63073) LIVING: AUTO TASK[0m
+[0;31mE (63073) mqtt_client: Client was not initialized[0m
+[0;32mI (63273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (63273) LIVING: AUTO TASK[0m
+[0;31mE (63273) mqtt_client: Client was not initialized[0m
+[0;32mI (63473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (63473) LIVING: AUTO TASK[0m
+[0;31mE (63473) mqtt_client: Client was not initialized[0m
+[0;32mI (63673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (63673) LIVING: AUTO TASK[0m
+[0;31mE (63673) mqtt_client: Client was not initialized[0m
+[0;31mE (63703) DHT11:: Failed at phase 2[0m
+[0;31mE (63743) DHT11:: Failed at phase 2[0m
+[0;31mE (63783) DHT11:: Failed at phase 2[0m
+[0;31mE (63823) DHT11:: Failed at phase 2[0m
+[0;31mE (63863) DHT11:: Failed at phase 2[0m
+[0;32mI (63873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (63873) LIVING: AUTO TASK[0m
+[0;31mE (63873) mqtt_client: Client was not initialized[0m
+[0;33mW (63883) LIVING: DHT11 fail![0m
+[0;32mI (63883) LIVING: Do sang: 10.03 lux[0m
+[0;32mI (63883) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (63903) mqtt_client: Client was not initialized[0m
+[0;32mI (64073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (64073) LIVING: AUTO TASK[0m
+[0;31mE (64073) mqtt_client: Client was not initialized[0m
+[0;32mI (64273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (64273) LIVING: AUTO TASK[0m
+[0;31mE (64273) mqtt_client: Client was not initialized[0m
+[0;32mI (64473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (64473) LIVING: AUTO TASK[0m
+[0;31mE (64473) mqtt_client: Client was not initialized[0m
+[0;32mI (64673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (64673) LIVING: AUTO TASK[0m
+[0;31mE (64673) mqtt_client: Client was not initialized[0m
+[0;32mI (64873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (64873) LIVING: AUTO TASK[0m
+[0;31mE (64873) mqtt_client: Client was not initialized[0m
+[0;31mE (64913) DHT11:: Failed at phase 2[0m
+[0;31mE (64953) DHT11:: Failed at phase 2[0m
+[0;31mE (64993) DHT11:: Failed at phase 2[0m
+[0;31mE (65033) DHT11:: Failed at phase 2[0m
+[0;31mE (65073) DHT11:: Failed at phase 2[0m
+[0;32mI (65073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (65073) LIVING: AUTO TASK[0m
+[0;31mE (65073) mqtt_client: Client was not initialized[0m
+[0;33mW (65093) LIVING: DHT11 fail![0m
+[0;32mI (65093) LIVING: Do sang: 12.76 lux[0m
+[0;32mI (65093) LIVING: Khi gas: 93.94 ppm[0m
+[0;32mI (65273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (65273) LIVING: AUTO TASK[0m
+[0;31mE (65273) mqtt_client: Client was not initialized[0m
+[0;32mI (65473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (65473) LIVING: AUTO TASK[0m
+[0;31mE (65473) mqtt_client: Client was not initialized[0m
+[0;32mI (65673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (65673) LIVING: AUTO TASK[0m
+[0;31mE (65673) mqtt_client: Client was not initialized[0m
+[0;32mI (65873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (65873) LIVING: AUTO TASK[0m
+[0;31mE (65873) mqtt_client: Client was not initialized[0m
+[0;32mI (66073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (66073) LIVING: AUTO TASK[0m
+[0;31mE (66073) mqtt_client: Client was not initialized[0m
+[0;31mE (66103) DHT11:: Failed at phase 2[0m
+[0;31mE (66143) DHT11:: Failed at phase 2[0m
+[0;31mE (66183) DHT11:: Failed at phase 2[0m
+[0;31mE (66223) DHT11:: Failed at phase 2[0m
+[0;31mE (66263) DHT11:: Failed at phase 2[0m
+[0;32mI (66273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (66273) LIVING: AUTO TASK[0m
+[0;31mE (66273) mqtt_client: Client was not initialized[0m
+[0;33mW (66283) LIVING: DHT11 fail![0m
+[0;32mI (66283) LIVING: Do sang: 12.76 lux[0m
+[0;32mI (66283) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (66293) mqtt_client: Client was not initialized[0m
+[0;32mI (66473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (66473) LIVING: AUTO TASK[0m
+[0;31mE (66473) mqtt_client: Client was not initialized[0m
+[0;32mI (66493) rc522: [0m
+[0;32mI (66493) rc522: ╔══════════════╗[0m
+[0;32mI (66493) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (66493) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (66503) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (66513) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (66513) rc522: ╚══════════════╝[0m
+[0;32mI (66523) rc522: [0m
+[0;32mI (66523) RFID: ACCESS GRANTED![0m
+[0;32mI (66523) DOOR: Door: OPEN[0m
+[0;31mE (66533) mqtt_client: Client was not initialized[0m
+[0;32mI (66673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (66673) LIVING: AUTO TASK[0m
+[0;31mE (66673) mqtt_client: Client was not initialized[0m
+[0;32mI (66873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (66873) LIVING: AUTO TASK[0m
+[0;31mE (66873) mqtt_client: Client was not initialized[0m
+[0;32mI (67073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (67073) LIVING: AUTO TASK[0m
+[0;31mE (67073) mqtt_client: Client was not initialized[0m
+[0;32mI (67273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (67273) LIVING: AUTO TASK[0m
+[0;31mE (67273) mqtt_client: Client was not initialized[0m
+[0;31mE (67303) DHT11:: Failed at phase 2[0m
+[0;31mE (67343) DHT11:: Failed at phase 2[0m
+[0;31mE (67383) DHT11:: Failed at phase 2[0m
+[0;31mE (67423) DHT11:: Failed at phase 2[0m
+[0;31mE (67463) DHT11:: Failed at phase 2[0m
+[0;32mI (67473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (67473) LIVING: AUTO TASK[0m
+[0;31mE (67473) mqtt_client: Client was not initialized[0m
+[0;33mW (67483) LIVING: DHT11 fail![0m
+[0;32mI (67483) LIVING: Do sang: 15.94 lux[0m
+[0;32mI (67483) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (67673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (67673) LIVING: AUTO TASK[0m
+[0;31mE (67673) mqtt_client: Client was not initialized[0m
+[0;32mI (67873) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (67873) LIVING: AUTO TASK[0m
+[0;31mE (67873) mqtt_client: Client was not initialized[0m
+[0;32mI (68073) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (68073) LIVING: AUTO TASK[0m
+[0;31mE (68073) mqtt_client: Client was not initialized[0m
+[0;32mI (68273) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (68273) LIVING: AUTO TASK[0m
+[0;31mE (68273) mqtt_client: Client was not initialized[0m
+[0;32mI (68473) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (68473) LIVING: AUTO TASK[0m
+[0;31mE (68473) mqtt_client: Client was not initialized[0m
+[0;31mE (68493) DHT11:: Failed at phase 2[0m
+[0;31mE (68533) DHT11:: Failed at phase 2[0m
+[0;31mE (68573) DHT11:: Failed at phase 2[0m
+[0;31mE (68613) DHT11:: Failed at phase 2[0m
+[0;31mE (68653) DHT11:: Failed at phase 2[0m
+[0;33mW (68673) LIVING: DHT11 fail![0m
+[0;32mI (68673) LIVING: Do sang: 9.61 lux[0m
+[0;32mI (68673) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (68673) LIVING: AUTO TASK[0m
+[0;32mI (68673) LIVING: Khi gas: 90.30 ppm[0m
+[0;31mE (68683) mqtt_client: Client was not initialized[0m
+[0;32mI (68883) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (68883) LIVING: AUTO TASK[0m
+[0;31mE (68883) mqtt_client: Client was not initialized[0m
+[0;32mI (69083) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (69083) LIVING: AUTO TASK[0m
+[0;31mE (69083) mqtt_client: Client was not initialized[0m
+[0;32mI (69283) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (69283) LIVING: AUTO TASK[0m
+[0;31mE (69283) mqtt_client: Client was not initialized[0m
+[0;32mI (69483) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (69483) LIVING: AUTO TASK[0m
+[0;31mE (69483) mqtt_client: Client was not initialized[0m
+[0;32mI (69683) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (69683) LIVING: AUTO TASK[0m
+[0;31mE (69683) mqtt_client: Client was not initialized[0m
+[0;31mE (69693) DHT11:: Failed at phase 2[0m
+[0;31mE (69733) DHT11:: Failed at phase 2[0m
+[0;31mE (69773) DHT11:: Failed at phase 2[0m
+[0;32mI (69793) RFID: Card removed[0m
+[0;32mI (69793) DOOR: Door: CLOSE[0m
+[0;31mE (69813) DHT11:: Failed at phase 2[0m
+[0;31mE (69853) DHT11:: Failed at phase 2[0m
+[0;33mW (69873) LIVING: DHT11 fail![0m
+[0;32mI (69873) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (69873) LIVING: Khi gas: 93.33 ppm[0m
+[0;32mI (69883) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (69883) LIVING: AUTO TASK[0m
+[0;31mE (69883) mqtt_client: Client was not initialized[0m
+[0;31mE (69883) mqtt_client: Client was not initialized[0m
+[0;32mI (70093) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (70093) LIVING: AUTO TASK[0m
+[0;31mE (70093) mqtt_client: Client was not initialized[0m
+[0;32mI (70293) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (70293) LIVING: AUTO TASK[0m
+[0;31mE (70293) mqtt_client: Client was not initialized[0m
+[0;32mI (70493) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (70493) LIVING: AUTO TASK[0m
+[0;31mE (70493) mqtt_client: Client was not initialized[0m
+[0;32mI (70693) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (70693) LIVING: AUTO TASK[0m
+[0;31mE (70693) mqtt_client: Client was not initialized[0m
+[0;31mE (70793) mqtt_client: Client was not initialized[0m
+[0;32mI (70893) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (70893) LIVING: AUTO TASK[0m
+[0;31mE (70893) DHT11:: Failed at phase 2[0m
+[0;31mE (70893) mqtt_client: Client was not initialized[0m
+[0;31mE (70933) DHT11:: Failed at phase 2[0m
+[0;31mE (70973) DHT11:: Failed at phase 2[0m
+[0;31mE (71013) DHT11:: Failed at phase 2[0m
+[0;31mE (71053) DHT11:: Failed at phase 2[0m
+[0;33mW (71073) LIVING: DHT11 fail![0m
+[0;32mI (71073) LIVING: Do sang: 9.70 lux[0m
+[0;32mI (71073) LIVING: Khi gas: 87.27 ppm[0m
+[0;31mE (71083) mqtt_client: Client was not initialized[0m
+[0;32mI (71103) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (71103) LIVING: AUTO TASK[0m
+[0;31mE (71103) mqtt_client: Client was not initialized[0m
+[0;32mI (71303) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (71303) LIVING: AUTO TASK[0m
+[0;31mE (71303) mqtt_client: Client was not initialized[0m
+[0;32mI (71503) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (71503) LIVING: AUTO TASK[0m
+[0;31mE (71503) mqtt_client: Client was not initialized[0m
+[0;32mI (71703) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (71703) LIVING: AUTO TASK[0m
+[0;31mE (71703) mqtt_client: Client was not initialized[0m
+[0;32mI (71903) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (71903) LIVING: AUTO TASK[0m
+[0;31mE (71903) mqtt_client: Client was not initialized[0m
+[0;31mE (72093) DHT11:: Failed at phase 2[0m
+[0;32mI (72103) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (72103) LIVING: AUTO TASK[0m
+[0;31mE (72103) mqtt_client: Client was not initialized[0m
+[0;31mE (72133) DHT11:: Failed at phase 2[0m
+[0;31mE (72173) DHT11:: Failed at phase 2[0m
+[0;31mE (72213) DHT11:: Failed at phase 2[0m
+[0;31mE (72253) DHT11:: Failed at phase 2[0m
+[0;33mW (72273) LIVING: DHT11 fail![0m
+[0;32mI (72273) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (72273) LIVING: Khi gas: 91.52 ppm[0m
+[0;32mI (72303) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (72303) LIVING: AUTO TASK[0m
+[0;31mE (72303) mqtt_client: Client was not initialized[0m
+[0;32mI (72503) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (72503) LIVING: AUTO TASK[0m
+[0;31mE (72503) mqtt_client: Client was not initialized[0m
+[0;32mI (72613) rc522: [0m
+[0;32mI (72613) rc522: ╔══════════════╗[0m
+[0;32mI (72623) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (72623) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (72623) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (72633) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (72643) rc522: ╚══════════════╝[0m
+[0;32mI (72643) rc522: [0m
+[0;32mI (72643) RFID: ACCESS GRANTED![0m
+[0;32mI (72653) DOOR: Door: OPEN[0m
+[0;31mE (72653) mqtt_client: Client was not initialized[0m
+[0;32mI (72703) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (72703) LIVING: AUTO TASK[0m
+[0;31mE (72703) mqtt_client: Client was not initialized[0m
+[0;32mI (72903) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (72903) LIVING: AUTO TASK[0m
+[0;31mE (72903) mqtt_client: Client was not initialized[0m
+[0;32mI (73103) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (73103) LIVING: AUTO TASK[0m
+[0;31mE (73103) mqtt_client: Client was not initialized[0m
+[0;31mE (73283) DHT11:: Failed at phase 2[0m
+[0;32mI (73303) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (73303) LIVING: AUTO TASK[0m
+[0;31mE (73303) mqtt_client: Client was not initialized[0m
+[0;31mE (73323) DHT11:: Failed at phase 2[0m
+[0;31mE (73363) DHT11:: Failed at phase 2[0m
+[0;31mE (73403) DHT11:: Failed at phase 2[0m
+[0;31mE (73443) DHT11:: Failed at phase 2[0m
+[0;33mW (73463) LIVING: DHT11 fail![0m
+[0;32mI (73463) LIVING: Do sang: 9.79 lux[0m
+[0;32mI (73463) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (73473) mqtt_client: Client was not initialized[0m
+[0;32mI (73503) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (73503) LIVING: AUTO TASK[0m
+[0;31mE (73503) mqtt_client: Client was not initialized[0m
+[0;32mI (73703) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (73703) LIVING: AUTO TASK[0m
+[0;31mE (73703) mqtt_client: Client was not initialized[0m
+[0;32mI (73903) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (73903) LIVING: AUTO TASK[0m
+[0;31mE (73903) mqtt_client: Client was not initialized[0m
+[0;32mI (74103) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (74103) LIVING: AUTO TASK[0m
+[0;31mE (74103) mqtt_client: Client was not initialized[0m
+[0;32mI (74303) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (74303) LIVING: AUTO TASK[0m
+[0;31mE (74303) mqtt_client: Client was not initialized[0m
+[0;31mE (74483) DHT11:: Failed at phase 2[0m
+[0;32mI (74503) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (74503) LIVING: AUTO TASK[0m
+[0;31mE (74503) mqtt_client: Client was not initialized[0m
+[0;31mE (74523) DHT11:: Failed at phase 2[0m
+[0;31mE (74563) DHT11:: Failed at phase 2[0m
+[0;31mE (74603) DHT11:: Failed at phase 2[0m
+[0;31mE (74643) DHT11:: Failed at phase 2[0m
+[0;33mW (74663) LIVING: DHT11 fail![0m
+[0;32mI (74663) LIVING: Do sang: 11.97 lux[0m
+[0;32mI (74663) LIVING: Khi gas: 92.12 ppm[0m
+[0;32mI (74703) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (74703) LIVING: AUTO TASK[0m
+[0;31mE (74703) mqtt_client: Client was not initialized[0m
+[0;32mI (74903) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (74903) LIVING: AUTO TASK[0m
+[0;31mE (74903) mqtt_client: Client was not initialized[0m
+[0;32mI (75103) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (75103) LIVING: AUTO TASK[0m
+[0;31mE (75103) mqtt_client: Client was not initialized[0m
+[0;32mI (75303) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (75303) LIVING: AUTO TASK[0m
+[0;31mE (75303) mqtt_client: Client was not initialized[0m
+[0;32mI (75503) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (75503) LIVING: AUTO TASK[0m
+[0;31mE (75503) mqtt_client: Client was not initialized[0m
+[0;31mE (75673) DHT11:: Failed at phase 2[0m
+[0;32mI (75693) RFID: Card removed[0m
+[0;32mI (75693) DOOR: Door: CLOSE[0m
+[0;32mI (75703) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (75703) LIVING: AUTO TASK[0m
+[0;31mE (75703) mqtt_client: Client was not initialized[0m
+[0;31mE (75713) DHT11:: Failed at phase 2[0m
+[0;31mE (75753) DHT11:: Failed at phase 2[0m
+[0;31mE (75793) DHT11:: Failed at phase 2[0m
+[0;31mE (75833) DHT11:: Failed at phase 2[0m
+[0;33mW (75853) LIVING: DHT11 fail![0m
+[0;32mI (75853) LIVING: Do sang: 4.24 lux[0m
+[0;31mE (75863) mqtt_client: Client was not initialized[0m
+[0;32mI (75863) LIVING: Khi gas: 90.91 ppm[0m
+[0;32mI (75903) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (75903) LIVING: AUTO TASK[0m
+[0;31mE (75903) mqtt_client: Client was not initialized[0m
+[0;32mI (76103) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (76103) LIVING: AUTO TASK[0m
+[0;31mE (76103) mqtt_client: Client was not initialized[0m
+[0;32mI (76303) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (76303) LIVING: AUTO TASK[0m
+[0;31mE (76303) mqtt_client: Client was not initialized[0m
+[0;32mI (76503) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (76503) LIVING: AUTO TASK[0m
+[0;31mE (76503) mqtt_client: Client was not initialized[0m
+[0;31mE (76693) mqtt_client: Client was not initialized[0m
+[0;32mI (76703) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (76703) LIVING: AUTO TASK[0m
+[0;31mE (76703) mqtt_client: Client was not initialized[0m
+[0;31mE (76873) DHT11:: Failed at phase 2[0m
+[0;32mI (76903) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (76903) LIVING: AUTO TASK[0m
+[0;31mE (76903) mqtt_client: Client was not initialized[0m
+[0;31mE (76913) DHT11:: Failed at phase 2[0m
+[0;31mE (76953) DHT11:: Failed at phase 2[0m
+[0;31mE (76993) DHT11:: Failed at phase 2[0m
+[0;31mE (77033) DHT11:: Failed at phase 2[0m
+[0;33mW (77053) LIVING: DHT11 fail![0m
+[0;32mI (77053) LIVING: Do sang: 13.61 lux[0m
+[0;32mI (77053) LIVING: Khi gas: 92.12 ppm[0m
+[0;32mI (77103) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (77103) LIVING: AUTO TASK[0m
+[0;31mE (77103) mqtt_client: Client was not initialized[0m
+[0;32mI (77303) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (77303) LIVING: AUTO TASK[0m
+[0;31mE (77303) mqtt_client: Client was not initialized[0m
+[0;32mI (77503) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (77503) LIVING: AUTO TASK[0m
+[0;31mE (77503) mqtt_client: Client was not initialized[0m
+[0;32mI (77703) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (77703) LIVING: AUTO TASK[0m
+[0;31mE (77703) mqtt_client: Client was not initialized[0m
+[0;32mI (77903) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (77903) LIVING: AUTO TASK[0m
+[0;31mE (77903) mqtt_client: Client was not initialized[0m
+[0;31mE (78063) DHT11:: Failed at phase 2[0m
+[0;32mI (78103) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (78103) LIVING: AUTO TASK[0m
+[0;31mE (78103) DHT11:: Failed at phase 2[0m
+[0;31mE (78103) mqtt_client: Client was not initialized[0m
+[0;31mE (78143) DHT11:: Failed at phase 2[0m
+[0;31mE (78183) DHT11:: Failed at phase 2[0m
+[0;31mE (78223) DHT11:: Failed at phase 2[0m
+[0;33mW (78243) LIVING: DHT11 fail![0m
+[0;32mI (78243) LIVING: Do sang: 9.42 lux[0m
+[0;32mI (78243) LIVING: Khi gas: 91.52 ppm[0m
+[0;32mI (78313) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (78313) LIVING: AUTO TASK[0m
+[0;31mE (78313) mqtt_client: Client was not initialized[0m
+[0;32mI (78513) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (78513) LIVING: AUTO TASK[0m
+[0;31mE (78513) mqtt_client: Client was not initialized[0m
+[0;32mI (78713) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (78713) LIVING: AUTO TASK[0m
+[0;31mE (78713) mqtt_client: Client was not initialized[0m
+[0;32mI (78913) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (78913) LIVING: AUTO TASK[0m
+[0;31mE (78913) mqtt_client: Client was not initialized[0m
+[0;32mI (79113) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (79113) LIVING: AUTO TASK[0m
+[0;31mE (79113) mqtt_client: Client was not initialized[0m
+[0;31mE (79253) DHT11:: Failed at phase 2[0m
+[0;31mE (79293) DHT11:: Failed at phase 2[0m
+[0;32mI (79313) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (79313) LIVING: AUTO TASK[0m
+[0;31mE (79313) mqtt_client: Client was not initialized[0m
+[0;31mE (79333) DHT11:: Failed at phase 2[0m
+[0;31mE (79373) DHT11:: Failed at phase 2[0m
+[0;31mE (79413) DHT11:: Failed at phase 2[0m
+[0;33mW (79433) LIVING: DHT11 fail![0m
+[0;32mI (79433) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (79433) LIVING: Khi gas: 92.12 ppm[0m
+[0;32mI (79513) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (79513) LIVING: AUTO TASK[0m
+[0;31mE (79513) mqtt_client: Client was not initialized[0m
+[0;32mI (79713) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (79713) LIVING: AUTO TASK[0m
+[0;31mE (79713) mqtt_client: Client was not initialized[0m
+[0;32mI (79913) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (79913) LIVING: AUTO TASK[0m
+[0;31mE (79913) mqtt_client: Client was not initialized[0m
+[0;32mI (80113) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (80113) LIVING: AUTO TASK[0m
+[0;31mE (80113) mqtt_client: Client was not initialized[0m
+[0;32mI (80313) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (80313) LIVING: AUTO TASK[0m
+[0;31mE (80313) mqtt_client: Client was not initialized[0m
+[0;31mE (80443) DHT11:: Failed at phase 2[0m
+[0;31mE (80483) DHT11:: Failed at phase 2[0m
+[0;32mI (80513) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (80513) LIVING: AUTO TASK[0m
+[0;31mE (80513) mqtt_client: Client was not initialized[0m
+[0;31mE (80523) DHT11:: Failed at phase 2[0m
+[0;31mE (80563) DHT11:: Failed at phase 2[0m
+[0;31mE (80603) DHT11:: Failed at phase 2[0m
+[0;33mW (80623) LIVING: DHT11 fail![0m
+[0;32mI (80623) LIVING: Do sang: 9.67 lux[0m
+[0;32mI (80623) LIVING: Khi gas: 90.30 ppm[0m
+[0;32mI (80713) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (80713) LIVING: AUTO TASK[0m
+[0;31mE (80713) mqtt_client: Client was not initialized[0m
+[0;32mI (80913) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (80913) LIVING: AUTO TASK[0m
+[0;31mE (80913) mqtt_client: Client was not initialized[0m
+[0;32mI (81113) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (81113) LIVING: AUTO TASK[0m
+[0;31mE (81113) mqtt_client: Client was not initialized[0m
+[0;32mI (81313) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (81313) LIVING: AUTO TASK[0m
+[0;31mE (81313) mqtt_client: Client was not initialized[0m
+[0;32mI (81513) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (81513) LIVING: AUTO TASK[0m
+[0;31mE (81513) mqtt_client: Client was not initialized[0m
+[0;31mE (81633) DHT11:: Failed at phase 2[0m
+[0;31mE (81673) DHT11:: Failed at phase 2[0m
+[0;31mE (81713) DHT11:: Failed at phase 2[0m
+[0;32mI (81713) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (81713) LIVING: AUTO TASK[0m
+[0;31mE (81713) mqtt_client: Client was not initialized[0m
+[0;31mE (81753) DHT11:: Failed at phase 2[0m
+[0;31mE (81793) DHT11:: Failed at phase 2[0m
+[0;33mW (81813) LIVING: DHT11 fail![0m
+[0;32mI (81813) LIVING: Do sang: 11.55 lux[0m
+[0;32mI (81813) LIVING: Khi gas: 90.30 ppm[0m
+[0;32mI (81923) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (81923) LIVING: AUTO TASK[0m
+[0;31mE (81923) mqtt_client: Client was not initialized[0m
+[0;32mI (82123) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (82123) LIVING: AUTO TASK[0m
+[0;31mE (82123) mqtt_client: Client was not initialized[0m
+[0;32mI (82323) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (82323) LIVING: AUTO TASK[0m
+[0;31mE (82323) mqtt_client: Client was not initialized[0m
+[0;32mI (82523) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (82523) LIVING: AUTO TASK[0m
+[0;31mE (82523) mqtt_client: Client was not initialized[0m
+[0;32mI (82723) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (82723) LIVING: AUTO TASK[0m
+[0;31mE (82723) mqtt_client: Client was not initialized[0m
+[0;31mE (82823) DHT11:: Failed at phase 2[0m
+[0;31mE (82863) DHT11:: Failed at phase 2[0m
+[0;31mE (82903) DHT11:: Failed at phase 2[0m
+[0;32mI (82923) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (82923) LIVING: AUTO TASK[0m
+[0;31mE (82923) mqtt_client: Client was not initialized[0m
+[0;31mE (82943) DHT11:: Failed at phase 2[0m
+[0;31mE (82983) DHT11:: Failed at phase 2[0m
+[0;33mW (83003) LIVING: DHT11 fail![0m
+[0;32mI (83003) LIVING: Do sang: 11.67 lux[0m
+[0;32mI (83003) LIVING: Khi gas: 88.48 ppm[0m
+[0;31mE (83013) mqtt_client: Client was not initialized[0m
+[0;32mI (83123) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (83123) LIVING: AUTO TASK[0m
+[0;31mE (83123) mqtt_client: Client was not initialized[0m
+[0;32mI (83323) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (83323) LIVING: AUTO TASK[0m
+[0;31mE (83323) mqtt_client: Client was not initialized[0m
+[0;32mI (83523) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (83523) LIVING: AUTO TASK[0m
+[0;31mE (83523) mqtt_client: Client was not initialized[0m
+[0;32mI (83723) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (83723) LIVING: AUTO TASK[0m
+[0;31mE (83723) mqtt_client: Client was not initialized[0m
+[0;32mI (83923) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (83923) LIVING: AUTO TASK[0m
+[0;31mE (83923) mqtt_client: Client was not initialized[0m
+[0;31mE (84023) DHT11:: Failed at phase 2[0m
+[0;31mE (84063) DHT11:: Failed at phase 2[0m
+[0;31mE (84103) DHT11:: Failed at phase 2[0m
+[0;32mI (84123) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (84123) LIVING: AUTO TASK[0m
+[0;31mE (84123) mqtt_client: Client was not initialized[0m
+[0;31mE (84143) DHT11:: Failed at phase 2[0m
+[0;31mE (84183) DHT11:: Failed at phase 2[0m
+[0;33mW (84203) LIVING: DHT11 fail![0m
+[0;32mI (84203) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (84203) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (84213) mqtt_client: Client was not initialized[0m
+[0;32mI (84323) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (84323) LIVING: AUTO TASK[0m
+[0;31mE (84323) mqtt_client: Client was not initialized[0m
+[0;32mI (84523) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (84523) LIVING: AUTO TASK[0m
+[0;31mE (84523) mqtt_client: Client was not initialized[0m
+[0;32mI (84723) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (84723) LIVING: AUTO TASK[0m
+[0;31mE (84723) mqtt_client: Client was not initialized[0m
+[0;32mI (84923) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (84923) LIVING: AUTO TASK[0m
+[0;31mE (84923) mqtt_client: Client was not initialized[0m
+[0;32mI (85123) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (85123) LIVING: AUTO TASK[0m
+[0;31mE (85123) mqtt_client: Client was not initialized[0m
+[0;31mE (85223) DHT11:: Failed at phase 2[0m
+[0;31mE (85263) DHT11:: Failed at phase 2[0m
+[0;31mE (85303) DHT11:: Failed at phase 2[0m
+[0;32mI (85323) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (85323) LIVING: AUTO TASK[0m
+[0;31mE (85323) mqtt_client: Client was not initialized[0m
+[0;31mE (85343) DHT11:: Failed at phase 2[0m
+[0;31mE (85383) DHT11:: Failed at phase 2[0m
+[0;33mW (85403) LIVING: DHT11 fail![0m
+[0;32mI (85403) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (85403) LIVING: Khi gas: 90.30 ppm[0m
+[0;32mI (85423) rc522: [0m
+[0;32mI (85433) rc522: ╔══════════════╗[0m
+[0;32mI (85433) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (85433) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (85433) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (85443) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (85453) rc522: ╚══════════════╝[0m
+[0;32mI (85453) rc522: [0m
+[0;32mI (85463) RFID: ACCESS GRANTED![0m
+[0;32mI (85463) DOOR: Door: OPEN[0m
+[0;31mE (85463) mqtt_client: Client was not initialized[0m
+[0;32mI (85523) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (85523) LIVING: AUTO TASK[0m
+[0;31mE (85523) mqtt_client: Client was not initialized[0m
+[0;32mI (85723) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (85723) LIVING: AUTO TASK[0m
+[0;31mE (85723) mqtt_client: Client was not initialized[0m
+[0;32mI (85923) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (85923) LIVING: AUTO TASK[0m
+[0;31mE (85923) mqtt_client: Client was not initialized[0m
+[0;32mI (86123) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (86123) LIVING: AUTO TASK[0m
+[0;31mE (86123) mqtt_client: Client was not initialized[0m
+[0;32mI (86323) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (86323) LIVING: AUTO TASK[0m
+[0;31mE (86323) mqtt_client: Client was not initialized[0m
+[0;31mE (86413) DHT11:: Failed at phase 2[0m
+[0;31mE (86453) DHT11:: Failed at phase 2[0m
+[0;31mE (86493) DHT11:: Failed at phase 2[0m
+[0;32mI (86523) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (86523) LIVING: AUTO TASK[0m
+[0;31mE (86523) mqtt_client: Client was not initialized[0m
+[0;31mE (86533) DHT11:: Failed at phase 2[0m
+[0;31mE (86573) DHT11:: Failed at phase 2[0m
+[0;33mW (86593) LIVING: DHT11 fail![0m
+[0;32mI (86593) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (86593) LIVING: Khi gas: 92.12 ppm[0m
+[0;32mI (86723) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (86723) LIVING: AUTO TASK[0m
+[0;31mE (86723) mqtt_client: Client was not initialized[0m
+[0;32mI (86923) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (86923) LIVING: AUTO TASK[0m
+[0;31mE (86923) mqtt_client: Client was not initialized[0m
+[0;32mI (87123) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (87123) LIVING: AUTO TASK[0m
+[0;31mE (87123) mqtt_client: Client was not initialized[0m
+[0;32mI (87323) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (87323) LIVING: AUTO TASK[0m
+[0;31mE (87323) mqtt_client: Client was not initialized[0m
+[0;32mI (87523) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (87523) LIVING: AUTO TASK[0m
+[0;31mE (87523) mqtt_client: Client was not initialized[0m
+[0;31mE (87603) DHT11:: Failed at phase 2[0m
+[0;31mE (87643) DHT11:: Failed at phase 2[0m
+[0;31mE (87683) DHT11:: Failed at phase 2[0m
+[0;31mE (87723) DHT11:: Failed at phase 2[0m
+[0;32mI (87723) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (87723) LIVING: AUTO TASK[0m
+[0;31mE (87723) mqtt_client: Client was not initialized[0m
+[0;31mE (87763) DHT11:: Failed at phase 2[0m
+[0;33mW (87783) LIVING: DHT11 fail![0m
+[0;32mI (87783) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (87783) LIVING: Khi gas: 90.91 ppm[0m
+[0;32mI (87933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (87933) LIVING: AUTO TASK[0m
+[0;31mE (87933) mqtt_client: Client was not initialized[0m
+[0;32mI (88133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (88133) LIVING: AUTO TASK[0m
+[0;31mE (88133) mqtt_client: Client was not initialized[0m
+[0;32mI (88263) RFID: Card removed[0m
+[0;32mI (88263) DOOR: Door: CLOSE[0m
+[0;32mI (88333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (88333) LIVING: AUTO TASK[0m
+[0;31mE (88333) mqtt_client: Client was not initialized[0m
+[0;32mI (88533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (88533) LIVING: AUTO TASK[0m
+[0;31mE (88533) mqtt_client: Client was not initialized[0m
+[0;32mI (88733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (88733) LIVING: AUTO TASK[0m
+[0;31mE (88733) mqtt_client: Client was not initialized[0m
+[0;31mE (88793) DHT11:: Failed at phase 2[0m
+[0;31mE (88833) DHT11:: Failed at phase 2[0m
+[0;31mE (88873) DHT11:: Failed at phase 2[0m
+[0;31mE (88913) DHT11:: Failed at phase 2[0m
+[0;32mI (88933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (88933) LIVING: AUTO TASK[0m
+[0;31mE (88933) mqtt_client: Client was not initialized[0m
+[0;31mE (88953) DHT11:: Failed at phase 2[0m
+[0;33mW (88973) LIVING: DHT11 fail![0m
+[0;32mI (88973) LIVING: Do sang: 11.45 lux[0m
+[0;32mI (88973) LIVING: Khi gas: 90.30 ppm[0m
+[0;32mI (89133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (89133) LIVING: AUTO TASK[0m
+[0;31mE (89133) mqtt_client: Client was not initialized[0m
+[0;31mE (89263) mqtt_client: Client was not initialized[0m
+[0;32mI (89333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (89333) LIVING: AUTO TASK[0m
+[0;31mE (89333) mqtt_client: Client was not initialized[0m
+[0;32mI (89533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (89533) LIVING: AUTO TASK[0m
+[0;31mE (89533) mqtt_client: Client was not initialized[0m
+[0;32mI (89733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (89733) LIVING: AUTO TASK[0m
+[0;31mE (89733) mqtt_client: Client was not initialized[0m
+[0;32mI (89933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (89933) LIVING: AUTO TASK[0m
+[0;31mE (89933) mqtt_client: Client was not initialized[0m
+[0;31mE (89983) DHT11:: Failed at phase 2[0m
+[0;31mE (90023) DHT11:: Failed at phase 2[0m
+[0;31mE (90063) DHT11:: Failed at phase 2[0m
+[0;31mE (90103) DHT11:: Failed at phase 2[0m
+[0;32mI (90133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (90133) LIVING: AUTO TASK[0m
+[0;31mE (90133) mqtt_client: Client was not initialized[0m
+[0;31mE (90143) DHT11:: Failed at phase 2[0m
+[0;33mW (90163) LIVING: DHT11 fail![0m
+[0;32mI (90163) LIVING: Do sang: 14.48 lux[0m
+[0;31mE (90173) mqtt_client: Client was not initialized[0m
+[0;32mI (90173) LIVING: Khi gas: 90.30 ppm[0m
+[0;32mI (90333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (90333) LIVING: AUTO TASK[0m
+[0;31mE (90333) mqtt_client: Client was not initialized[0m
+[0;32mI (90533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (90533) LIVING: AUTO TASK[0m
+[0;31mE (90533) mqtt_client: Client was not initialized[0m
+[0;32mI (90733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (90733) LIVING: AUTO TASK[0m
+[0;31mE (90733) mqtt_client: Client was not initialized[0m
+[0;32mI (90933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (90933) LIVING: AUTO TASK[0m
+[0;31mE (90933) mqtt_client: Client was not initialized[0m
+[0;32mI (91133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (91133) LIVING: AUTO TASK[0m
+[0;31mE (91133) mqtt_client: Client was not initialized[0m
+[0;31mE (91183) DHT11:: Failed at phase 2[0m
+[0;31mE (91223) DHT11:: Failed at phase 2[0m
+[0;31mE (91263) DHT11:: Failed at phase 2[0m
+[0;31mE (91303) DHT11:: Failed at phase 2[0m
+[0;32mI (91333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (91333) LIVING: AUTO TASK[0m
+[0;31mE (91333) mqtt_client: Client was not initialized[0m
+[0;31mE (91343) DHT11:: Failed at phase 2[0m
+[0;33mW (91363) LIVING: DHT11 fail![0m
+[0;32mI (91363) LIVING: Do sang: 10.00 lux[0m
+[0;32mI (91363) LIVING: Khi gas: 89.70 ppm[0m
+[0;32mI (91533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (91533) LIVING: AUTO TASK[0m
+[0;31mE (91533) mqtt_client: Client was not initialized[0m
+[0;32mI (91733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (91733) LIVING: AUTO TASK[0m
+[0;31mE (91733) mqtt_client: Client was not initialized[0m
+[0;32mI (91933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (91933) LIVING: AUTO TASK[0m
+[0;31mE (91933) mqtt_client: Client was not initialized[0m
+[0;32mI (92133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (92133) LIVING: AUTO TASK[0m
+[0;31mE (92133) mqtt_client: Client was not initialized[0m
+[0;32mI (92333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (92333) LIVING: AUTO TASK[0m
+[0;31mE (92333) mqtt_client: Client was not initialized[0m
+[0;31mE (92373) DHT11:: Failed at phase 2[0m
+[0;31mE (92413) DHT11:: Failed at phase 2[0m
+[0;31mE (92453) DHT11:: Failed at phase 2[0m
+[0;31mE (92493) DHT11:: Failed at phase 2[0m
+[0;32mI (92533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (92533) LIVING: AUTO TASK[0m
+[0;31mE (92533) DHT11:: Failed at phase 2[0m
+[0;31mE (92533) mqtt_client: Client was not initialized[0m
+[0;33mW (92553) LIVING: DHT11 fail![0m
+[0;32mI (92553) LIVING: Do sang: 12.18 lux[0m
+[0;32mI (92553) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (92563) mqtt_client: Client was not initialized[0m
+[0;32mI (92733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (92733) LIVING: AUTO TASK[0m
+[0;31mE (92733) mqtt_client: Client was not initialized[0m
+[0;32mI (92933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (92933) LIVING: AUTO TASK[0m
+[0;31mE (92933) mqtt_client: Client was not initialized[0m
+[0;32mI (93133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (93133) LIVING: AUTO TASK[0m
+[0;31mE (93133) mqtt_client: Client was not initialized[0m
+[0;32mI (93333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (93333) LIVING: AUTO TASK[0m
+[0;31mE (93333) mqtt_client: Client was not initialized[0m
+[0;32mI (93533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (93533) LIVING: AUTO TASK[0m
+[0;31mE (93533) mqtt_client: Client was not initialized[0m
+[0;31mE (93573) DHT11:: Failed at phase 2[0m
+[0;31mE (93613) DHT11:: Failed at phase 2[0m
+[0;31mE (93653) DHT11:: Failed at phase 2[0m
+[0;31mE (93693) DHT11:: Failed at phase 2[0m
+[0;31mE (93733) DHT11:: Failed at phase 2[0m
+[0;32mI (93733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (93733) LIVING: AUTO TASK[0m
+[0;31mE (93733) mqtt_client: Client was not initialized[0m
+[0;33mW (93753) LIVING: DHT11 fail![0m
+[0;32mI (93753) LIVING: Do sang: 12.18 lux[0m
+[0;32mI (93753) LIVING: Khi gas: 87.27 ppm[0m
+[0;32mI (93933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (93933) LIVING: AUTO TASK[0m
+[0;31mE (93933) mqtt_client: Client was not initialized[0m
+[0;32mI (94133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (94133) LIVING: AUTO TASK[0m
+[0;31mE (94133) mqtt_client: Client was not initialized[0m
+[0;32mI (94333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (94333) LIVING: AUTO TASK[0m
+[0;31mE (94333) mqtt_client: Client was not initialized[0m
+[0;32mI (94533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (94533) LIVING: AUTO TASK[0m
+[0;31mE (94533) mqtt_client: Client was not initialized[0m
+[0;32mI (94733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (94733) LIVING: AUTO TASK[0m
+[0;31mE (94733) mqtt_client: Client was not initialized[0m
+[0;31mE (94763) DHT11:: Failed at phase 2[0m
+[0;31mE (94803) DHT11:: Failed at phase 2[0m
+[0;31mE (94843) DHT11:: Failed at phase 2[0m
+[0;31mE (94883) DHT11:: Failed at phase 2[0m
+[0;31mE (94923) DHT11:: Failed at phase 2[0m
+[0;32mI (94933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (94933) LIVING: AUTO TASK[0m
+[0;31mE (94933) mqtt_client: Client was not initialized[0m
+[0;33mW (94943) LIVING: DHT11 fail![0m
+[0;32mI (94943) LIVING: Do sang: 13.45 lux[0m
+[0;32mI (94943) LIVING: Khi gas: 87.27 ppm[0m
+[0;32mI (95133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (95133) LIVING: AUTO TASK[0m
+[0;31mE (95133) mqtt_client: Client was not initialized[0m
+[0;32mI (95333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (95333) LIVING: AUTO TASK[0m
+[0;31mE (95333) mqtt_client: Client was not initialized[0m
+[0;32mI (95533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (95533) LIVING: AUTO TASK[0m
+[0;31mE (95533) mqtt_client: Client was not initialized[0m
+[0;32mI (95733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (95733) LIVING: AUTO TASK[0m
+[0;31mE (95733) mqtt_client: Client was not initialized[0m
+[0;32mI (95933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (95933) LIVING: AUTO TASK[0m
+[0;31mE (95933) mqtt_client: Client was not initialized[0m
+[0;31mE (95963) DHT11:: Failed at phase 2[0m
+[0;31mE (96003) DHT11:: Failed at phase 2[0m
+[0;31mE (96043) DHT11:: Failed at phase 2[0m
+[0;31mE (96083) DHT11:: Failed at phase 2[0m
+[0;31mE (96123) DHT11:: Failed at phase 2[0m
+[0;32mI (96133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (96133) LIVING: AUTO TASK[0m
+[0;31mE (96133) mqtt_client: Client was not initialized[0m
+[0;33mW (96143) LIVING: DHT11 fail![0m
+[0;32mI (96143) LIVING: Do sang: 15.55 lux[0m
+[0;32mI (96143) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (96333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (96333) LIVING: AUTO TASK[0m
+[0;31mE (96333) mqtt_client: Client was not initialized[0m
+[0;32mI (96533) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (96533) LIVING: AUTO TASK[0m
+[0;31mE (96533) mqtt_client: Client was not initialized[0m
+[0;32mI (96733) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (96733) LIVING: AUTO TASK[0m
+[0;31mE (96733) mqtt_client: Client was not initialized[0m
+[0;32mI (96933) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (96933) LIVING: AUTO TASK[0m
+[0;31mE (96933) mqtt_client: Client was not initialized[0m
+[0;32mI (97133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (97133) LIVING: AUTO TASK[0m
+[0;31mE (97133) mqtt_client: Client was not initialized[0m
+[0;31mE (97153) DHT11:: Failed at phase 2[0m
+[0;31mE (97193) DHT11:: Failed at phase 2[0m
+[0;31mE (97233) DHT11:: Failed at phase 2[0m
+[0;31mE (97273) DHT11:: Failed at phase 2[0m
+[0;31mE (97313) DHT11:: Failed at phase 2[0m
+[0;33mW (97333) LIVING: DHT11 fail![0m
+[0;32mI (97333) LIVING: Do sang: 12.58 lux[0m
+[0;32mI (97333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (97333) LIVING: AUTO TASK[0m
+[0;32mI (97333) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (97343) mqtt_client: Client was not initialized[0m
+[0;32mI (97543) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (97543) LIVING: AUTO TASK[0m
+[0;31mE (97543) mqtt_client: Client was not initialized[0m
+[0;32mI (97743) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (97743) LIVING: AUTO TASK[0m
+[0;31mE (97743) mqtt_client: Client was not initialized[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30a68h (199272) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=00040a90 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00040a9c vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00044394 vaddr=40080000 size=0bc84h ( 48260) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b4428h (738344) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=00104450 vaddr=4008bc84 size=0c62ch ( 50732) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (541) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  f7ae9bb2f78e9e8b...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (628) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;33mW (635) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (649) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (713) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) RFID: Initializing RC522...[0m
+[0;32mI (713) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (743) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (743) RFID: RC522 READY.[0m
+[0;31mE (763) DHT11:: Failed at phase 2[0m
+[0;31mE (793) DHT11:: Failed at phase 2[0m
+[0;31mE (833) DHT11:: Failed at phase 2[0m
+[0;31mE (863) DHT11:: Failed at phase 2[0m
+[0;31mE (893) DHT11:: Failed at phase 2[0m
+[0;33mW (913) LIVING: DHT11 fail![0m
+[0;32mI (913) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (923) LIVING: Current Mode in NVS: 0[0m
+[0;31mE (923) mqtt_client: Client was not initialized[0m
+[0;32mI (923) LIVING: AUTO TASK[0m
+[0;32mI (923) LIVING: Khi gas: 92.73 ppm[0m
+[0;31mE (923) mqtt_client: Client was not initialized[0m
+[0;31mE (933) mqtt_client: Client was not initialized[0m
+[0;32mI (933) wifi:wifi driver task: 3ffc601c, prio:23, stack:6656, core=0[0m
+[0;32mI (953) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (953) wifi:wifi certification version: v7.0[0m
+[0;32mI (953) wifi:config NVS flash: enabled[0m
+[0;32mI (953) wifi:config nano formating: disabled[0m
+[0;32mI (963) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (963) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (973) wifi:Init management short buffer num: 32[0m
+[0;32mI (973) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (983) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (983) wifi:Init static rx buffer num: 10[0m
+[0;32mI (983) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (993) wifi_init: rx ba win: 6[0m
+[0;32mI (993) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1003) wifi_init: udp mbox: 6[0m
+[0;32mI (1003) wifi_init: tcp mbox: 6[0m
+[0;32mI (1003) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1013) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1013) wifi_init: tcp mss: 1440[0m
+[0;32mI (1043) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1043) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1053) CONFIG_WIFI: Provisioned: false[0m
+[0;32mI (1063) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1133) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1133) LIVING: AUTO TASK[0m
+[0;31mE (1133) mqtt_client: Client was not initialized[0m
+[0;32mI (1173) wifi:mode : softAP (14:33:5c:52:d6:7d)[0m
+[0;32mI (1183) wifi:Total power save buffer number: 16[0m
+[0;32mI (1183) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1183) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1183) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1333) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1333) LIVING: AUTO TASK[0m
+[0;31mE (1333) mqtt_client: Client was not initialized[0m
+[0;32mI (1543) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1543) LIVING: AUTO TASK[0m
+[0;31mE (1543) mqtt_client: Client was not initialized[0m
+[0;32mI (1743) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1743) LIVING: AUTO TASK[0m
+[0;31mE (1743) mqtt_client: Client was not initialized[0m
+[0;32mI (1943) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1943) LIVING: AUTO TASK[0m
+[0;31mE (1943) DHT11:: Failed at phase 2[0m
+[0;31mE (1943) mqtt_client: Client was not initialized[0m
+[0;31mE (1983) DHT11:: Failed at phase 2[0m
+[0;31mE (2023) DHT11:: Failed at phase 2[0m
+[0;31mE (2063) DHT11:: Failed at phase 2[0m
+[0;31mE (2103) DHT11:: Failed at phase 2[0m
+[0;33mW (2123) LIVING: DHT11 fail![0m
+[0;32mI (2123) LIVING: Do sang: 9.67 lux[0m
+[0;32mI (2123) LIVING: Khi gas: 89.09 ppm[0m
+[0;32mI (2153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2153) LIVING: AUTO TASK[0m
+[0;31mE (2153) mqtt_client: Client was not initialized[0m
+[0;32mI (2353) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2353) LIVING: AUTO TASK[0m
+[0;31mE (2353) mqtt_client: Client was not initialized[0m
+[0;32mI (2553) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2553) LIVING: AUTO TASK[0m
+[0;31mE (2553) mqtt_client: Client was not initialized[0m
+[0;32mI (2753) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2753) LIVING: AUTO TASK[0m
+[0;31mE (2753) mqtt_client: Client was not initialized[0m
+[0;32mI (2953) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2953) LIVING: AUTO TASK[0m
+[0;31mE (2953) mqtt_client: Client was not initialized[0m
+[0;31mE (3133) DHT11:: Failed at phase 2[0m
+[0;32mI (3153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3153) LIVING: AUTO TASK[0m
+[0;31mE (3153) mqtt_client: Client was not initialized[0m
+[0;31mE (3173) DHT11:: Failed at phase 2[0m
+[0;32mI (3223) LIVING: Do am: 78.00 percent[0m
+[0;32mI (3223) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (3223) LIVING: Do sang: 10.09 lux[0m
+[0;32mI (3223) LIVING: Khi gas: 88.48 ppm[0m
+[0;32mI (3353) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3353) LIVING: AUTO TASK[0m
+[0;31mE (3353) mqtt_client: Client was not initialized[0m
+[0;32mI (3553) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3553) LIVING: AUTO TASK[0m
+[0;31mE (3553) mqtt_client: Client was not initialized[0m
+[0;32mI (3753) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3753) LIVING: AUTO TASK[0m
+[0;31mE (3753) mqtt_client: Client was not initialized[0m
+[0;32mI (3953) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3953) LIVING: AUTO TASK[0m
+[0;31mE (3953) mqtt_client: Client was not initialized[0m
+[0;32mI (4153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4153) LIVING: AUTO TASK[0m
+[0;31mE (4153) mqtt_client: Client was not initialized[0m
+[0;31mE (4233) DHT11:: Failed at phase 2[0m
+[0;31mE (4273) DHT11:: Failed at phase 2[0m
+[0;31mE (4313) DHT11:: Failed at phase 2[0m
+[0;31mE (4353) DHT11:: Failed at phase 2[0m
+[0;32mI (4353) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4353) LIVING: AUTO TASK[0m
+[0;31mE (4353) mqtt_client: Client was not initialized[0m
+[0;31mE (4393) DHT11:: Failed at phase 2[0m
+[0;33mW (4413) LIVING: DHT11 fail![0m
+[0;32mI (4413) LIVING: Do sang: 10.06 lux[0m
+[0;32mI (4413) LIVING: Khi gas: 87.27 ppm[0m
+[0;31mE (4423) mqtt_client: Client was not initialized[0m
+[0;32mI (4553) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4553) LIVING: AUTO TASK[0m
+[0;31mE (4553) mqtt_client: Client was not initialized[0m
+[0;32mI (4753) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4753) LIVING: AUTO TASK[0m
+[0;31mE (4753) mqtt_client: Client was not initialized[0m
+[0;32mI (4953) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4953) LIVING: AUTO TASK[0m
+[0;31mE (4953) mqtt_client: Client was not initialized[0m
+[0;32mI (5153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5153) LIVING: AUTO TASK[0m
+[0;31mE (5153) mqtt_client: Client was not initialized[0m
+[0;32mI (5353) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5353) LIVING: AUTO TASK[0m
+[0;31mE (5353) mqtt_client: Client was not initialized[0m
+[0;31mE (5433) DHT11:: Failed at phase 2[0m
+[0;31mE (5473) DHT11:: Failed at phase 2[0m
+[0;31mE (5513) DHT11:: Failed at phase 2[0m
+[0;32mI (5553) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5553) LIVING: AUTO TASK[0m
+[0;31mE (5553) DHT11:: Failed at phase 2[0m
+[0;31mE (5553) mqtt_client: Client was not initialized[0m
+[0;31mE (5593) DHT11:: Failed at phase 2[0m
+[0;33mW (5613) LIVING: DHT11 fail![0m
+[0;32mI (5613) LIVING: Do sang: 9.76 lux[0m
+[0;32mI (5613) LIVING: Khi gas: 87.27 ppm[0m
+[0;32mI (5753) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5753) LIVING: AUTO TASK[0m
+[0;31mE (5753) mqtt_client: Client was not initialized[0m
+[0;32mI (5953) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5953) LIVING: AUTO TASK[0m
+[0;31mE (5953) mqtt_client: Client was not initialized[0m
+[0;32mI (6153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6153) LIVING: AUTO TASK[0m
+[0;31mE (6153) mqtt_client: Client was not initialized[0m
+[0;32mI (6353) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6353) LIVING: AUTO TASK[0m
+[0;31mE (6353) mqtt_client: Client was not initialized[0m
+[0;32mI (6553) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6553) LIVING: AUTO TASK[0m
+[0;31mE (6553) mqtt_client: Client was not initialized[0m
+[0;31mE (6623) DHT11:: Failed at phase 2[0m
+[0;31mE (6663) DHT11:: Failed at phase 2[0m
+[0;32mI (6713) LIVING: Do am: 78.00 percent[0m
+[0;32mI (6713) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (6713) LIVING: Do sang: 11.88 lux[0m
+[0;32mI (6713) LIVING: Khi gas: 87.27 ppm[0m
+[0;32mI (6753) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6753) LIVING: AUTO TASK[0m
+[0;31mE (6753) mqtt_client: Client was not initialized[0m
+[0;32mI (6953) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6953) LIVING: AUTO TASK[0m
+[0;31mE (6953) mqtt_client: Client was not initialized[0m
+[0;32mI (7153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7153) LIVING: AUTO TASK[0m
+[0;31mE (7153) mqtt_client: Client was not initialized[0m
+[0;32mI (7353) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7353) LIVING: AUTO TASK[0m
+[0;31mE (7353) mqtt_client: Client was not initialized[0m
+[0;32mI (7553) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7553) LIVING: AUTO TASK[0m
+[0;31mE (7553) mqtt_client: Client was not initialized[0m
+[0;31mE (7723) DHT11:: Failed at phase 2[0m
+[0;32mI (7753) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7753) LIVING: AUTO TASK[0m
+[0;31mE (7753) mqtt_client: Client was not initialized[0m
+[0;31mE (7763) DHT11:: Failed at phase 2[0m
+[0;31mE (7803) DHT11:: Failed at phase 2[0m
+[0;31mE (7843) DHT11:: Failed at phase 2[0m
+[0;31mE (7883) DHT11:: Failed at phase 2[0m
+[0;33mW (7903) LIVING: DHT11 fail![0m
+[0;32mI (7903) LIVING: Do sang: 10.00 lux[0m
+[0;32mI (7903) LIVING: Khi gas: 86.67 ppm[0m
+[0;32mI (7953) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7953) LIVING: AUTO TASK[0m
+[0;31mE (7953) mqtt_client: Client was not initialized[0m
+[0;32mI (8153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8153) LIVING: AUTO TASK[0m
+[0;31mE (8153) mqtt_client: Client was not initialized[0m
+[0;32mI (8353) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8353) LIVING: AUTO TASK[0m
+[0;31mE (8353) mqtt_client: Client was not initialized[0m
+[0;32mI (8553) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8553) LIVING: AUTO TASK[0m
+[0;31mE (8553) mqtt_client: Client was not initialized[0m
+[0;32mI (8753) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8753) LIVING: AUTO TASK[0m
+[0;31mE (8753) mqtt_client: Client was not initialized[0m
+[0;31mE (8913) DHT11:: Failed at phase 2[0m
+[0;32mI (8953) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8953) LIVING: AUTO TASK[0m
+[0;31mE (8953) mqtt_client: Client was not initialized[0m
+[0;31mE (8953) DHT11:: Failed at phase 2[0m
+[0;31mE (8993) DHT11:: Failed at phase 2[0m
+[0;31mE (9033) DHT11:: Failed at phase 2[0m
+[0;31mE (9073) DHT11:: Failed at phase 2[0m
+[0;33mW (9093) LIVING: DHT11 fail![0m
+[0;32mI (9093) LIVING: Do sang: 15.06 lux[0m
+[0;31mE (9103) mqtt_client: Client was not initialized[0m
+[0;32mI (9103) LIVING: Khi gas: 87.27 ppm[0m
+[0;32mI (9153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9153) LIVING: AUTO TASK[0m
+[0;31mE (9153) mqtt_client: Client was not initialized[0m
+[0;32mI (9353) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9353) LIVING: AUTO TASK[0m
+[0;31mE (9353) mqtt_client: Client was not initialized[0m
+[0;32mI (9553) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9553) LIVING: AUTO TASK[0m
+[0;31mE (9553) mqtt_client: Client was not initialized[0m
+[0;32mI (9753) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9753) LIVING: AUTO TASK[0m
+[0;31mE (9753) mqtt_client: Client was not initialized[0m
+[0;32mI (9953) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9953) LIVING: AUTO TASK[0m
+[0;31mE (9953) mqtt_client: Client was not initialized[0m
+[0;31mE (10113) DHT11:: Failed at phase 2[0m
+[0;32mI (10153) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10153) LIVING: AUTO TASK[0m
+[0;31mE (10153) DHT11:: Failed at phase 2[0m
+[0;31mE (10153) mqtt_client: Client was not initialized[0m
+[0;31mE (10193) DHT11:: Failed at phase 2[0m
+[0;31mE (10233) DHT11:: Failed at phase 2[0m
+[0;31mE (10273) DHT11:: Failed at phase 2[0m
+[0;33mW (10293) LIVING: DHT11 fail![0m
+[0;32mI (10293) LIVING: Do sang: 15.33 lux[0m
+[0;32mI (10293) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (10363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10363) LIVING: AUTO TASK[0m
+[0;31mE (10363) mqtt_client: Client was not initialized[0m
+[0;32mI (10563) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10563) LIVING: AUTO TASK[0m
+[0;31mE (10563) mqtt_client: Client was not initialized[0m
+[0;32mI (10763) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10763) LIVING: AUTO TASK[0m
+[0;31mE (10763) mqtt_client: Client was not initialized[0m
+[0;32mI (10963) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10963) LIVING: AUTO TASK[0m
+[0;31mE (10963) mqtt_client: Client was not initialized[0m
+[0;32mI (11163) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11163) LIVING: AUTO TASK[0m
+[0;31mE (11163) mqtt_client: Client was not initialized[0m
+[0;31mE (11303) DHT11:: Failed at phase 2[0m
+[0;31mE (11343) DHT11:: Failed at phase 2[0m
+[0;32mI (11363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11363) LIVING: AUTO TASK[0m
+[0;31mE (11363) mqtt_client: Client was not initialized[0m
+[0;32mI (11393) LIVING: Do am: 78.00 percent[0m
+[0;32mI (11393) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (11393) LIVING: Do sang: 12.55 lux[0m
+[0;32mI (11393) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (11563) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11563) LIVING: AUTO TASK[0m
+[0;31mE (11563) mqtt_client: Client was not initialized[0m
+[0;32mI (11763) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11763) LIVING: AUTO TASK[0m
+[0;31mE (11763) mqtt_client: Client was not initialized[0m
+[0;32mI (11963) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11963) LIVING: AUTO TASK[0m
+[0;31mE (11963) mqtt_client: Client was not initialized[0m
+[0;32mI (12163) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12163) LIVING: AUTO TASK[0m
+[0;31mE (12163) mqtt_client: Client was not initialized[0m
+[0;32mI (12363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12363) LIVING: AUTO TASK[0m
+[0;31mE (12363) mqtt_client: Client was not initialized[0m
+[0;31mE (12403) DHT11:: Failed at phase 2[0m
+[0;31mE (12443) DHT11:: Failed at phase 2[0m
+[0;31mE (12483) DHT11:: Failed at phase 2[0m
+[0;31mE (12523) DHT11:: Failed at phase 2[0m
+[0;31mE (12563) DHT11:: Failed at phase 2[0m
+[0;32mI (12563) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12563) LIVING: AUTO TASK[0m
+[0;31mE (12563) mqtt_client: Client was not initialized[0m
+[0;33mW (12583) LIVING: DHT11 fail![0m
+[0;32mI (12583) LIVING: Do sang: 12.85 lux[0m
+[0;32mI (12583) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (12763) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12763) LIVING: AUTO TASK[0m
+[0;31mE (12763) mqtt_client: Client was not initialized[0m
+[0;32mI (12963) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12963) LIVING: AUTO TASK[0m
+[0;31mE (12963) mqtt_client: Client was not initialized[0m
+[0;32mI (13163) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13163) LIVING: AUTO TASK[0m
+[0;31mE (13163) mqtt_client: Client was not initialized[0m
+[0;32mI (13363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13363) LIVING: AUTO TASK[0m
+[0;31mE (13363) mqtt_client: Client was not initialized[0m
+[0;32mI (13503) rc522: [0m
+[0;32mI (13503) rc522: ╔══════════════╗[0m
+[0;32mI (13503) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (13503) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (13513) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (13523) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (13523) rc522: ╚══════════════╝[0m
+[0;32mI (13533) rc522: [0m
+[0;32mI (13533) RFID: ACCESS GRANTED![0m
+[0;32mI (13533) DOOR: Door: OPEN[0m
+[0;31mE (13543) mqtt_client: Client was not initialized[0m
+[0;32mI (13563) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13563) LIVING: AUTO TASK[0m
+[0;31mE (13563) mqtt_client: Client was not initialized[0m
+[0;31mE (13593) DHT11:: Failed at phase 2[0m
+[0;31mE (13633) DHT11:: Failed at phase 2[0m
+[0;31mE (13673) DHT11:: Failed at phase 2[0m
+[0;31mE (13713) DHT11:: Failed at phase 2[0m
+[0;31mE (13753) DHT11:: Failed at phase 2[0m
+[0;32mI (13763) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13763) LIVING: AUTO TASK[0m
+[0;31mE (13763) mqtt_client: Client was not initialized[0m
+[0;33mW (13773) LIVING: DHT11 fail![0m
+[0;32mI (13773) LIVING: Do sang: 16.09 lux[0m
+[0;32mI (13773) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (13963) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13963) LIVING: AUTO TASK[0m
+[0;31mE (13963) mqtt_client: Client was not initialized[0m
+[0;32mI (14163) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14163) LIVING: AUTO TASK[0m
+[0;31mE (14163) mqtt_client: Client was not initialized[0m
+[0;32mI (14363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14363) LIVING: AUTO TASK[0m
+[0;31mE (14363) mqtt_client: Client was not initialized[0m
+[0;32mI (14563) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14563) LIVING: AUTO TASK[0m
+[0;31mE (14563) mqtt_client: Client was not initialized[0m
+[0;32mI (14763) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14763) LIVING: AUTO TASK[0m
+[0;31mE (14763) mqtt_client: Client was not initialized[0m
+[0;31mE (14783) DHT11:: Failed at phase 2[0m
+[0;31mE (14823) DHT11:: Failed at phase 2[0m
+[0;32mI (14873) LIVING: Do am: 78.00 percent[0m
+[0;32mI (14873) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (14873) LIVING: Do sang: 14.64 lux[0m
+[0;32mI (14873) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (14963) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14963) LIVING: AUTO TASK[0m
+[0;31mE (14963) mqtt_client: Client was not initialized[0m
+[0;32mI (15163) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15163) LIVING: AUTO TASK[0m
+[0;31mE (15163) mqtt_client: Client was not initialized[0m
+[0;32mI (15363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15363) LIVING: AUTO TASK[0m
+[0;31mE (15363) mqtt_client: Client was not initialized[0m
+[0;32mI (15563) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15563) LIVING: AUTO TASK[0m
+[0;31mE (15563) mqtt_client: Client was not initialized[0m
+[0;32mI (15763) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15763) LIVING: AUTO TASK[0m
+[0;31mE (15763) mqtt_client: Client was not initialized[0m
+[0;31mE (15883) DHT11:: Failed at phase 2[0m
+[0;31mE (15923) DHT11:: Failed at phase 2[0m
+[0;32mI (15963) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15963) LIVING: AUTO TASK[0m
+[0;31mE (15963) mqtt_client: Client was not initialized[0m
+[0;31mE (15963) DHT11:: Failed at phase 2[0m
+[0;31mE (16003) DHT11:: Failed at phase 2[0m
+[0;31mE (16043) DHT11:: Failed at phase 2[0m
+[0;33mW (16063) LIVING: DHT11 fail![0m
+[0;32mI (16063) LIVING: Do sang: 12.21 lux[0m
+[0;32mI (16063) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (16163) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16163) LIVING: AUTO TASK[0m
+[0;31mE (16163) mqtt_client: Client was not initialized[0m
+[0;32mI (16363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16363) LIVING: AUTO TASK[0m
+[0;31mE (16363) mqtt_client: Client was not initialized[0m
+[0;32mI (16393) RFID: Card removed[0m
+[0;32mI (16393) DOOR: Door: CLOSE[0m
+[0;32mI (16563) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16563) LIVING: AUTO TASK[0m
+[0;31mE (16563) mqtt_client: Client was not initialized[0m
+[0;32mI (16763) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16763) LIVING: AUTO TASK[0m
+[0;31mE (16763) mqtt_client: Client was not initialized[0m
+[0;32mI (16963) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16963) LIVING: AUTO TASK[0m
+[0;31mE (16963) mqtt_client: Client was not initialized[0m
+[0;31mE (17073) DHT11:: Failed at phase 2[0m
+[0;31mE (17113) DHT11:: Failed at phase 2[0m
+[0;31mE (17153) DHT11:: Failed at phase 2[0m
+[0;32mI (17163) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17163) LIVING: AUTO TASK[0m
+[0;31mE (17163) mqtt_client: Client was not initialized[0m
+[0;31mE (17193) DHT11:: Failed at phase 2[0m
+[0;31mE (17233) DHT11:: Failed at phase 2[0m
+[0;33mW (17253) LIVING: DHT11 fail![0m
+[0;32mI (17253) LIVING: Do sang: 13.21 lux[0m
+[0;32mI (17253) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (17363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17363) LIVING: AUTO TASK[0m
+[0;31mE (17363) mqtt_client: Client was not initialized[0m
+[0;31mE (17393) mqtt_client: Client was not initialized[0m
+[0;32mI (17563) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17563) LIVING: AUTO TASK[0m
+[0;31mE (17563) mqtt_client: Client was not initialized[0m
+[0;32mI (17763) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17763) LIVING: AUTO TASK[0m
+[0;31mE (17763) mqtt_client: Client was not initialized[0m
+[0;32mI (17963) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17963) LIVING: AUTO TASK[0m
+[0;31mE (17963) mqtt_client: Client was not initialized[0m
+[0;32mI (18043) rc522: [0m
+[0;32mI (18043) rc522: ╔══════════════╗[0m
+[0;32mI (18043) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (18043) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (18053) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (18063) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (18063) rc522: ╚══════════════╝[0m
+[0;32mI (18073) rc522: [0m
+[0;32mI (18073) RFID: ACCESS GRANTED![0m
+[0;32mI (18073) DOOR: Door: OPEN[0m
+[0;31mE (18083) mqtt_client: Client was not initialized[0m
+[0;32mI (18163) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18163) LIVING: AUTO TASK[0m
+[0;31mE (18163) mqtt_client: Client was not initialized[0m
+[0;31mE (18263) DHT11:: Failed at phase 2[0m
+[0;31mE (18303) DHT11:: Failed at phase 2[0m
+[0;31mE (18343) DHT11:: Wrong checksum[0m
+[0;33mW (18343) LIVING: DHT11 fail![0m
+[0;32mI (18353) LIVING: Do sang: 13.03 lux[0m
+[0;32mI (18353) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (18363) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18363) LIVING: AUTO TASK[0m
+[0;31mE (18363) mqtt_client: Client was not initialized[0m
+[0;32mI (18573) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18573) LIVING: AUTO TASK[0m
+[0;31mE (18573) mqtt_client: Client was not initialized[0m
+[0;32mI (18773) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18773) LIVING: AUTO TASK[0m
+[0;31mE (18773) mqtt_client: Client was not initialized[0m
+[0;32mI (18973) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18973) LIVING: AUTO TASK[0m
+[0;31mE (18973) mqtt_client: Client was not initialized[0m
+[0;32mI (19173) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19173) LIVING: AUTO TASK[0m
+[0;31mE (19173) mqtt_client: Client was not initialized[0m
+[0;32mI (19243) RFID: Card removed[0m
+[0;32mI (19243) DOOR: Door: CLOSE[0m
+[0;31mE (19363) DHT11:: Failed at phase 2[0m
+[0;32mI (19373) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19373) LIVING: AUTO TASK[0m
+[0;31mE (19373) mqtt_client: Client was not initialized[0m
+[0;32mI (19413) LIVING: Do am: 78.00 percent[0m
+[0;32mI (19413) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (19413) LIVING: Do sang: 13.24 lux[0m
+[0;32mI (19413) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (19573) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19573) LIVING: AUTO TASK[0m
+[0;31mE (19573) mqtt_client: Client was not initialized[0m
+[0;32mI (19773) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19773) LIVING: AUTO TASK[0m
+[0;31mE (19773) mqtt_client: Client was not initialized[0m
+[0;32mI (19973) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19973) LIVING: AUTO TASK[0m
+[0;31mE (19973) mqtt_client: Client was not initialized[0m
+[0;32mI (20173) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20173) LIVING: AUTO TASK[0m
+[0;31mE (20173) mqtt_client: Client was not initialized[0m
+[0;31mE (20243) mqtt_client: Client was not initialized[0m
+[0;32mI (20373) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20373) LIVING: AUTO TASK[0m
+[0;31mE (20373) mqtt_client: Client was not initialized[0m
+[0;31mE (20423) DHT11:: Failed at phase 2[0m
+[0;31mE (20463) DHT11:: Failed at phase 2[0m
+[0;31mE (20503) DHT11:: Failed at phase 2[0m
+[0;31mE (20543) DHT11:: Failed at phase 2[0m
+[0;32mI (20573) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20573) LIVING: AUTO TASK[0m
+[0;31mE (20573) mqtt_client: Client was not initialized[0m
+[0;31mE (20583) DHT11:: Failed at phase 2[0m
+[0;33mW (20603) LIVING: DHT11 fail![0m
+[0;32mI (20603) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (20603) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (20773) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20773) LIVING: AUTO TASK[0m
+[0;31mE (20773) mqtt_client: Client was not initialized[0m
+[0;32mI (20973) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20973) LIVING: AUTO TASK[0m
+[0;31mE (20973) mqtt_client: Client was not initialized[0m
+[0;32mI (21113) rc522: [0m
+[0;32mI (21113) rc522: ╔══════════════╗[0m
+[0;32mI (21123) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (21123) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (21123) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (21133) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (21143) rc522: ╚══════════════╝[0m
+[0;32mI (21143) rc522: [0m
+[0;32mI (21143) RFID: ACCESS GRANTED![0m
+[0;32mI (21153) DOOR: Door: OPEN[0m
+[0;31mE (21153) mqtt_client: Client was not initialized[0m
+[0;32mI (21173) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21173) LIVING: AUTO TASK[0m
+[0;31mE (21173) mqtt_client: Client was not initialized[0m
+[0;32mI (21373) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21373) LIVING: AUTO TASK[0m
+[0;31mE (21373) mqtt_client: Client was not initialized[0m
+[0;32mI (21573) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21573) LIVING: AUTO TASK[0m
+[0;31mE (21573) mqtt_client: Client was not initialized[0m
+[0;31mE (21613) DHT11:: Failed at phase 2[0m
+[0;31mE (21653) DHT11:: Failed at phase 2[0m
+[0;31mE (21693) DHT11:: Failed at phase 2[0m
+[0;31mE (21733) DHT11:: Failed at phase 2[0m
+[0;32mI (21773) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21773) LIVING: AUTO TASK[0m
+[0;31mE (21773) DHT11:: Failed at phase 2[0m
+[0;31mE (21773) mqtt_client: Client was not initialized[0m
+[0;33mW (21793) LIVING: DHT11 fail![0m
+[0;32mI (21793) LIVING: Do sang: 16.79 lux[0m
+[0;32mI (21793) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (21973) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21973) LIVING: AUTO TASK[0m
+[0;31mE (21973) mqtt_client: Client was not initialized[0m
+[0;32mI (22173) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22173) LIVING: AUTO TASK[0m
+[0;31mE (22173) mqtt_client: Client was not initialized[0m
+[0;32mI (22373) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22373) LIVING: AUTO TASK[0m
+[0;31mE (22373) mqtt_client: Client was not initialized[0m
+[0;32mI (22563) RFID: Card removed[0m
+[0;32mI (22563) DOOR: Door: CLOSE[0m
+[0;32mI (22573) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22573) LIVING: AUTO TASK[0m
+[0;31mE (22573) mqtt_client: Client was not initialized[0m
+[0;32mI (22773) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22773) LIVING: AUTO TASK[0m
+[0;31mE (22773) mqtt_client: Client was not initialized[0m
+[0;31mE (22803) DHT11:: Failed at phase 2[0m
+[0;31mE (22843) DHT11:: Failed at phase 2[0m
+[0;31mE (22883) DHT11:: Failed at phase 2[0m
+[0;31mE (22923) DHT11:: Failed at phase 2[0m
+[0;31mE (22963) DHT11:: Failed at phase 2[0m
+[0;32mI (22973) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22973) LIVING: AUTO TASK[0m
+[0;31mE (22973) mqtt_client: Client was not initialized[0m
+[0;33mW (22983) LIVING: DHT11 fail![0m
+[0;32mI (22983) LIVING: Do sang: 15.64 lux[0m
+[0;32mI (22983) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (23173) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23173) LIVING: AUTO TASK[0m
+[0;31mE (23173) mqtt_client: Client was not initialized[0m
+[0;32mI (23373) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23373) LIVING: AUTO TASK[0m
+[0;31mE (23373) mqtt_client: Client was not initialized[0m
+[0;31mE (23563) mqtt_client: Client was not initialized[0m
+[0;32mI (23573) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23573) LIVING: AUTO TASK[0m
+[0;31mE (23573) mqtt_client: Client was not initialized[0m
+[0;32mI (23773) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23773) LIVING: AUTO TASK[0m
+[0;31mE (23773) mqtt_client: Client was not initialized[0m
+[0;32mI (23973) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23973) LIVING: AUTO TASK[0m
+[0;31mE (23973) mqtt_client: Client was not initialized[0m
+[0;31mE (24003) DHT11:: Failed at phase 2[0m
+[0;31mE (24043) DHT11:: Failed at phase 2[0m
+[0;32mI (24093) LIVING: Do am: 78.00 percent[0m
+[0;32mI (24093) LIVING: Nhiet do: 29.20 C[0m
+[0;32mI (24093) LIVING: Do sang: 14.97 lux[0m
+[0;32mI (24093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (24173) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24173) LIVING: AUTO TASK[0m
+[0;31mE (24173) mqtt_client: Client was not initialized[0m
+[0;32mI (24373) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24373) LIVING: AUTO TASK[0m
+[0;31mE (24373) mqtt_client: Client was not initialized[0m
+[0;32mI (24573) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24573) LIVING: AUTO TASK[0m
+[0;31mE (24573) mqtt_client: Client was not initialized[0m
+[0;32mI (24773) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24773) LIVING: AUTO TASK[0m
+[0;31mE (24773) mqtt_client: Client was not initialized[0m
+[0;32mI (24973) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24973) LIVING: AUTO TASK[0m
+[0;31mE (24973) mqtt_client: Client was not initialized[0m
+[0;31mE (25103) DHT11:: Failed at phase 2[0m
+[0;31mE (25143) DHT11:: Failed at phase 2[0m
+[0;32mI (25173) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25173) LIVING: AUTO TASK[0m
+[0;31mE (25173) mqtt_client: Client was not initialized[0m
+[0;31mE (25183) DHT11:: Failed at phase 2[0m
+[0;31mE (25223) DHT11:: Failed at phase 2[0m
+[0;31mE (25263) DHT11:: Failed at phase 2[0m
+[0;33mW (25283) LIVING: DHT11 fail![0m
+[0;32mI (25283) LIVING: Do sang: 12.33 lux[0m
+[0;32mI (25283) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (25373) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25373) LIVING: AUTO TASK[0m
+[0;31mE (25373) mqtt_client: Client was not initialized[0m
+[0;32mI (25573) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25573) LIVING: AUTO TASK[0m
+[0;31mE (25573) mqtt_client: Client was not initialized[0m
+[0;32mI (25773) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25773) LIVING: AUTO TASK[0m
+[0;31mE (25773) mqtt_client: Client was not initialized[0m
+[0;32mI (25973) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25973) LIVING: AUTO TASK[0m
+[0;31mE (25973) mqtt_client: Client was not initialized[0m
+[0;32mI (26173) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26173) LIVING: AUTO TASK[0m
+[0;31mE (26173) mqtt_client: Client was not initialized[0m
+[0;31mE (26293) DHT11:: Failed at phase 2[0m
+[0;31mE (26333) DHT11:: Failed at phase 2[0m
+[0;32mI (26373) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26373) LIVING: AUTO TASK[0m
+[0;31mE (26373) DHT11:: Failed at phase 2[0m
+[0;31mE (26373) mqtt_client: Client was not initialized[0m
+[0;31mE (26413) DHT11:: Failed at phase 2[0m
+[0;31mE (26453) DHT11:: Failed at phase 2[0m
+[0;33mW (26473) LIVING: DHT11 fail![0m
+[0;32mI (26473) LIVING: Do sang: 14.73 lux[0m
+[0;32mI (26473) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (26583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26583) LIVING: AUTO TASK[0m
+[0;31mE (26583) mqtt_client: Client was not initialized[0m
+[0;32mI (26783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26783) LIVING: AUTO TASK[0m
+[0;31mE (26783) mqtt_client: Client was not initialized[0m
+[0;32mI (26983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26983) LIVING: AUTO TASK[0m
+[0;31mE (26983) mqtt_client: Client was not initialized[0m
+[0;32mI (27183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27183) LIVING: AUTO TASK[0m
+[0;31mE (27183) mqtt_client: Client was not initialized[0m
+[0;32mI (27383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27383) LIVING: AUTO TASK[0m
+[0;31mE (27383) mqtt_client: Client was not initialized[0m
+[0;31mE (27483) DHT11:: Failed at phase 2[0m
+[0;31mE (27523) DHT11:: Failed at phase 2[0m
+[0;31mE (27563) DHT11:: Failed at phase 2[0m
+[0;32mI (27583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27583) LIVING: AUTO TASK[0m
+[0;31mE (27583) mqtt_client: Client was not initialized[0m
+[0;31mE (27603) DHT11:: Failed at phase 2[0m
+[0;31mE (27643) DHT11:: Failed at phase 2[0m
+[0;33mW (27663) LIVING: DHT11 fail![0m
+[0;32mI (27663) LIVING: Do sang: 15.67 lux[0m
+[0;32mI (27663) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (27783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27783) LIVING: AUTO TASK[0m
+[0;31mE (27783) mqtt_client: Client was not initialized[0m
+[0;32mI (27983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27983) LIVING: AUTO TASK[0m
+[0;31mE (27983) mqtt_client: Client was not initialized[0m
+[0;32mI (28183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28183) LIVING: AUTO TASK[0m
+[0;31mE (28183) mqtt_client: Client was not initialized[0m
+[0;32mI (28383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28383) LIVING: AUTO TASK[0m
+[0;31mE (28383) mqtt_client: Client was not initialized[0m
+[0;32mI (28583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28583) LIVING: AUTO TASK[0m
+[0;31mE (28583) mqtt_client: Client was not initialized[0m
+[0;31mE (28673) DHT11:: Failed at phase 2[0m
+[0;31mE (28713) DHT11:: Failed at phase 2[0m
+[0;31mE (28753) DHT11:: Failed at phase 2[0m
+[0;32mI (28783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28783) LIVING: AUTO TASK[0m
+[0;31mE (28783) mqtt_client: Client was not initialized[0m
+[0;31mE (28793) DHT11:: Failed at phase 2[0m
+[0;31mE (28833) DHT11:: Failed at phase 2[0m
+[0;33mW (28853) LIVING: DHT11 fail![0m
+[0;32mI (28853) LIVING: Do sang: 13.30 lux[0m
+[0;32mI (28853) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (28983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28983) LIVING: AUTO TASK[0m
+[0;31mE (28983) mqtt_client: Client was not initialized[0m
+[0;32mI (29183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29183) LIVING: AUTO TASK[0m
+[0;31mE (29183) mqtt_client: Client was not initialized[0m
+[0;32mI (29383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29383) LIVING: AUTO TASK[0m
+[0;31mE (29383) mqtt_client: Client was not initialized[0m
+[0;32mI (29583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29583) LIVING: AUTO TASK[0m
+[0;31mE (29583) mqtt_client: Client was not initialized[0m
+[0;32mI (29783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29783) LIVING: AUTO TASK[0m
+[0;31mE (29783) mqtt_client: Client was not initialized[0m
+[0;31mE (29863) DHT11:: Failed at phase 2[0m
+[0;31mE (29903) DHT11:: Failed at phase 2[0m
+[0;31mE (29943) DHT11:: Failed at phase 2[0m
+[0;32mI (29983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29983) LIVING: AUTO TASK[0m
+[0;31mE (29983) DHT11:: Failed at phase 2[0m
+[0;31mE (29983) mqtt_client: Client was not initialized[0m
+[0;31mE (30023) DHT11:: Failed at phase 2[0m
+[0;33mW (30043) LIVING: DHT11 fail![0m
+[0;32mI (30043) LIVING: Do sang: 11.73 lux[0m
+[0;32mI (30043) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (30183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30183) LIVING: AUTO TASK[0m
+[0;31mE (30183) mqtt_client: Client was not initialized[0m
+[0;32mI (30383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30383) LIVING: AUTO TASK[0m
+[0;31mE (30383) mqtt_client: Client was not initialized[0m
+[0;32mI (30583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30583) LIVING: AUTO TASK[0m
+[0;31mE (30583) mqtt_client: Client was not initialized[0m
+[0;32mI (30783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30783) LIVING: AUTO TASK[0m
+[0;31mE (30783) mqtt_client: Client was not initialized[0m
+[0;32mI (30983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30983) LIVING: AUTO TASK[0m
+[0;31mE (30983) mqtt_client: Client was not initialized[0m
+[0;31mE (31053) DHT11:: Failed at phase 2[0m
+[0;31mE (31093) DHT11:: Failed at phase 2[0m
+[0;31mE (31133) DHT11:: Failed at phase 2[0m
+[0;31mE (31173) DHT11:: Failed at phase 2[0m
+[0;32mI (31183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31183) LIVING: AUTO TASK[0m
+[0;31mE (31183) mqtt_client: Client was not initialized[0m
+[0;31mE (31213) DHT11:: Failed at phase 2[0m
+[0;33mW (31233) LIVING: DHT11 fail![0m
+[0;32mI (31233) LIVING: Do sang: 15.61 lux[0m
+[0;32mI (31233) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (31383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31383) LIVING: AUTO TASK[0m
+[0;31mE (31383) mqtt_client: Client was not initialized[0m
+[0;32mI (31583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31583) LIVING: AUTO TASK[0m
+[0;31mE (31583) mqtt_client: Client was not initialized[0m
+[0;32mI (31783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31783) LIVING: AUTO TASK[0m
+[0;31mE (31783) mqtt_client: Client was not initialized[0m
+[0;32mI (31983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31983) LIVING: AUTO TASK[0m
+[0;31mE (31983) mqtt_client: Client was not initialized[0m
+[0;32mI (32183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32183) LIVING: AUTO TASK[0m
+[0;31mE (32183) mqtt_client: Client was not initialized[0m
+[0;32mI (32193) rc522: [0m
+[0;32mI (32193) rc522: ╔══════════════╗[0m
+[0;32mI (32193) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (32203) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (32203) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (32213) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (32213) rc522: ╚══════════════╝[0m
+[0;32mI (32223) rc522: [0m
+[0;32mI (32223) RFID: ACCESS GRANTED![0m
+[0;32mI (32233) DOOR: Door: OPEN[0m
+[0;31mE (32233) mqtt_client: Client was not initialized[0m
+[0;31mE (32243) DHT11:: Failed at phase 2[0m
+[0;31mE (32283) DHT11:: Failed at phase 2[0m
+[0;31mE (32323) DHT11:: Failed at phase 2[0m
+[0;31mE (32363) DHT11:: Failed at phase 2[0m
+[0;32mI (32383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32383) LIVING: AUTO TASK[0m
+[0;31mE (32383) mqtt_client: Client was not initialized[0m
+[0;31mE (32403) DHT11:: Failed at phase 2[0m
+[0;33mW (32423) LIVING: DHT11 fail![0m
+[0;32mI (32423) LIVING: Do sang: 15.94 lux[0m
+[0;32mI (32423) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (32583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32583) LIVING: AUTO TASK[0m
+[0;31mE (32583) mqtt_client: Client was not initialized[0m
+[0;32mI (32783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32783) LIVING: AUTO TASK[0m
+[0;31mE (32783) mqtt_client: Client was not initialized[0m
+[0;32mI (32983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32983) LIVING: AUTO TASK[0m
+[0;31mE (32983) mqtt_client: Client was not initialized[0m
+[0;32mI (33183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33183) LIVING: AUTO TASK[0m
+[0;31mE (33183) mqtt_client: Client was not initialized[0m
+[0;32mI (33263) RFID: Card removed[0m
+[0;32mI (33263) DOOR: Door: CLOSE[0m
+[0;32mI (33383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33383) LIVING: AUTO TASK[0m
+[0;31mE (33383) mqtt_client: Client was not initialized[0m
+[0;31mE (33433) DHT11:: Failed at phase 2[0m
+[0;31mE (33473) DHT11:: Failed at phase 2[0m
+[0;31mE (33513) DHT11:: Failed at phase 2[0m
+[0;31mE (33553) DHT11:: Failed at phase 2[0m
+[0;32mI (33583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33583) LIVING: AUTO TASK[0m
+[0;31mE (33583) mqtt_client: Client was not initialized[0m
+[0;31mE (33593) DHT11:: Failed at phase 2[0m
+[0;33mW (33613) LIVING: DHT11 fail![0m
+[0;32mI (33613) LIVING: Do sang: 13.64 lux[0m
+[0;32mI (33613) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (33783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33783) LIVING: AUTO TASK[0m
+[0;31mE (33783) mqtt_client: Client was not initialized[0m
+[0;32mI (33983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33983) LIVING: AUTO TASK[0m
+[0;31mE (33983) mqtt_client: Client was not initialized[0m
+[0;32mI (34183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34183) LIVING: AUTO TASK[0m
+[0;31mE (34183) mqtt_client: Client was not initialized[0m
+[0;31mE (34263) mqtt_client: Client was not initialized[0m
+[0;32mI (34313) rc522: [0m
+[0;32mI (34323) rc522: ╔══════════════╗[0m
+[0;32mI (34323) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (34323) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (34323) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (34333) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (34343) rc522: ╚══════════════╝[0m
+[0;32mI (34343) rc522: [0m
+[0;32mI (34353) RFID: ACCESS GRANTED![0m
+[0;32mI (34353) DOOR: Door: OPEN[0m
+[0;31mE (34353) mqtt_client: Client was not initialized[0m
+[0;32mI (34383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34383) LIVING: AUTO TASK[0m
+[0;31mE (34383) mqtt_client: Client was not initialized[0m
+[0;32mI (34583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34583) LIVING: AUTO TASK[0m
+[0;31mE (34583) mqtt_client: Client was not initialized[0m
+[0;31mE (34623) DHT11:: Failed at phase 2[0m
+[0;31mE (34663) DHT11:: Failed at phase 2[0m
+[0;31mE (34703) DHT11:: Failed at phase 2[0m
+[0;31mE (34743) DHT11:: Failed at phase 2[0m
+[0;32mI (34783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34783) LIVING: AUTO TASK[0m
+[0;31mE (34783) DHT11:: Failed at phase 2[0m
+[0;31mE (34783) mqtt_client: Client was not initialized[0m
+[0;33mW (34803) LIVING: DHT11 fail![0m
+[0;32mI (34803) LIVING: Do sang: 15.27 lux[0m
+[0;32mI (34803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (34983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34983) LIVING: AUTO TASK[0m
+[0;31mE (34983) mqtt_client: Client was not initialized[0m
+[0;32mI (35183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35183) LIVING: AUTO TASK[0m
+[0;31mE (35183) mqtt_client: Client was not initialized[0m
+[0;32mI (35223) RFID: Card removed[0m
+[0;32mI (35223) DOOR: Door: CLOSE[0m
+[0;32mI (35383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35383) LIVING: AUTO TASK[0m
+[0;31mE (35383) mqtt_client: Client was not initialized[0m
+[0;32mI (35583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35583) LIVING: AUTO TASK[0m
+[0;31mE (35583) mqtt_client: Client was not initialized[0m
+[0;32mI (35783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35783) LIVING: AUTO TASK[0m
+[0;31mE (35783) mqtt_client: Client was not initialized[0m
+[0;31mE (35813) DHT11:: Failed at phase 2[0m
+[0;31mE (35853) DHT11:: Failed at phase 2[0m
+[0;31mE (35893) DHT11:: Failed at phase 2[0m
+[0;31mE (35933) DHT11:: Failed at phase 2[0m
+[0;31mE (35973) DHT11:: Failed at phase 2[0m
+[0;32mI (35983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35983) LIVING: AUTO TASK[0m
+[0;31mE (35983) mqtt_client: Client was not initialized[0m
+[0;33mW (35993) LIVING: DHT11 fail![0m
+[0;32mI (35993) LIVING: Do sang: 11.97 lux[0m
+[0;32mI (35993) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (36183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36183) LIVING: AUTO TASK[0m
+[0;31mE (36183) mqtt_client: Client was not initialized[0m
+[0;31mE (36223) mqtt_client: Client was not initialized[0m
+[0;32mI (36383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36383) LIVING: AUTO TASK[0m
+[0;31mE (36383) mqtt_client: Client was not initialized[0m
+[0;32mI (36583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36583) LIVING: AUTO TASK[0m
+[0;31mE (36583) mqtt_client: Client was not initialized[0m
+[0;32mI (36783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36783) LIVING: AUTO TASK[0m
+[0;31mE (36783) mqtt_client: Client was not initialized[0m
+[0;32mI (36983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36983) LIVING: AUTO TASK[0m
+[0;31mE (36983) mqtt_client: Client was not initialized[0m
+[0;31mE (37013) DHT11:: Failed at phase 2[0m
+[0;31mE (37053) DHT11:: Failed at phase 2[0m
+[0;31mE (37093) DHT11:: Failed at phase 2[0m
+[0;31mE (37133) DHT11:: Failed at phase 2[0m
+[0;31mE (37173) DHT11:: Failed at phase 2[0m
+[0;32mI (37183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37183) LIVING: AUTO TASK[0m
+[0;31mE (37183) mqtt_client: Client was not initialized[0m
+[0;33mW (37193) LIVING: DHT11 fail![0m
+[0;32mI (37193) LIVING: Do sang: 13.61 lux[0m
+[0;32mI (37193) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (37383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37383) LIVING: AUTO TASK[0m
+[0;31mE (37383) mqtt_client: Client was not initialized[0m
+[0;32mI (37583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37583) LIVING: AUTO TASK[0m
+[0;31mE (37583) mqtt_client: Client was not initialized[0m
+[0;32mI (37783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37783) LIVING: AUTO TASK[0m
+[0;31mE (37783) mqtt_client: Client was not initialized[0m
+[0;32mI (37983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37983) LIVING: AUTO TASK[0m
+[0;31mE (37983) mqtt_client: Client was not initialized[0m
+[0;32mI (38183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38183) LIVING: AUTO TASK[0m
+[0;31mE (38183) mqtt_client: Client was not initialized[0m
+[0;31mE (38213) DHT11:: Failed at phase 2[0m
+[0;31mE (38253) DHT11:: Failed at phase 2[0m
+[0;31mE (38293) DHT11:: Failed at phase 2[0m
+[0;31mE (38333) DHT11:: Failed at phase 2[0m
+[0;31mE (38373) DHT11:: Failed at phase 2[0m
+[0;32mI (38383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38383) LIVING: AUTO TASK[0m
+[0;31mE (38383) mqtt_client: Client was not initialized[0m
+[0;33mW (38393) LIVING: DHT11 fail![0m
+[0;32mI (38393) LIVING: Do sang: 13.61 lux[0m
+[0;32mI (38393) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (38583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38583) LIVING: AUTO TASK[0m
+[0;31mE (38583) mqtt_client: Client was not initialized[0m
+[0;32mI (38783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38783) LIVING: AUTO TASK[0m
+[0;31mE (38783) mqtt_client: Client was not initialized[0m
+[0;32mI (38983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38983) LIVING: AUTO TASK[0m
+[0;31mE (38983) mqtt_client: Client was not initialized[0m
+[0;32mI (39183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39183) LIVING: AUTO TASK[0m
+[0;31mE (39183) mqtt_client: Client was not initialized[0m
+[0;32mI (39383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39383) LIVING: AUTO TASK[0m
+[0;31mE (39383) mqtt_client: Client was not initialized[0m
+[0;31mE (39413) DHT11:: Failed at phase 2[0m
+[0;31mE (39453) DHT11:: Failed at phase 2[0m
+[0;31mE (39493) DHT11:: Failed at phase 2[0m
+[0;31mE (39533) DHT11:: Failed at phase 2[0m
+[0;31mE (39573) DHT11:: Failed at phase 2[0m
+[0;32mI (39583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39583) LIVING: AUTO TASK[0m
+[0;31mE (39583) mqtt_client: Client was not initialized[0m
+[0;33mW (39593) LIVING: DHT11 fail![0m
+[0;32mI (39593) LIVING: Do sang: 13.73 lux[0m
+[0;32mI (39593) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (39783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39783) LIVING: AUTO TASK[0m
+[0;31mE (39783) mqtt_client: Client was not initialized[0m
+[0;32mI (39983) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39983) LIVING: AUTO TASK[0m
+[0;31mE (39983) mqtt_client: Client was not initialized[0m
+[0;32mI (40183) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40183) LIVING: AUTO TASK[0m
+[0;31mE (40183) mqtt_client: Client was not initialized[0m
+[0;32mI (40383) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40383) LIVING: AUTO TASK[0m
+[0;31mE (40383) mqtt_client: Client was not initialized[0m
+[0;32mI (40583) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40583) LIVING: AUTO TASK[0m
+[0;31mE (40583) mqtt_client: Client was not initialized[0m
+[0;31mE (40603) DHT11:: Failed at phase 2[0m
+[0;31mE (40643) DHT11:: Failed at phase 2[0m
+[0;31mE (40683) DHT11:: Failed at phase 2[0m
+[0;31mE (40723) DHT11:: Failed at phase 2[0m
+[0;31mE (40763) DHT11:: Failed at phase 2[0m
+[0;33mW (40783) LIVING: DHT11 fail![0m
+[0;32mI (40783) LIVING: Do sang: 12.85 lux[0m
+[0;32mI (40783) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40783) LIVING: AUTO TASK[0m
+[0;32mI (40783) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (40793) mqtt_client: Client was not initialized[0m
+[0;32mI (40993) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40993) LIVING: AUTO TASK[0m
+[0;31mE (40993) mqtt_client: Client was not initialized[0m
+[0;32mI (41193) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41193) LIVING: AUTO TASK[0m
+[0;31mE (41193) mqtt_client: Client was not initialized[0m
+[0;32mI (41393) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41393) LIVING: AUTO TASK[0m
+[0;31mE (41393) mqtt_client: Client was not initialized[0m
+[0;32mI (41593) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41593) LIVING: AUTO TASK[0m
+[0;31mE (41593) mqtt_client: Client was not initialized[0m
+[0;32mI (41793) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41793) LIVING: AUTO TASK[0m
+[0;31mE (41793) mqtt_client: Client was not initialized[0m
+[0;31mE (41803) DHT11:: Failed at phase 2[0m
+[0;31mE (41843) DHT11:: Failed at phase 2[0m
+[0;31mE (41883) DHT11:: Failed at phase 2[0m
+[0;31mE (41923) DHT11:: Failed at phase 2[0m
+[0;31mE (41963) DHT11:: Failed at phase 2[0m
+[0;33mW (41983) LIVING: DHT11 fail![0m
+[0;32mI (41983) LIVING: Do sang: 13.27 lux[0m
+[0;32mI (41983) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (41993) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41993) LIVING: AUTO TASK[0m
+[0;31mE (41993) mqtt_client: Client was not initialized[0m
+[0;32mI (42193) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42193) LIVING: AUTO TASK[0m
+[0;31mE (42193) mqtt_client: Client was not initialized[0m
+[0;32mI (42393) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42393) LIVING: AUTO TASK[0m
+[0;31mE (42393) mqtt_client: Client was not initialized[0m
+[0;32mI (42593) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42593) LIVING: AUTO TASK[0m
+[0;31mE (42593) mqtt_client: Client was not initialized[0m
+[0;32mI (42793) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42793) LIVING: AUTO TASK[0m
+[0;31mE (42793) mqtt_client: Client was not initialized[0m
+[0;32mI (42993) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42993) LIVING: AUTO TASK[0m
+[0;31mE (42993) DHT11:: Failed at phase 2[0m
+[0;31mE (42993) mqtt_client: Client was not initialized[0m
+[0;31mE (43033) DHT11:: Failed at phase 2[0m
+[0;31mE (43073) DHT11:: Failed at phase 2[0m
+[0;31mE (43113) DHT11:: Failed at phase 2[0m
+[0;31mE (43153) DHT11:: Failed at phase 2[0m
+[0;33mW (43173) LIVING: DHT11 fail![0m
+[0;32mI (43173) LIVING: Do sang: 13.09 lux[0m
+[0;32mI (43173) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (43203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43203) LIVING: AUTO TASK[0m
+[0;31mE (43203) mqtt_client: Client was not initialized[0m
+[0;32mI (43403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43403) LIVING: AUTO TASK[0m
+[0;31mE (43403) mqtt_client: Client was not initialized[0m
+[0;32mI (43603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43603) LIVING: AUTO TASK[0m
+[0;31mE (43603) mqtt_client: Client was not initialized[0m
+[0;32mI (43803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43803) LIVING: AUTO TASK[0m
+[0;31mE (43803) mqtt_client: Client was not initialized[0m
+[0;32mI (44003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44003) LIVING: AUTO TASK[0m
+[0;31mE (44003) mqtt_client: Client was not initialized[0m
+[0;31mE (44183) DHT11:: Failed at phase 2[0m
+[0;32mI (44203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44203) LIVING: AUTO TASK[0m
+[0;31mE (44203) mqtt_client: Client was not initialized[0m
+[0;31mE (44223) DHT11:: Failed at phase 2[0m
+[0;31mE (44263) DHT11:: Failed at phase 2[0m
+[0;31mE (44303) DHT11:: Failed at phase 2[0m
+[0;31mE (44343) DHT11:: Failed at phase 2[0m
+[0;33mW (44363) LIVING: DHT11 fail![0m
+[0;32mI (44363) LIVING: Do sang: 13.06 lux[0m
+[0;32mI (44363) LIVING: Khi gas: 87.88 ppm[0m
+[0;32mI (44403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44403) LIVING: AUTO TASK[0m
+[0;31mE (44403) mqtt_client: Client was not initialized[0m
+[0;32mI (44603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44603) LIVING: AUTO TASK[0m
+[0;31mE (44603) mqtt_client: Client was not initialized[0m
+[0;32mI (44803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44803) LIVING: AUTO TASK[0m
+[0;31mE (44803) mqtt_client: Client was not initialized[0m
+[0;32mI (45003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45003) LIVING: AUTO TASK[0m
+[0;31mE (45003) mqtt_client: Client was not initialized[0m
+[0;32mI (45203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45203) LIVING: AUTO TASK[0m
+[0;31mE (45203) mqtt_client: Client was not initialized[0m
+[0;31mE (45373) DHT11:: Failed at phase 2[0m
+[0;32mI (45403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45403) LIVING: AUTO TASK[0m
+[0;31mE (45403) mqtt_client: Client was not initialized[0m
+[0;31mE (45413) DHT11:: Failed at phase 2[0m
+[0;31mE (45453) DHT11:: Failed at phase 2[0m
+[0;31mE (45493) DHT11:: Failed at phase 2[0m
+[0;31mE (45533) DHT11:: Failed at phase 2[0m
+[0;33mW (45553) LIVING: DHT11 fail![0m
+[0;32mI (45553) LIVING: Do sang: 13.97 lux[0m
+[0;32mI (45553) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (45603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45603) LIVING: AUTO TASK[0m
+[0;31mE (45603) mqtt_client: Client was not initialized[0m
+[0;32mI (45803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45803) LIVING: AUTO TASK[0m
+[0;31mE (45803) mqtt_client: Client was not initialized[0m
+[0;32mI (46003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46003) LIVING: AUTO TASK[0m
+[0;31mE (46003) mqtt_client: Client was not initialized[0m
+[0;32mI (46203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46203) LIVING: AUTO TASK[0m
+[0;31mE (46203) mqtt_client: Client was not initialized[0m
+[0;32mI (46403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46403) LIVING: AUTO TASK[0m
+[0;31mE (46403) mqtt_client: Client was not initialized[0m
+[0;31mE (46563) DHT11:: Failed at phase 2[0m
+[0;32mI (46603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46603) LIVING: AUTO TASK[0m
+[0;31mE (46603) DHT11:: Failed at phase 2[0m
+[0;31mE (46603) mqtt_client: Client was not initialized[0m
+[0;31mE (46643) DHT11:: Failed at phase 2[0m
+[0;31mE (46683) DHT11:: Failed at phase 2[0m
+[0;31mE (46723) DHT11:: Failed at phase 2[0m
+[0;33mW (46743) LIVING: DHT11 fail![0m
+[0;32mI (46743) LIVING: Do sang: 12.73 lux[0m
+[0;32mI (46743) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (46813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46813) LIVING: AUTO TASK[0m
+[0;31mE (46813) mqtt_client: Client was not initialized[0m
+[0;32mI (47013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47013) LIVING: AUTO TASK[0m
+[0;31mE (47013) mqtt_client: Client was not initialized[0m
+[0;32mI (47213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47213) LIVING: AUTO TASK[0m
+[0;31mE (47213) mqtt_client: Client was not initialized[0m
+[0;32mI (47413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47413) LIVING: AUTO TASK[0m
+[0;31mE (47413) mqtt_client: Client was not initialized[0m
+[0;32mI (47613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47613) LIVING: AUTO TASK[0m
+[0;31mE (47613) mqtt_client: Client was not initialized[0m
+[0;31mE (47753) DHT11:: Failed at phase 2[0m
+[0;31mE (47793) DHT11:: Failed at phase 2[0m
+[0;32mI (47813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47813) LIVING: AUTO TASK[0m
+[0;31mE (47813) mqtt_client: Client was not initialized[0m
+[0;31mE (47833) DHT11:: Failed at phase 2[0m
+[0;31mE (47873) DHT11:: Failed at phase 2[0m
+[0;31mE (47913) DHT11:: Failed at phase 2[0m
+[0;33mW (47933) LIVING: DHT11 fail![0m
+[0;32mI (47933) LIVING: Do sang: 16.45 lux[0m
+[0;32mI (47933) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (48013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48013) LIVING: AUTO TASK[0m
+[0;31mE (48013) mqtt_client: Client was not initialized[0m
+[0;32mI (48213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48213) LIVING: AUTO TASK[0m
+[0;31mE (48213) mqtt_client: Client was not initialized[0m
+[0;32mI (48413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48413) LIVING: AUTO TASK[0m
+[0;31mE (48413) mqtt_client: Client was not initialized[0m
+[0;32mI (48613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48613) LIVING: AUTO TASK[0m
+[0;31mE (48613) mqtt_client: Client was not initialized[0m
+[0;32mI (48813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48813) LIVING: AUTO TASK[0m
+[0;31mE (48813) mqtt_client: Client was not initialized[0m
+[0;31mE (48943) DHT11:: Failed at phase 2[0m
+[0;31mE (48983) DHT11:: Failed at phase 2[0m
+[0;32mI (49013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49013) LIVING: AUTO TASK[0m
+[0;31mE (49013) mqtt_client: Client was not initialized[0m
+[0;31mE (49023) DHT11:: Failed at phase 2[0m
+[0;31mE (49063) DHT11:: Failed at phase 2[0m
+[0;31mE (49103) DHT11:: Failed at phase 2[0m
+[0;33mW (49123) LIVING: DHT11 fail![0m
+[0;32mI (49123) LIVING: Do sang: 16.09 lux[0m
+[0;32mI (49123) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (49213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49213) LIVING: AUTO TASK[0m
+[0;31mE (49213) mqtt_client: Client was not initialized[0m
+[0;32mI (49413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49413) LIVING: AUTO TASK[0m
+[0;31mE (49413) mqtt_client: Client was not initialized[0m
+[0;32mI (49613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49613) LIVING: AUTO TASK[0m
+[0;31mE (49613) mqtt_client: Client was not initialized[0m
+[0;32mI (49813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49813) LIVING: AUTO TASK[0m
+[0;31mE (49813) mqtt_client: Client was not initialized[0m
+[0;32mI (50013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50013) LIVING: AUTO TASK[0m
+[0;31mE (50013) mqtt_client: Client was not initialized[0m
+[0;31mE (50133) DHT11:: Failed at phase 2[0m
+[0;31mE (50173) DHT11:: Failed at phase 2[0m
+[0;32mI (50213) LIVING: Current Mode in NVS: 0[0m
+[0;31mE (50213) DHT11:: Failed at phase 2[0m
+[0;32mI (50213) LIVING: AUTO TASK[0m
+[0;31mE (50213) mqtt_client: Client was not initialized[0m
+[0;31mE (50253) DHT11:: Failed at phase 2[0m
+[0;31mE (50293) DHT11:: Failed at phase 2[0m
+[0;33mW (50313) LIVING: DHT11 fail![0m
+[0;32mI (50313) LIVING: Do sang: 15.45 lux[0m
+[0;32mI (50313) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (50423) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50423) LIVING: AUTO TASK[0m
+[0;31mE (50423) mqtt_client: Client was not initialized[0m
+[0;32mI (50623) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50623) LIVING: AUTO TASK[0m
+[0;31mE (50623) mqtt_client: Client was not initialized[0m
+[0;32mI (50823) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50823) LIVING: AUTO TASK[0m
+[0;31mE (50823) mqtt_client: Client was not initialized[0m
+[0;32mI (51023) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51023) LIVING: AUTO TASK[0m
+[0;31mE (51023) mqtt_client: Client was not initialized[0m
+[0;32mI (51223) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51223) LIVING: AUTO TASK[0m
+[0;31mE (51223) mqtt_client: Client was not initialized[0m
+[0;31mE (51323) DHT11:: Failed at phase 2[0m
+[0;31mE (51363) DHT11:: Failed at phase 2[0m
+[0;31mE (51403) DHT11:: Failed at phase 2[0m
+[0;32mI (51423) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51423) LIVING: AUTO TASK[0m
+[0;31mE (51423) mqtt_client: Client was not initialized[0m
+[0;31mE (51443) DHT11:: Failed at phase 2[0m
+[0;31mE (51483) DHT11:: Failed at phase 2[0m
+[0;33mW (51503) LIVING: DHT11 fail![0m
+[0;32mI (51503) LIVING: Do sang: 15.39 lux[0m
+[0;32mI (51503) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (51623) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51623) LIVING: AUTO TASK[0m
+[0;31mE (51623) mqtt_client: Client was not initialized[0m
+[0;32mI (51823) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51823) LIVING: AUTO TASK[0m
+[0;31mE (51823) mqtt_client: Client was not initialized[0m

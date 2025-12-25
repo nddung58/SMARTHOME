@@ -1,0 +1,767 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30958h (199000) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=00040980 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=0004098c vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00044284 vaddr=40080000 size=0bd94h ( 48532) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b43dch (738268) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=00104404 vaddr=4008bd94 size=0c51ch ( 50460) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (540) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  cb26686e16c368d2...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (723) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (723) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (733) RFID: Initializing RC522...[0m
+[0;32mI (733) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (763) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (763) RFID: RC522 READY.[0m
+[0;32mI (763) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (783) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (873) LIVING: DHT11 fail![0m
+[0;32mI (873) LIVING: Do sang: 9.64 lux[0m
+[0;32mI (873) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (873) wifi:wifi driver task: 3ffc60fc, prio:23, stack:6656, core=0[0m
+[0;32mI (903) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (903) wifi:wifi certification version: v7.0[0m
+[0;32mI (903) wifi:config NVS flash: enabled[0m
+[0;32mI (903) wifi:config nano formating: disabled[0m
+[0;32mI (913) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (913) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (923) wifi:Init management short buffer num: 32[0m
+[0;32mI (923) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (933) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (933) wifi:Init static rx buffer num: 10[0m
+[0;32mI (933) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (943) wifi_init: rx ba win: 6[0m
+[0;32mI (943) wifi_init: tcpip mbox: 32[0m
+[0;32mI (953) wifi_init: udp mbox: 6[0m
+[0;32mI (953) wifi_init: tcp mbox: 6[0m
+[0;32mI (953) wifi_init: tcp tx win: 5744[0m
+[0;32mI (983) wifi_init: tcp rx win: 5744[0m
+[0;32mI (983) wifi_init: tcp mss: 1440[0m
+[0;32mI (983) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (993) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (993) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (993) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (1003) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (1003) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1123) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1123) wifi:enable tsf[0m
+[0;32mI (1143) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1143) wifi:state: init -> auth (b0)[0m
+[0;32mI (1183) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1203) wifi:state: assoc -> run (10)[0m
+[0;32mI (1253) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1253) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (1253) wifi:pm start, type: 1[0m
+
+[0;32mI (1293) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:2, winSize:64[0m
+[0;32mI (1383) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1873) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1893) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (1943) LIVING: DHT11 fail![0m
+[0;32mI (1943) LIVING: Do sang: 9.70 lux[0m
+[0;32mI (1943) LIVING: Khi gas: 103.03 ppm[0m
+[0;32mI (2943) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2963) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (3003) LIVING: DHT11 fail![0m
+[0;32mI (3013) LIVING: Do sang: 9.21 lux[0m
+[0;32mI (3013) LIVING: Khi gas: 101.82 ppm[0m
+[0;32mI (4013) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4033) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (4093) LIVING: DHT11 fail![0m
+[0;32mI (4093) LIVING: Do sang: 8.55 lux[0m
+[0;32mI (4103) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (4263) CONFIG_WIFI: got ip:192.168.54.187[0m
+[0;32mI (4263) esp_netif_handlers: sta ip: 192.168.54.187, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (4263) CONFIG_WIFI: wifi connected[0m
+[0;32mI (4273) MQTT: Free mamory: 205520 bytes[0m
+[0;32mI (4273) MQTT: Other event id:7[0m
+[0;32mI (4803) uart: queue free spaces: 20[0m
+[0;32mI (4803) APP_UART: UART config sucessfuly![0m
+[0;32mI (4803) main_task: Returned from app_main()[0m
+[0;32mI (5103) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5123) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (5183) LIVING: DHT11 fail![0m
+[0;32mI (5183) LIVING: Do sang: 10.33 lux[0m
+[0;32mI (5193) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (6193) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6213) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (6353) LIVING: DHT11 fail![0m
+[0;32mI (6353) LIVING: Do sang: 7.15 lux[0m
+[0;32mI (6353) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (7353) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7373) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (7433) LIVING: DHT11 fail![0m
+[0;32mI (7433) LIVING: Do sang: 5.09 lux[0m
+[0;32mI (7443) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (8443) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (8463) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (8593) LIVING: DHT11 fail![0m
+[0;32mI (8593) LIVING: Do sang: 7.21 lux[0m
+[0;32mI (8593) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (9593) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9613) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (9653) LIVING: DHT11 fail![0m
+[0;32mI (9663) LIVING: Do sang: 7.27 lux[0m
+[0;32mI (9663) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (10663) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (10683) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (10743) LIVING: DHT11 fail![0m
+[0;32mI (10743) LIVING: Do sang: 9.91 lux[0m
+[0;32mI (10753) LIVING: Khi gas: 103.64 ppm[0m
+[0;32mI (11753) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11773) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (11833) LIVING: DHT11 fail![0m
+[0;32mI (11833) LIVING: Do sang: 10.55 lux[0m
+[0;32mI (11843) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (12843) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (12863) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (13003) LIVING: DHT11 fail![0m
+[0;32mI (13003) LIVING: Do sang: 5.24 lux[0m
+[0;32mI (13003) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (14003) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (14023) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (14083) LIVING: DHT11 fail![0m
+[0;32mI (14083) LIVING: Do sang: 10.12 lux[0m
+[0;32mI (14093) LIVING: Khi gas: 101.21 ppm[0m
+[0;31mE (14293) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (14293) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (14293) mqtt_client: Error transport connect[0m
+[0;31mE (14293) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (14303) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (15093) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15113) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (15413) LIVING: DHT11 fail![0m
+[0;32mI (15423) LIVING: Do sang: 5.88 lux[0m
+[0;32mI (15423) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (16423) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (16443) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (16683) LIVING: DHT11 fail![0m
+[0;32mI (16693) LIVING: Do sang: 8.39 lux[0m
+[0;32mI (16693) LIVING: Khi gas: 100.00 ppm[0m
+[0;32mI (17693) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (17713) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (17753) LIVING: DHT11 fail![0m
+[0;32mI (17763) LIVING: Do sang: 9.82 lux[0m
+[0;32mI (17763) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (18763) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (18783) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (18843) LIVING: DHT11 fail![0m
+[0;32mI (18843) LIVING: Do sang: 5.33 lux[0m
+[0;32mI (18853) LIVING: Khi gas: 87.27 ppm[0m
+[0;32mI (19863) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (19883) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (19943) LIVING: DHT11 fail![0m
+[0;32mI (19943) LIVING: Do sang: 6.45 lux[0m
+[0;32mI (19953) LIVING: Khi gas: 101.21 ppm[0m
+[0;32mI (20963) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (20983) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (21043) LIVING: DHT11 fail![0m
+[0;32mI (21043) LIVING: Do sang: 5.58 lux[0m
+[0;32mI (21043) LIVING: Khi gas: 96.36 ppm[0m
+[0;32mI (22053) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (22073) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (22273) LIVING: DHT11 fail![0m
+[0;32mI (22273) LIVING: Do sang: 5.55 lux[0m
+[0;32mI (22273) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (23273) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (23293) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (23343) LIVING: DHT11 fail![0m
+[0;32mI (23343) LIVING: Do sang: 5.33 lux[0m
+[0;32mI (23343) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (24343) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (24363) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (24403) LIVING: DHT11 fail![0m
+[0;32mI (24413) LIVING: Do sang: 6.39 lux[0m
+[0;32mI (24413) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (25413) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (25433) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (25493) LIVING: DHT11 fail![0m
+[0;32mI (25493) LIVING: Do sang: 9.61 lux[0m
+[0;32mI (25503) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (26503) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (26523) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (26583) LIVING: DHT11 fail![0m
+[0;32mI (26583) LIVING: Do sang: 7.24 lux[0m
+[0;32mI (26593) LIVING: Khi gas: 100.00 ppm[0m
+[0;32mI (27593) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (27613) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (27733) LIVING: DHT11 fail![0m
+[0;32mI (27733) LIVING: Do sang: 5.70 lux[0m
+[0;32mI (27743) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (28743) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (28763) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (28803) LIVING: DHT11 fail![0m
+[0;32mI (28813) LIVING: Do sang: 7.52 lux[0m
+[0;32mI (28813) LIVING: Khi gas: 101.82 ppm[0m
+[0;32mI (29303) MQTT: Other event id:7[0m
+[0;32mI (29813) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (29833) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (29893) LIVING: DHT11 fail![0m
+[0;32mI (29893) LIVING: Do sang: 4.88 lux[0m
+[0;32mI (29903) LIVING: Khi gas: 101.21 ppm[0m
+[0;32mI (30903) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (30923) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (31003) LIVING: DHT11 fail![0m
+[0;32mI (31003) LIVING: Do sang: 7.91 lux[0m
+[0;32mI (31003) LIVING: Khi gas: 103.64 ppm[0m
+[0;32mI (32003) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (32023) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (32143) LIVING: DHT11 fail![0m
+[0;32mI (32143) LIVING: Do sang: 9.88 lux[0m
+[0;32mI (32153) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (39313) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (39313) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (39313) mqtt_client: Error transport connect[0m
+[0;31mE (39313) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (39323) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (40323) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (40343) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (40383) LIVING: DHT11 fail![0m
+[0;32mI (40393) LIVING: Do sang: 9.76 lux[0m
+[0;32mI (40393) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (41403) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (41423) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (41653) LIVING: DHT11 fail![0m
+[0;32mI (41653) LIVING: Do sang: 5.82 lux[0m
+[0;32mI (41653) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (42653) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (42673) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (42813) LIVING: DHT11 fail![0m
+[0;32mI (42813) LIVING: Do sang: 6.03 lux[0m
+[0;32mI (42813) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (43813) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (43833) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (43893) LIVING: DHT11 fail![0m
+[0;32mI (43893) LIVING: Do sang: 10.03 lux[0m
+[0;32mI (43903) LIVING: Khi gas: 101.21 ppm[0m
+[0;32mI (44903) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (44923) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (45063) LIVING: DHT11 fail![0m
+[0;32mI (45063) LIVING: Do sang: 5.30 lux[0m
+[0;32mI (45063) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (46063) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (46083) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (46163) LIVING: DHT11 fail![0m
+[0;32mI (46163) LIVING: Do sang: 5.18 lux[0m
+[0;32mI (46163) LIVING: Khi gas: 97.58 ppm[0m
+[0;32mI (47163) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (47183) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (47293) LIVING: DHT11 fail![0m
+[0;32mI (47293) LIVING: Do sang: 5.03 lux[0m
+[0;32mI (47293) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (48293) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (48313) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (48353) LIVING: DHT11 fail![0m
+[0;32mI (48363) LIVING: Do sang: 5.67 lux[0m
+[0;32mI (48363) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (49363) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (49383) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (49443) LIVING: DHT11 fail![0m
+[0;32mI (49443) LIVING: Do sang: 7.24 lux[0m
+[0;32mI (49453) LIVING: Khi gas: 100.00 ppm[0m
+[0;32mI (50453) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (50473) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (50553) LIVING: DHT11 fail![0m
+[0;32mI (50553) LIVING: Do sang: 6.52 lux[0m
+[0;32mI (50553) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (51553) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (51573) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (51713) LIVING: DHT11 fail![0m
+[0;32mI (51713) LIVING: Do sang: 9.21 lux[0m
+[0;32mI (51713) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (52713) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (52733) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (52813) LIVING: DHT11 fail![0m
+[0;32mI (52813) LIVING: Do sang: 9.85 lux[0m
+[0;32mI (52813) LIVING: Khi gas: 98.79 ppm[0m
+[0;32mI (53813) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (53833) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (53973) LIVING: DHT11 fail![0m
+[0;32mI (53973) LIVING: Do sang: 8.64 lux[0m
+[0;32mI (53973) LIVING: Khi gas: 101.82 ppm[0m
+[0;32mI (54323) MQTT: Other event id:7[0m
+[0;32mI (54973) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (54993) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (55033) LIVING: DHT11 fail![0m
+[0;32mI (55043) LIVING: Do sang: 10.06 lux[0m
+[0;32mI (55043) LIVING: Khi gas: 98.79 ppm[0m
+[0;32mI (56043) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (56063) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (56113) LIVING: DHT11 fail![0m
+[0;32mI (56113) LIVING: Do sang: 5.39 lux[0m
+[0;32mI (56113) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (57113) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (57133) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (57213) LIVING: DHT11 fail![0m
+[0;32mI (57213) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (57213) LIVING: Khi gas: 97.58 ppm[0m
+[0;32mI (58213) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (58233) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (58353) LIVING: DHT11 fail![0m
+[0;32mI (58353) LIVING: Do sang: 5.42 lux[0m
+[0;32mI (58363) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (59363) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (59383) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (59443) LIVING: DHT11 fail![0m
+[0;32mI (59443) LIVING: Do sang: 5.48 lux[0m
+[0;32mI (59443) LIVING: Khi gas: 97.58 ppm[0m
+[0;32mI (60453) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (60473) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (60743) LIVING: DHT11 fail![0m
+[0;32mI (60753) LIVING: Do sang: 9.67 lux[0m
+[0;32mI (60753) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (61753) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (61773) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (61833) LIVING: DHT11 fail![0m
+[0;32mI (61833) LIVING: Do sang: 7.24 lux[0m
+[0;32mI (61843) LIVING: Khi gas: 101.21 ppm[0m
+[0;32mI (62843) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (62863) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (62903) LIVING: DHT11 fail![0m
+[0;32mI (62913) LIVING: Do sang: 7.42 lux[0m
+[0;32mI (62913) LIVING: Khi gas: 101.21 ppm[0m
+[0;32mI (63913) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (63933) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (63993) LIVING: DHT11 fail![0m
+[0;32mI (63993) LIVING: Do sang: 9.39 lux[0m
+[0;32mI (64003) LIVING: Khi gas: 101.21 ppm[0m
+[0;31mE (64333) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (64333) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (64333) mqtt_client: Error transport connect[0m
+[0;31mE (64333) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (64343) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (65003) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (65023) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (65083) LIVING: DHT11 fail![0m
+[0;32mI (65083) LIVING: Do sang: 10.12 lux[0m
+[0;32mI (65093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (66103) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (66123) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (66233) LIVING: DHT11 fail![0m
+[0;32mI (66233) LIVING: Do sang: 6.85 lux[0m
+[0;32mI (66233) LIVING: Khi gas: 96.36 ppm[0m
+[0;32mI (67243) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (67263) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (67303) LIVING: DHT11 fail![0m
+[0;32mI (67313) LIVING: Do sang: 6.79 lux[0m
+[0;32mI (67313) LIVING: Khi gas: 96.36 ppm[0m
+[0;32mI (68313) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (68333) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (68393) LIVING: DHT11 fail![0m
+[0;32mI (68393) LIVING: Do sang: 8.52 lux[0m
+[0;32mI (68403) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (69413) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (69433) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (69493) LIVING: DHT11 fail![0m
+[0;32mI (69493) LIVING: Do sang: 5.45 lux[0m
+[0;32mI (69503) LIVING: Khi gas: 97.58 ppm[0m
+[0;32mI (70503) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (70523) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (70673) LIVING: DHT11 fail![0m
+[0;32mI (70673) LIVING: Do sang: 5.27 lux[0m
+[0;32mI (70683) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (71683) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (71703) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (71753) LIVING: DHT11 fail![0m
+[0;32mI (71753) LIVING: Do sang: 5.03 lux[0m
+[0;32mI (71753) LIVING: Khi gas: 96.36 ppm[0m
+[0;32mI (72763) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (72783) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (72893) LIVING: DHT11 fail![0m
+[0;32mI (72893) LIVING: Do sang: 11.64 lux[0m
+[0;32mI (72893) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (73903) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (73923) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (73983) LIVING: DHT11 fail![0m
+[0;32mI (73983) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (73983) LIVING: Khi gas: 101.21 ppm[0m
+[0;32mI (75003) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (75023) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (75163) LIVING: DHT11 fail![0m
+[0;32mI (75163) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (75163) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (76163) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (76183) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (76243) LIVING: DHT11 fail![0m
+[0;32mI (76243) LIVING: Do sang: 5.97 lux[0m
+[0;32mI (76243) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (77253) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (77273) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (77443) LIVING: DHT11 fail![0m
+[0;32mI (77443) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (77443) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (78443) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (78463) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (78513) LIVING: DHT11 fail![0m
+[0;32mI (78513) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (78513) LIVING: Khi gas: 103.64 ppm[0m
+[0;32mI (79343) MQTT: Other event id:7[0m
+[0;32mI (79513) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (79533) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (79673) LIVING: DHT11 fail![0m
+[0;32mI (79673) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (79673) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (80673) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (80693) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (80733) LIVING: DHT11 fail![0m
+[0;32mI (80743) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (80743) LIVING: Khi gas: 110.30 ppm[0m
+[0;31mE (89353) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (89353) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (89353) mqtt_client: Error transport connect[0m
+[0;31mE (89353) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (89363) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (90363) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (90383) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (90523) LIVING: DHT11 fail![0m
+[0;32mI (90523) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (90523) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (91523) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (91543) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (91583) LIVING: DHT11 fail![0m
+[0;32mI (91593) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (91593) LIVING: Khi gas: 107.88 ppm[0m
+[0;32mI (92593) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (92613) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (92663) LIVING: DHT11 fail![0m
+[0;32mI (92663) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (92663) LIVING: Khi gas: 110.91 ppm[0m
+[0;32mI (93663) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (93683) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (93743) LIVING: DHT11 fail![0m
+[0;32mI (93753) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (93753) LIVING: Khi gas: 107.27 ppm[0m
+[0;32mI (94753) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (94773) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (95013) LIVING: DHT11 fail![0m
+[0;32mI (95013) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (95013) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (96013) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (96033) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (96093) LIVING: DHT11 fail![0m
+[0;32mI (96093) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (96093) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (97093) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (97113) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (97143) LIVING: DHT11 fail![0m
+[0;32mI (97143) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (97153) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (98153) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (98173) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (98293) LIVING: DHT11 fail![0m
+[0;32mI (98293) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (98303) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (99313) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (99333) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (99393) LIVING: DHT11 fail![0m
+[0;32mI (99393) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (99403) LIVING: Khi gas: 107.88 ppm[0m
+[0;32mI (100403) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (100423) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (100563) LIVING: DHT11 fail![0m
+[0;32mI (100563) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (100563) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (101573) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (101593) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (101643) LIVING: DHT11 fail![0m
+[0;32mI (101643) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (101643) LIVING: Khi gas: 109.09 ppm[0m
+[0;32mI (102643) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (102663) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (102923) LIVING: DHT11 fail![0m
+[0;32mI (102923) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (102923) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (103933) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (103953) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (104003) LIVING: DHT11 fail![0m
+[0;32mI (104003) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (104003) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (104363) MQTT: Other event id:7[0m
+[0;32mI (105003) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (105023) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (105163) LIVING: DHT11 fail![0m
+[0;32mI (105163) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (105163) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (106163) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (106183) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (106263) LIVING: DHT11 fail![0m
+[0;32mI (106263) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (106263) LIVING: Khi gas: 107.88 ppm[0m
+[0;32mI (107263) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (107283) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (107403) LIVING: DHT11 fail![0m
+[0;32mI (107413) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (107413) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (108413) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (108433) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (108493) LIVING: DHT11 fail![0m
+[0;32mI (108493) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (108493) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (109503) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (109523) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (109793) LIVING: DHT11 fail![0m
+[0;32mI (109803) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (109803) LIVING: Khi gas: 109.09 ppm[0m
+[0;32mI (110803) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (110823) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (110883) LIVING: DHT11 fail![0m
+[0;32mI (110883) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (110893) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (111893) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (111913) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (111953) LIVING: DHT11 fail![0m
+[0;32mI (111963) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (111963) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (112963) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (112983) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (113063) LIVING: DHT11 fail![0m
+[0;32mI (113063) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (113063) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (114063) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (114083) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (114143) LIVING: DHT11 fail![0m
+[0;32mI (114143) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (114153) LIVING: Khi gas: 107.88 ppm[0m
+[0;31mE (114373) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (114373) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (114373) mqtt_client: Error transport connect[0m
+[0;31mE (114373) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (114383) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (115153) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (115173) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (115293) LIVING: DHT11 fail![0m
+[0;32mI (115293) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (115303) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (116303) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (116323) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (116383) LIVING: DHT11 fail![0m
+[0;32mI (116383) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (116393) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (117393) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (117413) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (117533) LIVING: DHT11 fail![0m
+[0;32mI (117533) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (117543) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (118543) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (118563) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (118603) LIVING: DHT11 fail![0m
+[0;32mI (118613) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (118613) LIVING: Khi gas: 109.09 ppm[0m
+[0;32mI (119613) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (119633) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (119693) LIVING: DHT11 fail![0m
+[0;32mI (119693) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (119703) LIVING: Khi gas: 100.61 ppm[0m
+[0;32mI (120703) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (120723) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (120803) LIVING: DHT11 fail![0m
+[0;32mI (120803) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (120803) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (121813) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (121833) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (121913) LIVING: DHT11 fail![0m
+[0;32mI (121913) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (121913) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (122923) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (122943) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (123063) LIVING: DHT11 fail![0m
+[0;32mI (123063) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (123073) LIVING: Khi gas: 103.64 ppm[0m
+[0;32mI (124073) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (124093) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (124133) LIVING: DHT11 fail![0m
+[0;32mI (124143) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (124143) LIVING: Khi gas: 94.55 ppm[0m
+[0;32mI (125153) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (125173) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (125233) LIVING: DHT11 fail![0m
+[0;32mI (125233) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (125233) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (126253) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (126273) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (126353) LIVING: DHT11 fail![0m
+[0;32mI (126353) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (126353) LIVING: Khi gas: 107.27 ppm[0m
+[0;32mI (127353) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (127373) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (127433) LIVING: DHT11 fail![0m
+[0;32mI (127433) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (127433) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (128433) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (128453) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (128503) LIVING: DHT11 fail![0m
+[0;32mI (128503) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (128503) LIVING: Khi gas: 107.88 ppm[0m
+[0;32mI (129383) MQTT: Other event id:7[0m
+[0;32mI (129503) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (129523) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (129603) LIVING: DHT11 fail![0m
+[0;32mI (129603) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (129603) LIVING: Khi gas: 105.45 ppm[0m
+[0;32mI (130603) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (130623) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (130763) LIVING: DHT11 fail![0m
+[0;32mI (130763) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (130763) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (131763) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (131783) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (131843) LIVING: DHT11 fail![0m
+[0;32mI (131843) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (131843) LIVING: Khi gas: 103.03 ppm[0m
+[0;32mI (132843) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (132863) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (132973) LIVING: DHT11 fail![0m
+[0;32mI (132973) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (132973) LIVING: Khi gas: 107.88 ppm[0m
+[0;32mI (133973) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (133993) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (134243) LIVING: DHT11 fail![0m
+[0;32mI (134243) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (134243) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (135243) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (135263) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (135303) LIVING: DHT11 fail![0m
+[0;32mI (135313) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (135313) LIVING: Khi gas: 103.64 ppm[0m
+[0;32mI (136313) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (136333) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (136393) LIVING: DHT11 fail![0m
+[0;32mI (136393) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (136403) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (137403) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (137423) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (137483) LIVING: DHT11 fail![0m
+[0;32mI (137493) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (137493) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (138493) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (138513) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (138633) LIVING: DHT11 fail![0m
+[0;32mI (138633) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (138643) LIVING: Khi gas: 107.88 ppm[0m
+[0;31mE (139393) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (139393) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (139393) mqtt_client: Error transport connect[0m
+[0;31mE (139393) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (139403) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (139643) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (139663) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (139703) LIVING: DHT11 fail![0m
+[0;32mI (139713) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (139713) LIVING: Khi gas: 107.27 ppm[0m
+[0;32mI (140713) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (140733) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (140793) LIVING: DHT11 fail![0m
+[0;32mI (140793) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (140803) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (141803) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (141823) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (141883) LIVING: DHT11 fail![0m
+[0;32mI (141883) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (141883) LIVING: Khi gas: 108.48 ppm[0m
+[0;32mI (142893) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (142913) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (143113) LIVING: DHT11 fail![0m
+[0;32mI (143113) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (143113) LIVING: Khi gas: 101.82 ppm[0m
+[0;32mI (144113) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (144133) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (144343) LIVING: DHT11 fail![0m
+[0;32mI (144343) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (144353) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (145353) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (145373) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (145513) LIVING: DHT11 fail![0m
+[0;32mI (145513) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (145513) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (146513) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (146533) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (146593) LIVING: DHT11 fail![0m
+[0;32mI (146593) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (146603) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (147603) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (147623) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (147763) LIVING: DHT11 fail![0m
+[0;32mI (147763) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (147763) LIVING: Khi gas: 103.03 ppm[0m
+[0;32mI (148763) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (148783) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (148843) LIVING: DHT11 fail![0m
+[0;32mI (148843) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (148843) LIVING: Khi gas: 109.09 ppm[0m
+[0;32mI (149853) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (149873) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (150023) LIVING: DHT11 fail![0m
+[0;32mI (150023) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (150033) LIVING: Khi gas: 109.09 ppm[0m
+[0;32mI (151033) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (151053) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (151103) LIVING: DHT11 fail![0m
+[0;32mI (151103) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (151103) LIVING: Khi gas: 109.70 ppm[0m
+[0;32mI (152103) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (152123) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (152443) LIVING: DHT11 fail![0m
+[0;32mI (152443) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (152443) LIVING: Khi gas: 104.85 ppm[0m
+[0;32mI (153443) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (153463) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (153583) LIVING: DHT11 fail![0m
+[0;32mI (153583) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (153593) LIVING: Khi gas: 102.42 ppm[0m
+[0;32mI (154403) MQTT: Other event id:7[0m

@@ -1,0 +1,599 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=309a8h (199080) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=000409d0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=000409dc vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=000442d4 vaddr=40080000 size=0bd44h ( 48452) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b43c8h (738248) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=001043f0 vaddr=4008bd44 size=0c56ch ( 50540) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (540) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  08f35720cb8e9b00...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (723) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (723) RFID: Initializing RC522...[0m
+[0;32mI (723) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (753) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (753) RFID: RC522 READY.[0m
+[0;32mI (773) LIVING: Do am: 60.00 percent[0m
+[0;32mI (773) LIVING: Nhiet do: 26.10 C[0m
+[0;32mI (783) LIVING: Do sang: 16.00 lux[0m
+[0;31mE (793) mqtt_client: Client was not initialized[0m
+[0;32mI (793) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (793) mqtt_client: Client was not initialized[0m
+[0;32mI (803) wifi:wifi driver task: 3ffc61d8, prio:23, stack:6656, core=0[0m
+[0;32mI (823) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (823) wifi:wifi certification version: v7.0[0m
+[0;32mI (823) wifi:config NVS flash: enabled[0m
+[0;32mI (823) wifi:config nano formating: disabled[0m
+[0;32mI (833) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (833) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (843) wifi:Init management short buffer num: 32[0m
+[0;32mI (843) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (853) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (853) wifi:Init static rx buffer num: 10[0m
+[0;32mI (853) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (863) wifi_init: rx ba win: 6[0m
+[0;32mI (863) wifi_init: tcpip mbox: 32[0m
+[0;32mI (873) wifi_init: udp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp tx win: 5744[0m
+[0;32mI (903) wifi_init: tcp rx win: 5744[0m
+[0;32mI (903) wifi_init: tcp mss: 1440[0m
+[0;32mI (903) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (903) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (913) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (913) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (913) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (923) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1043) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1043) wifi:enable tsf[0m
+[0;32mI (1143) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1143) wifi:state: init -> auth (b0)[0m
+[0;32mI (1153) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1173) wifi:state: assoc -> run (10)[0m
+[0;32mI (1193) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1193) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (1193) wifi:pm start, type: 1[0m
+
+[0;32mI (1213) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:2, winSize:64[0m
+[0;32mI (1233) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;33mW (1853) LIVING: DHT11 fail![0m
+[0;32mI (1853) LIVING: Do sang: 133.45 lux[0m
+[0;31mE (1863) mqtt_client: Client was not initialized[0m
+[0;32mI (1863) LIVING: Khi gas: 86.06 ppm[0m
+[0;31mE (1863) mqtt_client: Client was not initialized[0m
+[0;33mW (3053) LIVING: DHT11 fail![0m
+[0;32mI (3053) LIVING: Do sang: 132.48 lux[0m
+[0;32mI (3053) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (4203) CONFIG_WIFI: got ip:192.168.54.200[0m
+[0;32mI (4203) esp_netif_handlers: sta ip: 192.168.54.200, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;33mW (4243) LIVING: DHT11 fail![0m
+[0;32mI (4243) LIVING: Do sang: 135.39 lux[0m
+[0;32mI (4253) CONFIG_WIFI: wifi connected[0m
+[0;32mI (4253) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (4253) MQTT: Free mamory: 205792 bytes[0m
+[0;32mI (4253) MQTT: Other event id:7[0m
+[0;32mI (4463) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4493) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=27490[0m
+[0;32mI (4513) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=34376[0m
+[0;32mI (4523) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=61406[0m
+[0;32mI (4523) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=11000[0m
+[0;32mI (4533) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=63272[0m
+[0;32mI (4543) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=50882[0m
+[0;32mI (4543) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=42671[0m
+[0;32mI (4553) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=30174[0m
+[0;32mI (4563) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=64337[0m
+[0;32mI (4573) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=61962[0m
+[0;32mI (4573) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=46817[0m
+[0;32mI (4583) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=12367[0m
+[0;32mI (4583) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=6100[0m
+[0;32mI (4593) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=63202[0m
+[0;32mI (4603) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=53463[0m
+[0;32mI (4603) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=37369[0m
+[0;32mI (4613) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=8838[0m
+[0;32mI (4613) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=48658[0m
+[0;32mI (4623) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=12152[0m
+[0;32mI (4633) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=55499[0m
+[0;32mI (4643) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=22086[0m
+[0;32mI (4643) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=7419[0m
+[0;32mI (4653) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=5415[0m
+[0;32mI (4653) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=53192[0m
+[0;32mI (4663) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1308[0m
+[0;32mI (4663) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3913[0m
+[0;32mI (4673) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37950[0m
+[0;32mI (4683) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50738[0m
+[0;32mI (4683) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31789[0m
+[0;32mI (4683) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3659[0m
+[0;32mI (4693) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61225[0m
+[0;32mI (4693) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30758[0m
+[0;32mI (4703) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37716[0m
+[0;32mI (4703) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15853[0m
+[0;32mI (4713) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45476[0m
+[0;32mI (4713) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48141[0m
+[0;32mI (4723) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57600[0m
+[0;32mI (4723) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38816[0m
+[0;32mI (4733) MQTT: MQTT_EVENT_PUBLISHED, msg_id=879[0m
+[0;32mI (4733) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34781[0m
+[0;32mI (4743) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57362[0m
+[0;32mI (4753) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40209[0m
+[0;32mI (4753) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11300[0m
+[0;32mI (4763) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46748[0m
+[0;32mI (4763) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4658[0m
+[0;32mI (4773) MQTT: MQTT_EVENT_PUBLISHED, msg_id=61531[0m
+[0;32mI (4773) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37297[0m
+[0;32mI (4783) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45876[0m
+[0;32mI (4783) uart: queue free spaces: 20[0m
+[0;32mI (4783) APP_UART: UART config sucessfuly![0m
+[0;32mI (4793) main_task: Returned from app_main()[0m
+[0;32mI (5103) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36343[0m
+[0;32mI (5343) LIVING: Do am: 60.00 percent[0m
+[0;32mI (5353) LIVING: Nhiet do: 26.10 C[0m
+[0;32mI (5353) LIVING: Do sang: 133.94 lux[0m
+[0;32mI (5353) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (5513) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10876[0m
+[0;32mI (5703) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42181[0m
+[0;32mI (6323) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56128[0m
+[0;32mI (6333) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59095[0m
+[0;32mI (6513) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41146[0m
+[0;33mW (6543) LIVING: DHT11 fail![0m
+[0;32mI (6543) LIVING: Do sang: 135.88 lux[0m
+[0;32mI (6543) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (6713) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3982[0m
+[0;32mI (6903) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42102[0m
+[0;32mI (7103) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15973[0m
+[0;32mI (7293) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22708[0m
+[0;32mI (7693) MQTT: MQTT_EVENT_PUBLISHED, msg_id=28972[0m
+[0;33mW (7743) LIVING: DHT11 fail![0m
+[0;32mI (7743) LIVING: Do sang: 138.79 lux[0m
+[0;32mI (7743) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (8093) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27179[0m
+[0;32mI (8293) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54223[0m
+[0;32mI (8503) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39700[0m
+[0;32mI (8693) MQTT: MQTT_EVENT_PUBLISHED, msg_id=713[0m
+[0;32mI (8893) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57409[0m
+[0;33mW (8933) LIVING: DHT11 fail![0m
+[0;32mI (8933) LIVING: Do sang: 18.09 lux[0m
+[0;32mI (8943) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (8963) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3039[0m
+[0;32mI (9103) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44159[0m
+[0;32mI (9293) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21132[0m
+[0;32mI (9493) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63847[0m
+[0;32mI (9693) MQTT: MQTT_EVENT_PUBLISHED, msg_id=248[0m
+[0;33mW (10043) LIVING: DHT11 fail![0m
+[0;32mI (10053) LIVING: Do sang: 132.73 lux[0m
+[0;32mI (10063) LIVING: Khi gas: 93.94 ppm[0m
+[0;32mI (10083) MQTT: MQTT_EVENT_PUBLISHED, msg_id=60343[0m
+[0;32mI (10093) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26088[0m
+[0;32mI (10193) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44961[0m
+[0;32mI (10503) MQTT: MQTT_EVENT_PUBLISHED, msg_id=687[0m
+[0;32mI (10693) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20676[0m
+[0;32mI (10893) MQTT: MQTT_EVENT_PUBLISHED, msg_id=56166[0m
+[0;33mW (11273) LIVING: DHT11 fail![0m
+[0;32mI (11273) LIVING: Do sang: 137.58 lux[0m
+[0;32mI (11273) LIVING: Khi gas: 126.67 ppm[0m
+[0;32mI (11493) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2576[0m
+[0;32mI (11533) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15999[0m
+[0;32mI (11713) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50796[0m
+[0;32mI (11903) MQTT: MQTT_EVENT_PUBLISHED, msg_id=39453[0m
+[0;33mW (12483) LIVING: DHT11 fail![0m
+[0;32mI (12483) LIVING: Do sang: 138.06 lux[0m
+[0;32mI (12483) LIVING: Khi gas: 161.82 ppm[0m
+[0;32mI (12613) MQTT: MQTT_EVENT_PUBLISHED, msg_id=64677[0m
+[0;32mI (12633) MQTT: MQTT_EVENT_PUBLISHED, msg_id=44159[0m
+[0;32mI (12893) MQTT: MQTT_EVENT_PUBLISHED, msg_id=42610[0m
+[0;32mI (13093) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12370[0m
+[0;32mI (13633) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1835[0m
+[0;33mW (13693) LIVING: DHT11 fail![0m
+[0;32mI (13693) LIVING: Do sang: 129.82 lux[0m
+[0;32mI (13693) LIVING: Khi gas: 207.27 ppm[0m
+[0;32mI (13713) MQTT: MQTT_EVENT_PUBLISHED, msg_id=29563[0m
+[0;32mI (13883) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24062[0m
+[0;32mI (14063) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34005[0m
+[0;32mI (14273) MQTT: MQTT_EVENT_PUBLISHED, msg_id=627[0m
+[0;32mI (14553) MQTT: MQTT_EVENT_PUBLISHED, msg_id=58537[0m
+[0;32mI (14593) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45170[0m
+[0;32mI (14673) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15369[0m
+[0;32mI (14693) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32510[0m
+[0;33mW (14723) LIVING: DHT11 fail![0m
+[0;32mI (14723) LIVING: Do sang: 18.30 lux[0m
+[0;32mI (14733) LIVING: Khi gas: 206.67 ppm[0m
+[0;32mI (14793) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10869[0m
+[0;32mI (14803) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14741[0m
+[0;32mI (14873) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15166[0m
+[0;32mI (15073) MQTT: MQTT_EVENT_PUBLISHED, msg_id=37953[0m
+[0;32mI (15103) MQTT: MQTT_EVENT_PUBLISHED, msg_id=43057[0m
+[0;32mI (15273) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47921[0m
+[0;32mI (15303) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45367[0m
+[0;32mI (15473) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2448[0m
+[0;32mI (15513) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48015[0m
+[0;32mI (15663) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35068[0m
+[0;32mI (15873) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4539[0m
+[0;32mI (15903) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52357[0m
+[0;33mW (15933) LIVING: DHT11 fail![0m
+[0;32mI (15933) LIVING: Do sang: 18.03 lux[0m
+[0;32mI (15933) LIVING: Khi gas: 132.12 ppm[0m
+[0;32mI (15963) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41957[0m
+[0;32mI (16103) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36686[0m
+[0;32mI (16303) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26399[0m
+[0;32mI (16503) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32249[0m
+[0;32mI (16693) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48724[0m
+[0;33mW (16963) LIVING: DHT11 fail![0m
+[0;32mI (16963) LIVING: Do sang: 122.55 lux[0m
+[0;32mI (16973) LIVING: Khi gas: 110.30 ppm[0m
+[0;32mI (16993) MQTT: MQTT_EVENT_PUBLISHED, msg_id=7379[0m
+[0;32mI (17013) MQTT: MQTT_EVENT_PUBLISHED, msg_id=13922[0m
+[0;32mI (17023) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24230[0m
+[0;32mI (17073) MQTT: MQTT_EVENT_DATA[0m
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x4000127a  PS      : 0x00060930  A0      : 0x800d8294  A1      : 0x3ffce4f0  
+A2      : 0x3ffce53f  A3      : 0x00000000  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0x40404040  A8      : 0x0000006c  A9      : 0x0000676e  
+A10     : 0x00000003  A11     : 0x3ffcedb8  A12     : 0x00000000  A13     : 0x00000010  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x0000001f  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400012e5  LEND    : 0x40001309  LCOUNT  : 0x800d8267  
+
+
+Backtrace: 0x40001277:0x3ffce4f0 0x400d8291:0x3ffce500 0x400d833d:0x3ffce520 0x400d872a:0x3ffce5a0 0x400da5c5:0x3ffce5d0 0x40181ab5:0x3ffce5f0 0x4018155a:0x3ffce620 0x400de121:0x3ffce660 0x400de9e8:0x3ffce680 0x400deb3f:0x3ffce6b0 0x400df024:0x3ffce6e0 0x4008d591:0x3ffce710
+
+
+
+
+ELF file SHA256: 08f35720cb8e9b00
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=309a8h (199080) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=000409d0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=000409dc vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=000442d4 vaddr=40080000 size=0bd44h ( 48452) load[0m
+[0;32mI (210) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b43c8h (738248) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=001043f0 vaddr=4008bd44 size=0c56ch ( 50540) load[0m
+[0;32mI (510) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (522) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (510) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  08f35720cb8e9b00...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (723) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (723) RFID: Initializing RC522...[0m
+[0;32mI (723) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (753) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (753) RFID: RC522 READY.[0m
+[0;32mI (873) LIVING: Do am: 158.00 percent[0m
+[0;31mE (883) mqtt_client: Client was not initialized[0m
+[0;32mI (883) LIVING: Nhiet do: 13.00 C[0m
+[0;31mE (883) mqtt_client: Client was not initialized[0m
+[0;32mI (883) LIVING: Do sang: 100.97 lux[0m
+[0;31mE (893) mqtt_client: Client was not initialized[0m
+[0;32mI (893) LIVING: Khi gas: 103.64 ppm[0m
+[0;31mE (913) mqtt_client: Client was not initialized[0m
+[0;32mI (923) wifi:wifi driver task: 3ffc6130, prio:23, stack:6656, core=0[0m
+[0;32mI (943) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (943) wifi:wifi certification version: v7.0[0m
+[0;32mI (943) wifi:config NVS flash: enabled[0m
+[0;32mI (943) wifi:config nano formating: disabled[0m
+[0;32mI (953) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (953) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (963) wifi:Init management short buffer num: 32[0m
+[0;32mI (963) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (963) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (973) wifi:Init static rx buffer num: 10[0m
+[0;32mI (973) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (983) wifi_init: rx ba win: 6[0m
+[0;32mI (983) wifi_init: tcpip mbox: 32[0m
+[0;32mI (983) wifi_init: udp mbox: 6[0m
+[0;32mI (993) wifi_init: tcp mbox: 6[0m
+[0;32mI (993) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1003) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1003) wifi_init: tcp mss: 1440[0m
+[0;32mI (1003) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1013) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1013) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (1023) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (1023) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (1053) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1163) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1163) wifi:enable tsf[0m
+[0;32mI (1273) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1273) wifi:state: init -> auth (b0)[0m
+[0;32mI (1293) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1313) wifi:state: assoc -> run (10)[0m
+[0;32mI (1323) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1333) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (1333) wifi:pm start, type: 1[0m
+
+[0;32mI (1353) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:2, winSize:64[0m
+[0;32mI (1373) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1933) LIVING: Do am: 60.00 percent[0m
+[0;31mE (1943) mqtt_client: Client was not initialized[0m
+[0;32mI (1943) LIVING: Nhiet do: 26.20 C[0m
+[0;31mE (1943) mqtt_client: Client was not initialized[0m
+[0;32mI (1943) LIVING: Do sang: 123.03 lux[0m
+[0;31mE (1953) mqtt_client: Client was not initialized[0m
+[0;32mI (1953) LIVING: Khi gas: 98.79 ppm[0m
+[0;33mW (3123) LIVING: DHT11 fail![0m
+[0;32mI (3123) LIVING: Do sang: 125.21 lux[0m
+[0;32mI (3123) LIVING: Khi gas: 97.58 ppm[0m
+[0;31mE (3133) mqtt_client: Client was not initialized[0m
+[0;32mI (3843) CONFIG_WIFI: got ip:192.168.54.200[0m
+[0;32mI (3843) esp_netif_handlers: sta ip: 192.168.54.200, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (3843) CONFIG_WIFI: wifi connected[0m
+[0;32mI (3853) MQTT: Free mamory: 206008 bytes[0m
+[0;32mI (3853) MQTT: Other event id:7[0m
+[0;32mI (3933) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (3973) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=11233[0m
+[0;32mI (3993) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=44317[0m
+[0;32mI (4023) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=5021[0m
+[0;32mI (4023) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=54092[0m
+[0;32mI (4033) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=47498[0m
+[0;32mI (4033) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=27356[0m
+[0;32mI (4043) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=47632[0m
+[0;32mI (4043) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=44617[0m
+[0;32mI (4053) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=46802[0m
+[0;32mI (4053) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=41477[0m
+[0;32mI (4063) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=16752[0m
+[0;32mI (4073) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=32376[0m
+[0;32mI (4073) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=35322[0m
+[0;32mI (4083) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=36922[0m
+[0;32mI (4093) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=64547[0m
+[0;32mI (4093) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=31290[0m
+[0;32mI (4103) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=1226[0m
+[0;32mI (4113) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=35353[0m
+[0;32mI (4123) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=13323[0m
+[0;32mI (4123) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=62858[0m
+[0;32mI (4133) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=56448[0m
+[0;32mI (4143) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=23384[0m
+[0;32mI (4143) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=2261[0m
+[0;32mI (4153) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=36688[0m
+[0;32mI (4153) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26265[0m
+[0;32mI (4163) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5935[0m
+[0;32mI (4163) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55847[0m
+[0;32mI (4163) MQTT: MQTT_EVENT_PUBLISHED, msg_id=26406[0m
+[0;32mI (4173) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62189[0m
+[0;32mI (4183) MQTT: MQTT_EVENT_PUBLISHED, msg_id=25316[0m
+[0;32mI (4183) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55575[0m
+[0;32mI (4193) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22131[0m
+[0;33mW (4193) LIVING: DHT11 fail![0m
+[0;32mI (4193) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1698[0m
+[0;32mI (4193) LIVING: Do sang: 124.73 lux[0m
+[0;32mI (4203) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50620[0m
+[0;32mI (4203) LIVING: Khi gas: 93.94 ppm[0m
+[0;32mI (4213) MQTT: MQTT_EVENT_PUBLISHED, msg_id=49151[0m
+[0;32mI (4223) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20258[0m
+[0;32mI (4223) MQTT: MQTT_EVENT_PUBLISHED, msg_id=24471[0m
+[0;32mI (4233) MQTT: MQTT_EVENT_PUBLISHED, msg_id=8105[0m
+[0;32mI (4243) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23875[0m
+[0;32mI (4243) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12421[0m
+[0;32mI (4253) MQTT: MQTT_EVENT_PUBLISHED, msg_id=50638[0m
+[0;32mI (4253) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10898[0m
+[0;32mI (4263) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10823[0m
+[0;32mI (4263) MQTT: MQTT_EVENT_PUBLISHED, msg_id=5642[0m
+[0;32mI (4273) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32601[0m
+[0;32mI (4273) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14741[0m
+[0;32mI (4283) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3822[0m
+[0;32mI (4283) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22745[0m
+[0;32mI (4383) uart: queue free spaces: 20[0m
+[0;32mI (4383) APP_UART: UART config sucessfuly![0m
+[0;32mI (4383) main_task: Returned from app_main()[0m
+[0;32mI (5063) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47864[0m
+[0;33mW (5273) LIVING: DHT11 fail![0m
+[0;32mI (5273) LIVING: Do sang: 119.64 lux[0m
+[0;32mI (5273) LIVING: Khi gas: 89.09 ppm[0m
+[0;32mI (5303) MQTT: MQTT_EVENT_PUBLISHED, msg_id=858[0m
+[0;32mI (5523) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38520[0m
+[0;32mI (5723) MQTT: MQTT_EVENT_PUBLISHED, msg_id=63305[0m
+[0;32mI (6403) MQTT: MQTT_EVENT_PUBLISHED, msg_id=14693[0m
+[0;33mW (6473) LIVING: DHT11 fail![0m
+[0;32mI (6473) LIVING: Do sang: 123.52 lux[0m
+[0;32mI (6473) LIVING: Khi gas: 90.30 ppm[0m
+[0;32mI (6743) MQTT: MQTT_EVENT_PUBLISHED, msg_id=1178[0m
+[0;32mI (7153) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57244[0m
+[0;32mI (7343) MQTT: MQTT_EVENT_PUBLISHED, msg_id=38149[0m
+[0;32mI (7493) LIVING: Do am: 60.00 percent[0m
+[0;32mI (7493) LIVING: Nhiet do: 26.10 C[0m
+[0;32mI (7493) LIVING: Do sang: 123.03 lux[0m
+[0;32mI (7493) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (7523) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53109[0m
+[0;32mI (7523) rc522: [0m
+[0;32mI (7523) rc522: ╔══════════════╗[0m
+[0;32mI (7533) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (7533) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (7543) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (7543) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (7553) rc522: ╚══════════════╝[0m
+[0;32mI (7563) rc522: [0m
+[0;32mI (7563) RFID: ACCESS GRANTED![0m
+[0;32mI (7563) DOOR: Door: OPEN[0m
+[0;32mI (7623) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47288[0m
+[0;32mI (7923) MQTT: MQTT_EVENT_PUBLISHED, msg_id=10900[0m
+[0;32mI (8133) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2796[0m
+[0;32mI (8323) MQTT: MQTT_EVENT_PUBLISHED, msg_id=45488[0m
+[0;33mW (8563) LIVING: DHT11 fail![0m
+[0;32mI (8563) LIVING: Do sang: 124.00 lux[0m
+[0;32mI (8563) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (8723) MQTT: MQTT_EVENT_PUBLISHED, msg_id=12767[0m
+[0;32mI (8933) MQTT: MQTT_EVENT_PUBLISHED, msg_id=20188[0m
+[0;32mI (9133) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27967[0m
+[0;32mI (9243) RFID: Card removed[0m
+[0;32mI (9243) DOOR: Door: CLOSE[0m
+[0;32mI (9523) MQTT: MQTT_EVENT_PUBLISHED, msg_id=15701[0m
+[0;32mI (9623) LIVING: Do am: 60.00 percent[0m
+[0;32mI (9623) LIVING: Nhiet do: 26.20 C[0m
+[0;32mI (9623) LIVING: Do sang: 126.42 lux[0m
+[0;32mI (9623) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (9923) MQTT: MQTT_EVENT_PUBLISHED, msg_id=53269[0m
+[0;32mI (10123) MQTT: MQTT_EVENT_PUBLISHED, msg_id=35944[0m
+[0;32mI (10263) MQTT: MQTT_EVENT_PUBLISHED, msg_id=48891[0m
+[0;32mI (10323) MQTT: MQTT_EVENT_PUBLISHED, msg_id=34611[0m
+[0;33mW (10683) LIVING: DHT11 fail![0m
+[0;32mI (10683) LIVING: Do sang: 121.82 lux[0m
+[0;32mI (10683) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (10803) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41666[0m
+[0;32mI (10933) MQTT: MQTT_EVENT_PUBLISHED, msg_id=57018[0m
+[0;32mI (11133) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30368[0m
+[0;32mI (11323) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31924[0m
+[0;32mI (11523) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22580[0m
+[0;33mW (11743) LIVING: DHT11 fail![0m
+[0;32mI (11743) LIVING: Do sang: 122.55 lux[0m
+[0;32mI (11743) LIVING: Khi gas: 87.27 ppm[0m
+[0;32mI (12233) MQTT: MQTT_EVENT_PUBLISHED, msg_id=32345[0m
+[0;32mI (12333) MQTT: MQTT_EVENT_PUBLISHED, msg_id=62956[0m
+[0;32mI (12743) MQTT: MQTT_EVENT_PUBLISHED, msg_id=2412[0m
+[0;33mW (12803) LIVING: DHT11 fail![0m
+[0;32mI (12803) LIVING: Do sang: 121.09 lux[0m
+[0;32mI (12803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (12923) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11993[0m
+[0;32mI (13123) MQTT: MQTT_EVENT_PUBLISHED, msg_id=27049[0m
+[0;32mI (13333) MQTT: MQTT_EVENT_PUBLISHED, msg_id=21605[0m
+[0;33mW (13863) LIVING: DHT11 fail![0m
+[0;32mI (13863) LIVING: Do sang: 121.82 lux[0m
+[0;32mI (13863) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (13873) MQTT: MQTT_EVENT_PUBLISHED, msg_id=47589[0m
+[0;32mI (14123) MQTT: MQTT_EVENT_PUBLISHED, msg_id=16656[0m
+[0;32mI (14523) MQTT: MQTT_EVENT_PUBLISHED, msg_id=46539[0m
+[0;33mW (14923) LIVING: DHT11 fail![0m
+[0;32mI (14923) LIVING: Do sang: 128.36 lux[0m
+[0;32mI (14923) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (15003) MQTT: MQTT_EVENT_PUBLISHED, msg_id=4767[0m
+[0;32mI (15133) MQTT: MQTT_EVENT_PUBLISHED, msg_id=41467[0m
+[0;32mI (15353) MQTT: MQTT_EVENT_PUBLISHED, msg_id=59558[0m
+[0;32mI (15523) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52111[0m
+[0;32mI (15723) MQTT: MQTT_EVENT_PUBLISHED, msg_id=40552[0m
+[0;32mI (15923) MQTT: MQTT_EVENT_PUBLISHED, msg_id=54640[0m
+[0;33mW (15983) LIVING: DHT11 fail![0m
+[0;32mI (15983) LIVING: Do sang: 119.88 lux[0m
+[0;32mI (15983) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (16123) MQTT: MQTT_EVENT_PUBLISHED, msg_id=52446[0m
+[0;32mI (16333) MQTT: MQTT_EVENT_PUBLISHED, msg_id=3223[0m
+[0;32mI (16523) MQTT: MQTT_EVENT_PUBLISHED, msg_id=33802[0m
+[0;32mI (16723) MQTT: MQTT_EVENT_PUBLISHED, msg_id=11099[0m
+[0;32mI (17123) MQTT: MQTT_EVENT_PUBLISHED, msg_id=23062[0m
+[0;33mW (17173) LIVING: DHT11 fail![0m
+[0;32mI (17173) LIVING: Do sang: 126.67 lux[0m
+[0;32mI (17173) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (17333) MQTT: MQTT_EVENT_PUBLISHED, msg_id=30485[0m
+[0;32mI (18363) MQTT: MQTT_EVENT_PUBLISHED, msg_id=22506[0m
+[0;33mW (18373) LIVING: DHT11 fail![0m
+[0;32mI (18373) LIVING: Do sang: 123.52 lux[0m
+[0;32mI (18373) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (18723) MQTT: MQTT_EVENT_PUBLISHED, msg_id=17560[0m
+[0;32mI (19403) MQTT: MQTT_EVENT_PUBLISHED, msg_id=36407[0m
+[0;32mI (19463) LIVING: Do am: 60.00 percent[0m
+[0;32mI (19473) LIVING: Nhiet do: 26.10 C[0m
+[0;32mI (19473) LIVING: Do sang: 119.88 lux[0m
+[0;32mI (19473) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (19533) MQTT: MQTT_EVENT_PUBLISHED, msg_id=65034[0m
+[0;32mI (19943) MQTT: MQTT_EVENT_PUBLISHED, msg_id=18119[0m
+[0;32mI (20143) MQTT: MQTT_EVENT_PUBLISHED, msg_id=31949[0m
+[0;32mI (20533) MQTT: MQTT_EVENT_PUBLISHED, msg_id=55497[0m
+[0;33mW (20533) LIVING: DHT11 fail![0m
+[0;32mI (20533) LIVING: Do sang: 121.09 lux[0m
+[0;32mI (20533) LIVING: Khi gas: 86.06 ppm[0m

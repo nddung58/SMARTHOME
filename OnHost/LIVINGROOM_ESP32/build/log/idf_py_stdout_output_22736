@@ -1,0 +1,675 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30a38h (199224) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=00040a60 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00040a6c vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00044364 vaddr=40080000 size=0bcb4h ( 48308) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b440ch (738316) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=00104434 vaddr=4008bcb4 size=0c5fch ( 50684) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (541) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  f4bf33b4ab8bf054...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (723) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (723) RFID: Initializing RC522...[0m
+[0;32mI (733) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (763) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (763) RFID: RC522 READY.[0m
+[0;32mI (783) LIVING: Do am: 77.00 percent[0m
+[0;32mI (793) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (793) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (793) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (803) wifi:wifi driver task: 3ffc622c, prio:23, stack:6656, core=0[0m
+[0;32mI (823) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (823) wifi:wifi certification version: v7.0[0m
+[0;32mI (823) wifi:config NVS flash: enabled[0m
+[0;32mI (823) wifi:config nano formating: disabled[0m
+[0;32mI (833) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (833) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (843) wifi:Init management short buffer num: 32[0m
+[0;32mI (843) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (853) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (853) wifi:Init static rx buffer num: 10[0m
+[0;32mI (853) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (863) wifi_init: rx ba win: 6[0m
+[0;32mI (863) wifi_init: tcpip mbox: 32[0m
+[0;32mI (873) wifi_init: udp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp mbox: 6[0m
+[0;32mI (873) wifi_init: tcp tx win: 5744[0m
+[0;32mI (883) wifi_init: tcp rx win: 5744[0m
+[0;32mI (883) wifi_init: tcp mss: 1440[0m
+[0;32mI (913) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (913) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (913) CONFIG_WIFI: SSID: P 504[0m
+[0;32mI (913) CONFIG_WIFI: Password: 12345679[0m
+[0;32mI (923) CONFIG_WIFI: Provisioned: true[0m
+[0;32mI (923) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1043) wifi:mode : sta (14:33:5c:52:d6:7c)[0m
+[0;32mI (1053) wifi:enable tsf[0m
+[0;32mI (1063) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1[0m
+[0;32mI (1063) wifi:state: init -> auth (b0)[0m
+[0;32mI (1083) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1103) wifi:state: assoc -> run (10)[0m
+[0;32mI (1123) wifi:connected with P 504, aid = 2, channel 9, BW20, bssid = d4:e8:53:c5:c9:e1[0m
+[0;32mI (1123) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (1123) wifi:pm start, type: 1[0m
+
+[0;32mI (1143) wifi:<ba-add>idx:0 (ifx:0, d4:e8:53:c5:c9:e1), tid:7, ssn:2, winSize:64[0m
+[0;32mI (1143) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (1803) DHT11:: Failed at phase 2[0m
+[0;32mI (1853) LIVING: Do am: 77.00 percent[0m
+[0;32mI (1853) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (1853) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (1853) LIVING: Khi gas: 98.79 ppm[0m
+[0;31mE (2873) DHT11:: Failed at phase 2[0m
+[0;31mE (2923) DHT11:: Wrong checksum[0m
+[0;33mW (2923) LIVING: DHT11 fail![0m
+[0;32mI (2923) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (2923) LIVING: Khi gas: 99.39 ppm[0m
+[0;31mE (3933) DHT11:: Failed at phase 2[0m
+[0;32mI (3983) LIVING: Do am: 77.00 percent[0m
+[0;32mI (3983) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (3983) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (3983) LIVING: Khi gas: 99.39 ppm[0m
+[0;32mI (4133) CONFIG_WIFI: got ip:192.168.54.187[0m
+[0;32mI (4133) esp_netif_handlers: sta ip: 192.168.54.187, mask: 255.255.255.0, gw: 192.168.54.1[0m
+[0;32mI (4133) CONFIG_WIFI: wifi connected[0m
+[0;32mI (4143) MQTT: Free mamory: 205688 bytes[0m
+[0;32mI (4143) MQTT: Other event id:7[0m
+[0;32mI (4653) uart: queue free spaces: 20[0m
+[0;32mI (4653) APP_UART: UART config sucessfuly![0m
+[0;32mI (4653) main_task: Returned from app_main()[0m
+[0;31mE (4993) DHT11:: Failed at phase 2[0m
+[0;31mE (5043) DHT11:: Wrong checksum[0m
+[0;33mW (5043) LIVING: DHT11 fail![0m
+[0;32mI (5043) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (5043) LIVING: Khi gas: 99.39 ppm[0m
+[0;31mE (6053) DHT11:: Failed at phase 2[0m
+[0;32mI (6103) LIVING: Do am: 77.00 percent[0m
+[0;32mI (6103) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (6103) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (6103) LIVING: Khi gas: 98.79 ppm[0m
+[0;31mE (7113) DHT11:: Failed at phase 2[0m
+[0;32mI (7163) LIVING: Do am: 77.00 percent[0m
+[0;32mI (7163) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (7163) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (7163) LIVING: Khi gas: 99.39 ppm[0m
+[0;31mE (8173) DHT11:: Failed at phase 2[0m
+[0;31mE (8223) DHT11:: Wrong checksum[0m
+[0;33mW (8223) LIVING: DHT11 fail![0m
+[0;32mI (8223) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (8223) LIVING: Khi gas: 99.39 ppm[0m
+[0;31mE (9233) DHT11:: Failed at phase 2[0m
+[0;31mE (9273) DHT11:: Failed at phase 2[0m
+[0;31mE (9313) DHT11:: Failed at phase 2[0m
+[0;31mE (9353) DHT11:: Failed at phase 2[0m
+[0;31mE (9393) DHT11:: Failed at phase 2[0m
+[0;33mW (9413) LIVING: DHT11 fail![0m
+[0;32mI (9413) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (9413) LIVING: Khi gas: 99.39 ppm[0m
+[0;31mE (10423) DHT11:: Failed at phase 2[0m
+[0;31mE (10463) DHT11:: Failed at phase 2[0m
+[0;31mE (10503) DHT11:: Failed at phase 2[0m
+[0;31mE (10543) DHT11:: Failed at phase 2[0m
+[0;31mE (10583) DHT11:: Failed at phase 2[0m
+[0;33mW (10603) LIVING: DHT11 fail![0m
+[0;32mI (10603) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (10603) LIVING: Khi gas: 99.39 ppm[0m
+[0;31mE (11613) DHT11:: Failed at phase 2[0m
+[0;31mE (11653) DHT11:: Failed at phase 2[0m
+[0;32mI (11703) LIVING: Do am: 77.00 percent[0m
+[0;32mI (11703) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (11703) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (11703) LIVING: Khi gas: 98.79 ppm[0m
+[0;31mE (12713) DHT11:: Failed at phase 2[0m
+[0;31mE (12763) DHT11:: Wrong checksum[0m
+[0;33mW (12763) LIVING: DHT11 fail![0m
+[0;32mI (12763) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (12763) LIVING: Khi gas: 96.36 ppm[0m
+[0;31mE (14163) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (14163) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (14163) mqtt_client: Error transport connect[0m
+[0;31mE (14163) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (14173) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (15183) DHT11:: Failed at phase 2[0m
+[0;31mE (15223) DHT11:: Failed at phase 2[0m
+[0;31mE (15263) DHT11:: Failed at phase 2[0m
+[0;31mE (15303) DHT11:: Failed at phase 2[0m
+[0;31mE (15343) DHT11:: Failed at phase 2[0m
+[0;33mW (15363) LIVING: DHT11 fail![0m
+[0;32mI (15363) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (15363) LIVING: Khi gas: 100.61 ppm[0m
+[0;31mE (16373) DHT11:: Failed at phase 2[0m
+[0;31mE (16413) DHT11:: Failed at phase 2[0m
+[0;31mE (16453) DHT11:: Failed at phase 2[0m
+[0;31mE (16493) DHT11:: Failed at phase 2[0m
+[0;31mE (16533) DHT11:: Failed at phase 2[0m
+[0;33mW (16553) LIVING: DHT11 fail![0m
+[0;32mI (16553) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (16553) LIVING: Khi gas: 96.36 ppm[0m
+[0;31mE (17563) DHT11:: Failed at phase 2[0m
+[0;31mE (17603) DHT11:: Failed at phase 2[0m
+[0;31mE (17643) DHT11:: Failed at phase 2[0m
+[0;31mE (17683) DHT11:: Failed at phase 2[0m
+[0;31mE (17723) DHT11:: Failed at phase 2[0m
+[0;33mW (17743) LIVING: DHT11 fail![0m
+[0;32mI (17743) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (17743) LIVING: Khi gas: 99.39 ppm[0m
+[0;31mE (18753) DHT11:: Failed at phase 2[0m
+[0;31mE (18793) DHT11:: Failed at phase 2[0m
+[0;31mE (18833) DHT11:: Failed at phase 2[0m
+[0;31mE (18873) DHT11:: Failed at phase 2[0m
+[0;31mE (18913) DHT11:: Failed at phase 2[0m
+[0;33mW (18933) LIVING: DHT11 fail![0m
+[0;32mI (18933) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (18933) LIVING: Khi gas: 97.58 ppm[0m
+[0;31mE (19943) DHT11:: Failed at phase 2[0m
+[0;31mE (19983) DHT11:: Failed at phase 2[0m
+[0;31mE (20023) DHT11:: Failed at phase 2[0m
+[0;31mE (20063) DHT11:: Failed at phase 2[0m
+[0;31mE (20103) DHT11:: Failed at phase 2[0m
+[0;33mW (20123) LIVING: DHT11 fail![0m
+[0;32mI (20123) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (20123) LIVING: Khi gas: 98.79 ppm[0m
+[0;31mE (21133) DHT11:: Failed at phase 2[0m
+[0;31mE (21173) DHT11:: Failed at phase 2[0m
+[0;31mE (21213) DHT11:: Failed at phase 2[0m
+[0;31mE (21253) DHT11:: Failed at phase 2[0m
+[0;31mE (21293) DHT11:: Failed at phase 2[0m
+[0;33mW (21313) LIVING: DHT11 fail![0m
+[0;32mI (21313) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (21313) LIVING: Khi gas: 97.58 ppm[0m
+[0;31mE (22323) DHT11:: Failed at phase 2[0m
+[0;31mE (22363) DHT11:: Failed at phase 2[0m
+[0;31mE (22403) DHT11:: Failed at phase 2[0m
+[0;31mE (22443) DHT11:: Failed at phase 2[0m
+[0;31mE (22483) DHT11:: Failed at phase 2[0m
+[0;33mW (22503) LIVING: DHT11 fail![0m
+[0;32mI (22503) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (22503) LIVING: Khi gas: 99.39 ppm[0m
+[0;31mE (23513) DHT11:: Failed at phase 2[0m
+[0;31mE (23553) DHT11:: Failed at phase 2[0m
+[0;31mE (23593) DHT11:: Failed at phase 2[0m
+[0;31mE (23633) DHT11:: Failed at phase 2[0m
+[0;31mE (23673) DHT11:: Failed at phase 2[0m
+[0;33mW (23693) LIVING: DHT11 fail![0m
+[0;32mI (23693) LIVING: Do sang: 4.67 lux[0m
+[0;32mI (23693) LIVING: Khi gas: 95.76 ppm[0m
+[0;31mE (24703) DHT11:: Failed at phase 2[0m
+[0;31mE (24743) DHT11:: Failed at phase 2[0m
+[0;31mE (24783) DHT11:: Failed at phase 2[0m
+[0;31mE (24823) DHT11:: Failed at phase 2[0m
+[0;31mE (24863) DHT11:: Failed at phase 2[0m
+[0;33mW (24883) LIVING: DHT11 fail![0m
+[0;32mI (24883) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (24883) LIVING: Khi gas: 96.36 ppm[0m
+[0;31mE (25893) DHT11:: Failed at phase 2[0m
+[0;31mE (25933) DHT11:: Failed at phase 2[0m
+[0;31mE (25973) DHT11:: Failed at phase 2[0m
+[0;31mE (26013) DHT11:: Failed at phase 2[0m
+[0;31mE (26053) DHT11:: Failed at phase 2[0m
+[0;33mW (26073) LIVING: DHT11 fail![0m
+[0;32mI (26073) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (26073) LIVING: Khi gas: 104.85 ppm[0m
+[0;31mE (27093) DHT11:: Failed at phase 2[0m
+[0;31mE (27133) DHT11:: Failed at phase 2[0m
+[0;31mE (27173) DHT11:: Failed at phase 2[0m
+[0;31mE (27213) DHT11:: Failed at phase 2[0m
+[0;31mE (27253) DHT11:: Failed at phase 2[0m
+[0;33mW (27273) LIVING: DHT11 fail![0m
+[0;32mI (27273) LIVING: Do sang: 4.48 lux[0m
+[0;32mI (27273) LIVING: Khi gas: 95.15 ppm[0m
+[0;31mE (28293) DHT11:: Failed at phase 2[0m
+[0;31mE (28333) DHT11:: Failed at phase 2[0m
+[0;31mE (28373) DHT11:: Failed at phase 2[0m
+[0;31mE (28413) DHT11:: Failed at phase 2[0m
+[0;31mE (28453) DHT11:: Failed at phase 2[0m
+[0;33mW (28473) LIVING: DHT11 fail![0m
+[0;32mI (28473) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (28473) LIVING: Khi gas: 95.76 ppm[0m
+[0;32mI (29173) MQTT: Other event id:7[0m
+[0;31mE (29483) DHT11:: Failed at phase 2[0m
+[0;31mE (29523) DHT11:: Failed at phase 2[0m
+[0;31mE (29563) DHT11:: Failed at phase 2[0m
+[0;31mE (29603) DHT11:: Failed at phase 2[0m
+[0;31mE (29643) DHT11:: Failed at phase 2[0m
+[0;33mW (29663) LIVING: DHT11 fail![0m
+[0;32mI (29663) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (29663) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (30673) DHT11:: Failed at phase 2[0m
+[0;31mE (30713) DHT11:: Failed at phase 2[0m
+[0;31mE (30753) DHT11:: Failed at phase 2[0m
+[0;31mE (30793) DHT11:: Failed at phase 2[0m
+[0;31mE (30833) DHT11:: Failed at phase 2[0m
+[0;33mW (30853) LIVING: DHT11 fail![0m
+[0;32mI (30853) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (30853) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (31863) DHT11:: Failed at phase 2[0m
+[0;31mE (31903) DHT11:: Failed at phase 2[0m
+[0;31mE (31943) DHT11:: Failed at phase 2[0m
+[0;31mE (31983) DHT11:: Failed at phase 2[0m
+[0;31mE (32023) DHT11:: Failed at phase 2[0m
+[0;33mW (32043) LIVING: DHT11 fail![0m
+[0;32mI (32043) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (32043) LIVING: Khi gas: 96.97 ppm[0m
+[0;31mE (33053) DHT11:: Failed at phase 2[0m
+[0;31mE (33093) DHT11:: Failed at phase 2[0m
+[0;31mE (33133) DHT11:: Failed at phase 2[0m
+[0;31mE (33173) DHT11:: Failed at phase 2[0m
+[0;31mE (33213) DHT11:: Failed at phase 2[0m
+[0;33mW (33233) LIVING: DHT11 fail![0m
+[0;32mI (33233) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (33233) LIVING: Khi gas: 94.55 ppm[0m
+[0;31mE (34243) DHT11:: Failed at phase 2[0m
+[0;31mE (34283) DHT11:: Failed at phase 2[0m
+[0;31mE (34323) DHT11:: Failed at phase 2[0m
+[0;31mE (34363) DHT11:: Failed at phase 2[0m
+[0;31mE (34403) DHT11:: Failed at phase 2[0m
+[0;33mW (34423) LIVING: DHT11 fail![0m
+[0;32mI (34423) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (34423) LIVING: Khi gas: 87.27 ppm[0m
+[0;31mE (39183) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (39183) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (39183) mqtt_client: Error transport connect[0m
+[0;31mE (39183) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (39193) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (40203) DHT11:: Failed at phase 2[0m
+[0;31mE (40243) DHT11:: Failed at phase 2[0m
+[0;31mE (40283) DHT11:: Failed at phase 2[0m
+[0;31mE (40323) DHT11:: Failed at phase 2[0m
+[0;31mE (40363) DHT11:: Failed at phase 2[0m
+[0;33mW (40383) LIVING: DHT11 fail![0m
+[0;32mI (40383) LIVING: Do sang: 4.88 lux[0m
+[0;32mI (40383) LIVING: Khi gas: 96.97 ppm[0m
+[0;31mE (41403) DHT11:: Failed at phase 2[0m
+[0;31mE (41443) DHT11:: Failed at phase 2[0m
+[0;31mE (41483) DHT11:: Failed at phase 2[0m
+[0;31mE (41523) DHT11:: Failed at phase 2[0m
+[0;31mE (41563) DHT11:: Failed at phase 2[0m
+[0;33mW (41583) LIVING: DHT11 fail![0m
+[0;32mI (41583) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (41583) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (42593) DHT11:: Failed at phase 2[0m
+[0;31mE (42633) DHT11:: Failed at phase 2[0m
+[0;31mE (42673) DHT11:: Failed at phase 2[0m
+[0;31mE (42713) DHT11:: Failed at phase 2[0m
+[0;31mE (42753) DHT11:: Failed at phase 2[0m
+[0;33mW (42773) LIVING: DHT11 fail![0m
+[0;32mI (42773) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (42773) LIVING: Khi gas: 100.00 ppm[0m
+[0;31mE (43783) DHT11:: Failed at phase 2[0m
+[0;31mE (43823) DHT11:: Failed at phase 2[0m
+[0;31mE (43863) DHT11:: Failed at phase 2[0m
+[0;31mE (43903) DHT11:: Failed at phase 2[0m
+[0;31mE (43943) DHT11:: Failed at phase 2[0m
+[0;33mW (43963) LIVING: DHT11 fail![0m
+[0;32mI (43963) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (43963) LIVING: Khi gas: 94.55 ppm[0m
+[0;31mE (44973) DHT11:: Failed at phase 2[0m
+[0;31mE (45013) DHT11:: Failed at phase 2[0m
+[0;32mI (45063) LIVING: Do am: 77.00 percent[0m
+[0;32mI (45063) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (45063) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (45063) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (46073) DHT11:: Failed at phase 2[0m
+[0;31mE (46123) DHT11:: Wrong checksum[0m
+[0;33mW (46123) LIVING: DHT11 fail![0m
+[0;32mI (46123) LIVING: Do sang: 4.48 lux[0m
+[0;32mI (46123) LIVING: Khi gas: 95.76 ppm[0m
+[0;31mE (47133) DHT11:: Failed at phase 2[0m
+[0;32mI (47183) LIVING: Do am: 77.00 percent[0m
+[0;32mI (47183) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (47183) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (47183) LIVING: Khi gas: 96.36 ppm[0m
+[0;31mE (48193) DHT11:: Failed at phase 2[0m
+[0;32mI (48243) LIVING: Do am: 77.00 percent[0m
+[0;32mI (48243) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (48243) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (48243) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (49253) DHT11:: Failed at phase 2[0m
+[0;31mE (49293) DHT11:: Failed at phase 2[0m
+[0;31mE (49333) DHT11:: Failed at phase 2[0m
+[0;31mE (49373) DHT11:: Failed at phase 2[0m
+[0;31mE (49413) DHT11:: Failed at phase 2[0m
+[0;33mW (49433) LIVING: DHT11 fail![0m
+[0;32mI (49433) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (49433) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (50443) DHT11:: Failed at phase 2[0m
+[0;31mE (50483) DHT11:: Failed at phase 2[0m
+[0;31mE (50523) DHT11:: Failed at phase 2[0m
+[0;31mE (50563) DHT11:: Failed at phase 2[0m
+[0;31mE (50603) DHT11:: Failed at phase 2[0m
+[0;33mW (50623) LIVING: DHT11 fail![0m
+[0;32mI (50623) LIVING: Do sang: 5.15 lux[0m
+[0;32mI (50623) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (51633) DHT11:: Failed at phase 2[0m
+[0;31mE (51673) DHT11:: Failed at phase 2[0m
+[0;32mI (51723) LIVING: Do am: 77.00 percent[0m
+[0;32mI (51723) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (51723) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (51723) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (52733) DHT11:: Failed at phase 2[0m
+[0;32mI (52783) LIVING: Do am: 77.00 percent[0m
+[0;32mI (52783) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (52783) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (52783) LIVING: Khi gas: 87.27 ppm[0m
+[0;31mE (53813) DHT11:: Failed at phase 2[0m
+[0;31mE (53853) DHT11:: Failed at phase 2[0m
+[0;31mE (53893) DHT11:: Failed at phase 2[0m
+[0;31mE (53933) DHT11:: Failed at phase 2[0m
+[0;31mE (53973) DHT11:: Failed at phase 2[0m
+[0;33mW (53993) LIVING: DHT11 fail![0m
+[0;32mI (53993) LIVING: Do sang: 4.48 lux[0m
+[0;32mI (53993) LIVING: Khi gas: 93.94 ppm[0m
+[0;32mI (54193) MQTT: Other event id:7[0m
+[0;31mE (55023) DHT11:: Wrong checksum[0m
+[0;33mW (55023) LIVING: DHT11 fail![0m
+[0;32mI (55023) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (55023) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (56033) DHT11:: Failed at phase 2[0m
+[0;32mI (56083) LIVING: Do am: 77.00 percent[0m
+[0;32mI (56083) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (56083) LIVING: Do sang: 4.27 lux[0m
+[0;32mI (56083) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (57093) DHT11:: Failed at phase 2[0m
+[0;31mE (57143) DHT11:: Wrong checksum[0m
+[0;33mW (57143) LIVING: DHT11 fail![0m
+[0;32mI (57143) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (57143) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (58153) DHT11:: Failed at phase 2[0m
+[0;32mI (58203) LIVING: Do am: 77.00 percent[0m
+[0;32mI (58203) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (58203) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (58203) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (59223) DHT11:: Failed at phase 2[0m
+[0;32mI (59273) LIVING: Do am: 77.00 percent[0m
+[0;32mI (59273) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (59273) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (59273) LIVING: Khi gas: 94.55 ppm[0m
+[0;31mE (60293) DHT11:: Failed at phase 2[0m
+[0;32mI (60343) LIVING: Do am: 77.00 percent[0m
+[0;32mI (60343) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (60343) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (60343) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (61363) DHT11:: Failed at phase 2[0m
+[0;31mE (61413) DHT11:: Wrong checksum[0m
+[0;33mW (61413) LIVING: DHT11 fail![0m
+[0;32mI (61413) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (61413) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (62423) DHT11:: Failed at phase 2[0m
+[0;31mE (62473) DHT11:: Wrong checksum[0m
+[0;33mW (62473) LIVING: DHT11 fail![0m
+[0;32mI (62473) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (62473) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (63483) DHT11:: Failed at phase 2[0m
+[0;32mI (63533) LIVING: Do am: 77.00 percent[0m
+[0;32mI (63533) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (63533) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (63533) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (64203) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (64203) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (64203) mqtt_client: Error transport connect[0m
+[0;31mE (64203) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (64213) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (64543) DHT11:: Failed at phase 2[0m
+[0;32mI (64593) LIVING: Do am: 77.00 percent[0m
+[0;32mI (64593) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (64593) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (64593) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (65603) DHT11:: Failed at phase 2[0m
+[0;31mE (65653) DHT11:: Wrong checksum[0m
+[0;33mW (65653) LIVING: DHT11 fail![0m
+[0;32mI (65653) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (65653) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (66663) DHT11:: Failed at phase 2[0m
+[0;31mE (66703) DHT11:: Failed at phase 2[0m
+[0;31mE (66743) DHT11:: Failed at phase 2[0m
+[0;31mE (66783) DHT11:: Failed at phase 2[0m
+[0;31mE (66823) DHT11:: Failed at phase 2[0m
+[0;33mW (66843) LIVING: DHT11 fail![0m
+[0;32mI (66843) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (66843) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (67853) DHT11:: Failed at phase 2[0m
+[0;31mE (67893) DHT11:: Failed at phase 2[0m
+[0;31mE (67933) DHT11:: Failed at phase 2[0m
+[0;31mE (67973) DHT11:: Failed at phase 2[0m
+[0;31mE (68013) DHT11:: Failed at phase 2[0m
+[0;33mW (68033) LIVING: DHT11 fail![0m
+[0;32mI (68033) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (68033) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (69043) DHT11:: Failed at phase 2[0m
+[0;31mE (69083) DHT11:: Failed at phase 2[0m
+[0;31mE (69123) DHT11:: Failed at phase 2[0m
+[0;31mE (69163) DHT11:: Failed at phase 2[0m
+[0;31mE (69203) DHT11:: Failed at phase 2[0m
+[0;33mW (69223) LIVING: DHT11 fail![0m
+[0;32mI (69223) LIVING: Do sang: 4.42 lux[0m
+[0;32mI (69223) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (70233) DHT11:: Failed at phase 2[0m
+[0;31mE (70273) DHT11:: Failed at phase 2[0m
+[0;31mE (70313) DHT11:: Failed at phase 2[0m
+[0;31mE (70353) DHT11:: Failed at phase 2[0m
+[0;31mE (70393) DHT11:: Failed at phase 2[0m
+[0;33mW (70413) LIVING: DHT11 fail![0m
+[0;32mI (70413) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (70413) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (71423) DHT11:: Failed at phase 2[0m
+[0;31mE (71463) DHT11:: Failed at phase 2[0m
+[0;32mI (71513) LIVING: Do am: 77.00 percent[0m
+[0;32mI (71513) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (71513) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (71513) LIVING: Khi gas: 91.52 ppm[0m
+[0;31mE (72523) DHT11:: Failed at phase 2[0m
+[0;32mI (72573) LIVING: Do am: 77.00 percent[0m
+[0;32mI (72573) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (72573) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (72573) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (73583) DHT11:: Failed at phase 2[0m
+[0;31mE (73633) DHT11:: Wrong checksum[0m
+[0;33mW (73633) LIVING: DHT11 fail![0m
+[0;32mI (73633) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (73633) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (74643) DHT11:: Failed at phase 2[0m
+[0;32mI (74693) LIVING: Do am: 77.00 percent[0m
+[0;32mI (74693) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (74693) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (74693) LIVING: Khi gas: 92.73 ppm[0m
+[0;31mE (75703) DHT11:: Failed at phase 2[0m
+[0;32mI (75753) LIVING: Do am: 77.00 percent[0m
+[0;32mI (75753) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (75753) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (75753) LIVING: Khi gas: 90.30 ppm[0m
+[0;31mE (76763) DHT11:: Failed at phase 2[0m
+[0;31mE (76813) DHT11:: Wrong checksum[0m
+[0;33mW (76813) LIVING: DHT11 fail![0m
+[0;32mI (76813) LIVING: Do sang: 4.97 lux[0m
+[0;32mI (76813) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (77823) DHT11:: Failed at phase 2[0m
+[0;32mI (77873) LIVING: Do am: 77.00 percent[0m
+[0;32mI (77873) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (77873) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (77873) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (78883) DHT11:: Failed at phase 2[0m
+[0;32mI (78933) LIVING: Do am: 77.00 percent[0m
+[0;32mI (78933) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (78933) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (78933) LIVING: Khi gas: 92.73 ppm[0m
+[0;32mI (79213) MQTT: Other event id:7[0m
+[0;31mE (79943) DHT11:: Failed at phase 2[0m
+[0;31mE (79993) DHT11:: Wrong checksum[0m
+[0;33mW (79993) LIVING: DHT11 fail![0m
+[0;32mI (79993) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (79993) LIVING: Khi gas: 92.12 ppm[0m
+[0;31mE (81003) DHT11:: Failed at phase 2[0m
+[0;32mI (81053) LIVING: Do am: 77.00 percent[0m
+[0;32mI (81053) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (81053) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (81053) LIVING: Khi gas: 90.30 ppm[0m
+[0;31mE (82063) DHT11:: Failed at phase 2[0m
+[0;32mI (82113) LIVING: Do am: 77.00 percent[0m
+[0;32mI (82113) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (82113) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (82113) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (83123) DHT11:: Failed at phase 2[0m
+[0;31mE (83173) DHT11:: Wrong checksum[0m
+[0;33mW (83173) LIVING: DHT11 fail![0m
+[0;32mI (83173) LIVING: Do sang: 4.73 lux[0m
+[0;32mI (83173) LIVING: Khi gas: 93.94 ppm[0m
+[0;31mE (84183) DHT11:: Failed at phase 2[0m
+[0;32mI (84233) LIVING: Do am: 77.00 percent[0m
+[0;32mI (84233) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (84233) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (84233) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (85243) DHT11:: Failed at phase 2[0m
+[0;32mI (85293) LIVING: Do am: 77.00 percent[0m
+[0;32mI (85293) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (85293) LIVING: Do sang: 4.82 lux[0m
+[0;32mI (85293) LIVING: Khi gas: 90.91 ppm[0m
+[0;31mE (86303) DHT11:: Failed at phase 2[0m
+[0;31mE (86353) DHT11:: Wrong checksum[0m
+[0;33mW (86353) LIVING: DHT11 fail![0m
+[0;32mI (86353) LIVING: Do sang: 5.67 lux[0m
+[0;32mI (86353) LIVING: Khi gas: 89.09 ppm[0m
+[0;31mE (87363) DHT11:: Failed at phase 2[0m
+[0;32mI (87413) LIVING: Do am: 77.00 percent[0m
+[0;32mI (87413) LIVING: Nhiet do: 29.30 C[0m
+[0;32mI (87413) LIVING: Do sang: 5.09 lux[0m
+[0;32mI (87413) LIVING: Khi gas: 87.27 ppm[0m
+[0;31mE (89223) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (89223) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (89223) mqtt_client: Error transport connect[0m
+[0;31mE (89223) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (89233) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (90243) DHT11:: Failed at phase 2[0m
+[0;31mE (90283) DHT11:: Failed at phase 2[0m
+[0;31mE (90323) DHT11:: Failed at phase 2[0m
+[0;31mE (90363) DHT11:: Failed at phase 2[0m
+[0;31mE (90403) DHT11:: Failed at phase 2[0m
+[0;33mW (90423) LIVING: DHT11 fail![0m
+[0;32mI (90423) LIVING: Do sang: 4.52 lux[0m
+[0;32mI (90423) LIVING: Khi gas: 90.30 ppm[0m
+[0;31mE (91433) DHT11:: Failed at phase 2[0m
+[0;31mE (91473) DHT11:: Failed at phase 2[0m
+[0;31mE (91513) DHT11:: Failed at phase 2[0m
+[0;31mE (91553) DHT11:: Failed at phase 2[0m
+[0;31mE (91593) DHT11:: Failed at phase 2[0m
+[0;33mW (91613) LIVING: DHT11 fail![0m
+[0;32mI (91613) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (91613) LIVING: Khi gas: 89.70 ppm[0m
+[0;31mE (92623) DHT11:: Failed at phase 2[0m
+[0;31mE (92663) DHT11:: Failed at phase 2[0m
+[0;31mE (92703) DHT11:: Failed at phase 2[0m
+[0;31mE (92743) DHT11:: Failed at phase 2[0m
+[0;31mE (92783) DHT11:: Failed at phase 2[0m
+[0;33mW (92803) LIVING: DHT11 fail![0m
+[0;32mI (92803) LIVING: Do sang: 5.15 lux[0m
+[0;32mI (92803) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (93823) DHT11:: Failed at phase 2[0m
+[0;31mE (93863) DHT11:: Failed at phase 2[0m
+[0;31mE (93903) DHT11:: Failed at phase 2[0m
+[0;31mE (93943) DHT11:: Failed at phase 2[0m
+[0;31mE (93983) DHT11:: Failed at phase 2[0m
+[0;33mW (94003) LIVING: DHT11 fail![0m
+[0;32mI (94003) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (94003) LIVING: Khi gas: 87.88 ppm[0m
+[0;31mE (95023) DHT11:: Failed at phase 2[0m
+[0;31mE (95063) DHT11:: Failed at phase 2[0m
+[0;31mE (95103) DHT11:: Failed at phase 2[0m
+[0;31mE (95143) DHT11:: Failed at phase 2[0m
+[0;31mE (95183) DHT11:: Failed at phase 2[0m
+[0;33mW (95203) LIVING: DHT11 fail![0m
+[0;32mI (95203) LIVING: Do sang: 4.45 lux[0m
+[0;32mI (95203) LIVING: Khi gas: 88.48 ppm[0m
+[0;31mE (96213) DHT11:: Failed at phase 2[0m
+[0;31mE (96253) DHT11:: Failed at phase 2[0m
+[0;31mE (96293) DHT11:: Failed at phase 2[0m
+[0;31mE (96333) DHT11:: Failed at phase 2[0m
+[0;31mE (96373) DHT11:: Failed at phase 2[0m
+[0;33mW (96393) LIVING: DHT11 fail![0m
+[0;32mI (96393) LIVING: Do sang: 4.76 lux[0m
+[0;32mI (96393) LIVING: Khi gas: 90.91 ppm[0m
+[0;31mE (97403) DHT11:: Failed at phase 2[0m
+[0;31mE (97443) DHT11:: Failed at phase 2[0m
+[0;31mE (97483) DHT11:: Failed at phase 2[0m
+[0;31mE (97523) DHT11:: Failed at phase 2[0m
+[0;31mE (97563) DHT11:: Failed at phase 2[0m
+[0;33mW (97583) LIVING: DHT11 fail![0m
+[0;32mI (97583) LIVING: Do sang: 4.70 lux[0m
+[0;32mI (97583) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (98603) DHT11:: Failed at phase 2[0m
+[0;31mE (98643) DHT11:: Failed at phase 2[0m
+[0;31mE (98683) DHT11:: Failed at phase 2[0m
+[0;31mE (98723) DHT11:: Failed at phase 2[0m
+[0;31mE (98763) DHT11:: Failed at phase 2[0m
+[0;33mW (98783) LIVING: DHT11 fail![0m
+[0;32mI (98783) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (98783) LIVING: Khi gas: 91.52 ppm[0m
+[0;31mE (99793) DHT11:: Failed at phase 2[0m
+[0;31mE (99833) DHT11:: Failed at phase 2[0m
+[0;31mE (99873) DHT11:: Failed at phase 2[0m
+[0;31mE (99913) DHT11:: Failed at phase 2[0m
+[0;31mE (99953) DHT11:: Failed at phase 2[0m
+[0;33mW (99973) LIVING: DHT11 fail![0m
+[0;32mI (99973) LIVING: Do sang: 4.30 lux[0m
+[0;32mI (99973) LIVING: Khi gas: 93.33 ppm[0m
+[0;31mE (100983) DHT11:: Failed at phase 2[0m
+[0;31mE (101023) DHT11:: Failed at phase 2[0m
+[0;31mE (101063) DHT11:: Failed at phase 2[0m
+[0;31mE (101103) DHT11:: Failed at phase 2[0m
+[0;31mE (101143) DHT11:: Failed at phase 2[0m
+[0;33mW (101163) LIVING: DHT11 fail![0m
+[0;32mI (101163) LIVING: Do sang: 4.24 lux[0m
+[0;32mI (101163) LIVING: Khi gas: 90.91 ppm[0m

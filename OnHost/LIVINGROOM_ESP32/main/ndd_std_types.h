@@ -2,41 +2,31 @@
 #define NDD_STD_TYPES_H_
 
 #include "string.h"
+#include "stdio.h"
 
 typedef enum
 {
     ON_HOST_LIVING_ROOM,
-
-    // on board
     ON_BOARD_BED_ROOM,
-
     NODE_MAX
-
 } nodes_t;
 
 typedef enum
 {
-    // Sensor
     LDR = 0x01,
     PIR = 0x02,
     MQ2 = 0x03,
     HUMI = 0x04,
     TEMP = 0x05,
     RAIN = 0x06,
-
-    // Actuator
     LED = 0x11,
     FAN = 0x12,
     BUZZER = 0x13,
     AWNINGS = 0x14,
     DOOR = 0x15,
-
-    // system
     MODE = 0x20,
     UNKNOWN = 0xFF,
-
-    DEVICE_MAX
-
+    DEVICE_MAX = 0xFF
 } id_end_device_t;
 
 typedef enum
@@ -69,17 +59,13 @@ static const char *device_name[] = {
 static inline char *get_key_topic(nodes_t node, id_end_device_t dev)
 {
     if (node >= NODE_MAX || dev >= DEVICE_MAX)
-    {
         return NULL;
-    }
 
     const char *n = node_name[node];
-    const char *d = device_name[dev];
+    const char *d = (dev < DEVICE_MAX) ? device_name[dev] : NULL;
 
     if (!n || !d)
-    {
         return NULL;
-    }
 
     static _Thread_local char key[32];
     snprintf(key, sizeof(key), "%s_%s", n, d);
@@ -102,9 +88,11 @@ typedef struct
 
 static inline nodes_t get_node_from_name(const char *name)
 {
+    if (!name)
+        return NODE_MAX;
     for (int i = 0; i < NODE_MAX; i++)
     {
-        if (strcmp(name, node_name[i]) == 0)
+        if (node_name[i] && strcmp(name, node_name[i]) == 0)
             return (nodes_t)i;
     }
     return NODE_MAX;
@@ -112,34 +100,35 @@ static inline nodes_t get_node_from_name(const char *name)
 
 static inline id_end_device_t get_device_from_name(const char *name)
 {
-    for (int i = 0; i < DEVICE_MAX; i++)
+    if (!name)
+        return UNKNOWN;
+    for (int i = 0; i < (int)DEVICE_MAX; i++)
     {
-        if (strcmp(name, device_name[i]) == 0)
+        if (device_name[i] != NULL && strcmp(name, device_name[i]) == 0)
             return (id_end_device_t)i;
     }
-    return UNKNOWN; // fallback
+    return UNKNOWN;
 }
 
 static inline topic_info_t parse_topic(const char *topic)
 {
     topic_info_t info = {.node = NODE_MAX, .dev = UNKNOWN, .type = TOPIC_INVALID};
-    char buf[64];
+    if (!topic)
+        return info;
 
-    strncpy(buf, topic, sizeof(buf));
-    buf[sizeof(buf) - 1] = '\0';
+    char buf[64] = {0};
+    strncpy(buf, topic, sizeof(buf) - 1);
 
-    // Parse str: node_dev_cmd
     char *node_str = strtok(buf, "_");
     char *dev_str = strtok(NULL, "_");
     char *cmd_str = strtok(NULL, "_");
 
-    if (!node_str || !dev_str)
-        return info;
-
-    info.type = (cmd_str && strcmp(cmd_str, "cmd") == 0) ? TOPIC_CMD : TOPIC_UP;
-
-    info.node = get_node_from_name(node_str);
-    info.dev = get_device_from_name(dev_str);
+    if (node_str && dev_str)
+    {
+        info.node = get_node_from_name(node_str);
+        info.dev = get_device_from_name(dev_str);
+        info.type = (cmd_str && strcmp(cmd_str, "cmd") == 0) ? TOPIC_CMD : TOPIC_UP;
+    }
 
     return info;
 }

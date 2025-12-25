@@ -1,0 +1,1160 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30a68h (199272) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=00040a90 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00040a9c vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=00044394 vaddr=40080000 size=0bc84h ( 48260) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b4424h (738340) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=0010444c vaddr=4008bc84 size=0c62ch ( 50732) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (541) cpu_start: Pro cpu start user code[0m
+[0;32mI (541) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  aaf29ecf59371624...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (628) spi_flash: detected chip: generic[0m
+[0;32mI (631) spi_flash: flash io: dio[0m
+[0;33mW (635) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (649) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (713) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (713) RFID: Initializing RC522...[0m
+[0;32mI (713) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (743) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (743) RFID: RC522 READY.[0m
+[0;31mE (743) DHT11:: Failed at phase 2[0m
+[0;32mI (783) LIVING: Do am: 79.00 percent[0m
+[0;32mI (793) LIVING: Nhiet do: 28.90 C[0m
+[0;32mI (803) LIVING: Current Mode in NVS: 0[0m
+[0;31mE (803) mqtt_client: Client was not initialized[0m
+[0;32mI (803) LIVING: AUTO TASK[0m
+[0;32mI (803) LIVING: Do sang: 6.15 lux[0m
+[0;31mE (813) mqtt_client: Client was not initialized[0m
+[0;32mI (813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (823) wifi:wifi driver task: 3ffc604c, prio:23, stack:6656, core=0[0m
+[0;32mI (833) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (833) wifi:wifi certification version: v7.0[0m
+[0;32mI (833) wifi:config NVS flash: enabled[0m
+[0;32mI (833) wifi:config nano formating: disabled[0m
+[0;32mI (843) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (843) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (853) wifi:Init management short buffer num: 32[0m
+[0;32mI (853) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (863) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (863) wifi:Init static rx buffer num: 10[0m
+[0;32mI (863) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (893) wifi_init: rx ba win: 6[0m
+[0;32mI (893) wifi_init: tcpip mbox: 32[0m
+[0;32mI (893) wifi_init: udp mbox: 6[0m
+[0;32mI (893) wifi_init: tcp mbox: 6[0m
+[0;32mI (893) wifi_init: tcp tx win: 5744[0m
+[0;32mI (903) wifi_init: tcp rx win: 5744[0m
+[0;32mI (903) wifi_init: tcp mss: 1440[0m
+[0;32mI (903) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (913) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (923) CONFIG_WIFI: Provisioned: false[0m
+[0;32mI (933) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1003) LIVING: AUTO TASK[0m
+[0;32mI (1043) wifi:mode : softAP (14:33:5c:52:d6:7d)[0m
+[0;32mI (1053) wifi:Total power save buffer number: 16[0m
+[0;32mI (1053) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1053) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1063) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1203) LIVING: AUTO TASK[0m
+[0;32mI (1403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1403) LIVING: AUTO TASK[0m
+[0;32mI (1603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1603) LIVING: AUTO TASK[0m
+[0;32mI (1803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (1803) LIVING: AUTO TASK[0m
+[0;31mE (1823) DHT11:: Failed at phase 2[0m
+[0;31mE (1863) DHT11:: Failed at phase 2[0m
+[0;31mE (1903) DHT11:: Failed at phase 2[0m
+[0;31mE (1943) DHT11:: Failed at phase 2[0m
+[0;31mE (1983) DHT11:: Failed at phase 2[0m
+[0;33mW (2003) LIVING: DHT11 fail![0m
+[0;32mI (2003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2003) LIVING: Do sang: 12.09 lux[0m
+[0;32mI (2003) LIVING: AUTO TASK[0m
+[0;32mI (2003) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (2203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2203) LIVING: AUTO TASK[0m
+[0;32mI (2403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2403) LIVING: AUTO TASK[0m
+[0;32mI (2603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2603) LIVING: AUTO TASK[0m
+[0;32mI (2803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (2803) LIVING: AUTO TASK[0m
+[0;32mI (2863) rc522: [0m
+[0;32mI (2863) rc522: ╔══════════════╗[0m
+[0;32mI (2863) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (2863) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (2873) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (2883) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (2883) rc522: ╚══════════════╝[0m
+[0;32mI (2893) rc522: [0m
+[0;32mI (2893) RFID: ACCESS GRANTED![0m
+[0;32mI (2893) DOOR: Door: OPEN[0m
+[0;31mE (2903) mqtt_client: Client was not initialized[0m
+[0;32mI (3003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3003) LIVING: AUTO TASK[0m
+[0;32mI (3033) LIVING: Do am: 79.00 percent[0m
+[0;32mI (3033) LIVING: Nhiet do: 28.90 C[0m
+[0;32mI (3033) LIVING: Do sang: 16.09 lux[0m
+[0;32mI (3033) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (3203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3203) LIVING: AUTO TASK[0m
+[0;32mI (3403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3403) LIVING: AUTO TASK[0m
+[0;32mI (3603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3603) LIVING: AUTO TASK[0m
+[0;32mI (3803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (3803) LIVING: AUTO TASK[0m
+[0;32mI (3843) RFID: Card removed[0m
+[0;32mI (3843) DOOR: Door: CLOSE[0m
+[0;32mI (4003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4003) LIVING: AUTO TASK[0m
+[0;31mE (4053) DHT11:: Failed at phase 2[0m
+[0;32mI (4103) LIVING: Do am: 79.00 percent[0m
+[0;32mI (4103) LIVING: Nhiet do: 28.90 C[0m
+[0;32mI (4103) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (4103) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (4203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4203) LIVING: AUTO TASK[0m
+[0;32mI (4403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4403) LIVING: AUTO TASK[0m
+[0;32mI (4603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4603) LIVING: AUTO TASK[0m
+[0;32mI (4803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (4803) LIVING: AUTO TASK[0m
+[0;31mE (4843) mqtt_client: Client was not initialized[0m
+[0;32mI (5003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5003) LIVING: AUTO TASK[0m
+[0;31mE (5113) DHT11:: Failed at phase 2[0m
+[0;31mE (5153) DHT11:: Failed at phase 2[0m
+[0;31mE (5193) DHT11:: Failed at phase 2[0m
+[0;32mI (5203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5203) LIVING: AUTO TASK[0m
+[0;31mE (5233) DHT11:: Failed at phase 2[0m
+[0;31mE (5273) DHT11:: Failed at phase 2[0m
+[0;33mW (5293) LIVING: DHT11 fail![0m
+[0;32mI (5293) LIVING: Do sang: 12.88 lux[0m
+[0;32mI (5293) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (5403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5403) LIVING: AUTO TASK[0m
+[0;32mI (5603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5603) LIVING: AUTO TASK[0m
+[0;32mI (5803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (5803) LIVING: AUTO TASK[0m
+[0;32mI (6003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6003) LIVING: AUTO TASK[0m
+[0;32mI (6203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6203) LIVING: AUTO TASK[0m
+[0;31mE (6303) DHT11:: Failed at phase 2[0m
+[0;31mE (6343) DHT11:: Failed at phase 2[0m
+[0;31mE (6383) DHT11:: Failed at phase 2[0m
+[0;32mI (6403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6403) LIVING: AUTO TASK[0m
+[0;31mE (6423) DHT11:: Failed at phase 2[0m
+[0;31mE (6463) DHT11:: Failed at phase 2[0m
+[0;33mW (6483) LIVING: DHT11 fail![0m
+[0;32mI (6483) LIVING: Do sang: 14.76 lux[0m
+[0;32mI (6483) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (6603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6603) LIVING: AUTO TASK[0m
+[0;32mI (6803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (6803) LIVING: AUTO TASK[0m
+[0;32mI (6893) rc522: [0m
+[0;32mI (6893) rc522: ╔══════════════╗[0m
+[0;32mI (6893) rc522: ║              ║ Type: MIFARE 1K[0m
+[0;32mI (6893) rc522: ║     RFID     ║ UID:  23 9B 85 2D[0m
+[0;32mI (6903) rc522: ║     CARD     ║ ATQA: 0x0400[0m
+[0;32mI (6913) rc522: ║              ║ SAK:  0x08[0m
+[0;32mI (6913) rc522: ╚══════════════╝[0m
+[0;32mI (6923) rc522: [0m
+[0;32mI (6923) RFID: ACCESS GRANTED![0m
+[0;32mI (6923) DOOR: Door: OPEN[0m
+[0;31mE (6933) mqtt_client: Client was not initialized[0m
+[0;32mI (7003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7003) LIVING: AUTO TASK[0m
+[0;32mI (7203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7203) LIVING: AUTO TASK[0m
+[0;32mI (7403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7403) LIVING: AUTO TASK[0m
+[0;31mE (7493) DHT11:: Failed at phase 2[0m
+[0;31mE (7533) DHT11:: Failed at phase 2[0m
+[0;32mI (7583) LIVING: Do am: 78.00 percent[0m
+[0;32mI (7583) LIVING: Nhiet do: 28.90 C[0m
+[0;32mI (7583) LIVING: Do sang: 11.67 lux[0m
+[0;32mI (7583) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (7603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7603) LIVING: AUTO TASK[0m
+[0;32mI (7803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (7803) LIVING: AUTO TASK[0m
+[0;32mI (7863) RFID: Card removed[0m
+[0;32mI (7863) DOOR: Door: CLOSE[0m
+[0;32mI (8003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8003) LIVING: AUTO TASK[0m
+[0;32mI (8203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8203) LIVING: AUTO TASK[0m
+[0;32mI (8403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8403) LIVING: AUTO TASK[0m
+[0;31mE (8593) DHT11:: Failed at phase 2[0m
+[0;32mI (8603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8603) LIVING: AUTO TASK[0m
+[0;31mE (8643) DHT11:: Wrong checksum[0m
+[0;33mW (8643) LIVING: DHT11 fail![0m
+[0;32mI (8643) LIVING: Do sang: 13.76 lux[0m
+[0;32mI (8643) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (8803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (8803) LIVING: AUTO TASK[0m
+[0;31mE (8863) mqtt_client: Client was not initialized[0m
+[0;32mI (9003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9003) LIVING: AUTO TASK[0m
+[0;32mI (9203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9203) LIVING: AUTO TASK[0m
+[0;32mI (9403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9403) LIVING: AUTO TASK[0m
+[0;32mI (9603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9603) LIVING: AUTO TASK[0m
+[0;31mE (9653) DHT11:: Failed at phase 2[0m
+[0;31mE (9703) DHT11:: Wrong checksum[0m
+[0;33mW (9703) LIVING: DHT11 fail![0m
+[0;32mI (9703) LIVING: Do sang: 13.12 lux[0m
+[0;32mI (9703) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (9803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (9803) LIVING: AUTO TASK[0m
+[0;32mI (10003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10003) LIVING: AUTO TASK[0m
+[0;32mI (10203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10203) LIVING: AUTO TASK[0m
+[0;32mI (10403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10403) LIVING: AUTO TASK[0m
+[0;32mI (10603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10603) LIVING: AUTO TASK[0m
+[0;31mE (10713) DHT11:: Failed at phase 2[0m
+[0;31mE (10753) DHT11:: Failed at phase 2[0m
+[0;31mE (10793) DHT11:: Failed at phase 2[0m
+[0;32mI (10803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (10803) LIVING: AUTO TASK[0m
+[0;31mE (10833) DHT11:: Failed at phase 2[0m
+[0;31mE (10873) DHT11:: Failed at phase 2[0m
+[0;33mW (10893) LIVING: DHT11 fail![0m
+[0;32mI (10893) LIVING: Do sang: 12.58 lux[0m
+[0;32mI (10893) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (11003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11003) LIVING: AUTO TASK[0m
+[0;32mI (11203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11203) LIVING: AUTO TASK[0m
+[0;32mI (11403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11403) LIVING: AUTO TASK[0m
+[0;32mI (11603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11603) LIVING: AUTO TASK[0m
+[0;32mI (11803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (11803) LIVING: AUTO TASK[0m
+[0;31mE (11903) DHT11:: Failed at phase 2[0m
+[0;31mE (11943) DHT11:: Failed at phase 2[0m
+[0;31mE (11983) DHT11:: Failed at phase 2[0m
+[0;32mI (12003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12003) LIVING: AUTO TASK[0m
+[0;31mE (12023) DHT11:: Failed at phase 2[0m
+[0;31mE (12063) DHT11:: Failed at phase 2[0m
+[0;33mW (12083) LIVING: DHT11 fail![0m
+[0;32mI (12083) LIVING: Do sang: 14.94 lux[0m
+[0;32mI (12083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (12203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12203) LIVING: AUTO TASK[0m
+[0;32mI (12403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12403) LIVING: AUTO TASK[0m
+[0;32mI (12603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12603) LIVING: AUTO TASK[0m
+[0;32mI (12803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (12803) LIVING: AUTO TASK[0m
+[0;32mI (13003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13003) LIVING: AUTO TASK[0m
+[0;31mE (13093) DHT11:: Failed at phase 2[0m
+[0;31mE (13133) DHT11:: Failed at phase 2[0m
+[0;31mE (13173) DHT11:: Failed at phase 2[0m
+[0;32mI (13203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13203) LIVING: AUTO TASK[0m
+[0;31mE (13213) DHT11:: Failed at phase 2[0m
+[0;31mE (13253) DHT11:: Failed at phase 2[0m
+[0;33mW (13273) LIVING: DHT11 fail![0m
+[0;32mI (13273) LIVING: Do sang: 12.00 lux[0m
+[0;32mI (13273) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (13403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13403) LIVING: AUTO TASK[0m
+[0;32mI (13603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13603) LIVING: AUTO TASK[0m
+[0;32mI (13803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (13803) LIVING: AUTO TASK[0m
+[0;32mI (14003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14003) LIVING: AUTO TASK[0m
+[0;32mI (14203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14203) LIVING: AUTO TASK[0m
+[0;31mE (14283) DHT11:: Failed at phase 2[0m
+[0;31mE (14323) DHT11:: Failed at phase 2[0m
+[0;31mE (14363) DHT11:: Failed at phase 2[0m
+[0;32mI (14403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14403) LIVING: AUTO TASK[0m
+[0;31mE (14403) DHT11:: Failed at phase 2[0m
+[0;31mE (14443) DHT11:: Failed at phase 2[0m
+[0;33mW (14463) LIVING: DHT11 fail![0m
+[0;32mI (14463) LIVING: Do sang: 12.91 lux[0m
+[0;32mI (14463) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (14603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14603) LIVING: AUTO TASK[0m
+[0;32mI (14803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (14803) LIVING: AUTO TASK[0m
+[0;32mI (15003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15003) LIVING: AUTO TASK[0m
+[0;32mI (15203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15203) LIVING: AUTO TASK[0m
+[0;32mI (15403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15403) LIVING: AUTO TASK[0m
+[0;31mE (15473) DHT11:: Failed at phase 2[0m
+[0;31mE (15513) DHT11:: Failed at phase 2[0m
+[0;31mE (15553) DHT11:: Failed at phase 2[0m
+[0;31mE (15593) DHT11:: Failed at phase 2[0m
+[0;32mI (15603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15603) LIVING: AUTO TASK[0m
+[0;31mE (15633) DHT11:: Failed at phase 2[0m
+[0;33mW (15653) LIVING: DHT11 fail![0m
+[0;32mI (15653) LIVING: Do sang: 14.94 lux[0m
+[0;32mI (15653) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (15803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (15803) LIVING: AUTO TASK[0m
+[0;32mI (16003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16003) LIVING: AUTO TASK[0m
+[0;32mI (16203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16203) LIVING: AUTO TASK[0m
+[0;32mI (16403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16403) LIVING: AUTO TASK[0m
+[0;32mI (16603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16603) LIVING: AUTO TASK[0m
+[0;31mE (16663) DHT11:: Failed at phase 2[0m
+[0;31mE (16703) DHT11:: Failed at phase 2[0m
+[0;31mE (16743) DHT11:: Failed at phase 2[0m
+[0;31mE (16783) DHT11:: Failed at phase 2[0m
+[0;32mI (16803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (16803) LIVING: AUTO TASK[0m
+[0;31mE (16823) DHT11:: Failed at phase 2[0m
+[0;33mW (16843) LIVING: DHT11 fail![0m
+[0;32mI (16843) LIVING: Do sang: 11.88 lux[0m
+[0;32mI (16843) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (17003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17003) LIVING: AUTO TASK[0m
+[0;32mI (17203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17203) LIVING: AUTO TASK[0m
+[0;32mI (17403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17403) LIVING: AUTO TASK[0m
+[0;32mI (17603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17603) LIVING: AUTO TASK[0m
+[0;32mI (17803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (17803) LIVING: AUTO TASK[0m
+[0;31mE (17853) DHT11:: Failed at phase 2[0m
+[0;31mE (17893) DHT11:: Failed at phase 2[0m
+[0;31mE (17933) DHT11:: Failed at phase 2[0m
+[0;31mE (17973) DHT11:: Failed at phase 2[0m
+[0;32mI (18003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18003) LIVING: AUTO TASK[0m
+[0;31mE (18013) DHT11:: Failed at phase 2[0m
+[0;33mW (18033) LIVING: DHT11 fail![0m
+[0;32mI (18033) LIVING: Do sang: 12.39 lux[0m
+[0;32mI (18033) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (18203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18203) LIVING: AUTO TASK[0m
+[0;32mI (18403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18403) LIVING: AUTO TASK[0m
+[0;32mI (18603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18603) LIVING: AUTO TASK[0m
+[0;32mI (18803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (18803) LIVING: AUTO TASK[0m
+[0;32mI (19003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19003) LIVING: AUTO TASK[0m
+[0;31mE (19043) DHT11:: Failed at phase 2[0m
+[0;31mE (19083) DHT11:: Failed at phase 2[0m
+[0;31mE (19123) DHT11:: Failed at phase 2[0m
+[0;31mE (19163) DHT11:: Failed at phase 2[0m
+[0;31mE (19203) DHT11:: Failed at phase 2[0m
+[0;32mI (19203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19203) LIVING: AUTO TASK[0m
+[0;33mW (19223) LIVING: DHT11 fail![0m
+[0;32mI (19223) LIVING: Do sang: 13.61 lux[0m
+[0;32mI (19223) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (19403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19403) LIVING: AUTO TASK[0m
+[0;32mI (19603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19603) LIVING: AUTO TASK[0m
+[0;32mI (19803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (19803) LIVING: AUTO TASK[0m
+[0;32mI (20003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20003) LIVING: AUTO TASK[0m
+[0;32mI (20203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20203) LIVING: AUTO TASK[0m
+[0;31mE (20233) DHT11:: Failed at phase 2[0m
+[0;31mE (20273) DHT11:: Failed at phase 2[0m
+[0;31mE (20313) DHT11:: Failed at phase 2[0m
+[0;31mE (20353) DHT11:: Failed at phase 2[0m
+[0;31mE (20393) DHT11:: Failed at phase 2[0m
+[0;32mI (20403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20403) LIVING: AUTO TASK[0m
+[0;33mW (20413) LIVING: DHT11 fail![0m
+[0;32mI (20413) LIVING: Do sang: 12.67 lux[0m
+[0;32mI (20413) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (20603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20603) LIVING: AUTO TASK[0m
+[0;32mI (20803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (20803) LIVING: AUTO TASK[0m
+[0;32mI (21003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21003) LIVING: AUTO TASK[0m
+[0;32mI (21203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21203) LIVING: AUTO TASK[0m
+[0;32mI (21403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21403) LIVING: AUTO TASK[0m
+[0;31mE (21423) DHT11:: Failed at phase 2[0m
+[0;31mE (21463) DHT11:: Failed at phase 2[0m
+[0;31mE (21503) DHT11:: Failed at phase 2[0m
+[0;31mE (21543) DHT11:: Failed at phase 2[0m
+[0;31mE (21583) DHT11:: Failed at phase 2[0m
+[0;32mI (21603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21603) LIVING: AUTO TASK[0m
+[0;33mW (21603) LIVING: DHT11 fail![0m
+[0;32mI (21603) LIVING: Do sang: 12.52 lux[0m
+[0;32mI (21603) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (21803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (21803) LIVING: AUTO TASK[0m
+[0;32mI (22003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22003) LIVING: AUTO TASK[0m
+[0;32mI (22203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22203) LIVING: AUTO TASK[0m
+[0;32mI (22403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22403) LIVING: AUTO TASK[0m
+[0;32mI (22603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22603) LIVING: AUTO TASK[0m
+[0;31mE (22623) DHT11:: Failed at phase 2[0m
+[0;31mE (22663) DHT11:: Failed at phase 2[0m
+[0;31mE (22703) DHT11:: Failed at phase 2[0m
+[0;31mE (22743) DHT11:: Failed at phase 2[0m
+[0;31mE (22783) DHT11:: Failed at phase 2[0m
+[0;33mW (22803) LIVING: DHT11 fail![0m
+[0;32mI (22803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (22803) LIVING: Do sang: 13.36 lux[0m
+[0;32mI (22803) LIVING: AUTO TASK[0m
+[0;32mI (22803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (23003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23003) LIVING: AUTO TASK[0m
+[0;32mI (23203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23203) LIVING: AUTO TASK[0m
+[0;32mI (23403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23403) LIVING: AUTO TASK[0m
+[0;32mI (23603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23603) LIVING: AUTO TASK[0m
+[0;32mI (23803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (23803) LIVING: AUTO TASK[0m
+[0;31mE (23823) DHT11:: Failed at phase 2[0m
+[0;31mE (23863) DHT11:: Failed at phase 2[0m
+[0;31mE (23903) DHT11:: Failed at phase 2[0m
+[0;31mE (23943) DHT11:: Failed at phase 2[0m
+[0;31mE (23983) DHT11:: Failed at phase 2[0m
+[0;33mW (24003) LIVING: DHT11 fail![0m
+[0;32mI (24003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24003) LIVING: Do sang: 13.03 lux[0m
+[0;32mI (24003) LIVING: AUTO TASK[0m
+[0;32mI (24003) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (24203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24203) LIVING: AUTO TASK[0m
+[0;32mI (24403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24403) LIVING: AUTO TASK[0m
+[0;32mI (24603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24603) LIVING: AUTO TASK[0m
+[0;32mI (24803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (24803) LIVING: AUTO TASK[0m
+[0;32mI (25003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25003) LIVING: AUTO TASK[0m
+[0;31mE (25023) DHT11:: Failed at phase 2[0m
+[0;31mE (25063) DHT11:: Failed at phase 2[0m
+[0;31mE (25103) DHT11:: Failed at phase 2[0m
+[0;31mE (25143) DHT11:: Failed at phase 2[0m
+[0;31mE (25183) DHT11:: Failed at phase 2[0m
+[0;32mI (25203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25203) LIVING: AUTO TASK[0m
+[0;33mW (25203) LIVING: DHT11 fail![0m
+[0;32mI (25203) LIVING: Do sang: 12.45 lux[0m
+[0;32mI (25203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (25403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25403) LIVING: AUTO TASK[0m
+[0;32mI (25603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25603) LIVING: AUTO TASK[0m
+[0;32mI (25803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (25803) LIVING: AUTO TASK[0m
+[0;32mI (26003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26003) LIVING: AUTO TASK[0m
+[0;32mI (26203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26203) LIVING: AUTO TASK[0m
+[0;31mE (26223) DHT11:: Failed at phase 2[0m
+[0;31mE (26263) DHT11:: Failed at phase 2[0m
+[0;31mE (26303) DHT11:: Failed at phase 2[0m
+[0;31mE (26343) DHT11:: Failed at phase 2[0m
+[0;31mE (26383) DHT11:: Failed at phase 2[0m
+[0;33mW (26403) LIVING: DHT11 fail![0m
+[0;32mI (26403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26403) LIVING: Do sang: 13.45 lux[0m
+[0;32mI (26403) LIVING: AUTO TASK[0m
+[0;32mI (26403) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (26603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26603) LIVING: AUTO TASK[0m
+[0;32mI (26803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (26803) LIVING: AUTO TASK[0m
+[0;32mI (27003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27003) LIVING: AUTO TASK[0m
+[0;32mI (27203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27203) LIVING: AUTO TASK[0m
+[0;32mI (27403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27403) LIVING: AUTO TASK[0m
+[0;31mE (27423) DHT11:: Failed at phase 2[0m
+[0;31mE (27463) DHT11:: Failed at phase 2[0m
+[0;31mE (27503) DHT11:: Failed at phase 2[0m
+[0;31mE (27543) DHT11:: Failed at phase 2[0m
+[0;31mE (27583) DHT11:: Failed at phase 2[0m
+[0;33mW (27603) LIVING: DHT11 fail![0m
+[0;32mI (27603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27603) LIVING: Do sang: 13.15 lux[0m
+[0;32mI (27603) LIVING: AUTO TASK[0m
+[0;32mI (27603) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (27803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (27803) LIVING: AUTO TASK[0m
+[0;32mI (28003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28003) LIVING: AUTO TASK[0m
+[0;32mI (28203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28203) LIVING: AUTO TASK[0m
+[0;32mI (28403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28403) LIVING: AUTO TASK[0m
+[0;32mI (28603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28603) LIVING: AUTO TASK[0m
+[0;31mE (28623) DHT11:: Failed at phase 2[0m
+[0;31mE (28663) DHT11:: Failed at phase 2[0m
+[0;31mE (28703) DHT11:: Failed at phase 2[0m
+[0;31mE (28743) DHT11:: Failed at phase 2[0m
+[0;31mE (28783) DHT11:: Failed at phase 2[0m
+[0;32mI (28803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (28803) LIVING: AUTO TASK[0m
+[0;33mW (28803) LIVING: DHT11 fail![0m
+[0;32mI (28803) LIVING: Do sang: 12.70 lux[0m
+[0;32mI (28803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (29003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29003) LIVING: AUTO TASK[0m
+[0;32mI (29203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29203) LIVING: AUTO TASK[0m
+[0;32mI (29403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29403) LIVING: AUTO TASK[0m
+[0;32mI (29603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29603) LIVING: AUTO TASK[0m
+[0;32mI (29803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (29803) LIVING: AUTO TASK[0m
+[0;31mE (29823) DHT11:: Failed at phase 2[0m
+[0;31mE (29863) DHT11:: Failed at phase 2[0m
+[0;31mE (29903) DHT11:: Failed at phase 2[0m
+[0;31mE (29943) DHT11:: Failed at phase 2[0m
+[0;31mE (29983) DHT11:: Failed at phase 2[0m
+[0;33mW (30003) LIVING: DHT11 fail![0m
+[0;32mI (30003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30003) LIVING: Do sang: 13.27 lux[0m
+[0;32mI (30003) LIVING: AUTO TASK[0m
+[0;32mI (30003) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (30203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30203) LIVING: AUTO TASK[0m
+[0;32mI (30403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30403) LIVING: AUTO TASK[0m
+[0;32mI (30603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30603) LIVING: AUTO TASK[0m
+[0;32mI (30803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (30803) LIVING: AUTO TASK[0m
+[0;32mI (31003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31003) LIVING: AUTO TASK[0m
+[0;31mE (31023) DHT11:: Failed at phase 2[0m
+[0;31mE (31063) DHT11:: Failed at phase 2[0m
+[0;31mE (31103) DHT11:: Failed at phase 2[0m
+[0;31mE (31143) DHT11:: Failed at phase 2[0m
+[0;31mE (31183) DHT11:: Failed at phase 2[0m
+[0;33mW (31203) LIVING: DHT11 fail![0m
+[0;32mI (31203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31203) LIVING: Do sang: 13.30 lux[0m
+[0;32mI (31203) LIVING: AUTO TASK[0m
+[0;32mI (31203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (31403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31403) LIVING: AUTO TASK[0m
+[0;32mI (31603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31603) LIVING: AUTO TASK[0m
+[0;32mI (31803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (31803) LIVING: AUTO TASK[0m
+[0;32mI (32003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32003) LIVING: AUTO TASK[0m
+[0;32mI (32203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32203) LIVING: AUTO TASK[0m
+[0;31mE (32223) DHT11:: Failed at phase 2[0m
+[0;31mE (32263) DHT11:: Failed at phase 2[0m
+[0;31mE (32303) DHT11:: Failed at phase 2[0m
+[0;31mE (32343) DHT11:: Failed at phase 2[0m
+[0;31mE (32383) DHT11:: Failed at phase 2[0m
+[0;32mI (32403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32403) LIVING: AUTO TASK[0m
+[0;33mW (32403) LIVING: DHT11 fail![0m
+[0;32mI (32403) LIVING: Do sang: 12.52 lux[0m
+[0;32mI (32403) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (32603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32603) LIVING: AUTO TASK[0m
+[0;32mI (32803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (32803) LIVING: AUTO TASK[0m
+[0;32mI (33003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33003) LIVING: AUTO TASK[0m
+[0;32mI (33203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33203) LIVING: AUTO TASK[0m
+[0;32mI (33403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33403) LIVING: AUTO TASK[0m
+[0;31mE (33423) DHT11:: Failed at phase 2[0m
+[0;31mE (33463) DHT11:: Failed at phase 2[0m
+[0;31mE (33503) DHT11:: Failed at phase 2[0m
+[0;31mE (33543) DHT11:: Failed at phase 2[0m
+[0;31mE (33583) DHT11:: Failed at phase 2[0m
+[0;33mW (33603) LIVING: DHT11 fail![0m
+[0;32mI (33603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33603) LIVING: Do sang: 13.12 lux[0m
+[0;32mI (33603) LIVING: AUTO TASK[0m
+[0;32mI (33603) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (33803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (33803) LIVING: AUTO TASK[0m
+[0;32mI (34003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34003) LIVING: AUTO TASK[0m
+[0;32mI (34203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34203) LIVING: AUTO TASK[0m
+[0;32mI (34403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34403) LIVING: AUTO TASK[0m
+[0;32mI (34603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34603) LIVING: AUTO TASK[0m
+[0;31mE (34623) DHT11:: Failed at phase 2[0m
+[0;31mE (34663) DHT11:: Failed at phase 2[0m
+[0;31mE (34703) DHT11:: Failed at phase 2[0m
+[0;31mE (34743) DHT11:: Failed at phase 2[0m
+[0;31mE (34783) DHT11:: Failed at phase 2[0m
+[0;33mW (34803) LIVING: DHT11 fail![0m
+[0;32mI (34803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (34803) LIVING: Do sang: 13.27 lux[0m
+[0;32mI (34803) LIVING: AUTO TASK[0m
+[0;32mI (34803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (35003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35003) LIVING: AUTO TASK[0m
+[0;32mI (35203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35203) LIVING: AUTO TASK[0m
+[0;32mI (35403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35403) LIVING: AUTO TASK[0m
+[0;32mI (35603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35603) LIVING: AUTO TASK[0m
+[0;32mI (35803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (35803) LIVING: AUTO TASK[0m
+[0;31mE (35823) DHT11:: Failed at phase 2[0m
+[0;31mE (35863) DHT11:: Failed at phase 2[0m
+[0;31mE (35903) DHT11:: Failed at phase 2[0m
+[0;31mE (35943) DHT11:: Failed at phase 2[0m
+[0;31mE (35983) DHT11:: Failed at phase 2[0m
+[0;32mI (36003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36003) LIVING: AUTO TASK[0m
+[0;33mW (36003) LIVING: DHT11 fail![0m
+[0;32mI (36003) LIVING: Do sang: 12.55 lux[0m
+[0;32mI (36003) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (36203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36203) LIVING: AUTO TASK[0m
+[0;32mI (36403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36403) LIVING: AUTO TASK[0m
+[0;32mI (36603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36603) LIVING: AUTO TASK[0m
+[0;32mI (36803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (36803) LIVING: AUTO TASK[0m
+[0;32mI (37003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37003) LIVING: AUTO TASK[0m
+[0;31mE (37023) DHT11:: Failed at phase 2[0m
+[0;31mE (37063) DHT11:: Failed at phase 2[0m
+[0;31mE (37103) DHT11:: Failed at phase 2[0m
+[0;31mE (37143) DHT11:: Failed at phase 2[0m
+[0;31mE (37183) DHT11:: Failed at phase 2[0m
+[0;33mW (37203) LIVING: DHT11 fail![0m
+[0;32mI (37203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37203) LIVING: Do sang: 12.79 lux[0m
+[0;32mI (37203) LIVING: AUTO TASK[0m
+[0;32mI (37203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (37403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37403) LIVING: AUTO TASK[0m
+[0;32mI (37603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37603) LIVING: AUTO TASK[0m
+[0;32mI (37803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (37803) LIVING: AUTO TASK[0m
+[0;32mI (38003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38003) LIVING: AUTO TASK[0m
+[0;32mI (38203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38203) LIVING: AUTO TASK[0m
+[0;31mE (38223) DHT11:: Failed at phase 2[0m
+[0;31mE (38263) DHT11:: Failed at phase 2[0m
+[0;31mE (38303) DHT11:: Failed at phase 2[0m
+[0;31mE (38343) DHT11:: Failed at phase 2[0m
+[0;31mE (38383) DHT11:: Failed at phase 2[0m
+[0;33mW (38403) LIVING: DHT11 fail![0m
+[0;32mI (38403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38403) LIVING: Do sang: 13.39 lux[0m
+[0;32mI (38403) LIVING: AUTO TASK[0m
+[0;32mI (38403) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (38603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38603) LIVING: AUTO TASK[0m
+[0;32mI (38803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (38803) LIVING: AUTO TASK[0m
+[0;32mI (39003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39003) LIVING: AUTO TASK[0m
+[0;32mI (39203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39203) LIVING: AUTO TASK[0m
+[0;32mI (39403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39403) LIVING: AUTO TASK[0m
+[0;31mE (39423) DHT11:: Failed at phase 2[0m
+[0;31mE (39463) DHT11:: Failed at phase 2[0m
+[0;31mE (39503) DHT11:: Failed at phase 2[0m
+[0;31mE (39543) DHT11:: Failed at phase 2[0m
+[0;31mE (39583) DHT11:: Failed at phase 2[0m
+[0;32mI (39603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39603) LIVING: AUTO TASK[0m
+[0;33mW (39603) LIVING: DHT11 fail![0m
+[0;32mI (39603) LIVING: Do sang: 12.82 lux[0m
+[0;32mI (39603) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (39803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (39803) LIVING: AUTO TASK[0m
+[0;32mI (40003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40003) LIVING: AUTO TASK[0m
+[0;32mI (40203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40203) LIVING: AUTO TASK[0m
+[0;32mI (40403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40403) LIVING: AUTO TASK[0m
+[0;32mI (40603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40603) LIVING: AUTO TASK[0m
+[0;31mE (40623) DHT11:: Failed at phase 2[0m
+[0;31mE (40663) DHT11:: Failed at phase 2[0m
+[0;31mE (40703) DHT11:: Failed at phase 2[0m
+[0;31mE (40743) DHT11:: Failed at phase 2[0m
+[0;31mE (40783) DHT11:: Failed at phase 2[0m
+[0;33mW (40803) LIVING: DHT11 fail![0m
+[0;32mI (40803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (40803) LIVING: Do sang: 12.45 lux[0m
+[0;32mI (40803) LIVING: AUTO TASK[0m
+[0;32mI (40803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (41003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41003) LIVING: AUTO TASK[0m
+[0;32mI (41203) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41203) LIVING: AUTO TASK[0m
+[0;32mI (41403) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41403) LIVING: AUTO TASK[0m
+[0;32mI (41603) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41603) LIVING: AUTO TASK[0m
+[0;32mI (41803) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (41803) LIVING: AUTO TASK[0m
+[0;31mE (41823) DHT11:: Failed at phase 2[0m
+[0;31mE (41863) DHT11:: Failed at phase 2[0m
+[0;31mE (41903) DHT11:: Failed at phase 2[0m
+[0;31mE (41943) DHT11:: Failed at phase 2[0m
+[0;31mE (41983) DHT11:: Failed at phase 2[0m
+[0;33mW (42003) LIVING: DHT11 fail![0m
+[0;32mI (42003) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42003) LIVING: Do sang: 17.39 lux[0m
+[0;32mI (42003) LIVING: AUTO TASK[0m
+[0;31mE (42013) mqtt_client: Client was not initialized[0m
+[0;32mI (42013) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (42213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42213) LIVING: AUTO TASK[0m
+[0;32mI (42413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42413) LIVING: AUTO TASK[0m
+[0;32mI (42613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42613) LIVING: AUTO TASK[0m
+[0;32mI (42813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (42813) LIVING: AUTO TASK[0m
+[0;32mI (43013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43013) LIVING: AUTO TASK[0m
+[0;31mE (43023) DHT11:: Failed at phase 2[0m
+[0;31mE (43063) DHT11:: Failed at phase 2[0m
+[0;31mE (43103) DHT11:: Failed at phase 2[0m
+[0;31mE (43143) DHT11:: Failed at phase 2[0m
+[0;31mE (43183) DHT11:: Failed at phase 2[0m
+[0;33mW (43203) LIVING: DHT11 fail![0m
+[0;32mI (43203) LIVING: Do sang: 18.00 lux[0m
+[0;32mI (43203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (43213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43213) LIVING: AUTO TASK[0m
+[0;32mI (43413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43413) LIVING: AUTO TASK[0m
+[0;32mI (43613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43613) LIVING: AUTO TASK[0m
+[0;32mI (43813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (43813) LIVING: AUTO TASK[0m
+[0;32mI (44013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44013) LIVING: AUTO TASK[0m
+[0;32mI (44213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44213) LIVING: AUTO TASK[0m
+[0;31mE (44213) DHT11:: Failed at phase 2[0m
+[0;31mE (44253) DHT11:: Failed at phase 2[0m
+[0;31mE (44293) DHT11:: Failed at phase 2[0m
+[0;31mE (44333) DHT11:: Failed at phase 2[0m
+[0;31mE (44373) DHT11:: Failed at phase 2[0m
+[0;33mW (44393) LIVING: DHT11 fail![0m
+[0;32mI (44393) LIVING: Do sang: 17.03 lux[0m
+[0;32mI (44393) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (44413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44413) LIVING: AUTO TASK[0m
+[0;32mI (44613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44613) LIVING: AUTO TASK[0m
+[0;32mI (44813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (44813) LIVING: AUTO TASK[0m
+[0;32mI (45013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45013) LIVING: AUTO TASK[0m
+[0;32mI (45213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45213) LIVING: AUTO TASK[0m
+[0;31mE (45403) DHT11:: Failed at phase 2[0m
+[0;32mI (45413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45413) LIVING: AUTO TASK[0m
+[0;31mE (45443) DHT11:: Failed at phase 2[0m
+[0;31mE (45483) DHT11:: Failed at phase 2[0m
+[0;31mE (45523) DHT11:: Failed at phase 2[0m
+[0;31mE (45563) DHT11:: Failed at phase 2[0m
+[0;33mW (45583) LIVING: DHT11 fail![0m
+[0;32mI (45583) LIVING: Do sang: 128.36 lux[0m
+[0;31mE (45593) mqtt_client: Client was not initialized[0m
+[0;32mI (45593) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (45613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45613) LIVING: AUTO TASK[0m
+[0;32mI (45813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (45813) LIVING: AUTO TASK[0m
+[0;32mI (46013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46013) LIVING: AUTO TASK[0m
+[0;32mI (46213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46213) LIVING: AUTO TASK[0m
+[0;32mI (46413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46413) LIVING: AUTO TASK[0m
+[0;31mE (46603) DHT11:: Failed at phase 2[0m
+[0;32mI (46613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46613) LIVING: AUTO TASK[0m
+[0;31mE (46643) DHT11:: Failed at phase 2[0m
+[0;31mE (46683) DHT11:: Failed at phase 2[0m
+[0;31mE (46723) DHT11:: Failed at phase 2[0m
+[0;31mE (46763) DHT11:: Failed at phase 2[0m
+[0;33mW (46783) LIVING: DHT11 fail![0m
+[0;32mI (46783) LIVING: Do sang: 120.36 lux[0m
+[0;32mI (46783) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (46813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (46813) LIVING: AUTO TASK[0m
+[0;32mI (47013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47013) LIVING: AUTO TASK[0m
+[0;32mI (47213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47213) LIVING: AUTO TASK[0m
+[0;32mI (47413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47413) LIVING: AUTO TASK[0m
+[0;32mI (47613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47613) LIVING: AUTO TASK[0m
+[0;31mE (47793) DHT11:: Failed at phase 2[0m
+[0;32mI (47813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (47813) LIVING: AUTO TASK[0m
+[0;31mE (47833) DHT11:: Failed at phase 2[0m
+[0;31mE (47873) DHT11:: Failed at phase 2[0m
+[0;31mE (47913) DHT11:: Failed at phase 2[0m
+[0;31mE (47953) DHT11:: Failed at phase 2[0m
+[0;33mW (47973) LIVING: DHT11 fail![0m
+[0;32mI (47973) LIVING: Do sang: 134.67 lux[0m
+[0;32mI (47973) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (48013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48013) LIVING: AUTO TASK[0m
+[0;32mI (48213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48213) LIVING: AUTO TASK[0m
+[0;32mI (48413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48413) LIVING: AUTO TASK[0m
+[0;32mI (48613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48613) LIVING: AUTO TASK[0m
+[0;32mI (48813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (48813) LIVING: AUTO TASK[0m
+[0;31mE (48983) DHT11:: Failed at phase 2[0m
+[0;32mI (49013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49013) LIVING: AUTO TASK[0m
+[0;31mE (49023) DHT11:: Failed at phase 2[0m
+[0;31mE (49063) DHT11:: Failed at phase 2[0m
+[0;31mE (49103) DHT11:: Failed at phase 2[0m
+[0;31mE (49143) DHT11:: Failed at phase 2[0m
+[0;33mW (49163) LIVING: DHT11 fail![0m
+[0;32mI (49163) LIVING: Do sang: 132.00 lux[0m
+[0;32mI (49163) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (49213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49213) LIVING: AUTO TASK[0m
+[0;32mI (49413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49413) LIVING: AUTO TASK[0m
+[0;32mI (49613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49613) LIVING: AUTO TASK[0m
+[0;32mI (49813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (49813) LIVING: AUTO TASK[0m
+[0;32mI (50013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50013) LIVING: AUTO TASK[0m
+[0;31mE (50173) DHT11:: Failed at phase 2[0m
+[0;32mI (50213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50213) LIVING: AUTO TASK[0m
+[0;31mE (50213) DHT11:: Failed at phase 2[0m
+[0;31mE (50253) DHT11:: Failed at phase 2[0m
+[0;31mE (50293) DHT11:: Failed at phase 2[0m
+[0;31mE (50333) DHT11:: Failed at phase 2[0m
+[0;33mW (50353) LIVING: DHT11 fail![0m
+[0;32mI (50353) LIVING: Do sang: 143.64 lux[0m
+[0;31mE (50363) mqtt_client: Client was not initialized[0m
+[0;32mI (50363) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (50413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50413) LIVING: AUTO TASK[0m
+[0;32mI (50613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50613) LIVING: AUTO TASK[0m
+[0;32mI (50813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (50813) LIVING: AUTO TASK[0m
+[0;32mI (51013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51013) LIVING: AUTO TASK[0m
+[0;32mI (51213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51213) LIVING: AUTO TASK[0m
+[0;31mE (51373) DHT11:: Failed at phase 2[0m
+[0;32mI (51413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51413) LIVING: AUTO TASK[0m
+[0;31mE (51413) DHT11:: Failed at phase 2[0m
+[0;31mE (51453) DHT11:: Failed at phase 2[0m
+[0;31mE (51493) DHT11:: Failed at phase 2[0m
+[0;31mE (51533) DHT11:: Failed at phase 2[0m
+[0;33mW (51553) LIVING: DHT11 fail![0m
+[0;32mI (51553) LIVING: Do sang: 146.30 lux[0m
+[0;32mI (51553) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (51613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51613) LIVING: AUTO TASK[0m
+[0;32mI (51813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (51813) LIVING: AUTO TASK[0m
+[0;32mI (52013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52013) LIVING: AUTO TASK[0m
+[0;32mI (52213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52213) LIVING: AUTO TASK[0m
+[0;32mI (52413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52413) LIVING: AUTO TASK[0m
+[0;31mE (52563) DHT11:: Failed at phase 2[0m
+[0;31mE (52603) DHT11:: Failed at phase 2[0m
+[0;32mI (52613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52613) LIVING: AUTO TASK[0m
+[0;31mE (52643) DHT11:: Failed at phase 2[0m
+[0;31mE (52683) DHT11:: Failed at phase 2[0m
+[0;31mE (52723) DHT11:: Failed at phase 2[0m
+[0;33mW (52743) LIVING: DHT11 fail![0m
+[0;32mI (52743) LIVING: Do sang: 140.00 lux[0m
+[0;32mI (52743) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (52813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (52813) LIVING: AUTO TASK[0m
+[0;32mI (53013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53013) LIVING: AUTO TASK[0m
+[0;32mI (53213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53213) LIVING: AUTO TASK[0m
+[0;32mI (53413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53413) LIVING: AUTO TASK[0m
+[0;32mI (53613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53613) LIVING: AUTO TASK[0m
+[0;31mE (53753) DHT11:: Failed at phase 2[0m
+[0;31mE (53793) DHT11:: Failed at phase 2[0m
+[0;32mI (53813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (53813) LIVING: AUTO TASK[0m
+[0;31mE (53833) DHT11:: Failed at phase 2[0m
+[0;31mE (53873) DHT11:: Failed at phase 2[0m
+[0;31mE (53913) DHT11:: Failed at phase 2[0m
+[0;33mW (53933) LIVING: DHT11 fail![0m
+[0;32mI (53933) LIVING: Do sang: 137.09 lux[0m
+[0;32mI (53933) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (54013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54013) LIVING: AUTO TASK[0m
+[0;32mI (54213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54213) LIVING: AUTO TASK[0m
+[0;32mI (54413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54413) LIVING: AUTO TASK[0m
+[0;32mI (54613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54613) LIVING: AUTO TASK[0m
+[0;32mI (54813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (54813) LIVING: AUTO TASK[0m
+[0;31mE (54943) DHT11:: Failed at phase 2[0m
+[0;31mE (54983) DHT11:: Failed at phase 2[0m
+[0;32mI (55013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55013) LIVING: AUTO TASK[0m
+[0;31mE (55023) DHT11:: Failed at phase 2[0m
+[0;31mE (55063) DHT11:: Failed at phase 2[0m
+[0;31mE (55103) DHT11:: Failed at phase 2[0m
+[0;33mW (55123) LIVING: DHT11 fail![0m
+[0;32mI (55123) LIVING: Do sang: 141.21 lux[0m
+[0;32mI (55123) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (55213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55213) LIVING: AUTO TASK[0m
+[0;32mI (55413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55413) LIVING: AUTO TASK[0m
+[0;32mI (55613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55613) LIVING: AUTO TASK[0m
+[0;32mI (55813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (55813) LIVING: AUTO TASK[0m
+[0;32mI (56013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56013) LIVING: AUTO TASK[0m
+[0;31mE (56133) DHT11:: Failed at phase 2[0m
+[0;31mE (56173) DHT11:: Failed at phase 2[0m
+[0;32mI (56213) LIVING: Current Mode in NVS: 0[0m
+[0;31mE (56213) DHT11:: Failed at phase 2[0m
+[0;32mI (56213) LIVING: AUTO TASK[0m
+[0;31mE (56253) DHT11:: Failed at phase 2[0m
+[0;31mE (56293) DHT11:: Failed at phase 2[0m
+[0;33mW (56313) LIVING: DHT11 fail![0m
+[0;32mI (56313) LIVING: Do sang: 137.58 lux[0m
+[0;32mI (56313) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (56413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56413) LIVING: AUTO TASK[0m
+[0;32mI (56613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56613) LIVING: AUTO TASK[0m
+[0;32mI (56813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (56813) LIVING: AUTO TASK[0m
+[0;32mI (57013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57013) LIVING: AUTO TASK[0m
+[0;32mI (57213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57213) LIVING: AUTO TASK[0m
+[0;31mE (57323) DHT11:: Failed at phase 2[0m
+[0;31mE (57363) DHT11:: Failed at phase 2[0m
+[0;31mE (57403) DHT11:: Failed at phase 2[0m
+[0;32mI (57413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57413) LIVING: AUTO TASK[0m
+[0;31mE (57443) DHT11:: Failed at phase 2[0m
+[0;31mE (57483) DHT11:: Failed at phase 2[0m
+[0;33mW (57503) LIVING: DHT11 fail![0m
+[0;32mI (57503) LIVING: Do sang: 137.82 lux[0m
+[0;32mI (57503) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (57613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57613) LIVING: AUTO TASK[0m
+[0;32mI (57813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (57813) LIVING: AUTO TASK[0m
+[0;32mI (58013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58013) LIVING: AUTO TASK[0m
+[0;32mI (58213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58213) LIVING: AUTO TASK[0m
+[0;32mI (58413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58413) LIVING: AUTO TASK[0m
+[0;31mE (58513) DHT11:: Failed at phase 2[0m
+[0;31mE (58553) DHT11:: Failed at phase 2[0m
+[0;31mE (58593) DHT11:: Failed at phase 2[0m
+[0;32mI (58613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58613) LIVING: AUTO TASK[0m
+[0;31mE (58633) DHT11:: Failed at phase 2[0m
+[0;31mE (58673) DHT11:: Failed at phase 2[0m
+[0;33mW (58693) LIVING: DHT11 fail![0m
+[0;32mI (58693) LIVING: Do sang: 134.91 lux[0m
+[0;32mI (58693) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (58813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (58813) LIVING: AUTO TASK[0m
+[0;32mI (59013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59013) LIVING: AUTO TASK[0m
+[0;32mI (59213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59213) LIVING: AUTO TASK[0m
+[0;32mI (59413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59413) LIVING: AUTO TASK[0m
+[0;32mI (59613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59613) LIVING: AUTO TASK[0m
+[0;31mE (59703) DHT11:: Failed at phase 2[0m
+[0;31mE (59743) DHT11:: Failed at phase 2[0m
+[0;31mE (59783) DHT11:: Failed at phase 2[0m
+[0;32mI (59813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (59813) LIVING: AUTO TASK[0m
+[0;31mE (59823) DHT11:: Failed at phase 2[0m
+[0;31mE (59863) DHT11:: Failed at phase 2[0m
+[0;33mW (59883) LIVING: DHT11 fail![0m
+[0;32mI (59883) LIVING: Do sang: 128.85 lux[0m
+[0;31mE (59893) mqtt_client: Client was not initialized[0m
+[0;32mI (59893) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (60013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60013) LIVING: AUTO TASK[0m
+[0;32mI (60213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60213) LIVING: AUTO TASK[0m
+[0;32mI (60413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60413) LIVING: AUTO TASK[0m
+[0;32mI (60613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60613) LIVING: AUTO TASK[0m
+[0;32mI (60813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (60813) LIVING: AUTO TASK[0m
+[0;31mE (60903) DHT11:: Failed at phase 2[0m
+[0;31mE (60943) DHT11:: Failed at phase 2[0m
+[0;31mE (60983) DHT11:: Failed at phase 2[0m
+[0;32mI (61013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61013) LIVING: AUTO TASK[0m
+[0;31mE (61023) DHT11:: Failed at phase 2[0m
+[0;31mE (61063) DHT11:: Failed at phase 2[0m
+[0;33mW (61083) LIVING: DHT11 fail![0m
+[0;32mI (61083) LIVING: Do sang: 131.76 lux[0m
+[0;32mI (61083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (61213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61213) LIVING: AUTO TASK[0m
+[0;32mI (61413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61413) LIVING: AUTO TASK[0m
+[0;32mI (61613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61613) LIVING: AUTO TASK[0m
+[0;32mI (61813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (61813) LIVING: AUTO TASK[0m
+[0;32mI (62013) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62013) LIVING: AUTO TASK[0m
+[0;31mE (62093) DHT11:: Failed at phase 2[0m
+[0;31mE (62133) DHT11:: Failed at phase 2[0m
+[0;31mE (62173) DHT11:: Failed at phase 2[0m
+[0;31mE (62213) DHT11:: Failed at phase 2[0m
+[0;32mI (62213) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62213) LIVING: AUTO TASK[0m
+[0;31mE (62253) DHT11:: Failed at phase 2[0m
+[0;33mW (62273) LIVING: DHT11 fail![0m
+[0;32mI (62273) LIVING: Do sang: 130.55 lux[0m
+[0;32mI (62273) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (62413) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62413) LIVING: AUTO TASK[0m
+[0;32mI (62613) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62613) LIVING: AUTO TASK[0m
+[0;32mI (62813) LIVING: Current Mode in NVS: 0[0m
+[0;32mI (62813) LIVING: AUTO TASK[0m

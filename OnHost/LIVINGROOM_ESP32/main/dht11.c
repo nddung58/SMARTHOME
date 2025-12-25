@@ -1,104 +1,99 @@
 #include "dht11.h"
-#include "driver/gpio.h"
-#include "esp_rom_sys.h"
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
 
-#define DHT11_PIN GPIO_NUM_4
+#define CONFIG_DHT11_PIN GPIO_NUM_4
 
-static inline void dht_set_output(void)
+int wait_for_state(dht11_t dht11, int state, int timeout)
 {
-    gpio_reset_pin(DHT11_PIN);
-    gpio_set_direction(DHT11_PIN, GPIO_MODE_OUTPUT);
-}
+    gpio_set_direction(CONFIG_DHT11_PIN, GPIO_MODE_INPUT);
+    int count = 0;
 
-static inline void dht_set_input(void)
-{
-    gpio_reset_pin(DHT11_PIN);
-    gpio_set_direction(DHT11_PIN, GPIO_MODE_INPUT);
-}
-
-static inline uint8_t dht_read_pin(void)
-{
-    return gpio_get_level(DHT11_PIN);
-}
-
-void dht11_init(void)
-{
-    dht_set_output();
-    gpio_set_level(DHT11_PIN, 1);
-}
-
-static void dht11_start(void)
-{
-    dht_set_output();
-    gpio_set_level(DHT11_PIN, 0);
-    vTaskDelay(pdMS_TO_TICKS(20));
-    gpio_set_level(DHT11_PIN, 1);
-    esp_rom_delay_us(30);
-    dht_set_input();
-}
-
-static uint8_t dht_read_bit(void)
-{
-    uint32_t t = 0;
-    while (dht_read_pin() == 0)
+    while (gpio_get_level(CONFIG_DHT11_PIN) != state)
     {
-        if (++t > 10000)
-            return 0;
-        esp_rom_delay_us(1);
+        if (count >= timeout)
+            return -1;
+        count += 2;
+        ets_delay_us(2);
     }
-    esp_rom_delay_us(40);
-    return dht_read_pin();
+
+    return count;
 }
 
-static uint8_t dht_read_byte(void)
+void hold_low(dht11_t dht11, int hold_time_us)
 {
-    uint8_t b = 0;
-    for (int i = 0; i < 8; i++)
-    {
-        b <<= 1;
-        b |= dht_read_bit();
+    gpio_set_direction(CONFIG_DHT11_PIN, GPIO_MODE_OUTPUT);
+    gpio_set_level(CONFIG_DHT11_PIN, 0);
+    ets_delay_us(hold_time_us);
+    gpio_set_level(CONFIG_DHT11_PIN, 1);
+}
 
-        uint32_t t = 0;
-        while (dht_read_pin())
+int dht11_read(dht11_t *dht11, int connection_timeout)
+{
+    int waited = 0;
+    int one_duration = 0;
+    int zero_duration = 0;
+    int timeout_counter = 0;
+
+    uint8_t received_data[5] =
         {
-            if (++t > 10000)
-                break;
-            esp_rom_delay_us(1);
+            0x00,
+            0x00,
+            0x00,
+            0x00,
+            0x00};
+
+    while (timeout_counter < connection_timeout)
+    {
+        timeout_counter++;
+        gpio_set_direction(CONFIG_DHT11_PIN, GPIO_MODE_INPUT);
+        hold_low(*dht11, 18000);
+
+        waited = wait_for_state(*dht11, 0, 40);
+
+        if (waited == -1)
+        {
+
+            ets_delay_us(20000);
+            continue;
         }
+
+        waited = wait_for_state(*dht11, 1, 90);
+        if (waited == -1)
+        {
+            ets_delay_us(20000);
+            continue;
+        }
+
+        waited = wait_for_state(*dht11, 0, 90);
+        if (waited == -1)
+        {
+            ets_delay_us(20000);
+            continue;
+        }
+        break;
     }
-    return b;
-}
 
-bool dht11_read_data(uint8_t *humi_int, uint8_t *humi_dec, uint8_t *temp_int, uint8_t *temp_dec)
-{
-    if (!humi_int || !humi_dec || !temp_int || !temp_dec)
-        return false;
-
-    uint8_t buf[5] = {0};
-    dht11_start();
-
-    uint32_t t = 0;
-    while (dht_read_pin())
-        if (++t > 10000)
-            return false;
-    while (!dht_read_pin())
-        if (++t > 10000)
-            return false;
-    while (dht_read_pin())
-        if (++t > 10000)
-            return false;
+    if (timeout_counter == connection_timeout)
+        return -1;
 
     for (int i = 0; i < 5; i++)
-        buf[i] = dht_read_byte();
-
-    if ((buf[0] + buf[1] + buf[2] + buf[3]) != buf[4])
-        return false;
-
-    *humi_int = buf[0];
-    *humi_dec = buf[1];
-    *temp_int = buf[2];
-    *temp_dec = buf[3];
-    return true;
+    {
+        for (int j = 0; j < 8; j++)
+        {
+            zero_duration = wait_for_state(*dht11, 1, 58);
+            one_duration = wait_for_state(*dht11, 0, 74);
+            received_data[i] |= (one_duration > zero_duration) << (7 - j);
+        }
+    }
+    int crc = received_data[0] + received_data[1] + received_data[2] + received_data[3];
+    crc = crc & 0xff;
+    if (crc == received_data[4])
+    {
+        dht11->humidity = received_data[0] + received_data[1] / 10.0;
+        dht11->temperature = received_data[2] + received_data[3] / 10.0;
+        return 0;
+    }
+    else
+    {
+        return -1;
+    }
 }

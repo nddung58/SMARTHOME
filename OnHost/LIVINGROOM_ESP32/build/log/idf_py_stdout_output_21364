@@ -1,0 +1,2985 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2025 23:21:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30988h (199048) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=000409b0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=000409bc vaddr=3ffb0000 size=038f0h ( 14576) load[0m
+[0;32mI (188) esp_image: segment 3: paddr=000442b4 vaddr=40080000 size=0bd64h ( 48484) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b43a4h (738212) map[0m
+[0;32mI (477) esp_image: segment 5: paddr=001043cc vaddr=4008bd64 size=0c54ch ( 50508) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) cpu_start: Multicore app[0m
+[0;32mI (523) cpu_start: Pro cpu up.[0m
+[0;32mI (523) cpu_start: Starting app cpu, entry point is 0x4008156c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (540) cpu_start: Pro cpu start user code[0m
+[0;32mI (540) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (541) cpu_start: Application information:[0m
+[0;32mI (545) cpu_start: Project name:     smarthome_iot[0m
+[0;32mI (551) cpu_start: App version:      981e2a1-dirty[0m
+[0;32mI (556) cpu_start: Compile time:     Dec 23 2025 23:21:23[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  9feaf3d9dd462d63...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB8FB0 len 00027050 (156 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (613) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (620) heap_init: At 400982B0 len 00007D50 (31 KiB): IRAM[0m
+[0;32mI (627) spi_flash: detected chip: generic[0m
+[0;32mI (630) spi_flash: flash io: dio[0m
+[0;33mW (634) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (648) app_start: Starting scheduler on CPU0[0m
+[0;32mI (653) app_start: Starting scheduler on CPU1[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (663) APP_MAIN: [APP] Startup..[0m
+[0;32mI (663) APP_MAIN: [APP] Free memory: 274848 bytes[0m
+[0;32mI (673) APP_MAIN: [APP] IDF version: v5.1.1[0m
+[0;32mI (703) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (703) RFID: Initializing RC522...[0m
+[0;32mI (713) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (743) rc522: PCD (fw=unknown) initialized[0m
+[0;32mI (743) RFID: RC522 READY.[0m
+[0;32mI (863) LIVING: Do am: 67.00 percent[0m
+[0;32mI (863) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (873) LIVING: Do sang: 7.91 lux[0m
+[0;32mI (883) LIVING: AUTO TASK[0m
+[0;31mE (883) mqtt_client: Client was not initialized[0m
+[0;32mI (883) LIVING: Khi gas: 89.09 ppm[0m
+[0;32mI (893) wifi:wifi driver task: 3ffc607c, prio:23, stack:6656, core=0[0m
+[0;32mI (903) wifi:wifi firmware version: ce9244d[0m
+[0;32mI (913) wifi:wifi certification version: v7.0[0m
+[0;32mI (913) wifi:config NVS flash: enabled[0m
+[0;32mI (913) wifi:config nano formating: disabled[0m
+[0;32mI (913) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (913) wifi:Init management frame dynamic rx buffer num: 32[0m
+[0;32mI (923) wifi:Init management short buffer num: 32[0m
+[0;32mI (923) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (933) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (933) wifi:Init static rx buffer num: 10[0m
+[0;32mI (943) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (943) wifi_init: rx ba win: 6[0m
+[0;32mI (943) wifi_init: tcpip mbox: 32[0m
+[0;32mI (953) wifi_init: udp mbox: 6[0m
+[0;32mI (953) wifi_init: tcp mbox: 6[0m
+[0;32mI (963) wifi_init: tcp tx win: 5744[0m
+[0;32mI (963) wifi_init: tcp rx win: 5744[0m
+[0;32mI (963) wifi_init: tcp mss: 1440[0m
+[0;32mI (973) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (973) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (993) CONFIG_WIFI: Provisioned: false[0m
+[0;32mI (1003) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1083) LIVING: AUTO TASK[0m
+[0;32mI (1113) wifi:mode : softAP (14:33:5c:52:d6:7d)[0m
+[0;32mI (1123) wifi:Total power save buffer number: 16[0m
+[0;32mI (1123) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1123) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (1123) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (1283) LIVING: AUTO TASK[0m
+[0;32mI (1483) LIVING: AUTO TASK[0m
+[0;32mI (1683) LIVING: AUTO TASK[0m
+[0;32mI (1883) LIVING: AUTO TASK[0m
+[0;33mW (2073) LIVING: DHT11 fail![0m
+[0;32mI (2073) LIVING: Do sang: 12.94 lux[0m
+[0;32mI (2073) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (2083) LIVING: AUTO TASK[0m
+[0;32mI (2283) LIVING: AUTO TASK[0m
+[0;32mI (2483) LIVING: AUTO TASK[0m
+[0;32mI (2683) LIVING: AUTO TASK[0m
+[0;32mI (2883) LIVING: AUTO TASK[0m
+[0;32mI (3083) LIVING: AUTO TASK[0m
+[0;33mW (3263) LIVING: DHT11 fail![0m
+[0;32mI (3263) LIVING: Do sang: 10.15 lux[0m
+[0;32mI (3263) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (3283) LIVING: AUTO TASK[0m
+[0;32mI (3483) LIVING: AUTO TASK[0m
+[0;32mI (3683) LIVING: AUTO TASK[0m
+[0;32mI (3883) LIVING: AUTO TASK[0m
+[0;32mI (4083) LIVING: AUTO TASK[0m
+[0;32mI (4283) LIVING: AUTO TASK[0m
+[0;33mW (4453) LIVING: DHT11 fail![0m
+[0;32mI (4453) LIVING: Do sang: 15.27 lux[0m
+[0;32mI (4453) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (4483) LIVING: AUTO TASK[0m
+[0;32mI (4683) LIVING: AUTO TASK[0m
+[0;32mI (4883) LIVING: AUTO TASK[0m
+[0;32mI (5083) LIVING: AUTO TASK[0m
+[0;32mI (5283) LIVING: AUTO TASK[0m
+[0;32mI (5483) LIVING: AUTO TASK[0m
+[0;33mW (5643) LIVING: DHT11 fail![0m
+[0;32mI (5643) LIVING: Do sang: 17.39 lux[0m
+[0;32mI (5643) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (5683) LIVING: AUTO TASK[0m
+[0;32mI (5883) LIVING: AUTO TASK[0m
+[0;32mI (6083) LIVING: AUTO TASK[0m
+[0;32mI (6283) LIVING: AUTO TASK[0m
+[0;32mI (6483) LIVING: AUTO TASK[0m
+[0;32mI (6683) LIVING: AUTO TASK[0m
+[0;32mI (6773) LIVING: Do am: 67.00 percent[0m
+[0;32mI (6773) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (6783) LIVING: Do sang: 17.39 lux[0m
+[0;32mI (6783) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (6883) LIVING: AUTO TASK[0m
+[0;32mI (7083) LIVING: AUTO TASK[0m
+[0;32mI (7283) LIVING: AUTO TASK[0m
+[0;32mI (7483) LIVING: AUTO TASK[0m
+[0;32mI (7683) LIVING: AUTO TASK[0m
+[0;32mI (7883) LIVING: AUTO TASK[0m
+[0;33mW (7973) LIVING: DHT11 fail![0m
+[0;32mI (7973) LIVING: Do sang: 11.27 lux[0m
+[0;32mI (7973) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (8083) LIVING: AUTO TASK[0m
+[0;32mI (8283) LIVING: AUTO TASK[0m
+[0;32mI (8483) LIVING: AUTO TASK[0m
+[0;32mI (8683) LIVING: AUTO TASK[0m
+[0;32mI (8883) LIVING: AUTO TASK[0m
+[0;32mI (9083) LIVING: AUTO TASK[0m
+[0;33mW (9163) LIVING: DHT11 fail![0m
+[0;32mI (9163) LIVING: Do sang: 14.21 lux[0m
+[0;32mI (9163) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (9283) LIVING: AUTO TASK[0m
+[0;32mI (9483) LIVING: AUTO TASK[0m
+[0;32mI (9683) LIVING: AUTO TASK[0m
+[0;32mI (9883) LIVING: AUTO TASK[0m
+[0;32mI (10083) LIVING: AUTO TASK[0m
+[0;32mI (10253) LIVING: Do am: 67.00 percent[0m
+[0;32mI (10263) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (10263) LIVING: Do sang: 17.15 lux[0m
+[0;32mI (10263) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (10283) LIVING: AUTO TASK[0m
+[0;32mI (10483) LIVING: AUTO TASK[0m
+[0;32mI (10683) LIVING: AUTO TASK[0m
+[0;32mI (10883) LIVING: AUTO TASK[0m
+[0;32mI (11083) LIVING: AUTO TASK[0m
+[0;32mI (11283) LIVING: AUTO TASK[0m
+[0;33mW (11453) LIVING: DHT11 fail![0m
+[0;32mI (11453) LIVING: Do sang: 15.61 lux[0m
+[0;32mI (11453) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (11483) LIVING: AUTO TASK[0m
+[0;32mI (11683) LIVING: AUTO TASK[0m
+[0;32mI (11883) LIVING: AUTO TASK[0m
+[0;32mI (12083) LIVING: AUTO TASK[0m
+[0;32mI (12283) LIVING: AUTO TASK[0m
+[0;32mI (12483) LIVING: AUTO TASK[0m
+[0;33mW (12643) LIVING: DHT11 fail![0m
+[0;32mI (12643) LIVING: Do sang: 11.73 lux[0m
+[0;32mI (12643) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (12683) LIVING: AUTO TASK[0m
+[0;32mI (12883) LIVING: AUTO TASK[0m
+[0;32mI (13083) LIVING: AUTO TASK[0m
+[0;32mI (13283) LIVING: AUTO TASK[0m
+[0;32mI (13483) LIVING: AUTO TASK[0m
+[0;32mI (13683) LIVING: AUTO TASK[0m
+[0;32mI (13733) LIVING: Do am: 66.00 percent[0m
+[0;31mE (13753) mqtt_client: Client was not initialized[0m
+[0;32mI (13753) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (13753) LIVING: Do sang: 16.24 lux[0m
+[0;32mI (13753) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (13883) LIVING: AUTO TASK[0m
+[0;32mI (14083) LIVING: AUTO TASK[0m
+[0;32mI (14283) LIVING: AUTO TASK[0m
+[0;32mI (14483) LIVING: AUTO TASK[0m
+[0;32mI (14683) LIVING: AUTO TASK[0m
+[0;32mI (14813) LIVING: Do am: 66.00 percent[0m
+[0;32mI (14813) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (14813) LIVING: Do sang: 17.39 lux[0m
+[0;32mI (14813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (14883) LIVING: AUTO TASK[0m
+[0;32mI (15083) LIVING: AUTO TASK[0m
+[0;32mI (15283) LIVING: AUTO TASK[0m
+[0;32mI (15483) LIVING: AUTO TASK[0m
+[0;32mI (15683) LIVING: AUTO TASK[0m
+[0;32mI (15883) LIVING: AUTO TASK[0m
+[0;33mW (16003) LIVING: DHT11 fail![0m
+[0;32mI (16003) LIVING: Do sang: 17.24 lux[0m
+[0;32mI (16003) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (16083) LIVING: AUTO TASK[0m
+[0;32mI (16283) LIVING: AUTO TASK[0m
+[0;32mI (16483) LIVING: AUTO TASK[0m
+[0;32mI (16683) LIVING: AUTO TASK[0m
+[0;32mI (16883) LIVING: AUTO TASK[0m
+[0;32mI (17083) LIVING: AUTO TASK[0m
+[0;33mW (17193) LIVING: DHT11 fail![0m
+[0;32mI (17193) LIVING: Do sang: 13.15 lux[0m
+[0;32mI (17193) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (17283) LIVING: AUTO TASK[0m
+[0;32mI (17483) LIVING: AUTO TASK[0m
+[0;32mI (17683) LIVING: AUTO TASK[0m
+[0;32mI (17883) LIVING: AUTO TASK[0m
+[0;32mI (18083) LIVING: AUTO TASK[0m
+[0;32mI (18283) LIVING: AUTO TASK[0m
+[0;33mW (18383) LIVING: DHT11 fail![0m
+[0;32mI (18383) LIVING: Do sang: 11.70 lux[0m
+[0;32mI (18383) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (18483) LIVING: AUTO TASK[0m
+[0;32mI (18683) LIVING: AUTO TASK[0m
+[0;32mI (18883) LIVING: AUTO TASK[0m
+[0;32mI (19083) LIVING: AUTO TASK[0m
+[0;32mI (19283) LIVING: AUTO TASK[0m
+[0;32mI (19483) LIVING: AUTO TASK[0m
+[0;32mI (19513) LIVING: Do am: 66.00 percent[0m
+[0;32mI (19513) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (19523) LIVING: Do sang: 11.64 lux[0m
+[0;32mI (19523) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (19683) LIVING: AUTO TASK[0m
+[0;32mI (19883) LIVING: AUTO TASK[0m
+[0;32mI (20083) LIVING: AUTO TASK[0m
+[0;32mI (20283) LIVING: AUTO TASK[0m
+[0;32mI (20483) LIVING: AUTO TASK[0m
+[0;32mI (20683) LIVING: AUTO TASK[0m
+[0;33mW (20713) LIVING: DHT11 fail![0m
+[0;32mI (20713) LIVING: Do sang: 15.33 lux[0m
+[0;32mI (20713) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (20883) LIVING: AUTO TASK[0m
+[0;32mI (21083) LIVING: AUTO TASK[0m
+[0;32mI (21283) LIVING: AUTO TASK[0m
+[0;32mI (21483) LIVING: AUTO TASK[0m
+[0;32mI (21683) LIVING: AUTO TASK[0m
+[0;33mW (21803) LIVING: DHT11 fail![0m
+[0;32mI (21803) LIVING: Do sang: 11.67 lux[0m
+[0;32mI (21813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (21883) LIVING: AUTO TASK[0m
+[0;32mI (22083) LIVING: AUTO TASK[0m
+[0;32mI (22283) LIVING: AUTO TASK[0m
+[0;32mI (22483) LIVING: AUTO TASK[0m
+[0;32mI (22683) LIVING: AUTO TASK[0m
+[0;32mI (22873) LIVING: Do am: 66.00 percent[0m
+[0;32mI (22873) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (22873) LIVING: Do sang: 13.42 lux[0m
+[0;32mI (22873) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (22883) LIVING: AUTO TASK[0m
+[0;32mI (23083) LIVING: AUTO TASK[0m
+[0;32mI (23283) LIVING: AUTO TASK[0m
+[0;32mI (23483) LIVING: AUTO TASK[0m
+[0;32mI (23683) LIVING: AUTO TASK[0m
+[0;32mI (23883) LIVING: AUTO TASK[0m
+[0;32mI (23933) LIVING: Do am: 66.00 percent[0m
+[0;32mI (23933) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (23933) LIVING: Do sang: 11.39 lux[0m
+[0;32mI (23933) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (24083) LIVING: AUTO TASK[0m
+[0;32mI (24283) LIVING: AUTO TASK[0m
+[0;32mI (24483) LIVING: AUTO TASK[0m
+[0;32mI (24683) LIVING: AUTO TASK[0m
+[0;32mI (24883) LIVING: AUTO TASK[0m
+[0;33mW (24993) LIVING: DHT11 fail![0m
+[0;32mI (24993) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (24993) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (25083) LIVING: AUTO TASK[0m
+[0;32mI (25283) LIVING: AUTO TASK[0m
+[0;32mI (25483) LIVING: AUTO TASK[0m
+[0;32mI (25683) LIVING: AUTO TASK[0m
+[0;32mI (25883) LIVING: AUTO TASK[0m
+[0;32mI (26083) LIVING: AUTO TASK[0m
+[0;33mW (26183) LIVING: DHT11 fail![0m
+[0;32mI (26183) LIVING: Do sang: 11.21 lux[0m
+[0;32mI (26183) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (26283) LIVING: AUTO TASK[0m
+[0;32mI (26483) LIVING: AUTO TASK[0m
+[0;32mI (26683) LIVING: AUTO TASK[0m
+[0;32mI (26883) LIVING: AUTO TASK[0m
+[0;32mI (27083) LIVING: AUTO TASK[0m
+[0;32mI (27283) LIVING: AUTO TASK[0m
+[0;33mW (27373) LIVING: DHT11 fail![0m
+[0;32mI (27373) LIVING: Do sang: 13.94 lux[0m
+[0;32mI (27373) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (27483) LIVING: AUTO TASK[0m
+[0;32mI (27683) LIVING: AUTO TASK[0m
+[0;32mI (27883) LIVING: AUTO TASK[0m
+[0;32mI (28083) LIVING: AUTO TASK[0m
+[0;32mI (28283) LIVING: AUTO TASK[0m
+[0;32mI (28483) LIVING: AUTO TASK[0m
+[0;33mW (28563) LIVING: DHT11 fail![0m
+[0;32mI (28563) LIVING: Do sang: 17.03 lux[0m
+[0;32mI (28563) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (28683) LIVING: AUTO TASK[0m
+[0;32mI (28883) LIVING: AUTO TASK[0m
+[0;32mI (29083) LIVING: AUTO TASK[0m
+[0;32mI (29283) LIVING: AUTO TASK[0m
+[0;32mI (29483) LIVING: AUTO TASK[0m
+[0;32mI (29683) LIVING: AUTO TASK[0m
+[0;33mW (29693) LIVING: DHT11 fail![0m
+[0;32mI (29693) LIVING: Do sang: 14.09 lux[0m
+[0;32mI (29693) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (29883) LIVING: AUTO TASK[0m
+[0;32mI (30083) LIVING: AUTO TASK[0m
+[0;32mI (30283) LIVING: AUTO TASK[0m
+[0;32mI (30483) LIVING: AUTO TASK[0m
+[0;32mI (30683) LIVING: AUTO TASK[0m
+[0;32mI (30763) LIVING: Do am: 67.00 percent[0m
+[0;32mI (30763) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (30763) LIVING: Do sang: 11.33 lux[0m
+[0;32mI (30763) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (30883) LIVING: AUTO TASK[0m
+[0;32mI (31083) LIVING: AUTO TASK[0m
+[0;32mI (31283) LIVING: AUTO TASK[0m
+[0;32mI (31483) LIVING: AUTO TASK[0m
+[0;32mI (31683) LIVING: AUTO TASK[0m
+[0;32mI (31823) LIVING: Do am: 67.00 percent[0m
+[0;32mI (31823) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (31823) LIVING: Do sang: 11.12 lux[0m
+[0;32mI (31823) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (31883) LIVING: AUTO TASK[0m
+[0;32mI (32083) LIVING: AUTO TASK[0m
+[0;32mI (32283) LIVING: AUTO TASK[0m
+[0;32mI (32483) LIVING: AUTO TASK[0m
+[0;32mI (32683) LIVING: AUTO TASK[0m
+[0;32mI (32883) LIVING: AUTO TASK[0m
+[0;32mI (32883) LIVING: Do am: 67.00 percent[0m
+[0;32mI (32883) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (32883) LIVING: Do sang: 16.24 lux[0m
+[0;32mI (32883) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (33083) LIVING: AUTO TASK[0m
+[0;32mI (33283) LIVING: AUTO TASK[0m
+[0;32mI (33483) LIVING: AUTO TASK[0m
+[0;32mI (33683) LIVING: AUTO TASK[0m
+[0;32mI (33883) LIVING: AUTO TASK[0m
+[0;32mI (33953) LIVING: Do am: 67.00 percent[0m
+[0;32mI (33953) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (33953) LIVING: Do sang: 16.42 lux[0m
+[0;32mI (33953) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (34083) LIVING: AUTO TASK[0m
+[0;32mI (34283) LIVING: AUTO TASK[0m
+[0;32mI (34483) LIVING: AUTO TASK[0m
+[0;32mI (34683) LIVING: AUTO TASK[0m
+[0;32mI (34883) LIVING: AUTO TASK[0m
+[0;32mI (35083) LIVING: AUTO TASK[0m
+[0;33mW (35143) LIVING: DHT11 fail![0m
+[0;32mI (35143) LIVING: Do sang: 16.73 lux[0m
+[0;32mI (35143) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (35283) LIVING: AUTO TASK[0m
+[0;32mI (35483) LIVING: AUTO TASK[0m
+[0;32mI (35683) LIVING: AUTO TASK[0m
+[0;32mI (35883) LIVING: AUTO TASK[0m
+[0;32mI (36083) LIVING: AUTO TASK[0m
+[0;33mW (36233) LIVING: DHT11 fail![0m
+[0;32mI (36233) LIVING: Do sang: 14.88 lux[0m
+[0;32mI (36243) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (36283) LIVING: AUTO TASK[0m
+[0;32mI (36483) LIVING: AUTO TASK[0m
+[0;32mI (36683) LIVING: AUTO TASK[0m
+[0;32mI (36883) LIVING: AUTO TASK[0m
+[0;32mI (37083) LIVING: AUTO TASK[0m
+[0;32mI (37283) LIVING: AUTO TASK[0m
+[0;33mW (37433) LIVING: DHT11 fail![0m
+[0;32mI (37433) LIVING: Do sang: 13.24 lux[0m
+[0;32mI (37433) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (37483) LIVING: AUTO TASK[0m
+[0;32mI (37683) LIVING: AUTO TASK[0m
+[0;32mI (37883) LIVING: AUTO TASK[0m
+[0;32mI (38083) LIVING: AUTO TASK[0m
+[0;32mI (38283) LIVING: AUTO TASK[0m
+[0;32mI (38483) LIVING: AUTO TASK[0m
+[0;33mW (38623) LIVING: DHT11 fail![0m
+[0;32mI (38623) LIVING: Do sang: 11.03 lux[0m
+[0;32mI (38623) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (38683) LIVING: AUTO TASK[0m
+[0;32mI (38883) LIVING: AUTO TASK[0m
+[0;32mI (39083) LIVING: AUTO TASK[0m
+[0;32mI (39283) LIVING: AUTO TASK[0m
+[0;32mI (39483) LIVING: AUTO TASK[0m
+[0;32mI (39683) LIVING: AUTO TASK[0m
+[0;32mI (39713) LIVING: Do am: 67.00 percent[0m
+[0;32mI (39723) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (39723) LIVING: Do sang: 10.70 lux[0m
+[0;32mI (39723) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (39883) LIVING: AUTO TASK[0m
+[0;32mI (40083) LIVING: AUTO TASK[0m
+[0;32mI (40283) LIVING: AUTO TASK[0m
+[0;32mI (40483) LIVING: AUTO TASK[0m
+[0;32mI (40683) LIVING: AUTO TASK[0m
+[0;32mI (40883) LIVING: AUTO TASK[0m
+[0;33mW (40913) LIVING: DHT11 fail![0m
+[0;32mI (40913) LIVING: Do sang: 14.30 lux[0m
+[0;32mI (40913) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (41083) LIVING: AUTO TASK[0m
+[0;32mI (41283) LIVING: AUTO TASK[0m
+[0;32mI (41483) LIVING: AUTO TASK[0m
+[0;32mI (41683) LIVING: AUTO TASK[0m
+[0;32mI (41883) LIVING: AUTO TASK[0m
+[0;32mI (42083) LIVING: AUTO TASK[0m
+[0;33mW (42103) LIVING: DHT11 fail![0m
+[0;32mI (42103) LIVING: Do sang: 16.27 lux[0m
+[0;32mI (42103) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (42283) LIVING: AUTO TASK[0m
+[0;32mI (42483) LIVING: AUTO TASK[0m
+[0;32mI (42683) LIVING: AUTO TASK[0m
+[0;32mI (42883) LIVING: AUTO TASK[0m
+[0;32mI (43083) LIVING: AUTO TASK[0m
+[0;32mI (43193) LIVING: Do am: 67.00 percent[0m
+[0;32mI (43203) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (43203) LIVING: Do sang: 17.18 lux[0m
+[0;32mI (43203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (43283) LIVING: AUTO TASK[0m
+[0;32mI (43483) LIVING: AUTO TASK[0m
+[0;32mI (43683) LIVING: AUTO TASK[0m
+[0;32mI (43883) LIVING: AUTO TASK[0m
+[0;32mI (44083) LIVING: AUTO TASK[0m
+[0;32mI (44283) LIVING: AUTO TASK[0m
+[0;33mW (44393) LIVING: DHT11 fail![0m
+[0;32mI (44393) LIVING: Do sang: 13.64 lux[0m
+[0;32mI (44393) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (44483) LIVING: AUTO TASK[0m
+[0;32mI (44683) LIVING: AUTO TASK[0m
+[0;32mI (44883) LIVING: AUTO TASK[0m
+[0;32mI (45083) LIVING: AUTO TASK[0m
+[0;32mI (45283) LIVING: AUTO TASK[0m
+[0;32mI (45483) LIVING: AUTO TASK[0m
+[0;33mW (45583) LIVING: DHT11 fail![0m
+[0;32mI (45583) LIVING: Do sang: 11.18 lux[0m
+[0;32mI (45583) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (45683) LIVING: AUTO TASK[0m
+[0;32mI (45883) LIVING: AUTO TASK[0m
+[0;32mI (46083) LIVING: AUTO TASK[0m
+[0;32mI (46283) LIVING: AUTO TASK[0m
+[0;32mI (46483) LIVING: AUTO TASK[0m
+[0;32mI (46683) LIVING: AUTO TASK[0m
+[0;33mW (46773) LIVING: DHT11 fail![0m
+[0;32mI (46773) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (46773) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (46883) LIVING: AUTO TASK[0m
+[0;32mI (47083) LIVING: AUTO TASK[0m
+[0;32mI (47283) LIVING: AUTO TASK[0m
+[0;32mI (47483) LIVING: AUTO TASK[0m
+[0;32mI (47683) LIVING: AUTO TASK[0m
+[0;32mI (47883) LIVING: AUTO TASK[0m
+[0;33mW (47963) LIVING: DHT11 fail![0m
+[0;32mI (47963) LIVING: Do sang: 14.45 lux[0m
+[0;32mI (47963) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (48083) LIVING: AUTO TASK[0m
+[0;32mI (48283) LIVING: AUTO TASK[0m
+[0;32mI (48483) LIVING: AUTO TASK[0m
+[0;32mI (48683) LIVING: AUTO TASK[0m
+[0;32mI (48883) LIVING: AUTO TASK[0m
+[0;32mI (49083) LIVING: AUTO TASK[0m
+[0;33mW (49093) LIVING: DHT11 fail![0m
+[0;32mI (49093) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (49093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (49283) LIVING: AUTO TASK[0m
+[0;32mI (49483) LIVING: AUTO TASK[0m
+[0;32mI (49683) LIVING: AUTO TASK[0m
+[0;32mI (49883) LIVING: AUTO TASK[0m
+[0;32mI (50083) LIVING: AUTO TASK[0m
+[0;32mI (50163) LIVING: Do am: 67.00 percent[0m
+[0;32mI (50163) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (50163) LIVING: Do sang: 12.85 lux[0m
+[0;32mI (50163) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (50283) LIVING: AUTO TASK[0m
+[0;32mI (50483) LIVING: AUTO TASK[0m
+[0;32mI (50683) LIVING: AUTO TASK[0m
+[0;32mI (50883) LIVING: AUTO TASK[0m
+[0;32mI (51083) LIVING: AUTO TASK[0m
+[0;32mI (51223) LIVING: Do am: 66.00 percent[0m
+[0;32mI (51223) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (51223) LIVING: Do sang: 11.15 lux[0m
+[0;32mI (51223) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (51283) LIVING: AUTO TASK[0m
+[0;32mI (51483) LIVING: AUTO TASK[0m
+[0;32mI (51683) LIVING: AUTO TASK[0m
+[0;32mI (51883) LIVING: AUTO TASK[0m
+[0;32mI (52083) LIVING: AUTO TASK[0m
+[0;32mI (52283) LIVING: AUTO TASK[0m
+[0;32mI (52283) LIVING: Do am: 66.00 percent[0m
+[0;32mI (52283) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (52283) LIVING: Do sang: 15.18 lux[0m
+[0;32mI (52283) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (52483) LIVING: AUTO TASK[0m
+[0;32mI (52683) LIVING: AUTO TASK[0m
+[0;32mI (52883) LIVING: AUTO TASK[0m
+[0;32mI (53083) LIVING: AUTO TASK[0m
+[0;32mI (53283) LIVING: AUTO TASK[0m
+[0;32mI (53353) LIVING: Do am: 67.00 percent[0m
+[0;32mI (53353) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (53353) LIVING: Do sang: 16.21 lux[0m
+[0;32mI (53353) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (53483) LIVING: AUTO TASK[0m
+[0;32mI (53683) LIVING: AUTO TASK[0m
+[0;32mI (53883) LIVING: AUTO TASK[0m
+[0;32mI (54083) LIVING: AUTO TASK[0m
+[0;32mI (54283) LIVING: AUTO TASK[0m
+[0;32mI (54483) LIVING: AUTO TASK[0m
+[0;33mW (54543) LIVING: DHT11 fail![0m
+[0;32mI (54543) LIVING: Do sang: 16.21 lux[0m
+[0;32mI (54543) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (54683) LIVING: AUTO TASK[0m
+[0;32mI (54883) LIVING: AUTO TASK[0m
+[0;32mI (55083) LIVING: AUTO TASK[0m
+[0;32mI (55283) LIVING: AUTO TASK[0m
+[0;32mI (55483) LIVING: AUTO TASK[0m
+[0;33mW (55633) LIVING: DHT11 fail![0m
+[0;32mI (55633) LIVING: Do sang: 15.67 lux[0m
+[0;32mI (55643) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (55683) LIVING: AUTO TASK[0m
+[0;32mI (55883) LIVING: AUTO TASK[0m
+[0;32mI (56083) LIVING: AUTO TASK[0m
+[0;32mI (56283) LIVING: AUTO TASK[0m
+[0;32mI (56483) LIVING: AUTO TASK[0m
+[0;32mI (56683) LIVING: AUTO TASK[0m
+[0;33mW (56833) LIVING: DHT11 fail![0m
+[0;32mI (56833) LIVING: Do sang: 11.85 lux[0m
+[0;32mI (56833) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (56883) LIVING: AUTO TASK[0m
+[0;32mI (57083) LIVING: AUTO TASK[0m
+[0;32mI (57283) LIVING: AUTO TASK[0m
+[0;32mI (57483) LIVING: AUTO TASK[0m
+[0;32mI (57683) LIVING: AUTO TASK[0m
+[0;32mI (57883) LIVING: AUTO TASK[0m
+[0;33mW (58023) LIVING: DHT11 fail![0m
+[0;32mI (58023) LIVING: Do sang: 10.76 lux[0m
+[0;32mI (58023) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (58083) LIVING: AUTO TASK[0m
+[0;32mI (58283) LIVING: AUTO TASK[0m
+[0;32mI (58483) LIVING: AUTO TASK[0m
+[0;32mI (58683) LIVING: AUTO TASK[0m
+[0;32mI (58883) LIVING: AUTO TASK[0m
+[0;32mI (59083) LIVING: AUTO TASK[0m
+[0;33mW (59213) LIVING: DHT11 fail![0m
+[0;32mI (59213) LIVING: Do sang: 15.70 lux[0m
+[0;32mI (59213) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (59283) LIVING: AUTO TASK[0m
+[0;32mI (59483) LIVING: AUTO TASK[0m
+[0;32mI (59683) LIVING: AUTO TASK[0m
+[0;32mI (59883) LIVING: AUTO TASK[0m
+[0;32mI (60083) LIVING: AUTO TASK[0m
+[0;32mI (60283) LIVING: AUTO TASK[0m
+[0;32mI (60343) LIVING: Do am: 66.00 percent[0m
+[0;32mI (60343) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (60353) LIVING: Do sang: 15.97 lux[0m
+[0;32mI (60353) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (60483) LIVING: AUTO TASK[0m
+[0;32mI (60683) LIVING: AUTO TASK[0m
+[0;32mI (60883) LIVING: AUTO TASK[0m
+[0;32mI (61083) LIVING: AUTO TASK[0m
+[0;32mI (61283) LIVING: AUTO TASK[0m
+[0;32mI (61413) LIVING: Do am: 66.00 percent[0m
+[0;32mI (61413) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (61413) LIVING: Do sang: 11.06 lux[0m
+[0;32mI (61413) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (61483) LIVING: AUTO TASK[0m
+[0;32mI (61683) LIVING: AUTO TASK[0m
+[0;32mI (61883) LIVING: AUTO TASK[0m
+[0;32mI (62083) LIVING: AUTO TASK[0m
+[0;32mI (62283) LIVING: AUTO TASK[0m
+[0;33mW (62473) LIVING: DHT11 fail![0m
+[0;32mI (62473) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (62473) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (62483) LIVING: AUTO TASK[0m
+[0;32mI (62683) LIVING: AUTO TASK[0m
+[0;32mI (62883) LIVING: AUTO TASK[0m
+[0;32mI (63083) LIVING: AUTO TASK[0m
+[0;32mI (63283) LIVING: AUTO TASK[0m
+[0;32mI (63483) LIVING: AUTO TASK[0m
+[0;33mW (63663) LIVING: DHT11 fail![0m
+[0;32mI (63663) LIVING: Do sang: 14.52 lux[0m
+[0;32mI (63663) LIVING: Khi gas: 86.67 ppm[0m
+[0;32mI (63683) LIVING: AUTO TASK[0m
+[0;32mI (63883) LIVING: AUTO TASK[0m
+[0;32mI (64083) LIVING: AUTO TASK[0m
+[0;32mI (64283) LIVING: AUTO TASK[0m
+[0;32mI (64483) LIVING: AUTO TASK[0m
+[0;32mI (64683) LIVING: AUTO TASK[0m
+[0;33mW (64853) LIVING: DHT11 fail![0m
+[0;32mI (64853) LIVING: Do sang: 16.79 lux[0m
+[0;32mI (64853) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (64883) LIVING: AUTO TASK[0m
+[0;32mI (65083) LIVING: AUTO TASK[0m
+[0;32mI (65283) LIVING: AUTO TASK[0m
+[0;32mI (65483) LIVING: AUTO TASK[0m
+[0;32mI (65683) LIVING: AUTO TASK[0m
+[0;32mI (65883) LIVING: AUTO TASK[0m
+[0;33mW (65943) LIVING: DHT11 fail![0m
+[0;32mI (65953) LIVING: Do sang: 17.33 lux[0m
+[0;32mI (65953) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (66083) LIVING: AUTO TASK[0m
+[0;32mI (66283) LIVING: AUTO TASK[0m
+[0;32mI (66483) LIVING: AUTO TASK[0m
+[0;32mI (66683) LIVING: AUTO TASK[0m
+[0;32mI (66883) LIVING: AUTO TASK[0m
+[0;32mI (67013) LIVING: Do am: 67.00 percent[0m
+[0;32mI (67013) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (67013) LIVING: Do sang: 11.58 lux[0m
+[0;32mI (67013) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (67083) LIVING: AUTO TASK[0m
+[0;32mI (67283) LIVING: AUTO TASK[0m
+[0;32mI (67483) LIVING: AUTO TASK[0m
+[0;32mI (67683) LIVING: AUTO TASK[0m
+[0;32mI (67883) LIVING: AUTO TASK[0m
+[0;32mI (68073) LIVING: Do am: 67.00 percent[0m
+[0;32mI (68073) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (68073) LIVING: Do sang: 16.45 lux[0m
+[0;32mI (68073) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (68083) LIVING: AUTO TASK[0m
+[0;32mI (68283) LIVING: AUTO TASK[0m
+[0;32mI (68483) LIVING: AUTO TASK[0m
+[0;32mI (68683) LIVING: AUTO TASK[0m
+[0;32mI (68883) LIVING: AUTO TASK[0m
+[0;32mI (69083) LIVING: AUTO TASK[0m
+[0;32mI (69133) LIVING: Do am: 67.00 percent[0m
+[0;32mI (69133) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (69133) LIVING: Do sang: 16.79 lux[0m
+[0;32mI (69133) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (69283) LIVING: AUTO TASK[0m
+[0;32mI (69483) LIVING: AUTO TASK[0m
+[0;32mI (69683) LIVING: AUTO TASK[0m
+[0;32mI (69883) LIVING: AUTO TASK[0m
+[0;32mI (70083) LIVING: AUTO TASK[0m
+[0;32mI (70283) LIVING: AUTO TASK[0m
+[0;33mW (70323) LIVING: DHT11 fail![0m
+[0;32mI (70323) LIVING: Do sang: 14.39 lux[0m
+[0;32mI (70323) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (70483) LIVING: AUTO TASK[0m
+[0;32mI (70683) LIVING: AUTO TASK[0m
+[0;32mI (70883) LIVING: AUTO TASK[0m
+[0;32mI (71083) LIVING: AUTO TASK[0m
+[0;32mI (71283) LIVING: AUTO TASK[0m
+[0;33mW (71413) LIVING: DHT11 fail![0m
+[0;32mI (71413) LIVING: Do sang: 15.82 lux[0m
+[0;32mI (71423) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (71483) LIVING: AUTO TASK[0m
+[0;32mI (71683) LIVING: AUTO TASK[0m
+[0;32mI (71883) LIVING: AUTO TASK[0m
+[0;32mI (72083) LIVING: AUTO TASK[0m
+[0;32mI (72283) LIVING: AUTO TASK[0m
+[0;32mI (72483) LIVING: Do am: 67.00 percent[0m
+[0;32mI (72483) LIVING: AUTO TASK[0m
+[0;32mI (72483) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (72483) LIVING: Do sang: 16.21 lux[0m
+[0;32mI (72483) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (72683) LIVING: AUTO TASK[0m
+[0;32mI (72883) LIVING: AUTO TASK[0m
+[0;32mI (73083) LIVING: AUTO TASK[0m
+[0;32mI (73283) LIVING: AUTO TASK[0m
+[0;32mI (73483) LIVING: AUTO TASK[0m
+[0;32mI (73553) LIVING: Do am: 67.00 percent[0m
+[0;32mI (73553) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (73553) LIVING: Do sang: 16.70 lux[0m
+[0;32mI (73553) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (73683) LIVING: AUTO TASK[0m
+[0;32mI (73883) LIVING: AUTO TASK[0m
+[0;32mI (74083) LIVING: AUTO TASK[0m
+[0;32mI (74283) LIVING: AUTO TASK[0m
+[0;32mI (74483) LIVING: AUTO TASK[0m
+[0;32mI (74683) LIVING: AUTO TASK[0m
+[0;33mW (74743) LIVING: DHT11 fail![0m
+[0;32mI (74743) LIVING: Do sang: 16.52 lux[0m
+[0;32mI (74743) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (74883) LIVING: AUTO TASK[0m
+[0;32mI (75083) LIVING: AUTO TASK[0m
+[0;32mI (75283) LIVING: AUTO TASK[0m
+[0;32mI (75483) LIVING: AUTO TASK[0m
+[0;32mI (75683) LIVING: AUTO TASK[0m
+[0;32mI (75883) LIVING: AUTO TASK[0m
+[0;33mW (75933) LIVING: DHT11 fail![0m
+[0;32mI (75933) LIVING: Do sang: 11.88 lux[0m
+[0;32mI (75933) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (76083) LIVING: AUTO TASK[0m
+[0;32mI (76283) LIVING: AUTO TASK[0m
+[0;32mI (76483) LIVING: AUTO TASK[0m
+[0;32mI (76683) LIVING: AUTO TASK[0m
+[0;32mI (76883) LIVING: AUTO TASK[0m
+[0;32mI (77023) LIVING: Do am: 68.00 percent[0m
+[0;32mI (77033) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (77033) LIVING: Do sang: 10.67 lux[0m
+[0;32mI (77033) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (77083) LIVING: AUTO TASK[0m
+[0;32mI (77283) LIVING: AUTO TASK[0m
+[0;32mI (77483) LIVING: AUTO TASK[0m
+[0;32mI (77683) LIVING: AUTO TASK[0m
+[0;32mI (77883) LIVING: AUTO TASK[0m
+[0;32mI (78083) LIVING: AUTO TASK[0m
+[0;32mI (78093) LIVING: Do am: 68.00 percent[0m
+[0;32mI (78093) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (78093) LIVING: Do sang: 16.09 lux[0m
+[0;32mI (78093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (78283) LIVING: AUTO TASK[0m
+[0;32mI (78483) LIVING: AUTO TASK[0m
+[0;32mI (78683) LIVING: AUTO TASK[0m
+[0;32mI (78883) LIVING: AUTO TASK[0m
+[0;32mI (79083) LIVING: AUTO TASK[0m
+[0;32mI (79153) LIVING: Do am: 68.00 percent[0m
+[0;32mI (79153) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (79153) LIVING: Do sang: 16.55 lux[0m
+[0;32mI (79153) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (79283) LIVING: AUTO TASK[0m
+[0;32mI (79483) LIVING: AUTO TASK[0m
+[0;32mI (79683) LIVING: AUTO TASK[0m
+[0;32mI (79883) LIVING: AUTO TASK[0m
+[0;32mI (80083) LIVING: AUTO TASK[0m
+[0;32mI (80213) LIVING: Do am: 68.00 percent[0m
+[0;32mI (80213) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (80213) LIVING: Do sang: 12.30 lux[0m
+[0;32mI (80213) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (80283) LIVING: AUTO TASK[0m
+[0;32mI (80483) LIVING: AUTO TASK[0m
+[0;32mI (80683) LIVING: AUTO TASK[0m
+[0;32mI (80883) LIVING: AUTO TASK[0m
+[0;32mI (81083) LIVING: AUTO TASK[0m
+[0;32mI (81283) LIVING: AUTO TASK[0m
+[0;33mW (81403) LIVING: DHT11 fail![0m
+[0;32mI (81403) LIVING: Do sang: 11.12 lux[0m
+[0;32mI (81403) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (81483) LIVING: AUTO TASK[0m
+[0;32mI (81683) LIVING: AUTO TASK[0m
+[0;32mI (81883) LIVING: AUTO TASK[0m
+[0;32mI (82083) LIVING: AUTO TASK[0m
+[0;32mI (82283) LIVING: AUTO TASK[0m
+[0;32mI (82483) LIVING: AUTO TASK[0m
+[0;33mW (82493) LIVING: DHT11 fail![0m
+[0;32mI (82493) LIVING: Do sang: 11.55 lux[0m
+[0;32mI (82503) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (82683) LIVING: AUTO TASK[0m
+[0;32mI (82883) LIVING: AUTO TASK[0m
+[0;32mI (83083) LIVING: AUTO TASK[0m
+[0;32mI (83283) LIVING: AUTO TASK[0m
+[0;32mI (83483) LIVING: AUTO TASK[0m
+[0;32mI (83683) LIVING: AUTO TASK[0m
+[0;33mW (83693) LIVING: DHT11 fail![0m
+[0;32mI (83693) LIVING: Do sang: 15.39 lux[0m
+[0;32mI (83693) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (83883) LIVING: AUTO TASK[0m
+[0;32mI (84083) LIVING: AUTO TASK[0m
+[0;32mI (84283) LIVING: AUTO TASK[0m
+[0;32mI (84483) LIVING: AUTO TASK[0m
+[0;32mI (84683) LIVING: AUTO TASK[0m
+[0;33mW (84883) LIVING: DHT11 fail![0m
+[0;32mI (84883) LIVING: Do sang: 16.79 lux[0m
+[0;32mI (84883) LIVING: AUTO TASK[0m
+[0;32mI (84883) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (85083) LIVING: AUTO TASK[0m
+[0;32mI (85283) LIVING: AUTO TASK[0m
+[0;32mI (85483) LIVING: AUTO TASK[0m
+[0;32mI (85683) LIVING: AUTO TASK[0m
+[0;32mI (85883) LIVING: AUTO TASK[0m
+[0;33mW (86073) LIVING: DHT11 fail![0m
+[0;32mI (86073) LIVING: Do sang: 11.64 lux[0m
+[0;32mI (86073) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (86083) LIVING: AUTO TASK[0m
+[0;32mI (86283) LIVING: AUTO TASK[0m
+[0;32mI (86483) LIVING: AUTO TASK[0m
+[0;32mI (86683) LIVING: AUTO TASK[0m
+[0;32mI (86883) LIVING: AUTO TASK[0m
+[0;32mI (87083) LIVING: AUTO TASK[0m
+[0;33mW (87203) LIVING: DHT11 fail![0m
+[0;32mI (87203) LIVING: Do sang: 16.09 lux[0m
+[0;32mI (87203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (87283) LIVING: AUTO TASK[0m
+[0;32mI (87483) LIVING: AUTO TASK[0m
+[0;32mI (87683) LIVING: AUTO TASK[0m
+[0;32mI (87883) LIVING: AUTO TASK[0m
+[0;32mI (88083) LIVING: AUTO TASK[0m
+[0;32mI (88283) LIVING: AUTO TASK[0m
+[0;33mW (88403) LIVING: DHT11 fail![0m
+[0;32mI (88403) LIVING: Do sang: 15.79 lux[0m
+[0;32mI (88403) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (88483) LIVING: AUTO TASK[0m
+[0;32mI (88683) LIVING: AUTO TASK[0m
+[0;32mI (88883) LIVING: AUTO TASK[0m
+[0;32mI (89083) LIVING: AUTO TASK[0m
+[0;32mI (89283) LIVING: AUTO TASK[0m
+[0;32mI (89483) LIVING: AUTO TASK[0m
+[0;33mW (89593) LIVING: DHT11 fail![0m
+[0;32mI (89593) LIVING: Do sang: 15.97 lux[0m
+[0;32mI (89593) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (89683) LIVING: AUTO TASK[0m
+[0;32mI (89883) LIVING: AUTO TASK[0m
+[0;32mI (90083) LIVING: AUTO TASK[0m
+[0;32mI (90283) LIVING: AUTO TASK[0m
+[0;32mI (90483) LIVING: AUTO TASK[0m
+[0;32mI (90683) LIVING: AUTO TASK[0m
+[0;33mW (90783) LIVING: DHT11 fail![0m
+[0;32mI (90783) LIVING: Do sang: 11.18 lux[0m
+[0;32mI (90783) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (90883) LIVING: AUTO TASK[0m
+[0;32mI (91083) LIVING: AUTO TASK[0m
+[0;32mI (91283) LIVING: AUTO TASK[0m
+[0;32mI (91483) LIVING: AUTO TASK[0m
+[0;32mI (91683) LIVING: AUTO TASK[0m
+[0;32mI (91883) LIVING: AUTO TASK[0m
+[0;33mW (91913) LIVING: DHT11 fail![0m
+[0;32mI (91913) LIVING: Do sang: 16.09 lux[0m
+[0;32mI (91913) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (92083) LIVING: AUTO TASK[0m
+[0;32mI (92283) LIVING: AUTO TASK[0m
+[0;32mI (92483) LIVING: AUTO TASK[0m
+[0;32mI (92683) LIVING: AUTO TASK[0m
+[0;32mI (92883) LIVING: AUTO TASK[0m
+[0;32mI (93083) LIVING: AUTO TASK[0m
+[0;33mW (93103) LIVING: DHT11 fail![0m
+[0;32mI (93103) LIVING: Do sang: 15.70 lux[0m
+[0;32mI (93103) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (93283) LIVING: AUTO TASK[0m
+[0;32mI (93483) LIVING: AUTO TASK[0m
+[0;32mI (93683) LIVING: AUTO TASK[0m
+[0;32mI (93883) LIVING: AUTO TASK[0m
+[0;32mI (94083) LIVING: AUTO TASK[0m
+[0;33mW (94193) LIVING: DHT11 fail![0m
+[0;32mI (94203) LIVING: Do sang: 15.94 lux[0m
+[0;32mI (94203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (94283) LIVING: AUTO TASK[0m
+[0;32mI (94483) LIVING: AUTO TASK[0m
+[0;32mI (94683) LIVING: AUTO TASK[0m
+[0;32mI (94883) LIVING: AUTO TASK[0m
+[0;32mI (95083) LIVING: AUTO TASK[0m
+[0;32mI (95263) LIVING: Do am: 67.00 percent[0m
+[0;32mI (95263) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (95263) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (95263) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (95283) LIVING: AUTO TASK[0m
+[0;32mI (95483) LIVING: AUTO TASK[0m
+[0;32mI (95683) LIVING: AUTO TASK[0m
+[0;32mI (95883) LIVING: AUTO TASK[0m
+[0;32mI (96083) LIVING: AUTO TASK[0m
+[0;32mI (96283) LIVING: AUTO TASK[0m
+[0;32mI (96323) LIVING: Do am: 67.00 percent[0m
+[0;32mI (96323) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (96323) LIVING: Do sang: 12.55 lux[0m
+[0;32mI (96323) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (96483) LIVING: AUTO TASK[0m
+[0;32mI (96683) LIVING: AUTO TASK[0m
+[0;32mI (96883) LIVING: AUTO TASK[0m
+[0;32mI (97083) LIVING: AUTO TASK[0m
+[0;32mI (97283) LIVING: AUTO TASK[0m
+[0;32mI (97483) LIVING: AUTO TASK[0m
+[0;33mW (97513) LIVING: DHT11 fail![0m
+[0;32mI (97513) LIVING: Do sang: 13.52 lux[0m
+[0;32mI (97513) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (97683) LIVING: AUTO TASK[0m
+[0;32mI (97883) LIVING: AUTO TASK[0m
+[0;32mI (98083) LIVING: AUTO TASK[0m
+[0;32mI (98283) LIVING: AUTO TASK[0m
+[0;32mI (98483) LIVING: AUTO TASK[0m
+[0;33mW (98603) LIVING: DHT11 fail![0m
+[0;32mI (98603) LIVING: Do sang: 11.12 lux[0m
+[0;32mI (98613) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (98683) LIVING: AUTO TASK[0m
+[0;32mI (98883) LIVING: AUTO TASK[0m
+[0;32mI (99083) LIVING: AUTO TASK[0m
+[0;32mI (99283) LIVING: AUTO TASK[0m
+[0;32mI (99483) LIVING: AUTO TASK[0m
+[0;32mI (99673) LIVING: Do am: 67.00 percent[0m
+[0;32mI (99673) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (99673) LIVING: Do sang: 11.85 lux[0m
+[0;32mI (99673) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (99683) LIVING: AUTO TASK[0m
+[0;32mI (99883) LIVING: AUTO TASK[0m
+[0;32mI (100083) LIVING: AUTO TASK[0m
+[0;32mI (100283) LIVING: AUTO TASK[0m
+[0;32mI (100483) LIVING: AUTO TASK[0m
+[0;32mI (100683) LIVING: AUTO TASK[0m
+[0;32mI (100733) LIVING: Do am: 67.00 percent[0m
+[0;32mI (100733) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (100733) LIVING: Do sang: 10.52 lux[0m
+[0;32mI (100733) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (100883) LIVING: AUTO TASK[0m
+[0;32mI (101083) LIVING: AUTO TASK[0m
+[0;32mI (101283) LIVING: AUTO TASK[0m
+[0;32mI (101483) LIVING: AUTO TASK[0m
+[0;32mI (101683) LIVING: AUTO TASK[0m
+[0;33mW (101793) LIVING: DHT11 fail![0m
+[0;32mI (101793) LIVING: Do sang: 10.67 lux[0m
+[0;32mI (101793) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (101883) LIVING: AUTO TASK[0m
+[0;32mI (102083) LIVING: AUTO TASK[0m
+[0;32mI (102283) LIVING: AUTO TASK[0m
+[0;32mI (102483) LIVING: AUTO TASK[0m
+[0;32mI (102683) LIVING: AUTO TASK[0m
+[0;32mI (102883) LIVING: AUTO TASK[0m
+[0;33mW (102983) LIVING: DHT11 fail![0m
+[0;32mI (102983) LIVING: Do sang: 14.39 lux[0m
+[0;32mI (102983) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (103083) LIVING: AUTO TASK[0m
+[0;32mI (103283) LIVING: AUTO TASK[0m
+[0;32mI (103483) LIVING: AUTO TASK[0m
+[0;32mI (103683) LIVING: AUTO TASK[0m
+[0;32mI (103883) LIVING: AUTO TASK[0m
+[0;33mW (104073) LIVING: DHT11 fail![0m
+[0;32mI (104073) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (104083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (104083) LIVING: AUTO TASK[0m
+[0;32mI (104283) LIVING: AUTO TASK[0m
+[0;32mI (104483) LIVING: AUTO TASK[0m
+[0;32mI (104683) LIVING: AUTO TASK[0m
+[0;32mI (104883) LIVING: AUTO TASK[0m
+[0;32mI (105083) LIVING: AUTO TASK[0m
+[0;32mI (105143) LIVING: Do am: 67.00 percent[0m
+[0;32mI (105143) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (105143) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (105143) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (105283) LIVING: AUTO TASK[0m
+[0;32mI (105483) LIVING: AUTO TASK[0m
+[0;32mI (105683) LIVING: AUTO TASK[0m
+[0;32mI (105883) LIVING: AUTO TASK[0m
+[0;32mI (106083) LIVING: AUTO TASK[0m
+[0;32mI (106203) LIVING: Do am: 67.00 percent[0m
+[0;32mI (106203) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (106203) LIVING: Do sang: 10.39 lux[0m
+[0;32mI (106203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (106283) LIVING: AUTO TASK[0m
+[0;32mI (106483) LIVING: AUTO TASK[0m
+[0;32mI (106683) LIVING: AUTO TASK[0m
+[0;32mI (106883) LIVING: AUTO TASK[0m
+[0;32mI (107083) LIVING: AUTO TASK[0m
+[0;32mI (107283) LIVING: AUTO TASK[0m
+[0;33mW (107393) LIVING: DHT11 fail![0m
+[0;32mI (107393) LIVING: Do sang: 10.18 lux[0m
+[0;32mI (107393) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (107483) LIVING: AUTO TASK[0m
+[0;32mI (107683) LIVING: AUTO TASK[0m
+[0;32mI (107883) LIVING: AUTO TASK[0m
+[0;32mI (108083) LIVING: AUTO TASK[0m
+[0;32mI (108283) LIVING: AUTO TASK[0m
+[0;32mI (108483) LIVING: AUTO TASK[0m
+[0;33mW (108583) LIVING: DHT11 fail![0m
+[0;32mI (108583) LIVING: Do sang: 14.12 lux[0m
+[0;32mI (108583) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (108683) LIVING: AUTO TASK[0m
+[0;32mI (108883) LIVING: AUTO TASK[0m
+[0;32mI (109083) LIVING: AUTO TASK[0m
+[0;32mI (109283) LIVING: AUTO TASK[0m
+[0;32mI (109483) LIVING: AUTO TASK[0m
+[0;32mI (109673) LIVING: Do am: 67.00 percent[0m
+[0;32mI (109683) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (109683) LIVING: AUTO TASK[0m
+[0;32mI (109683) LIVING: Do sang: 16.39 lux[0m
+[0;32mI (109683) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (109883) LIVING: AUTO TASK[0m
+[0;32mI (110083) LIVING: AUTO TASK[0m
+[0;32mI (110283) LIVING: AUTO TASK[0m
+[0;32mI (110483) LIVING: AUTO TASK[0m
+[0;32mI (110683) LIVING: AUTO TASK[0m
+[0;32mI (110753) LIVING: Do am: 67.00 percent[0m
+[0;32mI (110753) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (110753) LIVING: Do sang: 11.61 lux[0m
+[0;32mI (110753) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (110883) LIVING: AUTO TASK[0m
+[0;32mI (111083) LIVING: AUTO TASK[0m
+[0;32mI (111283) LIVING: AUTO TASK[0m
+[0;32mI (111483) LIVING: AUTO TASK[0m
+[0;32mI (111683) LIVING: AUTO TASK[0m
+[0;32mI (111813) LIVING: Do am: 68.00 percent[0m
+[0;32mI (111813) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (111813) LIVING: Do sang: 10.67 lux[0m
+[0;32mI (111813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (111883) LIVING: AUTO TASK[0m
+[0;32mI (112083) LIVING: AUTO TASK[0m
+[0;32mI (112283) LIVING: AUTO TASK[0m
+[0;32mI (112483) LIVING: AUTO TASK[0m
+[0;32mI (112683) LIVING: AUTO TASK[0m
+[0;32mI (112873) LIVING: Do am: 68.00 percent[0m
+[0;32mI (112873) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (112873) LIVING: Do sang: 10.45 lux[0m
+[0;32mI (112873) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (112883) LIVING: AUTO TASK[0m
+[0;32mI (113083) LIVING: AUTO TASK[0m
+[0;32mI (113283) LIVING: AUTO TASK[0m
+[0;32mI (113483) LIVING: AUTO TASK[0m
+[0;32mI (113683) LIVING: AUTO TASK[0m
+[0;32mI (113883) LIVING: AUTO TASK[0m
+[0;32mI (113933) LIVING: Do am: 68.00 percent[0m
+[0;32mI (113933) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (113933) LIVING: Do sang: 13.48 lux[0m
+[0;32mI (113933) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (114083) LIVING: AUTO TASK[0m
+[0;32mI (114283) LIVING: AUTO TASK[0m
+[0;32mI (114483) LIVING: AUTO TASK[0m
+[0;32mI (114683) LIVING: AUTO TASK[0m
+[0;32mI (114883) LIVING: AUTO TASK[0m
+[0;32mI (115083) LIVING: AUTO TASK[0m
+[0;33mW (115123) LIVING: DHT11 fail![0m
+[0;32mI (115123) LIVING: Do sang: 13.85 lux[0m
+[0;32mI (115123) LIVING: Khi gas: 87.27 ppm[0m
+[0;32mI (115283) LIVING: AUTO TASK[0m
+[0;32mI (115483) LIVING: AUTO TASK[0m
+[0;32mI (115683) LIVING: AUTO TASK[0m
+[0;32mI (115883) LIVING: AUTO TASK[0m
+[0;32mI (116083) LIVING: AUTO TASK[0m
+[0;32mI (116283) LIVING: AUTO TASK[0m
+[0;33mW (116313) LIVING: DHT11 fail![0m
+[0;32mI (116313) LIVING: Do sang: 16.27 lux[0m
+[0;32mI (116313) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (116483) LIVING: AUTO TASK[0m
+[0;32mI (116683) LIVING: AUTO TASK[0m
+[0;32mI (116883) LIVING: AUTO TASK[0m
+[0;32mI (117083) LIVING: AUTO TASK[0m
+[0;32mI (117283) LIVING: AUTO TASK[0m
+[0;32mI (117483) LIVING: AUTO TASK[0m
+[0;33mW (117503) LIVING: DHT11 fail![0m
+[0;32mI (117503) LIVING: Do sang: 16.00 lux[0m
+[0;32mI (117503) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (117683) LIVING: AUTO TASK[0m
+[0;32mI (117883) LIVING: AUTO TASK[0m
+[0;32mI (118083) LIVING: AUTO TASK[0m
+[0;32mI (118283) LIVING: AUTO TASK[0m
+[0;32mI (118483) LIVING: AUTO TASK[0m
+[0;32mI (118633) LIVING: Do am: 68.00 percent[0m
+[0;32mI (118633) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (118643) LIVING: Do sang: 16.48 lux[0m
+[0;32mI (118643) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (118683) LIVING: AUTO TASK[0m
+[0;32mI (118883) LIVING: AUTO TASK[0m
+[0;32mI (119083) LIVING: AUTO TASK[0m
+[0;32mI (119283) LIVING: AUTO TASK[0m
+[0;32mI (119483) LIVING: AUTO TASK[0m
+[0;32mI (119683) LIVING: AUTO TASK[0m
+[0;33mW (119833) LIVING: DHT11 fail![0m
+[0;32mI (119833) LIVING: Do sang: 10.61 lux[0m
+[0;32mI (119833) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (119883) LIVING: AUTO TASK[0m
+[0;32mI (120083) LIVING: AUTO TASK[0m
+[0;32mI (120283) LIVING: AUTO TASK[0m
+[0;32mI (120483) LIVING: AUTO TASK[0m
+[0;32mI (120683) LIVING: AUTO TASK[0m
+[0;32mI (120883) LIVING: AUTO TASK[0m
+[0;33mW (121023) LIVING: DHT11 fail![0m
+[0;32mI (121023) LIVING: Do sang: 11.94 lux[0m
+[0;32mI (121023) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (121083) LIVING: AUTO TASK[0m
+[0;32mI (121283) LIVING: AUTO TASK[0m
+[0;32mI (121483) LIVING: AUTO TASK[0m
+[0;32mI (121683) LIVING: AUTO TASK[0m
+[0;32mI (121883) LIVING: AUTO TASK[0m
+[0;32mI (122083) LIVING: AUTO TASK[0m
+[0;33mW (122213) LIVING: DHT11 fail![0m
+[0;32mI (122213) LIVING: Do sang: 15.67 lux[0m
+[0;32mI (122213) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (122283) LIVING: AUTO TASK[0m
+[0;32mI (122483) LIVING: AUTO TASK[0m
+[0;32mI (122683) LIVING: AUTO TASK[0m
+[0;32mI (122883) LIVING: AUTO TASK[0m
+[0;32mI (123083) LIVING: AUTO TASK[0m
+[0;32mI (123283) LIVING: AUTO TASK[0m
+[0;33mW (123343) LIVING: DHT11 fail![0m
+[0;32mI (123343) LIVING: Do sang: 10.45 lux[0m
+[0;32mI (123343) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (123483) LIVING: AUTO TASK[0m
+[0;32mI (123683) LIVING: AUTO TASK[0m
+[0;32mI (123883) LIVING: AUTO TASK[0m
+[0;32mI (124083) LIVING: AUTO TASK[0m
+[0;32mI (124283) LIVING: AUTO TASK[0m
+[0;32mI (124413) LIVING: Do am: 68.00 percent[0m
+[0;32mI (124413) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (124413) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (124413) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (124483) LIVING: AUTO TASK[0m
+[0;32mI (124683) LIVING: AUTO TASK[0m
+[0;32mI (124883) LIVING: AUTO TASK[0m
+[0;32mI (125083) LIVING: AUTO TASK[0m
+[0;32mI (125283) LIVING: AUTO TASK[0m
+[0;32mI (125473) LIVING: Do am: 67.00 percent[0m
+[0;32mI (125473) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (125473) LIVING: Do sang: 10.45 lux[0m
+[0;32mI (125473) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (125483) LIVING: AUTO TASK[0m
+[0;32mI (125683) LIVING: AUTO TASK[0m
+[0;32mI (125883) LIVING: AUTO TASK[0m
+[0;32mI (126083) LIVING: AUTO TASK[0m
+[0;32mI (126283) LIVING: AUTO TASK[0m
+[0;32mI (126483) LIVING: AUTO TASK[0m
+[0;33mW (126663) LIVING: DHT11 fail![0m
+[0;32mI (126663) LIVING: Do sang: 11.30 lux[0m
+[0;32mI (126663) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (126683) LIVING: AUTO TASK[0m
+[0;32mI (126883) LIVING: AUTO TASK[0m
+[0;32mI (127083) LIVING: AUTO TASK[0m
+[0;32mI (127283) LIVING: AUTO TASK[0m
+[0;32mI (127483) LIVING: AUTO TASK[0m
+[0;32mI (127683) LIVING: AUTO TASK[0m
+[0;33mW (127853) LIVING: DHT11 fail![0m
+[0;32mI (127853) LIVING: Do sang: 15.76 lux[0m
+[0;32mI (127853) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (127883) LIVING: AUTO TASK[0m
+[0;32mI (128083) LIVING: AUTO TASK[0m
+[0;32mI (128283) LIVING: AUTO TASK[0m
+[0;32mI (128483) LIVING: AUTO TASK[0m
+[0;32mI (128683) LIVING: AUTO TASK[0m
+[0;32mI (128883) LIVING: AUTO TASK[0m
+[0;33mW (129043) LIVING: DHT11 fail![0m
+[0;32mI (129043) LIVING: Do sang: 16.58 lux[0m
+[0;32mI (129043) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (129083) LIVING: AUTO TASK[0m
+[0;32mI (129283) LIVING: AUTO TASK[0m
+[0;32mI (129483) LIVING: AUTO TASK[0m
+[0;32mI (129683) LIVING: AUTO TASK[0m
+[0;32mI (129883) LIVING: AUTO TASK[0m
+[0;32mI (130083) LIVING: AUTO TASK[0m
+[0;32mI (130133) LIVING: Do am: 68.00 percent[0m
+[0;32mI (130143) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (130143) LIVING: Do sang: 11.91 lux[0m
+[0;32mI (130143) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (130283) LIVING: AUTO TASK[0m
+[0;32mI (130483) LIVING: AUTO TASK[0m
+[0;32mI (130683) LIVING: AUTO TASK[0m
+[0;32mI (130883) LIVING: AUTO TASK[0m
+[0;32mI (131083) LIVING: AUTO TASK[0m
+[0;32mI (131283) LIVING: AUTO TASK[0m
+[0;33mW (131333) LIVING: DHT11 fail![0m
+[0;32mI (131333) LIVING: Do sang: 10.76 lux[0m
+[0;32mI (131333) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (131483) LIVING: AUTO TASK[0m
+[0;32mI (131683) LIVING: AUTO TASK[0m
+[0;32mI (131883) LIVING: AUTO TASK[0m
+[0;32mI (132083) LIVING: AUTO TASK[0m
+[0;32mI (132283) LIVING: AUTO TASK[0m
+[0;33mW (132423) LIVING: DHT11 fail![0m
+[0;32mI (132423) LIVING: Do sang: 11.18 lux[0m
+[0;32mI (132433) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (132483) LIVING: AUTO TASK[0m
+[0;32mI (132683) LIVING: AUTO TASK[0m
+[0;32mI (132883) LIVING: AUTO TASK[0m
+[0;32mI (133083) LIVING: AUTO TASK[0m
+[0;32mI (133283) LIVING: AUTO TASK[0m
+[0;32mI (133483) LIVING: AUTO TASK[0m
+[0;33mW (133623) LIVING: DHT11 fail![0m
+[0;32mI (133623) LIVING: Do sang: 16.82 lux[0m
+[0;32mI (133623) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (133683) LIVING: AUTO TASK[0m
+[0;32mI (133883) LIVING: AUTO TASK[0m
+[0;32mI (134083) LIVING: AUTO TASK[0m
+[0;32mI (134283) LIVING: AUTO TASK[0m
+[0;32mI (134483) LIVING: AUTO TASK[0m
+[0;32mI (134683) LIVING: AUTO TASK[0m
+[0;33mW (134813) LIVING: DHT11 fail![0m
+[0;32mI (134813) LIVING: Do sang: 16.03 lux[0m
+[0;32mI (134813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (134883) LIVING: AUTO TASK[0m
+[0;32mI (135083) LIVING: AUTO TASK[0m
+[0;32mI (135283) LIVING: AUTO TASK[0m
+[0;32mI (135483) LIVING: AUTO TASK[0m
+[0;32mI (135683) LIVING: AUTO TASK[0m
+[0;32mI (135883) LIVING: AUTO TASK[0m
+[0;32mI (135903) LIVING: Do am: 67.00 percent[0m
+[0;32mI (135913) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (135913) LIVING: Do sang: 12.61 lux[0m
+[0;32mI (135913) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (136083) LIVING: AUTO TASK[0m
+[0;32mI (136283) LIVING: AUTO TASK[0m
+[0;32mI (136483) LIVING: AUTO TASK[0m
+[0;32mI (136683) LIVING: AUTO TASK[0m
+[0;32mI (136883) LIVING: AUTO TASK[0m
+[0;32mI (137083) LIVING: AUTO TASK[0m
+[0;33mW (137103) LIVING: DHT11 fail![0m
+[0;32mI (137103) LIVING: Do sang: 10.73 lux[0m
+[0;32mI (137103) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (137283) LIVING: AUTO TASK[0m
+[0;32mI (137483) LIVING: AUTO TASK[0m
+[0;32mI (137683) LIVING: AUTO TASK[0m
+[0;32mI (137883) LIVING: AUTO TASK[0m
+[0;32mI (138083) LIVING: AUTO TASK[0m
+[0;33mW (138193) LIVING: DHT11 fail![0m
+[0;32mI (138193) LIVING: Do sang: 11.48 lux[0m
+[0;32mI (138203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (138283) LIVING: AUTO TASK[0m
+[0;32mI (138483) LIVING: AUTO TASK[0m
+[0;32mI (138683) LIVING: AUTO TASK[0m
+[0;32mI (138883) LIVING: AUTO TASK[0m
+[0;32mI (139083) LIVING: AUTO TASK[0m
+[0;32mI (139263) LIVING: Do am: 67.00 percent[0m
+[0;32mI (139263) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (139263) LIVING: Do sang: 16.91 lux[0m
+[0;32mI (139263) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (139283) LIVING: AUTO TASK[0m
+[0;32mI (139483) LIVING: AUTO TASK[0m
+[0;32mI (139683) LIVING: AUTO TASK[0m
+[0;32mI (139883) LIVING: AUTO TASK[0m
+[0;32mI (140083) LIVING: AUTO TASK[0m
+[0;32mI (140283) LIVING: AUTO TASK[0m
+[0;32mI (140323) LIVING: Do am: 67.00 percent[0m
+[0;32mI (140323) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (140323) LIVING: Do sang: 15.94 lux[0m
+[0;32mI (140323) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (140483) LIVING: AUTO TASK[0m
+[0;32mI (140683) LIVING: AUTO TASK[0m
+[0;32mI (140883) LIVING: AUTO TASK[0m
+[0;32mI (141083) LIVING: AUTO TASK[0m
+[0;32mI (141283) LIVING: AUTO TASK[0m
+[0;32mI (141483) LIVING: AUTO TASK[0m
+[0;33mW (141513) LIVING: DHT11 fail![0m
+[0;32mI (141513) LIVING: Do sang: 15.97 lux[0m
+[0;32mI (141513) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (141683) LIVING: AUTO TASK[0m
+[0;32mI (141883) LIVING: AUTO TASK[0m
+[0;32mI (142083) LIVING: AUTO TASK[0m
+[0;32mI (142283) LIVING: AUTO TASK[0m
+[0;32mI (142483) LIVING: AUTO TASK[0m
+[0;33mW (142603) LIVING: DHT11 fail![0m
+[0;32mI (142603) LIVING: Do sang: 16.82 lux[0m
+[0;32mI (142613) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (142683) LIVING: AUTO TASK[0m
+[0;32mI (142883) LIVING: AUTO TASK[0m
+[0;32mI (143083) LIVING: AUTO TASK[0m
+[0;32mI (143283) LIVING: AUTO TASK[0m
+[0;32mI (143483) LIVING: AUTO TASK[0m
+[0;33mW (143673) LIVING: DHT11 fail![0m
+[0;32mI (143673) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (143673) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (143683) LIVING: AUTO TASK[0m
+[0;32mI (143883) LIVING: AUTO TASK[0m
+[0;32mI (144083) LIVING: AUTO TASK[0m
+[0;32mI (144283) LIVING: AUTO TASK[0m
+[0;32mI (144483) LIVING: AUTO TASK[0m
+[0;32mI (144683) LIVING: AUTO TASK[0m
+[0;32mI (144733) LIVING: Do am: 67.00 percent[0m
+[0;32mI (144733) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (144733) LIVING: Do sang: 14.48 lux[0m
+[0;32mI (144733) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (144883) LIVING: AUTO TASK[0m
+[0;32mI (145083) LIVING: AUTO TASK[0m
+[0;32mI (145283) LIVING: AUTO TASK[0m
+[0;32mI (145483) LIVING: AUTO TASK[0m
+[0;32mI (145683) LIVING: AUTO TASK[0m
+[0;32mI (145883) LIVING: AUTO TASK[0m
+[0;33mW (145923) LIVING: DHT11 fail![0m
+[0;32mI (145923) LIVING: Do sang: 13.94 lux[0m
+[0;32mI (145923) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (146083) LIVING: AUTO TASK[0m
+[0;32mI (146283) LIVING: AUTO TASK[0m
+[0;32mI (146483) LIVING: AUTO TASK[0m
+[0;32mI (146683) LIVING: AUTO TASK[0m
+[0;32mI (146883) LIVING: AUTO TASK[0m
+[0;33mW (147013) LIVING: DHT11 fail![0m
+[0;32mI (147013) LIVING: Do sang: 11.21 lux[0m
+[0;32mI (147023) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (147083) LIVING: AUTO TASK[0m
+[0;32mI (147283) LIVING: AUTO TASK[0m
+[0;32mI (147483) LIVING: AUTO TASK[0m
+[0;32mI (147683) LIVING: AUTO TASK[0m
+[0;32mI (147883) LIVING: AUTO TASK[0m
+[0;32mI (148083) LIVING: AUTO TASK[0m
+[0;32mI (148083) LIVING: Do am: 67.00 percent[0m
+[0;32mI (148083) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (148083) LIVING: Do sang: 11.91 lux[0m
+[0;32mI (148083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (148283) LIVING: AUTO TASK[0m
+[0;32mI (148483) LIVING: AUTO TASK[0m
+[0;32mI (148683) LIVING: AUTO TASK[0m
+[0;32mI (148883) LIVING: AUTO TASK[0m
+[0;32mI (149083) LIVING: AUTO TASK[0m
+[0;32mI (149153) LIVING: Do am: 67.00 percent[0m
+[0;32mI (149153) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (149153) LIVING: Do sang: 11.39 lux[0m
+[0;32mI (149153) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (149283) LIVING: AUTO TASK[0m
+[0;32mI (149483) LIVING: AUTO TASK[0m
+[0;32mI (149683) LIVING: AUTO TASK[0m
+[0;32mI (149883) LIVING: AUTO TASK[0m
+[0;32mI (150083) LIVING: AUTO TASK[0m
+[0;32mI (150213) LIVING: Do am: 67.00 percent[0m
+[0;32mI (150213) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (150213) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (150213) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (150283) LIVING: AUTO TASK[0m
+[0;32mI (150483) LIVING: AUTO TASK[0m
+[0;32mI (150683) LIVING: AUTO TASK[0m
+[0;32mI (150883) LIVING: AUTO TASK[0m
+[0;32mI (151083) LIVING: AUTO TASK[0m
+[0;32mI (151283) LIVING: AUTO TASK[0m
+[0;33mW (151403) LIVING: DHT11 fail![0m
+[0;32mI (151403) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (151403) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (151483) LIVING: AUTO TASK[0m
+[0;32mI (151683) LIVING: AUTO TASK[0m
+[0;32mI (151883) LIVING: AUTO TASK[0m
+[0;32mI (152083) LIVING: AUTO TASK[0m
+[0;32mI (152283) LIVING: AUTO TASK[0m
+[0;32mI (152483) LIVING: AUTO TASK[0m
+[0;33mW (152493) LIVING: DHT11 fail![0m
+[0;32mI (152493) LIVING: Do sang: 11.06 lux[0m
+[0;32mI (152503) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (152683) LIVING: AUTO TASK[0m
+[0;32mI (152883) LIVING: AUTO TASK[0m
+[0;32mI (153083) LIVING: AUTO TASK[0m
+[0;32mI (153283) LIVING: AUTO TASK[0m
+[0;32mI (153483) LIVING: AUTO TASK[0m
+[0;32mI (153683) LIVING: AUTO TASK[0m
+[0;33mW (153693) LIVING: DHT11 fail![0m
+[0;32mI (153693) LIVING: Do sang: 16.48 lux[0m
+[0;32mI (153693) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (153883) LIVING: AUTO TASK[0m
+[0;32mI (154083) LIVING: AUTO TASK[0m
+[0;32mI (154283) LIVING: AUTO TASK[0m
+[0;32mI (154483) LIVING: AUTO TASK[0m
+[0;32mI (154683) LIVING: AUTO TASK[0m
+[0;33mW (154883) LIVING: DHT11 fail![0m
+[0;32mI (154883) LIVING: Do sang: 16.58 lux[0m
+[0;32mI (154883) LIVING: AUTO TASK[0m
+[0;32mI (154883) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (155083) LIVING: AUTO TASK[0m
+[0;32mI (155283) LIVING: AUTO TASK[0m
+[0;32mI (155483) LIVING: AUTO TASK[0m
+[0;32mI (155683) LIVING: AUTO TASK[0m
+[0;32mI (155883) LIVING: AUTO TASK[0m
+[0;32mI (155973) LIVING: Do am: 67.00 percent[0m
+[0;32mI (155983) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (155983) LIVING: Do sang: 14.76 lux[0m
+[0;32mI (155983) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (156083) LIVING: AUTO TASK[0m
+[0;32mI (156283) LIVING: AUTO TASK[0m
+[0;32mI (156483) LIVING: AUTO TASK[0m
+[0;32mI (156683) LIVING: AUTO TASK[0m
+[0;32mI (156883) LIVING: AUTO TASK[0m
+[0;32mI (157083) LIVING: AUTO TASK[0m
+[0;33mW (157173) LIVING: DHT11 fail![0m
+[0;32mI (157173) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (157173) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (157283) LIVING: AUTO TASK[0m
+[0;32mI (157483) LIVING: AUTO TASK[0m
+[0;32mI (157683) LIVING: AUTO TASK[0m
+[0;32mI (157883) LIVING: AUTO TASK[0m
+[0;32mI (158083) LIVING: AUTO TASK[0m
+[0;32mI (158283) LIVING: AUTO TASK[0m
+[0;33mW (158363) LIVING: DHT11 fail![0m
+[0;32mI (158363) LIVING: Do sang: 10.76 lux[0m
+[0;32mI (158363) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (158483) LIVING: AUTO TASK[0m
+[0;32mI (158683) LIVING: AUTO TASK[0m
+[0;32mI (158883) LIVING: AUTO TASK[0m
+[0;32mI (159083) LIVING: AUTO TASK[0m
+[0;32mI (159283) LIVING: AUTO TASK[0m
+[0;32mI (159453) LIVING: Do am: 67.00 percent[0m
+[0;32mI (159463) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (159463) LIVING: Do sang: 12.73 lux[0m
+[0;32mI (159463) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (159483) LIVING: AUTO TASK[0m
+[0;32mI (159683) LIVING: AUTO TASK[0m
+[0;32mI (159883) LIVING: AUTO TASK[0m
+[0;32mI (160083) LIVING: AUTO TASK[0m
+[0;32mI (160283) LIVING: AUTO TASK[0m
+[0;32mI (160483) LIVING: AUTO TASK[0m
+[0;33mW (160653) LIVING: DHT11 fail![0m
+[0;32mI (160653) LIVING: Do sang: 15.97 lux[0m
+[0;32mI (160653) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (160683) LIVING: AUTO TASK[0m
+[0;32mI (160883) LIVING: AUTO TASK[0m
+[0;32mI (161083) LIVING: AUTO TASK[0m
+[0;32mI (161283) LIVING: AUTO TASK[0m
+[0;32mI (161483) LIVING: AUTO TASK[0m
+[0;32mI (161683) LIVING: AUTO TASK[0m
+[0;33mW (161843) LIVING: DHT11 fail![0m
+[0;32mI (161843) LIVING: Do sang: 16.64 lux[0m
+[0;32mI (161843) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (161883) LIVING: AUTO TASK[0m
+[0;32mI (162083) LIVING: AUTO TASK[0m
+[0;32mI (162283) LIVING: AUTO TASK[0m
+[0;32mI (162483) LIVING: AUTO TASK[0m
+[0;32mI (162683) LIVING: AUTO TASK[0m
+[0;32mI (162883) LIVING: AUTO TASK[0m
+[0;32mI (162933) LIVING: Do am: 67.00 percent[0m
+[0;32mI (162943) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (162943) LIVING: Do sang: 13.15 lux[0m
+[0;32mI (162943) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (163083) LIVING: AUTO TASK[0m
+[0;32mI (163283) LIVING: AUTO TASK[0m
+[0;32mI (163483) LIVING: AUTO TASK[0m
+[0;32mI (163683) LIVING: AUTO TASK[0m
+[0;32mI (163883) LIVING: AUTO TASK[0m
+[0;32mI (164083) LIVING: AUTO TASK[0m
+[0;33mW (164133) LIVING: DHT11 fail![0m
+[0;32mI (164133) LIVING: Do sang: 11.58 lux[0m
+[0;32mI (164133) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (164283) LIVING: AUTO TASK[0m
+[0;32mI (164483) LIVING: AUTO TASK[0m
+[0;32mI (164683) LIVING: AUTO TASK[0m
+[0;32mI (164883) LIVING: AUTO TASK[0m
+[0;32mI (165083) LIVING: AUTO TASK[0m
+[0;32mI (165283) LIVING: AUTO TASK[0m
+[0;33mW (165323) LIVING: DHT11 fail![0m
+[0;32mI (165323) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (165323) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (165483) LIVING: AUTO TASK[0m
+[0;32mI (165683) LIVING: AUTO TASK[0m
+[0;32mI (165883) LIVING: AUTO TASK[0m
+[0;32mI (166083) LIVING: AUTO TASK[0m
+[0;32mI (166283) LIVING: AUTO TASK[0m
+[0;32mI (166413) LIVING: Do am: 67.00 percent[0m
+[0;32mI (166423) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (166423) LIVING: Do sang: 12.45 lux[0m
+[0;32mI (166423) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (166483) LIVING: AUTO TASK[0m
+[0;32mI (166683) LIVING: AUTO TASK[0m
+[0;32mI (166883) LIVING: AUTO TASK[0m
+[0;32mI (167083) LIVING: AUTO TASK[0m
+[0;32mI (167283) LIVING: AUTO TASK[0m
+[0;32mI (167483) LIVING: AUTO TASK[0m
+[0;33mW (167613) LIVING: DHT11 fail![0m
+[0;32mI (167613) LIVING: Do sang: 16.39 lux[0m
+[0;32mI (167613) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (167683) LIVING: AUTO TASK[0m
+[0;32mI (167883) LIVING: AUTO TASK[0m
+[0;32mI (168083) LIVING: AUTO TASK[0m
+[0;32mI (168283) LIVING: AUTO TASK[0m
+[0;32mI (168483) LIVING: AUTO TASK[0m
+[0;32mI (168683) LIVING: AUTO TASK[0m
+[0;33mW (168803) LIVING: DHT11 fail![0m
+[0;32mI (168803) LIVING: Do sang: 14.30 lux[0m
+[0;32mI (168803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (168883) LIVING: AUTO TASK[0m
+[0;32mI (169083) LIVING: AUTO TASK[0m
+[0;32mI (169283) LIVING: AUTO TASK[0m
+[0;32mI (169483) LIVING: AUTO TASK[0m
+[0;32mI (169683) LIVING: AUTO TASK[0m
+[0;32mI (169883) LIVING: AUTO TASK[0m
+[0;33mW (169893) LIVING: DHT11 fail![0m
+[0;32mI (169903) LIVING: Do sang: 16.06 lux[0m
+[0;32mI (169903) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (170083) LIVING: AUTO TASK[0m
+[0;32mI (170283) LIVING: AUTO TASK[0m
+[0;32mI (170483) LIVING: AUTO TASK[0m
+[0;32mI (170683) LIVING: AUTO TASK[0m
+[0;32mI (170883) LIVING: AUTO TASK[0m
+[0;32mI (171083) LIVING: AUTO TASK[0m
+[0;33mW (171093) LIVING: DHT11 fail![0m
+[0;32mI (171093) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (171093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (171283) LIVING: AUTO TASK[0m
+[0;32mI (171483) LIVING: AUTO TASK[0m
+[0;32mI (171683) LIVING: AUTO TASK[0m
+[0;32mI (171883) LIVING: AUTO TASK[0m
+[0;32mI (172083) LIVING: AUTO TASK[0m
+[0;33mW (172183) LIVING: DHT11 fail![0m
+[0;32mI (172183) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (172193) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (172283) LIVING: AUTO TASK[0m
+[0;32mI (172483) LIVING: AUTO TASK[0m
+[0;32mI (172683) LIVING: AUTO TASK[0m
+[0;32mI (172883) LIVING: AUTO TASK[0m
+[0;32mI (173083) LIVING: AUTO TASK[0m
+[0;32mI (173283) LIVING: AUTO TASK[0m
+[0;33mW (173383) LIVING: DHT11 fail![0m
+[0;32mI (173383) LIVING: Do sang: 17.03 lux[0m
+[0;32mI (173383) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (173483) LIVING: AUTO TASK[0m
+[0;32mI (173683) LIVING: AUTO TASK[0m
+[0;32mI (173883) LIVING: AUTO TASK[0m
+[0;32mI (174083) LIVING: AUTO TASK[0m
+[0;32mI (174283) LIVING: AUTO TASK[0m
+[0;32mI (174483) LIVING: AUTO TASK[0m
+[0;33mW (174573) LIVING: DHT11 fail![0m
+[0;32mI (174573) LIVING: Do sang: 11.67 lux[0m
+[0;32mI (174573) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (174683) LIVING: AUTO TASK[0m
+[0;32mI (174883) LIVING: AUTO TASK[0m
+[0;32mI (175083) LIVING: AUTO TASK[0m
+[0;32mI (175283) LIVING: AUTO TASK[0m
+[0;32mI (175483) LIVING: AUTO TASK[0m
+[0;32mI (175663) LIVING: Do am: 66.00 percent[0m
+[0;32mI (175673) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (175673) LIVING: Do sang: 11.36 lux[0m
+[0;32mI (175673) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (175683) LIVING: AUTO TASK[0m
+[0;32mI (175883) LIVING: AUTO TASK[0m
+[0;32mI (176083) LIVING: AUTO TASK[0m
+[0;32mI (176283) LIVING: AUTO TASK[0m
+[0;32mI (176483) LIVING: AUTO TASK[0m
+[0;32mI (176683) LIVING: AUTO TASK[0m
+[0;32mI (176733) LIVING: Do am: 66.00 percent[0m
+[0;32mI (176733) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (176733) LIVING: Do sang: 16.30 lux[0m
+[0;32mI (176733) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (176883) LIVING: AUTO TASK[0m
+[0;32mI (177083) LIVING: AUTO TASK[0m
+[0;32mI (177283) LIVING: AUTO TASK[0m
+[0;32mI (177483) LIVING: AUTO TASK[0m
+[0;32mI (177683) LIVING: AUTO TASK[0m
+[0;32mI (177883) LIVING: AUTO TASK[0m
+[0;33mW (177923) LIVING: DHT11 fail![0m
+[0;32mI (177923) LIVING: Do sang: 16.97 lux[0m
+[0;32mI (177923) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (178083) LIVING: AUTO TASK[0m
+[0;32mI (178283) LIVING: AUTO TASK[0m
+[0;32mI (178483) LIVING: AUTO TASK[0m
+[0;32mI (178683) LIVING: AUTO TASK[0m
+[0;32mI (178883) LIVING: AUTO TASK[0m
+[0;32mI (179013) LIVING: Do am: 66.00 percent[0m
+[0;32mI (179023) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (179023) LIVING: Do sang: 17.00 lux[0m
+[0;32mI (179023) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (179083) LIVING: AUTO TASK[0m
+[0;32mI (179283) LIVING: AUTO TASK[0m
+[0;32mI (179483) LIVING: AUTO TASK[0m
+[0;32mI (179683) LIVING: AUTO TASK[0m
+[0;32mI (179883) LIVING: AUTO TASK[0m
+[0;32mI (180083) LIVING: Do am: 66.00 percent[0m
+[0;32mI (180083) LIVING: AUTO TASK[0m
+[0;32mI (180083) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (180083) LIVING: Do sang: 11.18 lux[0m
+[0;32mI (180083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (180283) LIVING: AUTO TASK[0m
+[0;32mI (180483) LIVING: AUTO TASK[0m
+[0;32mI (180683) LIVING: AUTO TASK[0m
+[0;32mI (180883) LIVING: AUTO TASK[0m
+[0;32mI (181083) LIVING: AUTO TASK[0m
+[0;33mW (181153) LIVING: DHT11 fail![0m
+[0;32mI (181153) LIVING: Do sang: 11.67 lux[0m
+[0;32mI (181153) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (181283) LIVING: AUTO TASK[0m
+[0;32mI (181483) LIVING: AUTO TASK[0m
+[0;32mI (181683) LIVING: AUTO TASK[0m
+[0;32mI (181883) LIVING: AUTO TASK[0m
+[0;32mI (182083) LIVING: AUTO TASK[0m
+[0;32mI (182283) LIVING: AUTO TASK[0m
+[0;33mW (182343) LIVING: DHT11 fail![0m
+[0;32mI (182343) LIVING: Do sang: 12.97 lux[0m
+[0;32mI (182343) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (182483) LIVING: AUTO TASK[0m
+[0;32mI (182683) LIVING: AUTO TASK[0m
+[0;32mI (182883) LIVING: AUTO TASK[0m
+[0;32mI (183083) LIVING: AUTO TASK[0m
+[0;32mI (183283) LIVING: AUTO TASK[0m
+[0;32mI (183433) LIVING: Do am: 66.00 percent[0m
+[0;32mI (183443) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (183443) LIVING: Do sang: 16.58 lux[0m
+[0;32mI (183443) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (183483) LIVING: AUTO TASK[0m
+[0;32mI (183683) LIVING: AUTO TASK[0m
+[0;32mI (183883) LIVING: AUTO TASK[0m
+[0;32mI (184083) LIVING: AUTO TASK[0m
+[0;32mI (184283) LIVING: AUTO TASK[0m
+[0;32mI (184483) LIVING: AUTO TASK[0m
+[0;32mI (184503) LIVING: Do am: 66.00 percent[0m
+[0;32mI (184503) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (184503) LIVING: Do sang: 15.70 lux[0m
+[0;32mI (184503) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (184683) LIVING: AUTO TASK[0m
+[0;32mI (184883) LIVING: AUTO TASK[0m
+[0;32mI (185083) LIVING: AUTO TASK[0m
+[0;32mI (185283) LIVING: AUTO TASK[0m
+[0;32mI (185483) LIVING: AUTO TASK[0m
+[0;32mI (185563) LIVING: Do am: 66.00 percent[0m
+[0;32mI (185563) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (185563) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (185563) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (185683) LIVING: AUTO TASK[0m
+[0;32mI (185883) LIVING: AUTO TASK[0m
+[0;32mI (186083) LIVING: AUTO TASK[0m
+[0;32mI (186283) LIVING: AUTO TASK[0m
+[0;32mI (186483) LIVING: AUTO TASK[0m
+[0;32mI (186683) LIVING: AUTO TASK[0m
+[0;33mW (186753) LIVING: DHT11 fail![0m
+[0;32mI (186753) LIVING: Do sang: 11.88 lux[0m
+[0;32mI (186753) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (186883) LIVING: AUTO TASK[0m
+[0;32mI (187083) LIVING: AUTO TASK[0m
+[0;32mI (187283) LIVING: AUTO TASK[0m
+[0;32mI (187483) LIVING: AUTO TASK[0m
+[0;32mI (187683) LIVING: AUTO TASK[0m
+[0;32mI (187883) LIVING: AUTO TASK[0m
+[0;33mW (187943) LIVING: DHT11 fail![0m
+[0;32mI (187943) LIVING: Do sang: 11.06 lux[0m
+[0;32mI (187943) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (188083) LIVING: AUTO TASK[0m
+[0;32mI (188283) LIVING: AUTO TASK[0m
+[0;32mI (188483) LIVING: AUTO TASK[0m
+[0;32mI (188683) LIVING: AUTO TASK[0m
+[0;32mI (188883) LIVING: AUTO TASK[0m
+[0;32mI (189083) LIVING: AUTO TASK[0m
+[0;33mW (189133) LIVING: DHT11 fail![0m
+[0;32mI (189133) LIVING: Do sang: 11.42 lux[0m
+[0;32mI (189133) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (189283) LIVING: AUTO TASK[0m
+[0;32mI (189483) LIVING: AUTO TASK[0m
+[0;32mI (189683) LIVING: AUTO TASK[0m
+[0;32mI (189883) LIVING: AUTO TASK[0m
+[0;32mI (190083) LIVING: AUTO TASK[0m
+[0;32mI (190263) LIVING: Do am: 66.00 percent[0m
+[0;32mI (190263) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (190273) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (190273) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (190283) LIVING: AUTO TASK[0m
+[0;32mI (190483) LIVING: AUTO TASK[0m
+[0;32mI (190683) LIVING: AUTO TASK[0m
+[0;32mI (190883) LIVING: AUTO TASK[0m
+[0;32mI (191083) LIVING: AUTO TASK[0m
+[0;32mI (191283) LIVING: AUTO TASK[0m
+[0;33mW (191463) LIVING: DHT11 fail![0m
+[0;32mI (191463) LIVING: Do sang: 16.91 lux[0m
+[0;32mI (191463) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (191483) LIVING: AUTO TASK[0m
+[0;32mI (191683) LIVING: AUTO TASK[0m
+[0;32mI (191883) LIVING: AUTO TASK[0m
+[0;32mI (192083) LIVING: AUTO TASK[0m
+[0;32mI (192283) LIVING: AUTO TASK[0m
+[0;32mI (192483) LIVING: AUTO TASK[0m
+[0;33mW (192553) LIVING: DHT11 fail![0m
+[0;32mI (192553) LIVING: Do sang: 12.58 lux[0m
+[0;32mI (192563) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (192683) LIVING: AUTO TASK[0m
+[0;32mI (192883) LIVING: AUTO TASK[0m
+[0;32mI (193083) LIVING: AUTO TASK[0m
+[0;32mI (193283) LIVING: AUTO TASK[0m
+[0;32mI (193483) LIVING: AUTO TASK[0m
+[0;32mI (193683) LIVING: AUTO TASK[0m
+[0;33mW (193753) LIVING: DHT11 fail![0m
+[0;32mI (193753) LIVING: Do sang: 16.52 lux[0m
+[0;32mI (193753) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (193883) LIVING: AUTO TASK[0m
+[0;32mI (194083) LIVING: AUTO TASK[0m
+[0;32mI (194283) LIVING: AUTO TASK[0m
+[0;32mI (194483) LIVING: AUTO TASK[0m
+[0;32mI (194683) LIVING: AUTO TASK[0m
+[0;32mI (194883) LIVING: AUTO TASK[0m
+[0;33mW (194943) LIVING: DHT11 fail![0m
+[0;32mI (194943) LIVING: Do sang: 13.76 lux[0m
+[0;32mI (194943) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (195083) LIVING: AUTO TASK[0m
+[0;32mI (195283) LIVING: AUTO TASK[0m
+[0;32mI (195483) LIVING: AUTO TASK[0m
+[0;32mI (195683) LIVING: AUTO TASK[0m
+[0;32mI (195883) LIVING: AUTO TASK[0m
+[0;32mI (196083) LIVING: AUTO TASK[0m
+[0;33mW (196133) LIVING: DHT11 fail![0m
+[0;32mI (196133) LIVING: Do sang: 11.85 lux[0m
+[0;32mI (196133) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (196283) LIVING: AUTO TASK[0m
+[0;32mI (196483) LIVING: AUTO TASK[0m
+[0;32mI (196683) LIVING: AUTO TASK[0m
+[0;32mI (196883) LIVING: AUTO TASK[0m
+[0;32mI (197083) LIVING: AUTO TASK[0m
+[0;33mW (197263) LIVING: DHT11 fail![0m
+[0;32mI (197263) LIVING: Do sang: 16.97 lux[0m
+[0;32mI (197263) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (197283) LIVING: AUTO TASK[0m
+[0;32mI (197483) LIVING: AUTO TASK[0m
+[0;32mI (197683) LIVING: AUTO TASK[0m
+[0;32mI (197883) LIVING: AUTO TASK[0m
+[0;32mI (198083) LIVING: AUTO TASK[0m
+[0;32mI (198283) LIVING: AUTO TASK[0m
+[0;32mI (198333) LIVING: Do am: 67.00 percent[0m
+[0;32mI (198333) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (198333) LIVING: Do sang: 11.67 lux[0m
+[0;32mI (198333) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (198483) LIVING: AUTO TASK[0m
+[0;32mI (198683) LIVING: AUTO TASK[0m
+[0;32mI (198883) LIVING: AUTO TASK[0m
+[0;32mI (199083) LIVING: AUTO TASK[0m
+[0;32mI (199283) LIVING: AUTO TASK[0m
+[0;32mI (199393) LIVING: Do am: 66.00 percent[0m
+[0;32mI (199393) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (199393) LIVING: Do sang: 15.61 lux[0m
+[0;32mI (199393) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (199483) LIVING: AUTO TASK[0m
+[0;32mI (199683) LIVING: AUTO TASK[0m
+[0;32mI (199883) LIVING: AUTO TASK[0m
+[0;32mI (200083) LIVING: AUTO TASK[0m
+[0;32mI (200283) LIVING: AUTO TASK[0m
+[0;32mI (200453) LIVING: Do am: 66.00 percent[0m
+[0;32mI (200453) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (200453) LIVING: Do sang: 16.00 lux[0m
+[0;32mI (200453) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (200483) LIVING: AUTO TASK[0m
+[0;32mI (200683) LIVING: AUTO TASK[0m
+[0;32mI (200883) LIVING: AUTO TASK[0m
+[0;32mI (201083) LIVING: AUTO TASK[0m
+[0;32mI (201283) LIVING: AUTO TASK[0m
+[0;32mI (201483) LIVING: AUTO TASK[0m
+[0;32mI (201513) LIVING: Do am: 66.00 percent[0m
+[0;32mI (201513) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (201513) LIVING: Do sang: 16.52 lux[0m
+[0;32mI (201513) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (201683) LIVING: AUTO TASK[0m
+[0;32mI (201883) LIVING: AUTO TASK[0m
+[0;32mI (202083) LIVING: AUTO TASK[0m
+[0;32mI (202283) LIVING: AUTO TASK[0m
+[0;32mI (202483) LIVING: AUTO TASK[0m
+[0;32mI (202683) LIVING: AUTO TASK[0m
+[0;33mW (202703) LIVING: DHT11 fail![0m
+[0;32mI (202703) LIVING: Do sang: 16.33 lux[0m
+[0;32mI (202703) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (202883) LIVING: AUTO TASK[0m
+[0;32mI (203083) LIVING: AUTO TASK[0m
+[0;32mI (203283) LIVING: AUTO TASK[0m
+[0;32mI (203483) LIVING: AUTO TASK[0m
+[0;32mI (203683) LIVING: AUTO TASK[0m
+[0;32mI (203883) LIVING: AUTO TASK[0m
+[0;33mW (203893) LIVING: DHT11 fail![0m
+[0;32mI (203893) LIVING: Do sang: 17.06 lux[0m
+[0;32mI (203893) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (204083) LIVING: AUTO TASK[0m
+[0;32mI (204283) LIVING: AUTO TASK[0m
+[0;32mI (204483) LIVING: AUTO TASK[0m
+[0;32mI (204683) LIVING: AUTO TASK[0m
+[0;32mI (204883) LIVING: AUTO TASK[0m
+[0;33mW (205083) LIVING: DHT11 fail![0m
+[0;32mI (205083) LIVING: Do sang: 16.79 lux[0m
+[0;32mI (205083) LIVING: AUTO TASK[0m
+[0;32mI (205083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (205283) LIVING: AUTO TASK[0m
+[0;32mI (205483) LIVING: AUTO TASK[0m
+[0;32mI (205683) LIVING: AUTO TASK[0m
+[0;32mI (205883) LIVING: AUTO TASK[0m
+[0;32mI (206083) LIVING: AUTO TASK[0m
+[0;33mW (206273) LIVING: DHT11 fail![0m
+[0;32mI (206273) LIVING: Do sang: 16.03 lux[0m
+[0;32mI (206273) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (206283) LIVING: AUTO TASK[0m
+[0;32mI (206483) LIVING: AUTO TASK[0m
+[0;32mI (206683) LIVING: AUTO TASK[0m
+[0;32mI (206883) LIVING: AUTO TASK[0m
+[0;32mI (207083) LIVING: AUTO TASK[0m
+[0;32mI (207283) LIVING: AUTO TASK[0m
+[0;33mW (207463) LIVING: DHT11 fail![0m
+[0;32mI (207463) LIVING: Do sang: 14.42 lux[0m
+[0;32mI (207463) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (207483) LIVING: AUTO TASK[0m
+[0;32mI (207683) LIVING: AUTO TASK[0m
+[0;32mI (207883) LIVING: AUTO TASK[0m
+[0;32mI (208083) LIVING: AUTO TASK[0m
+[0;32mI (208283) LIVING: AUTO TASK[0m
+[0;32mI (208483) LIVING: AUTO TASK[0m
+[0;33mW (208593) LIVING: DHT11 fail![0m
+[0;32mI (208593) LIVING: Do sang: 16.91 lux[0m
+[0;32mI (208593) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (208683) LIVING: AUTO TASK[0m
+[0;32mI (208883) LIVING: AUTO TASK[0m
+[0;32mI (209083) LIVING: AUTO TASK[0m
+[0;32mI (209283) LIVING: AUTO TASK[0m
+[0;32mI (209483) LIVING: AUTO TASK[0m
+[0;32mI (209683) LIVING: AUTO TASK[0m
+[0;33mW (209793) LIVING: DHT11 fail![0m
+[0;32mI (209793) LIVING: Do sang: 11.33 lux[0m
+[0;32mI (209793) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (209883) LIVING: AUTO TASK[0m
+[0;32mI (210083) LIVING: AUTO TASK[0m
+[0;32mI (210283) LIVING: AUTO TASK[0m
+[0;32mI (210483) LIVING: AUTO TASK[0m
+[0;32mI (210683) LIVING: AUTO TASK[0m
+[0;32mI (210883) LIVING: AUTO TASK[0m
+[0;33mW (210883) LIVING: DHT11 fail![0m
+[0;32mI (210883) LIVING: Do sang: 16.27 lux[0m
+[0;32mI (210893) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (211083) LIVING: AUTO TASK[0m
+[0;32mI (211283) LIVING: AUTO TASK[0m
+[0;32mI (211483) LIVING: AUTO TASK[0m
+[0;32mI (211683) LIVING: AUTO TASK[0m
+[0;32mI (211883) LIVING: AUTO TASK[0m
+[0;33mW (212083) LIVING: DHT11 fail![0m
+[0;32mI (212083) LIVING: Do sang: 11.03 lux[0m
+[0;32mI (212083) LIVING: AUTO TASK[0m
+[0;32mI (212083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (212283) LIVING: AUTO TASK[0m
+[0;32mI (212483) LIVING: AUTO TASK[0m
+[0;32mI (212683) LIVING: AUTO TASK[0m
+[0;32mI (212883) LIVING: AUTO TASK[0m
+[0;32mI (213083) LIVING: AUTO TASK[0m
+[0;33mW (213273) LIVING: DHT11 fail![0m
+[0;32mI (213273) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (213273) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (213283) LIVING: AUTO TASK[0m
+[0;32mI (213483) LIVING: AUTO TASK[0m
+[0;32mI (213683) LIVING: AUTO TASK[0m
+[0;32mI (213883) LIVING: AUTO TASK[0m
+[0;32mI (214083) LIVING: AUTO TASK[0m
+[0;32mI (214283) LIVING: AUTO TASK[0m
+[0;33mW (214463) LIVING: DHT11 fail![0m
+[0;32mI (214463) LIVING: Do sang: 11.88 lux[0m
+[0;32mI (214463) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (214483) LIVING: AUTO TASK[0m
+[0;32mI (214683) LIVING: AUTO TASK[0m
+[0;32mI (214883) LIVING: AUTO TASK[0m
+[0;32mI (215083) LIVING: AUTO TASK[0m
+[0;32mI (215283) LIVING: AUTO TASK[0m
+[0;32mI (215483) LIVING: AUTO TASK[0m
+[0;33mW (215653) LIVING: DHT11 fail![0m
+[0;32mI (215653) LIVING: Do sang: 13.12 lux[0m
+[0;32mI (215653) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (215683) LIVING: AUTO TASK[0m
+[0;32mI (215883) LIVING: AUTO TASK[0m
+[0;32mI (216083) LIVING: AUTO TASK[0m
+[0;32mI (216283) LIVING: AUTO TASK[0m
+[0;32mI (216483) LIVING: AUTO TASK[0m
+[0;32mI (216683) LIVING: AUTO TASK[0m
+[0;33mW (216783) LIVING: DHT11 fail![0m
+[0;32mI (216783) LIVING: Do sang: 11.30 lux[0m
+[0;32mI (216783) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (216883) LIVING: AUTO TASK[0m
+[0;32mI (217083) LIVING: AUTO TASK[0m
+[0;32mI (217283) LIVING: AUTO TASK[0m
+[0;32mI (217483) LIVING: AUTO TASK[0m
+[0;32mI (217683) LIVING: AUTO TASK[0m
+[0;32mI (217853) LIVING: Do am: 67.00 percent[0m
+[0;32mI (217853) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (217853) LIVING: Do sang: 17.15 lux[0m
+[0;32mI (217853) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (217883) LIVING: AUTO TASK[0m
+[0;32mI (218083) LIVING: AUTO TASK[0m
+[0;32mI (218283) LIVING: AUTO TASK[0m
+[0;32mI (218483) LIVING: AUTO TASK[0m
+[0;32mI (218683) LIVING: AUTO TASK[0m
+[0;32mI (218883) LIVING: AUTO TASK[0m
+[0;33mW (219043) LIVING: DHT11 fail![0m
+[0;32mI (219043) LIVING: Do sang: 16.82 lux[0m
+[0;32mI (219043) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (219083) LIVING: AUTO TASK[0m
+[0;32mI (219283) LIVING: AUTO TASK[0m
+[0;32mI (219483) LIVING: AUTO TASK[0m
+[0;32mI (219683) LIVING: AUTO TASK[0m
+[0;32mI (219883) LIVING: AUTO TASK[0m
+[0;32mI (220083) LIVING: AUTO TASK[0m
+[0;33mW (220133) LIVING: DHT11 fail![0m
+[0;32mI (220143) LIVING: Do sang: 13.36 lux[0m
+[0;32mI (220143) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (220283) LIVING: AUTO TASK[0m
+[0;32mI (220483) LIVING: AUTO TASK[0m
+[0;32mI (220683) LIVING: AUTO TASK[0m
+[0;32mI (220883) LIVING: AUTO TASK[0m
+[0;32mI (221083) LIVING: AUTO TASK[0m
+[0;32mI (221283) LIVING: AUTO TASK[0m
+[0;33mW (221333) LIVING: DHT11 fail![0m
+[0;32mI (221333) LIVING: Do sang: 17.03 lux[0m
+[0;32mI (221333) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (221483) LIVING: AUTO TASK[0m
+[0;32mI (221683) LIVING: AUTO TASK[0m
+[0;32mI (221883) LIVING: AUTO TASK[0m
+[0;32mI (222083) LIVING: AUTO TASK[0m
+[0;32mI (222283) LIVING: AUTO TASK[0m
+[0;33mW (222423) LIVING: DHT11 fail![0m
+[0;32mI (222423) LIVING: Do sang: 14.39 lux[0m
+[0;32mI (222433) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (222483) LIVING: AUTO TASK[0m
+[0;32mI (222683) LIVING: AUTO TASK[0m
+[0;32mI (222883) LIVING: AUTO TASK[0m
+[0;32mI (223083) LIVING: AUTO TASK[0m
+[0;32mI (223283) LIVING: AUTO TASK[0m
+[0;32mI (223483) LIVING: AUTO TASK[0m
+[0;33mW (223623) LIVING: DHT11 fail![0m
+[0;32mI (223623) LIVING: Do sang: 16.45 lux[0m
+[0;32mI (223623) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (223683) LIVING: AUTO TASK[0m
+[0;32mI (223883) LIVING: AUTO TASK[0m
+[0;32mI (224083) LIVING: AUTO TASK[0m
+[0;32mI (224283) LIVING: AUTO TASK[0m
+[0;32mI (224483) LIVING: AUTO TASK[0m
+[0;32mI (224683) LIVING: AUTO TASK[0m
+[0;33mW (224813) LIVING: DHT11 fail![0m
+[0;32mI (224813) LIVING: Do sang: 14.82 lux[0m
+[0;32mI (224813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (224883) LIVING: AUTO TASK[0m
+[0;32mI (225083) LIVING: AUTO TASK[0m
+[0;32mI (225283) LIVING: AUTO TASK[0m
+[0;32mI (225483) LIVING: AUTO TASK[0m
+[0;32mI (225683) LIVING: AUTO TASK[0m
+[0;32mI (225883) LIVING: AUTO TASK[0m
+[0;32mI (225903) LIVING: Do am: 66.00 percent[0m
+[0;32mI (225913) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (225913) LIVING: Do sang: 13.12 lux[0m
+[0;32mI (225913) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (226083) LIVING: AUTO TASK[0m
+[0;32mI (226283) LIVING: AUTO TASK[0m
+[0;32mI (226483) LIVING: AUTO TASK[0m
+[0;32mI (226683) LIVING: AUTO TASK[0m
+[0;32mI (226883) LIVING: AUTO TASK[0m
+[0;32mI (226973) LIVING: Do am: 66.00 percent[0m
+[0;32mI (226973) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (226973) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (226973) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (227083) LIVING: AUTO TASK[0m
+[0;32mI (227283) LIVING: AUTO TASK[0m
+[0;32mI (227483) LIVING: AUTO TASK[0m
+[0;32mI (227683) LIVING: AUTO TASK[0m
+[0;32mI (227883) LIVING: AUTO TASK[0m
+[0;32mI (228033) LIVING: Do am: 67.00 percent[0m
+[0;32mI (228033) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (228033) LIVING: Do sang: 10.58 lux[0m
+[0;32mI (228033) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (228083) LIVING: AUTO TASK[0m
+[0;32mI (228283) LIVING: AUTO TASK[0m
+[0;32mI (228483) LIVING: AUTO TASK[0m
+[0;32mI (228683) LIVING: AUTO TASK[0m
+[0;32mI (228883) LIVING: AUTO TASK[0m
+[0;32mI (229083) LIVING: AUTO TASK[0m
+[0;32mI (229093) LIVING: Do am: 67.00 percent[0m
+[0;32mI (229093) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (229093) LIVING: Do sang: 13.70 lux[0m
+[0;32mI (229093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (229283) LIVING: AUTO TASK[0m
+[0;32mI (229483) LIVING: AUTO TASK[0m
+[0;32mI (229683) LIVING: AUTO TASK[0m
+[0;32mI (229883) LIVING: AUTO TASK[0m
+[0;32mI (230083) LIVING: AUTO TASK[0m
+[0;32mI (230153) LIVING: Do am: 67.00 percent[0m
+[0;32mI (230153) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (230153) LIVING: Do sang: 15.09 lux[0m
+[0;32mI (230153) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (230283) LIVING: AUTO TASK[0m
+[0;32mI (230483) LIVING: AUTO TASK[0m
+[0;32mI (230683) LIVING: AUTO TASK[0m
+[0;32mI (230883) LIVING: AUTO TASK[0m
+[0;32mI (231083) LIVING: AUTO TASK[0m
+[0;32mI (231283) LIVING: AUTO TASK[0m
+[0;33mW (231343) LIVING: DHT11 fail![0m
+[0;32mI (231343) LIVING: Do sang: 14.21 lux[0m
+[0;32mI (231343) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (231483) LIVING: AUTO TASK[0m
+[0;32mI (231683) LIVING: AUTO TASK[0m
+[0;32mI (231883) LIVING: AUTO TASK[0m
+[0;32mI (232083) LIVING: AUTO TASK[0m
+[0;32mI (232283) LIVING: AUTO TASK[0m
+[0;33mW (232433) LIVING: DHT11 fail![0m
+[0;32mI (232443) LIVING: Do sang: 10.61 lux[0m
+[0;32mI (232443) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (232483) LIVING: AUTO TASK[0m
+[0;32mI (232683) LIVING: AUTO TASK[0m
+[0;32mI (232883) LIVING: AUTO TASK[0m
+[0;32mI (233083) LIVING: AUTO TASK[0m
+[0;32mI (233283) LIVING: AUTO TASK[0m
+[0;32mI (233483) LIVING: AUTO TASK[0m
+[0;32mI (233503) LIVING: Do am: 67.00 percent[0m
+[0;32mI (233503) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (233503) LIVING: Do sang: 16.27 lux[0m
+[0;32mI (233503) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (233683) LIVING: AUTO TASK[0m
+[0;32mI (233883) LIVING: AUTO TASK[0m
+[0;32mI (234083) LIVING: AUTO TASK[0m
+[0;32mI (234283) LIVING: AUTO TASK[0m
+[0;32mI (234483) LIVING: AUTO TASK[0m
+[0;32mI (234683) LIVING: AUTO TASK[0m
+[0;33mW (234693) LIVING: DHT11 fail![0m
+[0;32mI (234693) LIVING: Do sang: 16.76 lux[0m
+[0;32mI (234693) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (234883) LIVING: AUTO TASK[0m
+[0;32mI (235083) LIVING: AUTO TASK[0m
+[0;32mI (235283) LIVING: AUTO TASK[0m
+[0;32mI (235483) LIVING: AUTO TASK[0m
+[0;32mI (235683) LIVING: AUTO TASK[0m
+[0;33mW (235783) LIVING: DHT11 fail![0m
+[0;32mI (235793) LIVING: Do sang: 18.30 lux[0m
+[0;31mE (235803) mqtt_client: Client was not initialized[0m
+[0;32mI (235803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (235883) LIVING: AUTO TASK[0m
+[0;32mI (236083) LIVING: AUTO TASK[0m
+[0;32mI (236283) LIVING: AUTO TASK[0m
+[0;32mI (236483) LIVING: AUTO TASK[0m
+[0;32mI (236683) LIVING: AUTO TASK[0m
+[0;32mI (236863) LIVING: Do am: 66.00 percent[0m
+[0;32mI (236863) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (236863) LIVING: Do sang: 10.45 lux[0m
+[0;32mI (236863) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (236883) LIVING: AUTO TASK[0m
+[0;32mI (237083) LIVING: AUTO TASK[0m
+[0;32mI (237283) LIVING: AUTO TASK[0m
+[0;32mI (237483) LIVING: AUTO TASK[0m
+[0;32mI (237683) LIVING: AUTO TASK[0m
+[0;32mI (237883) LIVING: AUTO TASK[0m
+[0;33mW (238053) LIVING: DHT11 fail![0m
+[0;32mI (238053) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (238053) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (238083) LIVING: AUTO TASK[0m
+[0;32mI (238283) LIVING: AUTO TASK[0m
+[0;32mI (238483) LIVING: AUTO TASK[0m
+[0;32mI (238683) LIVING: AUTO TASK[0m
+[0;32mI (238883) LIVING: AUTO TASK[0m
+[0;32mI (239083) LIVING: AUTO TASK[0m
+[0;33mW (239243) LIVING: DHT11 fail![0m
+[0;32mI (239243) LIVING: Do sang: 14.70 lux[0m
+[0;32mI (239243) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (239283) LIVING: AUTO TASK[0m
+[0;32mI (239483) LIVING: AUTO TASK[0m
+[0;32mI (239683) LIVING: AUTO TASK[0m
+[0;32mI (239883) LIVING: AUTO TASK[0m
+[0;32mI (240083) LIVING: AUTO TASK[0m
+[0;32mI (240283) LIVING: AUTO TASK[0m
+[0;33mW (240333) LIVING: DHT11 fail![0m
+[0;32mI (240343) LIVING: Do sang: 13.03 lux[0m
+[0;32mI (240343) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (240483) LIVING: AUTO TASK[0m
+[0;32mI (240683) LIVING: AUTO TASK[0m
+[0;32mI (240883) LIVING: AUTO TASK[0m
+[0;32mI (241083) LIVING: AUTO TASK[0m
+[0;32mI (241283) LIVING: AUTO TASK[0m
+[0;32mI (241483) LIVING: AUTO TASK[0m
+[0;33mW (241533) LIVING: DHT11 fail![0m
+[0;32mI (241533) LIVING: Do sang: 16.45 lux[0m
+[0;32mI (241533) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (241683) LIVING: AUTO TASK[0m
+[0;32mI (241883) LIVING: AUTO TASK[0m
+[0;32mI (242083) LIVING: AUTO TASK[0m
+[0;32mI (242283) LIVING: AUTO TASK[0m
+[0;32mI (242483) LIVING: AUTO TASK[0m
+[0;33mW (242623) LIVING: DHT11 fail![0m
+[0;32mI (242623) LIVING: Do sang: 16.18 lux[0m
+[0;32mI (242633) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (242683) LIVING: AUTO TASK[0m
+[0;32mI (242883) LIVING: AUTO TASK[0m
+[0;32mI (243083) LIVING: AUTO TASK[0m
+[0;32mI (243283) LIVING: AUTO TASK[0m
+[0;32mI (243483) LIVING: AUTO TASK[0m
+[0;32mI (243683) LIVING: AUTO TASK[0m
+[0;33mW (243823) LIVING: DHT11 fail![0m
+[0;32mI (243823) LIVING: Do sang: 11.06 lux[0m
+[0;32mI (243823) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (243883) LIVING: AUTO TASK[0m
+[0;32mI (244083) LIVING: AUTO TASK[0m
+[0;32mI (244283) LIVING: AUTO TASK[0m
+[0;32mI (244483) LIVING: AUTO TASK[0m
+[0;32mI (244683) LIVING: AUTO TASK[0m
+[0;32mI (244883) LIVING: AUTO TASK[0m
+[0;33mW (245013) LIVING: DHT11 fail![0m
+[0;32mI (245013) LIVING: Do sang: 15.55 lux[0m
+[0;32mI (245013) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (245083) LIVING: AUTO TASK[0m
+[0;32mI (245283) LIVING: AUTO TASK[0m
+[0;32mI (245483) LIVING: AUTO TASK[0m
+[0;32mI (245683) LIVING: AUTO TASK[0m
+[0;32mI (245883) LIVING: AUTO TASK[0m
+[0;32mI (246083) LIVING: AUTO TASK[0m
+[0;33mW (246203) LIVING: DHT11 fail![0m
+[0;32mI (246203) LIVING: Do sang: 16.97 lux[0m
+[0;32mI (246203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (246283) LIVING: AUTO TASK[0m
+[0;32mI (246483) LIVING: AUTO TASK[0m
+[0;32mI (246683) LIVING: AUTO TASK[0m
+[0;32mI (246883) LIVING: AUTO TASK[0m
+[0;32mI (247083) LIVING: AUTO TASK[0m
+[0;32mI (247283) LIVING: AUTO TASK[0m
+[0;33mW (247393) LIVING: DHT11 fail![0m
+[0;32mI (247393) LIVING: Do sang: 12.79 lux[0m
+[0;32mI (247393) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (247483) LIVING: AUTO TASK[0m
+[0;32mI (247683) LIVING: AUTO TASK[0m
+[0;32mI (247883) LIVING: AUTO TASK[0m
+[0;32mI (248083) LIVING: AUTO TASK[0m
+[0;32mI (248283) LIVING: AUTO TASK[0m
+[0;32mI (248483) LIVING: AUTO TASK[0m
+[0;33mW (248583) LIVING: DHT11 fail![0m
+[0;32mI (248583) LIVING: Do sang: 10.73 lux[0m
+[0;32mI (248583) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (248683) LIVING: AUTO TASK[0m
+[0;32mI (248883) LIVING: AUTO TASK[0m
+[0;32mI (249083) LIVING: AUTO TASK[0m
+[0;32mI (249283) LIVING: AUTO TASK[0m
+[0;32mI (249483) LIVING: AUTO TASK[0m
+[0;32mI (249683) LIVING: AUTO TASK[0m
+[0;32mI (249713) LIVING: Do am: 65.00 percent[0m
+[0;32mI (249713) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (249723) LIVING: Do sang: 11.67 lux[0m
+[0;32mI (249723) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (249883) LIVING: AUTO TASK[0m
+[0;32mI (250083) LIVING: AUTO TASK[0m
+[0;32mI (250283) LIVING: AUTO TASK[0m
+[0;32mI (250483) LIVING: AUTO TASK[0m
+[0;32mI (250683) LIVING: AUTO TASK[0m
+[0;32mI (250883) LIVING: AUTO TASK[0m
+[0;33mW (250913) LIVING: DHT11 fail![0m
+[0;32mI (250913) LIVING: Do sang: 16.03 lux[0m
+[0;32mI (250913) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (251083) LIVING: AUTO TASK[0m
+[0;32mI (251283) LIVING: AUTO TASK[0m
+[0;32mI (251483) LIVING: AUTO TASK[0m
+[0;32mI (251683) LIVING: AUTO TASK[0m
+[0;32mI (251883) LIVING: AUTO TASK[0m
+[0;32mI (252083) LIVING: AUTO TASK[0m
+[0;33mW (252103) LIVING: DHT11 fail![0m
+[0;32mI (252103) LIVING: Do sang: 11.18 lux[0m
+[0;32mI (252103) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (252283) LIVING: AUTO TASK[0m
+[0;32mI (252483) LIVING: AUTO TASK[0m
+[0;32mI (252683) LIVING: AUTO TASK[0m
+[0;32mI (252883) LIVING: AUTO TASK[0m
+[0;32mI (253083) LIVING: AUTO TASK[0m
+[0;32mI (253283) LIVING: AUTO TASK[0m
+[0;33mW (253293) LIVING: DHT11 fail![0m
+[0;32mI (253293) LIVING: Do sang: 12.76 lux[0m
+[0;32mI (253293) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (253483) LIVING: AUTO TASK[0m
+[0;32mI (253683) LIVING: AUTO TASK[0m
+[0;32mI (253883) LIVING: AUTO TASK[0m
+[0;32mI (254083) LIVING: AUTO TASK[0m
+[0;32mI (254283) LIVING: AUTO TASK[0m
+[0;32mI (254423) LIVING: Do am: 65.00 percent[0m
+[0;32mI (254423) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (254433) LIVING: Do sang: 13.91 lux[0m
+[0;32mI (254433) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (254483) LIVING: AUTO TASK[0m
+[0;32mI (254683) LIVING: AUTO TASK[0m
+[0;32mI (254883) LIVING: AUTO TASK[0m
+[0;32mI (255083) LIVING: AUTO TASK[0m
+[0;32mI (255283) LIVING: AUTO TASK[0m
+[0;32mI (255483) LIVING: AUTO TASK[0m
+[0;33mW (255623) LIVING: DHT11 fail![0m
+[0;32mI (255623) LIVING: Do sang: 12.06 lux[0m
+[0;32mI (255623) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (255683) LIVING: AUTO TASK[0m
+[0;32mI (255883) LIVING: AUTO TASK[0m
+[0;32mI (256083) LIVING: AUTO TASK[0m
+[0;32mI (256283) LIVING: AUTO TASK[0m
+[0;32mI (256483) LIVING: AUTO TASK[0m
+[0;32mI (256683) LIVING: AUTO TASK[0m
+[0;33mW (256813) LIVING: DHT11 fail![0m
+[0;32mI (256813) LIVING: Do sang: 10.33 lux[0m
+[0;32mI (256813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (256883) LIVING: AUTO TASK[0m
+[0;32mI (257083) LIVING: AUTO TASK[0m
+[0;32mI (257283) LIVING: AUTO TASK[0m
+[0;32mI (257483) LIVING: AUTO TASK[0m
+[0;32mI (257683) LIVING: AUTO TASK[0m
+[0;32mI (257883) LIVING: AUTO TASK[0m
+[0;33mW (258003) LIVING: DHT11 fail![0m
+[0;32mI (258003) LIVING: Do sang: 14.70 lux[0m
+[0;32mI (258003) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (258083) LIVING: AUTO TASK[0m
+[0;32mI (258283) LIVING: AUTO TASK[0m
+[0;32mI (258483) LIVING: AUTO TASK[0m
+[0;32mI (258683) LIVING: AUTO TASK[0m
+[0;32mI (258883) LIVING: AUTO TASK[0m
+[0;32mI (259083) LIVING: AUTO TASK[0m
+[0;32mI (259133) LIVING: Do am: 66.00 percent[0m
+[0;32mI (259133) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (259143) LIVING: Do sang: 15.55 lux[0m
+[0;32mI (259143) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (259283) LIVING: AUTO TASK[0m
+[0;32mI (259483) LIVING: AUTO TASK[0m
+[0;32mI (259683) LIVING: AUTO TASK[0m
+[0;32mI (259883) LIVING: AUTO TASK[0m
+[0;32mI (260083) LIVING: AUTO TASK[0m
+[0;32mI (260283) LIVING: AUTO TASK[0m
+[0;33mW (260333) LIVING: DHT11 fail![0m
+[0;32mI (260333) LIVING: Do sang: 11.36 lux[0m
+[0;32mI (260333) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (260483) LIVING: AUTO TASK[0m
+[0;32mI (260683) LIVING: AUTO TASK[0m
+[0;32mI (260883) LIVING: AUTO TASK[0m
+[0;32mI (261083) LIVING: AUTO TASK[0m
+[0;32mI (261283) LIVING: AUTO TASK[0m
+[0;32mI (261483) LIVING: AUTO TASK[0m
+[0;33mW (261523) LIVING: DHT11 fail![0m
+[0;32mI (261523) LIVING: Do sang: 10.24 lux[0m
+[0;32mI (261523) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (261683) LIVING: AUTO TASK[0m
+[0;32mI (261883) LIVING: AUTO TASK[0m
+[0;32mI (262083) LIVING: AUTO TASK[0m
+[0;32mI (262283) LIVING: AUTO TASK[0m
+[0;32mI (262483) LIVING: AUTO TASK[0m
+[0;32mI (262683) LIVING: AUTO TASK[0m
+[0;33mW (262713) LIVING: DHT11 fail![0m
+[0;32mI (262713) LIVING: Do sang: 14.12 lux[0m
+[0;32mI (262713) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (262883) LIVING: AUTO TASK[0m
+[0;32mI (263083) LIVING: AUTO TASK[0m
+[0;32mI (263283) LIVING: AUTO TASK[0m
+[0;32mI (263483) LIVING: AUTO TASK[0m
+[0;32mI (263683) LIVING: AUTO TASK[0m
+[0;33mW (263843) LIVING: DHT11 fail![0m
+[0;32mI (263843) LIVING: Do sang: 10.30 lux[0m
+[0;32mI (263843) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (263883) LIVING: AUTO TASK[0m
+[0;32mI (264083) LIVING: AUTO TASK[0m
+[0;32mI (264283) LIVING: AUTO TASK[0m
+[0;32mI (264483) LIVING: AUTO TASK[0m
+[0;32mI (264683) LIVING: AUTO TASK[0m
+[0;32mI (264883) LIVING: AUTO TASK[0m
+[0;33mW (264913) LIVING: DHT11 fail![0m
+[0;32mI (264913) LIVING: Do sang: 14.73 lux[0m
+[0;32mI (264913) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (265083) LIVING: AUTO TASK[0m
+[0;32mI (265283) LIVING: AUTO TASK[0m
+[0;32mI (265483) LIVING: AUTO TASK[0m
+[0;32mI (265683) LIVING: AUTO TASK[0m
+[0;32mI (265883) LIVING: AUTO TASK[0m
+[0;32mI (266083) LIVING: AUTO TASK[0m
+[0;33mW (266103) LIVING: DHT11 fail![0m
+[0;32mI (266103) LIVING: Do sang: 10.76 lux[0m
+[0;32mI (266103) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (266283) LIVING: AUTO TASK[0m
+[0;32mI (266483) LIVING: AUTO TASK[0m
+[0;32mI (266683) LIVING: AUTO TASK[0m
+[0;32mI (266883) LIVING: AUTO TASK[0m
+[0;32mI (267083) LIVING: AUTO TASK[0m
+[0;32mI (267193) LIVING: Do am: 66.00 percent[0m
+[0;32mI (267203) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (267203) LIVING: Do sang: 10.39 lux[0m
+[0;32mI (267203) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (267283) LIVING: AUTO TASK[0m
+[0;32mI (267483) LIVING: AUTO TASK[0m
+[0;32mI (267683) LIVING: AUTO TASK[0m
+[0;32mI (267883) LIVING: AUTO TASK[0m
+[0;32mI (268083) LIVING: AUTO TASK[0m
+[0;32mI (268283) LIVING: AUTO TASK[0m
+[0;33mW (268393) LIVING: DHT11 fail![0m
+[0;32mI (268393) LIVING: Do sang: 14.21 lux[0m
+[0;32mI (268393) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (268483) LIVING: AUTO TASK[0m
+[0;32mI (268683) LIVING: AUTO TASK[0m
+[0;32mI (268883) LIVING: AUTO TASK[0m
+[0;32mI (269083) LIVING: AUTO TASK[0m
+[0;32mI (269283) LIVING: AUTO TASK[0m
+[0;32mI (269483) LIVING: AUTO TASK[0m
+[0;33mW (269583) LIVING: DHT11 fail![0m
+[0;32mI (269583) LIVING: Do sang: 15.82 lux[0m
+[0;32mI (269583) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (269683) LIVING: AUTO TASK[0m
+[0;32mI (269883) LIVING: AUTO TASK[0m
+[0;32mI (270083) LIVING: AUTO TASK[0m
+[0;32mI (270283) LIVING: AUTO TASK[0m
+[0;32mI (270483) LIVING: AUTO TASK[0m
+[0;32mI (270683) LIVING: AUTO TASK[0m
+[0;33mW (270773) LIVING: DHT11 fail![0m
+[0;32mI (270773) LIVING: Do sang: 15.18 lux[0m
+[0;32mI (270773) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (270883) LIVING: AUTO TASK[0m
+[0;32mI (271083) LIVING: AUTO TASK[0m
+[0;32mI (271283) LIVING: AUTO TASK[0m
+[0;32mI (271483) LIVING: AUTO TASK[0m
+[0;32mI (271683) LIVING: AUTO TASK[0m
+[0;32mI (271883) LIVING: AUTO TASK[0m
+[0;33mW (271963) LIVING: DHT11 fail![0m
+[0;32mI (271963) LIVING: Do sang: 11.88 lux[0m
+[0;32mI (271963) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (272083) LIVING: AUTO TASK[0m
+[0;32mI (272283) LIVING: AUTO TASK[0m
+[0;32mI (272483) LIVING: AUTO TASK[0m
+[0;32mI (272683) LIVING: AUTO TASK[0m
+[0;32mI (272883) LIVING: AUTO TASK[0m
+[0;32mI (273083) LIVING: AUTO TASK[0m
+[0;33mW (273093) LIVING: DHT11 fail![0m
+[0;32mI (273093) LIVING: Do sang: 16.30 lux[0m
+[0;32mI (273093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (273283) LIVING: AUTO TASK[0m
+[0;32mI (273483) LIVING: AUTO TASK[0m
+[0;32mI (273683) LIVING: AUTO TASK[0m
+[0;32mI (273883) LIVING: AUTO TASK[0m
+[0;32mI (274083) LIVING: AUTO TASK[0m
+[0;32mI (274163) LIVING: Do am: 66.00 percent[0m
+[0;32mI (274163) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (274163) LIVING: Do sang: 13.39 lux[0m
+[0;32mI (274163) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (274283) LIVING: AUTO TASK[0m
+[0;32mI (274483) LIVING: AUTO TASK[0m
+[0;32mI (274683) LIVING: AUTO TASK[0m
+[0;32mI (274883) LIVING: AUTO TASK[0m
+[0;32mI (275083) LIVING: AUTO TASK[0m
+[0;32mI (275283) LIVING: AUTO TASK[0m
+[0;33mW (275353) LIVING: DHT11 fail![0m
+[0;32mI (275353) LIVING: Do sang: 12.42 lux[0m
+[0;32mI (275353) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (275483) LIVING: AUTO TASK[0m
+[0;32mI (275683) LIVING: AUTO TASK[0m
+[0;32mI (275883) LIVING: AUTO TASK[0m
+[0;32mI (276083) LIVING: AUTO TASK[0m
+[0;32mI (276283) LIVING: AUTO TASK[0m
+[0;32mI (276483) LIVING: AUTO TASK[0m
+[0;33mW (276543) LIVING: DHT11 fail![0m
+[0;32mI (276543) LIVING: Do sang: 14.85 lux[0m
+[0;32mI (276543) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (276683) LIVING: AUTO TASK[0m
+[0;32mI (276883) LIVING: AUTO TASK[0m
+[0;32mI (277083) LIVING: AUTO TASK[0m
+[0;32mI (277283) LIVING: AUTO TASK[0m
+[0;32mI (277483) LIVING: AUTO TASK[0m
+[0;32mI (277633) LIVING: Do am: 66.00 percent[0m
+[0;32mI (277643) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (277643) LIVING: Do sang: 16.03 lux[0m
+[0;32mI (277643) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (277683) LIVING: AUTO TASK[0m
+[0;32mI (277883) LIVING: AUTO TASK[0m
+[0;32mI (278083) LIVING: AUTO TASK[0m
+[0;32mI (278283) LIVING: AUTO TASK[0m
+[0;32mI (278483) LIVING: AUTO TASK[0m
+[0;32mI (278683) LIVING: AUTO TASK[0m
+[0;33mW (278703) LIVING: DHT11 fail![0m
+[0;32mI (278703) LIVING: Do sang: 15.97 lux[0m
+[0;32mI (278703) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (278883) LIVING: AUTO TASK[0m
+[0;32mI (279083) LIVING: AUTO TASK[0m
+[0;32mI (279283) LIVING: AUTO TASK[0m
+[0;32mI (279483) LIVING: AUTO TASK[0m
+[0;32mI (279683) LIVING: AUTO TASK[0m
+[0;33mW (279763) LIVING: DHT11 fail![0m
+[0;32mI (279763) LIVING: Do sang: 15.48 lux[0m
+[0;32mI (279763) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (279883) LIVING: AUTO TASK[0m
+[0;32mI (280083) LIVING: AUTO TASK[0m
+[0;32mI (280283) LIVING: AUTO TASK[0m
+[0;32mI (280483) LIVING: AUTO TASK[0m
+[0;32mI (280683) LIVING: AUTO TASK[0m
+[0;32mI (280883) LIVING: AUTO TASK[0m
+[0;33mW (280953) LIVING: DHT11 fail![0m
+[0;32mI (280953) LIVING: Do sang: 12.94 lux[0m
+[0;32mI (280953) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (281083) LIVING: AUTO TASK[0m
+[0;32mI (281283) LIVING: AUTO TASK[0m
+[0;32mI (281483) LIVING: AUTO TASK[0m
+[0;32mI (281683) LIVING: AUTO TASK[0m
+[0;32mI (281883) LIVING: AUTO TASK[0m
+[0;32mI (282083) LIVING: AUTO TASK[0m
+[0;33mW (282143) LIVING: DHT11 fail![0m
+[0;32mI (282143) LIVING: Do sang: 11.21 lux[0m
+[0;32mI (282143) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (282283) LIVING: AUTO TASK[0m
+[0;32mI (282483) LIVING: AUTO TASK[0m
+[0;32mI (282683) LIVING: AUTO TASK[0m
+[0;32mI (282883) LIVING: AUTO TASK[0m
+[0;32mI (283083) LIVING: AUTO TASK[0m
+[0;32mI (283283) LIVING: AUTO TASK[0m
+[0;33mW (283333) LIVING: DHT11 fail![0m
+[0;32mI (283333) LIVING: Do sang: 11.00 lux[0m
+[0;32mI (283333) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (283483) LIVING: AUTO TASK[0m
+[0;32mI (283683) LIVING: AUTO TASK[0m
+[0;32mI (283883) LIVING: AUTO TASK[0m
+[0;32mI (284083) LIVING: AUTO TASK[0m
+[0;32mI (284283) LIVING: AUTO TASK[0m
+[0;32mI (284483) LIVING: AUTO TASK[0m
+[0;33mW (284523) LIVING: DHT11 fail![0m
+[0;32mI (284523) LIVING: Do sang: 10.48 lux[0m
+[0;32mI (284523) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (284683) LIVING: AUTO TASK[0m
+[0;32mI (284883) LIVING: AUTO TASK[0m
+[0;32mI (285083) LIVING: AUTO TASK[0m
+[0;32mI (285283) LIVING: AUTO TASK[0m
+[0;32mI (285483) LIVING: AUTO TASK[0m
+[0;32mI (285653) LIVING: Do am: 65.00 percent[0m
+[0;32mI (285653) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (285663) LIVING: Do sang: 10.73 lux[0m
+[0;32mI (285663) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (285683) LIVING: AUTO TASK[0m
+[0;32mI (285883) LIVING: AUTO TASK[0m
+[0;32mI (286083) LIVING: AUTO TASK[0m
+[0;32mI (286283) LIVING: AUTO TASK[0m
+[0;32mI (286483) LIVING: AUTO TASK[0m
+[0;32mI (286683) LIVING: AUTO TASK[0m
+[0;33mW (286723) LIVING: DHT11 fail![0m
+[0;32mI (286723) LIVING: Do sang: 13.88 lux[0m
+[0;32mI (286723) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (286883) LIVING: AUTO TASK[0m
+[0;32mI (287083) LIVING: AUTO TASK[0m
+[0;32mI (287283) LIVING: AUTO TASK[0m
+[0;32mI (287483) LIVING: AUTO TASK[0m
+[0;32mI (287683) LIVING: AUTO TASK[0m
+[0;32mI (287783) LIVING: Do am: 65.00 percent[0m
+[0;32mI (287783) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (287783) LIVING: Do sang: 16.15 lux[0m
+[0;32mI (287783) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (287883) LIVING: AUTO TASK[0m
+[0;32mI (288083) LIVING: AUTO TASK[0m
+[0;32mI (288283) LIVING: AUTO TASK[0m
+[0;32mI (288483) LIVING: AUTO TASK[0m
+[0;32mI (288683) LIVING: AUTO TASK[0m
+[0;32mI (288843) LIVING: Do am: 65.00 percent[0m
+[0;32mI (288843) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (288843) LIVING: Do sang: 14.06 lux[0m
+[0;32mI (288843) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (288883) LIVING: AUTO TASK[0m
+[0;32mI (289083) LIVING: AUTO TASK[0m
+[0;32mI (289283) LIVING: AUTO TASK[0m
+[0;32mI (289483) LIVING: AUTO TASK[0m
+[0;32mI (289683) LIVING: AUTO TASK[0m
+[0;32mI (289883) LIVING: AUTO TASK[0m
+[0;33mW (289903) LIVING: DHT11 fail![0m
+[0;32mI (289903) LIVING: Do sang: 16.12 lux[0m
+[0;32mI (289903) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (290083) LIVING: AUTO TASK[0m
+[0;32mI (290283) LIVING: AUTO TASK[0m
+[0;32mI (290483) LIVING: AUTO TASK[0m
+[0;32mI (290683) LIVING: AUTO TASK[0m
+[0;32mI (290883) LIVING: AUTO TASK[0m
+[0;32mI (290963) LIVING: Do am: 65.00 percent[0m
+[0;32mI (290963) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (290963) LIVING: Do sang: 11.21 lux[0m
+[0;32mI (290963) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (291083) LIVING: AUTO TASK[0m
+[0;32mI (291283) LIVING: AUTO TASK[0m
+[0;32mI (291483) LIVING: AUTO TASK[0m
+[0;32mI (291683) LIVING: AUTO TASK[0m
+[0;32mI (291883) LIVING: AUTO TASK[0m
+[0;32mI (292023) LIVING: Do am: 65.00 percent[0m
+[0;32mI (292023) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (292023) LIVING: Do sang: 10.70 lux[0m
+[0;32mI (292023) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (292083) LIVING: AUTO TASK[0m
+[0;32mI (292283) LIVING: AUTO TASK[0m
+[0;32mI (292483) LIVING: AUTO TASK[0m
+[0;32mI (292683) LIVING: AUTO TASK[0m
+[0;32mI (292883) LIVING: AUTO TASK[0m
+[0;32mI (293083) LIVING: Do am: 65.00 percent[0m
+[0;32mI (293083) LIVING: AUTO TASK[0m
+[0;32mI (293083) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (293083) LIVING: Do sang: 12.94 lux[0m
+[0;32mI (293083) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (293283) LIVING: AUTO TASK[0m
+[0;32mI (293483) LIVING: AUTO TASK[0m
+[0;32mI (293683) LIVING: AUTO TASK[0m
+[0;32mI (293883) LIVING: AUTO TASK[0m
+[0;32mI (294083) LIVING: AUTO TASK[0m
+[0;32mI (294153) LIVING: Do am: 65.00 percent[0m
+[0;32mI (294153) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (294153) LIVING: Do sang: 13.97 lux[0m
+[0;32mI (294153) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (294283) LIVING: AUTO TASK[0m
+[0;32mI (294483) LIVING: AUTO TASK[0m
+[0;32mI (294683) LIVING: AUTO TASK[0m
+[0;32mI (294883) LIVING: AUTO TASK[0m
+[0;32mI (295083) LIVING: AUTO TASK[0m
+[0;32mI (295213) LIVING: Do am: 65.00 percent[0m
+[0;32mI (295213) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (295213) LIVING: Do sang: 15.24 lux[0m
+[0;32mI (295213) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (295283) LIVING: AUTO TASK[0m
+[0;32mI (295483) LIVING: AUTO TASK[0m
+[0;32mI (295683) LIVING: AUTO TASK[0m
+[0;32mI (295883) LIVING: AUTO TASK[0m
+[0;32mI (296083) LIVING: AUTO TASK[0m
+[0;32mI (296283) LIVING: AUTO TASK[0m
+[0;33mW (296403) LIVING: DHT11 fail![0m
+[0;32mI (296403) LIVING: Do sang: 15.18 lux[0m
+[0;32mI (296403) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (296483) LIVING: AUTO TASK[0m
+[0;32mI (296683) LIVING: AUTO TASK[0m
+[0;32mI (296883) LIVING: AUTO TASK[0m
+[0;32mI (297083) LIVING: AUTO TASK[0m
+[0;32mI (297283) LIVING: AUTO TASK[0m
+[0;32mI (297483) LIVING: AUTO TASK[0m
+[0;33mW (297493) LIVING: DHT11 fail![0m
+[0;32mI (297493) LIVING: Do sang: 12.61 lux[0m
+[0;32mI (297503) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (297683) LIVING: AUTO TASK[0m
+[0;32mI (297883) LIVING: AUTO TASK[0m
+[0;32mI (298083) LIVING: AUTO TASK[0m
+[0;32mI (298283) LIVING: AUTO TASK[0m
+[0;32mI (298483) LIVING: AUTO TASK[0m
+[0;32mI (298683) LIVING: AUTO TASK[0m
+[0;33mW (298693) LIVING: DHT11 fail![0m
+[0;32mI (298693) LIVING: Do sang: 15.27 lux[0m
+[0;32mI (298693) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (298883) LIVING: AUTO TASK[0m
+[0;32mI (299083) LIVING: AUTO TASK[0m
+[0;32mI (299283) LIVING: AUTO TASK[0m
+[0;32mI (299483) LIVING: AUTO TASK[0m
+[0;32mI (299683) LIVING: AUTO TASK[0m
+[0;33mW (299783) LIVING: DHT11 fail![0m
+[0;32mI (299783) LIVING: Do sang: 15.70 lux[0m
+[0;32mI (299793) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (299883) LIVING: AUTO TASK[0m
+[0;32mI (300083) LIVING: AUTO TASK[0m
+[0;32mI (300283) LIVING: AUTO TASK[0m
+[0;32mI (300483) LIVING: AUTO TASK[0m
+[0;32mI (300683) LIVING: AUTO TASK[0m
+[0;32mI (300883) LIVING: AUTO TASK[0m
+[0;33mW (300983) LIVING: DHT11 fail![0m
+[0;32mI (300983) LIVING: Do sang: 10.79 lux[0m
+[0;32mI (300983) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (301083) LIVING: AUTO TASK[0m
+[0;32mI (301283) LIVING: AUTO TASK[0m
+[0;32mI (301483) LIVING: AUTO TASK[0m
+[0;32mI (301683) LIVING: AUTO TASK[0m
+[0;32mI (301883) LIVING: AUTO TASK[0m
+[0;32mI (302083) LIVING: AUTO TASK[0m
+[0;33mW (302173) LIVING: DHT11 fail![0m
+[0;32mI (302173) LIVING: Do sang: 10.18 lux[0m
+[0;32mI (302173) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (302283) LIVING: AUTO TASK[0m
+[0;32mI (302483) LIVING: AUTO TASK[0m
+[0;32mI (302683) LIVING: AUTO TASK[0m
+[0;32mI (302883) LIVING: AUTO TASK[0m
+[0;32mI (303083) LIVING: AUTO TASK[0m
+[0;32mI (303263) LIVING: Do am: 66.00 percent[0m
+[0;32mI (303273) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (303273) LIVING: Do sang: 9.03 lux[0m
+[0;32mI (303273) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (303283) LIVING: AUTO TASK[0m
+[0;32mI (303483) LIVING: AUTO TASK[0m
+[0;32mI (303683) LIVING: AUTO TASK[0m
+[0;32mI (303883) LIVING: AUTO TASK[0m
+[0;32mI (304083) LIVING: AUTO TASK[0m
+[0;32mI (304283) LIVING: AUTO TASK[0m
+[0;32mI (304333) LIVING: Do am: 66.00 percent[0m
+[0;32mI (304333) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (304333) LIVING: Do sang: 15.79 lux[0m
+[0;32mI (304333) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (304483) LIVING: AUTO TASK[0m
+[0;32mI (304683) LIVING: AUTO TASK[0m
+[0;32mI (304883) LIVING: AUTO TASK[0m
+[0;32mI (305083) LIVING: AUTO TASK[0m
+[0;32mI (305283) LIVING: AUTO TASK[0m
+[0;32mI (305483) LIVING: AUTO TASK[0m
+[0;33mW (305523) LIVING: DHT11 fail![0m
+[0;32mI (305523) LIVING: Do sang: 15.24 lux[0m
+[0;32mI (305523) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (305683) LIVING: AUTO TASK[0m
+[0;32mI (305883) LIVING: AUTO TASK[0m
+[0;32mI (306083) LIVING: AUTO TASK[0m
+[0;32mI (306283) LIVING: AUTO TASK[0m
+[0;32mI (306483) LIVING: AUTO TASK[0m
+[0;32mI (306613) LIVING: Do am: 66.00 percent[0m
+[0;32mI (306623) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (306623) LIVING: Do sang: 15.76 lux[0m
+[0;32mI (306623) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (306683) LIVING: AUTO TASK[0m
+[0;32mI (306883) LIVING: AUTO TASK[0m
+[0;32mI (307083) LIVING: AUTO TASK[0m
+[0;32mI (307283) LIVING: AUTO TASK[0m
+[0;32mI (307483) LIVING: AUTO TASK[0m
+[0;32mI (307683) LIVING: AUTO TASK[0m
+[0;33mW (307813) LIVING: DHT11 fail![0m
+[0;32mI (307813) LIVING: Do sang: 15.79 lux[0m
+[0;32mI (307813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (307883) LIVING: AUTO TASK[0m
+[0;32mI (308083) LIVING: AUTO TASK[0m
+[0;32mI (308283) LIVING: AUTO TASK[0m
+[0;32mI (308483) LIVING: AUTO TASK[0m
+[0;32mI (308683) LIVING: AUTO TASK[0m
+[0;32mI (308883) LIVING: AUTO TASK[0m
+[0;33mW (308903) LIVING: DHT11 fail![0m
+[0;32mI (308903) LIVING: Do sang: 15.45 lux[0m
+[0;32mI (308913) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (309083) LIVING: AUTO TASK[0m
+[0;32mI (309283) LIVING: AUTO TASK[0m
+[0;32mI (309483) LIVING: AUTO TASK[0m
+[0;32mI (309683) LIVING: AUTO TASK[0m
+[0;32mI (309883) LIVING: AUTO TASK[0m
+[0;33mW (309973) LIVING: DHT11 fail![0m
+[0;32mI (309973) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (309973) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (310083) LIVING: AUTO TASK[0m
+[0;32mI (310283) LIVING: AUTO TASK[0m
+[0;32mI (310483) LIVING: AUTO TASK[0m
+[0;32mI (310683) LIVING: AUTO TASK[0m
+[0;32mI (310883) LIVING: AUTO TASK[0m
+[0;32mI (311033) LIVING: Do am: 66.00 percent[0m
+[0;32mI (311033) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (311033) LIVING: Do sang: 10.42 lux[0m
+[0;32mI (311033) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (311083) LIVING: AUTO TASK[0m
+[0;32mI (311283) LIVING: AUTO TASK[0m
+[0;32mI (311483) LIVING: AUTO TASK[0m
+[0;32mI (311683) LIVING: AUTO TASK[0m
+[0;32mI (311883) LIVING: AUTO TASK[0m
+[0;32mI (312083) LIVING: AUTO TASK[0m
+[0;33mW (312093) LIVING: DHT11 fail![0m
+[0;32mI (312093) LIVING: Do sang: 10.70 lux[0m
+[0;32mI (312093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (312283) LIVING: AUTO TASK[0m
+[0;32mI (312483) LIVING: AUTO TASK[0m
+[0;32mI (312683) LIVING: AUTO TASK[0m
+[0;32mI (312883) LIVING: AUTO TASK[0m
+[0;32mI (313083) LIVING: AUTO TASK[0m
+[0;32mI (313153) LIVING: Do am: 66.00 percent[0m
+[0;32mI (313153) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (313153) LIVING: Do sang: 15.36 lux[0m
+[0;32mI (313153) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (313283) LIVING: AUTO TASK[0m
+[0;32mI (313483) LIVING: AUTO TASK[0m
+[0;32mI (313683) LIVING: AUTO TASK[0m
+[0;32mI (313883) LIVING: AUTO TASK[0m
+[0;32mI (314083) LIVING: AUTO TASK[0m
+[0;32mI (314283) LIVING: AUTO TASK[0m
+[0;33mW (314343) LIVING: DHT11 fail![0m
+[0;32mI (314343) LIVING: Do sang: 14.64 lux[0m
+[0;32mI (314343) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (314483) LIVING: AUTO TASK[0m
+[0;32mI (314683) LIVING: AUTO TASK[0m
+[0;32mI (314883) LIVING: AUTO TASK[0m
+[0;32mI (315083) LIVING: AUTO TASK[0m
+[0;32mI (315283) LIVING: AUTO TASK[0m
+[0;32mI (315433) LIVING: Do am: 66.00 percent[0m
+[0;32mI (315443) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (315443) LIVING: Do sang: 15.91 lux[0m
+[0;32mI (315443) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (315483) LIVING: AUTO TASK[0m
+[0;32mI (315683) LIVING: AUTO TASK[0m
+[0;32mI (315883) LIVING: AUTO TASK[0m
+[0;32mI (316083) LIVING: AUTO TASK[0m
+[0;32mI (316283) LIVING: AUTO TASK[0m
+[0;32mI (316483) LIVING: AUTO TASK[0m
+[0;33mW (316633) LIVING: DHT11 fail![0m
+[0;32mI (316633) LIVING: Do sang: 16.24 lux[0m
+[0;32mI (316633) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (316683) LIVING: AUTO TASK[0m
+[0;32mI (316883) LIVING: AUTO TASK[0m
+[0;32mI (317083) LIVING: AUTO TASK[0m
+[0;32mI (317283) LIVING: AUTO TASK[0m
+[0;32mI (317483) LIVING: AUTO TASK[0m
+[0;32mI (317683) LIVING: AUTO TASK[0m
+[0;33mW (317823) LIVING: DHT11 fail![0m
+[0;32mI (317823) LIVING: Do sang: 12.85 lux[0m
+[0;32mI (317823) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (317883) LIVING: AUTO TASK[0m
+[0;32mI (318083) LIVING: AUTO TASK[0m
+[0;32mI (318283) LIVING: AUTO TASK[0m
+[0;32mI (318483) LIVING: AUTO TASK[0m
+[0;32mI (318683) LIVING: AUTO TASK[0m
+[0;32mI (318883) LIVING: AUTO TASK[0m
+[0;32mI (318913) LIVING: Do am: 66.00 percent[0m
+[0;32mI (318923) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (318923) LIVING: Do sang: 11.21 lux[0m
+[0;32mI (318923) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (319083) LIVING: AUTO TASK[0m
+[0;32mI (319283) LIVING: AUTO TASK[0m
+[0;32mI (319483) LIVING: AUTO TASK[0m
+[0;32mI (319683) LIVING: AUTO TASK[0m
+[0;32mI (319883) LIVING: AUTO TASK[0m
+[0;32mI (320083) LIVING: AUTO TASK[0m
+[0;33mW (320113) LIVING: DHT11 fail![0m
+[0;32mI (320113) LIVING: Do sang: 10.70 lux[0m
+[0;32mI (320113) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (320283) LIVING: AUTO TASK[0m
+[0;32mI (320483) LIVING: AUTO TASK[0m
+[0;32mI (320683) LIVING: AUTO TASK[0m
+[0;32mI (320883) LIVING: AUTO TASK[0m
+[0;32mI (321083) LIVING: AUTO TASK[0m
+[0;32mI (321283) LIVING: AUTO TASK[0m
+[0;33mW (321303) LIVING: DHT11 fail![0m
+[0;32mI (321303) LIVING: Do sang: 12.30 lux[0m
+[0;32mI (321303) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (321483) LIVING: AUTO TASK[0m
+[0;32mI (321683) LIVING: AUTO TASK[0m
+[0;32mI (321883) LIVING: AUTO TASK[0m
+[0;32mI (322083) LIVING: AUTO TASK[0m
+[0;32mI (322283) LIVING: AUTO TASK[0m
+[0;32mI (322483) LIVING: AUTO TASK[0m
+[0;33mW (322493) LIVING: DHT11 fail![0m
+[0;32mI (322493) LIVING: Do sang: 15.39 lux[0m
+[0;32mI (322493) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (322683) LIVING: AUTO TASK[0m
+[0;32mI (322883) LIVING: AUTO TASK[0m
+[0;32mI (323083) LIVING: AUTO TASK[0m
+[0;32mI (323283) LIVING: AUTO TASK[0m
+[0;32mI (323483) LIVING: AUTO TASK[0m
+[0;32mI (323683) LIVING: AUTO TASK[0m
+[0;33mW (323683) LIVING: DHT11 fail![0m
+[0;32mI (323683) LIVING: Do sang: 15.39 lux[0m
+[0;32mI (323683) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (323883) LIVING: AUTO TASK[0m
+[0;32mI (324083) LIVING: AUTO TASK[0m
+[0;32mI (324283) LIVING: AUTO TASK[0m
+[0;32mI (324483) LIVING: AUTO TASK[0m
+[0;32mI (324683) LIVING: AUTO TASK[0m
+[0;33mW (324813) LIVING: DHT11 fail![0m
+[0;32mI (324813) LIVING: Do sang: 14.45 lux[0m
+[0;32mI (324813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (324883) LIVING: AUTO TASK[0m
+[0;32mI (325083) LIVING: AUTO TASK[0m
+[0;32mI (325283) LIVING: AUTO TASK[0m
+[0;32mI (325483) LIVING: AUTO TASK[0m
+[0;32mI (325683) LIVING: AUTO TASK[0m
+[0;32mI (325883) LIVING: AUTO TASK[0m
+[0;32mI (325883) LIVING: Do am: 66.00 percent[0m
+[0;32mI (325883) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (325883) LIVING: Do sang: 12.12 lux[0m
+[0;32mI (325883) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (326083) LIVING: AUTO TASK[0m
+[0;32mI (326283) LIVING: AUTO TASK[0m
+[0;32mI (326483) LIVING: AUTO TASK[0m
+[0;32mI (326683) LIVING: AUTO TASK[0m
+[0;32mI (326883) LIVING: AUTO TASK[0m
+[0;32mI (326953) LIVING: Do am: 66.00 percent[0m
+[0;32mI (326953) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (326953) LIVING: Do sang: 10.67 lux[0m
+[0;32mI (326953) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (327083) LIVING: AUTO TASK[0m
+[0;32mI (327283) LIVING: AUTO TASK[0m
+[0;32mI (327483) LIVING: AUTO TASK[0m
+[0;32mI (327683) LIVING: AUTO TASK[0m
+[0;32mI (327883) LIVING: AUTO TASK[0m
+[0;32mI (328013) LIVING: Do am: 65.00 percent[0m
+[0;32mI (328013) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (328013) LIVING: Do sang: 14.03 lux[0m
+[0;32mI (328013) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (328083) LIVING: AUTO TASK[0m
+[0;32mI (328283) LIVING: AUTO TASK[0m
+[0;32mI (328483) LIVING: AUTO TASK[0m
+[0;32mI (328683) LIVING: AUTO TASK[0m
+[0;32mI (328883) LIVING: AUTO TASK[0m
+[0;32mI (329073) LIVING: Do am: 66.00 percent[0m
+[0;32mI (329073) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (329073) LIVING: Do sang: 15.70 lux[0m
+[0;32mI (329073) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (329083) LIVING: AUTO TASK[0m
+[0;32mI (329283) LIVING: AUTO TASK[0m
+[0;32mI (329483) LIVING: AUTO TASK[0m
+[0;32mI (329683) LIVING: AUTO TASK[0m
+[0;32mI (329883) LIVING: AUTO TASK[0m
+[0;32mI (330083) LIVING: AUTO TASK[0m
+[0;32mI (330133) LIVING: Do am: 66.00 percent[0m
+[0;32mI (330133) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (330133) LIVING: Do sang: 16.27 lux[0m
+[0;32mI (330133) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (330283) LIVING: AUTO TASK[0m
+[0;32mI (330483) LIVING: AUTO TASK[0m
+[0;32mI (330683) LIVING: AUTO TASK[0m
+[0;32mI (330883) LIVING: AUTO TASK[0m
+[0;32mI (331083) LIVING: AUTO TASK[0m
+[0;32mI (331283) LIVING: AUTO TASK[0m
+[0;33mW (331323) LIVING: DHT11 fail![0m
+[0;32mI (331323) LIVING: Do sang: 16.09 lux[0m
+[0;32mI (331323) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (331483) LIVING: AUTO TASK[0m
+[0;32mI (331683) LIVING: AUTO TASK[0m
+[0;32mI (331883) LIVING: AUTO TASK[0m
+[0;32mI (332083) LIVING: AUTO TASK[0m
+[0;32mI (332283) LIVING: AUTO TASK[0m
+[0;33mW (332413) LIVING: DHT11 fail![0m
+[0;32mI (332423) LIVING: Do sang: 15.61 lux[0m
+[0;32mI (332423) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (332483) LIVING: AUTO TASK[0m
+[0;32mI (332683) LIVING: AUTO TASK[0m
+[0;32mI (332883) LIVING: AUTO TASK[0m
+[0;32mI (333083) LIVING: AUTO TASK[0m
+[0;32mI (333283) LIVING: AUTO TASK[0m
+[0;32mI (333483) LIVING: AUTO TASK[0m
+[0;33mW (333613) LIVING: DHT11 fail![0m
+[0;32mI (333613) LIVING: Do sang: 12.03 lux[0m
+[0;32mI (333613) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (333683) LIVING: AUTO TASK[0m
+[0;32mI (333883) LIVING: AUTO TASK[0m
+[0;32mI (334083) LIVING: AUTO TASK[0m
+[0;32mI (334283) LIVING: AUTO TASK[0m
+[0;32mI (334483) LIVING: AUTO TASK[0m
+[0;32mI (334683) LIVING: AUTO TASK[0m
+[0;33mW (334803) LIVING: DHT11 fail![0m
+[0;32mI (334803) LIVING: Do sang: 10.45 lux[0m
+[0;32mI (334803) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (334883) LIVING: AUTO TASK[0m
+[0;32mI (335083) LIVING: AUTO TASK[0m
+[0;32mI (335283) LIVING: AUTO TASK[0m
+[0;32mI (335483) LIVING: AUTO TASK[0m
+[0;32mI (335683) LIVING: AUTO TASK[0m
+[0;32mI (335883) LIVING: AUTO TASK[0m
+[0;32mI (335893) LIVING: Do am: 65.00 percent[0m
+[0;32mI (335903) LIVING: Nhiet do: 27.20 C[0m
+[0;32mI (335903) LIVING: Do sang: 10.30 lux[0m
+[0;32mI (335903) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (336083) LIVING: AUTO TASK[0m
+[0;32mI (336283) LIVING: AUTO TASK[0m
+[0;32mI (336483) LIVING: AUTO TASK[0m
+[0;32mI (336683) LIVING: AUTO TASK[0m
+[0;32mI (336883) LIVING: AUTO TASK[0m
+[0;32mI (337083) LIVING: AUTO TASK[0m
+[0;33mW (337093) LIVING: DHT11 fail![0m
+[0;32mI (337093) LIVING: Do sang: 10.76 lux[0m
+[0;32mI (337093) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (337283) LIVING: AUTO TASK[0m
+[0;32mI (337483) LIVING: AUTO TASK[0m
+[0;32mI (337683) LIVING: AUTO TASK[0m
+[0;32mI (337883) LIVING: AUTO TASK[0m
+[0;32mI (338083) LIVING: AUTO TASK[0m
+[0;33mW (338183) LIVING: DHT11 fail![0m
+[0;32mI (338183) LIVING: Do sang: 10.24 lux[0m
+[0;32mI (338193) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (338283) LIVING: AUTO TASK[0m
+[0;32mI (338483) LIVING: AUTO TASK[0m
+[0;32mI (338683) LIVING: AUTO TASK[0m
+[0;32mI (338883) LIVING: AUTO TASK[0m
+[0;32mI (339083) LIVING: AUTO TASK[0m
+[0;32mI (339253) LIVING: Do am: 65.00 percent[0m
+[0;32mI (339253) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (339253) LIVING: Do sang: 16.27 lux[0m
+[0;32mI (339253) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (339283) LIVING: AUTO TASK[0m
+[0;32mI (339483) LIVING: AUTO TASK[0m
+[0;32mI (339683) LIVING: AUTO TASK[0m
+[0;32mI (339883) LIVING: AUTO TASK[0m
+[0;32mI (340083) LIVING: AUTO TASK[0m
+[0;32mI (340283) LIVING: AUTO TASK[0m
+[0;33mW (340443) LIVING: DHT11 fail![0m
+[0;32mI (340443) LIVING: Do sang: 15.82 lux[0m
+[0;32mI (340443) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (340483) LIVING: AUTO TASK[0m
+[0;32mI (340683) LIVING: AUTO TASK[0m
+[0;32mI (340883) LIVING: AUTO TASK[0m
+[0;32mI (341083) LIVING: AUTO TASK[0m
+[0;32mI (341283) LIVING: AUTO TASK[0m
+[0;32mI (341483) LIVING: AUTO TASK[0m
+[0;33mW (341533) LIVING: DHT11 fail![0m
+[0;32mI (341533) LIVING: Do sang: 14.64 lux[0m
+[0;32mI (341543) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (341683) LIVING: AUTO TASK[0m
+[0;32mI (341883) LIVING: AUTO TASK[0m
+[0;32mI (342083) LIVING: AUTO TASK[0m
+[0;32mI (342283) LIVING: AUTO TASK[0m
+[0;32mI (342483) LIVING: AUTO TASK[0m
+[0;32mI (342683) LIVING: AUTO TASK[0m
+[0;33mW (342733) LIVING: DHT11 fail![0m
+[0;32mI (342733) LIVING: Do sang: 12.61 lux[0m
+[0;32mI (342733) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (342883) LIVING: AUTO TASK[0m
+[0;32mI (343083) LIVING: AUTO TASK[0m
+[0;32mI (343283) LIVING: AUTO TASK[0m
+[0;32mI (343483) LIVING: AUTO TASK[0m
+[0;32mI (343683) LIVING: AUTO TASK[0m
+[0;32mI (343883) LIVING: AUTO TASK[0m
+[0;33mW (343923) LIVING: DHT11 fail![0m
+[0;32mI (343923) LIVING: Do sang: 11.21 lux[0m
+[0;32mI (343923) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (344083) LIVING: AUTO TASK[0m
+[0;32mI (344283) LIVING: AUTO TASK[0m
+[0;32mI (344483) LIVING: AUTO TASK[0m
+[0;32mI (344683) LIVING: AUTO TASK[0m
+[0;32mI (344883) LIVING: AUTO TASK[0m
+[0;32mI (345083) LIVING: AUTO TASK[0m
+[0;33mW (345113) LIVING: DHT11 fail![0m
+[0;32mI (345113) LIVING: Do sang: 10.03 lux[0m
+[0;32mI (345113) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (345283) LIVING: AUTO TASK[0m
+[0;32mI (345483) LIVING: AUTO TASK[0m
+[0;32mI (345683) LIVING: AUTO TASK[0m
+[0;32mI (345883) LIVING: AUTO TASK[0m
+[0;32mI (346083) LIVING: AUTO TASK[0m
+[0;33mW (346243) LIVING: DHT11 fail![0m
+[0;32mI (346243) LIVING: Do sang: 14.70 lux[0m
+[0;32mI (346243) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (346283) LIVING: AUTO TASK[0m
+[0;32mI (346483) LIVING: AUTO TASK[0m
+[0;32mI (346683) LIVING: AUTO TASK[0m
+[0;32mI (346883) LIVING: AUTO TASK[0m
+[0;32mI (347083) LIVING: AUTO TASK[0m
+[0;32mI (347283) LIVING: AUTO TASK[0m
+[0;32mI (347313) LIVING: Do am: 66.00 percent[0m
+[0;32mI (347313) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (347313) LIVING: Do sang: 14.97 lux[0m
+[0;32mI (347313) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (347483) LIVING: AUTO TASK[0m
+[0;32mI (347683) LIVING: AUTO TASK[0m
+[0;32mI (347883) LIVING: AUTO TASK[0m
+[0;32mI (348083) LIVING: AUTO TASK[0m
+[0;32mI (348283) LIVING: AUTO TASK[0m
+[0;33mW (348373) LIVING: DHT11 fail![0m
+[0;32mI (348373) LIVING: Do sang: 13.52 lux[0m
+[0;32mI (348373) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (348483) LIVING: AUTO TASK[0m
+[0;32mI (348683) LIVING: AUTO TASK[0m
+[0;32mI (348883) LIVING: AUTO TASK[0m
+[0;32mI (349083) LIVING: AUTO TASK[0m
+[0;32mI (349283) LIVING: AUTO TASK[0m
+[0;32mI (349433) LIVING: Do am: 65.00 percent[0m
+[0;32mI (349433) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (349433) LIVING: Do sang: 15.27 lux[0m
+[0;32mI (349433) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (349483) LIVING: AUTO TASK[0m
+[0;32mI (349683) LIVING: AUTO TASK[0m
+[0;32mI (349883) LIVING: AUTO TASK[0m
+[0;32mI (350083) LIVING: AUTO TASK[0m
+[0;32mI (350283) LIVING: AUTO TASK[0m
+[0;32mI (350483) LIVING: AUTO TASK[0m
+[0;33mW (350623) LIVING: DHT11 fail![0m
+[0;32mI (350623) LIVING: Do sang: 15.79 lux[0m
+[0;32mI (350623) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (350683) LIVING: AUTO TASK[0m
+[0;32mI (350883) LIVING: AUTO TASK[0m
+[0;32mI (351083) LIVING: AUTO TASK[0m
+[0;32mI (351283) LIVING: AUTO TASK[0m
+[0;32mI (351483) LIVING: AUTO TASK[0m
+[0;32mI (351683) LIVING: AUTO TASK[0m
+[0;33mW (351813) LIVING: DHT11 fail![0m
+[0;32mI (351813) LIVING: Do sang: 13.88 lux[0m
+[0;32mI (351813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (351883) LIVING: AUTO TASK[0m
+[0;32mI (352083) LIVING: AUTO TASK[0m
+[0;32mI (352283) LIVING: AUTO TASK[0m
+[0;32mI (352483) LIVING: AUTO TASK[0m
+[0;32mI (352683) LIVING: AUTO TASK[0m
+[0;32mI (352883) LIVING: AUTO TASK[0m
+[0;33mW (353003) LIVING: DHT11 fail![0m
+[0;32mI (353003) LIVING: Do sang: 11.64 lux[0m
+[0;32mI (353003) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (353083) LIVING: AUTO TASK[0m
+[0;32mI (353283) LIVING: AUTO TASK[0m
+[0;32mI (353483) LIVING: AUTO TASK[0m
+[0;32mI (353683) LIVING: AUTO TASK[0m
+[0;32mI (353883) LIVING: AUTO TASK[0m
+[0;32mI (354083) LIVING: AUTO TASK[0m
+[0;32mI (354133) LIVING: Do am: 65.00 percent[0m
+[0;32mI (354133) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (354143) LIVING: Do sang: 14.27 lux[0m
+[0;32mI (354143) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (354283) LIVING: AUTO TASK[0m
+[0;32mI (354483) LIVING: AUTO TASK[0m
+[0;32mI (354683) LIVING: AUTO TASK[0m
+[0;32mI (354883) LIVING: AUTO TASK[0m
+[0;32mI (355083) LIVING: AUTO TASK[0m
+[0;32mI (355283) LIVING: AUTO TASK[0m
+[0;33mW (355333) LIVING: DHT11 fail![0m
+[0;32mI (355333) LIVING: Do sang: 10.36 lux[0m
+[0;32mI (355333) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (355483) LIVING: AUTO TASK[0m
+[0;32mI (355683) LIVING: AUTO TASK[0m
+[0;32mI (355883) LIVING: AUTO TASK[0m
+[0;32mI (356083) LIVING: AUTO TASK[0m
+[0;32mI (356283) LIVING: AUTO TASK[0m
+[0;32mI (356483) LIVING: AUTO TASK[0m
+[0;33mW (356523) LIVING: DHT11 fail![0m
+[0;32mI (356523) LIVING: Do sang: 9.88 lux[0m
+[0;32mI (356523) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (356683) LIVING: AUTO TASK[0m
+[0;32mI (356883) LIVING: AUTO TASK[0m
+[0;32mI (357083) LIVING: AUTO TASK[0m
+[0;32mI (357283) LIVING: AUTO TASK[0m
+[0;32mI (357483) LIVING: AUTO TASK[0m
+[0;32mI (357613) LIVING: Do am: 65.00 percent[0m
+[0;32mI (357623) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (357623) LIVING: Do sang: 10.33 lux[0m
+[0;32mI (357623) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (357683) LIVING: AUTO TASK[0m
+[0;32mI (357883) LIVING: AUTO TASK[0m
+[0;32mI (358083) LIVING: AUTO TASK[0m
+[0;32mI (358283) LIVING: AUTO TASK[0m
+[0;32mI (358483) LIVING: AUTO TASK[0m
+[0;32mI (358683) LIVING: AUTO TASK[0m
+[0;33mW (358813) LIVING: DHT11 fail![0m
+[0;32mI (358813) LIVING: Do sang: 13.18 lux[0m
+[0;32mI (358813) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (358883) LIVING: AUTO TASK[0m
+[0;32mI (359083) LIVING: AUTO TASK[0m
+[0;32mI (359283) LIVING: AUTO TASK[0m
+[0;32mI (359483) LIVING: AUTO TASK[0m
+[0;32mI (359683) LIVING: AUTO TASK[0m
+[0;32mI (359883) LIVING: AUTO TASK[0m
+[0;33mW (359903) LIVING: DHT11 fail![0m
+[0;32mI (359903) LIVING: Do sang: 9.85 lux[0m
+[0;32mI (359913) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (360083) LIVING: AUTO TASK[0m
+[0;32mI (360283) LIVING: AUTO TASK[0m
+[0;32mI (360483) LIVING: AUTO TASK[0m
+[0;32mI (360683) LIVING: AUTO TASK[0m
+[0;32mI (360883) LIVING: AUTO TASK[0m
+[0;32mI (360973) LIVING: Do am: 65.00 percent[0m
+[0;32mI (360973) LIVING: Nhiet do: 27.10 C[0m
+[0;32mI (360973) LIVING: Do sang: 14.73 lux[0m
+[0;32mI (360973) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (361083) LIVING: AUTO TASK[0m
+[0;32mI (361283) LIVING: AUTO TASK[0m
+[0;32mI (361483) LIVING: AUTO TASK[0m
+[0;32mI (361683) LIVING: AUTO TASK[0m
+[0;32mI (361883) LIVING: AUTO TASK[0m
+[0;32mI (362083) LIVING: AUTO TASK[0m
+[0;33mW (362163) LIVING: DHT11 fail![0m
+[0;32mI (362163) LIVING: Do sang: 15.48 lux[0m
+[0;32mI (362163) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (362283) LIVING: AUTO TASK[0m
+[0;32mI (362483) LIVING: AUTO TASK[0m
+[0;32mI (362683) LIVING: AUTO TASK[0m
+[0;32mI (362883) LIVING: AUTO TASK[0m
+[0;32mI (363083) LIVING: AUTO TASK[0m
+[0;33mW (363253) LIVING: DHT11 fail![0m
+[0;32mI (363253) LIVING: Do sang: 15.12 lux[0m
+[0;32mI (363263) LIVING: Khi gas: 86.06 ppm[0m
+[0;32mI (363283) LIVING: AUTO TASK[0m
+[0;32mI (363483) LIVING: AUTO TASK[0m
+[0;32mI (363683) LIVING: AUTO TASK[0m
+[0;32mI (363883) LIVING: AUTO TASK[0m
