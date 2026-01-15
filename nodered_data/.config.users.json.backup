@@ -17,6 +17,9 @@
                 "welcome": "4.1.1"
             }
         },
-        "menu-menu-item-sidebar": false
+        "menu-menu-item-sidebar": true,
+        "debug": {
+            "filter": "filterCurrent"
+        }
     }
 }

@@ -1,5 +1,4 @@
-#include "../../../BSW/Inc/Output/motor.h"
-
+#include "motor.h"
 #include "stm32_gpio.h"
 #include "stm32_tim.h"
 
@@ -44,7 +43,7 @@ void Motor_Init(void)
     // 4. Timer config
     htim1.Instance = TIM1;
     htim1.Init.Prescaler = 71; // 72MHz / (71+1) = 1MHz
-    htim1.Init.Period = 200;   // 1MHz / (199+1) = 5kHz PWM
+    htim1.Init.Period = 19999;   // 1MHz / (49+1) = 20kHz PWM
     htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
     htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
 
@@ -117,8 +116,7 @@ void Motor_SetLevel(uint8_t state)
 uint8_t Motor_GetLevel(void)
 {
     uint32_t period = htim1.Init.Period + 1;
-    if (period == 0)
-        return 0;
+    if (period == 0) return 0;
 
     uint32_t ccr = htim1.Instance->CCR1;
     uint8_t speed_percent = (ccr * 100) / period;

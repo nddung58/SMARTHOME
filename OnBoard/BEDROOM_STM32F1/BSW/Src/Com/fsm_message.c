@@ -38,6 +38,7 @@ void Fsm_Get_Message(uint8_t datain, uint8_t dataout[])
     if (flag_fsm_new_message)
         return;
 
+
     switch (fsm_state)
     {
     case FSM_STATE_START:
@@ -67,6 +68,7 @@ void Fsm_Get_Message(uint8_t datain, uint8_t dataout[])
         // Check Group
         if (byte_count == 2)
         {
+
             if (datain != COMMAND)
             {
                 Clear_All_State_Fsm();
@@ -94,6 +96,7 @@ void Fsm_Get_Message(uint8_t datain, uint8_t dataout[])
                 fsm_state = FSM_STATE_PAYLOAD;
             }
         }
+
         break;
 
     case FSM_STATE_PAYLOAD:
@@ -103,8 +106,9 @@ void Fsm_Get_Message(uint8_t datain, uint8_t dataout[])
         {
             fsm_state = FSM_STATE_CHECKSUM;
         }
-        else if (byte_count - 4 > expected_payload_length)
+        else if (byte_count - 4 > expected_payload_length + 2)
         {
+
             // Nếu nhận quá payload, reset FSM
             Clear_All_State_Fsm();
         }
@@ -126,12 +130,14 @@ void Fsm_Get_Message(uint8_t datain, uint8_t dataout[])
             }
             else
             {
+
                 // Nếu checksum không hợp lệ, reset FSM
                 Clear_All_State_Fsm();
             }
 
             fsm_state = FSM_STATE_START;
         }
+
         break;
     }
 }

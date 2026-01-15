@@ -5,7 +5,7 @@ void pir_init(void);
 
 void pir_test_init(void);
 
-void pir_process(void);
+void process_servo_logic(void);
 
 
 #endif

@@ -18,6 +18,8 @@
 #include "../../BSW/Inc/Com/uart.h"
 #include "../../BSW/Inc/globals.h"
 
+#include "ndd_std_types.h"
+
 #include "timer_base.h"
 
 static message_t message;
@@ -69,25 +71,3 @@ void TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     // Todo
 }
 
-#define PIR_LOCK_MS 2000
-volatile uint32_t pir_last_trigger = 0;
-
-void GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-    if (GPIO_Pin == PIR)
-    {
-        uint32_t now = GetTick();
-
-        // Chỉ cho phép 1 lần trigger trong PIR_LOCK_MS
-        if (now - pir_last_trigger < PIR_LOCK_MS)
-            return;
-
-        pir_last_trigger = now;
-
-        uint8_t st = door_getstate();
-        if (st == 0)
-            door_open();
-        else
-            door_close();
-    }
-}

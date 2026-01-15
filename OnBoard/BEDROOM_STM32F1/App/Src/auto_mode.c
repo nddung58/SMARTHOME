@@ -27,23 +27,24 @@ void Auto_Process(void)
         else
         {
             Buzzer_Off();
-            if (sys.lux < 300.0f)
-            {
-                LED_RGB_SetState(LED_WHITE_100);
-            }
-            else if (sys.lux >= 300.0f && sys.lux < 600.0f)
-            {
-                LED_RGB_SetState(LED_WHITE_50);
-            }
-            else if (sys.lux >= 1200.0f)
-            {
-                LED_RGB_SetState(LED_OFF);
-            }
-            else
-            {
-
-                LED_RGB_Off();
-            }
+//            if (sys.lux < 300.0f)
+//            {
+//                LED_RGB_SetState(LED_WHITE_100);
+//            }
+//            else if (sys.lux >= 300.0f && sys.lux < 600.0f)
+//            {
+//                LED_RGB_SetState(LED_WHITE_50);
+//            }
+//            else if (sys.lux >= 1200.0f)
+//            {
+//                LED_RGB_SetState(LED_OFF);
+//            }
+//            else
+//            {
+//
+//                LED_RGB_Off();
+//            }
+            LED_RGB_SetState(LED_WHITE_100);
 
             if (sys.temperature > 30.0f)
             {
@@ -73,17 +74,22 @@ void Auto_Process(void)
                 return;
             }
 
-            if (message->header[0] == COMMAND && message->header[2] == 4 && message->header[1] == MODE)
+
+
+            if (message->header[0] == COMMAND && message->header[2] == 1 && message->header[1] == MODE)
             {
 
-                float mode = Convert_Bytes_To_Float(message->payload[0], message->payload[1], message->payload[2], message->payload[3]);
-                if (mode == 1.0f)
+                uint8_t mode = message->payload[0];
+                if (mode == 1)
                 {
+
                     sys.mode = MANUAL_MODE;
                     uint8_t m = (uint8_t)sys.mode;
                     uint8_t data[20];
                     uint8_t length = Create_Message(NOTIFY, MODE, 1, &m, data);
                     USART1_Send_Data(data, length);
+                    Delay_ms(10);
+
                 }
             }
 

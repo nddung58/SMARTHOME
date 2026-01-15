@@ -39,6 +39,8 @@ void door_init(void)
 
     TIM_PWM_ConfigChannel(&htim1, &oc, DOOR_PWM_CHANNEL);
     TIM_PWM_Start(&htim1, DOOR_PWM_CHANNEL);
+
+    door_open();
 }
 
 static uint16_t angle_to_pulse(uint8_t angle)

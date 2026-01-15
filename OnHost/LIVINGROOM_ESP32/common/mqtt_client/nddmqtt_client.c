@@ -112,7 +112,7 @@ void mqtt_init(const char *topics[], int topic_count)
     }
 
     esp_mqtt_client_config_t mqtt_cfg = {
-        .broker.address.uri = "mqtt://192.168.54.195:1883",
+        .broker.address.uri = "mqtt://172.20.10.3:1883",
         // .broker.address.uri = "mqtts://192.168.54.195:8883",
         // .broker.verification = {
         //     .certificate = (const char *)ca_cert_pem_start,

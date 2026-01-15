@@ -2,15 +2,14 @@
 #include "stm32_gpio.h"
 #include "timer_base.h"
 #include "stdint.h"
+#include "door.h"
 
 #define PIR_GPIO_PORT GPIOA
 #define PIR_GPIO_PIN  GPIO_PIN_5
 
-#define LED_PORT GPIOC
-#define LED_PIN  GPIO_PIN_13
 
-#define PIR_LOCK_MS      2000    // chỉ cho phép trigger 1 lần mỗi 2s
-#define PIR_LED_ON_MS    2000    // LED sáng 2s
+#define PIR_LOCK_MS      2000
+#define PIR_LED_ON_MS    2000
 
 volatile uint8_t pir_trigger = 0;
 volatile uint32_t pir_last_trigger = 0;
@@ -18,14 +17,13 @@ volatile uint32_t pir_last_trigger = 0;
 static uint8_t led_on = 0;
 static uint32_t led_off_time = 0;
 
-/* ======================= INIT =========================== */
 
 void pir_init(void)
 {
     GPIO_InitTypeDef gpio = {
         .Pin  = PIR_GPIO_PIN,
         .Mode = GPIO_MODE_IT_RISING,
-        .Pull = GPIO_NOPULL,
+        .Pull = GPIO_PULLDOWN,
     };
     GPIO_Init(PIR_GPIO_PORT, &gpio);
 
@@ -33,32 +31,14 @@ void pir_init(void)
     NVIC_SetPriority(EXTI9_5_IRQn, 2);
 }
 
-void pir_test_init(void)
-{
-    GPIO_InitTypeDef gpio = {
-        .Pin   = LED_PIN,
-        .Mode  = GPIO_MODE_OUTPUT_PP,
-        .Speed = GPIO_SPEED_LOW
-    };
-    GPIO_Init(LED_PORT, &gpio);
 
-    GPIO_WritePin(LED_PORT, LED_PIN, GPIO_PIN_SET);
-}
-
-/* ================== INTERRUPT CALLBACK ================== */
+volatile uint8_t servo_trigger_flag = 0;
 
 void GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
     if (GPIO_Pin == PIR_GPIO_PIN)
     {
-        uint32_t now = GetTick();
-
-        // Chỉ cho phép 1 lần trigger trong PIR_LOCK_MS
-        if (now - pir_last_trigger < PIR_LOCK_MS)
-            return;
-
-        pir_last_trigger = now;
-        pir_trigger = 1;
+    	servo_trigger_flag = 1;
     }
 }
 
@@ -67,26 +47,37 @@ void EXTI9_5_IRQHandler(void)
     GPIO_EXTI_IRQHandler(PIR_GPIO_PIN);
 }
 
-/* ====================== MAIN PROCESS ====================== */
 
-void pir_process(void)
+typedef enum {
+    SERVO_IDLE,
+    SERVO_WAIT_TO_CLOSE
+} ServoState_t;
+
+void process_servo_logic(void)
 {
-    uint32_t now = GetTick();
+    static ServoState_t state = SERVO_IDLE;
+    static uint32_t start_time = 0;
 
-    if (pir_trigger)
+    switch (state)
     {
-        pir_trigger = 0;
+        case SERVO_IDLE:
+            if (servo_trigger_flag)
+            {
+                servo_trigger_flag = 0;
+                door_close();
+                start_time = GetTick();
+                state = SERVO_WAIT_TO_CLOSE;
+            }
+            break;
 
-        // bắt đầu bật LED không chặn CPU
-        led_on = 1;
-        led_off_time = now + PIR_LED_ON_MS;
-        GPIO_WritePin(LED_PORT, LED_PIN, GPIO_PIN_RESET);
-    }
+        case SERVO_WAIT_TO_CLOSE:
 
-    // hết thời gian => tắt LED
-    if (led_on && (int32_t)(now - led_off_time) >= 0)
-    {
-        led_on = 0;
-        GPIO_WritePin(LED_PORT, LED_PIN, GPIO_PIN_SET);
+            if (GetTick() - start_time >= 2000)
+            {
+            	door_open();
+                state = SERVO_IDLE;
+            }
+            break;
     }
 }
+

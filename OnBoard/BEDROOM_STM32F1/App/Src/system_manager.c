@@ -12,7 +12,6 @@
 #include "../../BSW/Inc/Output/led_rgb.h"
 #include "../../BSW/Inc/Output/motor.h"
 #include "../../BSW/Inc/Output/buzzer.h"
-#include "../../BSW/Inc/Output/awnings.h"
 #include "../../BSW/Inc/Output/door.h"
 
 void device_init(void)
@@ -26,15 +25,17 @@ void device_init(void)
 
     LED_RGB_Init();
     Buzzer_Init();
-    Motor_Init();
+
+
     door_init();
+    Motor_Init();
 
     sys.temperature = 25.0f;
     sys.humidity = 50.0f;
     sys.gas_level = 200.0f;
     sys.lux = 500.0f;
     sys.rainpercent = 0;
-    sys.led_state = 0; // 0: off, 1: WHITE, 2: SOFT WHITE, 3: GREEN, 4: RED
+    sys.led_state = 1; // 0: off, 1: WHITE, 2: SOFT WHITE, 3: GREEN, 4: RED
     sys.fan = 0;       // 0: off, 1: low, 2: medium, 3: high
     sys.buzzer_on = 0; // 0: off, 1: on
     sys.awnings = 0;
@@ -52,10 +53,13 @@ void DeviceManager_UpdateData(void)
     uint8_t data[20];
     uint8_t length;
 
+
+
     // ======= DHT11 =======
     uint8_t h, h_d, t, t_d;
     if (DHT11_Read(&h, &h_d, &t, &t_d))
     {
+
         float humidity = h + h_d / 10.0f;
         float temperature = t + t_d / 10.0f;
 
@@ -138,11 +142,13 @@ void DeviceManager_UpdateData(void)
         USART1_Send_Data(data, length);
     }
 
-    uint8_t awnings = awnings_getstate();
-    if (awnings != sys.awnings)
-    {
-        sys.awnings = awnings;
-        length = Create_Message(NOTIFY, AWNINGS, 1, &sys.awnings, data);
-        USART1_Send_Data(data, length);
-    }
+//    uint8_t awnings = awnings_getstate();
+//    if (awnings != sys.awnings)
+//    {
+//        sys.awnings = awnings;
+//        length = Create_Message(NOTIFY, AWNINGS, 1, &sys.awnings, data);
+//        USART1_Send_Data(data, length);
+//    }
+
+    process_servo_logic();
 }

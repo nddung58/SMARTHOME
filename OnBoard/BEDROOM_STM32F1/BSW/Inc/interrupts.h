@@ -8,7 +8,7 @@
 #ifndef INC_COM_INTERRUPTS_H_
 #define INC_COM_INTERRUPTS_H_
 
-#define PIR GPIO_PIN_5
+#define PIR_PIN GPIO_PIN_5
 
 /**
  * @brief Đặt lại toàn bộ trạng thái nhận dữ liệu về trạng thái ban đầu.

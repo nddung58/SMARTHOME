@@ -19,17 +19,17 @@ void Buzzer_Init(void)
         .Mode = GPIO_MODE_OUTPUT_PP,
         .Speed = GPIO_SPEED_HIGH};
     GPIO_Init(BUZZER_GPIO_PORT, &gpio);
-    GPIO_WritePin(BUZZER_GPIO_PORT, BUZZER_GPIO_PIN, GPIO_PIN_SET);
+    GPIO_WritePin(BUZZER_GPIO_PORT, BUZZER_GPIO_PIN, GPIO_PIN_RESET);
 }
 
 void Buzzer_On(void)
 {
-    GPIO_WritePin(BUZZER_GPIO_PORT, BUZZER_GPIO_PIN, GPIO_PIN_RESET);
+    GPIO_WritePin(BUZZER_GPIO_PORT, BUZZER_GPIO_PIN, GPIO_PIN_SET);
 }
 
 void Buzzer_Off(void)
 {
-    GPIO_WritePin(BUZZER_GPIO_PORT, BUZZER_GPIO_PIN, GPIO_PIN_SET);
+    GPIO_WritePin(BUZZER_GPIO_PORT, BUZZER_GPIO_PIN, GPIO_PIN_RESET);
 }
 
 void Buzzer_Toggle(void)

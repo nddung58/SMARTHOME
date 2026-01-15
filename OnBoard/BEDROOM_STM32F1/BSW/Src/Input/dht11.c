@@ -5,8 +5,7 @@
  *      Author: nguye
  */
 
-#include "../../../BSW/Inc/Input/dht11.h"
-
+#include "dht11.h"
 #include "timer_base.h"
 
 #define DHT11_PORT GPIOA
@@ -82,11 +81,15 @@ bool DHT11_Read(uint8_t *humi_int, uint8_t *humi_dec, uint8_t *temp_int, uint8_t
 
     DHT11_Start();
 
+
     // Chờ phản hồi từ DHT11
     uint32_t timeout = 0;
     while (DHT_ReadPin())
-        if (++timeout > 10000)
+        if (++timeout > 10000){
+
+
             return false;
+        }
     timeout = 0;
     while (!DHT_ReadPin())
         if (++timeout > 10000)
@@ -100,6 +103,7 @@ bool DHT11_Read(uint8_t *humi_int, uint8_t *humi_dec, uint8_t *temp_int, uint8_t
     for (uint8_t i = 0; i < 5; i++)
         data[i] = DHT_ReadByte();
 
+
     // Kiểm tra checksum
     if ((data[0] + data[1] + data[2] + data[3]) != data[4])
         return false;
@@ -108,5 +112,6 @@ bool DHT11_Read(uint8_t *humi_int, uint8_t *humi_dec, uint8_t *temp_int, uint8_t
     *humi_dec = data[1];
     *temp_int = data[2];
     *temp_dec = data[3];
+
     return true;
 }

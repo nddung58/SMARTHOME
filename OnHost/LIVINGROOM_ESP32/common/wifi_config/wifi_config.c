@@ -33,7 +33,7 @@ static const int ESPTOUCH_DONE_BIT = BIT1;
 static const int HTTP_CONFIG_DONE = BIT2;
 
 static int s_retry_count = 0;
-#define MAX_RETRY_COUNT 5
+#define MAX_RETRY_COUNT 10
 
 static void event_handler(void *arg, esp_event_base_t event_base,
                           int32_t event_id, void *event_data)
@@ -238,8 +238,8 @@ void wifi_config(void)
 
             wifi_config_t wifi_config;
             bzero(&wifi_config, sizeof(wifi_config_t));
-            strncpy((char *)wifi_config.sta.ssid, ssid, sizeof(wifi_config.sta.ssid));
-            strncpy((char *)wifi_config.sta.password, password, sizeof(wifi_config.sta.password));
+            strncpy((char *)wifi_config.sta.ssid, "iphone13", sizeof(wifi_config.sta.ssid));
+            strncpy((char *)wifi_config.sta.password, "68686866", sizeof(wifi_config.sta.password));
 
             wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
             ESP_ERROR_CHECK(esp_wifi_init(&cfg));

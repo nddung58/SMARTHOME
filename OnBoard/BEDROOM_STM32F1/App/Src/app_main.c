@@ -12,7 +12,7 @@
 #include "../../BSW/Inc/Input/dht11.h"
 #include "../../BSW/Inc/Input/mq2.h"
 #include "../../BSW/Inc/Input/pir.h"
-#include "../../BSW/Inc/Output/Door.h"
+#include "../../BSW/Inc/Output/door.h"
 
 UART_HandleTypeDef huart1;
 FrameQueue g_uartQueue;
@@ -30,38 +30,39 @@ void App_Init(void)
 
 	DUNGX_UART_Receive_IT(&huart1, uart_rx_buffer, 2);
 
-	pir_init();
-	pir_test_init();
+	RCC->APB2ENR |= (1 << 4);
+	GPIOC->CRH &= ~(0xF << 20); // Xóa sạch 4 bit cấu hình của PC13
+	    GPIOC->CRH |= (0x2 << 20);
+
 }
 
 void App_Loop(void)
 {
-//	static uint32_t lastDeviceUpdateTick = 0;
-//	static uint32_t lastProcessTick = 0;
-//
-//	uint32_t currentTick = GetTick();
-//
-//	// Task 1: Update device 200ms
-//	if ((currentTick - lastDeviceUpdateTick) >= 200)
-//	{
-//		DeviceManager_UpdateData();
-//		lastDeviceUpdateTick = currentTick;
-//	}
-//
-//	// Task 2: Handle 50ms
-//	if ((currentTick - lastProcessTick) >= 50)
-//	{
-//		if (sys.mode == AUTO_MODE)
-//		{
-//			Auto_Process();
-//		}
-//		else if (sys.mode == MANUAL_MODE)
-//		{
-//			Manual_Process();
-//		}
-//
-//		lastProcessTick = currentTick;
-//	}
+	static uint32_t lastDeviceUpdateTick = 0;
+	static uint32_t lastProcessTick = 0;
 
-	pir_process();
+	uint32_t currentTick = GetTick();
+
+	// Task 1: Update device 200ms
+	if ((currentTick - lastDeviceUpdateTick) >= 200)
+	{
+		DeviceManager_UpdateData();
+		lastDeviceUpdateTick = currentTick;
+	}
+
+	// Task 2: Handle 50ms
+	if ((currentTick - lastProcessTick) >= 50)
+	{
+		if (sys.mode == AUTO_MODE)
+		{
+			Auto_Process();
+		}
+		else if (sys.mode == MANUAL_MODE)
+		{
+			Manual_Process();
+		}
+
+		lastProcessTick = currentTick;
+	}
+
 }
